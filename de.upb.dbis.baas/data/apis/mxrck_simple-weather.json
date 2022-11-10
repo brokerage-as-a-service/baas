@@ -1,0 +1,315 @@
+{
+  "models": {
+    "took": 94,
+    "total": 3,
+    "data": [
+      {
+        "slugifiedPrimary": "weather-data",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Weather Data",
+        "format": "JSON",
+        "description": "Data for weather petition",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/models/53aa60d6e4b008bb2ef87a35/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/models/53aa60d6e4b008bb2ef87a35"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8"
+          }
+        },
+        "id": "53aa60d6e4b008bb2ef87a35",
+        "body": "{\n\"weather\": {\n      \"temperature\": \"26\",\n      \"description\": \"Rain\",\n      \"location\": \"MXCE0008\",\n      \"code\": \"12\",\n      \"at_time\": 1401856554,\n      \"lang\": \"en\"\n    }",
+        "creationDate": 1403674838401,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "weather-data-content",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Weather Data Content",
+        "format": "JSON",
+        "description": "Content of the Weather Data",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/models/53aa60d6e4b051a76d241d53/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/models/53aa60d6e4b051a76d241d53"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8"
+          }
+        },
+        "id": "53aa60d6e4b051a76d241d53",
+        "body": "{\n  \"temperature\": \"26\",\n  \"description\": \"Rain\",\n  \"location\": \"MXCE0008\",\n  \"code\": \"12\",\n  \"at_time\": 1401856554,\n  \"lang\": \"en\"\n}",
+        "creationDate": 1403674838442,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "weather-forecast-model",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Weather Forecast Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/models/53aa60d6e4b00287471a2cfd/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/models/53aa60d6e4b00287471a2cfd"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8"
+          }
+        },
+        "id": "53aa60d6e4b00287471a2cfd",
+        "body": "{\n  \"api\": \"SerProgramador.es\",\n  \"api_version\": \"1.0\",\n  \"data\": {\n    \"weather\": {\n      \"temperature\": \"26\",\n      \"description\": \"Rain\",\n      \"location\": \"MXCE0008\",\n      \"code\": \"12\",\n      \"at_time\": 1401856554,\n      \"lang\": \"en\"\n    }\n  },\n  \"response\": true,\n  \"time_elapsed\": \"0.0039\"\n}",
+        "creationDate": 1403674838509,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:42:20 UTC 2014",
+  "website": "http://serprogramador.es",
+  "endpoints": {
+    "took": 95,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 32,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "lang",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "lang",
+              "description": "Languaje for description",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/endpoints/53aa60d6e4b0f2c975471767"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/endpoints/53aa60d6e4b0f2c975471767/routeparameters/53aa60d7e4b008bb2ef87a38"
+                }
+              },
+              "id": "53aa60d7e4b008bb2ef87a38",
+              "type": "STRING",
+              "creationDate": 1403674839203,
+              "value": "es",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "location",
+              "updateDate": 1403674838892,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "location",
+              "description": "Current city code, you can find info here: http://serprogramador.es/api-para-obtener-el-clima/",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/endpoints/53aa60d6e4b0f2c975471767"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/endpoints/53aa60d6e4b0f2c975471767/routeparameters/53aa60d6e4b0a705fcc32deb"
+                }
+              },
+              "id": "53aa60d6e4b0a705fcc32deb",
+              "type": "STRING",
+              "creationDate": 1403674838672,
+              "value": "MXCE0008",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "unit",
+              "updateDate": 1403674839044,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "unit",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/endpoints/53aa60d6e4b0f2c975471767"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/endpoints/53aa60d6e4b0f2c975471767/routeparameters/53aa60d6e4b008bb2ef87a36"
+                }
+              },
+              "id": "53aa60d6e4b008bb2ef87a36",
+              "type": "STRING",
+              "creationDate": 1403674838748,
+              "value": "c",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403674839059,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403674838561,
+        "slugifiedPrimary": "weather-forecast",
+        "routeregex": "/weather/forecast/([^/?]+)/([^/?]+).json",
+        "route": "/weather/forecast/{location}/{unit}.json",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "weather-forecast-model",
+          "headers": {
+            "took": 21,
+            "total": 0,
+            "data": []
+          },
+          "took": 32,
+          "name": "Weather Forecast Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/models/53aa60d6e4b00287471a2cfd/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/models/53aa60d6e4b00287471a2cfd"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8"
+            }
+          },
+          "id": "53aa60d6e4b00287471a2cfd",
+          "body": "{\n  \"api\": \"SerProgramador.es\",\n  \"api_version\": \"1.0\",\n  \"data\": {\n    \"weather\": {\n      \"temperature\": \"26\",\n      \"description\": \"Rain\",\n      \"location\": \"MXCE0008\",\n      \"code\": \"12\",\n      \"at_time\": 1401856554,\n      \"lang\": \"en\"\n    }\n  },\n  \"response\": true,\n  \"time_elapsed\": \"0.0039\"\n}",
+          "creationDate": 1403674838509,
+          "status": "ACTIVE"
+        },
+        "name": "Weather Forecast",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/endpoints/53aa60d6e4b0f2c975471767/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/endpoints/53aa60d6e4b0f2c975471767/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/models/53aa60d6e4b00287471a2cfd"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/endpoints/53aa60d6e4b0f2c975471767"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/endpoints/53aa60d6e4b0f2c975471767/parameters/"
+          }
+        },
+        "id": "53aa60d6e4b0f2c975471767",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Simple tool for get current weather",
+  "groups": {
+    "took": 48,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:40:37 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2d18e4b0a9b1348d5b63/apis/53aa60d5e4b008bb2ef87a33/versions/53aa60d5e4b0b60946a30bc8/errors/"
+    }
+  },
+  "id": "53aa60d5e4b0b60946a30bc8",
+  "status": "ACTIVE"
+}

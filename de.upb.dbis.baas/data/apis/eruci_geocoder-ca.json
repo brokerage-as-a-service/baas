@@ -1,0 +1,552 @@
+{
+  "models": {
+    "took": 68,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "geocode-response",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Geocode Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/models/53aa575be4b0a798dbd1aba8/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/models/53aa575be4b0a798dbd1aba8"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c"
+          }
+        },
+        "id": "53aa575be4b0a798dbd1aba8",
+        "creationDate": 1403672411666,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:46:16 UTC 2014",
+  "website": "http://geocoder.ca/?premium_api=1",
+  "endpoints": {
+    "took": 171,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 107,
+          "total": 17,
+          "data": [
+            {
+              "slugifiedPrimary": "addresst",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "addresst",
+              "description": "The name of the street address.\t A string no longer that 220 bytes.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9/routeparameters/53aa575be4b0a798dbd1abaa"
+                }
+              },
+              "id": "53aa575be4b0a798dbd1abaa",
+              "type": "STRING",
+              "creationDate": 1403672411745,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "callback",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "callback",
+              "description": "Callback string if Output is in JSON format.\t Optionally you may request data in JSON format. The callback can be any string value.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9/routeparameters/53aa575ce4b0596140340c05"
+                }
+              },
+              "id": "53aa575ce4b0596140340c05",
+              "type": "STRING",
+              "creationDate": 1403672412211,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "city",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "city",
+              "description": "The City Name\t A string no longer that 220 bytes.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9/routeparameters/53aa575be4b0a9b1348dac11"
+                }
+              },
+              "id": "53aa575be4b0a9b1348dac11",
+              "type": "STRING",
+              "creationDate": 1403672411833,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "decimal",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "decimal",
+              "description": "An integer positive number.\t This is an optional parameter to limit the number of decimal places in the response. (note that a small number will reduce accuracy)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9/routeparameters/53aa575ce4b0596140340c04"
+                }
+              },
+              "id": "53aa575ce4b0596140340c04",
+              "type": "STRING",
+              "creationDate": 1403672412045,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "geoit",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "geoit",
+              "description": "The output type desired.\t Only one allowed value: XML",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9/routeparameters/53aa575ce4b0a798dbd1abaf"
+                }
+              },
+              "id": "53aa575ce4b0a798dbd1abaf",
+              "type": "STRING",
+              "creationDate": 1403672412123,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "id",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "id",
+              "description": "optionally you can include your own transaction id. this will be returned along with the response if provided.\t a number or string no longer that 15 bytes.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9/routeparameters/53aa575ce4b0a9b1348dac15"
+                }
+              },
+              "id": "53aa575ce4b0a9b1348dac15",
+              "type": "STRING",
+              "creationDate": 1403672412293,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "jsonp",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "jsonp",
+              "description": "Output in JSON format.\t Optionally you may request data in JSON format. Accepted value: 1",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9/routeparameters/53aa575ce4b0a9b1348dac14"
+                }
+              },
+              "id": "53aa575ce4b0a9b1348dac14",
+              "type": "STRING",
+              "creationDate": 1403672412166,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "locate",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "locate",
+              "description": "Optionally you can specify a location. for example 330 metcalfe ottawa or metcalfe & wellington ottawa\t This is an optional parameter for your convenience. We will parse out an address or intersection from it.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9/routeparameters/53aa575be4b0596140340c02"
+                }
+              },
+              "id": "53aa575be4b0596140340c02",
+              "type": "STRING",
+              "creationDate": 1403672411922,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "postal",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "postal",
+              "description": "A six letter canadian postal code\t The postal code format should follow the following format ANANAN where N represents a number and A a letter.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9/routeparameters/53aa575ce4b07e1f4ebeb9e8"
+                }
+              },
+              "id": "53aa575ce4b07e1f4ebeb9e8",
+              "type": "STRING",
+              "creationDate": 1403672412087,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "prov",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "prov",
+              "description": "The Two letter Canadian province code or US state abbreviation.\t (AB,BC,MB,NB,NL,NS,NT,NU,ON,PE,QC,SK,YT)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9/routeparameters/53aa575be4b0a9b1348dac12"
+                }
+              },
+              "id": "53aa575be4b0a9b1348dac12",
+              "type": "STRING",
+              "creationDate": 1403672411877,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "showpostal",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "showpostal",
+              "description": "Optionally - If you supply just a street address (or intersection), the showpostal parameter will instruct the algorithm to return the postal code of the location along with the latitude/longitude pair.\t Only one allowed value: 1",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9/routeparameters/53aa575ce4b0a9b1348dac16"
+                }
+              },
+              "id": "53aa575ce4b0a9b1348dac16",
+              "type": "STRING",
+              "creationDate": 1403672412379,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "standard",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "standard",
+              "description": "Return the properly formated \"standartized\" address in the response.\t This is an optional parameter for address standardization. There is only one valid value: 1",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9/routeparameters/53aa575ce4b0596140340c03"
+                }
+              },
+              "id": "53aa575ce4b0596140340c03",
+              "type": "STRING",
+              "creationDate": 1403672412005,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "stno",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "stno",
+              "description": "Street Number\t A number.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9/routeparameters/53aa575be4b0596140340c01"
+                }
+              },
+              "id": "53aa575be4b0596140340c01",
+              "type": "STRING",
+              "creationDate": 1403672411792,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "strict",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "strict",
+              "description": "Optional Parameter for enabling strict parsing of free form location input.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9/routeparameters/53aa575be4b0a9b1348dac13"
+                }
+              },
+              "id": "53aa575be4b0a9b1348dac13",
+              "type": "STRING",
+              "creationDate": 1403672411960,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "strictmode",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "strictmode",
+              "description": "Optionally you can prevent geocoder from making guesses on your input - for example if you enter just a city name without the state or province, instead of geocoder determining the most likely city, it will let you chose from a list of suggestions.\t Allowed values are Integer 0 or 1.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9/routeparameters/53aa575ce4b0b60946a2fb15"
+                }
+              },
+              "id": "53aa575ce4b0b60946a2fb15",
+              "type": "STRING",
+              "creationDate": 1403672412342,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "topmatches",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "topmatches",
+              "description": "Optionally - If you supply a partial street address and wish to obtain a fixed number of the most likely suggestions, send a value through this parameter.\t This must be the maximum number of suggestions desired in the response. The topmatches parameter value must be a positive integer.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9/routeparameters/53aa575ce4b07e1f4ebeb9eb"
+                }
+              },
+              "id": "53aa575ce4b07e1f4ebeb9eb",
+              "type": "STRING",
+              "creationDate": 1403672412424,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "utm",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "utm",
+              "description": "Output latitude/longitude pair in The Universal Transverse Mercator (UTM) geographic coordinate system.\t Optional. Accepted value: 1",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9/routeparameters/53aa575ce4b0b60946a2fb13"
+                }
+              },
+              "id": "53aa575ce4b0b60946a2fb13",
+              "type": "STRING",
+              "creationDate": 1403672412258,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403672411820,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403672411690,
+        "slugifiedPrimary": "geocode",
+        "routeregex": "/",
+        "route": "/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "geocode-response",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 18,
+          "name": "Geocode Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/models/53aa575be4b0a798dbd1aba8/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/models/53aa575be4b0a798dbd1aba8"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c"
+            }
+          },
+          "id": "53aa575be4b0a798dbd1aba8",
+          "creationDate": 1403672411666,
+          "status": "ACTIVE"
+        },
+        "name": "Geocode",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/models/53aa575be4b0a798dbd1aba8"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/53aa575be4b0a798dbd1aba9/parameters/"
+          }
+        },
+        "id": "53aa575be4b0a798dbd1aba9",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Geocoder.ca provides a simple XML interface to do real-time automated geocoding for your application.$",
+  "groups": {
+    "took": 36,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:00:11 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa246ce4b0a705fcc24278/apis/53aa575be4b0596140340bff/versions/53aa575be4b0b60946a2fb0c/authentication"
+    }
+  },
+  "id": "53aa575be4b0b60946a2fb0c",
+  "status": "ACTIVE"
+}

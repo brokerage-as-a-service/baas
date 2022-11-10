@@ -1,0 +1,420 @@
+{
+  "models": {
+    "took": 70,
+    "total": 3,
+    "data": [
+      {
+        "slugifiedPrimary": "player-bans-response",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Player-Bans Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/models/53aa61aee4b0a798dbd1bfe2/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/models/53aa61aee4b0a798dbd1bfe2"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf"
+          }
+        },
+        "id": "53aa61aee4b0a798dbd1bfe2",
+        "creationDate": 1403675054169,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "server-bans-response",
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "name": "Server-Bans Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/models/53aa61aee4b0a9b1348dc006/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/models/53aa61aee4b0a9b1348dc006"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf"
+          }
+        },
+        "id": "53aa61aee4b0a9b1348dc006",
+        "creationDate": 1403675054295,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "server-moderators-response",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Server-Moderators Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/models/53aa61aee4b0a9b1348dc008/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/models/53aa61aee4b0a9b1348dc008"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf"
+          }
+        },
+        "id": "53aa61aee4b0a9b1348dc008",
+        "creationDate": 1403675054376,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:40:00 UTC 2014",
+  "website": "https://github.com/betterphp/MineBans/wiki/Web-API",
+  "endpoints": {
+    "took": 186,
+    "total": 3,
+    "data": [
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 8,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "player_uuid",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "player_uuid",
+              "description": "Mojang account ID of the player you want to look up",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/endpoints/53aa61aee4b0a9b1348dc005"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/endpoints/53aa61aee4b0a9b1348dc005/routeparameters/53aa61aee4b07e1f4ebecd43"
+                }
+              },
+              "id": "53aa61aee4b07e1f4ebecd43",
+              "type": "STRING",
+              "creationDate": 1403675054258,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403675054690,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403675054198,
+        "slugifiedPrimary": "player-bans",
+        "routeregex": "/player_bans.json",
+        "route": "/player_bans.json",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "player-bans-response",
+          "headers": {
+            "took": 21,
+            "total": 0,
+            "data": []
+          },
+          "took": 34,
+          "name": "Player-Bans Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/models/53aa61aee4b0a798dbd1bfe2/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/models/53aa61aee4b0a798dbd1bfe2"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf"
+            }
+          },
+          "id": "53aa61aee4b0a798dbd1bfe2",
+          "creationDate": 1403675054169,
+          "status": "ACTIVE"
+        },
+        "name": "Player Bans",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/endpoints/53aa61aee4b0a9b1348dc005/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/endpoints/53aa61aee4b0a9b1348dc005/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/models/53aa61aee4b0a798dbd1bfe2"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/endpoints/53aa61aee4b0a9b1348dc005"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/endpoints/53aa61aee4b0a9b1348dc005/parameters/"
+          }
+        },
+        "id": "53aa61aee4b0a9b1348dc005",
+        "parameters": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403675054685,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403675054322,
+        "slugifiedPrimary": "server-bans",
+        "routeregex": "/server_bans.json",
+        "route": "/server_bans.json",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "server-bans-response",
+          "headers": {
+            "took": 22,
+            "total": 0,
+            "data": []
+          },
+          "took": 53,
+          "name": "Server-Bans Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/models/53aa61aee4b0a9b1348dc006/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/models/53aa61aee4b0a9b1348dc006"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf"
+            }
+          },
+          "id": "53aa61aee4b0a9b1348dc006",
+          "creationDate": 1403675054295,
+          "status": "ACTIVE"
+        },
+        "name": "Server Bans",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/endpoints/53aa61aee4b0a9b1348dc007/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/endpoints/53aa61aee4b0a9b1348dc007/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/models/53aa61aee4b0a9b1348dc006"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/endpoints/53aa61aee4b0a9b1348dc007"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/endpoints/53aa61aee4b0a9b1348dc007/parameters/"
+          }
+        },
+        "id": "53aa61aee4b0a9b1348dc007",
+        "parameters": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403675054683,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403675054401,
+        "slugifiedPrimary": "server-moderators",
+        "routeregex": "/server_moderators.json",
+        "route": "/server_moderators.json",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "server-moderators-response",
+          "headers": {
+            "took": 5,
+            "total": 0,
+            "data": []
+          },
+          "took": 17,
+          "name": "Server-Moderators Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/models/53aa61aee4b0a9b1348dc008/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/models/53aa61aee4b0a9b1348dc008"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf"
+            }
+          },
+          "id": "53aa61aee4b0a9b1348dc008",
+          "creationDate": 1403675054376,
+          "status": "ACTIVE"
+        },
+        "name": "Server Moderators",
+        "routeindex": 2,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/endpoints/53aa61aee4b0a798dbd1bfe4/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/endpoints/53aa61aee4b0a798dbd1bfe4/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/models/53aa61aee4b0a9b1348dc008"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/endpoints/53aa61aee4b0a798dbd1bfe4"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/endpoints/53aa61aee4b0a798dbd1bfe4/parameters/"
+          }
+        },
+        "id": "53aa61aee4b0a798dbd1bfe4",
+        "parameters": {
+          "took": 22,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "MineBans is a global banning system for Minecraft servers. We offer a way for server admins to publish the player bans they make on their servers to our database. The owners of other servers can then use this information to decide if a player that just joined their server should be allowed to stay.\r\nAll of this is done automatically and is completely configurable using a custom plugin for Bukkit servers.",
+  "groups": {
+    "took": 18,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:44:13 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/astronode"
+    },
+    "endpoints": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa61ade4b0a9b1348dc003/versions/53aa61ade4b0a798dbd1bfdf/authentication"
+    }
+  },
+  "id": "53aa61ade4b0a798dbd1bfdf",
+  "status": "ACTIVE"
+}

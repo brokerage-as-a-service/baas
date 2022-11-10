@@ -1,0 +1,319 @@
+{
+  "models": {
+    "took": 103,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "solve-anagram-model",
+        "headers": {
+          "took": 23,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "content-length",
+              "condition": "OPTIONAL",
+              "name": "Content-Length",
+              "description": "",
+              "links": {
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/models/56b38afbe4b0fd0f42cc17a6/headers/56b38afce4b0fd0f42cc17a8"
+                },
+                "model": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/models/56b38afbe4b0fd0f42cc17a6"
+                }
+              },
+              "id": "56b38afce4b0fd0f42cc17a8",
+              "type": "STRING",
+              "creationDate": 1454607100733,
+              "value": "295",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "content-type",
+              "condition": "OPTIONAL",
+              "name": "Content-Type",
+              "description": "",
+              "links": {
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/models/56b38afbe4b0fd0f42cc17a6/headers/56b38afce4b072f99691ca19"
+                },
+                "model": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/models/56b38afbe4b0fd0f42cc17a6"
+                }
+              },
+              "id": "56b38afce4b072f99691ca19",
+              "type": "STRING",
+              "creationDate": 1454607100950,
+              "value": "application/json; charset=utf-8",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "name": "/solve/{anagram} model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/models/56b38afbe4b0fd0f42cc17a6/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/models/56b38afbe4b0fd0f42cc17a6"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba"
+          }
+        },
+        "id": "56b38afbe4b0fd0f42cc17a6",
+        "body": "[{\"word\":\"TAMPERING\",\"length\":9,\"conundrum\":true},{\"word\":\"EMIGRANT\",\"length\":8,\"conundrum\":false},{\"word\":\"REMATING\",\"length\":8,\"conundrum\":false},{\"word\":\"RETAPING\",\"length\":8,\"conundrum\":false},{\"word\":\"TAPERING\",\"length\":8,\"conundrum\":false},{\"word\":\"TRAMPING\",\"length\":8,\"conundrum\":false}]",
+        "creationDate": 1454607099835,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Fri May 19 00:48:26 UTC 2017",
+  "website": "http://countdown.dpope.uk",
+  "endpoints": {
+    "took": 128,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 17,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 56,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "anagram",
+              "updateDate": 1454607333207,
+              "condition": "REQUIRED",
+              "name": "anagram",
+              "description": "The anagram to solve",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/endpoints/56b29972e4b0d850ea7c8dbc"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/endpoints/56b29972e4b0d850ea7c8dbc/routeparameters/56b29972e4b01e2a0a911631"
+                }
+              },
+              "id": "56b29972e4b01e2a0a911631",
+              "type": "STRING",
+              "creationDate": 1454545266214,
+              "value": "pimgatner",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "variance",
+              "updateDate": 1454623910137,
+              "condition": "OPTIONAL",
+              "name": "variance",
+              "description": "Variance in the length of the possible solutions e.g. if the best solution has 7 characters and we have a variance of 2, the array will also include solutions of 5 and 6 characters. A variance of -1 will include all possible solutions. 0 will return only the best solutions",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/endpoints/56b29972e4b0d850ea7c8dbc"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/endpoints/56b29972e4b0d850ea7c8dbc/routeparameters/56b29a04e4b0678b47beecef"
+                }
+              },
+              "id": "56b29a04e4b0678b47beecef",
+              "type": "NUMBER",
+              "creationDate": 1454545412862,
+              "value": "1",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1454607100179,
+        "code": 200,
+        "method": "GET",
+        "description": "Returns an array of the best possible solutions",
+        "creationDate": 1454545266158,
+        "slugifiedPrimary": "solve-anagram",
+        "routeregex": "/solve/([^/?]+)",
+        "route": "/solve/{anagram}",
+        "response": {
+          "slugifiedPrimary": "solve-anagram-model",
+          "headers": {
+            "took": 23,
+            "total": 2,
+            "data": [
+              {
+                "slugifiedPrimary": "content-length",
+                "condition": "OPTIONAL",
+                "name": "Content-Length",
+                "description": "",
+                "links": {
+                  "self": {
+                    "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/models/56b38afbe4b0fd0f42cc17a6/headers/56b38afce4b0fd0f42cc17a8"
+                  },
+                  "model": {
+                    "parent": true,
+                    "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/models/56b38afbe4b0fd0f42cc17a6"
+                  }
+                },
+                "id": "56b38afce4b0fd0f42cc17a8",
+                "type": "STRING",
+                "creationDate": 1454607100733,
+                "value": "295",
+                "status": "ACTIVE"
+              },
+              {
+                "slugifiedPrimary": "content-type",
+                "condition": "OPTIONAL",
+                "name": "Content-Type",
+                "description": "",
+                "links": {
+                  "self": {
+                    "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/models/56b38afbe4b0fd0f42cc17a6/headers/56b38afce4b072f99691ca19"
+                  },
+                  "model": {
+                    "parent": true,
+                    "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/models/56b38afbe4b0fd0f42cc17a6"
+                  }
+                },
+                "id": "56b38afce4b072f99691ca19",
+                "type": "STRING",
+                "creationDate": 1454607100950,
+                "value": "application/json; charset=utf-8",
+                "status": "ACTIVE"
+              }
+            ]
+          },
+          "took": 40,
+          "name": "/solve/{anagram} model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/models/56b38afbe4b0fd0f42cc17a6/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/models/56b38afbe4b0fd0f42cc17a6"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba"
+            }
+          },
+          "id": "56b38afbe4b0fd0f42cc17a6",
+          "body": "[{\"word\":\"TAMPERING\",\"length\":9,\"conundrum\":true},{\"word\":\"EMIGRANT\",\"length\":8,\"conundrum\":false},{\"word\":\"REMATING\",\"length\":8,\"conundrum\":false},{\"word\":\"RETAPING\",\"length\":8,\"conundrum\":false},{\"word\":\"TAPERING\",\"length\":8,\"conundrum\":false},{\"word\":\"TRAMPING\",\"length\":8,\"conundrum\":false}]",
+          "creationDate": 1454607099835,
+          "status": "ACTIVE"
+        },
+        "name": "/solve/{anagram}",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/endpoints/56b29972e4b0d850ea7c8dbc/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/endpoints/56b29972e4b0d850ea7c8dbc/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/models/56b38afbe4b0fd0f42cc17a6"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/endpoints/56b29972e4b0d850ea7c8dbc"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/endpoints/56b29972e4b0d850ea7c8dbc/parameters/"
+          }
+        },
+        "id": "56b29972e4b0d850ea7c8dbc",
+        "parameters": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Anagram solver akin to the word game in Channel 4's Countdown",
+  "groups": {
+    "took": 66,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Thu Feb 04 00:19:35 UTC 2016",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/issues/"
+    },
+    "tags": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/56b1f677e4b072f99691c5ea/apis/56b29917e4b074af2e1c1f28/versions/56b29917e4b079deb1c15aba/errors/"
+    }
+  },
+  "id": "56b29917e4b079deb1c15aba",
+  "status": "ACTIVE"
+}

@@ -1,0 +1,296 @@
+{
+  "models": {
+    "took": 38,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "api-sentiment-model",
+        "headers": {
+          "took": 10,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "content-type",
+              "condition": "OPTIONAL",
+              "name": "Content-Type",
+              "description": "",
+              "links": {
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/models/57c02538e4b028dd9382de1c/headers/57c02539e4b0bd4af84b0057"
+                },
+                "model": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/models/57c02538e4b028dd9382de1c"
+                }
+              },
+              "id": "57c02539e4b0bd4af84b0057",
+              "type": "STRING",
+              "creationDate": 1472210233235,
+              "value": "application/json; charset=utf-8",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "server",
+              "condition": "OPTIONAL",
+              "name": "Server",
+              "description": "",
+              "links": {
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/models/57c02538e4b028dd9382de1c/headers/57c0253be4b0a1d871a2f38e"
+                },
+                "model": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/models/57c02538e4b028dd9382de1c"
+                }
+              },
+              "id": "57c0253be4b0a1d871a2f38e",
+              "type": "STRING",
+              "creationDate": 1472210235655,
+              "value": "Mashape/5.0.6",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "name": "/api/sentiment model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/models/57c02538e4b028dd9382de1c/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/models/57c02538e4b028dd9382de1c"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f"
+          }
+        },
+        "id": "57c02538e4b028dd9382de1c",
+        "body": "{\"text\":\"To new beginnings!\",\"status\":\"OK\",\"sentiment-text\":\"neutral\",\"sentiment-score\":0.471748,\"api-author\":\"https://github.com/djinn\"}",
+        "creationDate": 1472210232410,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Tue Aug 30 04:13:05 UTC 2016",
+  "endpoints": {
+    "took": 59,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 13,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "text",
+              "condition": "REQUIRED",
+              "name": "text",
+              "description": "",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/endpoints/57c024c0e4b0e451de066722"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/endpoints/57c024c0e4b0e451de066722/routeparameters/57c024ebe4b0e451de066723"
+                }
+              },
+              "id": "57c024ebe4b0e451de066723",
+              "type": "STRING",
+              "creationDate": 1472210155286,
+              "value": "To new beginnings!",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1472210232824,
+        "code": 200,
+        "method": "GET",
+        "description": "Find the sentiment of text",
+        "creationDate": 1472210112327,
+        "slugifiedPrimary": "api-sentiment",
+        "routeregex": "/api/sentiment",
+        "route": "/api/sentiment",
+        "response": {
+          "slugifiedPrimary": "api-sentiment-model",
+          "headers": {
+            "took": 19,
+            "total": 2,
+            "data": [
+              {
+                "slugifiedPrimary": "content-type",
+                "condition": "OPTIONAL",
+                "name": "Content-Type",
+                "description": "",
+                "links": {
+                  "self": {
+                    "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/models/57c02538e4b028dd9382de1c/headers/57c02539e4b0bd4af84b0057"
+                  },
+                  "model": {
+                    "parent": true,
+                    "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/models/57c02538e4b028dd9382de1c"
+                  }
+                },
+                "id": "57c02539e4b0bd4af84b0057",
+                "type": "STRING",
+                "creationDate": 1472210233235,
+                "value": "application/json; charset=utf-8",
+                "status": "ACTIVE"
+              },
+              {
+                "slugifiedPrimary": "server",
+                "condition": "OPTIONAL",
+                "name": "Server",
+                "description": "",
+                "links": {
+                  "self": {
+                    "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/models/57c02538e4b028dd9382de1c/headers/57c0253be4b0a1d871a2f38e"
+                  },
+                  "model": {
+                    "parent": true,
+                    "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/models/57c02538e4b028dd9382de1c"
+                  }
+                },
+                "id": "57c0253be4b0a1d871a2f38e",
+                "type": "STRING",
+                "creationDate": 1472210235655,
+                "value": "Mashape/5.0.6",
+                "status": "ACTIVE"
+              }
+            ]
+          },
+          "took": 49,
+          "name": "/api/sentiment model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/models/57c02538e4b028dd9382de1c/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/models/57c02538e4b028dd9382de1c"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f"
+            }
+          },
+          "id": "57c02538e4b028dd9382de1c",
+          "body": "{\"text\":\"To new beginnings!\",\"status\":\"OK\",\"sentiment-text\":\"neutral\",\"sentiment-score\":0.471748,\"api-author\":\"https://github.com/djinn\"}",
+          "creationDate": 1472210232410,
+          "status": "ACTIVE"
+        },
+        "name": "/api/sentiment",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/endpoints/57c024c0e4b0e451de066722/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/endpoints/57c024c0e4b0e451de066722/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/models/57c02538e4b028dd9382de1c"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/endpoints/57c024c0e4b0e451de066722"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/endpoints/57c024c0e4b0e451de066722/parameters/"
+          }
+        },
+        "id": "57c024c0e4b0e451de066722",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "You have tons of product reviews, forex swaps, customer satisfaction reports, trading data and social tweets which if used could predict future outcome. However, where could you find a reliable API which predicts sentiment fast and with high accuracy. Now that is possible with us.",
+  "groups": {
+    "took": 17,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Fri Aug 26 11:14:30 UTC 2016",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/tags/"
+    },
+    "features": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/features/"
+    },
+    "plans": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa210ae4b07e1f4ebd7bd2/apis/57c02496e4b0e451de066720/versions/57c02496e4b0c56f6cb4703f/errors/"
+    }
+  },
+  "id": "57c02496e4b0c56f6cb4703f",
+  "status": "ACTIVE"
+}

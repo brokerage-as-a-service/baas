@@ -1,0 +1,302 @@
+{
+  "models": {
+    "took": 79,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "create-pdf-from-url-response",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Create-PDF-from-URL Response",
+        "format": "BINARY",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/models/53aa57efe4b0596140340cf4/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/models/53aa57efe4b0596140340cf4"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2"
+          }
+        },
+        "id": "53aa57efe4b0596140340cf4",
+        "creationDate": 1403672559752,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "-model",
+        "headers": {
+          "took": 18,
+          "total": 0,
+          "data": []
+        },
+        "name": "Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/models/53aa57efe4b0b60946a2fc05/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/models/53aa57efe4b0b60946a2fc05"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2"
+          }
+        },
+        "id": "53aa57efe4b0b60946a2fc05",
+        "body": "{\n  \"filename\": \"app1532840792.pdf\"\n}",
+        "creationDate": 1403672559688,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:46:02 UTC 2014",
+  "website": "http://www.robotbridge.com/",
+  "endpoints": {
+    "took": 70,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 20,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "format",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "format",
+              "description": "Format of the PDF to return - supported values - Letter,  A4",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/endpoints/53aa57efe4b0596140340cf6"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/endpoints/53aa57efe4b0596140340cf6/routeparameters/53aa57efe4b0a9b1348dacf9"
+                }
+              },
+              "id": "53aa57efe4b0a9b1348dacf9",
+              "type": "STRING",
+              "creationDate": 1403672559875,
+              "value": "Letter",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "url",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "url",
+              "description": "The URL of the web page to retrieve",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/endpoints/53aa57efe4b0596140340cf6"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/endpoints/53aa57efe4b0596140340cf6/routeparameters/53aa57efe4b0a798dbd1ac96"
+                }
+              },
+              "id": "53aa57efe4b0a798dbd1ac96",
+              "type": "STRING",
+              "creationDate": 1403672559832,
+              "value": "http://www.jefflinwood.com/",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403672559932,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403672559780,
+        "slugifiedPrimary": "create-pdf-from-url",
+        "routeregex": "/v1/pdf/create",
+        "route": "/v1/pdf/create",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "create-pdf-from-url-response",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 50,
+          "name": "Create-PDF-from-URL Response",
+          "format": "BINARY",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/models/53aa57efe4b0596140340cf4/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/models/53aa57efe4b0596140340cf4"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2"
+            }
+          },
+          "id": "53aa57efe4b0596140340cf4",
+          "creationDate": 1403672559752,
+          "status": "ACTIVE"
+        },
+        "name": "Create PDF from URL",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/endpoints/53aa57efe4b0596140340cf6/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/endpoints/53aa57efe4b0596140340cf6/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/models/53aa57efe4b0596140340cf4"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/endpoints/53aa57efe4b0596140340cf6"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/endpoints/53aa57efe4b0596140340cf6/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/groups/53aa57efe4b0b60946a2fc06"
+          }
+        },
+        "id": "53aa57efe4b0596140340cf6",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "pdf",
+          "took": 11,
+          "name": "PDF",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/groups/53aa57efe4b0b60946a2fc06"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2"
+            }
+          },
+          "id": "53aa57efe4b0b60946a2fc06",
+          "creationDate": 1403672559714,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "RobotBridge offers PDF conversion services for HTML web pages.\r\n\r\nCreate great looking forms, reports, letters, invoices, or resumes in your application using the latest HTML and CSS, and then turn those into PDF files.\r\n\r\nRobotBridge uses the open-source project WebKit to render HTML pages, just like Google's Chrome or Apple's Safari web browsers.",
+  "groups": {
+    "took": 34,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "pdf",
+        "name": "PDF",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/groups/53aa57efe4b0b60946a2fc06"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2"
+          }
+        },
+        "id": "53aa57efe4b0b60946a2fc06",
+        "creationDate": 1403672559714,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 05:02:39 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/objects/"
+    },
+    "groups": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/groups/"
+    },
+    "issues": {
+      "total": 5,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/features/"
+    },
+    "plans": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2558e4b002874719531f/apis/53aa57efe4b0596140340cf1/versions/53aa57efe4b0596140340cf2/errors/"
+    }
+  },
+  "id": "53aa57efe4b0596140340cf2",
+  "status": "ACTIVE"
+}

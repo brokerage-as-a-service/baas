@@ -1,0 +1,253 @@
+{
+  "models": {
+    "took": 241,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "botometer-request-payload",
+        "headers": {
+          "took": 45,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1496870958587,
+        "name": "Botometer request payload",
+        "format": "JSON",
+        "description": "\"user\" is an object containing information about the Twitter user. \"timeline\" is the user's timeline, an array of Tweet objects authored by the user. \"timeline\" and \"mentions\" are arrays of Tweet objects.  This request will only return a test response as-is -- note the ellipses. See the overview for more information.",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/models/58b491bfe4b0ff7c9acb5c18/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/models/58b491bfe4b0ff7c9acb5c18"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40"
+          }
+        },
+        "id": "58b491bfe4b0ff7c9acb5c18",
+        "body": "{\n\t\"user\": {\n\t\t\"id\": \"1234567890\",\n\t\t\"screen_name\": \"IUNetSci\"\n\t},\n\t\"timeline\": [{\n\t\t\t\"id\": 1234567890,\n\t\t\t\"text\": \"@Botometer is so cool!\",\n\t\t\t\"...\": \"...\"\n\t\t},\n\t\t\"...\"\n\t],\n\t\"mentions\": [{\n\t\t\t\"id\": 9876543210,\n\t\t\t\"text\": \"@TruthyAtIndiana is also cool!\",\n\t\t\t\"...\": \"...\"\n\t\t},\n\t\t\"...\"\n\t]\n}",
+        "creationDate": 1488228799526,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "botspotter-response",
+        "headers": {
+          "took": 31,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1494646866653,
+        "name": "BotSpotter response",
+        "format": "JSON",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/models/58b497b2e4b023e6f22acb02/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/models/58b497b2e4b023e6f22acb02"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40"
+          }
+        },
+        "id": "58b497b2e4b023e6f22acb02",
+        "body": "{\"categories\": {\"friend\": 0.45, \"sentiment\": 0.34, \"temporal\": 0.55, \"user\": 0.29, \"network\": 0.43, \"content\": 0.41}, \"user\": {\"screen_name\": \"IUNetSci\", \"id\": \"2375509748\"}, \"scores\": {\"english\": 0.34, \"universal\": 0.36}}",
+        "creationDate": 1488230322038,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Fri May 12 18:57:41 UTC 2017",
+  "website": "https://botometer.iuni.iu.edu",
+  "endpoints": {
+    "took": 280,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 44,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 44,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1496870958954,
+        "code": 200,
+        "method": "POST",
+        "description": "Analyze an account's bot score and category scores",
+        "creationDate": 1488228372825,
+        "slugifiedPrimary": "check-account",
+        "routeregex": "/2/check_account",
+        "route": "/2/check_account",
+        "payload": {
+          "slugifiedPrimary": "botometer-request-payload",
+          "headers": {
+            "took": 48,
+            "total": 0,
+            "data": []
+          },
+          "took": 105,
+          "updateDate": 1496870958587,
+          "name": "Botometer request payload",
+          "format": "JSON",
+          "description": "\"user\" is an object containing information about the Twitter user. \"timeline\" is the user's timeline, an array of Tweet objects authored by the user. \"timeline\" and \"mentions\" are arrays of Tweet objects.  This request will only return a test response as-is -- note the ellipses. See the overview for more information.",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/models/58b491bfe4b0ff7c9acb5c18/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/models/58b491bfe4b0ff7c9acb5c18"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40"
+            }
+          },
+          "id": "58b491bfe4b0ff7c9acb5c18",
+          "body": "{\n\t\"user\": {\n\t\t\"id\": \"1234567890\",\n\t\t\"screen_name\": \"IUNetSci\"\n\t},\n\t\"timeline\": [{\n\t\t\t\"id\": 1234567890,\n\t\t\t\"text\": \"@Botometer is so cool!\",\n\t\t\t\"...\": \"...\"\n\t\t},\n\t\t\"...\"\n\t],\n\t\"mentions\": [{\n\t\t\t\"id\": 9876543210,\n\t\t\t\"text\": \"@TruthyAtIndiana is also cool!\",\n\t\t\t\"...\": \"...\"\n\t\t},\n\t\t\"...\"\n\t]\n}",
+          "creationDate": 1488228799526,
+          "status": "ACTIVE"
+        },
+        "response": {
+          "slugifiedPrimary": "botspotter-response",
+          "headers": {
+            "took": 63,
+            "total": 0,
+            "data": []
+          },
+          "took": 114,
+          "updateDate": 1494646866653,
+          "name": "BotSpotter response",
+          "format": "JSON",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/models/58b497b2e4b023e6f22acb02/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/models/58b497b2e4b023e6f22acb02"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40"
+            }
+          },
+          "id": "58b497b2e4b023e6f22acb02",
+          "body": "{\"categories\": {\"friend\": 0.45, \"sentiment\": 0.34, \"temporal\": 0.55, \"user\": 0.29, \"network\": 0.43, \"content\": 0.41}, \"user\": {\"screen_name\": \"IUNetSci\", \"id\": \"2375509748\"}, \"scores\": {\"english\": 0.34, \"universal\": 0.36}}",
+          "creationDate": 1488230322038,
+          "status": "ACTIVE"
+        },
+        "name": "Check Account",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/endpoints/58b49014e4b0ff7c9acb5c17/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/endpoints/58b49014e4b0ff7c9acb5c17/routeparameters/"
+          },
+          "payload": {
+            "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/models/58b491bfe4b0ff7c9acb5c18"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/models/58b497b2e4b023e6f22acb02"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/endpoints/58b49014e4b0ff7c9acb5c17"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/endpoints/58b49014e4b0ff7c9acb5c17/parameters/"
+          }
+        },
+        "id": "58b49014e4b0ff7c9acb5c17",
+        "parameters": {
+          "took": 39,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Botometer (formerly Truthy BotOrNot) checks the activity of a Twitter account and gives it a score based on how likely the account is to be a bot. Higher scores are more bot-like.",
+  "groups": {
+    "took": 106,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Mon Feb 27 20:33:37 UTC 2017",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/groups/"
+    },
+    "issues": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/features/"
+    },
+    "plans": {
+      "total": 5,
+      "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08"
+    },
+    "wikis": {
+      "total": 5,
+      "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/58b48ed7e4b0caea3dcce3d9/apis/58b48d21e4b0ff7c9acb5c08/versions/58b48d21e4b058ea0ca25b40/errors/"
+    }
+  },
+  "id": "58b48d21e4b058ea0ca25b40",
+  "status": "ACTIVE"
+}

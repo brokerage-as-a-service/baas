@@ -1,0 +1,420 @@
+{
+  "models": {
+    "took": 32,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "video-ocr-result",
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1415105334778,
+        "name": "Video OCR Result",
+        "format": "TEXT",
+        "description": "describes the result .zip package structure",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/models/5458b11de4b0686955714189/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/models/5458b11de4b0686955714189"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a"
+          }
+        },
+        "id": "5458b11de4b0686955714189",
+        "body": "Example.zip/\n├── segmentation/\n│    ├── segments.csv\n│    └── images/1.jpg 2.jpg ...\n├── ocr/\n│    └── recognition/recognition.xml\n└── ner/\n     └── ner.xml",
+        "creationDate": 1415098653153,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "website": "https://www.semamediadata.com/api/documentation/#video-ocr",
+  "updateDate": "Tue Nov 04 11:13:42 UTC 2014",
+  "endpoints": {
+    "took": 254,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 40,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "content-type",
+              "condition": "REQUIRED",
+              "name": "Content-Type",
+              "description": "",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7/headers/5458cb96e4b06ca1d66ae3f2"
+                }
+              },
+              "id": "5458cb96e4b06ca1d66ae3f2",
+              "type": "STRING",
+              "creationDate": 1415105430702,
+              "value": "multipart/form-data",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "routeparameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1415105334914,
+        "code": 202,
+        "method": "POST",
+        "description": "video OCR is an analysis cascade which includes video segmentation (hard-cut), video text detection/recognition, and named entity recognition from video text (NER is a free add-on feature). The analysis result of this method enables automatic video retrieval and indexing as well as content-based video search in video archives. A detailed example can be found in our demo website.",
+        "creationDate": 1415098010025,
+        "slugifiedPrimary": "video-ocr",
+        "routeregex": "/",
+        "route": "/",
+        "response": {
+          "slugifiedPrimary": "video-ocr-result",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 18,
+          "updateDate": 1415105334778,
+          "name": "Video OCR Result",
+          "format": "TEXT",
+          "description": "describes the result .zip package structure",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/models/5458b11de4b0686955714189/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/models/5458b11de4b0686955714189"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a"
+            }
+          },
+          "id": "5458b11de4b0686955714189",
+          "body": "Example.zip/\n├── segmentation/\n│    ├── segments.csv\n│    └── images/1.jpg 2.jpg ...\n├── ocr/\n│    └── recognition/recognition.xml\n└── ner/\n     └── ner.xml",
+          "creationDate": 1415098653153,
+          "status": "ACTIVE"
+        },
+        "name": "Video OCR",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/models/5458b11de4b0686955714189"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7/parameters/"
+          }
+        },
+        "id": "5458ae9ae4b0fbfe26b488a7",
+        "parameters": {
+          "took": 237,
+          "total": 10,
+          "data": [
+            {
+              "slugifiedPrimary": "callback",
+              "updateDate": 1415105955020,
+              "condition": "REQUIRED",
+              "name": "callback",
+              "description": "is a url provided by client, after the analysis a POST request will be sent using this url and the client can obtain a download link of the analysis result by reading the POST-parameter 'Download_Link'.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7/parameters/5458af5ae4b0fbfe26b488aa"
+                }
+              },
+              "id": "5458af5ae4b0fbfe26b488aa",
+              "type": "STRING",
+              "creationDate": 1415098202580,
+              "value": "[put your callback url here]",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "df",
+              "condition": "OPTIONAL",
+              "name": "df",
+              "description": "True or False, default is False. When df=True then the dictionary-based word-filtering process will be performed. Note that the supported languages are English, German, Spanish, French, Russian, Italian.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7/parameters/5458b02be4b00ab3a4ffab78"
+                }
+              },
+              "id": "5458b02be4b00ab3a4ffab78",
+              "type": "STRING",
+              "creationDate": 1415098411796,
+              "value": "False",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "file",
+              "condition": "REQUIRED",
+              "name": "file",
+              "description": "absolute path to your video file",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7/parameters/5458af03e4b0d3634dd592c0"
+                }
+              },
+              "id": "5458af03e4b0d3634dd592c0",
+              "type": "BINARY",
+              "creationDate": 1415098115875,
+              "value": "",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "itype",
+              "condition": "OPTIONAL",
+              "name": "itype",
+              "description": "Specify a image type, a proper configuration will be used for this type. The available types are:'overlay' for overlay text images; 'digital' for born-digital images; 'hd' for overlay text images with HD or larger resolution; 'other' a more general configuration. By default (without type specification) an adaptive algorithm will be used to select the configuration dynamically.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7/parameters/5458b050e4b0ec5d7910fbcc"
+                }
+              },
+              "id": "5458b050e4b0ec5d7910fbcc",
+              "type": "STRING",
+              "creationDate": 1415098448818,
+              "value": "",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "lang",
+              "updateDate": 1415098163746,
+              "condition": "REQUIRED",
+              "name": "lang",
+              "description": "[language code, the supported language codes for this method include: en: English  de: German  spa: Spanish  fr: French  ita: Italian  rus: Russian  zh: Chinese Simplified  zh_t: Chinese Traditional",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7/parameters/5458af2be4b06dcf7edf43d9"
+                }
+              },
+              "id": "5458af2be4b06dcf7edf43d9",
+              "type": "STRING",
+              "creationDate": 1415098155055,
+              "value": "en",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "mh",
+              "condition": "OPTIONAL",
+              "name": "mh",
+              "description": "True or False, default is False. When mh=True then a multi-hypothesis analysis will be performed. This will increase the accuracy but also the execution time. Note that the supported languages are English, German, Spanish, French, Russian, Italian.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7/parameters/5458b017e4b00ab3a4ffab77"
+                }
+              },
+              "id": "5458b017e4b00ab3a4ffab77",
+              "type": "STRING",
+              "creationDate": 1415098391807,
+              "value": "False",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "ner",
+              "condition": "OPTIONAL",
+              "name": "ner",
+              "description": "True or False, default is False. When ner=True then the named entity recognition will be performed on OCR results. Note that this is a free add-on feature. NER supported Languages are English, German, Chinese Simplified.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7/parameters/5458b040e4b0fbfe26b488ac"
+                }
+              },
+              "id": "5458b040e4b0fbfe26b488ac",
+              "type": "STRING",
+              "creationDate": 1415098432421,
+              "value": "False",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "nocut",
+              "condition": "OPTIONAL",
+              "name": "nocut",
+              "description": "True or False, default is False. nocut=True means that the submitted video is raw video material without any post-production. Therefore no hard or soft camera transition can be found in this video. For this case a specific method will be used for video segmentation task.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7/parameters/5458b067e4b0af6fe29d525c"
+                }
+              },
+              "id": "5458b067e4b0af6fe29d525c",
+              "type": "STRING",
+              "creationDate": 1415098471546,
+              "value": "False",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "sp",
+              "condition": "OPTIONAL",
+              "name": "sp",
+              "description": "True or False, default is False. When sp=True then a spell correction process will be performed. Note that the supported languages are English, German, Spanish, French, Russian, Italian.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7/parameters/5458b007e4b0686955714184"
+                }
+              },
+              "id": "5458b007e4b0686955714184",
+              "type": "STRING",
+              "creationDate": 1415098375015,
+              "value": "False",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "uc",
+              "condition": "OPTIONAL",
+              "name": "uc",
+              "description": "True or False, default is True. When uc=False, then the classifier-based text verification process will be deactivated, which will increase the recall but lower the precision of the result.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/5458ae9ae4b0fbfe26b488a7/parameters/5458aff8e4b0686955714183"
+                }
+              },
+              "id": "5458aff8e4b0686955714183",
+              "type": "STRING",
+              "creationDate": 1415098360026,
+              "value": "True",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "video OCR is an analysis cascade which includes video segmentation (hard-cut), video text detection/recognition, and named entity recognition from video text (NER is a free add-on feature). The analysis result of this method enables automatic video retrieval and indexing as well as content-based video search in video archives. A detailed example can be found in our demo website: https://www.semamediadata.com/demo/video-ocr/",
+  "groups": {
+    "took": 4,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Tue Nov 04 10:41:49 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5447627ae4b0648e901cee04/apis/5458ad6de4b00ab3a4ffab70/versions/5458ad6de4b068695571417a/errors/"
+    }
+  },
+  "id": "5458ad6de4b068695571417a",
+  "status": "ACTIVE"
+}

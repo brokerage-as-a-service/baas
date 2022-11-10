@@ -1,0 +1,697 @@
+{
+  "models": {
+    "took": 45,
+    "total": 0,
+    "data": []
+  },
+  "website": "https://bitcoinaverage.com/",
+  "updateDate": "Thu Sep 29 09:34:38 UTC 2016",
+  "endpoints": {
+    "took": 333,
+    "total": 5,
+    "data": [
+      {
+        "headers": {
+          "took": 13,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "x-signature",
+              "condition": "OPTIONAL",
+              "name": "X-Signature",
+              "description": "The signature used for authentication. There is description in the official documentation how to create the signature.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec07a9e4b0faf779ae9ee5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec07a9e4b0faf779ae9ee5/headers/57ec0b7ce4b0faf779ae9f20"
+                }
+              },
+              "id": "57ec0b7ce4b0faf779ae9f20",
+              "type": "STRING",
+              "creationDate": 1475087228786,
+              "value": "",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "routeparameters": {
+          "took": 82,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "exchanges",
+              "condition": "OPTIONAL",
+              "name": "exchanges",
+              "description": "Comma separated list of exchanges.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec07a9e4b0faf779ae9ee5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec07a9e4b0faf779ae9ee5/routeparameters/57ec0bf9e4b0faf779ae9f28"
+                }
+              },
+              "id": "57ec0bf9e4b0faf779ae9f28",
+              "type": "STRING",
+              "creationDate": 1475087353411,
+              "value": "bitfinex,bitstamp",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "inex",
+              "updateDate": 1475087136524,
+              "condition": "REQUIRED",
+              "name": "inex",
+              "description": "include - if you want the ticker to be calculated using only the exchanges sent as query parameter; exclude - if you want the price to be calculated using all exchanges, but the ones sent as query parameter.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec07a9e4b0faf779ae9ee5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec07a9e4b0faf779ae9ee5/routeparameters/57ec07aae4b02b08e6ad89fb"
+                }
+              },
+              "id": "57ec07aae4b02b08e6ad89fb",
+              "type": "STRING",
+              "creationDate": 1475086250205,
+              "value": "include",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "symbol",
+              "updateDate": 1475087176839,
+              "condition": "REQUIRED",
+              "name": "symbol",
+              "description": "BTC<fiat> where <fiat> is valid ISO currency (ex. BTCUSD)",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec07a9e4b0faf779ae9ee5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec07a9e4b0faf779ae9ee5/routeparameters/57ec07aae4b02b08e6ad89fc"
+                }
+              },
+              "id": "57ec07aae4b02b08e6ad89fc",
+              "type": "STRING",
+              "creationDate": 1475086250360,
+              "value": "BTCUSD",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "code": 200,
+        "method": "GET",
+        "description": "This endpoint can be used to generate a custom index in a certain currency. The “inex” path parameter represents “include” or “exclude”, you can choose to generate an index removing specified exchanges, or only including the few that you require.",
+        "creationDate": 1475086249879,
+        "slugifiedPrimary": "custom-ticker",
+        "routeregex": "/indices/ticker/custom/([^/?]+)/([^/?]+)",
+        "route": "/indices/ticker/custom/{inex}/{symbol}",
+        "name": "Custom Ticker",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec07a9e4b0faf779ae9ee5/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec07a9e4b0faf779ae9ee5/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec07a9e4b0faf779ae9ee5"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec07a9e4b0faf779ae9ee5/parameters/"
+          }
+        },
+        "id": "57ec07a9e4b0faf779ae9ee5",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 14,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "x-signature",
+              "condition": "OPTIONAL",
+              "name": "X-Signature",
+              "description": "The signature used for authentication. There is description in the official documentation how to create the signature.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec02fae4b0c681e4af0ddd"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec02fae4b0c681e4af0ddd/headers/57ec0371e4b0597e1dbb4faf"
+                }
+              },
+              "id": "57ec0371e4b0597e1dbb4faf",
+              "type": "STRING",
+              "creationDate": 1475085169611,
+              "value": "",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "routeparameters": {
+          "took": 26,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "crypto",
+              "condition": "OPTIONAL",
+              "name": "crypto",
+              "description": "Valid value: BTC",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec02fae4b0c681e4af0ddd"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec02fae4b0c681e4af0ddd/routeparameters/57ee82dae4b0c681e4af1a57"
+                }
+              },
+              "id": "57ee82dae4b0c681e4af1a57",
+              "type": "STRING",
+              "creationDate": 1475248858074,
+              "value": "BTC",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "fiats",
+              "condition": "OPTIONAL",
+              "name": "fiats",
+              "description": "If fiats parameter is included then only the values for those fiats will be returned (BTCUSD and BTCEUR in this example). If it's missing, then the response will contain ticker values of all available fiats for BTC.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec02fae4b0c681e4af0ddd"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec02fae4b0c681e4af0ddd/routeparameters/57ee82fae4b02b08e6ad9649"
+                }
+              },
+              "id": "57ee82fae4b02b08e6ad9649",
+              "type": "STRING",
+              "creationDate": 1475248890115,
+              "value": "USD,EUR",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "market",
+              "updateDate": 1475085089159,
+              "condition": "REQUIRED",
+              "name": "market",
+              "description": "Possible values: global, local",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec02fae4b0c681e4af0ddd"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec02fae4b0c681e4af0ddd/routeparameters/57ec02fae4b0597e1dbb4fab"
+                }
+              },
+              "id": "57ec02fae4b0597e1dbb4fab",
+              "type": "STRING",
+              "creationDate": 1475085050921,
+              "value": "global",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1475100881521,
+        "code": 200,
+        "method": "GET",
+        "description": "Returns basic ticker denoting last and daily average price for all symbols",
+        "creationDate": 1475085050858,
+        "slugifiedPrimary": "short-ticker",
+        "routeregex": "/indices/([^/?]+)/ticker/short",
+        "route": "/indices/{market}/ticker/short",
+        "name": "Short Ticker",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec02fae4b0c681e4af0ddd/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec02fae4b0c681e4af0ddd/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec02fae4b0c681e4af0ddd"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec02fae4b0c681e4af0ddd/parameters/"
+          }
+        },
+        "id": "57ec02fae4b0c681e4af0ddd",
+        "parameters": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 13,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "x-signature",
+              "condition": "OPTIONAL",
+              "updateDate": 1475087210616,
+              "name": "X-Signature",
+              "description": "The signature used for authentication. There is description in the official documentation how to create the signature.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec06f2e4b0615fc075e8eb"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec06f2e4b0615fc075e8eb/headers/57ec074de4b0c681e4af0e0c"
+                }
+              },
+              "id": "57ec074de4b0c681e4af0e0c",
+              "type": "STRING",
+              "creationDate": 1475086157485,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "routeparameters": {
+          "took": 61,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "market",
+              "updateDate": 1475086082260,
+              "condition": "REQUIRED",
+              "name": "market",
+              "description": "Possible values: global, local",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec06f2e4b0615fc075e8eb"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec06f2e4b0615fc075e8eb/routeparameters/57ec06f2e4b0597e1dbb4fde"
+                }
+              },
+              "id": "57ec06f2e4b0597e1dbb4fde",
+              "type": "STRING",
+              "creationDate": 1475086066799,
+              "value": "local",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "symbol",
+              "updateDate": 1475086126257,
+              "condition": "REQUIRED",
+              "name": "symbol",
+              "description": "Possible values: BTC<fiat> where <fiat> is valid ISO currency (ex. BTCUSD)",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec06f2e4b0615fc075e8eb"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec06f2e4b0615fc075e8eb/routeparameters/57ec06f2e4b005ac6f42a709"
+                }
+              },
+              "id": "57ec06f2e4b005ac6f42a709",
+              "type": "STRING",
+              "creationDate": 1475086066856,
+              "value": "BTCUSD",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "code": 200,
+        "method": "GET",
+        "description": "Returns ticker values and price changes for specified market and symbol.",
+        "creationDate": 1475086066746,
+        "slugifiedPrimary": "ticker-changes",
+        "routeregex": "/indices/([^/?]+)/ticker/([^/?]+)/changes",
+        "route": "/indices/{market}/ticker/{symbol}/changes",
+        "name": "Ticker Changes",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec06f2e4b0615fc075e8eb/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec06f2e4b0615fc075e8eb/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec06f2e4b0615fc075e8eb"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ec06f2e4b0615fc075e8eb/parameters/"
+          }
+        },
+        "id": "57ec06f2e4b0615fc075e8eb",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 34,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "x-signature",
+              "condition": "REQUIRED",
+              "updateDate": 1475069079272,
+              "name": "X-Signature",
+              "description": "The signature used for authentication. There is description in the official documentation how to create the signature.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ebbdf0e4b0597e1dbb4b94"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ebbdf0e4b0597e1dbb4b94/headers/57ebbe9ae4b0c681e4af0aa3"
+                }
+              },
+              "id": "57ebbe9ae4b0c681e4af0aa3",
+              "type": "STRING",
+              "creationDate": 1475067546392,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "routeparameters": {
+          "took": 26,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "crypto",
+              "condition": "OPTIONAL",
+              "name": "crypto",
+              "description": "valid value: BTC",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ebbdf0e4b0597e1dbb4b94"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ebbdf0e4b0597e1dbb4b94/routeparameters/57ebbe21e4b071c9cf1aab2f"
+                }
+              },
+              "id": "57ebbe21e4b071c9cf1aab2f",
+              "type": "STRING",
+              "creationDate": 1475067425277,
+              "value": "BTC",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "fiat",
+              "condition": "OPTIONAL",
+              "name": "fiat",
+              "description": "Comma separated list of ISO currency codes (ex. USD,EUR)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ebbdf0e4b0597e1dbb4b94"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ebbdf0e4b0597e1dbb4b94/routeparameters/57ebbe87e4b071c9cf1aab35"
+                }
+              },
+              "id": "57ebbe87e4b071c9cf1aab35",
+              "type": "STRING",
+              "creationDate": 1475067527790,
+              "value": "USD,EUR",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "market",
+              "updateDate": 1475067405953,
+              "condition": "REQUIRED",
+              "name": "market",
+              "description": "Possible values: global, local",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ebbdf0e4b0597e1dbb4b94"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ebbdf0e4b0597e1dbb4b94/routeparameters/57ebbdf0e4b0597e1dbb4b95"
+                }
+              },
+              "id": "57ebbdf0e4b0597e1dbb4b95",
+              "type": "STRING",
+              "creationDate": 1475067376669,
+              "value": "local",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "code": 200,
+        "method": "GET",
+        "description": "If no query parameters are sent, then returns ticker data for every supported symbol. If fiat(s) are sent as parameters, then only the ticker for those values is sent.",
+        "creationDate": 1475067376621,
+        "slugifiedPrimary": "ticker-data",
+        "routeregex": "/indices/([^/?]+)/ticker/all",
+        "route": "/indices/{market}/ticker/all",
+        "name": "Ticker Data",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ebbdf0e4b0597e1dbb4b94/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ebbdf0e4b0597e1dbb4b94/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ebbdf0e4b0597e1dbb4b94"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ebbdf0e4b0597e1dbb4b94/parameters/"
+          }
+        },
+        "id": "57ebbdf0e4b0597e1dbb4b94",
+        "parameters": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 14,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "x-signature",
+              "condition": "OPTIONAL",
+              "updateDate": 1475069065605,
+              "name": "X-Signature",
+              "description": "The signature used for authentication. There is description in the official documentation how to create the signature.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ebc40de4b071c9cf1aab83"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ebc40de4b071c9cf1aab83/headers/57ebc47fe4b0615fc075e4b6"
+                }
+              },
+              "id": "57ebc47fe4b0615fc075e4b6",
+              "type": "STRING",
+              "creationDate": 1475069055088,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "routeparameters": {
+          "took": 53,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "market",
+              "updateDate": 1475068962437,
+              "condition": "REQUIRED",
+              "name": "market",
+              "description": "Possible values: global, local",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ebc40de4b071c9cf1aab83"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ebc40de4b071c9cf1aab83/routeparameters/57ebc40de4b071c9cf1aab84"
+                }
+              },
+              "id": "57ebc40de4b071c9cf1aab84",
+              "type": "STRING",
+              "creationDate": 1475068941818,
+              "value": "global",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "symbol",
+              "updateDate": 1475069034139,
+              "condition": "REQUIRED",
+              "name": "symbol",
+              "description": "BTC<fiat>, where <fiat> is valid ISO currency (ex. BTCUSD, BTCEUR)",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ebc40de4b071c9cf1aab83"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ebc40de4b071c9cf1aab83/routeparameters/57ebc40ee4b071c9cf1aab85"
+                }
+              },
+              "id": "57ebc40ee4b071c9cf1aab85",
+              "type": "STRING",
+              "creationDate": 1475068942029,
+              "value": "BTCUSD",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "code": 200,
+        "method": "GET",
+        "description": "Returns ticker data for specified symbol",
+        "creationDate": 1475068941569,
+        "slugifiedPrimary": "ticker-per-symbol",
+        "routeregex": "/indices/([^/?]+)/ticker/([^/?]+)",
+        "route": "/indices/{market}/ticker/{symbol}",
+        "name": "Ticker Per Symbol",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ebc40de4b071c9cf1aab83/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ebc40de4b071c9cf1aab83/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ebc40de4b071c9cf1aab83"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/57ebc40de4b071c9cf1aab83/parameters/"
+          }
+        },
+        "id": "57ebc40de4b071c9cf1aab83",
+        "parameters": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "BitcoinAverage.com is proud of the fact that we were the first global price index in the cryptocurrency and blockchain industry, and have proven over the years to also be one of the most reliable. It is considered by most as the de facto standard bitcoin price index.\r\n\r\nIt is trusted by thousands of users across hundreds the world’s leading websites, apps, services and businesses. With our historical bitcoin price data stretching back to 2010, this index is perfect for a multitude of uses from reporting, invoicing, payment processing, analysis and accounting, as well as a plethora of integrations with different types of software.\r\n\r\nUsers receive a weighted price calculated by our algorithms that factor in exchange activity, liquidity and different fee methodologies.\r\n\r\nThe GBX data accessed via the BitcoinAverage API features:\r\n\r\nUp to 1 second refresh rate\r\nRates for 165+ currencies\r\nDaily rates at preferred lock in time or live rates\r\nHistoric daily rates dating back to 2010\r\nJSON or CSV formats",
+  "groups": {
+    "took": 57,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Sep 28 12:42:35 UTC 2016",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/astronode"
+    },
+    "endpoints": {
+      "total": 5,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2526e4b0a9b1348cca21/apis/57ebbabbe4b0faf779ae9a5c/versions/57ebbabbe4b0faf779ae9a5d/errors/"
+    }
+  },
+  "id": "57ebbabbe4b0faf779ae9a5d",
+  "status": "ACTIVE"
+}

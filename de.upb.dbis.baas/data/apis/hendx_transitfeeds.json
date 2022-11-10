@@ -1,0 +1,363 @@
+{
+  "models": {
+    "took": 40,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "getfeedversions-response",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "getFeedVersions Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/models/53aa586ee4b0a798dbd1ae06/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/models/53aa586ee4b0a798dbd1ae06"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a"
+          }
+        },
+        "id": "53aa586ee4b0a798dbd1ae06",
+        "creationDate": 1403672686988,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "getlatestfeedversion-response",
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "name": "getLatestFeedVersion Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/models/53aa586fe4b07e1f4ebebc33/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/models/53aa586fe4b07e1f4ebebc33"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a"
+          }
+        },
+        "id": "53aa586fe4b07e1f4ebebc33",
+        "creationDate": 1403672687229,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:41:38 UTC 2014",
+  "website": "http://transitfeeds.com/api",
+  "endpoints": {
+    "took": 140,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 66,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "feed",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "feed",
+              "description": "Restrict results to to the given feed ID",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/endpoints/53aa586fe4b0596140340e6c"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/endpoints/53aa586fe4b0596140340e6c/routeparameters/53aa586fe4b07e1f4ebebc32"
+                }
+              },
+              "id": "53aa586fe4b07e1f4ebebc32",
+              "type": "STRING",
+              "creationDate": 1403672687118,
+              "value": "sfmta/60",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "page",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "page",
+              "description": "The page of results to return",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/endpoints/53aa586fe4b0596140340e6c"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/endpoints/53aa586fe4b0596140340e6c/routeparameters/53aa586fe4b0a9b1348dae83"
+                }
+              },
+              "id": "53aa586fe4b0a9b1348dae83",
+              "type": "STRING",
+              "creationDate": 1403672687174,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403672687501,
+        "code": 200,
+        "method": "GET",
+        "description": "Retrieve a list of feed versions. This list can be filtered by a number of input parameters",
+        "creationDate": 1403672687026,
+        "slugifiedPrimary": "getfeedversions",
+        "routeregex": "/getFeedVersions",
+        "route": "/getFeedVersions",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "getfeedversions-response",
+          "headers": {
+            "took": 21,
+            "total": 0,
+            "data": []
+          },
+          "took": 30,
+          "name": "getFeedVersions Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/models/53aa586ee4b0a798dbd1ae06/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/models/53aa586ee4b0a798dbd1ae06"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a"
+            }
+          },
+          "id": "53aa586ee4b0a798dbd1ae06",
+          "creationDate": 1403672686988,
+          "status": "ACTIVE"
+        },
+        "name": "getFeedVersions",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/endpoints/53aa586fe4b0596140340e6c/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/endpoints/53aa586fe4b0596140340e6c/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/models/53aa586ee4b0a798dbd1ae06"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/endpoints/53aa586fe4b0596140340e6c"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/endpoints/53aa586fe4b0596140340e6c/parameters/"
+          }
+        },
+        "id": "53aa586fe4b0596140340e6c",
+        "parameters": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 13,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "feed",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "feed",
+              "description": "The ID of the feed to download",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/endpoints/53aa586fe4b0596140340e6d"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/endpoints/53aa586fe4b0596140340e6d/routeparameters/53aa586fe4b07e1f4ebebc34"
+                }
+              },
+              "id": "53aa586fe4b07e1f4ebebc34",
+              "type": "STRING",
+              "creationDate": 1403672687338,
+              "value": "sfmta/60",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403672687545,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403672687254,
+        "slugifiedPrimary": "getlatestfeedversion",
+        "routeregex": "/getLatestFeedVersion",
+        "route": "/getLatestFeedVersion",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "getlatestfeedversion-response",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 18,
+          "name": "getLatestFeedVersion Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/models/53aa586fe4b07e1f4ebebc33/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/models/53aa586fe4b07e1f4ebebc33"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a"
+            }
+          },
+          "id": "53aa586fe4b07e1f4ebebc33",
+          "creationDate": 1403672687229,
+          "status": "ACTIVE"
+        },
+        "name": "getLatestFeedVersion",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/endpoints/53aa586fe4b0596140340e6d/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/endpoints/53aa586fe4b0596140340e6d/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/models/53aa586fe4b07e1f4ebebc33"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/endpoints/53aa586fe4b0596140340e6d"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/endpoints/53aa586fe4b0596140340e6d/parameters/"
+          }
+        },
+        "id": "53aa586fe4b0596140340e6d",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "An extensive collection of official public transit data from around the world, including GTFS, GTFS-RealTime and more.",
+  "groups": {
+    "took": 6,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:04:46 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2602e4b051a76d234bc6/apis/53aa586ee4b0596140340e69/versions/53aa586ee4b051a76d24108a/authentication"
+    }
+  },
+  "id": "53aa586ee4b051a76d24108a",
+  "status": "ACTIVE"
+}

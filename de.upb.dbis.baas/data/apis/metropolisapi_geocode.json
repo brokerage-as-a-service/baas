@@ -1,0 +1,218 @@
+{
+  "models": {
+    "took": 75,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "solve-result",
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "name": "solve result",
+        "format": "JSON",
+        "description": "Example - JSON response of solve endpoint",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/models/53aa5a6ae4b05961403412da/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/models/53aa5a6ae4b05961403412da"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460"
+          }
+        },
+        "id": "53aa5a6ae4b05961403412da",
+        "body": "{\n  \"latitude\": \"-23.564757\",\n  \"grade\": \"VERY GOOD\",\n  \"valid\": true,\n  \"longitude\": \"-46.651849\",\n  \"api-message\": \"\"\n}",
+        "creationDate": 1403673194662,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Wed Jun 25 07:37:40 UTC 2014",
+  "website": "http://www.metropolisAPI.com",
+  "endpoints": {
+    "took": 95,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 43,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "address",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "address",
+              "description": "Address to be Geocoded (Format expected: Street, City, State, ZipCode and Country)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/endpoints/53aa5a6ae4b07e1f4ebec074"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/endpoints/53aa5a6ae4b07e1f4ebec074/routeparameters/53aa5a6ae4b0b60946a30228"
+                }
+              },
+              "id": "53aa5a6ae4b0b60946a30228",
+              "type": "STRING",
+              "creationDate": 1403673194760,
+              "value": "Av Paulista 1000 Sao Paulo SP 01310-100 Brazil",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403673194916,
+        "code": 200,
+        "method": "GET",
+        "description": "The API takes the provided address and returns the latitude and longitude for the desired location.",
+        "creationDate": 1403673194694,
+        "slugifiedPrimary": "solve",
+        "routeregex": "/solve",
+        "route": "/solve",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "solve-result",
+          "headers": {
+            "took": 5,
+            "total": 0,
+            "data": []
+          },
+          "took": 17,
+          "name": "solve result",
+          "format": "JSON",
+          "description": "Example - JSON response of solve endpoint",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/models/53aa5a6ae4b05961403412da/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/models/53aa5a6ae4b05961403412da"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460"
+            }
+          },
+          "id": "53aa5a6ae4b05961403412da",
+          "body": "{\n  \"latitude\": \"-23.564757\",\n  \"grade\": \"VERY GOOD\",\n  \"valid\": true,\n  \"longitude\": \"-46.651849\",\n  \"api-message\": \"\"\n}",
+          "creationDate": 1403673194662,
+          "status": "ACTIVE"
+        },
+        "name": "solve",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/endpoints/53aa5a6ae4b07e1f4ebec074/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/endpoints/53aa5a6ae4b07e1f4ebec074/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/models/53aa5a6ae4b05961403412da"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/endpoints/53aa5a6ae4b07e1f4ebec074"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/endpoints/53aa5a6ae4b07e1f4ebec074/parameters/"
+          }
+        },
+        "id": "53aa5a6ae4b07e1f4ebec074",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Metropolis Geocode finds the associated geographic coordinates (latitude and longitude) from a given worldwide address provided.\r\n\r\nMetropolis can turn any address data of yours into latitude longitude values.  Plain and Simple.",
+  "groups": {
+    "took": 56,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:13:14 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa25d6e4b0a9b1348cd85e/apis/53aa5a6ae4b05961403412d7/versions/53aa5a6ae4b00287471a2460/errors/"
+    }
+  },
+  "id": "53aa5a6ae4b00287471a2460",
+  "status": "ACTIVE"
+}

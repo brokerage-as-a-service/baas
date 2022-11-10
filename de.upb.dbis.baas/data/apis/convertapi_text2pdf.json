@@ -1,0 +1,377 @@
+{
+  "models": {
+    "took": 31,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "convert-file-response",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "Convert-File Response",
+        "format": "BINARY",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/models/53aa4a06e4b0f2c97546fd76/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/models/53aa4a06e4b0f2c97546fd76"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e"
+          }
+        },
+        "id": "53aa4a06e4b0f2c97546fd76",
+        "creationDate": 1403668998851,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:39:47 UTC 2014",
+  "website": "http://www.convertapi.com/text-pdf-api",
+  "endpoints": {
+    "took": 231,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403668999163,
+        "code": 200,
+        "method": "POST",
+        "description": "Post file to server",
+        "creationDate": 1403668998890,
+        "slugifiedPrimary": "convert-file",
+        "routeregex": "/",
+        "route": "/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "convert-file-response",
+          "headers": {
+            "took": 19,
+            "total": 0,
+            "data": []
+          },
+          "took": 33,
+          "name": "Convert-File Response",
+          "format": "BINARY",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/models/53aa4a06e4b0f2c97546fd76/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/models/53aa4a06e4b0f2c97546fd76"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e"
+            }
+          },
+          "id": "53aa4a06e4b0f2c97546fd76",
+          "creationDate": 1403668998851,
+          "status": "ACTIVE"
+        },
+        "name": "Convert File",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/53aa4a06e4b051a76d2403d7/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/53aa4a06e4b051a76d2403d7/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/models/53aa4a06e4b0f2c97546fd76"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/53aa4a06e4b051a76d2403d7"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/53aa4a06e4b051a76d2403d7/parameters/"
+          }
+        },
+        "id": "53aa4a06e4b051a76d2403d7",
+        "parameters": {
+          "took": 214,
+          "total": 9,
+          "data": [
+            {
+              "slugifiedPrimary": "alternativeparser",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "AlternativeParser",
+              "description": "If some objects are missing in converted Pdf files from original source files this option can be enabled to improve conversion. The option process files much slower and should be disabled by default.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/53aa4a06e4b051a76d2403d7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/53aa4a06e4b051a76d2403d7/parameters/53aa4a07e4b00287471a1392"
+                }
+              },
+              "id": "53aa4a07e4b00287471a1392",
+              "type": "BOOLEAN",
+              "creationDate": 1403668999284,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "documentauthor",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "DocumentAuthor",
+              "description": "Set the author of the generated Pdf file. If value is not set a source document author is used instead.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/53aa4a06e4b051a76d2403d7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/53aa4a06e4b051a76d2403d7/parameters/53aa4a07e4b0f2c97546fd7a"
+                }
+              },
+              "id": "53aa4a07e4b0f2c97546fd7a",
+              "type": "STRING",
+              "creationDate": 1403668999625,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "documentkeywords",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "DocumentKeywords",
+              "description": "Set the keywords of the generated Pdf file. If value is not set a source document keywords is used instead.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/53aa4a06e4b051a76d2403d7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/53aa4a06e4b051a76d2403d7/parameters/53aa4a07e4b00287471a1394"
+                }
+              },
+              "id": "53aa4a07e4b00287471a1394",
+              "type": "STRING",
+              "creationDate": 1403668999716,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "documentsubject",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "DocumentSubject",
+              "description": "Set the subject of the generated Pdf file. If value is not set a source document subject is used instead.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/53aa4a06e4b051a76d2403d7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/53aa4a06e4b051a76d2403d7/parameters/53aa4a07e4b0f2c97546fd79"
+                }
+              },
+              "id": "53aa4a07e4b0f2c97546fd79",
+              "type": "STRING",
+              "creationDate": 1403668999541,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "documenttitle",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "DocumentTitle",
+              "description": "Set the title of the generated Pdf file. If value is not set a source document title is used instead.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/53aa4a06e4b051a76d2403d7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/53aa4a06e4b051a76d2403d7/parameters/53aa4a07e4b0f2c97546fd78"
+                }
+              },
+              "id": "53aa4a07e4b0f2c97546fd78",
+              "type": "STRING",
+              "creationDate": 1403668999456,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "file",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "File",
+              "description": "Supported files: txt, log",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/53aa4a06e4b051a76d2403d7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/53aa4a06e4b051a76d2403d7/parameters/53aa4a07e4b051a76d2403d8"
+                }
+              },
+              "id": "53aa4a07e4b051a76d2403d8",
+              "type": "BINARY",
+              "creationDate": 1403668999005,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "outputformat",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "OutputFormat",
+              "description": "Set the output file format, supported: pdf, pdfa, png, jpg, tif. The default output format is Pdf. If output format is set to png or jpg a image file will be created for every converted document page and returned as zip file.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/53aa4a06e4b051a76d2403d7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/53aa4a06e4b051a76d2403d7/parameters/53aa4a07e4b051a76d2403d9"
+                }
+              },
+              "id": "53aa4a07e4b051a76d2403d9",
+              "type": "STRING",
+              "creationDate": 1403668999094,
+              "value": "pdf",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "storefile",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "StoreFile",
+              "description": "Store file on server and return url to file instead of file stream response. File will be available for 24 hours.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/53aa4a06e4b051a76d2403d7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/53aa4a06e4b051a76d2403d7/parameters/53aa4a07e4b0a705fcc313df"
+                }
+              },
+              "id": "53aa4a07e4b0a705fcc313df",
+              "type": "BOOLEAN",
+              "creationDate": 1403668999368,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "timeout",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "Timeout",
+              "description": "Conversion timeout in seconds. The minimum value is 5 seconds and maximum is 600 seconds (10 minutes). Default is 300 seconds.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/53aa4a06e4b051a76d2403d7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/53aa4a06e4b051a76d2403d7/parameters/53aa4a07e4b0a705fcc313de"
+                }
+              },
+              "id": "53aa4a07e4b0a705fcc313de",
+              "type": "STRING",
+              "creationDate": 1403668999197,
+              "value": "300",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "The API for converting Textual files(txt, log) documents to PDF files.",
+  "groups": {
+    "took": 4,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 04:03:18 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa205ae4b0a9b1348c66bf/apis/53aa4a06e4b051a76d2403d4/versions/53aa4a06e4b00287471a138e/authentication"
+    }
+  },
+  "id": "53aa4a06e4b00287471a138e",
+  "status": "ACTIVE"
+}

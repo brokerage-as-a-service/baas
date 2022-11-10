@@ -1,0 +1,221 @@
+{
+  "models": {
+    "took": 83,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "reputation",
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "name": "Reputation",
+        "format": "JSON",
+        "description": "domain reputation",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/models/53aa3bf6e4b0a9b1348d9b62/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/models/53aa3bf6e4b0a9b1348d9b62"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac"
+          }
+        },
+        "id": "53aa3bf6e4b0a9b1348d9b62",
+        "body": "{\n  \"Google\": {\n    \"status\": \"OK\",\n    \"target\": \"http://facebook.com\",\n    \"value\": \"ok\"\n  },\n  \"MyWOT\": {\n    \"VendorReliability\": [\n      90,\n      71\n    ],\n    \"Privacy_Reputation\": \"Excellent\",\n    \"Privacy\": [\n      82,\n      60\n    ],\n    \"target\": \"facebook.com\",\n    \"status\": \"OK\",\n    \"VendorReliability_Confidence\": \"5/5\",\n    \"Trustworthiness_Confidence\": \"5/5\",\n    \"Trustworthiness_Reputation\": \"Excellent\",\n    \"Privacy_Confidence\": \"5/5\",\n    \"ChildSafety_Reputation\": \"Excellent\",\n    \"ChildSafety\": [\n      83,\n      61\n    ],\n    \"VendorReliability_Reputation\": \"Excellent\",\n    \"ChildSafety_Confidence\": \"5/5\",\n    \"Trustworthiness\": [\n      90,\n      73\n    ]\n  }\n}",
+        "creationDate": 1403665398253,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:39:46 UTC 2014",
+  "website": "http://www.enclout.com/reputation/",
+  "endpoints": {
+    "took": 117,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 41,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "url",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "url",
+              "description": "URL or Domain",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/endpoints/53aa3bf6e4b059614033faef"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/endpoints/53aa3bf6e4b059614033faef/routeparameters/53aa3bf6e4b059614033faf1"
+                }
+              },
+              "id": "53aa3bf6e4b059614033faf1",
+              "type": "STRING",
+              "creationDate": 1403665398363,
+              "value": "facebook.com",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403665398556,
+        "code": 200,
+        "method": "GET",
+        "description": "domain reputation",
+        "creationDate": 1403665398289,
+        "slugifiedPrimary": "reputation",
+        "routeregex": "/show.json",
+        "route": "/show.json",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "reputation",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 18,
+          "name": "Reputation",
+          "format": "JSON",
+          "description": "domain reputation",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/models/53aa3bf6e4b0a9b1348d9b62/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/models/53aa3bf6e4b0a9b1348d9b62"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac"
+            }
+          },
+          "id": "53aa3bf6e4b0a9b1348d9b62",
+          "body": "{\n  \"Google\": {\n    \"status\": \"OK\",\n    \"target\": \"http://facebook.com\",\n    \"value\": \"ok\"\n  },\n  \"MyWOT\": {\n    \"VendorReliability\": [\n      90,\n      71\n    ],\n    \"Privacy_Reputation\": \"Excellent\",\n    \"Privacy\": [\n      82,\n      60\n    ],\n    \"target\": \"facebook.com\",\n    \"status\": \"OK\",\n    \"VendorReliability_Confidence\": \"5/5\",\n    \"Trustworthiness_Confidence\": \"5/5\",\n    \"Trustworthiness_Reputation\": \"Excellent\",\n    \"Privacy_Confidence\": \"5/5\",\n    \"ChildSafety_Reputation\": \"Excellent\",\n    \"ChildSafety\": [\n      83,\n      61\n    ],\n    \"VendorReliability_Reputation\": \"Excellent\",\n    \"ChildSafety_Confidence\": \"5/5\",\n    \"Trustworthiness\": [\n      90,\n      73\n    ]\n  }\n}",
+          "creationDate": 1403665398253,
+          "status": "ACTIVE"
+        },
+        "name": "Reputation",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/endpoints/53aa3bf6e4b059614033faef/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/endpoints/53aa3bf6e4b059614033faef/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/models/53aa3bf6e4b0a9b1348d9b62"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/endpoints/53aa3bf6e4b059614033faef"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/endpoints/53aa3bf6e4b059614033faef/parameters/"
+          }
+        },
+        "id": "53aa3bf6e4b059614033faef",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "This API returns the reputation information for a given domain. data is pulled from Google Safe Browsing API and MyWOT",
+  "groups": {
+    "took": 37,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 03:03:17 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/changelogs/"
+    },
+    "objects": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/features/"
+    },
+    "plans": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa3bf5e4b059614033faeb/versions/53aa3bf5e4b0b60946a2eaac/authentication"
+    }
+  },
+  "id": "53aa3bf5e4b0b60946a2eaac",
+  "status": "ACTIVE"
+}

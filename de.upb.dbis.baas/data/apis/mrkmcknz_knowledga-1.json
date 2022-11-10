@@ -1,0 +1,349 @@
+{
+  "models": {
+    "took": 40,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "company-model",
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "name": "Company Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/models/53aa5dd1e4b0a9b1348db8e4/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/models/53aa5dd1e4b0a9b1348db8e4"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25"
+          }
+        },
+        "id": "53aa5dd1e4b0a9b1348db8e4",
+        "body": "{\n  \"company_size\": 1,\n  \"email\": \"mrkmcknz@test.com\",\n  \"financial_strength\": 1,\n  \"internal_bureaucracy\": 1,\n  \"purchassing_power_of_individual\": 1,\n  \"startup_adoption\": 1\n}",
+        "creationDate": 1403674065813,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "-individual-model",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "Individual Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/models/53aa5dd1e4b07e1f4ebec68f/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/models/53aa5dd1e4b07e1f4ebec68f"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25"
+          }
+        },
+        "id": "53aa5dd1e4b07e1f4ebec68f",
+        "body": "{\n  \"dependence_on_paycheck\": 3,\n  \"email\": \"mrkmcknz@test.com\",\n  \"est_net_worth\": 4,\n  \"est_salary\": 65000,\n  \"job_title\": \"Software Engineer\",\n  \"next_pay_date\": \"04/30/2014\"\n}",
+        "creationDate": 1403674065791,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:45:59 UTC 2014",
+  "endpoints": {
+    "took": 79,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 42,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "email",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "email",
+              "description": "Email to be processed",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/endpoints/53aa5dd1e4b0a9b1348db8e5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/endpoints/53aa5dd1e4b0a9b1348db8e5/routeparameters/53aa5dd1e4b07e1f4ebec691"
+                }
+              },
+              "id": "53aa5dd1e4b07e1f4ebec691",
+              "type": "STRING",
+              "creationDate": 1403674065898,
+              "value": "mrkmcknz@test.com",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403674066236,
+        "code": 200,
+        "method": "GET",
+        "description": "Endpoint to process an email address to return information in regards to the company that the individual email address is issued at.",
+        "creationDate": 1403674065842,
+        "slugifiedPrimary": "company",
+        "routeregex": "/company",
+        "route": "/company",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "company-model",
+          "headers": {
+            "took": 5,
+            "total": 0,
+            "data": []
+          },
+          "took": 37,
+          "name": "Company Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/models/53aa5dd1e4b0a9b1348db8e4/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/models/53aa5dd1e4b0a9b1348db8e4"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25"
+            }
+          },
+          "id": "53aa5dd1e4b0a9b1348db8e4",
+          "body": "{\n  \"company_size\": 1,\n  \"email\": \"mrkmcknz@test.com\",\n  \"financial_strength\": 1,\n  \"internal_bureaucracy\": 1,\n  \"purchassing_power_of_individual\": 1,\n  \"startup_adoption\": 1\n}",
+          "creationDate": 1403674065813,
+          "status": "ACTIVE"
+        },
+        "name": "Company",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/endpoints/53aa5dd1e4b0a9b1348db8e5/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/endpoints/53aa5dd1e4b0a9b1348db8e5/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/models/53aa5dd1e4b0a9b1348db8e4"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/endpoints/53aa5dd1e4b0a9b1348db8e5"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/endpoints/53aa5dd1e4b0a9b1348db8e5/parameters/"
+          }
+        },
+        "id": "53aa5dd1e4b0a9b1348db8e5",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 8,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "email",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "email",
+              "description": "Email to be processed",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/endpoints/53aa5dd1e4b0a798dbd1b8d4"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/endpoints/53aa5dd1e4b0a798dbd1b8d4/routeparameters/53aa5dd2e4b0b60946a30832"
+                }
+              },
+              "id": "53aa5dd2e4b0b60946a30832",
+              "type": "STRING",
+              "creationDate": 1403674066001,
+              "value": "mrkmcknz@gmail.com",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403674066234,
+        "code": 200,
+        "method": "GET",
+        "description": "Endpoint to process an email address to return information in regards to the owner of that email.",
+        "creationDate": 1403674065919,
+        "slugifiedPrimary": "individual",
+        "routeregex": "/individual",
+        "route": "/individual",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "-individual-model",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 17,
+          "name": "Individual Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/models/53aa5dd1e4b07e1f4ebec68f/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/models/53aa5dd1e4b07e1f4ebec68f"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25"
+            }
+          },
+          "id": "53aa5dd1e4b07e1f4ebec68f",
+          "body": "{\n  \"dependence_on_paycheck\": 3,\n  \"email\": \"mrkmcknz@test.com\",\n  \"est_net_worth\": 4,\n  \"est_salary\": 65000,\n  \"job_title\": \"Software Engineer\",\n  \"next_pay_date\": \"04/30/2014\"\n}",
+          "creationDate": 1403674065791,
+          "status": "ACTIVE"
+        },
+        "name": "Individual",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/endpoints/53aa5dd1e4b0a798dbd1b8d4/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/endpoints/53aa5dd1e4b0a798dbd1b8d4/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/models/53aa5dd1e4b07e1f4ebec68f"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/endpoints/53aa5dd1e4b0a798dbd1b8d4"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/endpoints/53aa5dd1e4b0a798dbd1b8d4/parameters/"
+          }
+        },
+        "id": "53aa5dd1e4b0a798dbd1b8d4",
+        "parameters": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Knowledga is an API that turns an email address into actionable data. Currently in private beta. Please email m@knowledga.com for a key.",
+  "groups": {
+    "took": 6,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:27:45 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2048e4b0f2c97545de2c/apis/53aa5dd1e4b05961403418e3/versions/53aa5dd1e4b00287471a2a25/authentication"
+    }
+  },
+  "id": "53aa5dd1e4b00287471a2a25",
+  "status": "ACTIVE"
+}

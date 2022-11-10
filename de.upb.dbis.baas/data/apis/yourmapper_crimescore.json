@@ -1,0 +1,284 @@
+{
+  "models": {
+    "took": 35,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "crimescore-model",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "crimescore Model",
+        "format": "JSON",
+        "description": "example output from CrimeScore API call",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/models/53aa573ae4b051a76d240d85/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/models/53aa573ae4b051a76d240d85"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80"
+          }
+        },
+        "id": "53aa573ae4b051a76d240d85",
+        "body": "{\nfound: \"1\",\nscore: \"60\",\ngrade: \"C\",\ncolor: \"e5e209\",\ndensity: \"50\",\nlocation: \"Louisville, KY\",\ndatasetid: \"174\",\nlatitude: \"38.08809407886683\",\nlongitude: \"-85.67962646484375\",\nmessage: \"OK\"\n}",
+        "creationDate": 1403672378480,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:42:51 UTC 2014",
+  "website": "http://www.myCrimeScore.com/",
+  "endpoints": {
+    "took": 43,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 29,
+          "total": 4,
+          "data": [
+            {
+              "slugifiedPrimary": "f",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "f",
+              "description": "Format of resulting output. json, csv. JSON is default.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/endpoints/53aa573ae4b051a76d240d86"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/endpoints/53aa573ae4b051a76d240d86/routeparameters/53aa573ae4b00287471a1d87"
+                }
+              },
+              "id": "53aa573ae4b00287471a1d87",
+              "type": "STRING",
+              "creationDate": 1403672378832,
+              "value": "json",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "id",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "id",
+              "description": "Data set ID of crime data set from YourMapper (if empty it will auto detect)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/endpoints/53aa573ae4b051a76d240d86"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/endpoints/53aa573ae4b051a76d240d86/routeparameters/53aa573ae4b008bb2ef869f9"
+                }
+              },
+              "id": "53aa573ae4b008bb2ef869f9",
+              "type": "NUMBER",
+              "creationDate": 1403672378912,
+              "value": "174",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "lat",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "lat",
+              "description": "Latitude of Location",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/endpoints/53aa573ae4b051a76d240d86"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/endpoints/53aa573ae4b051a76d240d86/routeparameters/53aa573ae4b051a76d240d87"
+                }
+              },
+              "id": "53aa573ae4b051a76d240d87",
+              "type": "NUMBER",
+              "creationDate": 1403672378646,
+              "value": "38.08809",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "lon",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "lon",
+              "description": "Longitude of Location",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/endpoints/53aa573ae4b051a76d240d86"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/endpoints/53aa573ae4b051a76d240d86/routeparameters/53aa573ae4b00287471a1d86"
+                }
+              },
+              "id": "53aa573ae4b00287471a1d86",
+              "type": "NUMBER",
+              "creationDate": 1403672378748,
+              "value": "-85.679626",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403672378860,
+        "code": 200,
+        "method": "GET",
+        "description": "Get CrimeScore rating data at your current location",
+        "creationDate": 1403672378534,
+        "slugifiedPrimary": "crimescore",
+        "routeregex": "/crimescore",
+        "route": "/crimescore",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "crimescore-model",
+          "headers": {
+            "took": 19,
+            "total": 0,
+            "data": []
+          },
+          "took": 31,
+          "name": "crimescore Model",
+          "format": "JSON",
+          "description": "example output from CrimeScore API call",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/models/53aa573ae4b051a76d240d85/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/models/53aa573ae4b051a76d240d85"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80"
+            }
+          },
+          "id": "53aa573ae4b051a76d240d85",
+          "body": "{\nfound: \"1\",\nscore: \"60\",\ngrade: \"C\",\ncolor: \"e5e209\",\ndensity: \"50\",\nlocation: \"Louisville, KY\",\ndatasetid: \"174\",\nlatitude: \"38.08809407886683\",\nlongitude: \"-85.67962646484375\",\nmessage: \"OK\"\n}",
+          "creationDate": 1403672378480,
+          "status": "ACTIVE"
+        },
+        "name": "crimescore",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/endpoints/53aa573ae4b051a76d240d86/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/endpoints/53aa573ae4b051a76d240d86/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/models/53aa573ae4b051a76d240d85"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/endpoints/53aa573ae4b051a76d240d86"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/endpoints/53aa573ae4b051a76d240d86/parameters/"
+          }
+        },
+        "id": "53aa573ae4b051a76d240d86",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "National CrimeScore Safety Rating!\r\n\r\n- 1-100 grade for your current location.\r\n- Formula uses local daily crime reports.\r\n- Get web widgets, or use our API in your app.\r\n\r\nCrimeScores are returned for the following cities, with more being added soon.\r\nSan Francisco, CA\r\nWashington, DC\r\nAnchorage, AK\r\nLouisville, KY\r\nMiami, FL\r\nFort Worth, TX\r\nChicago, IL\r\nSeattle, WA\r\nIndianapolis, IN\r\nAlbuquerque, NM\r\nRichmond, VA\r\nCincinnati, OH\r\nAtlanta, GA\r\n\r\nCrimeScore rating is a propriety methodology based on address-level crime reports, weighted for type of crime, recency, and proximity, then adjusted by neighboring CrimeScore ratings, and finally statistically standardized across a bell curve based on all the CrimeScores across a city, updated daily.\r\n\r\nUse our official CrimeScore badges to easily give information at a glance.  Returns a 1-100 score, an A-F grade, and choose from multiple badge sizes.",
+  "groups": {
+    "took": 17,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 04:59:38 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/groups/"
+    },
+    "issues": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/tags/"
+    },
+    "features": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/features/"
+    },
+    "plans": {
+      "total": 8,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1da2e4b0a798dbd0219f/apis/53aa573ae4b00287471a1d84/versions/53aa573ae4b0a705fcc31d80/errors/"
+    }
+  },
+  "id": "53aa573ae4b0a705fcc31d80",
+  "status": "ACTIVE"
+}

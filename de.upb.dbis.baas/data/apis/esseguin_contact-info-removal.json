@@ -1,0 +1,1124 @@
+{
+  "models": {
+    "took": 48,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "message",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Message",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/models/53aa3199e4b0a798dbd189a4/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/models/53aa3199e4b0a798dbd189a4"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987"
+          }
+        },
+        "id": "53aa3199e4b0a798dbd189a4",
+        "body": "{\n  \"message\": \"Hi. My address is <address replaced>. Phone: <phone number replaced>. Email: <email replaced>\"\n}",
+        "creationDate": 1403662745307,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:41:20 UTC 2014",
+  "endpoints": {
+    "took": 477,
+    "total": 5,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 19,
+          "total": 4,
+          "data": [
+            {
+              "slugifiedPrimary": "_method",
+              "condition": "CONSTANT",
+              "array": false,
+              "name": "_method",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a6"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a6/routeparameters/53aa3199e4b07e1f4ebe987d"
+                }
+              },
+              "id": "53aa3199e4b07e1f4ebe987d",
+              "type": "STRING",
+              "creationDate": 1403662745780,
+              "value": "removeAddresses",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "greedy",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "greedy",
+              "description": "Setting greedy to true will cause the replacement to be more likely to match false positives. If this is false, only sure matches will be replaced. Default: false",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a6"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a6/routeparameters/53aa3199e4b0b60946a2da19"
+                }
+              },
+              "id": "53aa3199e4b0b60946a2da19",
+              "type": "BOOLEAN",
+              "creationDate": 1403662745643,
+              "value": "false",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "message",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "message",
+              "description": "This is a string which will be stripped of addresses",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a6"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a6/routeparameters/53aa3199e4b0a9b1348d8af9"
+                }
+              },
+              "id": "53aa3199e4b0a9b1348d8af9",
+              "type": "STRING",
+              "creationDate": 1403662745570,
+              "value": "Hi. My address is 555 Market St, San Francisco CA",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "replacementtext",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "replacementText",
+              "description": "The text to replace all matches with. If not set, the string \"<address replaced>\" will be used",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a6"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a6/routeparameters/53aa3199e4b0a9b1348d8afb"
+                }
+              },
+              "id": "53aa3199e4b0a9b1348d8afb",
+              "type": "STRING",
+              "creationDate": 1403662745702,
+              "value": "<address replaced>",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403662747083,
+        "code": 200,
+        "method": "GET",
+        "description": "Remove all addresses from a given string of text. This will match short and longhand address such as: 111 Main St. or 111 Main Street, San Francisco, CA 94107",
+        "creationDate": 1403662745479,
+        "slugifiedPrimary": "remove-addresses",
+        "routeregex": "/api.php",
+        "route": "/api.php",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "message",
+          "headers": {
+            "took": 19,
+            "total": 0,
+            "data": []
+          },
+          "took": 51,
+          "name": "Message",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/models/53aa3199e4b0a798dbd189a4/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/models/53aa3199e4b0a798dbd189a4"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987"
+            }
+          },
+          "id": "53aa3199e4b0a798dbd189a4",
+          "body": "{\n  \"message\": \"Hi. My address is <address replaced>. Phone: <phone number replaced>. Email: <email replaced>\"\n}",
+          "creationDate": 1403662745307,
+          "status": "ACTIVE"
+        },
+        "name": "Remove Addresses",
+        "routeindex": 4,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a6/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a6/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/models/53aa3199e4b0a798dbd189a4"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a6"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a6/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/groups/53aa3199e4b0b60946a2da17"
+          }
+        },
+        "id": "53aa3199e4b0a798dbd189a6",
+        "parameters": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "address",
+          "took": 11,
+          "name": "Address",
+          "index": 2,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/groups/53aa3199e4b0b60946a2da17"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987"
+            }
+          },
+          "id": "53aa3199e4b0b60946a2da17",
+          "creationDate": 1403662745416,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 113,
+          "total": 4,
+          "data": [
+            {
+              "slugifiedPrimary": "_method",
+              "condition": "CONSTANT",
+              "array": false,
+              "name": "_method",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a7/routeparameters/53aa319ae4b0a798dbd189a8"
+                }
+              },
+              "id": "53aa319ae4b0a798dbd189a8",
+              "type": "STRING",
+              "creationDate": 1403662746150,
+              "value": "removeAll",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "greedy",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "greedy",
+              "description": "Setting greedy to true will cause the replacement to be more likely to match false positives. If this is false, only sure matches will be replaced. Default: false",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a7/routeparameters/53aa319ae4b07e1f4ebe987e"
+                }
+              },
+              "id": "53aa319ae4b07e1f4ebe987e",
+              "type": "BOOLEAN",
+              "creationDate": 1403662746044,
+              "value": "false",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "message",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "message",
+              "description": "This is a string which will be stripped of all contact information",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a7/routeparameters/53aa3199e4b0b60946a2da1a"
+                }
+              },
+              "id": "53aa3199e4b0b60946a2da1a",
+              "type": "STRING",
+              "creationDate": 1403662745962,
+              "value": "Hi. My address is 555 Market St, San Francisco CA. Phone: 555.123.1234. Email: email@email.com",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "replacementtext",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "replacementText",
+              "description": "The text to replace all matches with. If not set, the string \"<contact information replaced>\" will be used",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a7/routeparameters/53aa319ae4b0a9b1348d8afc"
+                }
+              },
+              "id": "53aa319ae4b0a9b1348d8afc",
+              "type": "STRING",
+              "creationDate": 1403662746094,
+              "value": "<contact information replaced>",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403662747260,
+        "code": 200,
+        "method": "GET",
+        "description": "Remove all phone numbers, addresses, and emails from a given string of text",
+        "creationDate": 1403662745831,
+        "slugifiedPrimary": "remove-all",
+        "routeregex": "/api.php",
+        "route": "/api.php",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "message",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 33,
+          "name": "Message",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/models/53aa3199e4b0a798dbd189a4/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/models/53aa3199e4b0a798dbd189a4"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987"
+            }
+          },
+          "id": "53aa3199e4b0a798dbd189a4",
+          "body": "{\n  \"message\": \"Hi. My address is <address replaced>. Phone: <phone number replaced>. Email: <email replaced>\"\n}",
+          "creationDate": 1403662745307,
+          "status": "ACTIVE"
+        },
+        "name": "Remove All",
+        "routeindex": 3,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a7/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a7/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/models/53aa3199e4b0a798dbd189a4"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a7"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa3199e4b0a798dbd189a7/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/groups/53aa3199e4b0a798dbd189a5"
+          }
+        },
+        "id": "53aa3199e4b0a798dbd189a7",
+        "parameters": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "all",
+          "took": 35,
+          "name": "All",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/groups/53aa3199e4b0a798dbd189a5"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987"
+            }
+          },
+          "id": "53aa3199e4b0a798dbd189a5",
+          "creationDate": 1403662745341,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 104,
+          "total": 4,
+          "data": [
+            {
+              "slugifiedPrimary": "_method",
+              "condition": "CONSTANT",
+              "array": false,
+              "name": "_method",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189a9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189a9/routeparameters/53aa319ae4b0a9b1348d8aff"
+                }
+              },
+              "id": "53aa319ae4b0a9b1348d8aff",
+              "type": "STRING",
+              "creationDate": 1403662746438,
+              "value": "removeAllMultiple",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "greedy",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "greedy",
+              "description": "Setting greedy to true will cause the replacement to be more likely to match false positives. If this is false, only sure matches will be replaced. Default: false",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189a9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189a9/routeparameters/53aa319ae4b07e1f4ebe9882"
+                }
+              },
+              "id": "53aa319ae4b07e1f4ebe9882",
+              "type": "BOOLEAN",
+              "creationDate": 1403662746308,
+              "value": "false",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "messages",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "messages",
+              "description": "Multiple URL encoded strings, separated with commas",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189a9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189a9/routeparameters/53aa319ae4b0a9b1348d8afe"
+                }
+              },
+              "id": "53aa319ae4b0a9b1348d8afe",
+              "type": "STRING",
+              "creationDate": 1403662746251,
+              "value": "hi%2C%20email%20me%20at%20thisis%40myemail.com,555.252.3353%20is%20my%20number",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "replacementtext",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "replacementText",
+              "description": "The text to replace all matches with. If not set, the string \"<contact information replaced>\" will be used",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189a9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189a9/routeparameters/53aa319ae4b0b60946a2da1c"
+                }
+              },
+              "id": "53aa319ae4b0b60946a2da1c",
+              "type": "STRING",
+              "creationDate": 1403662746393,
+              "value": "<contact information replaced>",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403662747207,
+        "code": 200,
+        "method": "GET",
+        "description": "Remove all contact information from multiple messages. This endpoint lets you batch conversions and is faster than multiple individual requests.",
+        "creationDate": 1403662746188,
+        "slugifiedPrimary": "remove-all-multiple-",
+        "routeregex": "/api.php",
+        "route": "/api.php",
+        "array": true,
+        "response": {
+          "slugifiedPrimary": "message",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 50,
+          "name": "Message",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/models/53aa3199e4b0a798dbd189a4/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/models/53aa3199e4b0a798dbd189a4"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987"
+            }
+          },
+          "id": "53aa3199e4b0a798dbd189a4",
+          "body": "{\n  \"message\": \"Hi. My address is <address replaced>. Phone: <phone number replaced>. Email: <email replaced>\"\n}",
+          "creationDate": 1403662745307,
+          "status": "ACTIVE"
+        },
+        "name": "Remove All (Multiple)",
+        "routeindex": 2,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189a9/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189a9/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/models/53aa3199e4b0a798dbd189a4"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189a9"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189a9/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/groups/53aa3199e4b0a798dbd189a5"
+          }
+        },
+        "id": "53aa319ae4b0a798dbd189a9",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "all",
+          "took": 36,
+          "name": "All",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/groups/53aa3199e4b0a798dbd189a5"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987"
+            }
+          },
+          "id": "53aa3199e4b0a798dbd189a5",
+          "creationDate": 1403662745341,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 19,
+          "total": 4,
+          "data": [
+            {
+              "slugifiedPrimary": "_method",
+              "condition": "CONSTANT",
+              "array": false,
+              "name": "_method",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a9b1348d8b00"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a9b1348d8b00/routeparameters/53aa319ae4b059614033ea3f"
+                }
+              },
+              "id": "53aa319ae4b059614033ea3f",
+              "type": "STRING",
+              "creationDate": 1403662746740,
+              "value": "removeEmails",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "greedy",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "greedy",
+              "description": "Setting greedy to true will cause the replacement to be more likely to match false positives. If this is false, only sure matches will be replaced. Default: false",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a9b1348d8b00"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a9b1348d8b00/routeparameters/53aa319ae4b0a798dbd189aa"
+                }
+              },
+              "id": "53aa319ae4b0a798dbd189aa",
+              "type": "BOOLEAN",
+              "creationDate": 1403662746621,
+              "value": "false",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "message",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "message",
+              "description": "This is a string which will be stripped of emails",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a9b1348d8b00"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a9b1348d8b00/routeparameters/53aa319ae4b0a9b1348d8b01"
+                }
+              },
+              "id": "53aa319ae4b0a9b1348d8b01",
+              "type": "STRING",
+              "creationDate": 1403662746562,
+              "value": "Hi. My email is email@email.com",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "replacementtext",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "replacementText",
+              "description": "The text to replace all matches with. If not set, the string \"<email replaced>\" will be used",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a9b1348d8b00"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a9b1348d8b00/routeparameters/53aa319ae4b07e1f4ebe9883"
+                }
+              },
+              "id": "53aa319ae4b07e1f4ebe9883",
+              "type": "STRING",
+              "creationDate": 1403662746684,
+              "value": "<email replaced>",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403662747219,
+        "code": 200,
+        "method": "GET",
+        "description": "Remove all emails from a given string of text. This will match things such as: name@domain.com, name at domain dot com, name@domain dot com",
+        "creationDate": 1403662746479,
+        "slugifiedPrimary": "remove-emails",
+        "routeregex": "/api.php",
+        "route": "/api.php",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "message",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 51,
+          "name": "Message",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/models/53aa3199e4b0a798dbd189a4/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/models/53aa3199e4b0a798dbd189a4"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987"
+            }
+          },
+          "id": "53aa3199e4b0a798dbd189a4",
+          "body": "{\n  \"message\": \"Hi. My address is <address replaced>. Phone: <phone number replaced>. Email: <email replaced>\"\n}",
+          "creationDate": 1403662745307,
+          "status": "ACTIVE"
+        },
+        "name": "Remove Emails",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a9b1348d8b00/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a9b1348d8b00/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/models/53aa3199e4b0a798dbd189a4"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a9b1348d8b00"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a9b1348d8b00/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/groups/53aa3199e4b0a9b1348d8af7"
+          }
+        },
+        "id": "53aa319ae4b0a9b1348d8b00",
+        "parameters": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "email",
+          "took": 34,
+          "name": "Email",
+          "index": 1,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/groups/53aa3199e4b0a9b1348d8af7"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987"
+            }
+          },
+          "id": "53aa3199e4b0a9b1348d8af7",
+          "creationDate": 1403662745373,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 109,
+          "total": 4,
+          "data": [
+            {
+              "slugifiedPrimary": "_method",
+              "condition": "CONSTANT",
+              "array": false,
+              "name": "_method",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189ac"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189ac/routeparameters/53aa319be4b0b60946a2da1e"
+                }
+              },
+              "id": "53aa319be4b0b60946a2da1e",
+              "type": "STRING",
+              "creationDate": 1403662747018,
+              "value": "removePhoneNums",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "greedy",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "greedy",
+              "description": "Setting greedy to true will cause the replacement to be more likely to match false positives. If this is false, only sure matches will be replaced. Default: false",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189ac"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189ac/routeparameters/53aa319ae4b07e1f4ebe9884"
+                }
+              },
+              "id": "53aa319ae4b07e1f4ebe9884",
+              "type": "BOOLEAN",
+              "creationDate": 1403662746905,
+              "value": "false",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "message",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "message",
+              "description": "This is a string which will be stripped of phone numbers",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189ac"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189ac/routeparameters/53aa319ae4b0a9b1348d8b03"
+                }
+              },
+              "id": "53aa319ae4b0a9b1348d8b03",
+              "type": "STRING",
+              "creationDate": 1403662746848,
+              "value": "Hi. My phone number is 555.666.7777",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "replacementtext",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "replacementText",
+              "description": "The text to replace all matches with. If not set, the string \"<phone number replaced>\" will be used",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189ac"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189ac/routeparameters/53aa319ae4b0b60946a2da1d"
+                }
+              },
+              "id": "53aa319ae4b0b60946a2da1d",
+              "type": "STRING",
+              "creationDate": 1403662746968,
+              "value": "<phone number replaced>",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403662747298,
+        "code": 200,
+        "method": "GET",
+        "description": "Remove all phone numbers from a given string of text. Matches formats such as: 555.666.7777, (555) 666-7777, 555 666 7777.",
+        "creationDate": 1403662746772,
+        "slugifiedPrimary": "remove-phone-numbers",
+        "routeregex": "/api.php",
+        "route": "/api.php",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "message",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 32,
+          "name": "Message",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/models/53aa3199e4b0a798dbd189a4/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/models/53aa3199e4b0a798dbd189a4"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987"
+            }
+          },
+          "id": "53aa3199e4b0a798dbd189a4",
+          "body": "{\n  \"message\": \"Hi. My address is <address replaced>. Phone: <phone number replaced>. Email: <email replaced>\"\n}",
+          "creationDate": 1403662745307,
+          "status": "ACTIVE"
+        },
+        "name": "Remove Phone Numbers",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189ac/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189ac/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/models/53aa3199e4b0a798dbd189a4"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189ac"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/53aa319ae4b0a798dbd189ac/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/groups/53aa3199e4b07e1f4ebe987b"
+          }
+        },
+        "id": "53aa319ae4b0a798dbd189ac",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "phone",
+          "took": 35,
+          "name": "Phone",
+          "index": 3,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/groups/53aa3199e4b07e1f4ebe987b"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987"
+            }
+          },
+          "id": "53aa3199e4b07e1f4ebe987b",
+          "creationDate": 1403662745451,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "A collection of functions that will remove contact information (phone numbers, email, and/or addresses) from a string",
+  "groups": {
+    "took": 25,
+    "total": 4,
+    "data": [
+      {
+        "slugifiedPrimary": "address",
+        "name": "Address",
+        "index": 2,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/groups/53aa3199e4b0b60946a2da17"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987"
+          }
+        },
+        "id": "53aa3199e4b0b60946a2da17",
+        "creationDate": 1403662745416,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "all",
+        "name": "All",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/groups/53aa3199e4b0a798dbd189a5"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987"
+          }
+        },
+        "id": "53aa3199e4b0a798dbd189a5",
+        "creationDate": 1403662745341,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "email",
+        "name": "Email",
+        "index": 1,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/groups/53aa3199e4b0a9b1348d8af7"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987"
+          }
+        },
+        "id": "53aa3199e4b0a9b1348d8af7",
+        "creationDate": 1403662745373,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "phone",
+        "name": "Phone",
+        "index": 3,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/groups/53aa3199e4b07e1f4ebe987b"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987"
+          }
+        },
+        "id": "53aa3199e4b07e1f4ebe987b",
+        "creationDate": 1403662745451,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 02:19:04 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/astronode"
+    },
+    "endpoints": {
+      "total": 5,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/changelogs/"
+    },
+    "objects": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/objects/"
+    },
+    "groups": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/features/"
+    },
+    "plans": {
+      "total": 5,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e51e4b0a798dbd03042/apis/53aa3198e4b07e1f4ebe9878/versions/53aa3198e4b0f2c97546e987/errors/"
+    }
+  },
+  "id": "53aa3198e4b0f2c97546e987",
+  "status": "ACTIVE"
+}

@@ -1,0 +1,424 @@
+{
+  "models": {
+    "took": 88,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "api-v1-language-model",
+        "headers": {
+          "took": 15,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1496150311743,
+        "name": "/api/v1/language model",
+        "format": "JSON",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/models/592d7107e4b05d38a42e9fa7/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/models/592d7107e4b05d38a42e9fa7"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f"
+          }
+        },
+        "id": "592d7107e4b05d38a42e9fa7",
+        "body": "{\n  \"language\": {\n    \"alpha3b\": \"string\",\n    \"alpha3t\": \"string\",\n    \"alpha2\": \"string\",\n    \"English\": \"string\",\n    \"French\": \"string\"\n  },\n  \"confidence\": 0\n}",
+        "creationDate": 1496150279682,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "sentiment",
+        "headers": {
+          "took": 17,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1496151101072,
+        "name": "Sentiment",
+        "format": "JSON",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/models/592d7145e4b06b01ff6babfd/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/models/592d7145e4b06b01ff6babfd"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f"
+          }
+        },
+        "id": "592d7145e4b06b01ff6babfd",
+        "body": "{\n  \"sentiment\": \"string\", // negative, neutral, positive. Equals to neutral if intensity is too low.\n  \"intensity\": 0 // between 0 and 1\n}",
+        "creationDate": 1496150341136,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Wed May 31 19:48:28 UTC 2017",
+  "endpoints": {
+    "took": 221,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 24,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 14,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1496150311944,
+        "code": 200,
+        "method": "POST",
+        "description": "Natural language detection.",
+        "creationDate": 1496147210107,
+        "slugifiedPrimary": "api-v1-language",
+        "routeregex": "/api/v1/language",
+        "route": "/api/v1/language",
+        "response": {
+          "slugifiedPrimary": "api-v1-language-model",
+          "headers": {
+            "took": 27,
+            "total": 0,
+            "data": []
+          },
+          "took": 67,
+          "updateDate": 1496150311743,
+          "name": "/api/v1/language model",
+          "format": "JSON",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/models/592d7107e4b05d38a42e9fa7/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/models/592d7107e4b05d38a42e9fa7"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f"
+            }
+          },
+          "id": "592d7107e4b05d38a42e9fa7",
+          "body": "{\n  \"language\": {\n    \"alpha3b\": \"string\",\n    \"alpha3t\": \"string\",\n    \"alpha2\": \"string\",\n    \"English\": \"string\",\n    \"French\": \"string\"\n  },\n  \"confidence\": 0\n}",
+          "creationDate": 1496150279682,
+          "status": "ACTIVE"
+        },
+        "name": "/api/v1/language",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/endpoints/592d650ae4b0419fc5ac2ab9/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/endpoints/592d650ae4b0419fc5ac2ab9/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/models/592d7107e4b05d38a42e9fa7"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/endpoints/592d650ae4b0419fc5ac2ab9"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/endpoints/592d650ae4b0419fc5ac2ab9/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/groups/592d6600e4b0419fc5ac2abb"
+          }
+        },
+        "id": "592d650ae4b0419fc5ac2ab9",
+        "parameters": {
+          "took": 19,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "sample",
+              "updateDate": 1496151565736,
+              "condition": "REQUIRED",
+              "name": "sample",
+              "description": "Text sample to analyse. Need to be composed with more than 10 words.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/endpoints/592d650ae4b0419fc5ac2ab9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/endpoints/592d650ae4b0419fc5ac2ab9/parameters/592d653ce4b0eaefb644c8d6"
+                }
+              },
+              "id": "592d653ce4b0eaefb644c8d6",
+              "type": "STRING",
+              "creationDate": 1496147260681,
+              "value": "Text sample to analyse. Need to be composed with more than 10 words.",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "v1",
+          "took": 17,
+          "updateDate": 1496151495865,
+          "name": "v1",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/groups/592d6600e4b0419fc5ac2abb"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f"
+            }
+          },
+          "id": "592d6600e4b0419fc5ac2abb",
+          "creationDate": 1496147456972,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 22,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 15,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1496153225524,
+        "code": 200,
+        "method": "POST",
+        "description": "Complex sentiment detection. Only english (eng) for now, WIP for other languages.",
+        "creationDate": 1496147341302,
+        "slugifiedPrimary": "api-v1-sentiment",
+        "routeregex": "/api/v1/sentiment",
+        "route": "/api/v1/sentiment",
+        "response": {
+          "slugifiedPrimary": "sentiment",
+          "headers": {
+            "took": 14,
+            "total": 0,
+            "data": []
+          },
+          "took": 52,
+          "updateDate": 1496151101072,
+          "name": "Sentiment",
+          "format": "JSON",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/models/592d7145e4b06b01ff6babfd/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/models/592d7145e4b06b01ff6babfd"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f"
+            }
+          },
+          "id": "592d7145e4b06b01ff6babfd",
+          "body": "{\n  \"sentiment\": \"string\", // negative, neutral, positive. Equals to neutral if intensity is too low.\n  \"intensity\": 0 // between 0 and 1\n}",
+          "creationDate": 1496150341136,
+          "status": "ACTIVE"
+        },
+        "name": "/api/v1/sentiment",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/endpoints/592d658de4b0517a432a2c43/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/endpoints/592d658de4b0517a432a2c43/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/models/592d7145e4b06b01ff6babfd"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/endpoints/592d658de4b0517a432a2c43"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/endpoints/592d658de4b0517a432a2c43/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/groups/592d6600e4b0419fc5ac2abb"
+          }
+        },
+        "id": "592d658de4b0517a432a2c43",
+        "parameters": {
+          "took": 22,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "language",
+              "updateDate": 1496150434136,
+              "condition": "REQUIRED",
+              "name": "language",
+              "description": "Language of the text. Only English (eng) for now, working on adding more...",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/endpoints/592d658de4b0517a432a2c43"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/endpoints/592d658de4b0517a432a2c43/parameters/592d65b9e4b0e7d15369e7a3"
+                }
+              },
+              "id": "592d65b9e4b0e7d15369e7a3",
+              "type": "STRING",
+              "creationDate": 1496147385962,
+              "value": "eng",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "sample",
+              "updateDate": 1496151542360,
+              "condition": "REQUIRED",
+              "name": "sample",
+              "description": "Text sample to analyse.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/endpoints/592d658de4b0517a432a2c43"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/endpoints/592d658de4b0517a432a2c43/parameters/592d65a4e4b06b01ff6babd7"
+                }
+              },
+              "id": "592d65a4e4b06b01ff6babd7",
+              "type": "STRING",
+              "creationDate": 1496147364984,
+              "value": "I'm okay, yesterday night was not that awful after all.",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "v1",
+          "took": 17,
+          "updateDate": 1496151495865,
+          "name": "v1",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/groups/592d6600e4b0419fc5ac2abb"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f"
+            }
+          },
+          "id": "592d6600e4b0419fc5ac2abb",
+          "creationDate": 1496147456972,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Natural language processing. Language detection, accurate complex sentiment detection... \r\nBE AWARE: The first request may have a non negligible latency. After this first request, it will run like a charm.",
+  "groups": {
+    "took": 66,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "v1",
+        "updateDate": 1496151495865,
+        "name": "v1",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/groups/592d6600e4b0419fc5ac2abb"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f"
+          }
+        },
+        "id": "592d6600e4b0419fc5ac2abb",
+        "creationDate": 1496147456972,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Tue May 30 12:25:24 UTC 2017",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/objects/"
+    },
+    "groups": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/features/"
+    },
+    "plans": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/592c6b49e4b08ab68dbc2dd7/apis/592d64b4e4b0618f9855c033/versions/592d64b4e4b0e7d15369e79f/errors/"
+    }
+  },
+  "id": "592d64b4e4b0e7d15369e79f",
+  "status": "ACTIVE"
+}

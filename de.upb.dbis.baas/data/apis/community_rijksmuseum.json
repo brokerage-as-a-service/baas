@@ -1,0 +1,238 @@
+{
+  "models": {
+    "took": 39,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "collection-response",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Collection Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/models/53aa5938e4b0a9b1348db01b/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/models/53aa5938e4b0a9b1348db01b"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0"
+          }
+        },
+        "id": "53aa5938e4b0a9b1348db01b",
+        "creationDate": 1403672888624,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:39:39 UTC 2014",
+  "website": "http://rijksmuseum.github.io/",
+  "endpoints": {
+    "took": 69,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 19,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "culture",
+              "updateDate": 1403672888764,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "culture",
+              "description": "nl / en\t\tThe language to search in (and of the results)",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/endpoints/53aa5938e4b07e1f4ebebda2"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/endpoints/53aa5938e4b07e1f4ebebda2/routeparameters/53aa5938e4b0a9b1348db01c"
+                }
+              },
+              "id": "53aa5938e4b0a9b1348db01c",
+              "type": "STRING",
+              "creationDate": 1403672888695,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "q",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "q",
+              "description": "The search terms that need to occur in one of the fields of the artwork data",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/endpoints/53aa5938e4b07e1f4ebebda2"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/endpoints/53aa5938e4b07e1f4ebebda2/routeparameters/53aa5938e4b0a9b1348db01e"
+                }
+              },
+              "id": "53aa5938e4b0a9b1348db01e",
+              "type": "STRING",
+              "creationDate": 1403672888857,
+              "value": "Van Gogh",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403672888834,
+        "code": 200,
+        "method": "GET",
+        "description": "GET /api/[culture]/collection gives the full collection with brief information about each work. This results are split up in result pages. By using the p and ps parameters you can fetch more results. All of the other parameters are identical to the search page on the Rijksmuseum website. You can use that to find out what's the best query to use",
+        "creationDate": 1403672888656,
+        "slugifiedPrimary": "collection",
+        "routeregex": "/([^/?]+)/collection",
+        "route": "/{culture}/collection",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "collection-response",
+          "headers": {
+            "took": 21,
+            "total": 0,
+            "data": []
+          },
+          "took": 53,
+          "name": "Collection Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/models/53aa5938e4b0a9b1348db01b/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/models/53aa5938e4b0a9b1348db01b"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0"
+            }
+          },
+          "id": "53aa5938e4b0a9b1348db01b",
+          "creationDate": 1403672888624,
+          "status": "ACTIVE"
+        },
+        "name": "Collection",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/endpoints/53aa5938e4b07e1f4ebebda2/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/endpoints/53aa5938e4b07e1f4ebebda2/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/models/53aa5938e4b0a9b1348db01b"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/endpoints/53aa5938e4b07e1f4ebebda2"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/endpoints/53aa5938e4b07e1f4ebebda2/parameters/"
+          }
+        },
+        "id": "53aa5938e4b07e1f4ebebda2",
+        "parameters": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "The Rijksmuseum is a Dutch national museum dedicated to arts and history in Amsterdam in the Netherlands.",
+  "groups": {
+    "took": 6,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:08:08 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5938e4b0a9b1348db018/versions/53aa5938e4b07e1f4ebebda0/authentication"
+    }
+  },
+  "id": "53aa5938e4b07e1f4ebebda0",
+  "status": "ACTIVE"
+}

@@ -1,0 +1,331 @@
+{
+  "models": {
+    "took": 16,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "basic-model",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Basic Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/models/53aa3bc0e4b0f2c97546f701/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/models/53aa3bc0e4b0f2c97546f701"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32"
+          }
+        },
+        "id": "53aa3bc0e4b0f2c97546f701",
+        "body": "{\n  \"status\": \"OK\",\n  \"data\": {\n    \"trends\": {\n      \"uv\": [\n        {\n          \"date\": \"201202\",\n          \"value\": 158\n        },\n        {\n          \"date\": \"201203\",\n          \"value\": 1279\n        },\n        {\n          \"date\": \"201204\",\n          \"value\": 861\n        },\n        {\n          \"date\": \"201205\",\n          \"value\": null\n        },\n        {\n          \"date\": \"201206\",\n          \"value\": 491\n        },\n        {\n          \"date\": \"201207\",\n          \"value\": 903\n        },\n        {\n          \"date\": \"201208\",\n          \"value\": 74\n        },\n        {\n          \"date\": \"201209\",\n          \"value\": 214\n        },\n        {\n          \"date\": \"201210\",\n          \"value\": 665\n        },\n        {\n          \"date\": \"201211\",\n          \"value\": 603\n        },\n        {\n          \"date\": \"201212\",\n          \"value\": 541\n        },\n        {\n          \"date\": \"201301\",\n          \"value\": 176\n        },\n        {\n          \"date\": \"201302\",\n          \"value\": 1142\n        }\n      ]\n    },\n    \"trends_low_sample\": true,\n    \"query_cost\": 12,\n    \"trends_frequency\": \"monthly\"\n  }\n}",
+        "creationDate": 1403665344429,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Feb 05 22:06:33 UTC 2015",
+  "website": "https://www.compete.com/",
+  "endpoints": {
+    "took": 176,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 146,
+          "total": 6,
+          "data": [
+            {
+              "slugifiedPrimary": "domain",
+              "updateDate": 1403665344782,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "domain",
+              "description": "For DOMAIN insert the name of the domain or subdomain that you wish to receive data on.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/endpoints/53aa3bc0e4b008bb2ef85a1e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/endpoints/53aa3bc0e4b008bb2ef85a1e/routeparameters/53aa3bc0e4b051a76d23fd8f"
+                }
+              },
+              "id": "53aa3bc0e4b051a76d23fd8f",
+              "type": "STRING",
+              "creationDate": 1403665344575,
+              "value": "mashape.com",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "end_date",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "end_date",
+              "description": "Current day to current day minus 364 (both)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/endpoints/53aa3bc0e4b008bb2ef85a1e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/endpoints/53aa3bc0e4b008bb2ef85a1e/routeparameters/53aa3bc1e4b051a76d23fd90"
+                }
+              },
+              "id": "53aa3bc1e4b051a76d23fd90",
+              "type": "STRING",
+              "creationDate": 1403665345162,
+              "value": "20100915",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "format",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "format",
+              "description": "png | jpg | gif",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/endpoints/53aa3bc0e4b008bb2ef85a1e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/endpoints/53aa3bc0e4b008bb2ef85a1e/routeparameters/53aa3bc1e4b051a76d23fd91"
+                }
+              },
+              "id": "53aa3bc1e4b051a76d23fd91",
+              "type": "STRING",
+              "creationDate": 1403665345331,
+              "value": "png",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "latest",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "latest",
+              "description": "NUM_MONTHS = 1 to 25 NUM_DAYS = 1 to 365",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/endpoints/53aa3bc0e4b008bb2ef85a1e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/endpoints/53aa3bc0e4b008bb2ef85a1e/routeparameters/53aa3bc1e4b00287471a0d35"
+                }
+              },
+              "id": "53aa3bc1e4b00287471a0d35",
+              "type": "STRING",
+              "creationDate": 1403665345265,
+              "value": "8",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "metric",
+              "updateDate": 1403665344933,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "metric",
+              "description": "For METRIC insert the code for the metric you wish to receive.  For a full list go to https://www.compete.com/developer/documentation/#doc-MetricList",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/endpoints/53aa3bc0e4b008bb2ef85a1e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/endpoints/53aa3bc0e4b008bb2ef85a1e/routeparameters/53aa3bc0e4b0a705fcc30d93"
+                }
+              },
+              "id": "53aa3bc0e4b0a705fcc30d93",
+              "type": "STRING",
+              "creationDate": 1403665344668,
+              "value": "uv",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "start_date",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "start_date",
+              "description": "Current day to current day minus 364 (both)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/endpoints/53aa3bc0e4b008bb2ef85a1e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/endpoints/53aa3bc0e4b008bb2ef85a1e/routeparameters/53aa3bc1e4b0f2c97546f704"
+                }
+              },
+              "id": "53aa3bc1e4b0f2c97546f704",
+              "type": "STRING",
+              "creationDate": 1403665345088,
+              "value": "20100615",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403665344931,
+        "code": 200,
+        "method": "GET",
+        "description": "You can call different groups of APIs based on METRIC.  The available APIs include Basic, Monthly, Demographic, Daily, Keyword, Incoming Traffic.  You can find the METRIC list here - https://www.compete.com/developer/documentation/#doc-MetricList",
+        "creationDate": 1403665344485,
+        "slugifiedPrimary": "generic",
+        "routeregex": "/sites/([^/?]+)/trended/([^/?]+)/",
+        "route": "/sites/{DOMAIN}/trended/{METRIC}/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "basic-model",
+          "headers": {
+            "took": 19,
+            "total": 0,
+            "data": []
+          },
+          "took": 51,
+          "name": "Basic Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/models/53aa3bc0e4b0f2c97546f701/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/models/53aa3bc0e4b0f2c97546f701"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32"
+            }
+          },
+          "id": "53aa3bc0e4b0f2c97546f701",
+          "body": "{\n  \"status\": \"OK\",\n  \"data\": {\n    \"trends\": {\n      \"uv\": [\n        {\n          \"date\": \"201202\",\n          \"value\": 158\n        },\n        {\n          \"date\": \"201203\",\n          \"value\": 1279\n        },\n        {\n          \"date\": \"201204\",\n          \"value\": 861\n        },\n        {\n          \"date\": \"201205\",\n          \"value\": null\n        },\n        {\n          \"date\": \"201206\",\n          \"value\": 491\n        },\n        {\n          \"date\": \"201207\",\n          \"value\": 903\n        },\n        {\n          \"date\": \"201208\",\n          \"value\": 74\n        },\n        {\n          \"date\": \"201209\",\n          \"value\": 214\n        },\n        {\n          \"date\": \"201210\",\n          \"value\": 665\n        },\n        {\n          \"date\": \"201211\",\n          \"value\": 603\n        },\n        {\n          \"date\": \"201212\",\n          \"value\": 541\n        },\n        {\n          \"date\": \"201301\",\n          \"value\": 176\n        },\n        {\n          \"date\": \"201302\",\n          \"value\": 1142\n        }\n      ]\n    },\n    \"trends_low_sample\": true,\n    \"query_cost\": 12,\n    \"trends_frequency\": \"monthly\"\n  }\n}",
+          "creationDate": 1403665344429,
+          "status": "ACTIVE"
+        },
+        "name": "Generic",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/endpoints/53aa3bc0e4b008bb2ef85a1e/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/endpoints/53aa3bc0e4b008bb2ef85a1e/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/models/53aa3bc0e4b0f2c97546f701"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/endpoints/53aa3bc0e4b008bb2ef85a1e"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/endpoints/53aa3bc0e4b008bb2ef85a1e/parameters/"
+          }
+        },
+        "id": "53aa3bc0e4b008bb2ef85a1e",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Optimize your digital marketing.\r\nUnderstand consumer online behavior to drive marketing decisions.\r\nThe path to digital marketing optimization\r\nbegins with Compete PRO. Get started now.",
+  "groups": {
+    "took": 6,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 03:02:24 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20cbe4b0b60946a1ba70/apis/53aa3bbfe4b051a76d23fd8a/versions/53aa3bc0e4b00287471a0d32/authentication"
+    }
+  },
+  "id": "53aa3bc0e4b00287471a0d32",
+  "status": "ACTIVE"
+}

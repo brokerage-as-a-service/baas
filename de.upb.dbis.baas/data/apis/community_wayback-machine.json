@@ -1,0 +1,261 @@
+{
+  "models": {
+    "took": 49,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "availability-model",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Availability Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/models/53aa5793e4b00287471a1e73/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/models/53aa5793e4b00287471a1e73"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79"
+          }
+        },
+        "id": "53aa5793e4b00287471a1e73",
+        "body": "{\n  \"archived_snapshots\": {\n    \"closest\": {\n      \"available\": true,\n      \"url\": \"http://web.archive.org/web/20090515105210/http://mashape.com:80/\",\n      \"timestamp\": \"20090515105210\",\n      \"status\": \"200\"\n    }\n  }\n}",
+        "creationDate": 1403672467999,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:43:38 UTC 2014",
+  "website": "https://archive.org/help/wayback_api.php",
+  "endpoints": {
+    "took": 120,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 90,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "callback",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "callback",
+              "description": "callback is an optional callback which may be specified to produce a JSONP response.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/endpoints/53aa5794e4b00287471a1e75"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/endpoints/53aa5794e4b00287471a1e75/routeparameters/53aa5794e4b00287471a1e76"
+                }
+              },
+              "id": "53aa5794e4b00287471a1e76",
+              "type": "STRING",
+              "creationDate": 1403672468330,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "timestamp",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "timestamp",
+              "description": "timestamp is the timestamp to look up in Wayback. If not specified, the most recenty available capture in Wayback is returned. The format of the timestamp is 1-14 digits (YYYYMMDDhhmmss)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/endpoints/53aa5794e4b00287471a1e75"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/endpoints/53aa5794e4b00287471a1e75/routeparameters/53aa5794e4b0a705fcc31e70"
+                }
+              },
+              "id": "53aa5794e4b0a705fcc31e70",
+              "type": "STRING",
+              "creationDate": 1403672468245,
+              "value": "20090101",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "url",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "url",
+              "description": "",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/endpoints/53aa5794e4b00287471a1e75"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/endpoints/53aa5794e4b00287471a1e75/routeparameters/53aa5794e4b008bb2ef86ae4"
+                }
+              },
+              "id": "53aa5794e4b008bb2ef86ae4",
+              "type": "STRING",
+              "creationDate": 1403672468155,
+              "value": "http://mashape.com",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403672468222,
+        "code": 200,
+        "method": "GET",
+        "description": "This simple API for Wayback is a test to see if a given url is archived and currenlty accessible in the Wayback Machine. This API is useful for providing a 404 or other error handler which checks Wayback to see if it has an archived copy ready to display. The API can be used as follows:",
+        "creationDate": 1403672468059,
+        "slugifiedPrimary": "availability",
+        "routeregex": "/available",
+        "route": "/available",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "availability-model",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 30,
+          "name": "Availability Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/models/53aa5793e4b00287471a1e73/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/models/53aa5793e4b00287471a1e73"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79"
+            }
+          },
+          "id": "53aa5793e4b00287471a1e73",
+          "body": "{\n  \"archived_snapshots\": {\n    \"closest\": {\n      \"available\": true,\n      \"url\": \"http://web.archive.org/web/20090515105210/http://mashape.com:80/\",\n      \"timestamp\": \"20090515105210\",\n      \"status\": \"200\"\n    }\n  }\n}",
+          "creationDate": 1403672467999,
+          "status": "ACTIVE"
+        },
+        "name": "Availability",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/endpoints/53aa5794e4b00287471a1e75/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/endpoints/53aa5794e4b00287471a1e75/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/models/53aa5793e4b00287471a1e73"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/endpoints/53aa5794e4b00287471a1e75"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/endpoints/53aa5794e4b00287471a1e75/parameters/"
+          }
+        },
+        "id": "53aa5794e4b00287471a1e75",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "The Internet Archive Wayback Machine supports a number of different APIs to make it easier for developers to retrieve information about Wayback capture data.",
+  "groups": {
+    "took": 7,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:01:07 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5793e4b0a705fcc31e6d/versions/53aa5793e4b051a76d240e79/errors/"
+    }
+  },
+  "id": "53aa5793e4b051a76d240e79",
+  "status": "ACTIVE"
+}

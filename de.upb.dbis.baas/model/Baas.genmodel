@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/de.upb.dbis.baas/src/main/java" modelPluginID="de.upb.dbis.baas"
+    modelName="Baas" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>Baas.ecore</foreignModel>
+  <genPackages prefix="Baas" basePackage="de.upb.dbis" disposableProviderFactory="true"
+      ecorePackage="Baas.ecore#/">
+    <genClasses ecoreClass="Baas.ecore#//User">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Baas.ecore#//User/compositions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Baas.ecore#//User/specifications"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//User/lastName"/>
+    </genClasses>
+    <genClasses ecoreClass="Baas.ecore#//Composition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//Composition/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Baas.ecore#//Composition/operations"/>
+      <genOperations ecoreOperation="Baas.ecore#//Composition/searchOperation">
+        <genParameters ecoreParameter="Baas.ecore#//Composition/searchOperation/query"/>
+      </genOperations>
+      <genOperations ecoreOperation="Baas.ecore#//Composition/addOperation">
+        <genParameters ecoreParameter="Baas.ecore#//Composition/addOperation/operation"/>
+      </genOperations>
+      <genOperations ecoreOperation="Baas.ecore#//Composition/addMapping">
+        <genParameters ecoreParameter="Baas.ecore#//Composition/addMapping/left"/>
+        <genParameters ecoreParameter="Baas.ecore#//Composition/addMapping/right"/>
+      </genOperations>
+      <genOperations ecoreOperation="Baas.ecore#//Composition/matchOperations"/>
+      <genOperations ecoreOperation="Baas.ecore#//Composition/generate"/>
+    </genClasses>
+    <genClasses ecoreClass="Baas.ecore#//Specification">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Baas.ecore#//Specification/operations"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//Specification/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//Specification/rawSpecification"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//Specification/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//Specification/host"/>
+    </genClasses>
+    <genClasses ecoreClass="Baas.ecore#//Operation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Baas.ecore#//Operation/ios"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Baas.ecore#//Operation/specification"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//Operation/operationId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//Operation/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//Operation/summary"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//Operation/responseCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//Operation/method"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//Operation/path"/>
+    </genClasses>
+    <genClasses ecoreClass="Baas.ecore#//IO">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//IO/name"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Baas.ecore#//IO/operation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//IO/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//IO/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//IO/format"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//IO/jsonPath"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//IO/values"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//IO/datatype"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//IO/default"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Baas.ecore#//IO/semanticTypes"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Baas.ecore#//IO/subject"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Baas.ecore#//IO/predicate"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Baas.ecore#//IO/object"/>
+    </genClasses>
+    <genClasses ecoreClass="Baas.ecore#//Annotator">
+      <genOperations ecoreOperation="Baas.ecore#//Annotator/searchSemanticType">
+        <genParameters ecoreParameter="Baas.ecore#//Annotator/searchSemanticType/io"/>
+      </genOperations>
+      <genOperations ecoreOperation="Baas.ecore#//Annotator/add">
+        <genParameters ecoreParameter="Baas.ecore#//Annotator/add/io"/>
+        <genParameters ecoreParameter="Baas.ecore#//Annotator/add/type"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="Baas.ecore#//AnnotationResult"/>
+    <genClasses ecoreClass="Baas.ecore#//SemanticType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//SemanticType/label"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//SemanticType/uri"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//SemanticType/comment"/>
+    </genClasses>
+    <genClasses ecoreClass="Baas.ecore#//DiscoveryResult">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//DiscoveryResult/query"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//DiscoveryResult/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Baas.ecore#//SemanticTypeMapping">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Baas.ecore#//SemanticTypeMapping/semantictype"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Baas.ecore#//SemanticTypeMapping/io"/>
+    </genClasses>
+    <genClasses ecoreClass="Baas.ecore#//Vector">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Baas.ecore#//Vector/similarities"/>
+      <genOperations ecoreOperation="Baas.ecore#//Vector/length"/>
+      <genOperations ecoreOperation="Baas.ecore#//Vector/average"/>
+    </genClasses>
+    <genClasses ecoreClass="Baas.ecore#//Similarity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//Similarity/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//Similarity/sigma"/>
+    </genClasses>
+    <genClasses ecoreClass="Baas.ecore#//IOMapping">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Baas.ecore#//IOMapping/vector"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Baas.ecore#//IOMapping/left"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Baas.ecore#//IOMapping/right"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Baas.ecore#//Mapping">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//Mapping/score"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Baas.ecore#//Mapping/confirmation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//Mapping/relevance"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Baas.ecore#//UniqueElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//UniqueElement/uuid"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Baas.ecore#//Ranking">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Baas.ecore#//Ranking/mappings"/>
+      <genOperations ecoreOperation="Baas.ecore#//Ranking/averagePrecision">
+        <genParameters ecoreParameter="Baas.ecore#//Ranking/averagePrecision/correct"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="Baas.ecore#//MatchingResult"/>
+    <genClasses ecoreClass="Baas.ecore#//Confirmation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Baas.ecore#//Confirmation/user"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Baas.ecore#//Confirmation/datetime"/>
+    </genClasses>
+    <genClasses ecoreClass="Baas.ecore#//OperationMapping">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Baas.ecore#//OperationMapping/operation"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

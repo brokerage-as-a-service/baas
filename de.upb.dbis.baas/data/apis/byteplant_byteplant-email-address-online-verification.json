@@ -1,0 +1,265 @@
+{
+  "models": {
+    "took": 76,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "verify-response",
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "name": "Verify Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/models/53aa58c8e4b0a705fcc32173/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/models/53aa58c8e4b0a705fcc32173"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148"
+          }
+        },
+        "id": "53aa58c8e4b0a705fcc32173",
+        "creationDate": 1403672776702,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "verify-response-model",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Verify response model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/models/53aa58c8e4b00287471a2187/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/models/53aa58c8e4b00287471a2187"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148"
+          }
+        },
+        "id": "53aa58c8e4b00287471a2187",
+        "body": "{\n  \"status\": \"200\",\n  \"info\": \"OK - Valid Address\",\n  \"details\": \"Mail address syntax check: passed.\\nThe mail address domain part is not empty.\\nThe mail address is not a postmaster address.\\nThe domain part is not an IP address literal.\\nThe domain part is fully qualified.\\nThe mail address is not a no-reply address.\\nThe mail address is not on the list of known disposable mail address services.\\nAn MX record for the domain has been found.\\nSMTP address validation result: success.\\nSMTP catch-all test result: no catch-all address configured for this MX.\"\n}",
+        "creationDate": 1403672776475,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:42:13 UTC 2014",
+  "website": "http://www.email-validator.net/email-address-online-verification-api.html",
+  "endpoints": {
+    "took": 91,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 19,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "emailaddress",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "EmailAddress",
+              "description": "email address to validate (string)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/endpoints/53aa58c8e4b0f2c975470b43"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/endpoints/53aa58c8e4b0f2c975470b43/routeparameters/53aa58c9e4b00287471a2189"
+                }
+              },
+              "id": "53aa58c9e4b00287471a2189",
+              "type": "STRING",
+              "creationDate": 1403672777249,
+              "value": "office@mashape.com",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "timeout",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "Timeout",
+              "description": "timeout in seconds (default: 30s, min: 5s, max: 300s)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/endpoints/53aa58c8e4b0f2c975470b43"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/endpoints/53aa58c8e4b0f2c975470b43/routeparameters/53aa58c9e4b008bb2ef86dad"
+                }
+              },
+              "id": "53aa58c9e4b008bb2ef86dad",
+              "type": "STRING",
+              "creationDate": 1403672777437,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1406913089911,
+        "code": 200,
+        "method": "GET",
+        "description": "Verify Email Address",
+        "creationDate": 1403672776821,
+        "slugifiedPrimary": "byteplant-email-address-validation",
+        "routeregex": "/verify",
+        "route": "/verify",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "verify-response",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 21,
+          "name": "Verify Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/models/53aa58c8e4b0a705fcc32173/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/models/53aa58c8e4b0a705fcc32173"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148"
+            }
+          },
+          "id": "53aa58c8e4b0a705fcc32173",
+          "creationDate": 1403672776702,
+          "status": "ACTIVE"
+        },
+        "name": "Byteplant Email Address Validation",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/endpoints/53aa58c8e4b0f2c975470b43/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/endpoints/53aa58c8e4b0f2c975470b43/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/models/53aa58c8e4b0a705fcc32173"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/endpoints/53aa58c8e4b0f2c975470b43"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/endpoints/53aa58c8e4b0f2c975470b43/parameters/"
+          }
+        },
+        "id": "53aa58c8e4b0f2c975470b43",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Keep your email list clean and focus on real people - real-time email address validation is easy to implement and has a lot of benefits for your business. The best way to capture good leads is to verify contact information right at the point of entry.\r\nIntegrate our online email address verification API directly into your sign-up forms or web apps and allow your website visitors to fix errors in their email addresses instantly - only valid, usable email addresses will be accepted.\r\nReject throwaway, disposable email addresses and stay in touch with your users.\r\nAvoid costly list cleaning procedures to protect your online reputation when sending out newsletters and notifications to your users.",
+  "groups": {
+    "took": 44,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:06:15 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26d9e4b0596140334714/apis/53aa58c6e4b008bb2ef86dab/versions/53aa58c7e4b051a76d241148/authentication"
+    }
+  },
+  "id": "53aa58c7e4b051a76d241148",
+  "status": "ACTIVE"
+}

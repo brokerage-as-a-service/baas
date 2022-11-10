@@ -1,0 +1,406 @@
+{
+  "models": {
+    "took": 30,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "pricepoint",
+        "headers": {
+          "took": 9,
+          "total": 0,
+          "data": []
+        },
+        "name": "PricePoint",
+        "format": "JSON",
+        "description": "PricePoint is a representation of a price point in our system. PricePoint is a single price a customer can pay for your services.",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/models/53aa56b8e4b0a798dbd1a984/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/models/53aa56b8e4b0a798dbd1a984"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911"
+          }
+        },
+        "id": "53aa56b8e4b0a798dbd1a984",
+        "body": "{\n  \"status\": \"INVALID_SERVICE\",\n  \"errorMessage\": \"Invalid service\",\n  \"packages\": null\n}",
+        "creationDate": 1403672248922,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:45:58 UTC 2014",
+  "website": "http://developer.pencepay.com",
+  "endpoints": {
+    "took": 224,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 22,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 202,
+          "total": 8,
+          "data": [
+            {
+              "slugifiedPrimary": "apikey",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "apikey",
+              "description": "Service API key from service settings",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/endpoints/53aa56b8e4b07e1f4ebeb7bc"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/endpoints/53aa56b8e4b07e1f4ebeb7bc/routeparameters/53aa56b9e4b0b60946a2f919"
+                }
+              },
+              "id": "53aa56b9e4b0b60946a2f919",
+              "type": "STRING",
+              "creationDate": 1403672249067,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "country",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "country",
+              "description": "ISO 3166 country code (if this parameter is passed, along with username and password, revenue will be approximated using revenues for MNOs in that country)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/endpoints/53aa56b8e4b07e1f4ebeb7bc"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/endpoints/53aa56b8e4b07e1f4ebeb7bc/routeparameters/53aa56b9e4b05961403409fe"
+                }
+              },
+              "id": "53aa56b9e4b05961403409fe",
+              "type": "STRING",
+              "creationDate": 1403672249193,
+              "value": "DE",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "mccmnc",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "mccmnc",
+              "description": "Mobile network country and mobile network code",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/endpoints/53aa56b8e4b07e1f4ebeb7bc"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/endpoints/53aa56b8e4b07e1f4ebeb7bc/routeparameters/53aa56b9e4b0a798dbd1a986"
+                }
+              },
+              "id": "53aa56b9e4b0a798dbd1a986",
+              "type": "STRING",
+              "creationDate": 1403672249105,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "mno",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "mno",
+              "description": "Mobile network operator code",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/endpoints/53aa56b8e4b07e1f4ebeb7bc"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/endpoints/53aa56b8e4b07e1f4ebeb7bc/routeparameters/53aa56b9e4b05961403409fd"
+                }
+              },
+              "id": "53aa56b9e4b05961403409fd",
+              "type": "STRING",
+              "creationDate": 1403672249151,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "msisdn",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "msisdn",
+              "description": "Message sender’s MSISDN",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/endpoints/53aa56b8e4b07e1f4ebeb7bc"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/endpoints/53aa56b8e4b07e1f4ebeb7bc/routeparameters/53aa56b9e4b0b60946a2f91a"
+                }
+              },
+              "id": "53aa56b9e4b0b60946a2f91a",
+              "type": "STRING",
+              "creationDate": 1403672249240,
+              "value": "491626839555",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "password",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "password",
+              "description": "Account password",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/endpoints/53aa56b8e4b07e1f4ebeb7bc"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/endpoints/53aa56b8e4b07e1f4ebeb7bc/routeparameters/53aa56b9e4b07e1f4ebeb7c0"
+                }
+              },
+              "id": "53aa56b9e4b07e1f4ebeb7c0",
+              "type": "STRING",
+              "creationDate": 1403672249326,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "paymenttype",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "paymenttype",
+              "description": "\"mobile\", \"wap\", \"wallet\". In case that Identification service has confirmed that user accessed channel is WAP you should set this parameter to ‘wap’; default type is \"mobile\"",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/endpoints/53aa56b8e4b07e1f4ebeb7bc"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/endpoints/53aa56b8e4b07e1f4ebeb7bc/routeparameters/53aa56b9e4b05961403409ff"
+                }
+              },
+              "id": "53aa56b9e4b05961403409ff",
+              "type": "STRING",
+              "creationDate": 1403672249369,
+              "value": "mobile",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "username",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "username",
+              "description": "Account username",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/endpoints/53aa56b8e4b07e1f4ebeb7bc"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/endpoints/53aa56b8e4b07e1f4ebeb7bc/routeparameters/53aa56b9e4b0b60946a2f91b"
+                }
+              },
+              "id": "53aa56b9e4b0b60946a2f91b",
+              "type": "STRING",
+              "creationDate": 1403672249283,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403672249260,
+        "code": 200,
+        "method": "GET",
+        "description": "JSON endpoint",
+        "creationDate": 1403672248990,
+        "slugifiedPrimary": "pricepoint",
+        "routeregex": "/packages",
+        "route": "/packages",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "pricepoint",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 18,
+          "name": "PricePoint",
+          "format": "JSON",
+          "description": "PricePoint is a representation of a price point in our system. PricePoint is a single price a customer can pay for your services.",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/models/53aa56b8e4b0a798dbd1a984/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/models/53aa56b8e4b0a798dbd1a984"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911"
+            }
+          },
+          "id": "53aa56b8e4b0a798dbd1a984",
+          "body": "{\n  \"status\": \"INVALID_SERVICE\",\n  \"errorMessage\": \"Invalid service\",\n  \"packages\": null\n}",
+          "creationDate": 1403672248922,
+          "status": "ACTIVE"
+        },
+        "name": "PricePoint",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/endpoints/53aa56b8e4b07e1f4ebeb7bc/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/endpoints/53aa56b8e4b07e1f4ebeb7bc/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/models/53aa56b8e4b0a798dbd1a984"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/endpoints/53aa56b8e4b07e1f4ebeb7bc"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/endpoints/53aa56b8e4b07e1f4ebeb7bc/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/groups/53aa56b8e4b0b60946a2f917"
+          }
+        },
+        "id": "53aa56b8e4b07e1f4ebeb7bc",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "payment",
+          "took": 35,
+          "name": "payment",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/groups/53aa56b8e4b0b60946a2f917"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911"
+            }
+          },
+          "id": "53aa56b8e4b0b60946a2f917",
+          "creationDate": 1403672248960,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Direct Carrier Billing, Direct Mobile Billing and Premium SMS billing  payment methods, all available using this Mobile Payments API from PencePay.com\r\n\r\nAll mobile billing flows are supported: PIN, Redirect-to-Operator, Premium SMS and SMS handshake.",
+  "groups": {
+    "took": 9,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "payment",
+        "name": "payment",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/groups/53aa56b8e4b0b60946a2f917"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911"
+          }
+        },
+        "id": "53aa56b8e4b0b60946a2f917",
+        "creationDate": 1403672248960,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 04:57:28 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/objects/"
+    },
+    "groups": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2459e4b0a705fcc240e7/apis/53aa56b8e4b0a798dbd1a983/versions/53aa56b8e4b0b60946a2f911/errors/"
+    }
+  },
+  "id": "53aa56b8e4b0b60946a2f911",
+  "status": "ACTIVE"
+}

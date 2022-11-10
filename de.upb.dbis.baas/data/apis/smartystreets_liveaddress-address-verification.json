@@ -1,0 +1,666 @@
+{
+  "models": {
+    "took": 92,
+    "total": 6,
+    "data": [
+      {
+        "slugifiedPrimary": "address-candidate",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "Address candidate",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/models/53aa5095e4b05961403406d1/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/models/53aa5095e4b05961403406d1"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514"
+          }
+        },
+        "id": "53aa5095e4b05961403406d1",
+        "body": "{\n  \"input_index\": 0,\n  \"candidate_index\": 0,\n  \"delivery_line_1\": \"109 Wimbledon Sq\",\n  \"last_line\": \"Chesapeake VA 23320-4945\",\n  \"delivery_point_barcode\": \"233204945990\",\n  \"components\": {\n    \"primary_number\": \"109\",\n    \"street_name\": \"Wimbledon\",\n    \"street_suffix\": \"Sq\",\n    \"city_name\": \"Chesapeake\",\n    \"state_abbreviation\": \"VA\",\n    \"zipcode\": \"23320\",\n    \"plus4_code\": \"4945\",\n    \"delivery_point\": \"99\",\n    \"delivery_point_check_digit\": \"0\"\n  },\n  \"metadata\": {\n    \"record_type\": \"H\",\n    \"county_fips\": \"51550\",\n    \"county_name\": \"Chesapeake City\",\n    \"carrier_route\": \"C019\",\n    \"congressional_district\": \"04\",\n    \"building_default_indicator\": \"Y\",\n    \"rdi\": \"Commercial\",\n    \"latitude\": 36.74337,\n    \"longitude\": -76.24494,\n    \"precision\": \"Zip9\"\n  },\n  \"analysis\": {\n    \"dpv_match_code\": \"D\",\n    \"dpv_footnotes\": \"AAN1\",\n    \"dpv_cmra\": \"N\",\n    \"dpv_vacant\": \"N\",\n    \"active\": \"Y\",\n    \"footnotes\": \"B#H#N#\"\n  }\n}",
+        "creationDate": 1403670677828,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "analysis",
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "name": "Analysis",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/models/53aa5095e4b0a9b1348da6f5/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/models/53aa5095e4b0a9b1348da6f5"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514"
+          }
+        },
+        "id": "53aa5095e4b0a9b1348da6f5",
+        "body": "{\n  \"dpv_match_code\": \"D\",\n  \"dpv_footnotes\": \"AAN1\",\n  \"dpv_cmra\": \"N\",\n  \"dpv_vacant\": \"N\",\n  \"active\": \"Y\",\n  \"footnotes\": \"B#H#N#\"\n}",
+        "creationDate": 1403670677851,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "batch-lookup",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Batch lookup",
+        "format": "JSON",
+        "description": "(JSON)",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/models/53aa5095e4b07e1f4ebeb485/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/models/53aa5095e4b07e1f4ebeb485"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514"
+          }
+        },
+        "id": "53aa5095e4b07e1f4ebeb485",
+        "body": "[\n\t{\n\t\t\"street\": \"1 rosedale st\",\n\t\t\"lastline\": \"baltimore, md\",\n\t\t\"candidates\": 5\n\t},\n\t{\n\t\t\"street\": \"1 infinite loop, cupertino, ca\",\n\t\t\"candidates\": 2\n\t},\n\t{\n\t\t\"street\": \"1600 Ampitheatre parkway\",\n\t\t\"city\": \"Mountain View\",\n\t\t\"state\": \"california\",\n\t\t\"zipcode\": \"\",\n\t\t\"candidates\": 2\n\t}\n]",
+        "creationDate": 1403670677880,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "components",
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "name": "Components",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/models/53aa5095e4b0a798dbd1a671/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/models/53aa5095e4b0a798dbd1a671"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514"
+          }
+        },
+        "id": "53aa5095e4b0a798dbd1a671",
+        "body": "{\n  \"primary_number\": \"109\",\n  \"street_name\": \"Wimbledon\",\n  \"street_suffix\": \"Sq\",\n  \"city_name\": \"Chesapeake\",\n  \"state_abbreviation\": \"VA\",\n  \"zipcode\": \"23320\",\n  \"plus4_code\": \"4945\",\n  \"delivery_point\": \"99\",\n  \"delivery_point_check_digit\": \"0\"\n}",
+        "creationDate": 1403670677900,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "metadata",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "Metadata",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/models/53aa5095e4b0b60946a2f633/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/models/53aa5095e4b0b60946a2f633"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514"
+          }
+        },
+        "id": "53aa5095e4b0b60946a2f633",
+        "body": "{\n  \"record_type\": \"H\",\n  \"county_fips\": \"51550\",\n  \"county_name\": \"Chesapeake City\",\n  \"carrier_route\": \"C019\",\n  \"congressional_district\": \"04\",\n  \"building_default_indicator\": \"Y\",\n  \"rdi\": \"Commercial\",\n  \"latitude\": 36.74337,\n  \"longitude\": -76.24494,\n  \"precision\": \"Zip9\"\n}",
+        "creationDate": 1403670677941,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "one-address-candidate-json-",
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "name": "One address candidate (JSON)",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/models/53aa5095e4b0a9b1348da6f6/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/models/53aa5095e4b0a9b1348da6f6"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514"
+          }
+        },
+        "id": "53aa5095e4b0a9b1348da6f6",
+        "body": "[\n  {\n    \"input_index\": 0,\n    \"candidate_index\": 0,\n    \"delivery_line_1\": \"109 Wimbledon Sq\",\n    \"last_line\": \"Chesapeake VA 23320-4945\",\n    \"delivery_point_barcode\": \"233204945990\",\n    \"components\": {\n      \"primary_number\": \"109\",\n      \"street_name\": \"Wimbledon\",\n      \"street_suffix\": \"Sq\",\n      \"city_name\": \"Chesapeake\",\n      \"state_abbreviation\": \"VA\",\n      \"zipcode\": \"23320\",\n      \"plus4_code\": \"4945\",\n      \"delivery_point\": \"99\",\n      \"delivery_point_check_digit\": \"0\"\n    },\n    \"metadata\": {\n      \"record_type\": \"H\",\n      \"county_fips\": \"51550\",\n      \"county_name\": \"Chesapeake City\",\n      \"carrier_route\": \"C019\",\n      \"congressional_district\": \"04\",\n      \"building_default_indicator\": \"Y\",\n      \"rdi\": \"Commercial\",\n      \"latitude\": 36.74337,\n      \"longitude\": -76.24494,\n      \"precision\": \"Zip9\"\n    },\n    \"analysis\": {\n      \"dpv_match_code\": \"D\",\n      \"dpv_footnotes\": \"AAN1\",\n      \"dpv_cmra\": \"N\",\n      \"dpv_vacant\": \"N\",\n      \"active\": \"Y\",\n      \"footnotes\": \"B#H#N#\"\n    }\n  }\n]",
+        "creationDate": 1403670677963,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:42:38 UTC 2014",
+  "website": "http://smartystreets.com/products/liveaddress-api",
+  "endpoints": {
+    "took": 119,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403670678320,
+        "code": 200,
+        "method": "POST",
+        "description": "",
+        "creationDate": 1403670677990,
+        "slugifiedPrimary": "multiple-street-address",
+        "routeregex": "/street-address",
+        "route": "/street-address",
+        "array": true,
+        "response": {
+          "slugifiedPrimary": "one-address-candidate-json-",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 14,
+          "name": "One address candidate (JSON)",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/models/53aa5095e4b0a9b1348da6f6/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/models/53aa5095e4b0a9b1348da6f6"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514"
+            }
+          },
+          "id": "53aa5095e4b0a9b1348da6f6",
+          "body": "[\n  {\n    \"input_index\": 0,\n    \"candidate_index\": 0,\n    \"delivery_line_1\": \"109 Wimbledon Sq\",\n    \"last_line\": \"Chesapeake VA 23320-4945\",\n    \"delivery_point_barcode\": \"233204945990\",\n    \"components\": {\n      \"primary_number\": \"109\",\n      \"street_name\": \"Wimbledon\",\n      \"street_suffix\": \"Sq\",\n      \"city_name\": \"Chesapeake\",\n      \"state_abbreviation\": \"VA\",\n      \"zipcode\": \"23320\",\n      \"plus4_code\": \"4945\",\n      \"delivery_point\": \"99\",\n      \"delivery_point_check_digit\": \"0\"\n    },\n    \"metadata\": {\n      \"record_type\": \"H\",\n      \"county_fips\": \"51550\",\n      \"county_name\": \"Chesapeake City\",\n      \"carrier_route\": \"C019\",\n      \"congressional_district\": \"04\",\n      \"building_default_indicator\": \"Y\",\n      \"rdi\": \"Commercial\",\n      \"latitude\": 36.74337,\n      \"longitude\": -76.24494,\n      \"precision\": \"Zip9\"\n    },\n    \"analysis\": {\n      \"dpv_match_code\": \"D\",\n      \"dpv_footnotes\": \"AAN1\",\n      \"dpv_cmra\": \"N\",\n      \"dpv_vacant\": \"N\",\n      \"active\": \"Y\",\n      \"footnotes\": \"B#H#N#\"\n    }\n  }\n]",
+          "creationDate": 1403670677963,
+          "status": "ACTIVE"
+        },
+        "name": "Multiple street address",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5095e4b0a9b1348da6f7/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5095e4b0a9b1348da6f7/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/models/53aa5095e4b0a9b1348da6f6"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5095e4b0a9b1348da6f7"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5095e4b0a9b1348da6f7/parameters/"
+          }
+        },
+        "id": "53aa5095e4b0a9b1348da6f7",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 84,
+          "total": 12,
+          "data": [
+            {
+              "slugifiedPrimary": "addressee",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "addressee",
+              "description": "The recipient or firm/company name",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634/routeparameters/53aa5096e4b0a9b1348da6fd"
+                }
+              },
+              "id": "53aa5096e4b0a9b1348da6fd",
+              "type": "STRING",
+              "creationDate": 1403670678500,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "callback",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "callback",
+              "description": "The name of the function in which to wrap the JSON response. Typically only used for cross-domain JSONP requests with Javascript.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634/routeparameters/53aa5096e4b0a9b1348da6fe"
+                }
+              },
+              "id": "53aa5096e4b0a9b1348da6fe",
+              "type": "STRING",
+              "creationDate": 1403670678589,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "candidates",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "candidates",
+              "description": "The maximum number of valid addresses returned when the input address is ambiguous. (Max = 10, default = 1)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634/routeparameters/53aa5096e4b07e1f4ebeb48c"
+                }
+              },
+              "id": "53aa5096e4b07e1f4ebeb48c",
+              "type": "NUMBER",
+              "creationDate": 1403670678636,
+              "value": "10",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "city",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "city",
+              "description": "The city name",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634/routeparameters/53aa5096e4b0a9b1348da6fb"
+                }
+              },
+              "id": "53aa5096e4b0a9b1348da6fb",
+              "type": "STRING",
+              "creationDate": 1403670678309,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "input_id",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "input_id",
+              "description": "Any unique identifier that you use to reference the input address. The output will be identical to the input.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634/routeparameters/53aa5096e4b05961403406d3"
+                }
+              },
+              "id": "53aa5096e4b05961403406d3",
+              "type": "STRING",
+              "creationDate": 1403670678136,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "lastline",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "lastline",
+              "description": "The city, state, and ZIP code combined (if not using city/state/zipcode fields)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634/routeparameters/53aa5096e4b05961403406d6"
+                }
+              },
+              "id": "53aa5096e4b05961403406d6",
+              "type": "STRING",
+              "creationDate": 1403670678453,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "secondary",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "secondary",
+              "description": "If used, usually contains apartment or suite number",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634/routeparameters/53aa5096e4b0a9b1348da6f9"
+                }
+              },
+              "id": "53aa5096e4b0a9b1348da6f9",
+              "type": "STRING",
+              "creationDate": 1403670678265,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "state",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "state",
+              "description": "The state name",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634/routeparameters/53aa5096e4b07e1f4ebeb488"
+                }
+              },
+              "id": "53aa5096e4b07e1f4ebeb488",
+              "type": "STRING",
+              "creationDate": 1403670678361,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "street",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "street",
+              "description": "The street line of the address, or an entire address as a single string",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634/routeparameters/53aa5096e4b05961403406d5"
+                }
+              },
+              "id": "53aa5096e4b05961403406d5",
+              "type": "STRING",
+              "creationDate": 1403670678181,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "street2",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "street2",
+              "description": "Extra address information",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634/routeparameters/53aa5096e4b0a9b1348da6f8"
+                }
+              },
+              "id": "53aa5096e4b0a9b1348da6f8",
+              "type": "STRING",
+              "creationDate": 1403670678221,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "urbanization",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "urbanization",
+              "description": "Only used with Puerto Rican addresses",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634/routeparameters/53aa5096e4b07e1f4ebeb48b"
+                }
+              },
+              "id": "53aa5096e4b07e1f4ebeb48b",
+              "type": "STRING",
+              "creationDate": 1403670678549,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "zipcode",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "zipcode",
+              "description": "The ZIP code",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634/routeparameters/53aa5096e4b07e1f4ebeb489"
+                }
+              },
+              "id": "53aa5096e4b07e1f4ebeb489",
+              "type": "STRING",
+              "creationDate": 1403670678408,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403670678484,
+        "code": 200,
+        "method": "GET",
+        "description": "Easily verify a single street address",
+        "creationDate": 1403670678060,
+        "slugifiedPrimary": "single-street-address",
+        "routeregex": "/street-address",
+        "route": "/street-address",
+        "array": true,
+        "response": {
+          "slugifiedPrimary": "one-address-candidate-json-",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 51,
+          "name": "One address candidate (JSON)",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/models/53aa5095e4b0a9b1348da6f6/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/models/53aa5095e4b0a9b1348da6f6"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514"
+            }
+          },
+          "id": "53aa5095e4b0a9b1348da6f6",
+          "body": "[\n  {\n    \"input_index\": 0,\n    \"candidate_index\": 0,\n    \"delivery_line_1\": \"109 Wimbledon Sq\",\n    \"last_line\": \"Chesapeake VA 23320-4945\",\n    \"delivery_point_barcode\": \"233204945990\",\n    \"components\": {\n      \"primary_number\": \"109\",\n      \"street_name\": \"Wimbledon\",\n      \"street_suffix\": \"Sq\",\n      \"city_name\": \"Chesapeake\",\n      \"state_abbreviation\": \"VA\",\n      \"zipcode\": \"23320\",\n      \"plus4_code\": \"4945\",\n      \"delivery_point\": \"99\",\n      \"delivery_point_check_digit\": \"0\"\n    },\n    \"metadata\": {\n      \"record_type\": \"H\",\n      \"county_fips\": \"51550\",\n      \"county_name\": \"Chesapeake City\",\n      \"carrier_route\": \"C019\",\n      \"congressional_district\": \"04\",\n      \"building_default_indicator\": \"Y\",\n      \"rdi\": \"Commercial\",\n      \"latitude\": 36.74337,\n      \"longitude\": -76.24494,\n      \"precision\": \"Zip9\"\n    },\n    \"analysis\": {\n      \"dpv_match_code\": \"D\",\n      \"dpv_footnotes\": \"AAN1\",\n      \"dpv_cmra\": \"N\",\n      \"dpv_vacant\": \"N\",\n      \"active\": \"Y\",\n      \"footnotes\": \"B#H#N#\"\n    }\n  }\n]",
+          "creationDate": 1403670677963,
+          "status": "ACTIVE"
+        },
+        "name": "Single street address",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/models/53aa5095e4b0a9b1348da6f6"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/53aa5096e4b0b60946a2f634/parameters/"
+          }
+        },
+        "id": "53aa5096e4b0b60946a2f634",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Verify, standardize, and validate US street addresses.",
+  "groups": {
+    "took": 6,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 04:31:17 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 6,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/features/"
+    },
+    "plans": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5095e4b0b60946a2f630/versions/53aa5095e4b008bb2ef86514/authentication"
+    }
+  },
+  "id": "53aa5095e4b008bb2ef86514",
+  "status": "ACTIVE"
+}

@@ -1,0 +1,417 @@
+{
+  "models": {
+    "took": 123,
+    "total": 3,
+    "data": [
+      {
+        "slugifiedPrimary": "article-summary-response",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Article-Summary Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/models/53aa57e3e4b008bb2ef86bb6/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/models/53aa57e3e4b008bb2ef86bb6"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6"
+          }
+        },
+        "id": "53aa57e3e4b008bb2ef86bb6",
+        "creationDate": 1403672547124,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "no-content-error",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "No Content Error",
+        "format": "JSON",
+        "description": "Error thrown when there is not enough content to summarize.",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/models/53aa57e2e4b0a705fcc31f32/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/models/53aa57e2e4b0a705fcc31f32"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6"
+          }
+        },
+        "id": "53aa57e2e4b0a705fcc31f32",
+        "body": "{\n    status: \"Error\",\n    code: 411,\n    msg: \"No Content! The url http://www.nation.co.ke/news/video/-/1951480/2069970/-/n8nk9k/-/index.html     does not seem to contain any useful content for Shorticle to summarize.\"\n}",
+        "creationDate": 1403672546953,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "request-timeout-error",
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "name": "Request Timeout Error",
+        "format": "JSON",
+        "description": "Error thrown when the requested URL cannot be loaded.",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/models/53aa57e3e4b00287471a1f31/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/models/53aa57e3e4b00287471a1f31"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6"
+          }
+        },
+        "id": "53aa57e3e4b00287471a1f31",
+        "body": "{\n  \"status\": \"Error\",\n  \"code\": 408,\n  \"msg\": \"Request Timeout! The url http://www.nation.co.ke/news/video/-/1951480/2069970/-/n8nk9k/-/index.html could not be loaded due to a time out. Either that URL does not exist or the server is unreachable.\"\n}",
+        "creationDate": 1403672547006,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:44:51 UTC 2014",
+  "website": "http://shorticle.com",
+  "endpoints": {
+    "took": 110,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 49,
+          "total": 6,
+          "data": [
+            {
+              "slugifiedPrimary": "language",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "language",
+              "description": "Determines whether Shorticle will attempt to detect the language used in the article.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/endpoints/53aa57e3e4b0a705fcc31f33"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/endpoints/53aa57e3e4b0a705fcc31f33/routeparameters/53aa57e3e4b0f2c975470920"
+                }
+              },
+              "id": "53aa57e3e4b0f2c975470920",
+              "type": "BOOLEAN",
+              "creationDate": 1403672547645,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "limit",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "limit",
+              "description": "Number of paragraphs to be returned. Minimum value is 1 and max is 10. Default Value is 5.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/endpoints/53aa57e3e4b0a705fcc31f33"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/endpoints/53aa57e3e4b0a705fcc31f33/routeparameters/53aa57e3e4b0f2c97547091d"
+                }
+              },
+              "id": "53aa57e3e4b0f2c97547091d",
+              "type": "NUMBER",
+              "creationDate": 1403672547394,
+              "value": "5",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "return_content",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "return_content",
+              "description": "Determines whether Shorticle  will return body text/content.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/endpoints/53aa57e3e4b0a705fcc31f33"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/endpoints/53aa57e3e4b0a705fcc31f33/routeparameters/53aa57e3e4b0a705fcc31f34"
+                }
+              },
+              "id": "53aa57e3e4b0a705fcc31f34",
+              "type": "BOOLEAN",
+              "creationDate": 1403672547731,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "show_images",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "show_images",
+              "description": "Determines whether Shorticle should return the article's main image.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/endpoints/53aa57e3e4b0a705fcc31f33"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/endpoints/53aa57e3e4b0a705fcc31f33/routeparameters/53aa57e3e4b0f2c97547091e"
+                }
+              },
+              "id": "53aa57e3e4b0f2c97547091e",
+              "type": "BOOLEAN",
+              "creationDate": 1403672547478,
+              "value": "checked",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "social_shares",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "social_shares",
+              "description": "Determines whether Shorticle should return the social media shares (Facebook, Google+ or Twitter) from given URL.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/endpoints/53aa57e3e4b0a705fcc31f33"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/endpoints/53aa57e3e4b0a705fcc31f33/routeparameters/53aa57e3e4b0f2c97547091f"
+                }
+              },
+              "id": "53aa57e3e4b0f2c97547091f",
+              "type": "BOOLEAN",
+              "creationDate": 1403672547562,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "url",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "url",
+              "description": "URL resource from which to summarize article.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/endpoints/53aa57e3e4b0a705fcc31f33"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/endpoints/53aa57e3e4b0a705fcc31f33/routeparameters/53aa57e3e4b051a76d240f30"
+                }
+              },
+              "id": "53aa57e3e4b051a76d240f30",
+              "type": "STRING",
+              "creationDate": 1403672547292,
+              "value": "http://www.kenyatweets.com",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403672547535,
+        "code": 200,
+        "method": "GET",
+        "description": "Endpoint to fetch article summary, main image and social shares",
+        "creationDate": 1403672547185,
+        "slugifiedPrimary": "article-summary",
+        "routeregex": "/summary/",
+        "route": "/summary/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "article-summary-response",
+          "headers": {
+            "took": 4,
+            "total": 0,
+            "data": []
+          },
+          "took": 16,
+          "name": "Article-Summary Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/models/53aa57e3e4b008bb2ef86bb6/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/models/53aa57e3e4b008bb2ef86bb6"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6"
+            }
+          },
+          "id": "53aa57e3e4b008bb2ef86bb6",
+          "creationDate": 1403672547124,
+          "status": "ACTIVE"
+        },
+        "name": "Article Summary",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/endpoints/53aa57e3e4b0a705fcc31f33/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/endpoints/53aa57e3e4b0a705fcc31f33/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/models/53aa57e3e4b008bb2ef86bb6"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/endpoints/53aa57e3e4b0a705fcc31f33"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/endpoints/53aa57e3e4b0a705fcc31f33/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/groups/53aa57e3e4b008bb2ef86bb5"
+          }
+        },
+        "id": "53aa57e3e4b0a705fcc31f33",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "summarization",
+          "took": 37,
+          "name": "Summarization",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/groups/53aa57e3e4b008bb2ef86bb5"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6"
+            }
+          },
+          "id": "53aa57e3e4b008bb2ef86bb5",
+          "creationDate": 1403672547053,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Shorticle is an article summarization tool capable of summarising web articles to a custom variable length, picking article's title and main image, fetching article's social shares and detecting language. Shorticle can work with shortened URLs. Shorticle uses advanced algorithms to determine sentence value (based on article keywords) and sentence relationship to ensure that sentences used in summary are comprehensible and cover the entire scope of the article.",
+  "groups": {
+    "took": 33,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "summarization",
+        "name": "Summarization",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/groups/53aa57e3e4b008bb2ef86bb5"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6"
+          }
+        },
+        "id": "53aa57e3e4b008bb2ef86bb5",
+        "creationDate": 1403672547053,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 05:02:26 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/objects/"
+    },
+    "groups": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/groups/"
+    },
+    "issues": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/features/"
+    },
+    "plans": {
+      "total": 6,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2448e4b0596140330f06/apis/53aa57e2e4b0f2c975470919/versions/53aa57e2e4b0596140340cd6/authentication"
+    }
+  },
+  "id": "53aa57e2e4b0596140340cd6",
+  "status": "ACTIVE"
+}

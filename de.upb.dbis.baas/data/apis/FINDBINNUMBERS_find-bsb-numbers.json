@@ -1,0 +1,236 @@
+{
+  "models": {
+    "took": 74,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "model",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "/ model",
+        "format": "XML",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/models/56e0b042e4b0b1c438f7250c/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/models/56e0b042e4b0b1c438f7250c"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a"
+          }
+        },
+        "id": "56e0b042e4b0b1c438f7250c",
+        "body": "<result>\n<bsb> \n<bsb_number>032-001</bsb_number> \n<bsb_bank_name>Westpac Bank</bsb_bank_name> \n<bsb_bank_website>http://www.westpac.com.au</bsb_bank_website> \n<bsb_branch_address>Level 3, 275 Kent Street</bsb_branch_address> \n<bsb_branch_suburb>Sydney</bsb_branch_suburb> \n<bsb_branch_postcode>2000</bsb_branch_postcode> \n<bsb_latitude>-33.8663180</bsb_latitude> \n<bsb_longitude>151.2041900</bsb_longitude> \n</bsb> \n</result>",
+        "creationDate": 1457565762629,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Mar 10 00:13:52 UTC 2016",
+  "website": "http://findbsbnumbers.com.au",
+  "endpoints": {
+    "took": 118,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 19,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "bsb",
+              "condition": "REQUIRED",
+              "name": "bsb",
+              "description": "BSB Number you are searching for.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/endpoints/56e0aff6e4b0e1ef6fbaab1b"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/endpoints/56e0aff6e4b0e1ef6fbaab1b/routeparameters/56e0b017e4b0b1c438f7250b"
+                }
+              },
+              "id": "56e0b017e4b0b1c438f7250b",
+              "type": "STRING",
+              "creationDate": 1457565719550,
+              "value": "032-001",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "format",
+              "condition": "OPTIONAL",
+              "name": "format",
+              "description": "Format you wish to be returned. \"xml\" or \"json\"",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/endpoints/56e0aff6e4b0e1ef6fbaab1b"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/endpoints/56e0aff6e4b0e1ef6fbaab1b/routeparameters/56e0b036e4b0b7099e0829dc"
+                }
+              },
+              "id": "56e0b036e4b0b7099e0829dc",
+              "type": "STRING",
+              "creationDate": 1457565750993,
+              "value": "xml",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1457565765711,
+        "code": 200,
+        "method": "GET",
+        "description": "Find BSB Numbers",
+        "creationDate": 1457565686660,
+        "slugifiedPrimary": "",
+        "routeregex": "/",
+        "route": "/",
+        "response": {
+          "slugifiedPrimary": "model",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 39,
+          "name": "/ model",
+          "format": "XML",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/models/56e0b042e4b0b1c438f7250c/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/models/56e0b042e4b0b1c438f7250c"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a"
+            }
+          },
+          "id": "56e0b042e4b0b1c438f7250c",
+          "body": "<result>\n<bsb> \n<bsb_number>032-001</bsb_number> \n<bsb_bank_name>Westpac Bank</bsb_bank_name> \n<bsb_bank_website>http://www.westpac.com.au</bsb_bank_website> \n<bsb_branch_address>Level 3, 275 Kent Street</bsb_branch_address> \n<bsb_branch_suburb>Sydney</bsb_branch_suburb> \n<bsb_branch_postcode>2000</bsb_branch_postcode> \n<bsb_latitude>-33.8663180</bsb_latitude> \n<bsb_longitude>151.2041900</bsb_longitude> \n</bsb> \n</result>",
+          "creationDate": 1457565762629,
+          "status": "ACTIVE"
+        },
+        "name": "/",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/endpoints/56e0aff6e4b0e1ef6fbaab1b/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/endpoints/56e0aff6e4b0e1ef6fbaab1b/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/models/56e0b042e4b0b1c438f7250c"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/endpoints/56e0aff6e4b0e1ef6fbaab1b"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/endpoints/56e0aff6e4b0e1ef6fbaab1b/parameters/"
+          }
+        },
+        "id": "56e0aff6e4b0e1ef6fbaab1b",
+        "parameters": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Provides information about BSB numbers, such as Bank Name, Address, GEO coordinates.",
+  "groups": {
+    "took": 21,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Mar 09 23:20:58 UTC 2016",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/features/"
+    },
+    "plans": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/548a157de4b0e73764744878/apis/56e0afdae4b0b7099e0829db/versions/56e0afdae4b0b1c438f7250a/errors/"
+    }
+  },
+  "id": "56e0afdae4b0b1c438f7250a",
+  "status": "ACTIVE"
+}

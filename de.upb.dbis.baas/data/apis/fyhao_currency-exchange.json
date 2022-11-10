@@ -1,0 +1,360 @@
+{
+  "models": {
+    "took": 86,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "exchange-response",
+        "headers": {
+          "took": 22,
+          "total": 0,
+          "data": []
+        },
+        "name": "exchange Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/models/53aa60c0e4b0a798dbd1bc5b/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/models/53aa60c0e4b0a798dbd1bc5b"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f"
+          }
+        },
+        "id": "53aa60c0e4b0a798dbd1bc5b",
+        "creationDate": 1403674816413,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "listquotes-response",
+        "headers": {
+          "took": 22,
+          "total": 0,
+          "data": []
+        },
+        "name": "listquotes Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/models/53aa60c0e4b0596140341c58/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/models/53aa60c0e4b0596140341c58"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f"
+          }
+        },
+        "id": "53aa60c0e4b0596140341c58",
+        "creationDate": 1403674816643,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:45:12 UTC 2014",
+  "website": "https://www.mashape.com/fyhao/currency-exchange",
+  "endpoints": {
+    "took": 134,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 33,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "from",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "from",
+              "description": "Source Quote",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/endpoints/53aa60c0e4b0596140341c57"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/endpoints/53aa60c0e4b0596140341c57/routeparameters/53aa60c0e4b0b60946a30ba1"
+                }
+              },
+              "id": "53aa60c0e4b0b60946a30ba1",
+              "type": "STRING",
+              "creationDate": 1403674816508,
+              "value": "SGD",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "q",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "q",
+              "description": "Source Amount",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/endpoints/53aa60c0e4b0596140341c57"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/endpoints/53aa60c0e4b0596140341c57/routeparameters/53aa60c0e4b07e1f4ebec9e3"
+                }
+              },
+              "id": "53aa60c0e4b07e1f4ebec9e3",
+              "type": "NUMBER",
+              "creationDate": 1403674816595,
+              "value": "1.0",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "to",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "to",
+              "description": "Destination Quote",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/endpoints/53aa60c0e4b0596140341c57"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/endpoints/53aa60c0e4b0596140341c57/routeparameters/53aa60c0e4b0b60946a30ba2"
+                }
+              },
+              "id": "53aa60c0e4b0b60946a30ba2",
+              "type": "STRING",
+              "creationDate": 1403674816551,
+              "value": "MYR",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403674816924,
+        "code": 200,
+        "method": "GET",
+        "description": "Get Currency Exchange by specifying the quotes of source (from) and destination (to), and optionally the source amount to calculate which to get the destination amount, by default the source amount will be 1.",
+        "creationDate": 1403674816447,
+        "slugifiedPrimary": "exchange",
+        "routeregex": "/exchange",
+        "route": "/exchange",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "exchange-response",
+          "headers": {
+            "took": 21,
+            "total": 0,
+            "data": []
+          },
+          "took": 36,
+          "name": "exchange Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/models/53aa60c0e4b0a798dbd1bc5b/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/models/53aa60c0e4b0a798dbd1bc5b"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f"
+            }
+          },
+          "id": "53aa60c0e4b0a798dbd1bc5b",
+          "creationDate": 1403674816413,
+          "status": "ACTIVE"
+        },
+        "name": "exchange",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/endpoints/53aa60c0e4b0596140341c57/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/endpoints/53aa60c0e4b0596140341c57/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/models/53aa60c0e4b0a798dbd1bc5b"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/endpoints/53aa60c0e4b0596140341c57"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/endpoints/53aa60c0e4b0596140341c57/parameters/"
+          }
+        },
+        "id": "53aa60c0e4b0596140341c57",
+        "parameters": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403674816813,
+        "code": 200,
+        "method": "GET",
+        "description": "List the available quotes in JSON Array this API support, all the available quotes can be used in source and destination quote. Refer exchange endpoint for more information how to call the currency exchange from the source quote to destination quote.",
+        "creationDate": 1403674816666,
+        "slugifiedPrimary": "listquotes",
+        "routeregex": "/listquotes",
+        "route": "/listquotes",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "listquotes-response",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 17,
+          "name": "listquotes Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/models/53aa60c0e4b0596140341c58/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/models/53aa60c0e4b0596140341c58"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f"
+            }
+          },
+          "id": "53aa60c0e4b0596140341c58",
+          "creationDate": 1403674816643,
+          "status": "ACTIVE"
+        },
+        "name": "listquotes",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/endpoints/53aa60c0e4b0a798dbd1bc5d/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/endpoints/53aa60c0e4b0a798dbd1bc5d/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/models/53aa60c0e4b0596140341c58"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/endpoints/53aa60c0e4b0a798dbd1bc5d"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/endpoints/53aa60c0e4b0a798dbd1bc5d/parameters/"
+          }
+        },
+        "id": "53aa60c0e4b0a798dbd1bc5d",
+        "parameters": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Live currency and foreign exchange rates by specifying source and destination quotes and optionally amount to calculate. Support vast amount of quotes around the world.",
+  "groups": {
+    "took": 55,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:40:16 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/groups/"
+    },
+    "issues": {
+      "total": 7,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2cc6e4b07e1f4ebe629e/apis/53aa60c0e4b0b60946a30b9e/versions/53aa60c0e4b0f2c97547170f/errors/"
+    }
+  },
+  "id": "53aa60c0e4b0f2c97547170f",
+  "status": "ACTIVE"
+}

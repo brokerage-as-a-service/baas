@@ -1,0 +1,319 @@
+{
+  "models": {
+    "took": 54,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "download-model",
+        "headers": {
+          "took": 15,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1500792070731,
+        "name": "/download model",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/models/595b5515e4b058a9cb039628/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/models/595b5515e4b058a9cb039628"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a"
+          }
+        },
+        "id": "595b5515e4b058a9cb039628",
+        "body": "{\n   \"status\":true,\n   \"message\":\"Successfully received info.\",\n   \"site\":\"Youtube\",\n   \"title\":\"Taylor Swift - Shake It Off\", \n   \"like_count\":6290433,\n   \"dislike_count\":744939,\n   \"view_count\":2234478374,\n   \"duration\":242,\n   \"upload_date\":\"20140818\",\n   \"description\":\"Taylor\\u2019s new release 1989 is Available Now featuring the hit single \\u201cShake It Off\\u201d and her latest single \\u201cBlank Space\\u201d. \",\n   \"tags\":[\n      \"Taylor\",\n      \"Swift\",\n      \"Shake\",\n      \"It\",\n      \"Off\",\n      \"Big\",\n      \"Machine\",\n      \"Records\"],\n   \"uploader\":\"TaylorSwiftVEVO\",\n   \"uploader_url\":\"http:\\/\\/www.youtube.com\\/user\\/TaylorSwiftVEVO\",\n   \"thumbnail\":\"https:\\/\\/i.ytimg.com\\/vi\\/nfWlot6h_JM\\/maxresdefault.jpg\",\n   \"streams\":[\n   {\n      \"url\":\"https:\\/\\/r6---sn-4g57knkz.googlevideo.com\\/videoplayback?id=9d[...]\",\n      \"format\":\"audio only (DASH audio)\",\n      \"format_note\":\"Audio only, no video\",\n      \"extension\":\"m4a\",\n      \"video_codec\":\"none\",\n      \"audio_codec\":\"mp4a.40.5\",\n      \"filesize\":1438229,\n      \"height\":null,\n      \"width\":null\n   },\n   {\n      \"url\":\"https:\\/\\/r6---sn-4g57knkz.googlevideo.com\\/videoplayback?key=[...]\",\n      \"format\":\"1920x1080 (1080p)\",\n      \"format_note\":\"1080p\",\n      \"extension\":\"webm\",\n      \"video_codec\":\"vp9\",\n      \"audio_codec\":\"none\",\n      \"filesize\":68016821,\n      \"height\":1080,\n      \"width\":1920\n   },\n  {\n      ...\n   }\n]}",
+        "creationDate": 1499157781114,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "supported-sites-model",
+        "headers": {
+          "took": 15,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1499158678859,
+        "name": "/supported-sites/ model",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/models/595b5808e4b058a9cb03962d/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/models/595b5808e4b058a9cb03962d"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a"
+          }
+        },
+        "id": "595b5808e4b058a9cb03962d",
+        "body": "[\n   \"Youtube\",\n   \"Facebook\",\n   \"Instagram\",\n   \"LiveLeak\",\n   \"Pornhub\",\n   \"Redtube\",\n   \"SoundCloud\",\n   \"Streamable\",\n   \"TED\",\n   \"Twitch\",\n   \"Vimeo\",\n   \"Youporn\",\n   \"1up.com\",\n   \"220.ro\",\n   \"22tracks\",\n   \"24video\",\n   \"3Q SDN\",\n   \"3sat\",\n   \"4tube\",\n   \"56.com\",\n   \"9gag\",\n   \"ABC News\",\n   \"AddAnime\",\n   \"ADN\",\n   ...\n   \"many-more\"\n]",
+        "creationDate": 1499158536407,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Tue Aug 08 05:51:10 UTC 2017",
+  "website": "https://download-api.com/",
+  "endpoints": {
+    "took": 123,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 14,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 33,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "url",
+              "updateDate": 1499088626741,
+              "condition": "REQUIRED",
+              "name": "url",
+              "description": "URL of video/audio page",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/endpoints/595a4698e4b06b6af1ff5cf3"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/endpoints/595a4698e4b06b6af1ff5cf3/routeparameters/595a46c1e4b03a5acfb1da5f"
+                }
+              },
+              "id": "595a46c1e4b03a5acfb1da5f",
+              "type": "STRING",
+              "creationDate": 1499088577762,
+              "value": "https://www.youtube.com/watch?v=nfWlot6h_JM",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1500792070908,
+        "code": 200,
+        "method": "GET",
+        "description": "Extract links to video/audio for direct download, and get thumbnail, info about uploader, likes, etc.",
+        "creationDate": 1499088536522,
+        "routeregex": "/",
+        "route": "/",
+        "response": {
+          "slugifiedPrimary": "download-model",
+          "headers": {
+            "took": 16,
+            "total": 0,
+            "data": []
+          },
+          "took": 36,
+          "updateDate": 1500792070731,
+          "name": "/download model",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/models/595b5515e4b058a9cb039628/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/models/595b5515e4b058a9cb039628"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a"
+            }
+          },
+          "id": "595b5515e4b058a9cb039628",
+          "body": "{\n   \"status\":true,\n   \"message\":\"Successfully received info.\",\n   \"site\":\"Youtube\",\n   \"title\":\"Taylor Swift - Shake It Off\", \n   \"like_count\":6290433,\n   \"dislike_count\":744939,\n   \"view_count\":2234478374,\n   \"duration\":242,\n   \"upload_date\":\"20140818\",\n   \"description\":\"Taylor\\u2019s new release 1989 is Available Now featuring the hit single \\u201cShake It Off\\u201d and her latest single \\u201cBlank Space\\u201d. \",\n   \"tags\":[\n      \"Taylor\",\n      \"Swift\",\n      \"Shake\",\n      \"It\",\n      \"Off\",\n      \"Big\",\n      \"Machine\",\n      \"Records\"],\n   \"uploader\":\"TaylorSwiftVEVO\",\n   \"uploader_url\":\"http:\\/\\/www.youtube.com\\/user\\/TaylorSwiftVEVO\",\n   \"thumbnail\":\"https:\\/\\/i.ytimg.com\\/vi\\/nfWlot6h_JM\\/maxresdefault.jpg\",\n   \"streams\":[\n   {\n      \"url\":\"https:\\/\\/r6---sn-4g57knkz.googlevideo.com\\/videoplayback?id=9d[...]\",\n      \"format\":\"audio only (DASH audio)\",\n      \"format_note\":\"Audio only, no video\",\n      \"extension\":\"m4a\",\n      \"video_codec\":\"none\",\n      \"audio_codec\":\"mp4a.40.5\",\n      \"filesize\":1438229,\n      \"height\":null,\n      \"width\":null\n   },\n   {\n      \"url\":\"https:\\/\\/r6---sn-4g57knkz.googlevideo.com\\/videoplayback?key=[...]\",\n      \"format\":\"1920x1080 (1080p)\",\n      \"format_note\":\"1080p\",\n      \"extension\":\"webm\",\n      \"video_codec\":\"vp9\",\n      \"audio_codec\":\"none\",\n      \"filesize\":68016821,\n      \"height\":1080,\n      \"width\":1920\n   },\n  {\n      ...\n   }\n]}",
+          "creationDate": 1499157781114,
+          "status": "ACTIVE"
+        },
+        "name": "/",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/endpoints/595a4698e4b06b6af1ff5cf3/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/endpoints/595a4698e4b06b6af1ff5cf3/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/models/595b5515e4b058a9cb039628"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/endpoints/595a4698e4b06b6af1ff5cf3"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/endpoints/595a4698e4b06b6af1ff5cf3/parameters/"
+          }
+        },
+        "id": "595a4698e4b06b6af1ff5cf3",
+        "parameters": {
+          "took": 14,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 18,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 14,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1499158679029,
+        "code": 200,
+        "method": "GET",
+        "description": "Returns a list of supported websites",
+        "creationDate": 1499153477621,
+        "slugifiedPrimary": "supported-sites-1",
+        "routeregex": "/supported-sites/",
+        "route": "/supported-sites/",
+        "response": {
+          "slugifiedPrimary": "supported-sites-model",
+          "headers": {
+            "took": 14,
+            "total": 0,
+            "data": []
+          },
+          "took": 30,
+          "updateDate": 1499158678859,
+          "name": "/supported-sites/ model",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/models/595b5808e4b058a9cb03962d/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/models/595b5808e4b058a9cb03962d"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a"
+            }
+          },
+          "id": "595b5808e4b058a9cb03962d",
+          "body": "[\n   \"Youtube\",\n   \"Facebook\",\n   \"Instagram\",\n   \"LiveLeak\",\n   \"Pornhub\",\n   \"Redtube\",\n   \"SoundCloud\",\n   \"Streamable\",\n   \"TED\",\n   \"Twitch\",\n   \"Vimeo\",\n   \"Youporn\",\n   \"1up.com\",\n   \"220.ro\",\n   \"22tracks\",\n   \"24video\",\n   \"3Q SDN\",\n   \"3sat\",\n   \"4tube\",\n   \"56.com\",\n   \"9gag\",\n   \"ABC News\",\n   \"AddAnime\",\n   \"ADN\",\n   ...\n   \"many-more\"\n]",
+          "creationDate": 1499158536407,
+          "status": "ACTIVE"
+        },
+        "name": "/supported-sites/",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/endpoints/595b4445e4b09f12c1a6d3f3/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/endpoints/595b4445e4b09f12c1a6d3f3/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/models/595b5808e4b058a9cb03962d"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/endpoints/595b4445e4b09f12c1a6d3f3"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/endpoints/595b4445e4b09f12c1a6d3f3/parameters/"
+          }
+        },
+        "id": "595b4445e4b09f12c1a6d3f3",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Get direct links to download video or audio files from almost any hosting website, like Youtube, Twitch, SoundCloud, etc with download api.",
+  "groups": {
+    "took": 16,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Mon Jul 03 13:22:04 UTC 2017",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/features/"
+    },
+    "plans": {
+      "total": 5,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/595a44fce4b05b1f27ba4793/versions/595a44fce4b09f12c1a6d29a/errors/"
+    }
+  },
+  "id": "595a44fce4b09f12c1a6d29a",
+  "status": "ACTIVE"
+}

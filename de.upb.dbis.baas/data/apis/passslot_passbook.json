@@ -1,0 +1,932 @@
+{
+  "models": {
+    "took": 147,
+    "total": 5,
+    "data": [
+      {
+        "slugifiedPrimary": "download-pass-response",
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "name": "Download-Pass Response",
+        "format": "BINARY",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b0a705fcc30fba/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b0a705fcc30fba"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+          }
+        },
+        "id": "53aa3cdae4b0a705fcc30fba",
+        "creationDate": 1403665626933,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "pass",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Pass",
+        "format": "JSON",
+        "description": "Representation of a Passbook Pass",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffab/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffab"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+          }
+        },
+        "id": "53aa3cdae4b051a76d23ffab",
+        "body": "{\n  \"serialNumber\": \"27f145d2-5713-4a8d-af64-b269f95ade3b\",\n  \"passType\": \"pass.example.id1\"\n}",
+        "creationDate": 1403665626203,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "pass-template",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "Pass Template",
+        "format": "JSON",
+        "description": "Template for Passbook Pass. Can contain placeholder that will be replaced on pass creation",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffac/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffac"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+          }
+        },
+        "id": "53aa3cdae4b051a76d23ffac",
+        "body": "{\n  \"id\": 1,\n  \"name\": \"Member Card\",\n  \"formatVersion\": 1,\n  \"passType\": \"pass.example.id1\",\n  \"description\": {\n    \"barcode\": {\n      \"message\": \"123456789\",\n      \"format\": \"PKBarcodeFormatPDF417\",\n      \"messageEncoding\": \"iso-8859-1\"\n    },\n    \"logoText\": \"Megatron\",\n    \"foregroundColor\": \"#ffffff\",\n    \"backgroundColor\": \"rgb(60, 65, 76)\",\n    \"generic\": {\n      \"primaryFields\": [\n        {\n          \"key\": \"member\",\n          \"value\": \"${firstName} ${lastName}\"\n        }\n      ],\n      \"secondaryFields\": [\n        {\n          \"key\": \"subtitle\",\n          \"label\": \"MEMBER SINCE\",\n          \"value\": \"${memberSince}\"\n        }\n      ],\n      \"auxiliaryFields\": [\n        {\n          \"key\": \"location\",\n          \"label\": \"LOCATION\",\n          \"value\": \"Zurich\"\n        },\n        {\n          \"key\": \"last\",\n          \"label\": \"LAST AQUISITION\",\n          \"value\": \"Retina iPad\",\n          \"textAlignment\": \"PKTextAlignmentRight\"\n        }\n      ]\n    }\n  },\n  \"placeholder\": [\n    \"firstName\",\n    \"lastName\",\n    \"memberSince\"\n  ]\n}",
+        "creationDate": 1403665626284,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "pass-values",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Pass Values",
+        "format": "JSON",
+        "description": "Values that are used to replace placholders in the pass template",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffad/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffad"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+          }
+        },
+        "id": "53aa3cdae4b051a76d23ffad",
+        "body": "{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"memberSince\": \"2013\"\n}",
+        "creationDate": 1403665626341,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "passbook-package-format",
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "name": "Passbook Package Format",
+        "format": "JSON",
+        "description": "See http://developer.apple.com/library/ios/documentation/userexperience/Reference/PassKit_Bundle/PassKit_Bundle.pdf",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffae/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffae"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+          }
+        },
+        "id": "53aa3cdae4b051a76d23ffae",
+        "body": "{\n  \"formatVersion\": 1,\n  \"passTypeIdentifier\": \"pass.com.pawplanet.coupon\",\n  \"serialNumber\": \"E5982H-I2\",\n  \"teamIdentifier\": \"DK9N2M2GK6\",\n  \"webServiceURL\": \"https://example.com/passes/\",\n  \"authenticationToken\": \"vxwxd7J8AlNNFPS8k0a0FfUFtq0ewzFdc\",\n  \"barcode\": {\n    \"message\": \"123456789\",\n    \"format\": \"PKBarcodeFormatPDF417\",\n    \"messageEncoding\": \"iso-8859-1\"\n  },\n  \"locations\": [\n    {\n      \"longitude\": -122.3748889,\n      \"latitude\": 37.6189722\n    },\n    {\n      \"longitude\": -122.03118,\n      \"latitude\": 37.33182\n    }\n  ],\n  \"organizationName\": \"Paw Planet\",\n  \"logoText\": \"Paw Planet\",\n  \"foregroundColor\": \"rgb(255, 255, 255)\",\n  \"backgroundColor\": \"rgb(206, 140, 53)\",\n  \"coupon\": {\n    \"primaryFields\": [\n      {\n        \"key\": \"offer\",\n        \"label\": \"Any premium dog food\",\n        \"value\": \"20% off\"\n      }\n    ],\n    \"auxiliaryFields\": [\n      {\n        \"key\": \"expires\",\n        \"label\": \"EXPIRES\",\n        \"value\": \"2 weeks\"\n      }\n    ],\n    \"backFields\": [\n      {\n        \"key\": \"terms\",\n        \"label\": \"TERMS AND CONDITIONS\",\n        \"value\": \"Generico offers this pass, including all information, software, products and services available from this pass or offered as part of or in conjunction with this pass (the \\\"pass\\\"), to you, the user, conditioned upon your acceptance of all of the terms, conditions, policies and notices stated here. Generico reserves the right to make changes to these Terms and Conditions immediately by posting the changed Terms and Conditions in this location.\\n\\nUse the pass at your own risk. This pass is provided to you \\\"as is,\\\" without warranty of any kind either express or implied. Neither Generico nor its employees, agents, third-party information providers, merchants, licensors or the like warrant that the pass or its operation will be accurate, reliable, uninterrupted or error-free. No agent or representative has the authority to create any warranty regarding the pass on behalf of Generico. Generico reserves the right to change or discontinue at any time any aspect or feature of the pass.\"\n      }\n    ]\n  }\n}",
+        "creationDate": 1403665626412,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:46:37 UTC 2014",
+  "website": "http://www.passslot.com",
+  "endpoints": {
+    "took": 504,
+    "total": 5,
+    "data": [
+      {
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 8,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "id",
+              "updateDate": 1403665626806,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "id",
+              "description": "Pass Template ID",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdae4b0f2c97546f91e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdae4b0f2c97546f91e/routeparameters/53aa3cdae4b059614033fca0"
+                }
+              },
+              "id": "53aa3cdae4b059614033fca0",
+              "type": "STRING",
+              "creationDate": 1403665626700,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403961330281,
+        "code": 200,
+        "method": "POST",
+        "creationDate": 1403665626599,
+        "slugifiedPrimary": "create-pass-from-template",
+        "routeregex": "/templates/([^/?]+)/pass",
+        "route": "/templates/{id}/pass",
+        "array": false,
+        "payload": {
+          "slugifiedPrimary": "pass-values",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 43,
+          "name": "Pass Values",
+          "format": "JSON",
+          "description": "Values that are used to replace placholders in the pass template",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffad/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffad"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+            }
+          },
+          "id": "53aa3cdae4b051a76d23ffad",
+          "body": "{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"memberSince\": \"2013\"\n}",
+          "creationDate": 1403665626341,
+          "status": "ACTIVE"
+        },
+        "response": {
+          "slugifiedPrimary": "pass",
+          "headers": {
+            "took": 19,
+            "total": 0,
+            "data": []
+          },
+          "took": 51,
+          "name": "Pass",
+          "format": "JSON",
+          "description": "Representation of a Passbook Pass",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffab/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffab"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+            }
+          },
+          "id": "53aa3cdae4b051a76d23ffab",
+          "body": "{\n  \"serialNumber\": \"27f145d2-5713-4a8d-af64-b269f95ade3b\",\n  \"passType\": \"pass.example.id1\"\n}",
+          "creationDate": 1403665626203,
+          "status": "ACTIVE"
+        },
+        "name": "Create Pass from Template",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdae4b0f2c97546f91e/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdae4b0f2c97546f91e/routeparameters/"
+          },
+          "payload": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffad"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffab"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdae4b0f2c97546f91e"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdae4b0f2c97546f91e/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/groups/53aa3cdae4b0a705fcc30fb8"
+          }
+        },
+        "id": "53aa3cdae4b0f2c97546f91e",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "pass-generation",
+          "took": 12,
+          "name": "Pass Generation",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/groups/53aa3cdae4b0a705fcc30fb8"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+            }
+          },
+          "id": "53aa3cdae4b0a705fcc30fb8",
+          "creationDate": 1403665626492,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 18,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "passtypeidentifier",
+              "updateDate": 1403665627313,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "passtypeidentifier",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdae4b008bb2ef85c22"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdae4b008bb2ef85c22/routeparameters/53aa3cdbe4b051a76d23ffb4"
+                }
+              },
+              "id": "53aa3cdbe4b051a76d23ffb4",
+              "type": "STRING",
+              "creationDate": 1403665627105,
+              "value": "pass.example.id1",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "serialnumber",
+              "updateDate": 1403665627489,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "serialnumber",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdae4b008bb2ef85c22"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdae4b008bb2ef85c22/routeparameters/53aa3cdbe4b051a76d23ffb6"
+                }
+              },
+              "id": "53aa3cdbe4b051a76d23ffb6",
+              "type": "STRING",
+              "creationDate": 1403665627184,
+              "value": "27f145d2-5713-4a8d-af64-b269f95ade3b",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403961330198,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403665626988,
+        "slugifiedPrimary": "download-pass",
+        "routeregex": "/passes/([^/?]+)/([^/?]+)",
+        "route": "/passes/{passTypeIdentifier}/{serialNumber}",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "download-pass-response",
+          "headers": {
+            "took": 5,
+            "total": 0,
+            "data": []
+          },
+          "took": 16,
+          "name": "Download-Pass Response",
+          "format": "BINARY",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b0a705fcc30fba/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b0a705fcc30fba"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+            }
+          },
+          "id": "53aa3cdae4b0a705fcc30fba",
+          "creationDate": 1403665626933,
+          "status": "ACTIVE"
+        },
+        "name": "Download Pass",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdae4b008bb2ef85c22/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdae4b008bb2ef85c22/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b0a705fcc30fba"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdae4b008bb2ef85c22"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdae4b008bb2ef85c22/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/groups/53aa3cdae4b051a76d23ffb0"
+          }
+        },
+        "id": "53aa3cdae4b008bb2ef85c22",
+        "parameters": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "pass",
+          "took": 35,
+          "name": "Pass",
+          "index": 1,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/groups/53aa3cdae4b051a76d23ffb0"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+            }
+          },
+          "id": "53aa3cdae4b051a76d23ffb0",
+          "creationDate": 1403665626529,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 62,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "passtypeidentifier",
+              "condition": "REQUIRED",
+              "name": "passtypeidentifier",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53ae0f16e4b02ad8024df642"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53ae0f16e4b02ad8024df642/routeparameters/53ae0f16e4b091f97f210a33"
+                }
+              },
+              "id": "53ae0f16e4b091f97f210a33",
+              "type": "STRING",
+              "creationDate": 1403916054253,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "serialnumber",
+              "condition": "REQUIRED",
+              "name": "serialnumber",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53ae0f16e4b02ad8024df642"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53ae0f16e4b02ad8024df642/routeparameters/53ae0f16e4b01ffd744f5d3e"
+                }
+              },
+              "id": "53ae0f16e4b01ffd744f5d3e",
+              "type": "STRING",
+              "creationDate": 1403916054342,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403961330209,
+        "code": 200,
+        "method": "POST",
+        "description": "",
+        "creationDate": 1403916054160,
+        "slugifiedPrimary": "email-pass",
+        "routeregex": "/passes/([^/?]+)/([^/?]+)/email",
+        "route": "/passes/{passTypeIdentifier}/{serialNumber}/email",
+        "name": "Email Pass",
+        "routeindex": 2,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53ae0f16e4b02ad8024df642/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53ae0f16e4b02ad8024df642/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53ae0f16e4b02ad8024df642"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53ae0f16e4b02ad8024df642/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/groups/53aa3cdae4b051a76d23ffb0"
+          }
+        },
+        "id": "53ae0f16e4b02ad8024df642",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "pass",
+          "took": 34,
+          "name": "Pass",
+          "index": 1,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/groups/53aa3cdae4b051a76d23ffb0"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+            }
+          },
+          "id": "53aa3cdae4b051a76d23ffb0",
+          "creationDate": 1403665626529,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403961330247,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403665627564,
+        "slugifiedPrimary": "list-passes",
+        "routeregex": "/passes",
+        "route": "/passes",
+        "array": true,
+        "response": {
+          "slugifiedPrimary": "pass",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 15,
+          "name": "Pass",
+          "format": "JSON",
+          "description": "Representation of a Passbook Pass",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffab/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffab"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+            }
+          },
+          "id": "53aa3cdae4b051a76d23ffab",
+          "body": "{\n  \"serialNumber\": \"27f145d2-5713-4a8d-af64-b269f95ade3b\",\n  \"passType\": \"pass.example.id1\"\n}",
+          "creationDate": 1403665626203,
+          "status": "ACTIVE"
+        },
+        "name": "List Passes",
+        "routeindex": 3,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdbe4b051a76d23ffb7/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdbe4b051a76d23ffb7/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffab"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdbe4b051a76d23ffb7"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdbe4b051a76d23ffb7/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/groups/53aa3cdae4b051a76d23ffb0"
+          }
+        },
+        "id": "53aa3cdbe4b051a76d23ffb7",
+        "parameters": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "pass",
+          "took": 12,
+          "name": "Pass",
+          "index": 1,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/groups/53aa3cdae4b051a76d23ffb0"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+            }
+          },
+          "id": "53aa3cdae4b051a76d23ffb0",
+          "creationDate": 1403665626529,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 20,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "passtypeidentifier",
+              "updateDate": 1403665627977,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "passtypeidentifier",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdbe4b00287471a0f31"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdbe4b00287471a0f31/routeparameters/53aa3cdbe4b051a76d23ffb8"
+                }
+              },
+              "id": "53aa3cdbe4b051a76d23ffb8",
+              "type": "STRING",
+              "creationDate": 1403665627779,
+              "value": "pass.example.id1",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "serialnumber",
+              "updateDate": 1403665628159,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "serialnumber",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdbe4b00287471a0f31"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdbe4b00287471a0f31/routeparameters/53aa3cdbe4b0f2c97546f921"
+                }
+              },
+              "id": "53aa3cdbe4b0f2c97546f921",
+              "type": "STRING",
+              "creationDate": 1403665627865,
+              "value": "27f145d2-5713-4a8d-af64-b269f95ade3b",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403961330300,
+        "code": 200,
+        "method": "PUT",
+        "description": "http://www.passslot.com/developer/api/resources/updatePassValues",
+        "creationDate": 1403665627681,
+        "slugifiedPrimary": "update-pass",
+        "routeregex": "/passes/([^/?]+)/([^/?]+)/values",
+        "route": "/passes/{passTypeIdentifier}/{serialNumber}/values",
+        "array": false,
+        "payload": {
+          "slugifiedPrimary": "pass-values",
+          "headers": {
+            "took": 19,
+            "total": 0,
+            "data": []
+          },
+          "took": 32,
+          "name": "Pass Values",
+          "format": "JSON",
+          "description": "Values that are used to replace placholders in the pass template",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffad/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffad"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+            }
+          },
+          "id": "53aa3cdae4b051a76d23ffad",
+          "body": "{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"memberSince\": \"2013\"\n}",
+          "creationDate": 1403665626341,
+          "status": "ACTIVE"
+        },
+        "response": {
+          "slugifiedPrimary": "pass-values",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 30,
+          "name": "Pass Values",
+          "format": "JSON",
+          "description": "Values that are used to replace placholders in the pass template",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffad/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffad"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+            }
+          },
+          "id": "53aa3cdae4b051a76d23ffad",
+          "body": "{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"memberSince\": \"2013\"\n}",
+          "creationDate": 1403665626341,
+          "status": "ACTIVE"
+        },
+        "name": "Update Pass",
+        "routeindex": 4,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdbe4b00287471a0f31/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdbe4b00287471a0f31/routeparameters/"
+          },
+          "payload": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffad"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/53aa3cdae4b051a76d23ffad"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdbe4b00287471a0f31"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/53aa3cdbe4b00287471a0f31/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/groups/53aa3cdae4b051a76d23ffb0"
+          }
+        },
+        "id": "53aa3cdbe4b00287471a0f31",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "pass",
+          "took": 36,
+          "name": "Pass",
+          "index": 1,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/groups/53aa3cdae4b051a76d23ffb0"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+            }
+          },
+          "id": "53aa3cdae4b051a76d23ffb0",
+          "creationDate": 1403665626529,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "PassSlot is a free service for developers that aims to make Passbook integration easy – Really easy.",
+  "groups": {
+    "took": 16,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "pass",
+        "name": "Pass",
+        "index": 1,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/groups/53aa3cdae4b051a76d23ffb0"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+          }
+        },
+        "id": "53aa3cdae4b051a76d23ffb0",
+        "creationDate": 1403665626529,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "pass-generation",
+        "name": "Pass Generation",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/groups/53aa3cdae4b0a705fcc30fb8"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+          }
+        },
+        "id": "53aa3cdae4b0a705fcc30fb8",
+        "creationDate": 1403665626492,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 03:07:05 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 5,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/astronode"
+    },
+    "endpoints": {
+      "total": 5,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/objects/"
+    },
+    "groups": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/groups/"
+    },
+    "issues": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2110e4b0a9b1348c7680/apis/53aa3cd9e4b0f2c97546f91b/versions/53aa3cd9e4b059614033fc9d/authentication"
+    }
+  },
+  "id": "53aa3cd9e4b059614033fc9d",
+  "status": "ACTIVE"
+}

@@ -1,0 +1,238 @@
+{
+  "models": {
+    "took": 31,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "blx-eod",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1453753463608,
+        "name": "BLX EOD",
+        "format": "JSON",
+        "description": "BLX Historic EOD OHLC prices and volumes",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/models/5678c73ae4b04bcce8ec1b2f/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/models/5678c73ae4b04bcce8ec1b2f"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6"
+          }
+        },
+        "id": "5678c73ae4b04bcce8ec1b2f",
+        "body": "{\n  \"success\": true,\n  \"source\": \"BraveNewCoin\",\n  \"time_stamp\": 1453693748,\n  \"utc_date\": \"2016-01-25 03:49:08\",\n  \"coin_symbol\": \"BTC\",\n  \"coin_name\": \"Bitcoin\",\n  \"column_names\": [\n    \"timestamp\",\n    \"open\",\n    \"high\",\n    \"low\",\n    \"close\",\n    \"volume\",\n    \"volume_usd\",\n    \"vwap\",\n    \"twap\"\n  ],\n  \"data\": [\n    [\n      \"1452816000\",\n      \"429.34430849\",\n      \"429.59773025\",\n      \"359.60729142\",\n      \"359.60729142\",\n      \"366956.97143215\",\n      \"146377486.91691068\",\n      \"399.12949667\",\n      \"404.70594299\"\n    ],\n    [\n      \"1452902400\",\n      \"360.03531941\",\n      \"391.76408315\",\n      \"354.08635908\",\n      \"388.03031152\",\n      \"286582.21571212\",\n      \"106725423.69544175\",\n      \"372.20770965\",\n      \"372.25746547\"\n    ],\n    [\n      \"1452988800\",\n      \"387.99140509\",\n      \"391.96925046\",\n      \"379.54077131\",\n      \"382.26982662\",\n      \"129522.99771942\",\n      \"50048227.17089743\",\n      \"385.89563585\",\n      \"386.01491730\"\n    ]\n  ]\n}",
+        "creationDate": 1450755898749,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Sat Feb 20 03:54:04 UTC 2016",
+  "website": "http://bravenewcoin.com",
+  "endpoints": {
+    "took": 99,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 63,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "from",
+              "updateDate": 1450755959894,
+              "condition": "OPTIONAL",
+              "name": "from",
+              "description": "Unix timestamp for start of data output range",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/endpoints/566f8139e4b05150636cebcf"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/endpoints/566f8139e4b05150636cebcf/routeparameters/566f8181e4b071b68c6253c8"
+                }
+              },
+              "id": "566f8181e4b071b68c6253c8",
+              "type": "NUMBER",
+              "creationDate": 1450148225434,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "to",
+              "condition": "OPTIONAL",
+              "name": "to",
+              "description": "Timestamp for end of output range",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/endpoints/566f8139e4b05150636cebcf"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/endpoints/566f8139e4b05150636cebcf/routeparameters/566f81dbe4b0ff9f7ea2cd5c"
+                }
+              },
+              "id": "566f81dbe4b0ff9f7ea2cd5c",
+              "type": "NUMBER",
+              "creationDate": 1450148315537,
+              "value": "",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1453754818208,
+        "code": 200,
+        "method": "GET",
+        "description": "BNC Bitcoin Liquid Index historic end-of-day USD prices since July 2010.",
+        "creationDate": 1450148153632,
+        "slugifiedPrimary": "blx-ohlcv-per-day",
+        "routeregex": "/blx-ohlcv-eod",
+        "route": "/blx-ohlcv-eod",
+        "response": {
+          "slugifiedPrimary": "blx-eod",
+          "headers": {
+            "took": 4,
+            "total": 0,
+            "data": []
+          },
+          "took": 36,
+          "updateDate": 1453753463608,
+          "name": "BLX EOD",
+          "format": "JSON",
+          "description": "BLX Historic EOD OHLC prices and volumes",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/models/5678c73ae4b04bcce8ec1b2f/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/models/5678c73ae4b04bcce8ec1b2f"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6"
+            }
+          },
+          "id": "5678c73ae4b04bcce8ec1b2f",
+          "body": "{\n  \"success\": true,\n  \"source\": \"BraveNewCoin\",\n  \"time_stamp\": 1453693748,\n  \"utc_date\": \"2016-01-25 03:49:08\",\n  \"coin_symbol\": \"BTC\",\n  \"coin_name\": \"Bitcoin\",\n  \"column_names\": [\n    \"timestamp\",\n    \"open\",\n    \"high\",\n    \"low\",\n    \"close\",\n    \"volume\",\n    \"volume_usd\",\n    \"vwap\",\n    \"twap\"\n  ],\n  \"data\": [\n    [\n      \"1452816000\",\n      \"429.34430849\",\n      \"429.59773025\",\n      \"359.60729142\",\n      \"359.60729142\",\n      \"366956.97143215\",\n      \"146377486.91691068\",\n      \"399.12949667\",\n      \"404.70594299\"\n    ],\n    [\n      \"1452902400\",\n      \"360.03531941\",\n      \"391.76408315\",\n      \"354.08635908\",\n      \"388.03031152\",\n      \"286582.21571212\",\n      \"106725423.69544175\",\n      \"372.20770965\",\n      \"372.25746547\"\n    ],\n    [\n      \"1452988800\",\n      \"387.99140509\",\n      \"391.96925046\",\n      \"379.54077131\",\n      \"382.26982662\",\n      \"129522.99771942\",\n      \"50048227.17089743\",\n      \"385.89563585\",\n      \"386.01491730\"\n    ]\n  ]\n}",
+          "creationDate": 1450755898749,
+          "status": "ACTIVE"
+        },
+        "name": "BLX OHLCV per day",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/endpoints/566f8139e4b05150636cebcf/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/endpoints/566f8139e4b05150636cebcf/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/models/5678c73ae4b04bcce8ec1b2f"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/endpoints/566f8139e4b05150636cebcf"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/endpoints/566f8139e4b05150636cebcf/parameters/"
+          }
+        },
+        "id": "566f8139e4b05150636cebcf",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Daily OHLCV data for the BNC Bitcoin Liquid Index based on a midnight UTC close.",
+  "groups": {
+    "took": 4,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Tue Dec 15 02:28:29 UTC 2015",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/tags/"
+    },
+    "features": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/features/"
+    },
+    "plans": {
+      "total": 5,
+      "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/563b1874e4b05150636c6c7a/apis/566f7acde4b0ea3deef5082c/versions/566f7acde4b05150636cebc6/errors/"
+    }
+  },
+  "id": "566f7acde4b05150636cebc6",
+  "status": "ACTIVE"
+}

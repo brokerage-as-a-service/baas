@@ -1,0 +1,244 @@
+{
+  "models": {
+    "took": 64,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "-detectionmodel",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "DetectionModel",
+        "format": "JSON",
+        "description": "Response on feed detection request",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/models/53aa3b9ce4b07e1f4ebea88f/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/models/53aa3b9ce4b07e1f4ebea88f"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10"
+          }
+        },
+        "id": "53aa3b9ce4b07e1f4ebea88f",
+        "body": "{\n  \"url\": \"http://www.whitehouse.gov/\",\n  \"items\": [\n    {\n      \"url\": \"http://www.whitehouse.gov/feed/press\",\n      \"confidence\": 1,\n      \"feedtype\": \"rss\",\n      \"title\": \"Press Articles RSS\"\n    },\n    {\n      \"url\": \"http://www.whitehouse.gov/feed/blog\",\n      \"confidence\": 1,\n      \"feedtype\": \"rss\",\n      \"title\": \"Blog RSS\"\n    },\n    {\n      \"url\": \"http://www.whitehouse.gov/feed/media/photo-gallery\",\n      \"confidence\": 1,\n      \"feedtype\": \"rss\",\n      \"title\": \"Photo Gallery RSS\"\n    },\n    {\n      \"url\": \"http://www.whitehouse.gov/feed/media/video-audio\",\n      \"confidence\": 1,\n      \"feedtype\": \"rss\",\n      \"title\": \"Video RSS\"\n    }\n  ]\n}",
+        "creationDate": 1403665308289,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "itemmodel",
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "name": "ItemModel",
+        "format": "JSON",
+        "description": "Model of selected feed",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/models/53aa3b9ce4b0b60946a2ea12/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/models/53aa3b9ce4b0b60946a2ea12"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10"
+          }
+        },
+        "id": "53aa3b9ce4b0b60946a2ea12",
+        "body": "{\n      \"url\": \"http://www.whitehouse.gov/feed/media/photo-gallery\",\n      \"confidence\": 1,\n      \"feedtype\": \"rss\",\n      \"title\": \"Photo Gallery RSS\"\n    },",
+        "creationDate": 1403665308316,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:39:49 UTC 2014",
+  "endpoints": {
+    "took": 57,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 15,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "url",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "url",
+              "description": "url to webpage",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/endpoints/53aa3b9ce4b0b60946a2ea13"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/endpoints/53aa3b9ce4b0b60946a2ea13/routeparameters/53aa3b9ce4b0a9b1348d9ac2"
+                }
+              },
+              "id": "53aa3b9ce4b0a9b1348d9ac2",
+              "type": "STRING",
+              "creationDate": 1403665308393,
+              "value": "http://whitehouse.gov",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403665308522,
+        "code": 200,
+        "method": "GET",
+        "description": "Finds any RSS and ATOM feeds on webpage provided",
+        "creationDate": 1403665308344,
+        "slugifiedPrimary": "detect-webpage-feeds",
+        "routeregex": "/page/findrss/",
+        "route": "/page/findrss/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "-detectionmodel",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 39,
+          "name": "DetectionModel",
+          "format": "JSON",
+          "description": "Response on feed detection request",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/models/53aa3b9ce4b07e1f4ebea88f/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/models/53aa3b9ce4b07e1f4ebea88f"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10"
+            }
+          },
+          "id": "53aa3b9ce4b07e1f4ebea88f",
+          "body": "{\n  \"url\": \"http://www.whitehouse.gov/\",\n  \"items\": [\n    {\n      \"url\": \"http://www.whitehouse.gov/feed/press\",\n      \"confidence\": 1,\n      \"feedtype\": \"rss\",\n      \"title\": \"Press Articles RSS\"\n    },\n    {\n      \"url\": \"http://www.whitehouse.gov/feed/blog\",\n      \"confidence\": 1,\n      \"feedtype\": \"rss\",\n      \"title\": \"Blog RSS\"\n    },\n    {\n      \"url\": \"http://www.whitehouse.gov/feed/media/photo-gallery\",\n      \"confidence\": 1,\n      \"feedtype\": \"rss\",\n      \"title\": \"Photo Gallery RSS\"\n    },\n    {\n      \"url\": \"http://www.whitehouse.gov/feed/media/video-audio\",\n      \"confidence\": 1,\n      \"feedtype\": \"rss\",\n      \"title\": \"Video RSS\"\n    }\n  ]\n}",
+          "creationDate": 1403665308289,
+          "status": "ACTIVE"
+        },
+        "name": "Detect webpage feeds",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/endpoints/53aa3b9ce4b0b60946a2ea13/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/endpoints/53aa3b9ce4b0b60946a2ea13/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/models/53aa3b9ce4b07e1f4ebea88f"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/endpoints/53aa3b9ce4b0b60946a2ea13"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/endpoints/53aa3b9ce4b0b60946a2ea13/parameters/"
+          }
+        },
+        "id": "53aa3b9ce4b0b60946a2ea13",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "This API helps with feed detection. It not only parses \"head\" section of webpage for feeds written as \"link\" tags but also it processes whole page and detects any other feeds mentioned.",
+  "groups": {
+    "took": 4,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 03:01:47 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/groups/"
+    },
+    "issues": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d88e4b0a705fcc1c22a/apis/53aa3b9be4b0b60946a2ea0f/versions/53aa3b9be4b0b60946a2ea10/errors/"
+    }
+  },
+  "id": "53aa3b9be4b0b60946a2ea10",
+  "status": "ACTIVE"
+}

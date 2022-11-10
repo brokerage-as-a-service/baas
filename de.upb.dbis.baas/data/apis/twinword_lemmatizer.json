@@ -1,0 +1,493 @@
+{
+  "models": {
+    "took": 46,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "extract-model",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1429674812765,
+        "name": "extract Model",
+        "format": "JSON",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/models/53aa5b5de4b0596140341565/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/models/53aa5b5de4b0596140341565"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f"
+          }
+        },
+        "id": "53aa5b5de4b0596140341565",
+        "body": "{\"lemma\":{\"rock\":2,\"hop\":1,\"frog\":1},\"version\":\"4.0.0\",\"author\":\"twinword inc.\",\"email\":\"feedback@twinword.com\",\"result_code\":\"200\",\"result_msg\":\"Success\"}",
+        "creationDate": 1403673437844,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "extract-post-model",
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1429674882079,
+        "name": "extract post Model",
+        "format": "JSON",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/models/53aa5b5de4b0a798dbd1b536/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/models/53aa5b5de4b0a798dbd1b536"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f"
+          }
+        },
+        "id": "53aa5b5de4b0a798dbd1b536",
+        "body": "{\n  \"lemma\": {\n    \"rock\": 2,\n    \"hop\": 1,\n    \"frog\": 1\n  },\n  \"version\": \"4.0.0\",\n  \"author\": \"twinword inc.\",\n  \"email\": \"feedback@twinword.com\",\n  \"result_code\": \"200\",\n  \"result_msg\": \"Success\"\n}",
+        "creationDate": 1403673437865,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Sat Oct 17 14:11:11 UTC 2015",
+  "website": "https://www.twinword.com",
+  "endpoints": {
+    "took": 209,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 24,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "exclude_non_content_words",
+              "updateDate": 1429682300615,
+              "condition": "OPTIONAL",
+              "name": "exclude_non_content_words",
+              "description": "Optional boolean to exclude non content words (ie. \"the\", \"is\", \"take\")",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/endpoints/53aa5b5de4b0b60946a304a6"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/endpoints/53aa5b5de4b0b60946a304a6/routeparameters/55373848e4b0bded76bb69b2"
+                }
+              },
+              "id": "55373848e4b0bded76bb69b2",
+              "type": "BOOLEAN",
+              "creationDate": 1429682248364,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "flag",
+              "condition": "OPTIONAL",
+              "name": "flag",
+              "description": "Pass an optional flag to change output. If \"VALID_TOKENS_ONLY\" is passed, an array list is returned with only valid lemmas in the order found in the string passed in the text parameter. If \"VALID_TOKENS_ONLY_ORDER_BY_OCCURRENCE\" is passed, an array list is returned with only valid lemmas in the order of occurrence with the most occurring lemma first. If \"VALID_TOKENS_ONLY_ORDER_BY_OCCURRENCE_SHOW_COUNT\" (default) is passed, an array list is returned with only valid lemmas in the order of occurrence with the most occurring lemma first, but with the lemma in the key and the count in the value. If \"ALL_TOKENS\" is passed, an array list is returned with all the words in the string passed in the text parameter with words that could be lemmatized as lemmas and words that could not be lemmatized left as is. If \"ALL_TOKENS_INVALID_LOWERCASED\" is passed, an array list is returned with all the words in the string passed in the text parameter with words that could be lemmatized as lemmas and words that could not be lemmatized left as is, but lowercased. If \"ALL_TOKENS_INVALID_EMPTY_STRING\" is passed, an array list is returned with all the words in the string passed in the text parameter with words that could be lemmatized as lemmas and words that could not be lemmatized as empty-string items in the array. If \"ALL_TOKENS_INVALID_NEGATIVE_ONE\" is passed, an array list is returned with all the words in the string passed in the text parameter with words that could be lemmatized as lemmas and words that could not be lemmatized as -1. If \"ALL_TOKENS_ORDER_BY_OCCURRENCE\" is passed, an array list is returned with all the words in the string passed in the text parameter, with words that could be lemmatized as lemmas and words that could not be lemmatized left as is, all in the order of occurrence with the most occurring first. If \"ALL_TOKENS_ORDER_BY_OCCURRENCE_SHOW_COUNT\" is passed, an array list is returned with all the words in the string passed in the text parameter, with words that could be lemmatized as lemmas and words that could not be lemmatized left as is, all in the order of occurrence with the most occurring first, but with the words and lemmas in the key and the count in the value.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/endpoints/53aa5b5de4b0b60946a304a6"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/endpoints/53aa5b5de4b0b60946a304a6/routeparameters/5534c60ee4b018ceaf83d588"
+                }
+              },
+              "id": "5534c60ee4b018ceaf83d588",
+              "type": "STRING",
+              "creationDate": 1429521934937,
+              "value": "",
+              "status": "ACTIVE"
+            },
+            {
+              "updateDate": 1429784786735,
+              "description": "Enter some text to extract roots (maximum 200 words or 3,000 characters)",
+              "querystring": true,
+              "type": "STRING",
+              "creationDate": 1403673437966,
+              "slugifiedPrimary": "text",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "text",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/endpoints/53aa5b5de4b0b60946a304a6"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/endpoints/53aa5b5de4b0b60946a304a6/routeparameters/53aa5b5de4b0a798dbd1b537"
+                }
+              },
+              "id": "53aa5b5de4b0a798dbd1b537",
+              "value": "The frogs hopped from rock to rock.",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1429784663067,
+        "code": 200,
+        "method": "GET",
+        "description": "Return the root of a word or roots of a string of words.",
+        "creationDate": 1403673437901,
+        "slugifiedPrimary": "extract-get",
+        "routeregex": "/extract/",
+        "route": "/extract/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "extract-model",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 34,
+          "updateDate": 1429674812765,
+          "name": "extract Model",
+          "format": "JSON",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/models/53aa5b5de4b0596140341565/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/models/53aa5b5de4b0596140341565"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f"
+            }
+          },
+          "id": "53aa5b5de4b0596140341565",
+          "body": "{\"lemma\":{\"rock\":2,\"hop\":1,\"frog\":1},\"version\":\"4.0.0\",\"author\":\"twinword inc.\",\"email\":\"feedback@twinword.com\",\"result_code\":\"200\",\"result_msg\":\"Success\"}",
+          "creationDate": 1403673437844,
+          "status": "ACTIVE"
+        },
+        "name": "Extract (get)",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/endpoints/53aa5b5de4b0b60946a304a6/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/endpoints/53aa5b5de4b0b60946a304a6/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/models/53aa5b5de4b0596140341565"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/endpoints/53aa5b5de4b0b60946a304a6"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/endpoints/53aa5b5de4b0b60946a304a6/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/groups/54c7eb2ee4b01ddbee7653f0"
+          }
+        },
+        "id": "53aa5b5de4b0b60946a304a6",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "lemmatizer",
+          "took": 39,
+          "name": "Lemmatizer",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/groups/54c7eb2ee4b01ddbee7653f0"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f"
+            }
+          },
+          "id": "54c7eb2ee4b01ddbee7653f0",
+          "creationDate": 1422388014982,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1429784652767,
+        "code": 200,
+        "method": "POST",
+        "description": "Return the root of a word or roots of a string of words.",
+        "creationDate": 1403673438001,
+        "slugifiedPrimary": "extract-post-",
+        "routeregex": "/extract/",
+        "route": "/extract/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "extract-post-model",
+          "headers": {
+            "took": 24,
+            "total": 0,
+            "data": []
+          },
+          "took": 56,
+          "updateDate": 1429674882079,
+          "name": "extract post Model",
+          "format": "JSON",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/models/53aa5b5de4b0a798dbd1b536/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/models/53aa5b5de4b0a798dbd1b536"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f"
+            }
+          },
+          "id": "53aa5b5de4b0a798dbd1b536",
+          "body": "{\n  \"lemma\": {\n    \"rock\": 2,\n    \"hop\": 1,\n    \"frog\": 1\n  },\n  \"version\": \"4.0.0\",\n  \"author\": \"twinword inc.\",\n  \"email\": \"feedback@twinword.com\",\n  \"result_code\": \"200\",\n  \"result_msg\": \"Success\"\n}",
+          "creationDate": 1403673437865,
+          "status": "ACTIVE"
+        },
+        "name": "Extract (post)",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/endpoints/53aa5b5ee4b0b60946a304a7/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/endpoints/53aa5b5ee4b0b60946a304a7/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/models/53aa5b5de4b0a798dbd1b536"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/endpoints/53aa5b5ee4b0b60946a304a7"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/endpoints/53aa5b5ee4b0b60946a304a7/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/groups/54c7eb2ee4b01ddbee7653f0"
+          }
+        },
+        "id": "53aa5b5ee4b0b60946a304a7",
+        "parameters": {
+          "took": 88,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "exclude_non_content_words",
+              "condition": "OPTIONAL",
+              "updateDate": 1429682289371,
+              "name": "exclude_non_content_words",
+              "description": "Optional boolean to exclude non content words (ie. \"the\", \"is\", \"take\")",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/endpoints/53aa5b5ee4b0b60946a304a7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/endpoints/53aa5b5ee4b0b60946a304a7/parameters/55373832e4b0365a2139b52c"
+                }
+              },
+              "id": "55373832e4b0365a2139b52c",
+              "type": "BOOLEAN",
+              "creationDate": 1429682226592,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "flag",
+              "condition": "OPTIONAL",
+              "name": "flag",
+              "description": "Pass an optional flag to change output. If \"VALID_TOKENS_ONLY\" is passed, an array list is returned with only valid lemmas in the order found in the string passed in the text parameter. If \"VALID_TOKENS_ONLY_ORDER_BY_OCCURRENCE\" is passed, an array list is returned with only valid lemmas in the order of occurrence with the most occurring lemma first. If \"VALID_TOKENS_ONLY_ORDER_BY_OCCURRENCE_SHOW_COUNT\" (default) is passed, an array list is returned with only valid lemmas in the order of occurrence with the most occurring lemma first, but with the lemma in the key and the count in the value. If \"ALL_TOKENS\" is passed, an array list is returned with all the words in the string passed in the text parameter with words that could be lemmatized as lemmas and words that could not be lemmatized left as is. If \"ALL_TOKENS_INVALID_LOWERCASED\" is passed, an array list is returned with all the words in the string passed in the text parameter with words that could be lemmatized as lemmas and words that could not be lemmatized left as is, but lowercased. If \"ALL_TOKENS_INVALID_EMPTY_STRING\" is passed, an array list is returned with all the words in the string passed in the text parameter with words that could be lemmatized as lemmas and words that could not be lemmatized as empty-string items in the array. If \"ALL_TOKENS_INVALID_NEGATIVE_ONE\" is passed, an array list is returned with all the words in the string passed in the text parameter with words that could be lemmatized as lemmas and words that could not be lemmatized as -1. If \"ALL_TOKENS_ORDER_BY_OCCURRENCE\" is passed, an array list is returned with all the words in the string passed in the text parameter, with words that could be lemmatized as lemmas and words that could not be lemmatized left as is, all in the order of occurrence with the most occurring first. If \"ALL_TOKENS_ORDER_BY_OCCURRENCE_SHOW_COUNT\" is passed, an array list is returned with all the words in the string passed in the text parameter, with words that could be lemmatized as lemmas and words that could not be lemmatized left as is, all in the order of occurrence with the most occurring first, but with the words and lemmas in the key and the count in the value.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/endpoints/53aa5b5ee4b0b60946a304a7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/endpoints/53aa5b5ee4b0b60946a304a7/parameters/5534c603e4b0317ff531cccf"
+                }
+              },
+              "id": "5534c603e4b0317ff531cccf",
+              "type": "STRING",
+              "creationDate": 1429521923674,
+              "value": "",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "text",
+              "updateDate": 1429784779319,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "text",
+              "description": "Enter some text to extract roots (maximum 200 words or 3,000 characters)",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/endpoints/53aa5b5ee4b0b60946a304a7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/endpoints/53aa5b5ee4b0b60946a304a7/parameters/53aa5b5ee4b07e1f4ebec2e7"
+                }
+              },
+              "id": "53aa5b5ee4b07e1f4ebec2e7",
+              "type": "STRING",
+              "creationDate": 1403673438070,
+              "value": "The frogs hopped from rock to rock.",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "lemmatizer",
+          "took": 12,
+          "name": "Lemmatizer",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/groups/54c7eb2ee4b01ddbee7653f0"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f"
+            }
+          },
+          "id": "54c7eb2ee4b01ddbee7653f0",
+          "creationDate": 1422388014982,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "\"Dogs\" to \"dog\", \"abilities\" to \"ability\". Get the root form of a word.",
+  "groups": {
+    "took": 33,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "lemmatizer",
+        "name": "Lemmatizer",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/groups/54c7eb2ee4b01ddbee7653f0"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f"
+          }
+        },
+        "id": "54c7eb2ee4b01ddbee7653f0",
+        "creationDate": 1422388014982,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 05:17:17 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/objects/"
+    },
+    "groups": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2278e4b0a705fcc21efe/apis/53aa5b5de4b0a9b1348db540/versions/53aa5b5de4b0f2c97547109f/authentication"
+    }
+  },
+  "id": "53aa5b5de4b0f2c97547109f",
+  "status": "ACTIVE"
+}

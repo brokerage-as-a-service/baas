@@ -1,0 +1,330 @@
+{
+  "models": {
+    "took": 45,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "data",
+        "headers": {
+          "took": 11,
+          "total": 0,
+          "data": []
+        },
+        "name": "Data",
+        "format": "JSON",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/models/53aa317ee4b002874719ff30/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/models/53aa317ee4b002874719ff30"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5"
+          }
+        },
+        "id": "53aa317ee4b002874719ff30",
+        "body": "{\"nombre_procesado\":\"HERNANDEZ GARCIA JUAN FERNANDO\",\"rfc\":\"HEGJ880317LS4\"}",
+        "creationDate": 1403662718753,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "response",
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "name": "Response",
+        "format": "JSON",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/models/53aa317ee4b008bb2ef84bf5/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/models/53aa317ee4b008bb2ef84bf5"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5"
+          }
+        },
+        "id": "53aa317ee4b008bb2ef84bf5",
+        "body": "{\"code\":0,\"data\":{\"nombre_procesado\":\"HERNANDEZ GARCIA JUAN FERNANDO\",\"rfc\":\"HEGJ880317LS4\"},\"message\":\"Success!\",\"success\":\"true\\r\\nfalse\"}",
+        "creationDate": 1403662718797,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:46:18 UTC 2014",
+  "website": "http://www.tigears.com",
+  "endpoints": {
+    "took": 143,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 129,
+          "total": 5,
+          "data": [
+            {
+              "slugifiedPrimary": "apellido_materno",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "apellido_materno",
+              "description": "El apellido materno de la persona física",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/endpoints/53aa317ee4b0f2c97546e929"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/endpoints/53aa317ee4b0f2c97546e929/routeparameters/53aa317ee4b051a76d23ef9c"
+                }
+              },
+              "id": "53aa317ee4b051a76d23ef9c",
+              "type": "STRING",
+              "creationDate": 1403662718945,
+              "value": "GARCIA",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "apellido_paterno",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "apellido_paterno",
+              "description": "El apellido paterno de la persona física",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/endpoints/53aa317ee4b0f2c97546e929"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/endpoints/53aa317ee4b0f2c97546e929/routeparameters/53aa317fe4b051a76d23ef9d"
+                }
+              },
+              "id": "53aa317fe4b051a76d23ef9d",
+              "type": "STRING",
+              "creationDate": 1403662719028,
+              "value": "HERNANDEZ",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "fecha",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "fecha",
+              "description": "La fecha de nacimiento de la persona física en formato \r\naaaa-mm-dd ó yyyy-mm-dd",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/endpoints/53aa317ee4b0f2c97546e929"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/endpoints/53aa317ee4b0f2c97546e929/routeparameters/53aa317fe4b051a76d23ef9e"
+                }
+              },
+              "id": "53aa317fe4b051a76d23ef9e",
+              "type": "STRING",
+              "creationDate": 1403662719110,
+              "value": "1988-03-17",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "nombre",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "nombre",
+              "description": "El nombre de la persona física",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/endpoints/53aa317ee4b0f2c97546e929"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/endpoints/53aa317ee4b0f2c97546e929/routeparameters/53aa317fe4b051a76d23ef9f"
+                }
+              },
+              "id": "53aa317fe4b051a76d23ef9f",
+              "type": "STRING",
+              "creationDate": 1403662719191,
+              "value": "JUAN FERNANDO",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "solo_homoclave",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "solo_homoclave",
+              "description": "Si sólo quiere calcular la homoclave, o todo el rfc\r\n\r\n1 => Calcúla sólo la homoclave => LS4\r\n0 => Regresa todo el rfc => HEGJ880317LS4",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/endpoints/53aa317ee4b0f2c97546e929"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/endpoints/53aa317ee4b0f2c97546e929/routeparameters/53aa317fe4b002874719ff32"
+                }
+              },
+              "id": "53aa317fe4b002874719ff32",
+              "type": "NUMBER",
+              "creationDate": 1403662719292,
+              "value": "1",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403662718997,
+        "code": 200,
+        "method": "GET",
+        "description": "Regresa el RFC con homoclave, o sólo la homoclave.",
+        "creationDate": 1403662718837,
+        "slugifiedPrimary": "get-rfc",
+        "routeregex": "/rest1/rfc/get",
+        "route": "/rest1/rfc/get",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "response",
+          "headers": {
+            "took": 22,
+            "total": 0,
+            "data": []
+          },
+          "took": 32,
+          "name": "Response",
+          "format": "JSON",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/models/53aa317ee4b008bb2ef84bf5/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/models/53aa317ee4b008bb2ef84bf5"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5"
+            }
+          },
+          "id": "53aa317ee4b008bb2ef84bf5",
+          "body": "{\"code\":0,\"data\":{\"nombre_procesado\":\"HERNANDEZ GARCIA JUAN FERNANDO\",\"rfc\":\"HEGJ880317LS4\"},\"message\":\"Success!\",\"success\":\"true\\r\\nfalse\"}",
+          "creationDate": 1403662718797,
+          "status": "ACTIVE"
+        },
+        "name": "Get Rfc",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/endpoints/53aa317ee4b0f2c97546e929/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/endpoints/53aa317ee4b0f2c97546e929/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/models/53aa317ee4b008bb2ef84bf5"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/endpoints/53aa317ee4b0f2c97546e929"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/endpoints/53aa317ee4b0f2c97546e929/parameters/"
+          }
+        },
+        "id": "53aa317ee4b0f2c97546e929",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Generador de RFC con homoclave, en base al NOMBRE, APELLIDO PATERNO, APELLIDO MATERNO, FECHA DE NACIMIENTO",
+  "groups": {
+    "took": 16,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 02:18:38 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/groups/"
+    },
+    "issues": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1dcbe4b0a705fcc1c7f4/apis/53aa317ee4b0a705fcc2ff76/versions/53aa317ee4b0b60946a2d9c5/errors/"
+    }
+  },
+  "id": "53aa317ee4b0b60946a2d9c5",
+  "status": "ACTIVE"
+}

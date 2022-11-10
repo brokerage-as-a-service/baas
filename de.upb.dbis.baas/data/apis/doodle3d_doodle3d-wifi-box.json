@@ -1,0 +1,512 @@
+{
+  "models": {
+    "took": 63,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "info-status-response",
+        "headers": {
+          "took": 18,
+          "total": 0,
+          "data": []
+        },
+        "name": "Info-status Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/models/53aa5f61e4b008bb2ef877b8/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/models/53aa5f61e4b008bb2ef877b8"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b"
+          }
+        },
+        "id": "53aa5f61e4b008bb2ef877b8",
+        "creationDate": 1403674465789,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "printer-print-response",
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "name": "Printer-print Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/models/53aa5f67e4b008bb2ef877bd/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/models/53aa5f67e4b008bb2ef877bd"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b"
+          }
+        },
+        "id": "53aa5f67e4b008bb2ef877bd",
+        "creationDate": 1403674471905,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:41:22 UTC 2014",
+  "website": "http://www.doodle3d.com",
+  "endpoints": {
+    "took": 190,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 19,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "ip-wifibox-1",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "ip wifibox",
+              "description": "IP adres of WiFi-Box on network",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/53aa5f62e4b051a76d241acc"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/53aa5f62e4b051a76d241acc/routeparameters/53aa5f67e4b051a76d241ace"
+                }
+              },
+              "id": "53aa5f67e4b051a76d241ace",
+              "type": "STRING",
+              "creationDate": 1403674471307,
+              "value": "192.168.5.1",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "ip-wifibox",
+              "condition": "REQUIRED",
+              "name": "ip-wifibox",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/53aa5f62e4b051a76d241acc"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/53aa5f62e4b051a76d241acc/routeparameters/53aa5f66e4b0596140341a3e"
+                }
+              },
+              "id": "53aa5f66e4b0596140341a3e",
+              "type": "STRING",
+              "creationDate": 1403674470403,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "code": 200,
+        "method": "GET",
+        "description": "Combination of:  printer/state, printer/temperature, printer/progress and info/access",
+        "creationDate": 1403674466066,
+        "slugifiedPrimary": "info-status",
+        "routeregex": "/{ip wifibox}/d3dapi/info/status",
+        "route": "/{ip wifibox}/d3dapi/info/status",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "info-status-response",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 39,
+          "name": "Info-status Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/models/53aa5f61e4b008bb2ef877b8/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/models/53aa5f61e4b008bb2ef877b8"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b"
+            }
+          },
+          "id": "53aa5f61e4b008bb2ef877b8",
+          "creationDate": 1403674465789,
+          "status": "ACTIVE"
+        },
+        "name": "Info:status",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/53aa5f62e4b051a76d241acc/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/53aa5f62e4b051a76d241acc/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/models/53aa5f61e4b008bb2ef877b8"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/53aa5f62e4b051a76d241acc"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/53aa5f62e4b051a76d241acc/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/groups/53aa5f60e4b0a705fcc32b61"
+          }
+        },
+        "id": "53aa5f62e4b051a76d241acc",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "info",
+          "took": 12,
+          "name": "info",
+          "index": 1,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/groups/53aa5f60e4b0a705fcc32b61"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b"
+            }
+          },
+          "id": "53aa5f60e4b0a705fcc32b61",
+          "creationDate": 1403674464952,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 126,
+          "total": 5,
+          "data": [
+            {
+              "slugifiedPrimary": "first",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "first",
+              "description": "Normally gcode chunks will be concatenated, but if you set this to true the buffer is cleared first.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/53aa5f68e4b008bb2ef877be"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/53aa5f68e4b008bb2ef877be/routeparameters/53aa5f6fe4b00287471a2ac4"
+                }
+              },
+              "id": "53aa5f6fe4b00287471a2ac4",
+              "type": "BOOLEAN",
+              "creationDate": 1403674479191,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "gcode",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "gcode",
+              "description": "See: G-Code (please limit the amount of GCODE to 500 lines).",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/53aa5f68e4b008bb2ef877be"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/53aa5f68e4b008bb2ef877be/routeparameters/53aa5f6de4b0f2c9754714f5"
+                }
+              },
+              "id": "53aa5f6de4b0f2c9754714f5",
+              "type": "STRING",
+              "creationDate": 1403674477896,
+              "value": "G1 X100 Y100",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "start",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "start",
+              "description": "Only when this argument is true will printing be started.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/53aa5f68e4b008bb2ef877be"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/53aa5f68e4b008bb2ef877be/routeparameters/53aa5f6fe4b051a76d241ad2"
+                }
+              },
+              "id": "53aa5f6fe4b051a76d241ad2",
+              "type": "BOOLEAN",
+              "creationDate": 1403674479870,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "wifibox-ip-1",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "wifibox ip",
+              "description": "IP adres of WiFi-Box on network",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/53aa5f68e4b008bb2ef877be"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/53aa5f68e4b008bb2ef877be/routeparameters/53aa5f6de4b0f2c9754714f4"
+                }
+              },
+              "id": "53aa5f6de4b0f2c9754714f4",
+              "type": "STRING",
+              "creationDate": 1403674477009,
+              "value": "192.168.5.1",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "wifibox-ip",
+              "condition": "REQUIRED",
+              "name": "wifibox-ip",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/53aa5f68e4b008bb2ef877be"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/53aa5f68e4b008bb2ef877be/routeparameters/53aa5f6ce4b07e1f4ebec7ea"
+                }
+              },
+              "id": "53aa5f6ce4b07e1f4ebec7ea",
+              "type": "STRING",
+              "creationDate": 1403674476072,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "code": 200,
+        "method": "GET",
+        "description": "Make the printer print",
+        "creationDate": 1403674472249,
+        "slugifiedPrimary": "printer-print",
+        "routeregex": "/http://{wifibox ip}/d3dapi/printer/print",
+        "route": "/http://{wifibox ip}/d3dapi/printer/print",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "printer-print-response",
+          "headers": {
+            "took": 4,
+            "total": 0,
+            "data": []
+          },
+          "took": 15,
+          "name": "Printer-print Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/models/53aa5f67e4b008bb2ef877bd/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/models/53aa5f67e4b008bb2ef877bd"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b"
+            }
+          },
+          "id": "53aa5f67e4b008bb2ef877bd",
+          "creationDate": 1403674471905,
+          "status": "ACTIVE"
+        },
+        "name": "Printer:print",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/53aa5f68e4b008bb2ef877be/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/53aa5f68e4b008bb2ef877be/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/models/53aa5f67e4b008bb2ef877bd"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/53aa5f68e4b008bb2ef877be"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/53aa5f68e4b008bb2ef877be/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/groups/53aa5f60e4b008bb2ef877b6"
+          }
+        },
+        "id": "53aa5f68e4b008bb2ef877be",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "printer",
+          "took": 35,
+          "name": "printer",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/groups/53aa5f60e4b008bb2ef877b6"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b"
+            }
+          },
+          "id": "53aa5f60e4b008bb2ef877b6",
+          "creationDate": 1403674464585,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Simple REST API to makes almost all 3D printers wirelessly controllable using the Doodle3D WiFi-Box.",
+  "groups": {
+    "took": 13,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "info",
+        "name": "info",
+        "index": 1,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/groups/53aa5f60e4b0a705fcc32b61"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b"
+          }
+        },
+        "id": "53aa5f60e4b0a705fcc32b61",
+        "creationDate": 1403674464952,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "printer",
+        "name": "printer",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/groups/53aa5f60e4b008bb2ef877b6"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b"
+          }
+        },
+        "id": "53aa5f60e4b008bb2ef877b6",
+        "creationDate": 1403674464585,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 05:34:21 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/objects/"
+    },
+    "groups": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2bb7e4b0a798dbd14078/apis/53aa5f5be4b00287471a2abb/versions/53aa5f5de4b0596140341a3b/errors/"
+    }
+  },
+  "id": "53aa5f5de4b0596140341a3b",
+  "status": "ACTIVE"
+}

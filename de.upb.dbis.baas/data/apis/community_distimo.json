@@ -1,0 +1,302 @@
+{
+  "models": {
+    "took": 48,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "downloads-response",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Downloads Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/models/53aa5807e4b0596140340d69/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/models/53aa5807e4b0596140340d69"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76"
+          }
+        },
+        "id": "53aa5807e4b0596140340d69",
+        "creationDate": 1403672583419,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:42:58 UTC 2014",
+  "website": "https://analytics.distimo.com/support/api/v3/",
+  "endpoints": {
+    "took": 51,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 23,
+          "total": 5,
+          "data": [
+            {
+              "slugifiedPrimary": "apikey",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "apikey",
+              "description": "The public key of your application.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/endpoints/53aa5807e4b0a798dbd1acf4"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/endpoints/53aa5807e4b0a798dbd1acf4/routeparameters/53aa5807e4b0b60946a2fc7c"
+                }
+              },
+              "id": "53aa5807e4b0b60946a2fc7c",
+              "type": "STRING",
+              "creationDate": 1403672583644,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "breakdown",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "breakdown",
+              "description": "The breakdown allows you to specify by which dimensions the results should be broken down and, as such, not aggregated.  If, for example, you'd want to know the total number of downloads for an app per day, you would break down the results by date (with interval set to day). If you wanted to retrieve the total downloads per App Store instead, you'd break the results down by App Store, and so on.  It's also possible to combine breakdowns, so you could, for example, break down the results to see downloads per day per application, or downloads per country per App Store.  Possible values, which can be combined in any order, are: application, appstore, country, date, device, region  When no breakdown is given, all results are aggregated by every dimension and thus you will only recieve a single, total, value.  Examples: /api/v3/downloads?breakdown=date /api/v3/downloads?breakdown=date,country /api/v3/downloads?breakdown=country,appstore",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/endpoints/53aa5807e4b0a798dbd1acf4"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/endpoints/53aa5807e4b0a798dbd1acf4/routeparameters/53aa5807e4b0a9b1348dad7d"
+                }
+              },
+              "id": "53aa5807e4b0a9b1348dad7d",
+              "type": "STRING",
+              "creationDate": 1403672583503,
+              "value": "date",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "from",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "from",
+              "description": "Results starting at this date will be retrieved.  Dates should be in the format yyyy-mm-dd.  Other valid values are: lastmonth, thismonth, last2months, last3months, last6months, lastweek, last10days, yesterday, thisyear, all.  Examples: /api/v3/downloads?from=lastyear /api/v3/downloads?from=2012-03-01",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/endpoints/53aa5807e4b0a798dbd1acf4"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/endpoints/53aa5807e4b0a798dbd1acf4/routeparameters/53aa5807e4b0a9b1348dad7e"
+                }
+              },
+              "id": "53aa5807e4b0a9b1348dad7e",
+              "type": "STRING",
+              "creationDate": 1403672583548,
+              "value": "lastyear",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "hash",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "hash",
+              "description": "A sha-1 hmac hash of the request parameters and the current time, using the private key as the hash key.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/endpoints/53aa5807e4b0a798dbd1acf4"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/endpoints/53aa5807e4b0a798dbd1acf4/routeparameters/53aa5807e4b0b60946a2fc7d"
+                }
+              },
+              "id": "53aa5807e4b0b60946a2fc7d",
+              "type": "STRING",
+              "creationDate": 1403672583692,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "t",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "t",
+              "description": "The current UTC time, as a UNIX timestamp.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/endpoints/53aa5807e4b0a798dbd1acf4"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/endpoints/53aa5807e4b0a798dbd1acf4/routeparameters/53aa5807e4b0a9b1348dad7f"
+                }
+              },
+              "id": "53aa5807e4b0a9b1348dad7f",
+              "type": "STRING",
+              "creationDate": 1403672583592,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403672583579,
+        "code": 200,
+        "method": "GET",
+        "description": "Retrieve download and/or update information of your applications.  https://analytics.distimo.com/support/api/v3/downloads",
+        "creationDate": 1403672583440,
+        "slugifiedPrimary": "downloads",
+        "routeregex": "/downloads",
+        "route": "/downloads",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "downloads-response",
+          "headers": {
+            "took": 21,
+            "total": 0,
+            "data": []
+          },
+          "took": 35,
+          "name": "Downloads Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/models/53aa5807e4b0596140340d69/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/models/53aa5807e4b0596140340d69"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76"
+            }
+          },
+          "id": "53aa5807e4b0596140340d69",
+          "creationDate": 1403672583419,
+          "status": "ACTIVE"
+        },
+        "name": "Downloads",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/endpoints/53aa5807e4b0a798dbd1acf4/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/endpoints/53aa5807e4b0a798dbd1acf4/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/models/53aa5807e4b0596140340d69"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/endpoints/53aa5807e4b0a798dbd1acf4"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/endpoints/53aa5807e4b0a798dbd1acf4/parameters/"
+          }
+        },
+        "id": "53aa5807e4b0a798dbd1acf4",
+        "parameters": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Today, Distimo provides the #1 free app analytics platform for developers, alongside the most accurate market data for any app globally, all integrated into one intuitive, highly customizable and easy to use platform. Distimo firmly believes in empowering every player in the mobile marketplace with the most accurate data. Our platform lets developers track downloads, revenue and conversions for various campaigns in their own app, across multiple app stores, at no cost.",
+  "groups": {
+    "took": 17,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:03:03 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5807e4b0a9b1348dad78/versions/53aa5807e4b0b60946a2fc76/authentication"
+    }
+  },
+  "id": "53aa5807e4b0b60946a2fc76",
+  "status": "ACTIVE"
+}

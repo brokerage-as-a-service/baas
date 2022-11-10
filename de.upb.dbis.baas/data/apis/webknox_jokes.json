@@ -1,0 +1,793 @@
+{
+  "models": {
+    "took": 48,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "joke",
+        "headers": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "name": "Joke",
+        "format": "JSON",
+        "description": "The model of a joke.",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/models/53aa4f23e4b07e1f4ebeb1c4/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/models/53aa4f23e4b07e1f4ebeb1c4"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff"
+          }
+        },
+        "id": "53aa4f23e4b07e1f4ebeb1c4",
+        "body": "{\n  \"joke\": \"Chuck Norris once gave a box of his old watches to a group of kids. these kids are now known as the power rangers.\",\n  \"category\": \"Chuck Norris\"\n}",
+        "creationDate": 1403670307481,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "jokes",
+        "headers": {
+          "took": 24,
+          "total": 0,
+          "data": []
+        },
+        "name": "Jokes",
+        "format": "JSON",
+        "description": "A list of jokes.",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/models/53aa4f23e4b0b60946a2f385/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/models/53aa4f23e4b0b60946a2f385"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff"
+          }
+        },
+        "id": "53aa4f23e4b0b60946a2f385",
+        "body": "[\n  {\n    \"title\": \"\",\n    \"joke\": \"When Chuck Norris was denied a Bacon McMuffin at McDonalds because it was 10:35, he roundhouse kicked the store so hard it became a KFC.\",\n    \"category\": \"Chuck Norris\",\n    \"rating\": 0.9\n  },\n  {\n    \"title\": \"\",\n    \"joke\": \"Chuck Norris once roundhouse kicked someone so hard that his foot broke the speed of light, went back in time, and killed Amelia Earhart while she was flying over the Pacific Ocean.\",\n    \"category\": \"Chuck Norris\",\n    \"rating\": 0.87\n  },\n  {\n    \"title\": \"\",\n    \"joke\": \"Every night at 8:00, a truck pulls up to Chuck Norris’ house. In the truck are a bunch of orphans. For the next half-hour, Chuck Norris practices roundhouse kicks on the orphans while “It’s a Hard Knock Life” plays in the background. At the end of the session, the orphans say “Thank you, Mr. Norris.” in perfect unison, then march into the truck in silence.\",\n    \"category\": \"Chuck Norris\",\n    \"rating\": 0.8\n  },\n  {\n    \"title\": \"\",\n    \"joke\": \"Scientists used to believe that diamond was the world's hardest substance. But then they met Chuck Norris, who gave them a roundhouse kick to the face so hard, and with so much heat and pressure, that the scientists turned into artificial Chuck Norris.\",\n    \"category\": \"Chuck Norris\",\n    \"rating\": 0.75\n  }\n]",
+        "creationDate": 1403670307546,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:44:14 UTC 2014",
+  "website": "http://webknox.com/api",
+  "endpoints": {
+    "took": 375,
+    "total": 5,
+    "data": [
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 108,
+          "total": 4,
+          "data": [
+            {
+              "slugifiedPrimary": "category",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "category",
+              "description": "The category of the joke.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/53aa4f23e4b0a798dbd1a3b5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/53aa4f23e4b0a798dbd1a3b5/routeparameters/53aa4f23e4b0596140340405"
+                }
+              },
+              "id": "53aa4f23e4b0596140340405",
+              "type": "STRING",
+              "creationDate": 1403670307909,
+              "value": "Chuck Norris",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "keywords",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "keywords",
+              "description": "A comma-separated list of keywords that must occur in the joke.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/53aa4f23e4b0a798dbd1a3b5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/53aa4f23e4b0a798dbd1a3b5/routeparameters/53aa4f24e4b0b60946a2f38a"
+                }
+              },
+              "id": "53aa4f24e4b0b60946a2f38a",
+              "type": "STRING",
+              "creationDate": 1403670308145,
+              "value": "kick, hard",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "minrating",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "minRating",
+              "description": "The minimum rating of the joke between 0 and 10.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/53aa4f23e4b0a798dbd1a3b5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/53aa4f23e4b0a798dbd1a3b5/routeparameters/53aa4f24e4b0b60946a2f388"
+                }
+              },
+              "id": "53aa4f24e4b0b60946a2f388",
+              "type": "NUMBER",
+              "creationDate": 1403670308035,
+              "value": "5",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "numjokes",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "numJokes",
+              "description": "The number of jokes, between 0 and 10.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/53aa4f23e4b0a798dbd1a3b5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/53aa4f23e4b0a798dbd1a3b5/routeparameters/53aa4f24e4b0596140340407"
+                }
+              },
+              "id": "53aa4f24e4b0596140340407",
+              "type": "NUMBER",
+              "creationDate": 1403670308270,
+              "value": "5",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403670309292,
+        "code": 200,
+        "method": "GET",
+        "description": "Find jokes with given search criteria.",
+        "creationDate": 1403670307737,
+        "slugifiedPrimary": "find-jokes",
+        "routeregex": "/jokes/search",
+        "route": "/jokes/search",
+        "array": true,
+        "response": {
+          "slugifiedPrimary": "jokes",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 19,
+          "name": "Jokes",
+          "format": "JSON",
+          "description": "A list of jokes.",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/models/53aa4f23e4b0b60946a2f385/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/models/53aa4f23e4b0b60946a2f385"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff"
+            }
+          },
+          "id": "53aa4f23e4b0b60946a2f385",
+          "body": "[\n  {\n    \"title\": \"\",\n    \"joke\": \"When Chuck Norris was denied a Bacon McMuffin at McDonalds because it was 10:35, he roundhouse kicked the store so hard it became a KFC.\",\n    \"category\": \"Chuck Norris\",\n    \"rating\": 0.9\n  },\n  {\n    \"title\": \"\",\n    \"joke\": \"Chuck Norris once roundhouse kicked someone so hard that his foot broke the speed of light, went back in time, and killed Amelia Earhart while she was flying over the Pacific Ocean.\",\n    \"category\": \"Chuck Norris\",\n    \"rating\": 0.87\n  },\n  {\n    \"title\": \"\",\n    \"joke\": \"Every night at 8:00, a truck pulls up to Chuck Norris’ house. In the truck are a bunch of orphans. For the next half-hour, Chuck Norris practices roundhouse kicks on the orphans while “It’s a Hard Knock Life” plays in the background. At the end of the session, the orphans say “Thank you, Mr. Norris.” in perfect unison, then march into the truck in silence.\",\n    \"category\": \"Chuck Norris\",\n    \"rating\": 0.8\n  },\n  {\n    \"title\": \"\",\n    \"joke\": \"Scientists used to believe that diamond was the world's hardest substance. But then they met Chuck Norris, who gave them a roundhouse kick to the face so hard, and with so much heat and pressure, that the scientists turned into artificial Chuck Norris.\",\n    \"category\": \"Chuck Norris\",\n    \"rating\": 0.75\n  }\n]",
+          "creationDate": 1403670307546,
+          "status": "ACTIVE"
+        },
+        "name": "Find Jokes",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/53aa4f23e4b0a798dbd1a3b5/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/53aa4f23e4b0a798dbd1a3b5/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/models/53aa4f23e4b0b60946a2f385"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/53aa4f23e4b0a798dbd1a3b5"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/53aa4f23e4b0a798dbd1a3b5/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/groups/53aa4f23e4b07e1f4ebeb1c5"
+          }
+        },
+        "id": "53aa4f23e4b0a798dbd1a3b5",
+        "parameters": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "search",
+          "took": 36,
+          "name": "Search",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/groups/53aa4f23e4b07e1f4ebeb1c5"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff"
+            }
+          },
+          "id": "53aa4f23e4b07e1f4ebeb1c5",
+          "creationDate": 1403670307634,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 11,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "maxlength",
+              "condition": "OPTIONAL",
+              "name": "maxLength",
+              "description": "The maximum number of characters in the joke.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/53aa4f24e4b07e1f4ebeb1c8"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/53aa4f24e4b07e1f4ebeb1c8/routeparameters/559eb717e4b03086522332de"
+                }
+              },
+              "id": "559eb717e4b03086522332de",
+              "type": "NUMBER",
+              "creationDate": 1436464919117,
+              "value": "100",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403670309137,
+        "code": 200,
+        "method": "GET",
+        "description": "Get a random joke.",
+        "creationDate": 1403670308453,
+        "slugifiedPrimary": "get-a-random-joke",
+        "routeregex": "/jokes/random",
+        "route": "/jokes/random",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "joke",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 34,
+          "name": "Joke",
+          "format": "JSON",
+          "description": "The model of a joke.",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/models/53aa4f23e4b07e1f4ebeb1c4/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/models/53aa4f23e4b07e1f4ebeb1c4"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff"
+            }
+          },
+          "id": "53aa4f23e4b07e1f4ebeb1c4",
+          "body": "{\n  \"joke\": \"Chuck Norris once gave a box of his old watches to a group of kids. these kids are now known as the power rangers.\",\n  \"category\": \"Chuck Norris\"\n}",
+          "creationDate": 1403670307481,
+          "status": "ACTIVE"
+        },
+        "name": "Get a Random Joke",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/53aa4f24e4b07e1f4ebeb1c8/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/53aa4f24e4b07e1f4ebeb1c8/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/models/53aa4f23e4b07e1f4ebeb1c4"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/53aa4f24e4b07e1f4ebeb1c8"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/53aa4f24e4b07e1f4ebeb1c8/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/groups/53aa4f23e4b07e1f4ebeb1c6"
+          }
+        },
+        "id": "53aa4f24e4b07e1f4ebeb1c8",
+        "parameters": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "random",
+          "took": 36,
+          "updateDate": 1436464283844,
+          "name": "Random",
+          "index": 1,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/groups/53aa4f23e4b07e1f4ebeb1c6"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff"
+            }
+          },
+          "id": "53aa4f23e4b07e1f4ebeb1c6",
+          "creationDate": 1403670307676,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "code": 200,
+        "method": "GET",
+        "description": "Get a random one liner. This is usually a funny quote or an interesting observation.",
+        "creationDate": 1438818471610,
+        "slugifiedPrimary": "get-a-random-one-liner",
+        "routeregex": "/jokes/oneLiner",
+        "route": "/jokes/oneLiner",
+        "name": "Get a random one liner.",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/55c2a0a7e4b011e6e59410ca/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/55c2a0a7e4b011e6e59410ca/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/55c2a0a7e4b011e6e59410ca"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/55c2a0a7e4b011e6e59410ca/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/groups/53aa4f23e4b07e1f4ebeb1c6"
+          }
+        },
+        "id": "55c2a0a7e4b011e6e59410ca",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "random",
+          "took": 37,
+          "updateDate": 1436464283844,
+          "name": "Random",
+          "index": 1,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/groups/53aa4f23e4b07e1f4ebeb1c6"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff"
+            }
+          },
+          "id": "53aa4f23e4b07e1f4ebeb1c6",
+          "creationDate": 1403670307676,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 65,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "content",
+              "condition": "REQUIRED",
+              "name": "content",
+              "description": "The reason why the person should get insulted.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/559eb57ce4b09519279b580a"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/559eb57ce4b09519279b580a/routeparameters/559eb5e9e4b09ec98bb360cc"
+                }
+              },
+              "id": "559eb5e9e4b09ec98bb360cc",
+              "type": "STRING",
+              "creationDate": 1436464617683,
+              "value": "Your painting looks ugly.",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "name",
+              "condition": "REQUIRED",
+              "name": "name",
+              "description": "The name of the person that should be insulted.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/559eb57ce4b09519279b580a"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/559eb57ce4b09519279b580a/routeparameters/559eb58de4b0b94e3b82a34c"
+                }
+              },
+              "id": "559eb58de4b0b94e3b82a34c",
+              "type": "STRING",
+              "creationDate": 1436464525524,
+              "value": "Peter",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "code": 200,
+        "method": "GET",
+        "description": "Insult a person that deserves to be insulted.",
+        "creationDate": 1436464508276,
+        "slugifiedPrimary": "insult-somebody",
+        "routeregex": "/jokes/insult",
+        "route": "/jokes/insult",
+        "name": "Insult somebody.",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/559eb57ce4b09519279b580a/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/559eb57ce4b09519279b580a/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/559eb57ce4b09519279b580a"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/559eb57ce4b09519279b580a/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/groups/559eb4b5e4b095ed24aeeca6"
+          }
+        },
+        "id": "559eb57ce4b09519279b580a",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "talk",
+          "took": 36,
+          "name": "Talk",
+          "index": 2,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/groups/559eb4b5e4b095ed24aeeca6"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff"
+            }
+          },
+          "id": "559eb4b5e4b095ed24aeeca6",
+          "creationDate": 1436464309780,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 69,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "content",
+              "condition": "REQUIRED",
+              "name": "content",
+              "description": "The reason why the person deserves to be praised.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/559eb4f2e4b03086522332d6"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/559eb4f2e4b03086522332d6/routeparameters/559eb54de4b095ed24aeecac"
+                }
+              },
+              "id": "559eb54de4b095ed24aeecac",
+              "type": "STRING",
+              "creationDate": 1436464461114,
+              "value": "Your drawing looks amazing.",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "name",
+              "condition": "REQUIRED",
+              "name": "name",
+              "description": "The name of the person that deserves to be praised.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/559eb4f2e4b03086522332d6"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/559eb4f2e4b03086522332d6/routeparameters/559eb510e4b095ed24aeecab"
+                }
+              },
+              "id": "559eb510e4b095ed24aeecab",
+              "type": "STRING",
+              "creationDate": 1436464400137,
+              "value": "Peter",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "code": 200,
+        "method": "GET",
+        "description": "Praise a person that deserves to be praised with random phrases.",
+        "creationDate": 1436464370794,
+        "slugifiedPrimary": "praise-somebody",
+        "routeregex": "/jokes/praise",
+        "route": "/jokes/praise",
+        "name": "Praise somebody",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/559eb4f2e4b03086522332d6/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/559eb4f2e4b03086522332d6/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/559eb4f2e4b03086522332d6"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/559eb4f2e4b03086522332d6/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/groups/559eb4b5e4b095ed24aeeca6"
+          }
+        },
+        "id": "559eb4f2e4b03086522332d6",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "talk",
+          "took": 37,
+          "name": "Talk",
+          "index": 2,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/groups/559eb4b5e4b095ed24aeeca6"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff"
+            }
+          },
+          "id": "559eb4b5e4b095ed24aeeca6",
+          "creationDate": 1436464309780,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "The WebKnox Jokes API allows you to access over 30,000 jokes, from Knock Knock puns to Chuck Norris jokes you will find a lot to laugh about.",
+  "groups": {
+    "took": 20,
+    "total": 3,
+    "data": [
+      {
+        "slugifiedPrimary": "random",
+        "updateDate": 1436464283844,
+        "name": "Random",
+        "index": 1,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/groups/53aa4f23e4b07e1f4ebeb1c6"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff"
+          }
+        },
+        "id": "53aa4f23e4b07e1f4ebeb1c6",
+        "creationDate": 1403670307676,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "search",
+        "name": "Search",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/groups/53aa4f23e4b07e1f4ebeb1c5"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff"
+          }
+        },
+        "id": "53aa4f23e4b07e1f4ebeb1c5",
+        "creationDate": 1403670307634,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "talk",
+        "name": "Talk",
+        "index": 2,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/groups/559eb4b5e4b095ed24aeeca6"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff"
+          }
+        },
+        "id": "559eb4b5e4b095ed24aeeca6",
+        "creationDate": 1436464309780,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 04:25:06 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/astronode"
+    },
+    "endpoints": {
+      "total": 5,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/objects/"
+    },
+    "groups": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/groups/"
+    },
+    "issues": {
+      "total": 6,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/features/"
+    },
+    "plans": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f8fe4b0a798dbd0495a/apis/53aa4f22e4b0b60946a2f383/versions/53aa4f22e4b051a76d2406ff/errors/"
+    }
+  },
+  "id": "53aa4f22e4b051a76d2406ff",
+  "status": "ACTIVE"
+}

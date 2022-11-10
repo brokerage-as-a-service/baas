@@ -1,0 +1,238 @@
+{
+  "models": {
+    "took": 31,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "user-details-response",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "User-details Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/models/53aa43f4e4b0f2c97546fb16/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/models/53aa43f4e4b0f2c97546fb16"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04"
+          }
+        },
+        "id": "53aa43f4e4b0f2c97546fb16",
+        "creationDate": 1403667444954,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:45:34 UTC 2014",
+  "website": "http://www.dailymotion.com",
+  "endpoints": {
+    "took": 92,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 63,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "fields",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "fields",
+              "description": "",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/endpoints/53aa43f5e4b051a76d240184"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/endpoints/53aa43f5e4b051a76d240184/routeparameters/53aa43fde4b0f2c97546fb18"
+                }
+              },
+              "id": "53aa43fde4b0f2c97546fb18",
+              "type": "STRING",
+              "creationDate": 1403667453770,
+              "value": "avatar_medium_url,birthday,fullname,username,views_total",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "user_id",
+              "updateDate": 1403667455195,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "user_id",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/endpoints/53aa43f5e4b051a76d240184"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/endpoints/53aa43f5e4b051a76d240184/routeparameters/53aa43fce4b07e1f4ebead09"
+                }
+              },
+              "id": "53aa43fce4b07e1f4ebead09",
+              "type": "STRING",
+              "creationDate": 1403667452346,
+              "value": "xl",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403667476125,
+        "code": 200,
+        "method": "GET",
+        "description": "Get user informations",
+        "creationDate": 1403667445723,
+        "slugifiedPrimary": "user-details",
+        "routeregex": "/user/([^/?]+)",
+        "route": "/user/{user_id}",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "user-details-response",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 38,
+          "name": "User-details Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/models/53aa43f4e4b0f2c97546fb16/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/models/53aa43f4e4b0f2c97546fb16"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04"
+            }
+          },
+          "id": "53aa43f4e4b0f2c97546fb16",
+          "creationDate": 1403667444954,
+          "status": "ACTIVE"
+        },
+        "name": "User details",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/endpoints/53aa43f5e4b051a76d240184/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/endpoints/53aa43f5e4b051a76d240184/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/models/53aa43f4e4b0f2c97546fb16"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/endpoints/53aa43f5e4b051a76d240184"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/endpoints/53aa43f5e4b051a76d240184/parameters/"
+          }
+        },
+        "id": "53aa43f5e4b051a76d240184",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "This is a test of using Dailymotion in Mashape. I don't represent Dailymotion and I don't work with them. There was the first idea of API that I had, that's why.",
+  "groups": {
+    "took": 5,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 03:37:17 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2054e4b0a9b1348c660b/apis/53aa43ebe4b059614033ff03/versions/53aa43ede4b059614033ff04/authentication"
+    }
+  },
+  "id": "53aa43ede4b059614033ff04",
+  "status": "ACTIVE"
+}

@@ -1,0 +1,236 @@
+{
+  "models": {
+    "took": 37,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "generate-response",
+        "headers": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "name": "Generate Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/models/53aa4f55e4b07e1f4ebeb24b/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/models/53aa4f55e4b07e1f4ebeb24b"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f"
+          }
+        },
+        "id": "53aa4f55e4b07e1f4ebeb24b",
+        "creationDate": 1403670357382,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:39:47 UTC 2014",
+  "website": "http://skateipsum.com",
+  "endpoints": {
+    "took": 37,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 22,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "paragraphs",
+              "updateDate": 1403670357556,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "paragraphs",
+              "description": "Number of paragraphs.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/endpoints/53aa4f55e4b07e1f4ebeb24c"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/endpoints/53aa4f55e4b07e1f4ebeb24c/routeparameters/53aa4f55e4b0a798dbd1a431"
+                }
+              },
+              "id": "53aa4f55e4b0a798dbd1a431",
+              "type": "STRING",
+              "creationDate": 1403670357449,
+              "value": "3",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "start",
+              "updateDate": 1403670357636,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "start",
+              "description": "Start with 'Skate ipsum dolor sit amet' (0 starts without it).",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/endpoints/53aa4f55e4b07e1f4ebeb24c"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/endpoints/53aa4f55e4b07e1f4ebeb24c/routeparameters/53aa4f55e4b059614034047e"
+                }
+              },
+              "id": "53aa4f55e4b059614034047e",
+              "type": "STRING",
+              "creationDate": 1403670357486,
+              "value": "1",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403670357702,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403670357410,
+        "slugifiedPrimary": "generate",
+        "routeregex": "/([^/?]+)/([^/?]+)/JSON",
+        "route": "/{paragraphs}/{start}/JSON",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "generate-response",
+          "headers": {
+            "took": 8,
+            "total": 0,
+            "data": []
+          },
+          "took": 21,
+          "name": "Generate Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/models/53aa4f55e4b07e1f4ebeb24b/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/models/53aa4f55e4b07e1f4ebeb24b"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f"
+            }
+          },
+          "id": "53aa4f55e4b07e1f4ebeb24b",
+          "creationDate": 1403670357382,
+          "status": "ACTIVE"
+        },
+        "name": "Generate",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/endpoints/53aa4f55e4b07e1f4ebeb24c/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/endpoints/53aa4f55e4b07e1f4ebeb24c/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/models/53aa4f55e4b07e1f4ebeb24b"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/endpoints/53aa4f55e4b07e1f4ebeb24c"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/endpoints/53aa4f55e4b07e1f4ebeb24c/parameters/"
+          }
+        },
+        "id": "53aa4f55e4b07e1f4ebeb24c",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "A gnarlier lorem ipsum generator. Use the API to get the raddest placeholder faux Latin text.",
+  "groups": {
+    "took": 5,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 04:25:57 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/issues/"
+    },
+    "tags": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f55e4b0a798dbd1a42f/versions/53aa4f55e4b051a76d24077f/errors/"
+    }
+  },
+  "id": "53aa4f55e4b051a76d24077f",
+  "status": "ACTIVE"
+}

@@ -1,0 +1,513 @@
+{
+  "models": {
+    "took": 82,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "convert-text-to-speech-via-http-get-response",
+        "headers": {
+          "took": 22,
+          "total": 0,
+          "data": []
+        },
+        "name": "Convert-text-to-speech-via-HTTP-GET Response",
+        "format": "BINARY",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/models/53aa3ba6e4b0b60946a2ea56/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/models/53aa3ba6e4b0b60946a2ea56"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0"
+          }
+        },
+        "id": "53aa3ba6e4b0b60946a2ea56",
+        "creationDate": 1403665318217,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "convert-text-to-speech-via-http-post-response",
+        "headers": {
+          "took": 9,
+          "total": 0,
+          "data": []
+        },
+        "name": "Convert-text-to-speech-via-HTTP-POST Response",
+        "format": "BINARY",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/models/53aa3ba6e4b0a798dbd19a14/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/models/53aa3ba6e4b0a798dbd19a14"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0"
+          }
+        },
+        "id": "53aa3ba6e4b0a798dbd19a14",
+        "creationDate": 1403665318542,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:42:14 UTC 2014",
+  "website": "http://www.voicerss.org",
+  "endpoints": {
+    "took": 295,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 151,
+          "total": 5,
+          "data": [
+            {
+              "slugifiedPrimary": "c",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "c",
+              "description": "The speech audio codec",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b07e1f4ebea8c8"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b07e1f4ebea8c8/routeparameters/53aa3ba6e4b0a798dbd19a13"
+                }
+              },
+              "id": "53aa3ba6e4b0a798dbd19a13",
+              "type": "STRING",
+              "creationDate": 1403665318452,
+              "value": "mp3",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "f",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "f",
+              "description": "The speech audio formats",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b07e1f4ebea8c8"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b07e1f4ebea8c8/routeparameters/53aa3ba6e4b0a9b1348d9afd"
+                }
+              },
+              "id": "53aa3ba6e4b0a9b1348d9afd",
+              "type": "STRING",
+              "creationDate": 1403665318495,
+              "value": "8khz_8bit_mono",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "hl",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "hl",
+              "description": "The textual content language",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b07e1f4ebea8c8"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b07e1f4ebea8c8/routeparameters/53aa3ba6e4b0a9b1348d9afb"
+                }
+              },
+              "id": "53aa3ba6e4b0a9b1348d9afb",
+              "type": "STRING",
+              "creationDate": 1403665318355,
+              "value": "en-us",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "r",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "r",
+              "description": "The speech rate (speed). Allows values: from -10 (slowest speed) up to 10 (fastest speed). Default value: 0 (normal speed)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b07e1f4ebea8c8"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b07e1f4ebea8c8/routeparameters/53aa3ba6e4b0a798dbd19a12"
+                }
+              },
+              "id": "53aa3ba6e4b0a798dbd19a12",
+              "type": "NUMBER",
+              "creationDate": 1403665318403,
+              "value": "0",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "src",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "src",
+              "description": "The textual content for converting to speech",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b07e1f4ebea8c8"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b07e1f4ebea8c8/routeparameters/53aa3ba6e4b07e1f4ebea8c9"
+                }
+              },
+              "id": "53aa3ba6e4b07e1f4ebea8c9",
+              "type": "STRING",
+              "creationDate": 1403665318312,
+              "value": "Hello, world!",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403665318968,
+        "code": 200,
+        "method": "GET",
+        "description": "Converts textual content to audio content",
+        "creationDate": 1403665318243,
+        "slugifiedPrimary": "convert-text-to-speech-via-http-get",
+        "routeregex": "/",
+        "route": "/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "convert-text-to-speech-via-http-get-response",
+          "headers": {
+            "took": 23,
+            "total": 0,
+            "data": []
+          },
+          "took": 58,
+          "name": "Convert-text-to-speech-via-HTTP-GET Response",
+          "format": "BINARY",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/models/53aa3ba6e4b0b60946a2ea56/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/models/53aa3ba6e4b0b60946a2ea56"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0"
+            }
+          },
+          "id": "53aa3ba6e4b0b60946a2ea56",
+          "creationDate": 1403665318217,
+          "status": "ACTIVE"
+        },
+        "name": "Convert text to speech via HTTP GET",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b07e1f4ebea8c8/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b07e1f4ebea8c8/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/models/53aa3ba6e4b0b60946a2ea56"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b07e1f4ebea8c8"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b07e1f4ebea8c8/parameters/"
+          }
+        },
+        "id": "53aa3ba6e4b07e1f4ebea8c8",
+        "parameters": {
+          "took": 23,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 30,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403665318858,
+        "code": 200,
+        "method": "POST",
+        "description": "Converts textual content to audio content",
+        "creationDate": 1403665318576,
+        "slugifiedPrimary": "convert-text-to-speech-via-http-post",
+        "routeregex": "/",
+        "route": "/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "convert-text-to-speech-via-http-post-response",
+          "headers": {
+            "took": 21,
+            "total": 0,
+            "data": []
+          },
+          "took": 60,
+          "name": "Convert-text-to-speech-via-HTTP-POST Response",
+          "format": "BINARY",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/models/53aa3ba6e4b0a798dbd19a14/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/models/53aa3ba6e4b0a798dbd19a14"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0"
+            }
+          },
+          "id": "53aa3ba6e4b0a798dbd19a14",
+          "creationDate": 1403665318542,
+          "status": "ACTIVE"
+        },
+        "name": "Convert text to speech via HTTP POST",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b0b60946a2ea58/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b0b60946a2ea58/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/models/53aa3ba6e4b0a798dbd19a14"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b0b60946a2ea58"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b0b60946a2ea58/parameters/"
+          }
+        },
+        "id": "53aa3ba6e4b0b60946a2ea58",
+        "parameters": {
+          "took": 64,
+          "total": 5,
+          "data": [
+            {
+              "slugifiedPrimary": "c",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "c",
+              "description": "The speech audio codec",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b0b60946a2ea58"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b0b60946a2ea58/parameters/53aa3ba6e4b059614033faa3"
+                }
+              },
+              "id": "53aa3ba6e4b059614033faa3",
+              "type": "STRING",
+              "creationDate": 1403665318775,
+              "value": "mp3",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "f",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "f",
+              "description": "The speech audio formats",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b0b60946a2ea58"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b0b60946a2ea58/parameters/53aa3ba6e4b0b60946a2ea59"
+                }
+              },
+              "id": "53aa3ba6e4b0b60946a2ea59",
+              "type": "STRING",
+              "creationDate": 1403665318822,
+              "value": "8khz_8bit_mono",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "hl",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "hl",
+              "description": "The textual content language",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b0b60946a2ea58"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b0b60946a2ea58/parameters/53aa3ba6e4b0a9b1348d9b01"
+                }
+              },
+              "id": "53aa3ba6e4b0a9b1348d9b01",
+              "type": "STRING",
+              "creationDate": 1403665318684,
+              "value": "en-us",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "r",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "r",
+              "description": "The speech rate (speed). Allows values: from -10 (slowest speed) up to 10 (fastest speed). Default value: 0 (normal speed)",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b0b60946a2ea58"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b0b60946a2ea58/parameters/53aa3ba6e4b0a9b1348d9b02"
+                }
+              },
+              "id": "53aa3ba6e4b0a9b1348d9b02",
+              "type": "NUMBER",
+              "creationDate": 1403665318728,
+              "value": "0",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "src",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "src",
+              "description": "The textual content for converting to speech",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b0b60946a2ea58"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/53aa3ba6e4b0b60946a2ea58/parameters/53aa3ba6e4b0a9b1348d9aff"
+                }
+              },
+              "id": "53aa3ba6e4b0a9b1348d9aff",
+              "type": "STRING",
+              "creationDate": 1403665318642,
+              "value": "Hello, world!",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "The Voice RSS Text-to-Speech (TTS) API allows conversion of textual content to speech easier than ever. Just connect to our Text-to-Speech (TTS) API with a few lines of code and get verbal representation of a textual content.",
+  "groups": {
+    "took": 71,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 03:01:57 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/groups/"
+    },
+    "issues": {
+      "total": 8,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa20c5e4b0a705fcc1fc25/apis/53aa3ba5e4b059614033fa9e/versions/53aa3ba5e4b0f2c97546f6d0/authentication"
+    }
+  },
+  "id": "53aa3ba5e4b0f2c97546f6d0",
+  "status": "ACTIVE"
+}

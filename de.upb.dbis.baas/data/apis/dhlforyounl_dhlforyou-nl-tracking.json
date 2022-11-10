@@ -1,0 +1,279 @@
+{
+  "models": {
+    "took": 72,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "track-response",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "track response",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/models/53aa4fb0e4b05961403405d3/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/models/53aa4fb0e4b05961403405d3"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809"
+          }
+        },
+        "id": "53aa4fb0e4b05961403405d3",
+        "body": "{\ntt: \"{'items' : [ ['Verzender heeft een verzendlabel aangemaakt op DHLFORYOU.NL.','26-07 2013','16:10','40002'],['Pakje is op het DHL Servicepoint afgegeven door de verzender.','27-07 2013','10:01','40000'],['Pakje is door de bezorger op het DHL Servicepoint afgehaald en is onderweg naar het sorteercentrum.','27-07 2013','10:20','40010'],['Pakje is gesorteerd in sorteercentrum.','30-07 2013','19:11','50400'],['Pakje is onderweg naar lokaal distributiecentrum.','31-07 2013','03:22','2000'],['Pakje is aangekomen op lokaal distributiecentrum en wordt vandaag aangeboden.','31-07 2013','07:19','3000'],['Pakje is bezorgd.','31-07 2013','13:48','5700'], ['','','']]}\",\nstatus: 0,\nstatus_msg: \"fetched\"\n}",
+        "creationDate": 1403670448031,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Tue Nov 24 12:01:07 UTC 2015",
+  "endpoints": {
+    "took": 119,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 27,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "action",
+              "condition": "CONSTANT",
+              "array": false,
+              "name": "action",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/endpoints/53aa4fb0e4b0a9b1348da607"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/endpoints/53aa4fb0e4b0a9b1348da607/routeparameters/53aa4fb0e4b0b60946a2f54d"
+                }
+              },
+              "id": "53aa4fb0e4b0b60946a2f54d",
+              "type": "STRING",
+              "creationDate": 1403670448247,
+              "value": "public.track",
+              "status": "ACTIVE"
+            },
+            {
+              "updateDate": 1448368541354,
+              "description": "Barcode",
+              "querystring": true,
+              "type": "STRING",
+              "creationDate": 1403670448136,
+              "slugifiedPrimary": "bc",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "bc",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/endpoints/53aa4fb0e4b0a9b1348da607"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/endpoints/53aa4fb0e4b0a9b1348da607/routeparameters/53aa4fb0e4b0a9b1348da608"
+                }
+              },
+              "id": "53aa4fb0e4b0a9b1348da608",
+              "value": "3SXITS042451",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "type",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "type",
+              "description": "Type of parcel to search for.  Valid options are dhlforyou and dhlnl",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/endpoints/53aa4fb0e4b0a9b1348da607"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/endpoints/53aa4fb0e4b0a9b1348da607/routeparameters/53aa4fb0e4b0a798dbd1a577"
+                }
+              },
+              "id": "53aa4fb0e4b0a798dbd1a577",
+              "type": "STRING",
+              "creationDate": 1403670448185,
+              "value": "dhlforyou",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403670448418,
+        "code": 200,
+        "method": "GET",
+        "description": "provides tracking steps for a dhlforyou parcel",
+        "creationDate": 1403670448061,
+        "slugifiedPrimary": "track-parcel",
+        "routeregex": "/datamoduleAPI.jsp",
+        "route": "/datamoduleAPI.jsp",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "track-response",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 38,
+          "name": "track response",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/models/53aa4fb0e4b05961403405d3/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/models/53aa4fb0e4b05961403405d3"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809"
+            }
+          },
+          "id": "53aa4fb0e4b05961403405d3",
+          "body": "{\ntt: \"{'items' : [ ['Verzender heeft een verzendlabel aangemaakt op DHLFORYOU.NL.','26-07 2013','16:10','40002'],['Pakje is op het DHL Servicepoint afgegeven door de verzender.','27-07 2013','10:01','40000'],['Pakje is door de bezorger op het DHL Servicepoint afgehaald en is onderweg naar het sorteercentrum.','27-07 2013','10:20','40010'],['Pakje is gesorteerd in sorteercentrum.','30-07 2013','19:11','50400'],['Pakje is onderweg naar lokaal distributiecentrum.','31-07 2013','03:22','2000'],['Pakje is aangekomen op lokaal distributiecentrum en wordt vandaag aangeboden.','31-07 2013','07:19','3000'],['Pakje is bezorgd.','31-07 2013','13:48','5700'], ['','','']]}\",\nstatus: 0,\nstatus_msg: \"fetched\"\n}",
+          "creationDate": 1403670448031,
+          "status": "ACTIVE"
+        },
+        "name": "Track Parcel",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/endpoints/53aa4fb0e4b0a9b1348da607/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/endpoints/53aa4fb0e4b0a9b1348da607/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/models/53aa4fb0e4b05961403405d3"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/endpoints/53aa4fb0e4b0a9b1348da607"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/endpoints/53aa4fb0e4b0a9b1348da607/parameters/"
+          }
+        },
+        "id": "53aa4fb0e4b0a9b1348da607",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "for detailed instructions look at the README tab",
+  "groups": {
+    "took": 52,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "dhlparcel",
+        "name": "dhlparcel",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/groups/53abef37e4b0fa761156fe1f"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809"
+          }
+        },
+        "id": "53abef37e4b0fa761156fe1f",
+        "creationDate": 1403776823879,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 04:27:27 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/objects/"
+    },
+    "groups": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa22c6e4b0a705fcc224a2/apis/53aa4fafe4b0a9b1348da604/versions/53aa4fafe4b051a76d240809/errors/"
+    }
+  },
+  "id": "53aa4fafe4b051a76d240809",
+  "status": "ACTIVE"
+}

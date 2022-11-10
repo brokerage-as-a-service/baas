@@ -1,0 +1,345 @@
+{
+  "models": {
+    "took": 67,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "game-server-query-model",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1472831115727,
+        "name": "Game Server Query model",
+        "format": "JSON",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/models/57c99e63e4b02b08ce7770ea/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/models/57c99e63e4b02b08ce7770ea"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8"
+          }
+        },
+        "id": "57c99e63e4b02b08ce7770ea",
+        "body": "{\"name\":\"\",\"map\":\"\",\"password\":false,\"raw\":{\"version\":\"BungeeCord 1.8.x, 1.9.x, 1.10.x\",\"description\":\"\"},\"maxplayers\":10,\"players\":[],\"bots\":[],\"query\":{\"host\":\"minecraft.example.com\",\"address\":\"192.168.0.1\",\"port\":25565,\"port_query\":25565,\"type\":\"minecraftping\",\"pretty\":\"Minecraft\"}}",
+        "creationDate": 1472831075419,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Sat Sep 03 09:48:33 UTC 2016",
+  "endpoints": {
+    "took": 109,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 46,
+          "total": 7,
+          "data": [
+            {
+              "slugifiedPrimary": "host",
+              "updateDate": 1472833095259,
+              "condition": "REQUIRED",
+              "name": "host",
+              "description": "The Domain name or IP Address of the Game Server",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/endpoints/57c9994be4b0c6e11bd7f115"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/endpoints/57c9994be4b0c6e11bd7f115/routeparameters/57c99975e4b0c6e11bd7f116"
+                }
+              },
+              "id": "57c99975e4b0c6e11bd7f116",
+              "type": "STRING",
+              "creationDate": 1472829813353,
+              "value": "minecraft.example.com",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "login",
+              "updateDate": 1472895889590,
+              "condition": "OPTIONAL",
+              "name": "login",
+              "description": "Only required for Nadeo Games like ShootMania, TrackMania ...",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/endpoints/57c9994be4b0c6e11bd7f115"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/endpoints/57c9994be4b0c6e11bd7f115/routeparameters/57ca9168e4b0bd4af84b105b"
+                }
+              },
+              "id": "57ca9168e4b0bd4af84b105b",
+              "type": "STRING",
+              "creationDate": 1472893288164,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "password",
+              "updateDate": 1472895894406,
+              "condition": "OPTIONAL",
+              "name": "password",
+              "description": "Only required for Nadeo Games like ShootMania, TrackMania ...",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/endpoints/57c9994be4b0c6e11bd7f115"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/endpoints/57c9994be4b0c6e11bd7f115/routeparameters/57ca916ee4b0504b4a8193e6"
+                }
+              },
+              "id": "57ca916ee4b0504b4a8193e6",
+              "type": "STRING",
+              "creationDate": 1472893294650,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "port",
+              "condition": "OPTIONAL",
+              "name": "port",
+              "description": "Server Port, only required if not default",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/endpoints/57c9994be4b0c6e11bd7f115"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/endpoints/57c9994be4b0c6e11bd7f115/routeparameters/57ca911fe4b0504b4a8193e5"
+                }
+              },
+              "id": "57ca911fe4b0504b4a8193e5",
+              "type": "NUMBER",
+              "creationDate": 1472893215554,
+              "value": "",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "port_query",
+              "updateDate": 1472895868474,
+              "condition": "OPTIONAL",
+              "name": "port_query",
+              "description": "The Query Port, only required if not default",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/endpoints/57c9994be4b0c6e11bd7f115"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/endpoints/57c9994be4b0c6e11bd7f115/routeparameters/57ca90ace4b0504b4a8193e4"
+                }
+              },
+              "id": "57ca90ace4b0504b4a8193e4",
+              "type": "NUMBER",
+              "creationDate": 1472893100025,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "token",
+              "condition": "OPTIONAL",
+              "name": "token",
+              "description": "REST user token, only required for Terraria",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/endpoints/57c9994be4b0c6e11bd7f115"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/endpoints/57c9994be4b0c6e11bd7f115/routeparameters/57ca90ebe4b0faa3d7137811"
+                }
+              },
+              "id": "57ca90ebe4b0faa3d7137811",
+              "type": "STRING",
+              "creationDate": 1472893163778,
+              "value": "",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "type",
+              "updateDate": 1472895812844,
+              "condition": "REQUIRED",
+              "name": "type",
+              "querystring": true,
+              "description": "The Game Type of the Game Server",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/endpoints/57c9994be4b0c6e11bd7f115"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/endpoints/57c9994be4b0c6e11bd7f115/routeparameters/57c99960e4b01bbb07705d1e"
+                }
+              },
+              "id": "57c99960e4b01bbb07705d1e",
+              "type": "STRING",
+              "creationDate": 1472829792797,
+              "value": "minecraft",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1472893365642,
+        "code": 200,
+        "method": "GET",
+        "description": "You can find additional Informations and a List of the supported Games under https://market.mashape.com/millyvanilly/gameserver-query/overview",
+        "creationDate": 1472829771040,
+        "slugifiedPrimary": "game-server-query",
+        "routeregex": "/serverquery",
+        "route": "/serverquery",
+        "response": {
+          "slugifiedPrimary": "game-server-query-model",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 36,
+          "updateDate": 1472831115727,
+          "name": "Game Server Query model",
+          "format": "JSON",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/models/57c99e63e4b02b08ce7770ea/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/models/57c99e63e4b02b08ce7770ea"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8"
+            }
+          },
+          "id": "57c99e63e4b02b08ce7770ea",
+          "body": "{\"name\":\"\",\"map\":\"\",\"password\":false,\"raw\":{\"version\":\"BungeeCord 1.8.x, 1.9.x, 1.10.x\",\"description\":\"\"},\"maxplayers\":10,\"players\":[],\"bots\":[],\"query\":{\"host\":\"minecraft.example.com\",\"address\":\"192.168.0.1\",\"port\":25565,\"port_query\":25565,\"type\":\"minecraftping\",\"pretty\":\"Minecraft\"}}",
+          "creationDate": 1472831075419,
+          "status": "ACTIVE"
+        },
+        "name": "Game Server Query",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/endpoints/57c9994be4b0c6e11bd7f115/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/endpoints/57c9994be4b0c6e11bd7f115/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/models/57c99e63e4b02b08ce7770ea"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/endpoints/57c9994be4b0c6e11bd7f115"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/endpoints/57c9994be4b0c6e11bd7f115/parameters/"
+          }
+        },
+        "id": "57c9994be4b0c6e11bd7f115",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Lets you query Gameservers for Informations like player-count, map, maxplayers, ...",
+  "groups": {
+    "took": 43,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Fri Sep 02 15:22:04 UTC 2016",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/features/"
+    },
+    "plans": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5"
+    },
+    "wikis": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/5706ec50e4b0a1d871a1856e/apis/57c9991ce4b0a1d871a2fff5/versions/57c9991ce4b0d07f63b513a8/authentication"
+    }
+  },
+  "id": "57c9991ce4b0d07f63b513a8",
+  "status": "ACTIVE"
+}

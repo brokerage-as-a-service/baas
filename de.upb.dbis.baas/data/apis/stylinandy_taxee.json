@@ -1,0 +1,1131 @@
+{
+  "models": {
+    "took": 93,
+    "total": 3,
+    "data": [
+      {
+        "slugifiedPrimary": "calculate-income-taxes-model",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1473512834401,
+        "name": "Calculate Income Taxes Model",
+        "format": "JSON",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/models/53aa5db3e4b00287471a298d/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/models/53aa5db3e4b00287471a298d"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675"
+          }
+        },
+        "id": "53aa5db3e4b00287471a298d",
+        "body": "{\n  \"annual\": {\n    \"state\": {\n      \"amount\": 3804.56\n    },\n    \"fica\": {\n      \"amount\": 7650\n    },\n    \"federal\": {\n      \"amount\": 13807.5\n    }\n  }\n}",
+        "creationDate": 1403674035879,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "get-state-income-tax-information-model",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1473513945091,
+        "name": "Get State Income Tax Information Model",
+        "format": "JSON",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/models/53aa5db3e4b008bb2ef87676/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/models/53aa5db3e4b008bb2ef87676"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675"
+          }
+        },
+        "id": "53aa5db3e4b008bb2ef87676",
+        "body": "{\n  \"single\": {\n    \"income_tax_brackets\": [\n      {\n        \"bracket\": 0,\n        \"marginal_rate\": 5\n      }\n    ],\n    \"special_taxes\": [],\n    \"deductions\": [],\n    \"credits\": [],\n    \"annotations\": []\n  },\n  \"married\": {\n    \"income_tax_brackets\": [\n      {\n        \"bracket\": 0,\n        \"marginal_rate\": 5\n      }\n    ],\n    \"special_taxes\": [],\n    \"deductions\": [],\n    \"credits\": [],\n    \"annotations\": []\n  },\n  \"married_separately\": {\n    \"income_tax_brackets\": [\n      {\n        \"bracket\": 0,\n        \"marginal_rate\": 5\n      }\n    ],\n    \"special_taxes\": [],\n    \"deductions\": [],\n    \"credits\": [],\n    \"annotations\": []\n  },\n  \"head_of_household\": {\n    \"income_tax_brackets\": [\n      {\n        \"bracket\": 0,\n        \"marginal_rate\": 5\n      }\n    ],\n    \"special_taxes\": [],\n    \"deductions\": [],\n    \"credits\": [],\n    \"annotations\": []\n  }\n}",
+        "creationDate": 1403674035931,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "-model",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1473513921312,
+        "name": "Model",
+        "format": "JSON",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/models/53aa5db3e4b00287471a298c/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/models/53aa5db3e4b00287471a298c"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675"
+          }
+        },
+        "id": "53aa5db3e4b00287471a298c",
+        "body": "{\n  \"tax_withholding_percentage_method_tables\": {\n    \"annual\": {\n      \"single\": {\n        \"income_tax_brackets\": [\n          {\n            \"bracket\": 0,\n            \"marginal_rate\": 10,\n            \"amount\": 0\n          },\n          {\n            \"bracket\": 8925,\n            \"marginal_rate\": 15,\n            \"amount\": 892.5\n          },\n          {\n            \"bracket\": 36250,\n            \"marginal_rate\": 25,\n            \"amount\": 4991.25\n          },\n          {\n            \"bracket\": 87850,\n            \"marginal_rate\": 28,\n            \"amount\": 17891.25\n          },\n          {\n            \"bracket\": 183250,\n            \"marginal_rate\": 33,\n            \"amount\": 44603.25\n          },\n          {\n            \"bracket\": 398350,\n            \"marginal_rate\": 35,\n            \"amount\": 115586.25\n          },\n          {\n            \"bracket\": 400000,\n            \"marginal_rate\": 39.6,\n            \"amount\": 116163.75\n          }\n        ],\n        \"deductions\": [\n          {\n            \"deduction_name\": \"Standard Deduction (Single)\",\n            \"deduction_amount\": 6100\n          }\n        ]\n      },\n      \"married\": {\n        \"income_tax_brackets\": [\n          {\n            \"bracket\": 0,\n            \"marginal_rate\": 10,\n            \"amount\": 0\n          },\n          {\n            \"bracket\": 17850,\n            \"marginal_rate\": 15,\n            \"amount\": 1785\n          },\n          {\n            \"bracket\": 72500,\n            \"marginal_rate\": 25,\n            \"amount\": 9982.5\n          },\n          {\n            \"bracket\": 146400,\n            \"marginal_rate\": 28,\n            \"amount\": 28457.5\n          },\n          {\n            \"bracket\": 223050,\n            \"marginal_rate\": 33,\n            \"amount\": 49919.5\n          },\n          {\n            \"bracket\": 398350,\n            \"marginal_rate\": 35,\n            \"amount\": 107768.5\n          },\n          {\n            \"bracket\": 450000,\n            \"marginal_rate\": 39.6,\n            \"amount\": 125846\n          }\n        ],\n        \"deductions\": [\n          {\n            \"deduction_name\": \"Standard Deduction (Married)\",\n            \"deduction_amount\": 12200\n          }\n        ]\n      },\n      \"married_separately\": {\n        \"income_tax_brackets\": [\n          {\n            \"bracket\": 0,\n            \"marginal_rate\": 10,\n            \"amount\": 0\n          },\n          {\n            \"bracket\": 8925,\n            \"marginal_rate\": 15,\n            \"amount\": 892.5\n          },\n          {\n            \"bracket\": 36250,\n            \"marginal_rate\": 25,\n            \"amount\": 4991.25\n          },\n          {\n            \"bracket\": 73200,\n            \"marginal_rate\": 28,\n            \"amount\": 14228.75\n          },\n          {\n            \"bracket\": 111525,\n            \"marginal_rate\": 33,\n            \"amount\": 24959.75\n          },\n          {\n            \"bracket\": 199175,\n            \"marginal_rate\": 35,\n            \"amount\": 52884.25\n          },\n          {\n            \"bracket\": 225000,\n            \"marginal_rate\": 39.6,\n            \"amount\": 62923\n          }\n        ],\n        \"deductions\": [\n          {\n            \"deduction_name\": \"Standard Deduction (Married Filing Separately)\",\n            \"deduction_amount\": 6100\n          }\n        ]\n      },\n      \"head_of_household\": {\n        \"income_tax_brackets\": [\n          {\n            \"bracket\": 0,\n            \"marginal_rate\": 10,\n            \"amount\": 0\n          },\n          {\n            \"bracket\": 12750,\n            \"marginal_rate\": 15,\n            \"amount\": 1275\n          },\n          {\n            \"bracket\": 48600,\n            \"marginal_rate\": 25,\n            \"amount\": 6652.5\n          },\n          {\n            \"bracket\": 125450,\n            \"marginal_rate\": 28,\n            \"amount\": 25865\n          },\n          {\n            \"bracket\": 203150,\n            \"marginal_rate\": 33,\n            \"amount\": 47621\n          },\n          {\n            \"bracket\": 398350,\n            \"marginal_rate\": 35,\n            \"amount\": 112037\n          },\n          {\n            \"bracket\": 425000,\n            \"marginal_rate\": 39.6,\n            \"amount\": 121364.5\n          }\n        ],\n        \"deductions\": [\n          {\n            \"deduction_name\": \"Standard Deduction (Head of Household)\",\n            \"deduction_amount\": 8950\n          }\n        ]\n      }\n    }\n  }\n}",
+        "creationDate": 1403674035806,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Sat Sep 10 13:01:50 UTC 2016",
+  "website": "https://taxee.io",
+  "endpoints": {
+    "took": 330,
+    "total": 6,
+    "data": [
+      {
+        "headers": {
+          "took": 18,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 41,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "year",
+              "updateDate": 1403674036547,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "year",
+              "description": "The year of data (tax brackets and deductions) to use when running the calculation.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db3e4b00287471a298e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db3e4b00287471a298e/routeparameters/53aa5db4e4b0a798dbd1b8af"
+                }
+              },
+              "id": "53aa5db4e4b0a798dbd1b8af",
+              "type": "STRING",
+              "creationDate": 1403674036061,
+              "value": "2014",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1473513917212,
+        "code": 200,
+        "method": "POST",
+        "description": "Given an income and filing status, returns dollar amounts of taxes owed.",
+        "creationDate": 1403674035993,
+        "slugifiedPrimary": "calculate-income-taxes",
+        "routeregex": "/v1/calculate/([^/?]+)",
+        "route": "/v1/calculate/{year}",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "calculate-income-taxes-model",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 38,
+          "updateDate": 1473512834401,
+          "name": "Calculate Income Taxes Model",
+          "format": "JSON",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/models/53aa5db3e4b00287471a298d/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/models/53aa5db3e4b00287471a298d"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675"
+            }
+          },
+          "id": "53aa5db3e4b00287471a298d",
+          "body": "{\n  \"annual\": {\n    \"state\": {\n      \"amount\": 3804.56\n    },\n    \"fica\": {\n      \"amount\": 7650\n    },\n    \"federal\": {\n      \"amount\": 13807.5\n    }\n  }\n}",
+          "creationDate": 1403674035879,
+          "status": "ACTIVE"
+        },
+        "name": "Calculate Income Taxes",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db3e4b00287471a298e/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db3e4b00287471a298e/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/models/53aa5db3e4b00287471a298d"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db3e4b00287471a298e"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db3e4b00287471a298e/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/groups/57d409b1e4b0bb50a7590041"
+          }
+        },
+        "id": "53aa5db3e4b00287471a298e",
+        "parameters": {
+          "took": 35,
+          "total": 4,
+          "data": [
+            {
+              "slugifiedPrimary": "filing_status",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "filing_status",
+              "description": "The filing status (either \"single\", \"married\", \"married_separately\", or \"head_of_household\").",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db3e4b00287471a298e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db3e4b00287471a298e/parameters/53aa5db4e4b051a76d24198a"
+                }
+              },
+              "id": "53aa5db4e4b051a76d24198a",
+              "type": "STRING",
+              "creationDate": 1403674036249,
+              "value": "married",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "pay_periods",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "pay_periods",
+              "description": "The number of pay periods in a year.  If not passed, this will default to 1, Taxee will assume the pay_rate value is an annual income, and the results will be amounts owed for an entire year. If a value is passed, the results will be amounts owed per pay period.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db3e4b00287471a298e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db3e4b00287471a298e/parameters/53aa5db4e4b0f2c97547139f"
+                }
+              },
+              "id": "53aa5db4e4b0f2c97547139f",
+              "type": "NUMBER",
+              "creationDate": 1403674036353,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "pay_rate",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "pay_rate",
+              "description": "The individual or household income of the person or family.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db3e4b00287471a298e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db3e4b00287471a298e/parameters/53aa5db4e4b00287471a2990"
+                }
+              },
+              "id": "53aa5db4e4b00287471a2990",
+              "type": "NUMBER",
+              "creationDate": 1403674036148,
+              "value": "100000",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "state",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "state",
+              "description": "The filer's state abbreviation.  If no state is provided, the state income tax amount will not be returned.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db3e4b00287471a298e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db3e4b00287471a298e/parameters/53aa5db4e4b0a705fcc32a2e"
+                }
+              },
+              "id": "53aa5db4e4b0a705fcc32a2e",
+              "type": "STRING",
+              "creationDate": 1403674036443,
+              "value": "CA",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "version-1",
+          "took": 34,
+          "name": "Version 1",
+          "index": 1,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/groups/57d409b1e4b0bb50a7590041"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675"
+            }
+          },
+          "id": "57d409b1e4b0bb50a7590041",
+          "creationDate": 1473513905161,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 40,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "year",
+              "updateDate": 1403674036885,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "year",
+              "description": "The year of the federal income tax information you'd like to request.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db4e4b0f2c9754713a0"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db4e4b0f2c9754713a0/routeparameters/53aa5db4e4b00287471a2992"
+                }
+              },
+              "id": "53aa5db4e4b00287471a2992",
+              "type": "STRING",
+              "creationDate": 1403674036786,
+              "value": "2014",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1473513941287,
+        "code": 200,
+        "method": "GET",
+        "description": "Given a year, returns tax brackets and deductions for all filing statuses.",
+        "creationDate": 1403674036678,
+        "slugifiedPrimary": "get-federal-income-tax-information",
+        "routeregex": "/v1/federal/([^/?]+)",
+        "route": "/v1/federal/{year}",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "-model",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 17,
+          "updateDate": 1473513921312,
+          "name": "Model",
+          "format": "JSON",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/models/53aa5db3e4b00287471a298c/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/models/53aa5db3e4b00287471a298c"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675"
+            }
+          },
+          "id": "53aa5db3e4b00287471a298c",
+          "body": "{\n  \"tax_withholding_percentage_method_tables\": {\n    \"annual\": {\n      \"single\": {\n        \"income_tax_brackets\": [\n          {\n            \"bracket\": 0,\n            \"marginal_rate\": 10,\n            \"amount\": 0\n          },\n          {\n            \"bracket\": 8925,\n            \"marginal_rate\": 15,\n            \"amount\": 892.5\n          },\n          {\n            \"bracket\": 36250,\n            \"marginal_rate\": 25,\n            \"amount\": 4991.25\n          },\n          {\n            \"bracket\": 87850,\n            \"marginal_rate\": 28,\n            \"amount\": 17891.25\n          },\n          {\n            \"bracket\": 183250,\n            \"marginal_rate\": 33,\n            \"amount\": 44603.25\n          },\n          {\n            \"bracket\": 398350,\n            \"marginal_rate\": 35,\n            \"amount\": 115586.25\n          },\n          {\n            \"bracket\": 400000,\n            \"marginal_rate\": 39.6,\n            \"amount\": 116163.75\n          }\n        ],\n        \"deductions\": [\n          {\n            \"deduction_name\": \"Standard Deduction (Single)\",\n            \"deduction_amount\": 6100\n          }\n        ]\n      },\n      \"married\": {\n        \"income_tax_brackets\": [\n          {\n            \"bracket\": 0,\n            \"marginal_rate\": 10,\n            \"amount\": 0\n          },\n          {\n            \"bracket\": 17850,\n            \"marginal_rate\": 15,\n            \"amount\": 1785\n          },\n          {\n            \"bracket\": 72500,\n            \"marginal_rate\": 25,\n            \"amount\": 9982.5\n          },\n          {\n            \"bracket\": 146400,\n            \"marginal_rate\": 28,\n            \"amount\": 28457.5\n          },\n          {\n            \"bracket\": 223050,\n            \"marginal_rate\": 33,\n            \"amount\": 49919.5\n          },\n          {\n            \"bracket\": 398350,\n            \"marginal_rate\": 35,\n            \"amount\": 107768.5\n          },\n          {\n            \"bracket\": 450000,\n            \"marginal_rate\": 39.6,\n            \"amount\": 125846\n          }\n        ],\n        \"deductions\": [\n          {\n            \"deduction_name\": \"Standard Deduction (Married)\",\n            \"deduction_amount\": 12200\n          }\n        ]\n      },\n      \"married_separately\": {\n        \"income_tax_brackets\": [\n          {\n            \"bracket\": 0,\n            \"marginal_rate\": 10,\n            \"amount\": 0\n          },\n          {\n            \"bracket\": 8925,\n            \"marginal_rate\": 15,\n            \"amount\": 892.5\n          },\n          {\n            \"bracket\": 36250,\n            \"marginal_rate\": 25,\n            \"amount\": 4991.25\n          },\n          {\n            \"bracket\": 73200,\n            \"marginal_rate\": 28,\n            \"amount\": 14228.75\n          },\n          {\n            \"bracket\": 111525,\n            \"marginal_rate\": 33,\n            \"amount\": 24959.75\n          },\n          {\n            \"bracket\": 199175,\n            \"marginal_rate\": 35,\n            \"amount\": 52884.25\n          },\n          {\n            \"bracket\": 225000,\n            \"marginal_rate\": 39.6,\n            \"amount\": 62923\n          }\n        ],\n        \"deductions\": [\n          {\n            \"deduction_name\": \"Standard Deduction (Married Filing Separately)\",\n            \"deduction_amount\": 6100\n          }\n        ]\n      },\n      \"head_of_household\": {\n        \"income_tax_brackets\": [\n          {\n            \"bracket\": 0,\n            \"marginal_rate\": 10,\n            \"amount\": 0\n          },\n          {\n            \"bracket\": 12750,\n            \"marginal_rate\": 15,\n            \"amount\": 1275\n          },\n          {\n            \"bracket\": 48600,\n            \"marginal_rate\": 25,\n            \"amount\": 6652.5\n          },\n          {\n            \"bracket\": 125450,\n            \"marginal_rate\": 28,\n            \"amount\": 25865\n          },\n          {\n            \"bracket\": 203150,\n            \"marginal_rate\": 33,\n            \"amount\": 47621\n          },\n          {\n            \"bracket\": 398350,\n            \"marginal_rate\": 35,\n            \"amount\": 112037\n          },\n          {\n            \"bracket\": 425000,\n            \"marginal_rate\": 39.6,\n            \"amount\": 121364.5\n          }\n        ],\n        \"deductions\": [\n          {\n            \"deduction_name\": \"Standard Deduction (Head of Household)\",\n            \"deduction_amount\": 8950\n          }\n        ]\n      }\n    }\n  }\n}",
+          "creationDate": 1403674035806,
+          "status": "ACTIVE"
+        },
+        "name": "Get Federal Income Tax Information",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db4e4b0f2c9754713a0/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db4e4b0f2c9754713a0/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/models/53aa5db3e4b00287471a298c"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db4e4b0f2c9754713a0"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db4e4b0f2c9754713a0/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/groups/57d409b1e4b0bb50a7590041"
+          }
+        },
+        "id": "53aa5db4e4b0f2c9754713a0",
+        "parameters": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "version-1",
+          "took": 13,
+          "name": "Version 1",
+          "index": 1,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/groups/57d409b1e4b0bb50a7590041"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675"
+            }
+          },
+          "id": "57d409b1e4b0bb50a7590041",
+          "creationDate": 1473513905161,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 18,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "state",
+              "updateDate": 1403674037456,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "state",
+              "description": "The abbreviation of the state whose data you're requesting.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db5e4b0a705fcc32a30"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db5e4b0a705fcc32a30/routeparameters/53aa5db5e4b051a76d24198d"
+                }
+              },
+              "id": "53aa5db5e4b051a76d24198d",
+              "type": "STRING",
+              "creationDate": 1403674037183,
+              "value": "IL",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "year",
+              "updateDate": 1403674037321,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "year",
+              "description": "The year of the data you're requesting.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db5e4b0a705fcc32a30"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db5e4b0a705fcc32a30/routeparameters/53aa5db5e4b051a76d24198c"
+                }
+              },
+              "id": "53aa5db5e4b051a76d24198c",
+              "type": "STRING",
+              "creationDate": 1403674037103,
+              "value": "2014",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1473513961541,
+        "code": 200,
+        "method": "GET",
+        "description": "Given a year and a state abbreviation, returns tax brackets and deductions for all filing statuses.",
+        "creationDate": 1403674037009,
+        "slugifiedPrimary": "get-state-income-tax-information",
+        "routeregex": "/v1/state/([^/?]+)/([^/?]+)",
+        "route": "/v1/state/{year}/{state}",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "get-state-income-tax-information-model",
+          "headers": {
+            "took": 19,
+            "total": 0,
+            "data": []
+          },
+          "took": 49,
+          "updateDate": 1473513945091,
+          "name": "Get State Income Tax Information Model",
+          "format": "JSON",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/models/53aa5db3e4b008bb2ef87676/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/models/53aa5db3e4b008bb2ef87676"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675"
+            }
+          },
+          "id": "53aa5db3e4b008bb2ef87676",
+          "body": "{\n  \"single\": {\n    \"income_tax_brackets\": [\n      {\n        \"bracket\": 0,\n        \"marginal_rate\": 5\n      }\n    ],\n    \"special_taxes\": [],\n    \"deductions\": [],\n    \"credits\": [],\n    \"annotations\": []\n  },\n  \"married\": {\n    \"income_tax_brackets\": [\n      {\n        \"bracket\": 0,\n        \"marginal_rate\": 5\n      }\n    ],\n    \"special_taxes\": [],\n    \"deductions\": [],\n    \"credits\": [],\n    \"annotations\": []\n  },\n  \"married_separately\": {\n    \"income_tax_brackets\": [\n      {\n        \"bracket\": 0,\n        \"marginal_rate\": 5\n      }\n    ],\n    \"special_taxes\": [],\n    \"deductions\": [],\n    \"credits\": [],\n    \"annotations\": []\n  },\n  \"head_of_household\": {\n    \"income_tax_brackets\": [\n      {\n        \"bracket\": 0,\n        \"marginal_rate\": 5\n      }\n    ],\n    \"special_taxes\": [],\n    \"deductions\": [],\n    \"credits\": [],\n    \"annotations\": []\n  }\n}",
+          "creationDate": 1403674035931,
+          "status": "ACTIVE"
+        },
+        "name": "Get State Income Tax Information",
+        "routeindex": 2,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db5e4b0a705fcc32a30/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db5e4b0a705fcc32a30/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/models/53aa5db3e4b008bb2ef87676"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db5e4b0a705fcc32a30"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/53aa5db5e4b0a705fcc32a30/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/groups/57d409b1e4b0bb50a7590041"
+          }
+        },
+        "id": "53aa5db5e4b0a705fcc32a30",
+        "parameters": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "version-1",
+          "took": 13,
+          "name": "Version 1",
+          "index": 1,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/groups/57d409b1e4b0bb50a7590041"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675"
+            }
+          },
+          "id": "57d409b1e4b0bb50a7590041",
+          "creationDate": 1473513905161,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 14,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "authorization",
+              "condition": "REQUIRED",
+              "updateDate": 1473513857073,
+              "name": "Authorization",
+              "description": "Requests to Taxee require the Authorization header, with the value set to \"Bearer [your_api_key]\".  An API key can be generated on https://taxee.io",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d4055ce4b0bb50a7590037"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d4055ce4b0bb50a7590037/headers/57d4073ce4b014e7f502dda4"
+                }
+              },
+              "id": "57d4073ce4b014e7f502dda4",
+              "type": "STRING",
+              "creationDate": 1473513276299,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "routeparameters": {
+          "took": 13,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "year",
+              "condition": "REQUIRED",
+              "name": "year",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d4055ce4b0bb50a7590037"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d4055ce4b0bb50a7590037/routeparameters/57d4055ce4b028b098ffa00c"
+                }
+              },
+              "id": "57d4055ce4b028b098ffa00c",
+              "type": "STRING",
+              "creationDate": 1473512796601,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1473513563239,
+        "code": 200,
+        "method": "POST",
+        "description": "Given an income and filing status, returns dollar amounts of taxes owed.",
+        "creationDate": 1473512796529,
+        "slugifiedPrimary": "v2-calculate-income-taxes",
+        "routeregex": "/v2/calculate/([^/?]+)",
+        "route": "/v2/calculate/{year}",
+        "name": "V2 - Calculate Income Taxes",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d4055ce4b0bb50a7590037/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d4055ce4b0bb50a7590037/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d4055ce4b0bb50a7590037"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d4055ce4b0bb50a7590037/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/groups/57d40505e4b0c390f1dcc359"
+          }
+        },
+        "id": "57d4055ce4b0bb50a7590037",
+        "parameters": {
+          "took": 39,
+          "total": 5,
+          "data": [
+            {
+              "slugifiedPrimary": "exemptions",
+              "condition": "OPTIONAL",
+              "name": "exemptions",
+              "description": "When a number of exemptions are passed, the tax costs returned will account for that number of exemptions.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d4055ce4b0bb50a7590037"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d4055ce4b0bb50a7590037/parameters/57d4063ce4b0c80b6ebe5a33"
+                }
+              },
+              "id": "57d4063ce4b0c80b6ebe5a33",
+              "type": "NUMBER",
+              "creationDate": 1473513020404,
+              "value": "",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "filing_status",
+              "condition": "REQUIRED",
+              "name": "filing_status",
+              "description": "The filing status (either \"single\", \"married\", \"married_separately\", or \"head_of_household\").",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d4055ce4b0bb50a7590037"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d4055ce4b0bb50a7590037/parameters/57d405d2e4b0c390f1dcc35a"
+                }
+              },
+              "id": "57d405d2e4b0c390f1dcc35a",
+              "type": "STRING",
+              "creationDate": 1473512914821,
+              "value": "",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "pay_periods",
+              "updateDate": 1473513392406,
+              "condition": "OPTIONAL",
+              "name": "pay_periods",
+              "description": "The number of pay periods in a year. If not passed, this will default to 1, Taxee will assume the pay_rate value is an annual income, and the results will be amounts owed for an entire year. If a value is passed, the results will be amounts owed per pay period.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d4055ce4b0bb50a7590037"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d4055ce4b0bb50a7590037/parameters/57d405e8e4b0c80b6ebe5a30"
+                }
+              },
+              "id": "57d405e8e4b0c80b6ebe5a30",
+              "type": "NUMBER",
+              "creationDate": 1473512936362,
+              "value": "1",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "pay_rate",
+              "condition": "REQUIRED",
+              "name": "pay_rate",
+              "description": "The individual or household income of the person or family.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d4055ce4b0bb50a7590037"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d4055ce4b0bb50a7590037/parameters/57d405fce4b0c80b6ebe5a32"
+                }
+              },
+              "id": "57d405fce4b0c80b6ebe5a32",
+              "type": "NUMBER",
+              "creationDate": 1473512956377,
+              "value": "",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "state",
+              "condition": "OPTIONAL",
+              "name": "state",
+              "description": "The filer's state abbreviation. If no state is provided, the state income tax amount will not be returned.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d4055ce4b0bb50a7590037"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d4055ce4b0bb50a7590037/parameters/57d40613e4b0520dc11035f9"
+                }
+              },
+              "id": "57d40613e4b0520dc11035f9",
+              "type": "STRING",
+              "creationDate": 1473512979177,
+              "value": "",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "version-2",
+          "took": 10,
+          "updateDate": 1473512734962,
+          "name": "Version 2",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/groups/57d40505e4b0c390f1dcc359"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675"
+            }
+          },
+          "id": "57d40505e4b0c390f1dcc359",
+          "creationDate": 1473512709357,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 45,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "authorization",
+              "updateDate": 1473514099661,
+              "condition": "REQUIRED",
+              "name": "Authorization",
+              "description": "Requests to Taxee require the Authorization header, with the value set to \"Bearer [your_api_key]\". An API key can be generated on https://taxee.io",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d407fce4b0bf08d74df830"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d407fce4b0bf08d74df830/headers/57d408b6e4b0c390f1dcc35c"
+                }
+              },
+              "id": "57d408b6e4b0c390f1dcc35c",
+              "type": "STRING",
+              "creationDate": 1473513654008,
+              "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJBUElfS0VZX01BTkFHRVIiLCJodHRwOi8vdGF4ZWUuaW8vdXNlcl9pZCI6IjU3Y2IyMWE2YmI4N2MxMDA0NGE2NmE2MiIsImh0dHA6Ly90YXhlZS5pby9zY29wZXMiOlsiYXBpIl0sImlhdCI6MTQ3MzAxODA1OX0.xkn1_LHnLijhYMONl5iXhKD1vsdm0_5AtSKGsPrVtxI",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "routeparameters": {
+          "took": 11,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "year",
+              "condition": "REQUIRED",
+              "updateDate": 1473513630467,
+              "name": "year",
+              "description": "The year of data (tax brackets and deductions) to use when running the calculation.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d407fce4b0bf08d74df830"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d407fce4b0bf08d74df830/routeparameters/57d407fce4b0bb50a759003e"
+                }
+              },
+              "id": "57d407fce4b0bb50a759003e",
+              "type": "NUMBER",
+              "creationDate": 1473513468264,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "code": 200,
+        "method": "GET",
+        "description": "Given a year, returns tax brackets and deductions for all filing statuses.",
+        "creationDate": 1473513468191,
+        "slugifiedPrimary": "v2-get-federal-income-tax-information",
+        "routeregex": "/v2/federal/([^/?]+)",
+        "route": "/v2/federal/{year}",
+        "name": "V2 - Get Federal Income Tax Information",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d407fce4b0bf08d74df830/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d407fce4b0bf08d74df830/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d407fce4b0bf08d74df830"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d407fce4b0bf08d74df830/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/groups/57d40505e4b0c390f1dcc359"
+          }
+        },
+        "id": "57d407fce4b0bf08d74df830",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "version-2",
+          "took": 12,
+          "updateDate": 1473512734962,
+          "name": "Version 2",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/groups/57d40505e4b0c390f1dcc359"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675"
+            }
+          },
+          "id": "57d40505e4b0c390f1dcc359",
+          "creationDate": 1473512709357,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 13,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "authorization",
+              "condition": "REQUIRED",
+              "name": "Authorization",
+              "description": "Requests to Taxee require the Authorization header, with the value set to \"Bearer [your_api_key]\". An API key can be generated on https://taxee.io",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d40947e4b0bb50a7590040"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d40947e4b0bb50a7590040/headers/57d40986e4b0c80b6ebe5a39"
+                }
+              },
+              "id": "57d40986e4b0c80b6ebe5a39",
+              "type": "STRING",
+              "creationDate": 1473513862142,
+              "value": "",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "routeparameters": {
+          "took": 61,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "state",
+              "condition": "REQUIRED",
+              "updateDate": 1473513836393,
+              "name": "state",
+              "description": "The abbreviation of the state whose data you're requesting.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d40947e4b0bb50a7590040"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d40947e4b0bb50a7590040/routeparameters/57d40948e4b028b098ffa013"
+                }
+              },
+              "id": "57d40948e4b028b098ffa013",
+              "type": "STRING",
+              "creationDate": 1473513800082,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "year",
+              "condition": "REQUIRED",
+              "updateDate": 1473513827039,
+              "name": "year",
+              "description": "The year of the data you're requesting.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d40947e4b0bb50a7590040"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d40947e4b0bb50a7590040/routeparameters/57d40948e4b0c80b6ebe5a36"
+                }
+              },
+              "id": "57d40948e4b0c80b6ebe5a36",
+              "type": "NUMBER",
+              "creationDate": 1473513800059,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1473514083008,
+        "code": 200,
+        "method": "GET",
+        "description": "Given a year and a state abbreviation, returns tax brackets and deductions for all filing statuses.",
+        "creationDate": 1473513799989,
+        "slugifiedPrimary": "v2-get-state-income-tax-information",
+        "routeregex": "/v2/state/([^/?]+)/([^/?]+)",
+        "route": "/v2/state/{year}/{state}",
+        "name": "V2 - Get State Income Tax Information",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d40947e4b0bb50a7590040/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d40947e4b0bb50a7590040/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d40947e4b0bb50a7590040"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/57d40947e4b0bb50a7590040/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/groups/57d40505e4b0c390f1dcc359"
+          }
+        },
+        "id": "57d40947e4b0bb50a7590040",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "version-2",
+          "took": 33,
+          "updateDate": 1473512734962,
+          "name": "Version 2",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/groups/57d40505e4b0c390f1dcc359"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675"
+            }
+          },
+          "id": "57d40505e4b0c390f1dcc359",
+          "creationDate": 1473512709357,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "MEET TAXEE\r\n\r\nYour Friendly Neighborhood Income Tax Data and Calculation API.",
+  "groups": {
+    "took": 16,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "version-1",
+        "name": "Version 1",
+        "index": 1,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/groups/57d409b1e4b0bb50a7590041"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675"
+          }
+        },
+        "id": "57d409b1e4b0bb50a7590041",
+        "creationDate": 1473513905161,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "version-2",
+        "updateDate": 1473512734962,
+        "name": "Version 2",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/groups/57d40505e4b0c390f1dcc359"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675"
+          }
+        },
+        "id": "57d40505e4b0c390f1dcc359",
+        "creationDate": 1473512709357,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 05:27:15 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/astronode"
+    },
+    "endpoints": {
+      "total": 6,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/objects/"
+    },
+    "groups": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b12e4b07e1f4ebe4554/apis/53aa5db3e4b00287471a298a/versions/53aa5db3e4b07e1f4ebec675/errors/"
+    }
+  },
+  "id": "53aa5db3e4b07e1f4ebec675",
+  "status": "ACTIVE"
+}

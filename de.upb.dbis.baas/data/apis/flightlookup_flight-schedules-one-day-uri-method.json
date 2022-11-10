@@ -1,0 +1,407 @@
+{
+  "models": {
+    "took": 49,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "timetable-response",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "TimeTable Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/models/53aa32efe4b0a9b1348d8f42/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/models/53aa32efe4b0a9b1348d8f42"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a"
+          }
+        },
+        "id": "53aa32efe4b0a9b1348d8f42",
+        "creationDate": 1403663087959,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:44:27 UTC 2014",
+  "website": "http://www.flightlookup.com",
+  "endpoints": {
+    "took": 69,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 57,
+          "total": 8,
+          "data": [
+            {
+              "slugifiedPrimary": "airline",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "Airline",
+              "description": "Optional - 2 letter IATA airline code. Restricts results to routes flown by a certain carrier.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/endpoints/53aa32efe4b0b60946a2de81"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/endpoints/53aa32efe4b0b60946a2de81/routeparameters/53aa32f0e4b059614033eeb8"
+                }
+              },
+              "id": "53aa32f0e4b059614033eeb8",
+              "type": "STRING",
+              "creationDate": 1403663088180,
+              "value": "AA",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "count",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "Count",
+              "description": "Optional - Number of routes to return.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/endpoints/53aa32efe4b0b60946a2de81"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/endpoints/53aa32efe4b0b60946a2de81/routeparameters/53aa32f0e4b07e1f4ebe9d41"
+                }
+              },
+              "id": "53aa32f0e4b07e1f4ebe9d41",
+              "type": "NUMBER",
+              "creationDate": 1403663088269,
+              "value": "10",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "date",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "Date",
+              "description": "Required - Departure date (mm/dd/yyyy)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/endpoints/53aa32efe4b0b60946a2de81"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/endpoints/53aa32efe4b0b60946a2de81/routeparameters/53aa32f0e4b0a798dbd18df4"
+                }
+              },
+              "id": "53aa32f0e4b0a798dbd18df4",
+              "type": "STRING",
+              "creationDate": 1403663088136,
+              "value": "12/17/2012",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "from",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "From",
+              "description": "Required - 3 letter IATA code for the departure airport",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/endpoints/53aa32efe4b0b60946a2de81"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/endpoints/53aa32efe4b0b60946a2de81/routeparameters/53aa32f0e4b07e1f4ebe9d3f"
+                }
+              },
+              "id": "53aa32f0e4b07e1f4ebe9d3f",
+              "type": "STRING",
+              "creationDate": 1403663088053,
+              "value": "BOS",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "hops",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "Hops",
+              "description": "Optional - Values: NONSTOP, DIRECT, 1STOP, MORE",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/endpoints/53aa32efe4b0b60946a2de81"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/endpoints/53aa32efe4b0b60946a2de81/routeparameters/53aa32f0e4b0a798dbd18df6"
+                }
+              },
+              "id": "53aa32f0e4b0a798dbd18df6",
+              "type": "STRING",
+              "creationDate": 1403663088222,
+              "value": "NONSTOP",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "interline",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "Interline",
+              "description": "Optional - Y or N",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/endpoints/53aa32efe4b0b60946a2de81"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/endpoints/53aa32efe4b0b60946a2de81/routeparameters/53aa32f0e4b07e1f4ebe9d42"
+                }
+              },
+              "id": "53aa32f0e4b07e1f4ebe9d42",
+              "type": "STRING",
+              "creationDate": 1403663088312,
+              "value": "Y",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "sortorder",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "SortOrder",
+              "description": "Optional - 0=Arrival Time, 1=Departure Time, 2=Duration, 3=Flight Type (Nonstop/Direct/Connection), 4=Via, 5=Connections (Flights), 6=Prefer Metal (metal only flights will show up first)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/endpoints/53aa32efe4b0b60946a2de81"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/endpoints/53aa32efe4b0b60946a2de81/routeparameters/53aa32f0e4b07e1f4ebe9d43"
+                }
+              },
+              "id": "53aa32f0e4b07e1f4ebe9d43",
+              "type": "NUMBER",
+              "creationDate": 1403663088356,
+              "value": "0",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "to",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "To",
+              "description": "Required - 3 letter IATA code for the destination airport",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/endpoints/53aa32efe4b0b60946a2de81"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/endpoints/53aa32efe4b0b60946a2de81/routeparameters/53aa32f0e4b0a798dbd18df3"
+                }
+              },
+              "id": "53aa32f0e4b0a798dbd18df3",
+              "type": "STRING",
+              "creationDate": 1403663088094,
+              "value": "LAX",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403663088242,
+        "code": 200,
+        "method": "GET",
+        "description": "This method returns timetable data from a specified airport to a specified airport on a specified date.",
+        "creationDate": 1403663087993,
+        "slugifiedPrimary": "timetable",
+        "routeregex": "/TimeTable/",
+        "route": "/TimeTable/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "timetable-response",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 40,
+          "name": "TimeTable Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/models/53aa32efe4b0a9b1348d8f42/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/models/53aa32efe4b0a9b1348d8f42"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a"
+            }
+          },
+          "id": "53aa32efe4b0a9b1348d8f42",
+          "creationDate": 1403663087959,
+          "status": "ACTIVE"
+        },
+        "name": "TimeTable",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/endpoints/53aa32efe4b0b60946a2de81/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/endpoints/53aa32efe4b0b60946a2de81/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/models/53aa32efe4b0a9b1348d8f42"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/endpoints/53aa32efe4b0b60946a2de81"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/endpoints/53aa32efe4b0b60946a2de81/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/groups/53aa32efe4b0a9b1348d8f41"
+          }
+        },
+        "id": "53aa32efe4b0b60946a2de81",
+        "parameters": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "xml",
+          "took": 36,
+          "name": "XML",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/groups/53aa32efe4b0a9b1348d8f41"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a"
+            }
+          },
+          "id": "53aa32efe4b0a9b1348d8f41",
+          "creationDate": 1403663087920,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "FlightLookup Timetable - Access our worldwide schedules including low cost carriers and build connections using the dynamic connections engine. If you are looking for airline schedules to provide timetables this is the service for you. *Origin and Destination, *Worldwide passenger airline flight schedules, *Single Day, 7 day and Multi-day lookups, *Search criteria includes: Time/Airline/Interline/Number of Routes/Number of Connections, etc, *Route Information, *Detail Segment Information",
+  "groups": {
+    "took": 32,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "xml",
+        "name": "XML",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/groups/53aa32efe4b0a9b1348d8f41"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a"
+          }
+        },
+        "id": "53aa32efe4b0a9b1348d8f41",
+        "creationDate": 1403663087920,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 02:24:47 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/objects/"
+    },
+    "groups": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/features/"
+    },
+    "plans": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32efe4b0b60946a2de7e/versions/53aa32efe4b07e1f4ebe9d3a/errors/"
+    }
+  },
+  "id": "53aa32efe4b07e1f4ebe9d3a",
+  "status": "ACTIVE"
+}

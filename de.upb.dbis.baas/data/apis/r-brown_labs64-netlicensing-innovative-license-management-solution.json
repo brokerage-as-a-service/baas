@@ -1,0 +1,383 @@
+{
+  "models": {
+    "took": 38,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "licensees-list",
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "name": "Licensees list",
+        "format": "XML",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/models/549fb8a8e4b06d0900245a8e/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/models/549fb8a8e4b06d0900245a8e"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e"
+          }
+        },
+        "id": "549fb8a8e4b06d0900245a8e",
+        "body": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<netlicensing xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\" xmlns=\"http://netlicensing.labs64.com/schema/context\">\n    <infos/>\n    <items pagenumber=\"0\" itemsnumber=\"1\" totalpages=\"1\" totalitems=\"1\" hasnext=\"false\">\n        <item type=\"Licensee\">\n            <property name=\"number\">IJJRYP3PA-DEMO</property>\n            <property name=\"active\">true</property>\n            <property name=\"productNumber\">PUNYAWQZX-DEMO</property>\n            <property name=\"eMail\">demo.customer@labs64.com</property>\n            <property name=\"name\">Demo customer</property>\n            <property name=\"inUse\">true</property>\n        </item>\n    </items>\n</netlicensing>",
+        "creationDate": 1419753640004,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "validate-licensee",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Validate licensee",
+        "format": "XML",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/models/549fb882e4b06ac0fe004259/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/models/549fb882e4b06ac0fe004259"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e"
+          }
+        },
+        "id": "549fb882e4b06ac0fe004259",
+        "body": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<netlicensing xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\" xmlns=\"http://netlicensing.labs64.com/schema/context\" ttl=\"2014-12-29T07:59:01.593Z\">\n    <infos/>\n    <items>\n        <item type=\"ProductModuleValidation\">\n            <property name=\"productModuleNumber\">MW2DQN3VK-DEMO</property>\n            <property name=\"valid\">true</property>\n            <property name=\"licensingModel\">Subscription</property>\n            <property name=\"expires\">2015-01-07T07:41:36.351Z</property>\n            <property name=\"productModuleName\">Demo module</property>\n        </item>\n    </items>\n</netlicensing>",
+        "creationDate": 1419753602738,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Aug 13 15:05:12 UTC 2015",
+  "website": "http://netlicensing.io",
+  "endpoints": {
+    "took": 132,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1419753640329,
+        "code": 200,
+        "method": "GET",
+        "description": "Return a list of all licensees for the current vendor",
+        "creationDate": 1419750590169,
+        "slugifiedPrimary": "licensees-list",
+        "routeregex": "/core/v2/rest/licensee",
+        "route": "/core/v2/rest/licensee",
+        "response": {
+          "slugifiedPrimary": "licensees-list",
+          "headers": {
+            "took": 19,
+            "total": 0,
+            "data": []
+          },
+          "took": 27,
+          "name": "Licensees list",
+          "format": "XML",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/models/549fb8a8e4b06d0900245a8e/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/models/549fb8a8e4b06d0900245a8e"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e"
+            }
+          },
+          "id": "549fb8a8e4b06d0900245a8e",
+          "body": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<netlicensing xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\" xmlns=\"http://netlicensing.labs64.com/schema/context\">\n    <infos/>\n    <items pagenumber=\"0\" itemsnumber=\"1\" totalpages=\"1\" totalitems=\"1\" hasnext=\"false\">\n        <item type=\"Licensee\">\n            <property name=\"number\">IJJRYP3PA-DEMO</property>\n            <property name=\"active\">true</property>\n            <property name=\"productNumber\">PUNYAWQZX-DEMO</property>\n            <property name=\"eMail\">demo.customer@labs64.com</property>\n            <property name=\"name\">Demo customer</property>\n            <property name=\"inUse\">true</property>\n        </item>\n    </items>\n</netlicensing>",
+          "creationDate": 1419753640004,
+          "status": "ACTIVE"
+        },
+        "name": "Licensees list",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/endpoints/549facbee4b0a49e31912e72/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/endpoints/549facbee4b0a49e31912e72/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/models/549fb8a8e4b06d0900245a8e"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/endpoints/549facbee4b0a49e31912e72"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/endpoints/549facbee4b0a49e31912e72/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/groups/549f19c1e4b0ab6d42783e2b"
+          }
+        },
+        "id": "549facbee4b0a49e31912e72",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "licensee-services",
+          "took": 34,
+          "name": "Licensee Services",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/groups/549f19c1e4b0ab6d42783e2b"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e"
+            }
+          },
+          "id": "549f19c1e4b0ab6d42783e2b",
+          "creationDate": 1419712961207,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 12,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "licenseenumber",
+              "condition": "REQUIRED",
+              "updateDate": 1419752151705,
+              "name": "licenseenumber",
+              "description": "Use valid licensee number (can be obtained by calling 'Licensees list')",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/endpoints/549f1a13e4b0a49e31912ddf"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/endpoints/549f1a13e4b0a49e31912ddf/routeparameters/549f1a13e4b0e73764746d65"
+                }
+              },
+              "id": "549f1a13e4b0e73764746d65",
+              "type": "STRING",
+              "creationDate": 1419713043095,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1419753603125,
+        "code": 200,
+        "method": "GET",
+        "description": "Validates active licenses of the licensee",
+        "creationDate": 1419713043021,
+        "slugifiedPrimary": "validate-licensee",
+        "routeregex": "/core/v2/rest/licensee/([^/?]+)/validate",
+        "route": "/core/v2/rest/licensee/{licenseenumber}/validate",
+        "response": {
+          "slugifiedPrimary": "validate-licensee",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 40,
+          "name": "Validate licensee",
+          "format": "XML",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/models/549fb882e4b06ac0fe004259/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/models/549fb882e4b06ac0fe004259"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e"
+            }
+          },
+          "id": "549fb882e4b06ac0fe004259",
+          "body": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<netlicensing xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\" xmlns=\"http://netlicensing.labs64.com/schema/context\" ttl=\"2014-12-29T07:59:01.593Z\">\n    <infos/>\n    <items>\n        <item type=\"ProductModuleValidation\">\n            <property name=\"productModuleNumber\">MW2DQN3VK-DEMO</property>\n            <property name=\"valid\">true</property>\n            <property name=\"licensingModel\">Subscription</property>\n            <property name=\"expires\">2015-01-07T07:41:36.351Z</property>\n            <property name=\"productModuleName\">Demo module</property>\n        </item>\n    </items>\n</netlicensing>",
+          "creationDate": 1419753602738,
+          "status": "ACTIVE"
+        },
+        "name": "Validate licensee",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/endpoints/549f1a13e4b0a49e31912ddf/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/endpoints/549f1a13e4b0a49e31912ddf/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/models/549fb882e4b06ac0fe004259"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/endpoints/549f1a13e4b0a49e31912ddf"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/endpoints/549f1a13e4b0a49e31912ddf/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/groups/549f19c1e4b0ab6d42783e2b"
+          }
+        },
+        "id": "549f1a13e4b0a49e31912ddf",
+        "parameters": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "licensee-services",
+          "took": 11,
+          "name": "Licensee Services",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/groups/549f19c1e4b0ab6d42783e2b"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e"
+            }
+          },
+          "id": "549f19c1e4b0ab6d42783e2b",
+          "creationDate": 1419712961207,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "NetLicensing is a first-class solution in the Licensing as a Service (LaaS) sector.\r\n\r\nBased on open standards, it provides a cost effective, integrated and scalable platform for software vendors and developers who want to concentrate on their product's core functionality instead of spending resources on developing an own license management software.\r\nNetLicensing allows vendors and developers to enable license management for their new or existing products right away and with minimum effort.",
+  "groups": {
+    "took": 32,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "licensee-services",
+        "name": "Licensee Services",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/groups/549f19c1e4b0ab6d42783e2b"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e"
+          }
+        },
+        "id": "549f19c1e4b0ab6d42783e2b",
+        "creationDate": 1419712961207,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Sat Dec 27 20:38:10 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/objects/"
+    },
+    "groups": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/features/"
+    },
+    "plans": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/549f1687e4b06d09002459da/apis/549f18b2e4b06d09002459dd/versions/549f18b2e4b0ab6dd8f91b7e/authentication"
+    }
+  },
+  "id": "549f18b2e4b0ab6dd8f91b7e",
+  "status": "ACTIVE"
+}

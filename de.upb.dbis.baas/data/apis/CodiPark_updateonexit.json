@@ -1,0 +1,293 @@
+{
+  "models": {
+    "took": 6,
+    "total": 0,
+    "data": []
+  },
+  "updateDate": "Sun Jun 28 10:24:19 UTC 2015",
+  "endpoints": {
+    "took": 41,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 31,
+          "total": 8,
+          "data": [
+            {
+              "slugifiedPrimary": "amount",
+              "condition": "REQUIRED",
+              "name": "Amount",
+              "description": "The amount the user is needed to pay for the parking duration in cents",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/endpoints/558fc5d0e4b0b42bd2f653fc"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/endpoints/558fc5d0e4b0b42bd2f653fc/headers/558fcc27e4b0520d42b58bbc"
+                }
+              },
+              "id": "558fcc27e4b0520d42b58bbc",
+              "type": "NUMBER",
+              "creationDate": 1435487271086,
+              "value": "1000",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "cpsid",
+              "condition": "CONSTANT",
+              "name": "CPSID",
+              "description": "The ID of the CPS as given by CodiPark support",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/endpoints/558fc5d0e4b0b42bd2f653fc"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/endpoints/558fc5d0e4b0b42bd2f653fc/headers/558fcd25e4b0308652230f5d"
+                }
+              },
+              "id": "558fcd25e4b0308652230f5d",
+              "type": "NUMBER",
+              "creationDate": 1435487525045,
+              "value": "22",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "cpstransactionid",
+              "condition": "OPTIONAL",
+              "name": "CPSTransactionID",
+              "description": "The CPS transaction ID for reference if needed",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/endpoints/558fc5d0e4b0b42bd2f653fc"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/endpoints/558fc5d0e4b0b42bd2f653fc/headers/558fcd91e4b0b42bd2f65404"
+                }
+              },
+              "id": "558fcd91e4b0b42bd2f65404",
+              "type": "NUMBER",
+              "creationDate": 1435487633707,
+              "value": "882",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "exitdatetime",
+              "condition": "REQUIRED",
+              "name": "exitDateTime",
+              "description": "Unix-time-stamp of the exiting vehicle",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/endpoints/558fc5d0e4b0b42bd2f653fc"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/endpoints/558fc5d0e4b0b42bd2f653fc/headers/558fcc78e4b0308652230f5c"
+                }
+              },
+              "id": "558fcc78e4b0308652230f5c",
+              "type": "NUMBER",
+              "creationDate": 1435487352767,
+              "value": "223234484872723",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "garageid",
+              "condition": "REQUIRED",
+              "name": "GarageID",
+              "description": "The uniaue garage ID as represented in the CPS system",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/endpoints/558fc5d0e4b0b42bd2f653fc"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/endpoints/558fc5d0e4b0b42bd2f653fc/headers/558fcd56e4b09ec98bb338f3"
+                }
+              },
+              "id": "558fcd56e4b09ec98bb338f3",
+              "type": "NUMBER",
+              "creationDate": 1435487574972,
+              "value": "99",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "laneid",
+              "condition": "OPTIONAL",
+              "name": "laneID",
+              "description": "The lane ID the vehicle has exit from",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/endpoints/558fc5d0e4b0b42bd2f653fc"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/endpoints/558fc5d0e4b0b42bd2f653fc/headers/558fccece4b0520d42b58bbd"
+                }
+              },
+              "id": "558fccece4b0520d42b58bbd",
+              "type": "STRING",
+              "creationDate": 1435487468589,
+              "value": "01",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "licenseplatenumber",
+              "condition": "OPTIONAL",
+              "name": "licensePlateNumber",
+              "description": "The vehicle license plate number",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/endpoints/558fc5d0e4b0b42bd2f653fc"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/endpoints/558fc5d0e4b0b42bd2f653fc/headers/558fccc4e4b09519279b30f7"
+                }
+              },
+              "id": "558fccc4e4b09519279b30f7",
+              "type": "STRING",
+              "creationDate": 1435487428288,
+              "value": "536Jv21",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "ticketnumber",
+              "condition": "REQUIRED",
+              "name": "ticketNumber",
+              "description": "The PCS ticket number",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/endpoints/558fc5d0e4b0b42bd2f653fc"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/endpoints/558fc5d0e4b0b42bd2f653fc/headers/558fc646e4b0308652230f59"
+                }
+              },
+              "id": "558fc646e4b0308652230f59",
+              "type": "STRING",
+              "creationDate": 1435485766496,
+              "value": "1234",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "routeparameters": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "code": 200,
+        "method": "POST",
+        "description": "Use the following method to update after the vehicle has exit the parking garage.",
+        "creationDate": 1435485648245,
+        "slugifiedPrimary": "updateonexit",
+        "routeregex": "/updateonexit",
+        "route": "/updateonexit",
+        "name": "/updateonexit",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/endpoints/558fc5d0e4b0b42bd2f653fc/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/endpoints/558fc5d0e4b0b42bd2f653fc/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/endpoints/558fc5d0e4b0b42bd2f653fc"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/endpoints/558fc5d0e4b0b42bd2f653fc/parameters/"
+          }
+        },
+        "id": "558fc5d0e4b0b42bd2f653fc",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Use the following method to update after the vehicle has  exit the parking garage.\r\nPlease call the following method as close as possible to the exiting vehicle/].",
+  "groups": {
+    "took": 6,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Sun Jun 28 09:58:25 UTC 2015",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/558fc216e4b0308652230f4d/apis/558fc541e4b09ec98bb338e6/versions/558fc541e4b0308652230f55/errors/"
+    }
+  },
+  "id": "558fc541e4b0308652230f55",
+  "status": "ACTIVE"
+}

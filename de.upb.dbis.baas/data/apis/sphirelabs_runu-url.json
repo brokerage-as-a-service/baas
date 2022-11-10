@@ -1,0 +1,345 @@
+{
+  "models": {
+    "took": 18,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "get-short-url-model",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Get short Url Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/models/53aa5c4be4b0f2c97547129e/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/models/53aa5c4be4b0f2c97547129e"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5"
+          }
+        },
+        "id": "53aa5c4be4b0f2c97547129e",
+        "body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": \"Custom-Name\",\n    \"url\": \"http://runu.ga/Custom-Name\",\n    \"full\": \"https://www.google.com/\"\n  }\n}",
+        "creationDate": 1403673675383,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:44:07 UTC 2014",
+  "website": "http://runu.ga",
+  "endpoints": {
+    "took": 140,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 126,
+          "total": 5,
+          "data": [
+            {
+              "slugifiedPrimary": "-custom",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "&custom",
+              "description": "Set Custom Name e.x. fb for facebook gives url runu.ga/fb",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/endpoints/53aa5c4be4b051a76d2418ac"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/endpoints/53aa5c4be4b051a76d2418ac/routeparameters/53aa5c4be4b0a705fcc32932"
+                }
+              },
+              "id": "53aa5c4be4b0a705fcc32932",
+              "type": "STRING",
+              "creationDate": 1403673675800,
+              "value": "Custom Name",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "-expire",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "&expire",
+              "description": "Set date in format MM/DD/YYYY to expire url.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/endpoints/53aa5c4be4b051a76d2418ac"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/endpoints/53aa5c4be4b051a76d2418ac/routeparameters/53aa5c4ce4b00287471a28bb"
+                }
+              },
+              "id": "53aa5c4ce4b00287471a28bb",
+              "type": "NUMBER",
+              "creationDate": 1403673676019,
+              "value": "10/10/2015",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "-password",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "&password",
+              "description": "Set a Custom Password to unlock the short url. Note: Maximum 10 chars.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/endpoints/53aa5c4be4b051a76d2418ac"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/endpoints/53aa5c4be4b051a76d2418ac/routeparameters/53aa5c4be4b051a76d2418ad"
+                }
+              },
+              "id": "53aa5c4be4b051a76d2418ad",
+              "type": "STRING",
+              "creationDate": 1403673675851,
+              "value": "My Secret Password",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "-uses",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "&uses",
+              "description": "Set Number of uses for the url.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/endpoints/53aa5c4be4b051a76d2418ac"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/endpoints/53aa5c4be4b051a76d2418ac/routeparameters/53aa5c4be4b00287471a28ba"
+                }
+              },
+              "id": "53aa5c4be4b00287471a28ba",
+              "type": "NUMBER",
+              "creationDate": 1403673675942,
+              "value": "1000",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "url",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "url",
+              "description": "Url of the website to short url.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/endpoints/53aa5c4be4b051a76d2418ac"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/endpoints/53aa5c4be4b051a76d2418ac/routeparameters/53aa5c4be4b0a705fcc32930"
+                }
+              },
+              "id": "53aa5c4be4b0a705fcc32930",
+              "type": "STRING",
+              "creationDate": 1403673675719,
+              "value": "https://www.google.com/",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403673676090,
+        "code": 200,
+        "method": "GET",
+        "description": "Get Short and Custom Urls",
+        "creationDate": 1403673675515,
+        "slugifiedPrimary": "get-short-url",
+        "routeregex": "/write/get",
+        "route": "/write/get",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "get-short-url-model",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 33,
+          "name": "Get short Url Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/models/53aa5c4be4b0f2c97547129e/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/models/53aa5c4be4b0f2c97547129e"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5"
+            }
+          },
+          "id": "53aa5c4be4b0f2c97547129e",
+          "body": "{\n  \"success\": true,\n  \"data\": {\n    \"id\": \"Custom-Name\",\n    \"url\": \"http://runu.ga/Custom-Name\",\n    \"full\": \"https://www.google.com/\"\n  }\n}",
+          "creationDate": 1403673675383,
+          "status": "ACTIVE"
+        },
+        "name": "Get short Url",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/endpoints/53aa5c4be4b051a76d2418ac/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/endpoints/53aa5c4be4b051a76d2418ac/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/models/53aa5c4be4b0f2c97547129e"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/endpoints/53aa5c4be4b051a76d2418ac"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/endpoints/53aa5c4be4b051a76d2418ac/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/groups/53aa5c4be4b00287471a28b9"
+          }
+        },
+        "id": "53aa5c4be4b051a76d2418ac",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "short-url",
+          "took": 36,
+          "name": "Short URL",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/groups/53aa5c4be4b00287471a28b9"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5"
+            }
+          },
+          "id": "53aa5c4be4b00287471a28b9",
+          "creationDate": 1403673675464,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "RuGu Short Url API Set Custom Passwors, Set Date to expire, Set Max Clicks, Set Custom Url etc. with Metro Controls. Easy to use Short URL API. Presented by http://sphirelabs.com/.",
+  "groups": {
+    "took": 33,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "short-url",
+        "name": "Short URL",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/groups/53aa5c4be4b00287471a28b9"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5"
+          }
+        },
+        "id": "53aa5c4be4b00287471a28b9",
+        "creationDate": 1403673675464,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 05:21:14 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/objects/"
+    },
+    "groups": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa272be4b0a705fcc26ff7/apis/53aa5c4ae4b00287471a28b5/versions/53aa5c4ae4b0a9b1348db7d5/errors/"
+    }
+  },
+  "id": "53aa5c4ae4b0a9b1348db7d5",
+  "status": "ACTIVE"
+}

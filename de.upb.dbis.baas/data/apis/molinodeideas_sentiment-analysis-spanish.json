@@ -1,0 +1,327 @@
+{
+  "models": {
+    "took": 64,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "response",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Response",
+        "format": "JSON",
+        "description": "JSON returned by the API",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/models/53aa3b51e4b0b60946a2e9b7/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/models/53aa3b51e4b0b60946a2e9b7"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe"
+          }
+        },
+        "id": "53aa3b51e4b0b60946a2e9b7",
+        "body": "{\n  \"intensidad\": 4,\n  \"certidumbre\": 4,\n  \"ponderacion\": \"POSITIVA\",\n  \"texto\": \"es magnífico texto valorar\"\n}",
+        "creationDate": 1403665233195,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "tweetbean",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "TweetBean",
+        "format": "JSON",
+        "description": "JSON of the TweetBean to be sent with POST method",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/models/53aa3b51e4b0a798dbd1996f/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/models/53aa3b51e4b0a798dbd1996f"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe"
+          }
+        },
+        "id": "53aa3b51e4b0a798dbd1996f",
+        "body": "{\n  \"texto\": \"Este es un magnífico texto para valorar.\"\n}",
+        "creationDate": 1403665233226,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:47:30 UTC 2014",
+  "website": "http://www.molinodeideas.com/",
+  "endpoints": {
+    "took": 197,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 9,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "tweet",
+              "updateDate": 1403665233391,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "tweet",
+              "description": "Tweet in Spanish to be analyzed.  The tweet should not contain any special characters in order to be correctly processed.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/endpoints/53aa3b51e4b0a798dbd19970"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/endpoints/53aa3b51e4b0a798dbd19970/routeparameters/53aa3b51e4b07e1f4ebea812"
+                }
+              },
+              "id": "53aa3b51e4b07e1f4ebea812",
+              "type": "STRING",
+              "creationDate": 1403665233319,
+              "value": "Este es un magnífico texto para valorar",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403665233896,
+        "code": 200,
+        "method": "GET",
+        "description": "Provides sentiment analysis for any given tweet in Spanish",
+        "creationDate": 1403665233261,
+        "slugifiedPrimary": "tweet-analysis-get",
+        "routeregex": "/valoracion/tweet/10/([^/?]+)",
+        "route": "/valoracion/tweet/10/{tweet}",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "response",
+          "headers": {
+            "took": 4,
+            "total": 0,
+            "data": []
+          },
+          "took": 35,
+          "name": "Response",
+          "format": "JSON",
+          "description": "JSON returned by the API",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/models/53aa3b51e4b0b60946a2e9b7/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/models/53aa3b51e4b0b60946a2e9b7"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe"
+            }
+          },
+          "id": "53aa3b51e4b0b60946a2e9b7",
+          "body": "{\n  \"intensidad\": 4,\n  \"certidumbre\": 4,\n  \"ponderacion\": \"POSITIVA\",\n  \"texto\": \"es magnífico texto valorar\"\n}",
+          "creationDate": 1403665233195,
+          "status": "ACTIVE"
+        },
+        "name": "Tweet analysis /GET",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/endpoints/53aa3b51e4b0a798dbd19970/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/endpoints/53aa3b51e4b0a798dbd19970/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/models/53aa3b51e4b0b60946a2e9b7"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/endpoints/53aa3b51e4b0a798dbd19970"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/endpoints/53aa3b51e4b0a798dbd19970/parameters/"
+          }
+        },
+        "id": "53aa3b51e4b0a798dbd19970",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403665233751,
+        "code": 200,
+        "method": "POST",
+        "description": "Provides sentiment analysis for any given tweet in Spanish",
+        "creationDate": 1403665233453,
+        "slugifiedPrimary": "tweet-analysis-post",
+        "routeregex": "/valoracion/tweet/10/",
+        "route": "/valoracion/tweet/10/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "response",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 50,
+          "name": "Response",
+          "format": "JSON",
+          "description": "JSON returned by the API",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/models/53aa3b51e4b0b60946a2e9b7/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/models/53aa3b51e4b0b60946a2e9b7"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe"
+            }
+          },
+          "id": "53aa3b51e4b0b60946a2e9b7",
+          "body": "{\n  \"intensidad\": 4,\n  \"certidumbre\": 4,\n  \"ponderacion\": \"POSITIVA\",\n  \"texto\": \"es magnífico texto valorar\"\n}",
+          "creationDate": 1403665233195,
+          "status": "ACTIVE"
+        },
+        "name": "Tweet analysis /POST",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/endpoints/53aa3b51e4b07e1f4ebea814/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/endpoints/53aa3b51e4b07e1f4ebea814/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/models/53aa3b51e4b0b60946a2e9b7"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/endpoints/53aa3b51e4b07e1f4ebea814"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/endpoints/53aa3b51e4b07e1f4ebea814/parameters/"
+          }
+        },
+        "id": "53aa3b51e4b07e1f4ebea814",
+        "parameters": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Sentiment analysis for Spanish language of any given tweet.",
+  "groups": {
+    "took": 23,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 03:00:32 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/groups/"
+    },
+    "issues": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/features/"
+    },
+    "plans": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e89e4b008bb2ef71ead/apis/53aa3b50e4b0a9b1348d9a58/versions/53aa3b50e4b0a705fcc30cfe/authentication"
+    }
+  },
+  "id": "53aa3b50e4b0a705fcc30cfe",
+  "status": "ACTIVE"
+}

@@ -1,0 +1,412 @@
+{
+  "models": {
+    "took": 87,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "create-spin-success",
+        "headers": {
+          "took": 9,
+          "total": 0,
+          "data": []
+        },
+        "name": "Create Spin Success",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/models/53aa604ce4b0a705fcc32c46/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/models/53aa604ce4b0a705fcc32c46"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a"
+          }
+        },
+        "id": "53aa604ce4b0a705fcc32c46",
+        "body": "{\n  \"spintax\": \"String Value\",\n  \"uniqueness\": 10,\n  \"spins\": [\n    \"String Value\"\n  ]\n}",
+        "creationDate": 1403674700751,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "spin-content-success",
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "name": "Spin Content Success",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/models/53aa604ce4b0a705fcc32c47/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/models/53aa604ce4b0a705fcc32c47"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a"
+          }
+        },
+        "id": "53aa604ce4b0a705fcc32c47",
+        "body": "{\n  \"spins\": [\n    \"String Value\"\n  ]\n}",
+        "creationDate": 1403674700801,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:39:51 UTC 2014",
+  "website": "http://bestfreearticlespinner.com/",
+  "endpoints": {
+    "took": 231,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 92,
+          "total": 3,
+          "data": [
+            {
+              "updateDate": 1438086483730,
+              "description": "In addition to returning the spintax, return this many unique spun articles (Max 100). Defaults to 0.",
+              "querystring": true,
+              "type": "NUMBER",
+              "creationDate": 1403674701117,
+              "slugifiedPrimary": "spins",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "spins",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/endpoints/53aa604ce4b00287471a2b8c"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/endpoints/53aa604ce4b00287471a2b8c/routeparameters/53aa604de4b0f2c9754715c1"
+                }
+              },
+              "id": "53aa604de4b0f2c9754715c1",
+              "value": "2",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "text",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "text",
+              "description": "Enter the text you wish to generate spintax for.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/endpoints/53aa604ce4b00287471a2b8c"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/endpoints/53aa604ce4b00287471a2b8c/routeparameters/53aa604ce4b00287471a2b8e"
+                }
+              },
+              "id": "53aa604ce4b00287471a2b8e",
+              "type": "STRING",
+              "creationDate": 1403674700955,
+              "value": "This is the text for which you wish to generate spintax.",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "uniqueness",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "uniqueness",
+              "description": "Enter a uniqueness between 0 and 10. 0 for low uniqueness and high quality, and 10 for high uniqueness and low quality. Defaults to 2.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/endpoints/53aa604ce4b00287471a2b8c"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/endpoints/53aa604ce4b00287471a2b8c/routeparameters/53aa604de4b00287471a2b90"
+                }
+              },
+              "id": "53aa604de4b00287471a2b90",
+              "type": "NUMBER",
+              "creationDate": 1403674701037,
+              "value": "2",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403674701447,
+        "code": 200,
+        "method": "GET",
+        "description": "Given a body of text, generate spintax for that text",
+        "creationDate": 1403674700855,
+        "slugifiedPrimary": "create-spintax",
+        "routeregex": "/spin/create",
+        "route": "/spin/create",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "create-spin-success",
+          "headers": {
+            "took": 8,
+            "total": 0,
+            "data": []
+          },
+          "took": 21,
+          "name": "Create Spin Success",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/models/53aa604ce4b0a705fcc32c46/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/models/53aa604ce4b0a705fcc32c46"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a"
+            }
+          },
+          "id": "53aa604ce4b0a705fcc32c46",
+          "body": "{\n  \"spintax\": \"String Value\",\n  \"uniqueness\": 10,\n  \"spins\": [\n    \"String Value\"\n  ]\n}",
+          "creationDate": 1403674700751,
+          "status": "ACTIVE"
+        },
+        "name": "Create Spintax",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/endpoints/53aa604ce4b00287471a2b8c/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/endpoints/53aa604ce4b00287471a2b8c/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/models/53aa604ce4b0a705fcc32c46"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/endpoints/53aa604ce4b00287471a2b8c"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/endpoints/53aa604ce4b00287471a2b8c/parameters/"
+          }
+        },
+        "id": "53aa604ce4b00287471a2b8c",
+        "parameters": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 65,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "spins",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "spins",
+              "description": "Return this many spun articles (Max 100). Defaults to 1.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/endpoints/53aa604de4b0f2c9754715c2"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/endpoints/53aa604de4b0f2c9754715c2/routeparameters/53aa604de4b008bb2ef878a9"
+                }
+              },
+              "id": "53aa604de4b008bb2ef878a9",
+              "type": "NUMBER",
+              "creationDate": 1403674701360,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "spintax",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "spintax",
+              "description": "Your text in {spintax|spun} form",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/endpoints/53aa604de4b0f2c9754715c2"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/endpoints/53aa604de4b0f2c9754715c2/routeparameters/53aa604de4b051a76d241ba7"
+                }
+              },
+              "id": "53aa604de4b051a76d241ba7",
+              "type": "STRING",
+              "creationDate": 1403674701265,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403674701350,
+        "code": 200,
+        "method": "GET",
+        "description": "Generate unique articles based on a given spintax",
+        "creationDate": 1403674701179,
+        "slugifiedPrimary": "spin-content",
+        "routeregex": "/spin/content",
+        "route": "/spin/content",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "spin-content-success",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 18,
+          "name": "Spin Content Success",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/models/53aa604ce4b0a705fcc32c47/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/models/53aa604ce4b0a705fcc32c47"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a"
+            }
+          },
+          "id": "53aa604ce4b0a705fcc32c47",
+          "body": "{\n  \"spins\": [\n    \"String Value\"\n  ]\n}",
+          "creationDate": 1403674700801,
+          "status": "ACTIVE"
+        },
+        "name": "Spin Content",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/endpoints/53aa604de4b0f2c9754715c2/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/endpoints/53aa604de4b0f2c9754715c2/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/models/53aa604ce4b0a705fcc32c47"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/endpoints/53aa604de4b0f2c9754715c2"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/endpoints/53aa604de4b0f2c9754715c2/parameters/"
+          }
+        },
+        "id": "53aa604de4b0f2c9754715c2",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Content spinning is an SEO method where search engine optimizers post an original variant of content on article directories, Web 2.0 services, or other sources for backlinks. It's sometimes used by web masters on their own websites but typically avoided because the quality of rewritten articles will often be lower than hand written content.\r\n\r\nUnlike other automated spinners, SpinMaster uses semantic analysis of your text to determine its actual meaning. Not just the meaning of the text as a whole, but the way that words relate to one another. This allows the software to generate high-quality, unique articles at the push of a button by using only synonyms that make sense in their given context.\r\n\r\nBilling is straightforward. There are two methods you can call, one to create spintax from a given piece of text, and one to generate unique texts based on a piece of spintax.",
+  "groups": {
+    "took": 40,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:38:20 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/changelogs/"
+    },
+    "objects": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/groups/"
+    },
+    "issues": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/features/"
+    },
+    "plans": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2b23e4b07e1f4ebe46af/apis/53aa604ce4b0f2c9754715bf/versions/53aa604ce4b0a9b1348dbb4a/errors/"
+    }
+  },
+  "id": "53aa604ce4b0a9b1348dbb4a",
+  "status": "ACTIVE"
+}

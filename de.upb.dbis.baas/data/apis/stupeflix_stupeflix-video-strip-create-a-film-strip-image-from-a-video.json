@@ -1,0 +1,221 @@
+{
+  "models": {
+    "took": 83,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "video-strip-create_file-response",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "video-strip-create_file Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/models/53aa5874e4b07e1f4ebebc5d/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/models/53aa5874e4b07e1f4ebebc5d"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096"
+          }
+        },
+        "id": "53aa5874e4b07e1f4ebebc5d",
+        "creationDate": 1403672692390,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "video-strip-task-input-model",
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "name": "video.strip task input model",
+        "format": "JSON",
+        "description": "A Task of task_name=video.strip that creates a film strip image of stitched frames from a video.",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/models/53aa5874e4b0596140340e8b/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/models/53aa5874e4b0596140340e8b"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096"
+          }
+        },
+        "id": "53aa5874e4b0596140340e8b",
+        "body": "{\n  \"task\": {\n    \"task_name\": \"video.strip\",\n    \"width\": 130,\n    \"height\": 130,\n    \"crop\": true,\n    \"count\": 50,\n    \"url\": \"http://assets.stupeflix.com/apiusecase/video.mp4\"\n  }\n}",
+        "creationDate": 1403672692345,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:39:53 UTC 2014",
+  "website": "http://developer.stupeflix.com/",
+  "endpoints": {
+    "took": 90,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403672692672,
+        "code": 302,
+        "method": "POST",
+        "description": "Create and queue a video.strip Task, block until finished and redirect to output image file. Full API specs at https://stupeflix-tasks-api.readthedocs.org/en/latest/tasks.html#video-strip",
+        "creationDate": 1403672692411,
+        "slugifiedPrimary": "video-strip-create_file",
+        "routeregex": "/create_file",
+        "route": "/create_file",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "video-strip-create_file-response",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 14,
+          "name": "video-strip-create_file Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/models/53aa5874e4b07e1f4ebebc5d/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/models/53aa5874e4b07e1f4ebebc5d"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096"
+            }
+          },
+          "id": "53aa5874e4b07e1f4ebebc5d",
+          "creationDate": 1403672692390,
+          "status": "ACTIVE"
+        },
+        "name": "video.strip create_file",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/endpoints/53aa5874e4b0a798dbd1ae28/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/endpoints/53aa5874e4b0a798dbd1ae28/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/models/53aa5874e4b07e1f4ebebc5d"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/endpoints/53aa5874e4b0a798dbd1ae28"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/endpoints/53aa5874e4b0a798dbd1ae28/parameters/"
+          }
+        },
+        "id": "53aa5874e4b0a798dbd1ae28",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Create a film strip image showing stitched frames of a video.\r\nUseful to display a video preview, a video trimmer interface, or a Video Tooltip Thumbnail in a web view.\r\nFull API specs at https://stupeflix-tasks-api.readthedocs.org/en/v1/tasks.html#video-strip",
+  "groups": {
+    "took": 39,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:04:52 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2096e4b07e1f4ebd72a7/apis/53aa5874e4b0a9b1348dae9c/versions/53aa5874e4b0a705fcc32096/authentication"
+    }
+  },
+  "id": "53aa5874e4b0a705fcc32096",
+  "status": "ACTIVE"
+}

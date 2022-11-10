@@ -1,0 +1,395 @@
+{
+  "models": {
+    "took": 17,
+    "total": 0,
+    "data": []
+  },
+  "website": "https://everythingfonts.com/font-hinter",
+  "updateDate": "Thu Jan 28 23:32:24 UTC 2016",
+  "endpoints": {
+    "took": 225,
+    "total": 3,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1453231378936,
+        "code": 200,
+        "method": "POST",
+        "description": "Add a font file to the system",
+        "creationDate": 1453229260766,
+        "slugifiedPrimary": "add-font",
+        "routeregex": "/font",
+        "route": "/font",
+        "name": "Add font",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/569e84cce4b0222a136850ab/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/569e84cce4b0222a136850ab/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/569e84cce4b0222a136850ab"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/569e84cce4b0222a136850ab/parameters/"
+          }
+        },
+        "id": "569e84cce4b0222a136850ab",
+        "parameters": {
+          "took": 8,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "font",
+              "condition": "REQUIRED",
+              "name": "font",
+              "description": "Font file to add to the system.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/569e84cce4b0222a136850ab"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/569e84cce4b0222a136850ab/parameters/569e84f7e4b04cbc4d623c70"
+                }
+              },
+              "id": "569e84f7e4b04cbc4d623c70",
+              "type": "BINARY",
+              "creationDate": 1453229303014,
+              "value": "",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 128,
+          "total": 5,
+          "data": [
+            {
+              "slugifiedPrimary": "adjustsubglyphs",
+              "condition": "OPTIONAL",
+              "name": "adjustsubglyphs",
+              "description": "Should adjust sub glyphs? Default enabled.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/569e8592e4b09c12d1f1f0eb"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/569e8592e4b09c12d1f1f0eb/routeparameters/569e8662e4b04cbc4d623c74"
+                }
+              },
+              "id": "569e8662e4b04cbc4d623c74",
+              "type": "BOOLEAN",
+              "creationDate": 1453229666293,
+              "value": "1",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "binaryresult",
+              "condition": "OPTIONAL",
+              "name": "binaryresult",
+              "description": "Return converted file in binary format, the default is base64 json response.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/569e8592e4b09c12d1f1f0eb"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/569e8592e4b09c12d1f1f0eb/routeparameters/569e8689e4b05137818fdb93"
+                }
+              },
+              "id": "569e8689e4b05137818fdb93",
+              "type": "BOOLEAN",
+              "creationDate": 1453229705304,
+              "value": "0",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "hintcomposites",
+              "updateDate": 1454023438930,
+              "condition": "OPTIONAL",
+              "name": "hintcomposites",
+              "description": "Should hint composite glyphs? Default enabled.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/569e8592e4b09c12d1f1f0eb"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/569e8592e4b09c12d1f1f0eb/routeparameters/569e8638e4b04cbc4d623c73"
+                }
+              },
+              "id": "569e8638e4b04cbc4d623c73",
+              "type": "BOOLEAN",
+              "creationDate": 1453229624847,
+              "value": "1",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "id",
+              "condition": "REQUIRED",
+              "name": "id",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/569e8592e4b09c12d1f1f0eb"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/569e8592e4b09c12d1f1f0eb/routeparameters/569e8592e4b0222a136850ac"
+                }
+              },
+              "id": "569e8592e4b0222a136850ac",
+              "type": "STRING",
+              "creationDate": 1453229458793,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "type",
+              "condition": "REQUIRED",
+              "name": "type",
+              "description": "Hinting type(directwire/windows-gdi/grayscale/remove).",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/569e8592e4b09c12d1f1f0eb"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/569e8592e4b09c12d1f1f0eb/routeparameters/569e8619e4b09c12d1f1f0ee"
+                }
+              },
+              "id": "569e8619e4b09c12d1f1f0ee",
+              "type": "STRING",
+              "creationDate": 1453229593946,
+              "value": "windows-gdi",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "code": 200,
+        "method": "GET",
+        "description": "Hint the font and download",
+        "creationDate": 1453229458700,
+        "slugifiedPrimary": "hint-font",
+        "routeregex": "/font/([^/?]+)/hint",
+        "route": "/font/{id}/hint",
+        "name": "Hint Font",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/569e8592e4b09c12d1f1f0eb/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/569e8592e4b09c12d1f1f0eb/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/569e8592e4b09c12d1f1f0eb"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/569e8592e4b09c12d1f1f0eb/parameters/"
+          }
+        },
+        "id": "569e8592e4b09c12d1f1f0eb",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 17,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "public",
+              "condition": "OPTIONAL",
+              "name": "public",
+              "description": "Should return public fonts in the result or not?",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/56aaa5a0e4b077f26fd860ed"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/56aaa5a0e4b077f26fd860ed/routeparameters/56aaa627e4b074af2e1c0b74"
+                }
+              },
+              "id": "56aaa627e4b074af2e1c0b74",
+              "type": "STRING",
+              "creationDate": 1454024231687,
+              "value": "0",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "start",
+              "condition": "REQUIRED",
+              "name": "start",
+              "description": "Starting index. This required since the result is paged.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/56aaa5a0e4b077f26fd860ed"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/56aaa5a0e4b077f26fd860ed/routeparameters/56aaa5ede4b074af2e1c0b6e"
+                }
+              },
+              "id": "56aaa5ede4b074af2e1c0b6e",
+              "type": "STRING",
+              "creationDate": 1454024173821,
+              "value": "0",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "code": 200,
+        "method": "GET",
+        "description": "Get the list of the fonts in the system",
+        "creationDate": 1454024096737,
+        "slugifiedPrimary": "list-fonts",
+        "routeregex": "/font/list",
+        "route": "/font/list",
+        "name": "List Fonts",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/56aaa5a0e4b077f26fd860ed/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/56aaa5a0e4b077f26fd860ed/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/56aaa5a0e4b077f26fd860ed"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/56aaa5a0e4b077f26fd860ed/parameters/"
+          }
+        },
+        "id": "56aaa5a0e4b077f26fd860ed",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Font hinting (also known as instructing) is the use of mathematical instructions to adjust the display of an outline font so that it lines up with a rasterized grid. At low screen resolutions, hinting is critical for producing clear, legible text. Use this API to integrate font hinting in your workflow.",
+  "groups": {
+    "took": 16,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Tue Jan 19 18:46:41 UTC 2016",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/astronode"
+    },
+    "endpoints": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/569e8491e4b05137818fdb90/versions/569e8491e4b02cacb649f26b/authentication"
+    }
+  },
+  "id": "569e8491e4b02cacb649f26b",
+  "status": "ACTIVE"
+}

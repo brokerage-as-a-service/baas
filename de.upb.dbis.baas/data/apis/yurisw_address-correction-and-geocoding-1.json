@@ -1,0 +1,237 @@
+{
+  "models": {
+    "took": 15,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "process-model",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Process Model",
+        "format": "JSON",
+        "description": "Address Response",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/models/53aa5d2be4b051a76d241937/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/models/53aa5d2be4b051a76d241937"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b"
+          }
+        },
+        "id": "53aa5d2be4b051a76d241937",
+        "body": "{\n  \"ErrorCode\": 0,\n  \"ErrorMessage\": \"\",\n  \"AddressLine1\": \"506 4TH AVE APT 1\",\n  \"AddressLine2\": \"ASBURY PARK, NJ 07712-6086\",\n  \"Number\": \"506\",\n  \"PreDir\": \"\",\n  \"Street\": \"4TH\",\n  \"Suffix\": \"AVE\",\n  \"PostDir\": \"\",\n  \"Sec\": \"APT\",\n  \"SecNumber\": \"1\",\n  \"City\": \"ASBURY PARK\",\n  \"State\": \"NJ\",\n  \"Zip\": \"07712\",\n  \"Zip4\": \"6086\",\n  \"County\": \"MONMOUTH\",\n  \"StateFP\": \"34\",\n  \"CountyFP\": \"025\",\n  \"CensusTract\": \"8070.03\",\n  \"CensusBlock\": \"1015\",\n  \"Latitude\": 40.223571,\n  \"Longitude\": -74.005973,\n  \"GeocodePrecision\": \"Exact\"\n}",
+        "creationDate": 1403673899608,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:47:20 UTC 2014",
+  "website": "http://www.yaddress.net",
+  "endpoints": {
+    "took": 71,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 22,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "addressline1",
+              "condition": "REQUIRED",
+              "name": "AddressLine1",
+              "querystring": true,
+              "description": "First line of address",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/endpoints/54184e6ae4b0b925b13a1318"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/endpoints/54184e6ae4b0b925b13a1318/routeparameters/54184e9be4b097b6fbcf6bd9"
+                }
+              },
+              "id": "54184e9be4b097b6fbcf6bd9",
+              "type": "STRING",
+              "creationDate": 1410879131200,
+              "value": "506 Fourth Avenue Unit 1",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "addressline2",
+              "condition": "REQUIRED",
+              "name": "AddressLine2",
+              "querystring": true,
+              "description": "Second line of address - city, state, zip.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/endpoints/54184e6ae4b0b925b13a1318"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/endpoints/54184e6ae4b0b925b13a1318/routeparameters/54184ebfe4b0ee2b63c4a4a3"
+                }
+              },
+              "id": "54184ebfe4b0ee2b63c4a4a3",
+              "type": "STRING",
+              "creationDate": 1410879167038,
+              "value": "Asbury Prk, NJ",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1410879206704,
+        "code": 200,
+        "method": "GET",
+        "description": "Address",
+        "creationDate": 1410879082280,
+        "slugifiedPrimary": "address",
+        "routeregex": "/address",
+        "route": "/address",
+        "response": {
+          "slugifiedPrimary": "process-model",
+          "headers": {
+            "took": 21,
+            "total": 0,
+            "data": []
+          },
+          "took": 52,
+          "name": "Process Model",
+          "format": "JSON",
+          "description": "Address Response",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/models/53aa5d2be4b051a76d241937/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/models/53aa5d2be4b051a76d241937"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b"
+            }
+          },
+          "id": "53aa5d2be4b051a76d241937",
+          "body": "{\n  \"ErrorCode\": 0,\n  \"ErrorMessage\": \"\",\n  \"AddressLine1\": \"506 4TH AVE APT 1\",\n  \"AddressLine2\": \"ASBURY PARK, NJ 07712-6086\",\n  \"Number\": \"506\",\n  \"PreDir\": \"\",\n  \"Street\": \"4TH\",\n  \"Suffix\": \"AVE\",\n  \"PostDir\": \"\",\n  \"Sec\": \"APT\",\n  \"SecNumber\": \"1\",\n  \"City\": \"ASBURY PARK\",\n  \"State\": \"NJ\",\n  \"Zip\": \"07712\",\n  \"Zip4\": \"6086\",\n  \"County\": \"MONMOUTH\",\n  \"StateFP\": \"34\",\n  \"CountyFP\": \"025\",\n  \"CensusTract\": \"8070.03\",\n  \"CensusBlock\": \"1015\",\n  \"Latitude\": 40.223571,\n  \"Longitude\": -74.005973,\n  \"GeocodePrecision\": \"Exact\"\n}",
+          "creationDate": 1403673899608,
+          "status": "ACTIVE"
+        },
+        "name": "/address",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/endpoints/54184e6ae4b0b925b13a1318/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/endpoints/54184e6ae4b0b925b13a1318/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/models/53aa5d2be4b051a76d241937"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/endpoints/54184e6ae4b0b925b13a1318"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/endpoints/54184e6ae4b0b925b13a1318/parameters/"
+          }
+        },
+        "id": "54184e6ae4b0b925b13a1318",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "YAddress  performs correction, validation, standardization and geocoding of US addresses. It combines the cleansing of addresses and determination of their location on the map into a single-pass process.  YAddress corrects thousands of common misspellings, abbreviations, and alternative names for cities and streets. It returns the corrected addresses in the USPS-standard form with proper abbreviations and assigns correct ZIP and ZIP+4 codes as well as other address parameters, such as county, FIPS codes, census tract and block numbers, etc.",
+  "groups": {
+    "took": 6,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:24:56 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2adee4b0f2c975469ab5/apis/53aa5d28e4b008bb2ef875fe/versions/53aa5d28e4b07e1f4ebec62b/errors/"
+    }
+  },
+  "id": "53aa5d28e4b07e1f4ebec62b",
+  "status": "ACTIVE"
+}

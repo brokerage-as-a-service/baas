@@ -1,0 +1,350 @@
+{
+  "models": {
+    "took": 39,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "api",
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "name": "Api",
+        "format": "JSON",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/models/53aa315ce4b059614033e958/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/models/53aa315ce4b059614033e958"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4"
+          }
+        },
+        "id": "53aa315ce4b059614033e958",
+        "body": "{\"error_code\":0,\"error_string\":\"NO ERROR\",\"sc\":\"api/upload\"}",
+        "creationDate": 1403662684555,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "response",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "Response",
+        "format": "JSON",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/models/53aa315ce4b0b60946a2d938/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/models/53aa315ce4b0b60946a2d938"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4"
+          }
+        },
+        "id": "53aa315ce4b0b60946a2d938",
+        "body": "{\"Response\":\"{\\\"api\\\":{\\\"sc\\\":\\\"\\\\/api\\\\/upload\\\",\\\"error_string\\\":\\\"OK\\\",\\\"error_code\\\":\\\"0\\\"}}\",\"api\":{\"error_code\":0,\"error_string\":\"NO ERROR\",\"sc\":\"api/upload\"}}",
+        "creationDate": 1403662684584,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:40:01 UTC 2014",
+  "website": "http://www.memopal.com",
+  "endpoints": {
+    "took": 184,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 155,
+          "total": 6,
+          "data": [
+            {
+              "slugifiedPrimary": "content",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "content",
+              "description": "at least one folder is required then the name of the file",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/endpoints/53aa315ce4b0a798dbd188d6"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/endpoints/53aa315ce4b0a798dbd188d6/routeparameters/53aa315ce4b07e1f4ebe97af"
+                }
+              },
+              "id": "53aa315ce4b07e1f4ebe97af",
+              "type": "STRING",
+              "creationDate": 1403662684843,
+              "value": "/Documents/myfile.txt",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "content64",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "content64",
+              "description": "base64 encoded the content of the file",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/endpoints/53aa315ce4b0a798dbd188d6"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/endpoints/53aa315ce4b0a798dbd188d6/routeparameters/53aa315ce4b059614033e95b"
+                }
+              },
+              "id": "53aa315ce4b059614033e95b",
+              "type": "STRING",
+              "creationDate": 1403662684883,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "p",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "p",
+              "description": "mypassword",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/endpoints/53aa315ce4b0a798dbd188d6"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/endpoints/53aa315ce4b0a798dbd188d6/routeparameters/53aa315ce4b07e1f4ebe97ae"
+                }
+              },
+              "id": "53aa315ce4b07e1f4ebe97ae",
+              "type": "STRING",
+              "creationDate": 1403662684678,
+              "value": "password",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "path",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "path",
+              "description": "",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/endpoints/53aa315ce4b0a798dbd188d6"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/endpoints/53aa315ce4b0a798dbd188d6/routeparameters/53aa315ce4b059614033e959"
+                }
+              },
+              "id": "53aa315ce4b059614033e959",
+              "type": "STRING",
+              "creationDate": 1403662684717,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "pc",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "pc",
+              "description": "Memopal is organized in not less then three layers of subfolders:  Computer/first_folders/other_folders_or_files so you need to specify always at leat a computer name and a folder",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/endpoints/53aa315ce4b0a798dbd188d6"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/endpoints/53aa315ce4b0a798dbd188d6/routeparameters/53aa315ce4b0a798dbd188d7"
+                }
+              },
+              "id": "53aa315ce4b0a798dbd188d7",
+              "type": "STRING",
+              "creationDate": 1403662684755,
+              "value": "MY_PC_NAME",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "u",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "u",
+              "description": "email address for accessing to your account",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/endpoints/53aa315ce4b0a798dbd188d6"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/endpoints/53aa315ce4b0a798dbd188d6/routeparameters/53aa315ce4b0a798dbd188d8"
+                }
+              },
+              "id": "53aa315ce4b0a798dbd188d8",
+              "type": "STRING",
+              "creationDate": 1403662684797,
+              "value": "myemail@email.com",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403662684840,
+        "code": 200,
+        "method": "GET",
+        "description": "With this API you can upload a file to your online account using a simple rest call. If you don't have an account yet go on www.memopal.com, download the software and create one.  Or create a free 3GB account here:\r\nhttps://apps.memopal.com/l/activate-trial.php",
+        "creationDate": 1403662684605,
+        "slugifiedPrimary": "upload",
+        "routeregex": "/api/file/upload",
+        "route": "/api/file/upload",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "response",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 15,
+          "name": "Response",
+          "format": "JSON",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/models/53aa315ce4b0b60946a2d938/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/models/53aa315ce4b0b60946a2d938"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4"
+            }
+          },
+          "id": "53aa315ce4b0b60946a2d938",
+          "body": "{\"Response\":\"{\\\"api\\\":{\\\"sc\\\":\\\"\\\\/api\\\\/upload\\\",\\\"error_string\\\":\\\"OK\\\",\\\"error_code\\\":\\\"0\\\"}}\",\"api\":{\"error_code\":0,\"error_string\":\"NO ERROR\",\"sc\":\"api/upload\"}}",
+          "creationDate": 1403662684584,
+          "status": "ACTIVE"
+        },
+        "name": "upload",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/endpoints/53aa315ce4b0a798dbd188d6/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/endpoints/53aa315ce4b0a798dbd188d6/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/models/53aa315ce4b0b60946a2d938"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/endpoints/53aa315ce4b0a798dbd188d6"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/endpoints/53aa315ce4b0a798dbd188d6/parameters/"
+          }
+        },
+        "id": "53aa315ce4b0a798dbd188d6",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Fast and inexpensive cloud storage. Great alternative to Amazon S3.  3GB for free, 200GB for $49/year. Requires a Memopal account. You can create one downloading the Memopal client from www.memopal.com",
+  "groups": {
+    "took": 17,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 02:18:04 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/groups/"
+    },
+    "issues": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e0ae4b002874718d0df/apis/53aa315ce4b0b60946a2d936/versions/53aa315ce4b008bb2ef84bb4/errors/"
+    }
+  },
+  "id": "53aa315ce4b008bb2ef84bb4",
+  "status": "ACTIVE"
+}

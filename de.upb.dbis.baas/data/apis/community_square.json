@@ -1,0 +1,198 @@
+{
+  "models": {
+    "took": 84,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "retrieve-your-payment-history-response-model",
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "name": "Retrieve your payment history response model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/models/53aa590ee4b008bb2ef86dd1/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/models/53aa590ee4b008bb2ef86dd1"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65"
+          }
+        },
+        "id": "53aa590ee4b008bb2ef86dd1",
+        "body": "[\n  {\n    \"id\": \"Jq74mCczmFXk1tC10GB\",\n    \"merchant_id\": \"AV76FTXT15L\",\n    \"created_at\": \"2013-01-02T00:00:00.000Z\",\n    \"creator_id\": \"B5CX9A21Z\",\n    \"description\": \"Lunch for one\",\n    \"device\": {\n      \"name\": \"Front of store\"\n    },\n    \"inclusive_tax_money\": {\n      \"amount\": 20,\n      \"currency_code\": \"USD\"\n    },\n    \"additive_tax_money\": {\n      \"amount\": 30,\n      \"currency_code\": \"USD\"\n    },\n    \"tax_money\": {\n      \"amount\": 50,\n      \"currency_code\": \"USD\"\n    },\n    \"tip_money\": {\n      \"amount\": 100,\n      \"currency_code\": \"USD\"\n    }\n    \"discount_money\": {\n      \"amount\": 0\n      \"currency_code\": \"USD\"\n    }\n    \"total_collected_money\": {\n      \"amount\": 6150,\n      \"currency_code\": \"USD\"\n    },\n    \"processing_fee_money\": {\n      \"amount\": -169\n      \"currency_code\": \"USD\"\n    }\n    \"net_total_money\": {\n      \"amount\": 5981,\n      \"currency_code\": \"USD\"\n    },\n    \"refunded_money\": {\n      \"amount\": 0,\n      \"currency_code\": \"USD\"\n    },\n    \"inclusive_tax\": [\n      {\n        \"inclusion_type\": \"INCLUSIVE\"\n        \"name\": \"City tax\",\n        \"applied_money\": {\n          \"amount\": 15,\n          \"currency_code\": \"USD\"\n        },\n        \"rate\": \"0.0025\"\n      },\n      ...\n    ],\n    \"additive_tax\": [\n      {\n        \"inclusion_type\": \"ADDITIVE\"\n        \"name\": \"CA Sales tax\",\n        \"applied_money\": {\n          \"amount\": 15,\n          \"currency_code\": \"USD\"\n        },\n        \"rate\": \"0.0025\"\n      },\n    ...\n    ],\n    \"tender\": [\n      {\n        \"type\": \"CREDIT_CARD\",\n        \"total_money\": {\n          \"amount\": 6150,\n          \"currency_code\": \"USD\"\n        }\n        \"card_brand\": \"VISA\",\n        \"pan_suffix\": \"1234\",\n        \"entry_method\": \"SWIPED\",\n        \"payment_note\": \"A note about the tender\",\n        \"total_money\": {\n          \"amount\": 500,\n          \"currency_code\": \"USD\"\n        },\n      },\n      ...\n    ],\n    \"refunds\": [],\n  },\n  ...\n]",
+        "creationDate": 1403672846527,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:42:54 UTC 2014",
+  "website": "https://connect.squareup.com/docs/getting-started",
+  "endpoints": {
+    "took": 103,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403672849009,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403672846982,
+        "slugifiedPrimary": "retrieve-your-payment-history",
+        "routeregex": "/me/payments",
+        "route": "/me/payments",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "retrieve-your-payment-history-response-model",
+          "headers": {
+            "took": 5,
+            "total": 0,
+            "data": []
+          },
+          "took": 36,
+          "name": "Retrieve your payment history response model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/models/53aa590ee4b008bb2ef86dd1/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/models/53aa590ee4b008bb2ef86dd1"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65"
+            }
+          },
+          "id": "53aa590ee4b008bb2ef86dd1",
+          "body": "[\n  {\n    \"id\": \"Jq74mCczmFXk1tC10GB\",\n    \"merchant_id\": \"AV76FTXT15L\",\n    \"created_at\": \"2013-01-02T00:00:00.000Z\",\n    \"creator_id\": \"B5CX9A21Z\",\n    \"description\": \"Lunch for one\",\n    \"device\": {\n      \"name\": \"Front of store\"\n    },\n    \"inclusive_tax_money\": {\n      \"amount\": 20,\n      \"currency_code\": \"USD\"\n    },\n    \"additive_tax_money\": {\n      \"amount\": 30,\n      \"currency_code\": \"USD\"\n    },\n    \"tax_money\": {\n      \"amount\": 50,\n      \"currency_code\": \"USD\"\n    },\n    \"tip_money\": {\n      \"amount\": 100,\n      \"currency_code\": \"USD\"\n    }\n    \"discount_money\": {\n      \"amount\": 0\n      \"currency_code\": \"USD\"\n    }\n    \"total_collected_money\": {\n      \"amount\": 6150,\n      \"currency_code\": \"USD\"\n    },\n    \"processing_fee_money\": {\n      \"amount\": -169\n      \"currency_code\": \"USD\"\n    }\n    \"net_total_money\": {\n      \"amount\": 5981,\n      \"currency_code\": \"USD\"\n    },\n    \"refunded_money\": {\n      \"amount\": 0,\n      \"currency_code\": \"USD\"\n    },\n    \"inclusive_tax\": [\n      {\n        \"inclusion_type\": \"INCLUSIVE\"\n        \"name\": \"City tax\",\n        \"applied_money\": {\n          \"amount\": 15,\n          \"currency_code\": \"USD\"\n        },\n        \"rate\": \"0.0025\"\n      },\n      ...\n    ],\n    \"additive_tax\": [\n      {\n        \"inclusion_type\": \"ADDITIVE\"\n        \"name\": \"CA Sales tax\",\n        \"applied_money\": {\n          \"amount\": 15,\n          \"currency_code\": \"USD\"\n        },\n        \"rate\": \"0.0025\"\n      },\n    ...\n    ],\n    \"tender\": [\n      {\n        \"type\": \"CREDIT_CARD\",\n        \"total_money\": {\n          \"amount\": 6150,\n          \"currency_code\": \"USD\"\n        }\n        \"card_brand\": \"VISA\",\n        \"pan_suffix\": \"1234\",\n        \"entry_method\": \"SWIPED\",\n        \"payment_note\": \"A note about the tender\",\n        \"total_money\": {\n          \"amount\": 500,\n          \"currency_code\": \"USD\"\n        },\n      },\n      ...\n    ],\n    \"refunds\": [],\n  },\n  ...\n]",
+          "creationDate": 1403672846527,
+          "status": "ACTIVE"
+        },
+        "name": "Retrieve your payment history",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/endpoints/53aa590ee4b008bb2ef86dd2/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/endpoints/53aa590ee4b008bb2ef86dd2/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/models/53aa590ee4b008bb2ef86dd1"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/endpoints/53aa590ee4b008bb2ef86dd2"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/endpoints/53aa590ee4b008bb2ef86dd2/parameters/"
+          }
+        },
+        "id": "53aa590ee4b008bb2ef86dd2",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Sell on the Go. Accept credit cards and run your business on an iPhone, iPad, or Android device.  As a Square merchant, you can retrieve activity reports for your processed payments, refunds, and deposits with the Square Connect API. Pull these reports into your own custom-made applications to help you manage your business.",
+  "groups": {
+    "took": 41,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:07:22 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa5909e4b0f2c975470b63/versions/53aa590ae4b0f2c975470b65/authentication"
+    }
+  },
+  "id": "53aa590ae4b0f2c975470b65",
+  "status": "ACTIVE"
+}

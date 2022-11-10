@@ -1,0 +1,408 @@
+{
+  "models": {
+    "took": 91,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "get-info-by-city-model",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Get info by city Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/models/53aa57b3e4b0b60946a2fbaa/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/models/53aa57b3e4b0b60946a2fbaa"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6"
+          }
+        },
+        "id": "53aa57b3e4b0b60946a2fbaa",
+        "body": "{\n  \"country abbreviation\": \"US\",\n  \"places\": [\n    {\n      \"place name\": \"Belmont\",\n      \"longitude\": \"-71.4594\",\n      \"post code\": \"02178\",\n      \"latitude\": \"42.4464\"\n    },\n    {\n      \"place name\": \"Belmont\",\n      \"longitude\": \"-71.2044\",\n      \"post code\": \"02478\",\n      \"latitude\": \"42.4128\"\n    }\n  ],\n  \"country\": \"United States\",\n  \"place name\": \"Belmont\",\n  \"state\": \"Massachusetts\",\n  \"state abbreviation\": \"MA\"\n}",
+        "creationDate": 1403672499839,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "get-zip-code-info-model",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Get Zip Code info Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/models/53aa57b3e4b07e1f4ebeba5d/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/models/53aa57b3e4b07e1f4ebeba5d"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6"
+          }
+        },
+        "id": "53aa57b3e4b07e1f4ebeba5d",
+        "body": "{\n  \"post code\": \"90210\",\n  \"country\": \"United States\",\n  \"country abbreviation\": \"US\",\n  \"places\": [\n    {\n      \"place name\": \"Beverly Hills\",\n      \"longitude\": \"-118.4065\",\n      \"state\": \"California\",\n      \"state abbreviation\": \"CA\",\n      \"latitude\": \"34.0901\"\n    }\n  ]\n}",
+        "creationDate": 1403672499800,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:41:10 UTC 2014",
+  "website": "http://www.zippopotam.us/",
+  "endpoints": {
+    "took": 115,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 16,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "city",
+              "updateDate": 1403672501214,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "city",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/endpoints/53aa57b4e4b0596140340c8f"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/endpoints/53aa57b4e4b0596140340c8f/routeparameters/53aa57b4e4b0f2c9754708da"
+                }
+              },
+              "id": "53aa57b4e4b0f2c9754708da",
+              "type": "STRING",
+              "creationDate": 1403672500737,
+              "value": "belmont",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "country",
+              "updateDate": 1403672500905,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "country",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/endpoints/53aa57b4e4b0596140340c8f"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/endpoints/53aa57b4e4b0596140340c8f/routeparameters/53aa57b4e4b008bb2ef86b75"
+                }
+              },
+              "id": "53aa57b4e4b008bb2ef86b75",
+              "type": "STRING",
+              "creationDate": 1403672500488,
+              "value": "us",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "state",
+              "updateDate": 1403672501043,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "state",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/endpoints/53aa57b4e4b0596140340c8f"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/endpoints/53aa57b4e4b0596140340c8f/routeparameters/53aa57b4e4b008bb2ef86b76"
+                }
+              },
+              "id": "53aa57b4e4b008bb2ef86b76",
+              "type": "STRING",
+              "creationDate": 1403672500587,
+              "value": "ma",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403672501308,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403672500375,
+        "slugifiedPrimary": "get-info-by-city",
+        "routeregex": "/([^/?]+)/([^/?]+)/([^/?]+)",
+        "route": "/{country}/{state}/{city}",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "get-info-by-city-model",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 15,
+          "name": "Get info by city Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/models/53aa57b3e4b0b60946a2fbaa/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/models/53aa57b3e4b0b60946a2fbaa"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6"
+            }
+          },
+          "id": "53aa57b3e4b0b60946a2fbaa",
+          "body": "{\n  \"country abbreviation\": \"US\",\n  \"places\": [\n    {\n      \"place name\": \"Belmont\",\n      \"longitude\": \"-71.4594\",\n      \"post code\": \"02178\",\n      \"latitude\": \"42.4464\"\n    },\n    {\n      \"place name\": \"Belmont\",\n      \"longitude\": \"-71.2044\",\n      \"post code\": \"02478\",\n      \"latitude\": \"42.4128\"\n    }\n  ],\n  \"country\": \"United States\",\n  \"place name\": \"Belmont\",\n  \"state\": \"Massachusetts\",\n  \"state abbreviation\": \"MA\"\n}",
+          "creationDate": 1403672499839,
+          "status": "ACTIVE"
+        },
+        "name": "Get info by city",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/endpoints/53aa57b4e4b0596140340c8f/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/endpoints/53aa57b4e4b0596140340c8f/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/models/53aa57b3e4b0b60946a2fbaa"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/endpoints/53aa57b4e4b0596140340c8f"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/endpoints/53aa57b4e4b0596140340c8f/parameters/"
+          }
+        },
+        "id": "53aa57b4e4b0596140340c8f",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 12,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "country",
+              "updateDate": 1403672500184,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "country",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/endpoints/53aa57b3e4b0a798dbd1ac36"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/endpoints/53aa57b3e4b0a798dbd1ac36/routeparameters/53aa57b4e4b0a705fcc31ef7"
+                }
+              },
+              "id": "53aa57b4e4b0a705fcc31ef7",
+              "type": "STRING",
+              "creationDate": 1403672500024,
+              "value": "us",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "postal_code",
+              "updateDate": 1403672500297,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "postal_code",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/endpoints/53aa57b3e4b0a798dbd1ac36"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/endpoints/53aa57b3e4b0a798dbd1ac36/routeparameters/53aa57b4e4b0f2c9754708d9"
+                }
+              },
+              "id": "53aa57b4e4b0f2c9754708d9",
+              "type": "STRING",
+              "creationDate": 1403672500112,
+              "value": "90210",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403672501101,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403672499894,
+        "slugifiedPrimary": "get-zip-code-info",
+        "routeregex": "/([^/?]+)/([^/?]+)",
+        "route": "/{country}/{postal_code}",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "get-zip-code-info-model",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 19,
+          "name": "Get Zip Code info Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/models/53aa57b3e4b07e1f4ebeba5d/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/models/53aa57b3e4b07e1f4ebeba5d"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6"
+            }
+          },
+          "id": "53aa57b3e4b07e1f4ebeba5d",
+          "body": "{\n  \"post code\": \"90210\",\n  \"country\": \"United States\",\n  \"country abbreviation\": \"US\",\n  \"places\": [\n    {\n      \"place name\": \"Beverly Hills\",\n      \"longitude\": \"-118.4065\",\n      \"state\": \"California\",\n      \"state abbreviation\": \"CA\",\n      \"latitude\": \"34.0901\"\n    }\n  ]\n}",
+          "creationDate": 1403672499800,
+          "status": "ACTIVE"
+        },
+        "name": "Get Zip Code info",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/endpoints/53aa57b3e4b0a798dbd1ac36/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/endpoints/53aa57b3e4b0a798dbd1ac36/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/models/53aa57b3e4b07e1f4ebeba5d"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/endpoints/53aa57b3e4b0a798dbd1ac36"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/endpoints/53aa57b3e4b0a798dbd1ac36/parameters/"
+          }
+        },
+        "id": "53aa57b3e4b0a798dbd1ac36",
+        "parameters": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Zip Code Galore!\r\nZip·po·pot·amus   /ˈzipōpätəməs/\r\nPostal Codes and Zip Codes made easy\r\n\r\nFree API with JSON Response Format\r\n\r\nOver 60 Countries Supported\r\n\r\nPerfect for Form Autocompletion\r\n\r\nOpen for Crowdsourcing and Contribution",
+  "groups": {
+    "took": 38,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:01:39 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa256de4b0a798dbd0ca91/apis/53aa57b3e4b0596140340c8c/versions/53aa57b3e4b0f2c9754708d6/errors/"
+    }
+  },
+  "id": "53aa57b3e4b0f2c9754708d6",
+  "status": "ACTIVE"
+}

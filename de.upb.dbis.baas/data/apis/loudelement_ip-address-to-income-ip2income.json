@@ -1,0 +1,218 @@
+{
+  "models": {
+    "took": 81,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "result",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "result",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/models/53aa3d00e4b07e1f4ebeab72/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/models/53aa3d00e4b07e1f4ebeab72"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d"
+          }
+        },
+        "id": "53aa3d00e4b07e1f4ebeab72",
+        "body": "{\n  \"api-author\": \"Taewook Kang (taewook.kang@gmail.com)\",\n  \"api-usage\": \"completely free as long as you give me credit somewhere on your website.\",\n  \"status\": \"OK\",\n  \"average annual income in 2012\": \"16915\",\n  \"median family income in 2012\": \"53713\",\n  \"median household income in 2012\": \"48610\",\n  \"gini index Of income inequality in 2012\": \"0.4369\",\n  \"zip\": \"90040\",\n  \"city\": \"Los Angeles\",\n  \"state\": \"CA\"\n}",
+        "creationDate": 1403665664297,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:46:50 UTC 2014",
+  "website": "http://loudelement.com",
+  "endpoints": {
+    "took": 125,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 25,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 52,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "ip",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "ip",
+              "description": "ip address",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/endpoints/53aa3d00e4b07e1f4ebeab73"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/endpoints/53aa3d00e4b07e1f4ebeab73/routeparameters/53aa3d00e4b0b60946a2ed13"
+                }
+              },
+              "id": "53aa3d00e4b0b60946a2ed13",
+              "type": "STRING",
+              "creationDate": 1403665664392,
+              "value": "4.18.33.0",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403665664471,
+        "code": 200,
+        "method": "GET",
+        "description": "returns average income level of surrounding areas of an ip address. data is based on 2012 census",
+        "creationDate": 1403665664329,
+        "slugifiedPrimary": "ip2income",
+        "routeregex": "/ip2income/",
+        "route": "/ip2income/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "result",
+          "headers": {
+            "took": 5,
+            "total": 0,
+            "data": []
+          },
+          "took": 41,
+          "name": "result",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/models/53aa3d00e4b07e1f4ebeab72/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/models/53aa3d00e4b07e1f4ebeab72"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d"
+            }
+          },
+          "id": "53aa3d00e4b07e1f4ebeab72",
+          "body": "{\n  \"api-author\": \"Taewook Kang (taewook.kang@gmail.com)\",\n  \"api-usage\": \"completely free as long as you give me credit somewhere on your website.\",\n  \"status\": \"OK\",\n  \"average annual income in 2012\": \"16915\",\n  \"median family income in 2012\": \"53713\",\n  \"median household income in 2012\": \"48610\",\n  \"gini index Of income inequality in 2012\": \"0.4369\",\n  \"zip\": \"90040\",\n  \"city\": \"Los Angeles\",\n  \"state\": \"CA\"\n}",
+          "creationDate": 1403665664297,
+          "status": "ACTIVE"
+        },
+        "name": "ip2income",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/endpoints/53aa3d00e4b07e1f4ebeab73/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/endpoints/53aa3d00e4b07e1f4ebeab73/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/models/53aa3d00e4b07e1f4ebeab72"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/endpoints/53aa3d00e4b07e1f4ebeab73"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/endpoints/53aa3d00e4b07e1f4ebeab73/parameters/"
+          }
+        },
+        "id": "53aa3d00e4b07e1f4ebeab73",
+        "parameters": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "returns average income level of surrounding areas of an ip address. data is based on 2012 census. one of a kind.",
+  "groups": {
+    "took": 204,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 03:07:44 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/groups/"
+    },
+    "issues": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201fe4b07e1f4ebd6876/apis/53aa3cffe4b0a9b1348d9d8c/versions/53aa3d00e4b0a9b1348d9d8d/errors/"
+    }
+  },
+  "id": "53aa3d00e4b0a9b1348d9d8d",
+  "status": "ACTIVE"
+}

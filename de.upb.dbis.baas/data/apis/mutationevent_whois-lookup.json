@@ -1,0 +1,236 @@
+{
+  "models": {
+    "took": 56,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "isdomainavailable",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1426720986849,
+        "name": "isDomainAvailable",
+        "format": "JSON",
+        "description": "Check if the domain is available",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/models/550a0740e4b0c8d1e6e97e28/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/models/550a0740e4b0c8d1e6e97e28"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6"
+          }
+        },
+        "id": "550a0740e4b0c8d1e6e97e28",
+        "body": "{\"response\":false,\"domain\":\"mutationevent.com\"}",
+        "creationDate": 1426720576537,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Wed Mar 18 23:53:27 UTC 2015",
+  "website": "http://whois.mutationevent.com/",
+  "endpoints": {
+    "took": 94,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 22,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "domain",
+              "condition": "REQUIRED",
+              "updateDate": 1426720294540,
+              "name": "domain",
+              "description": "Ex: mutationevent.com",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/endpoints/550a056de4b0994f433c3154"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/endpoints/550a056de4b0994f433c3154/routeparameters/550a056de4b0994f433c3155"
+                }
+              },
+              "id": "550a056de4b0994f433c3155",
+              "type": "STRING",
+              "creationDate": 1426720109868,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "method",
+              "condition": "REQUIRED",
+              "updateDate": 1426720367132,
+              "name": "method",
+              "description": "Liste of supported Method : isValidDomain, isDomainAvailable, getWhoisServer, getDomainTLD, getDomainInfo, getDomainHTMLInfo",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/endpoints/550a056de4b0994f433c3154"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/endpoints/550a056de4b0994f433c3154/routeparameters/550a056de4b01d6ebc883909"
+                }
+              },
+              "id": "550a056de4b01d6ebc883909",
+              "type": "STRING",
+              "creationDate": 1426720109750,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1426720987055,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1426720109733,
+        "slugifiedPrimary": "method-domain",
+        "routeregex": "/([^/?]+)/([^/?]+)",
+        "route": "/{method}/{domain}",
+        "response": {
+          "slugifiedPrimary": "isdomainavailable",
+          "headers": {
+            "took": 5,
+            "total": 0,
+            "data": []
+          },
+          "took": 18,
+          "updateDate": 1426720986849,
+          "name": "isDomainAvailable",
+          "format": "JSON",
+          "description": "Check if the domain is available",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/models/550a0740e4b0c8d1e6e97e28/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/models/550a0740e4b0c8d1e6e97e28"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6"
+            }
+          },
+          "id": "550a0740e4b0c8d1e6e97e28",
+          "body": "{\"response\":false,\"domain\":\"mutationevent.com\"}",
+          "creationDate": 1426720576537,
+          "status": "ACTIVE"
+        },
+        "name": "/{method}/{domain}",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/endpoints/550a056de4b0994f433c3154/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/endpoints/550a056de4b0994f433c3154/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/models/550a0740e4b0c8d1e6e97e28"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/endpoints/550a056de4b0994f433c3154"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/endpoints/550a056de4b0994f433c3154/parameters/"
+          }
+        },
+        "id": "550a056de4b0994f433c3154",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Research domain ownership with Whois Lookup.",
+  "groups": {
+    "took": 29,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Mar 18 23:07:02 UTC 2015",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/groups/"
+    },
+    "issues": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d54e4b0b60946a16f44/apis/550a0516e4b0994f433c3151/versions/550a0516e4b08a2734b5e5b6/errors/"
+    }
+  },
+  "id": "550a0516e4b08a2734b5e5b6",
+  "status": "ACTIVE"
+}

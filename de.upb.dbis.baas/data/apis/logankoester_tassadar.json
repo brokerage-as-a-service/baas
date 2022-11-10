@@ -1,0 +1,243 @@
+{
+  "models": {
+    "took": 74,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "error",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "error",
+        "format": "JSON",
+        "description": "A JSON-formatted error response",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/models/53aa35aee4b051a76d23f7a4/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/models/53aa35aee4b051a76d23f7a4"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762"
+          }
+        },
+        "id": "53aa35aee4b051a76d23f7a4",
+        "body": "{\n  \"error\": \"No file uploaded\"\n}",
+        "creationDate": 1403663790670,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "replay",
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "name": "replay",
+        "format": "JSON",
+        "description": "A parsed SC2Replay object",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/models/53aa35aee4b051a76d23f7a5/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/models/53aa35aee4b051a76d23f7a5"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762"
+          }
+        },
+        "id": "53aa35aee4b051a76d23f7a5",
+        "body": "{\n  \"replay\": {\n    \"game\": {\n      \"category\": \"Ladder\",\n      \"map\": \"Delta Quadrant\",\n      \"speed\": \"Faster\",\n      \"time\": \"2011-07-05 22:01:08 +0000\",\n      \"type\": \"1v1\",\n      \"winner\": {\n        \"actual_race\": \"Zerg\",\n        \"chosen_race\": \"Zerg\",\n        \"handicap\": 100,\n        \"id\": 2569192,\n        \"name\": \"redgar\",\n        \"won\": true,\n        \"color\": {\n          \"alpha\": 255,\n          \"red\": 0,\n          \"green\": 66,\n          \"blue\": 255\n        }\n      }\n    },\n    \"players\": [\n      {\n        \"player\": {\n          \"actual_race\": \"Terran\",\n          \"chosen_race\": \"Terran\",\n          \"handicap\": 100,\n          \"id\": 1918894,\n          \"name\": \"guitsaru\",\n          \"won\": false,\n          \"color\": {\n            \"alpha\": 255,\n            \"red\": 180,\n            \"green\": 20,\n            \"blue\": 30\n          }\n        }\n      },\n      {\n        \"player\": {\n          \"actual_race\": \"Zerg\",\n          \"chosen_race\": \"Zerg\",\n          \"handicap\": 100,\n          \"id\": 2569192,\n          \"name\": \"redgar\",\n          \"won\": true,\n          \"color\": {\n            \"alpha\": 255,\n            \"red\": 0,\n            \"green\": 66,\n            \"blue\": 255\n          }\n        }\n      }\n    ]\n  }\n}",
+        "creationDate": 1403663790720,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:45:56 UTC 2014",
+  "website": "http://agoragames.github.com/tassadar-server/",
+  "endpoints": {
+    "took": 131,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403663791043,
+        "code": 201,
+        "method": "POST",
+        "description": "Analyze the contents of an SC2Replay file. Analyzed replays are discarded immediately.",
+        "creationDate": 1403663790773,
+        "slugifiedPrimary": "uploadreplay",
+        "routeregex": "/sc2/replay",
+        "route": "/sc2/replay",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "replay",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 31,
+          "name": "replay",
+          "format": "JSON",
+          "description": "A parsed SC2Replay object",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/models/53aa35aee4b051a76d23f7a5/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/models/53aa35aee4b051a76d23f7a5"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762"
+            }
+          },
+          "id": "53aa35aee4b051a76d23f7a5",
+          "body": "{\n  \"replay\": {\n    \"game\": {\n      \"category\": \"Ladder\",\n      \"map\": \"Delta Quadrant\",\n      \"speed\": \"Faster\",\n      \"time\": \"2011-07-05 22:01:08 +0000\",\n      \"type\": \"1v1\",\n      \"winner\": {\n        \"actual_race\": \"Zerg\",\n        \"chosen_race\": \"Zerg\",\n        \"handicap\": 100,\n        \"id\": 2569192,\n        \"name\": \"redgar\",\n        \"won\": true,\n        \"color\": {\n          \"alpha\": 255,\n          \"red\": 0,\n          \"green\": 66,\n          \"blue\": 255\n        }\n      }\n    },\n    \"players\": [\n      {\n        \"player\": {\n          \"actual_race\": \"Terran\",\n          \"chosen_race\": \"Terran\",\n          \"handicap\": 100,\n          \"id\": 1918894,\n          \"name\": \"guitsaru\",\n          \"won\": false,\n          \"color\": {\n            \"alpha\": 255,\n            \"red\": 180,\n            \"green\": 20,\n            \"blue\": 30\n          }\n        }\n      },\n      {\n        \"player\": {\n          \"actual_race\": \"Zerg\",\n          \"chosen_race\": \"Zerg\",\n          \"handicap\": 100,\n          \"id\": 2569192,\n          \"name\": \"redgar\",\n          \"won\": true,\n          \"color\": {\n            \"alpha\": 255,\n            \"red\": 0,\n            \"green\": 66,\n            \"blue\": 255\n          }\n        }\n      }\n    ]\n  }\n}",
+          "creationDate": 1403663790720,
+          "status": "ACTIVE"
+        },
+        "name": "uploadReplay",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/endpoints/53aa35aee4b051a76d23f7a6/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/endpoints/53aa35aee4b051a76d23f7a6/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/models/53aa35aee4b051a76d23f7a5"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/endpoints/53aa35aee4b051a76d23f7a6"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/endpoints/53aa35aee4b051a76d23f7a6/parameters/"
+          }
+        },
+        "id": "53aa35aee4b051a76d23f7a6",
+        "parameters": {
+          "took": 40,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "file",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "file",
+              "description": "An individual *.SC2Replay file to analyze",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/endpoints/53aa35aee4b051a76d23f7a6"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/endpoints/53aa35aee4b051a76d23f7a6/parameters/53aa35aee4b0a705fcc30765"
+                }
+              },
+              "id": "53aa35aee4b0a705fcc30765",
+              "type": "BINARY",
+              "creationDate": 1403663790898,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "A simple Starcraft II replay parser in the cloud. Upload a replay to retrieve the map name, player info, win/loss results, and more. \r\n\r\nEasily integrate SC2 replay data into your projects.",
+  "groups": {
+    "took": 44,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 02:36:30 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1ff4e4b051a76d22dbc8/apis/53aa35aee4b051a76d23f7a2/versions/53aa35aee4b0a705fcc30762/errors/"
+    }
+  },
+  "id": "53aa35aee4b0a705fcc30762",
+  "status": "ACTIVE"
+}

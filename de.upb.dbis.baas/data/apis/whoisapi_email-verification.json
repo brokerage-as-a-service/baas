@@ -1,0 +1,350 @@
+{
+  "models": {
+    "took": 151,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "sample-output",
+        "headers": {
+          "took": 23,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1504529960962,
+        "name": "Sample output",
+        "format": "XML",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/models/59ad4d7ee4b028109d413a01/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/models/59ad4d7ee4b028109d413a01"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21"
+          }
+        },
+        "id": "59ad4d7ee4b028109d413a01",
+        "body": "<EmailVerifyRecord>\n    <emailAddress>\n        support@whoisxmlapi.com\n    </emailAddress>\n    <validFormat>\n        OK\n    </validFormat>\n    <smtp>\n        OK\n    </smtp>\n    <dns>\n        OK\n    </dns>\n    <free>\n        false\n    </free>\n    <disposable>\n        false\n    </disposable>\n    <catchAll>\n        true\n    </catchAll>\n    <mxs>\n        <string>\n            ALT1.ASPMX.L.GOOGLE.com\n        </string>\n        <string>\n            ALT2.ASPMX.L.GOOGLE.com\n        </string>\n        <string>\n            ASPMX.L.GOOGLE.com\n        </string>\n        <string>\n            ASPMX2.GOOGLEMAIL.com\n        </string>\n        <string>\n            ASPMX3.GOOGLEMAIL.com\n        </string>\n        <string>\n            mx.yandex.net\n        </string>\n    </mxs>\n</EmailVerifyRecord>",
+        "creationDate": 1504529790726,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "website": "https://www.whoisxmlapi.com",
+  "updateDate": "Mon Sep 04 13:10:31 UTC 2017",
+  "endpoints": {
+    "took": 158,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 63,
+          "total": 7,
+          "data": [
+            {
+              "slugifiedPrimary": "checkcatchall",
+              "updateDate": 1504529678918,
+              "condition": "OPTIONAL",
+              "name": "checkcatchall",
+              "description": "1 results in checking if the email provider has a catch-all email address",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/endpoints/59ad4aa1e4b0b28ab0e68e25"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/endpoints/59ad4aa1e4b0b28ab0e68e25/routeparameters/59ad4cc5e4b028109d4139fa"
+                }
+              },
+              "id": "59ad4cc5e4b028109d4139fa",
+              "type": "NUMBER",
+              "creationDate": 1504529605256,
+              "value": "0",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "checkdisposable",
+              "updateDate": 1504529689197,
+              "condition": "OPTIONAL",
+              "name": "checkdisposable",
+              "description": "1 results in checking if the email address is disposable",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/endpoints/59ad4aa1e4b0b28ab0e68e25"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/endpoints/59ad4aa1e4b0b28ab0e68e25/routeparameters/59ad4cede4b0b28ab0e68e37"
+                }
+              },
+              "id": "59ad4cede4b0b28ab0e68e37",
+              "type": "NUMBER",
+              "creationDate": 1504529645045,
+              "value": "0",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "checkfree",
+              "updateDate": 1504529684078,
+              "condition": "OPTIONAL",
+              "name": "checkfree",
+              "description": "1 results in checking whether the email provider is a free one",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/endpoints/59ad4aa1e4b0b28ab0e68e25"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/endpoints/59ad4aa1e4b0b28ab0e68e25/routeparameters/59ad4cd0e4b0b28ab0e68e33"
+                }
+              },
+              "id": "59ad4cd0e4b0b28ab0e68e33",
+              "type": "NUMBER",
+              "creationDate": 1504529616515,
+              "value": "0",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "emailaddress",
+              "condition": "REQUIRED",
+              "name": "emailAddress",
+              "description": "email address which needs to be verified",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/endpoints/59ad4aa1e4b0b28ab0e68e25"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/endpoints/59ad4aa1e4b0b28ab0e68e25/routeparameters/59ad4c33e4b028109d4139f7"
+                }
+              },
+              "id": "59ad4c33e4b028109d4139f7",
+              "type": "STRING",
+              "creationDate": 1504529459500,
+              "value": "support@whoisxmlapi.com",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "outputformat",
+              "updateDate": 1504529515273,
+              "condition": "OPTIONAL",
+              "name": "outputformat",
+              "description": "XML | JSON (defaults to XML)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/endpoints/59ad4aa1e4b0b28ab0e68e25"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/endpoints/59ad4aa1e4b0b28ab0e68e25/routeparameters/59ad4c5de4b0b28ab0e68e31"
+                }
+              },
+              "id": "59ad4c5de4b0b28ab0e68e31",
+              "type": "STRING",
+              "creationDate": 1504529501577,
+              "value": "XML",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "validatedns",
+              "updateDate": 1504529669010,
+              "condition": "OPTIONAL",
+              "name": "validatedns",
+              "description": "1 results in checking the email address with DNS",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/endpoints/59ad4aa1e4b0b28ab0e68e25"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/endpoints/59ad4aa1e4b0b28ab0e68e25/routeparameters/59ad4c90e4b075a0d1d73efd"
+                }
+              },
+              "id": "59ad4c90e4b075a0d1d73efd",
+              "type": "NUMBER",
+              "creationDate": 1504529552694,
+              "value": "0",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "validatesmtp",
+              "updateDate": 1504529673317,
+              "condition": "OPTIONAL",
+              "name": "validatesmtp",
+              "description": "1 results in checking the email address with SMTP",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/endpoints/59ad4aa1e4b0b28ab0e68e25"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/endpoints/59ad4aa1e4b0b28ab0e68e25/routeparameters/59ad4cace4b075a0d1d73efe"
+                }
+              },
+              "id": "59ad4cace4b075a0d1d73efe",
+              "type": "NUMBER",
+              "creationDate": 1504529580044,
+              "value": "0",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1504529961254,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1504529057000,
+        "slugifiedPrimary": "email-verification",
+        "routeregex": "/whoisserver/EmailVerifyService",
+        "route": "/whoisserver/EmailVerifyService",
+        "response": {
+          "slugifiedPrimary": "sample-output",
+          "headers": {
+            "took": 13,
+            "total": 0,
+            "data": []
+          },
+          "took": 30,
+          "updateDate": 1504529960962,
+          "name": "Sample output",
+          "format": "XML",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/models/59ad4d7ee4b028109d413a01/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/models/59ad4d7ee4b028109d413a01"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21"
+            }
+          },
+          "id": "59ad4d7ee4b028109d413a01",
+          "body": "<EmailVerifyRecord>\n    <emailAddress>\n        support@whoisxmlapi.com\n    </emailAddress>\n    <validFormat>\n        OK\n    </validFormat>\n    <smtp>\n        OK\n    </smtp>\n    <dns>\n        OK\n    </dns>\n    <free>\n        false\n    </free>\n    <disposable>\n        false\n    </disposable>\n    <catchAll>\n        true\n    </catchAll>\n    <mxs>\n        <string>\n            ALT1.ASPMX.L.GOOGLE.com\n        </string>\n        <string>\n            ALT2.ASPMX.L.GOOGLE.com\n        </string>\n        <string>\n            ASPMX.L.GOOGLE.com\n        </string>\n        <string>\n            ASPMX2.GOOGLEMAIL.com\n        </string>\n        <string>\n            ASPMX3.GOOGLEMAIL.com\n        </string>\n        <string>\n            mx.yandex.net\n        </string>\n    </mxs>\n</EmailVerifyRecord>",
+          "creationDate": 1504529790726,
+          "status": "ACTIVE"
+        },
+        "name": "email verification",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/endpoints/59ad4aa1e4b0b28ab0e68e25/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/endpoints/59ad4aa1e4b0b28ab0e68e25/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/models/59ad4d7ee4b028109d413a01"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/endpoints/59ad4aa1e4b0b28ab0e68e25"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/endpoints/59ad4aa1e4b0b28ab0e68e25/parameters/"
+          }
+        },
+        "id": "59ad4aa1e4b0b28ab0e68e25",
+        "parameters": {
+          "took": 27,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Email Verification API is a Simple REST API solution ensuring email deliverability and quality. It performs syntax, DNS, SMTP and advanced validation & verification checks against email addresses.",
+  "groups": {
+    "took": 79,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Mon Sep 04 12:40:59 UTC 2017",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fb4e4b0f2c97545d1d8/apis/59ad49dbe4b075a0d1d73ef2/versions/59ad49dbe4b0b28ab0e68e21/authentication"
+    }
+  },
+  "id": "59ad49dbe4b0b28ab0e68e21",
+  "status": "ACTIVE"
+}

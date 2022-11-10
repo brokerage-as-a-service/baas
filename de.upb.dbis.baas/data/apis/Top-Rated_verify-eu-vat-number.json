@@ -1,0 +1,236 @@
+{
+  "models": {
+    "took": 47,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "detect-eu-vat-number-model",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1435861816287,
+        "name": "Detect EU VAT Number model",
+        "format": "JSON",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/models/55958307e4b095ed24aed804/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/models/55958307e4b095ed24aed804"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a"
+          }
+        },
+        "id": "55958307e4b095ed24aed804",
+        "body": "{\"valid\":true,\"text\":\"Valid VAT number\",\"name\":\"AKTIEBOLAGET VOLVO\",\"address\":\"AVD 5174; ARHK5 08 GÖTEBORG\"}",
+        "creationDate": 1435861767058,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "website": "http://api.devode.se",
+  "updateDate": "Thu Jul 02 18:33:55 UTC 2015",
+  "endpoints": {
+    "took": 47,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 20,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "country",
+              "condition": "OPTIONAL",
+              "name": "country",
+              "description": "If you know the country, you can optionally supply this parameter. It will help by detecting the country prefix to the VAT number.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/endpoints/559581bee4b0b94e3b828c68"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/endpoints/559581bee4b0b94e3b828c68/routeparameters/559582f7e4b095ed24aed802"
+                }
+              },
+              "id": "559582f7e4b095ed24aed802",
+              "type": "STRING",
+              "creationDate": 1435861751168,
+              "value": "Sweden",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "vat",
+              "condition": "REQUIRED",
+              "name": "vat",
+              "description": "The VAT number to check/verify.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/endpoints/559581bee4b0b94e3b828c68"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/endpoints/559581bee4b0b94e3b828c68/routeparameters/559582cee4b0308652231dbf"
+                }
+              },
+              "id": "559582cee4b0308652231dbf",
+              "type": "STRING",
+              "creationDate": 1435861710116,
+              "value": "SE556012579001",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1435861816841,
+        "code": 200,
+        "method": "GET",
+        "description": "This API will allow you to easily detect if a VAT number is valid in the EU or not.",
+        "creationDate": 1435861438637,
+        "slugifiedPrimary": "detect-eu-vat-number",
+        "routeregex": "/",
+        "route": "/",
+        "response": {
+          "slugifiedPrimary": "detect-eu-vat-number-model",
+          "headers": {
+            "took": 21,
+            "total": 0,
+            "data": []
+          },
+          "took": 33,
+          "updateDate": 1435861816287,
+          "name": "Detect EU VAT Number model",
+          "format": "JSON",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/models/55958307e4b095ed24aed804/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/models/55958307e4b095ed24aed804"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a"
+            }
+          },
+          "id": "55958307e4b095ed24aed804",
+          "body": "{\"valid\":true,\"text\":\"Valid VAT number\",\"name\":\"AKTIEBOLAGET VOLVO\",\"address\":\"AVD 5174; ARHK5 08 GÖTEBORG\"}",
+          "creationDate": 1435861767058,
+          "status": "ACTIVE"
+        },
+        "name": "Detect EU VAT Number",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/endpoints/559581bee4b0b94e3b828c68/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/endpoints/559581bee4b0b94e3b828c68/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/models/55958307e4b095ed24aed804"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/endpoints/559581bee4b0b94e3b828c68"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/endpoints/559581bee4b0b94e3b828c68/parameters/"
+          }
+        },
+        "id": "559581bee4b0b94e3b828c68",
+        "parameters": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "This API will help you to easily detect if a VAT number is valid in the EU or not. If the country supports it, you will also be able to get the name of the company.",
+  "groups": {
+    "took": 16,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Thu Jul 02 18:22:58 UTC 2015",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/features/"
+    },
+    "plans": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/55957f5fe4b0b42bd2f66395/apis/55958182e4b09519279b40bc/versions/55958182e4b0b42bd2f6639a/errors/"
+    }
+  },
+  "id": "55958182e4b0b42bd2f6639a",
+  "status": "ACTIVE"
+}

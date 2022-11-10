@@ -1,0 +1,246 @@
+{
+  "models": {
+    "took": 118,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "-model",
+        "headers": {
+          "took": 24,
+          "total": 0,
+          "data": []
+        },
+        "name": "Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/models/53aa5bbbe4b0a9b1348db68c/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/models/53aa5bbbe4b0a9b1348db68c"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851"
+          }
+        },
+        "id": "53aa5bbbe4b0a9b1348db68c",
+        "body": "{\n  \"error\": 1003,\n  \"message\": \"The API key you provided was not recognised\"\n}",
+        "creationDate": 1403673531639,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "tweet-sentiment-api-model",
+        "headers": {
+          "took": 10,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1456393563577,
+        "name": "Tweet Sentiment API model",
+        "format": "JSON",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/models/56952c62e4b0ec7adf838f3d/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/models/56952c62e4b0ec7adf838f3d"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851"
+          }
+        },
+        "id": "56952c62e4b0ec7adf838f3d",
+        "body": "{\"sentiment\":\"positive\",\"score\":0.637436407926}",
+        "creationDate": 1452616802024,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Sun Feb 28 01:02:28 UTC 2016",
+  "website": "https://www.tweetsentimentapi.com/",
+  "endpoints": {
+    "took": 144,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 22,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 22,
+          "total": 1,
+          "data": [
+            {
+              "updateDate": 1452617029468,
+              "description": "The text you want to analyse for sentiment, between 1 and 1000 characters in length",
+              "querystring": true,
+              "type": "STRING",
+              "creationDate": 1403673531799,
+              "slugifiedPrimary": "text",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "text",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/endpoints/53aa5bbbe4b0a9b1348db68d"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/endpoints/53aa5bbbe4b0a9b1348db68d/routeparameters/53aa5bbbe4b05961403416c2"
+                }
+              },
+              "id": "53aa5bbbe4b05961403416c2",
+              "value": "I love Mashape!",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1456393563752,
+        "code": 200,
+        "method": "GET",
+        "description": "Analyses a string of text and returns information about whether the sentiment is probably negative or positive, along with a score to indicate how strong that probability is.",
+        "creationDate": 1403673531671,
+        "slugifiedPrimary": "tweet-sentiment-api",
+        "routeregex": "/api/",
+        "route": "/api/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "tweet-sentiment-api-model",
+          "headers": {
+            "took": 10,
+            "total": 0,
+            "data": []
+          },
+          "took": 49,
+          "updateDate": 1456393563577,
+          "name": "Tweet Sentiment API model",
+          "format": "JSON",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/models/56952c62e4b0ec7adf838f3d/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/models/56952c62e4b0ec7adf838f3d"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851"
+            }
+          },
+          "id": "56952c62e4b0ec7adf838f3d",
+          "body": "{\"sentiment\":\"positive\",\"score\":0.637436407926}",
+          "creationDate": 1452616802024,
+          "status": "ACTIVE"
+        },
+        "name": "Tweet Sentiment API",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/endpoints/53aa5bbbe4b0a9b1348db68d/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/endpoints/53aa5bbbe4b0a9b1348db68d/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/models/56952c62e4b0ec7adf838f3d"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/endpoints/53aa5bbbe4b0a9b1348db68d"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/endpoints/53aa5bbbe4b0a9b1348db68d/parameters/"
+          }
+        },
+        "id": "53aa5bbbe4b0a9b1348db68d",
+        "parameters": {
+          "took": 10,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "The Tweet Sentiment API lets you send small chunks of text - for example Tweets or Facebook Posts - and returns information about whether the sentiment is probably positive, negative or neutral, along with a score indicating how strong that probability is. It does this using natural language processing, breaking the text down into component parts and comparing those parts to a massive database of human-rated historical data.",
+  "groups": {
+    "took": 75,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:18:51 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/groups/"
+    },
+    "issues": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/features/"
+    },
+    "plans": {
+      "total": 5,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a24e4b0f2c975468f03/apis/53aa5bbbe4b0a798dbd1b688/versions/53aa5bbbe4b0a705fcc32851/errors/"
+    }
+  },
+  "id": "53aa5bbbe4b0a705fcc32851",
+  "status": "ACTIVE"
+}

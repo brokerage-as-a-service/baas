@@ -1,0 +1,225 @@
+{
+  "models": {
+    "took": 38,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "send-input-model",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "Send input model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/models/53aa5b2ee4b0a9b1348db4eb/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/models/53aa5b2ee4b0a9b1348db4eb"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e"
+          }
+        },
+        "id": "53aa5b2ee4b0a9b1348db4eb",
+        "body": "{\n  \"email_id\": \"A5RHVP6CnRbS34UysLjYHx\",\n  \"recipient\": {\n    \"name\": \"Matt\",\n    \"address\": \"user@email.com\"\n  },\n  \"sender\": {\n    \"name\": \"Company\",\n    \"address\": \"company@company.com\",\n    \"reply_to\": \"info@company.com\"\n  },\n  \"email_data\": { \"amount\": \"$12.00\"}\n}",
+        "creationDate": 1403673390513,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "send-response-model",
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "name": "Send response model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/models/53aa5b2ee4b0b60946a30436/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/models/53aa5b2ee4b0b60946a30436"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e"
+          }
+        },
+        "id": "53aa5b2ee4b0b60946a30436",
+        "body": "{\n  \"success\" : true,\n  \"status\" : \"OK\",\n  \"receipt_id\" : \"0269309f-d8cb-d019-b0a7-2f9265c71489-aq0p5b\",\n  \"email\" : {\n    \"name\" : \"Welcome New User!\",\n    \"version_name\" : \"My First Version\"\n  }\n}",
+        "creationDate": 1403673390544,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:45:28 UTC 2014",
+  "website": "https://www.sendwithus.com/docs/api",
+  "endpoints": {
+    "took": 94,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403673390735,
+        "code": 200,
+        "method": "POST",
+        "description": "To send an email, you create a new API object. You need to provide your unique API key to create this new object. When sending an email, you need to specify an email template. Email templates are identified by a unique email template ID.",
+        "creationDate": 1403673390571,
+        "slugifiedPrimary": "send-an-email",
+        "routeregex": "/send",
+        "route": "/send",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "send-response-model",
+          "headers": {
+            "took": 19,
+            "total": 0,
+            "data": []
+          },
+          "took": 50,
+          "name": "Send response model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/models/53aa5b2ee4b0b60946a30436/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/models/53aa5b2ee4b0b60946a30436"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e"
+            }
+          },
+          "id": "53aa5b2ee4b0b60946a30436",
+          "body": "{\n  \"success\" : true,\n  \"status\" : \"OK\",\n  \"receipt_id\" : \"0269309f-d8cb-d019-b0a7-2f9265c71489-aq0p5b\",\n  \"email\" : {\n    \"name\" : \"Welcome New User!\",\n    \"version_name\" : \"My First Version\"\n  }\n}",
+          "creationDate": 1403673390544,
+          "status": "ACTIVE"
+        },
+        "name": "Send an email",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/endpoints/53aa5b2ee4b0b60946a30437/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/endpoints/53aa5b2ee4b0b60946a30437/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/models/53aa5b2ee4b0b60946a30436"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/endpoints/53aa5b2ee4b0b60946a30437"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/endpoints/53aa5b2ee4b0b60946a30437/parameters/"
+          }
+        },
+        "id": "53aa5b2ee4b0b60946a30437",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Sendwithus aims to bring optimization and A/B testing to marketers and anyone else sending out targeted promotional emails.",
+  "groups": {
+    "took": 5,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:16:30 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2926e4b0a9b1348d1646/apis/53aa5b2ee4b0596140341501/versions/53aa5b2ee4b051a76d24160e/authentication"
+    }
+  },
+  "id": "53aa5b2ee4b051a76d24160e",
+  "status": "ACTIVE"
+}

@@ -1,0 +1,916 @@
+{
+  "models": {
+    "took": 138,
+    "total": 7,
+    "data": [
+      {
+        "slugifiedPrimary": "customfield",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "CustomField",
+        "format": "JSON",
+        "description": "Information about user defined custom data collected during the ticket sale",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b07e1f4ebebf5f/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b07e1f4ebebf5f"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+          }
+        },
+        "id": "53aa59c7e4b07e1f4ebebf5f",
+        "body": "custom_fields: [\n        {\n          label: \"Do you like Green Eggs and Ham?\",\n          response: \"I'd eat them anywhere\"\n        }\n]",
+        "creationDate": 1403673031529,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "event",
+        "headers": {
+          "took": 14,
+          "total": 0,
+          "data": []
+        },
+        "name": "Event",
+        "format": "JSON",
+        "description": "Information about an event happening on Ticketbud",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b0a798dbd1b16c/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b0a798dbd1b16c"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+          }
+        },
+        "id": "53aa59c7e4b0a798dbd1b16c",
+        "body": "{\n  event: {\n      id: 1749846778,\n      title: \"My Great Get Together Support a Good Cause\",\n      event_start: \"2012-06-14T21:00:00-05:00\",\n      event_end: \"2012-06-29T21:00:00-05:00\",\n      time_zone: \"Central Time (US & Canada)\",\n      image: \"/path/to/event_image\",\n      tickets_available: 500,\n      sold_out: false,\n      over: true,\n      organizer_id: 10437567843,\n      event_location: {\n        address: null,\n        address2: null,\n        city: null,\n        state: null,\n        zip: null,\n        country: null,\n        latitude: \"1.000000\",\n        longitude: \"0.00000\",\n        name: null,\n        location: \"123 Street Name, Anywhere in the world\"\n      }\n}",
+        "creationDate": 1403673031549,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "eventlocation",
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "name": "EventLocation",
+        "format": "JSON",
+        "description": "Information about where an event is occurring",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b0a9b1348db1cb/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b0a9b1348db1cb"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+          }
+        },
+        "id": "53aa59c7e4b0a9b1348db1cb",
+        "body": "event_location: {\n        address: null,\n        address2: null,\n        city: null,\n        state: null,\n        zip: null,\n        country: null,\n        latitude: \"1.000000\",\n        longitude: \"0.00000\",\n        name: null,\n        location: \"123 Street Name, Anywhere in the world\"\n}",
+        "creationDate": 1403673031579,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "purchase",
+        "headers": {
+          "took": 14,
+          "total": 0,
+          "data": []
+        },
+        "name": "Purchase",
+        "format": "JSON",
+        "description": "Information regarding the purchase of a ticket",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b0a9b1348db1cc/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b0a9b1348db1cc"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+          }
+        },
+        "id": "53aa59c7e4b0a9b1348db1cc",
+        "body": "purchaser: {\n        status: \"free\",\n        full_name: \"Cat In The Hat\",\n        price_paid: 0,\n        total_quantity: x\n}",
+        "creationDate": 1403673031608,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "ticket",
+        "headers": {
+          "took": 15,
+          "total": 0,
+          "data": []
+        },
+        "name": "Ticket",
+        "format": "JSON",
+        "description": "Fields describing a single ticket",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b0a9b1348db1cd/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b0a9b1348db1cd"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+          }
+        },
+        "id": "53aa59c7e4b0a9b1348db1cd",
+        "body": "{\n  ticket: {\n      id: 58363856478,\n      event_id: 132643,\n      name_on_ticket: \"Sam I Am\",\n      checked_in: false,\n      barcode: \"4011c03c56ea1c1707a8769a3dade0b52ce9f3b8\",\n      barcode_url: \"https://chart.googleapis.com/chart?cht=qr&chs=200x200&chl=4013c03c34eb1c17000a7a69a3dade0b52cef93b8&chld=H|0\",\n      ticket_type: \"General Admission\",\n      purchaser: {\n        status: \"free\",\n        full_name: \"Cat In The Hat\",\n        price_paid: 0,\n        total_quantity: 3\n      },\n      custom_fields: [\n        {\n          label: \"Do you like Green Eggs and Ham?\",\n          response: \"I'd eat them anywhere\"\n        }\n      ]\n  }\n}",
+        "creationDate": 1403673031638,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "user",
+        "headers": {
+          "took": 14,
+          "total": 0,
+          "data": []
+        },
+        "name": "User",
+        "format": "JSON",
+        "description": "The user owning access to the ticketbud API",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b07e1f4ebebf61/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b07e1f4ebebf61"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+          }
+        },
+        "id": "53aa59c7e4b07e1f4ebebf61",
+        "body": "{\n user: {\n   id: xxxxxx,\n   full_name: \"Ticketbud Terry\",\n   first_name: \"Ticketbud\",\n   last_name: \"Terry\",\n   email: \"ticketbud.terry@somedomain.com\",\n   default_subdomain: \"greatevents\",\n   event_ids: [\n     xxxxxxxx,\n     xxxxxxxx,\n     ...\n   ]\n }\n}",
+        "creationDate": 1403673031668,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "your-events-response",
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "name": "Your-Events Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c8e4b0b60946a300fa/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c8e4b0b60946a300fa"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+          }
+        },
+        "id": "53aa59c8e4b0b60946a300fa",
+        "creationDate": 1403673032788,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:46:24 UTC 2014",
+  "website": "https://ticketbud.com",
+  "endpoints": {
+    "took": 331,
+    "total": 5,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 14,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "id",
+              "updateDate": 1403673031893,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "id",
+              "description": "The unique identifier of the event",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c7e4b0b60946a300f7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c7e4b0b60946a300f7/routeparameters/53aa59c7e4b05961403411ac"
+                }
+              },
+              "id": "53aa59c7e4b05961403411ac",
+              "type": "STRING",
+              "creationDate": 1403673031825,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403673033021,
+        "code": 200,
+        "method": "GET",
+        "description": "Information about a single event you have access to",
+        "creationDate": 1403673031779,
+        "slugifiedPrimary": "a-single-event",
+        "routeregex": "/events/([^/?]+).json",
+        "route": "/events/{id}.json",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "event",
+          "headers": {
+            "took": 15,
+            "total": 0,
+            "data": []
+          },
+          "took": 37,
+          "name": "Event",
+          "format": "JSON",
+          "description": "Information about an event happening on Ticketbud",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b0a798dbd1b16c/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b0a798dbd1b16c"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+            }
+          },
+          "id": "53aa59c7e4b0a798dbd1b16c",
+          "body": "{\n  event: {\n      id: 1749846778,\n      title: \"My Great Get Together Support a Good Cause\",\n      event_start: \"2012-06-14T21:00:00-05:00\",\n      event_end: \"2012-06-29T21:00:00-05:00\",\n      time_zone: \"Central Time (US & Canada)\",\n      image: \"/path/to/event_image\",\n      tickets_available: 500,\n      sold_out: false,\n      over: true,\n      organizer_id: 10437567843,\n      event_location: {\n        address: null,\n        address2: null,\n        city: null,\n        state: null,\n        zip: null,\n        country: null,\n        latitude: \"1.000000\",\n        longitude: \"0.00000\",\n        name: null,\n        location: \"123 Street Name, Anywhere in the world\"\n      }\n}",
+          "creationDate": 1403673031549,
+          "status": "ACTIVE"
+        },
+        "name": "A Single Event",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c7e4b0b60946a300f7/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c7e4b0b60946a300f7/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b0a798dbd1b16c"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c7e4b0b60946a300f7"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c7e4b0b60946a300f7/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/groups/53aa59c7e4b0b60946a300f5"
+          }
+        },
+        "id": "53aa59c7e4b0b60946a300f7",
+        "parameters": {
+          "took": 15,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "events",
+          "took": 26,
+          "name": "Events",
+          "index": 1,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/groups/53aa59c7e4b0b60946a300f5"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+            }
+          },
+          "id": "53aa59c7e4b0b60946a300f5",
+          "creationDate": 1403673031723,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 12,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "event_id",
+              "updateDate": 1403673032234,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "event_id",
+              "description": "Unique identifier of the event.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c7e4b0a9b1348db1d0"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c7e4b0a9b1348db1d0/routeparameters/53aa59c8e4b00287471a2329"
+                }
+              },
+              "id": "53aa59c8e4b00287471a2329",
+              "type": "STRING",
+              "creationDate": 1403673032079,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "id",
+              "updateDate": 1403673032361,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "id",
+              "description": "Unique identifier of the ticket.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c7e4b0a9b1348db1d0"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c7e4b0a9b1348db1d0/routeparameters/53aa59c8e4b051a76d2412f9"
+                }
+              },
+              "id": "53aa59c8e4b051a76d2412f9",
+              "type": "STRING",
+              "creationDate": 1403673032144,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403673033117,
+        "code": 200,
+        "method": "GET",
+        "description": "Information about a single ticket.",
+        "creationDate": 1403673031978,
+        "slugifiedPrimary": "a-single-ticket",
+        "routeregex": "/events/([^/?]+)/tickets/([^/?]+).json",
+        "route": "/events/{event_id}/tickets/{id}.json",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "ticket",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 20,
+          "name": "Ticket",
+          "format": "JSON",
+          "description": "Fields describing a single ticket",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b0a9b1348db1cd/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b0a9b1348db1cd"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+            }
+          },
+          "id": "53aa59c7e4b0a9b1348db1cd",
+          "body": "{\n  ticket: {\n      id: 58363856478,\n      event_id: 132643,\n      name_on_ticket: \"Sam I Am\",\n      checked_in: false,\n      barcode: \"4011c03c56ea1c1707a8769a3dade0b52ce9f3b8\",\n      barcode_url: \"https://chart.googleapis.com/chart?cht=qr&chs=200x200&chl=4013c03c34eb1c17000a7a69a3dade0b52cef93b8&chld=H|0\",\n      ticket_type: \"General Admission\",\n      purchaser: {\n        status: \"free\",\n        full_name: \"Cat In The Hat\",\n        price_paid: 0,\n        total_quantity: 3\n      },\n      custom_fields: [\n        {\n          label: \"Do you like Green Eggs and Ham?\",\n          response: \"I'd eat them anywhere\"\n        }\n      ]\n  }\n}",
+          "creationDate": 1403673031638,
+          "status": "ACTIVE"
+        },
+        "name": "A Single Ticket",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c7e4b0a9b1348db1d0/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c7e4b0a9b1348db1d0/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b0a9b1348db1cd"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c7e4b0a9b1348db1d0"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c7e4b0a9b1348db1d0/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/groups/53aa59c7e4b0b60946a300f6"
+          }
+        },
+        "id": "53aa59c7e4b0a9b1348db1d0",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "tickets",
+          "took": 12,
+          "name": "Tickets",
+          "index": 2,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/groups/53aa59c7e4b0b60946a300f6"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+            }
+          },
+          "id": "53aa59c7e4b0b60946a300f6",
+          "creationDate": 1403673031751,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 14,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 14,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403673033055,
+        "code": 200,
+        "method": "GET",
+        "description": "Information about the current token holder",
+        "creationDate": 1403673032451,
+        "slugifiedPrimary": "me",
+        "routeregex": "/me.json",
+        "route": "/me.json",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "user",
+          "headers": {
+            "took": 4,
+            "total": 0,
+            "data": []
+          },
+          "took": 28,
+          "name": "User",
+          "format": "JSON",
+          "description": "The user owning access to the ticketbud API",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b07e1f4ebebf61/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b07e1f4ebebf61"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+            }
+          },
+          "id": "53aa59c7e4b07e1f4ebebf61",
+          "body": "{\n user: {\n   id: xxxxxx,\n   full_name: \"Ticketbud Terry\",\n   first_name: \"Ticketbud\",\n   last_name: \"Terry\",\n   email: \"ticketbud.terry@somedomain.com\",\n   default_subdomain: \"greatevents\",\n   event_ids: [\n     xxxxxxxx,\n     xxxxxxxx,\n     ...\n   ]\n }\n}",
+          "creationDate": 1403673031668,
+          "status": "ACTIVE"
+        },
+        "name": "Me",
+        "routeindex": 2,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c8e4b0a9b1348db1d4/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c8e4b0a9b1348db1d4/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b07e1f4ebebf61"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c8e4b0a9b1348db1d4"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c8e4b0a9b1348db1d4/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/groups/53aa59c7e4b07e1f4ebebf62"
+          }
+        },
+        "id": "53aa59c8e4b0a9b1348db1d4",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "user",
+          "took": 10,
+          "name": "User",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/groups/53aa59c7e4b07e1f4ebebf62"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+            }
+          },
+          "id": "53aa59c7e4b07e1f4ebebf62",
+          "creationDate": 1403673031696,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 30,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "event_id",
+              "updateDate": 1403673032682,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "event_id",
+              "description": "The unique identifier of the event.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c8e4b0a9b1348db1d5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c8e4b0a9b1348db1d5/routeparameters/53aa59c8e4b0a705fcc32323"
+                }
+              },
+              "id": "53aa59c8e4b0a705fcc32323",
+              "type": "STRING",
+              "creationDate": 1403673032612,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403673032998,
+        "code": 200,
+        "method": "GET",
+        "description": "All tickets for an event that you have access to",
+        "creationDate": 1403673032511,
+        "slugifiedPrimary": "tickets-for-an-event",
+        "routeregex": "/events/([^/?]+)/tickets.json",
+        "route": "/events/{event_id}/tickets.json",
+        "array": true,
+        "response": {
+          "slugifiedPrimary": "ticket",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 18,
+          "name": "Ticket",
+          "format": "JSON",
+          "description": "Fields describing a single ticket",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b0a9b1348db1cd/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b0a9b1348db1cd"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+            }
+          },
+          "id": "53aa59c7e4b0a9b1348db1cd",
+          "body": "{\n  ticket: {\n      id: 58363856478,\n      event_id: 132643,\n      name_on_ticket: \"Sam I Am\",\n      checked_in: false,\n      barcode: \"4011c03c56ea1c1707a8769a3dade0b52ce9f3b8\",\n      barcode_url: \"https://chart.googleapis.com/chart?cht=qr&chs=200x200&chl=4013c03c34eb1c17000a7a69a3dade0b52cef93b8&chld=H|0\",\n      ticket_type: \"General Admission\",\n      purchaser: {\n        status: \"free\",\n        full_name: \"Cat In The Hat\",\n        price_paid: 0,\n        total_quantity: 3\n      },\n      custom_fields: [\n        {\n          label: \"Do you like Green Eggs and Ham?\",\n          response: \"I'd eat them anywhere\"\n        }\n      ]\n  }\n}",
+          "creationDate": 1403673031638,
+          "status": "ACTIVE"
+        },
+        "name": "Tickets for an Event",
+        "routeindex": 3,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c8e4b0a9b1348db1d5/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c8e4b0a9b1348db1d5/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c7e4b0a9b1348db1cd"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c8e4b0a9b1348db1d5"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c8e4b0a9b1348db1d5/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/groups/53aa59c7e4b0b60946a300f6"
+          }
+        },
+        "id": "53aa59c8e4b0a9b1348db1d5",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "tickets",
+          "took": 27,
+          "name": "Tickets",
+          "index": 2,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/groups/53aa59c7e4b0b60946a300f6"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+            }
+          },
+          "id": "53aa59c7e4b0b60946a300f6",
+          "creationDate": 1403673031751,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 22,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 16,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403673032992,
+        "code": 200,
+        "method": "GET",
+        "description": "A list of events owned or accessible by the current token holder",
+        "creationDate": 1403673032818,
+        "slugifiedPrimary": "your-events",
+        "routeregex": "/events.json",
+        "route": "/events.json",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "your-events-response",
+          "headers": {
+            "took": 19,
+            "total": 0,
+            "data": []
+          },
+          "took": 30,
+          "name": "Your-Events Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c8e4b0b60946a300fa/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c8e4b0b60946a300fa"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+            }
+          },
+          "id": "53aa59c8e4b0b60946a300fa",
+          "creationDate": 1403673032788,
+          "status": "ACTIVE"
+        },
+        "name": "Your Events",
+        "routeindex": 4,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c8e4b0b60946a300fb/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c8e4b0b60946a300fb/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/53aa59c8e4b0b60946a300fa"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c8e4b0b60946a300fb"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/53aa59c8e4b0b60946a300fb/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/groups/53aa59c7e4b0b60946a300f5"
+          }
+        },
+        "id": "53aa59c8e4b0b60946a300fb",
+        "parameters": {
+          "took": 14,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "events",
+          "took": 49,
+          "name": "Events",
+          "index": 1,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/groups/53aa59c7e4b0b60946a300f5"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+            }
+          },
+          "id": "53aa59c7e4b0b60946a300f5",
+          "creationDate": 1403673031723,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Events happening globally on ticketbud. Access to ticket sales, event locations, and event attendees.",
+  "groups": {
+    "took": 68,
+    "total": 3,
+    "data": [
+      {
+        "slugifiedPrimary": "events",
+        "name": "Events",
+        "index": 1,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/groups/53aa59c7e4b0b60946a300f5"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+          }
+        },
+        "id": "53aa59c7e4b0b60946a300f5",
+        "creationDate": 1403673031723,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "tickets",
+        "name": "Tickets",
+        "index": 2,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/groups/53aa59c7e4b0b60946a300f6"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+          }
+        },
+        "id": "53aa59c7e4b0b60946a300f6",
+        "creationDate": 1403673031751,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "user",
+        "name": "User",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/groups/53aa59c7e4b07e1f4ebebf62"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+          }
+        },
+        "id": "53aa59c7e4b07e1f4ebebf62",
+        "creationDate": 1403673031696,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 05:10:31 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 7,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/astronode"
+    },
+    "endpoints": {
+      "total": 5,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/objects/"
+    },
+    "groups": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa277ae4b0a798dbd0f36e/apis/53aa59c7e4b0b60946a300f3/versions/53aa59c7e4b07e1f4ebebf5c/authentication"
+    }
+  },
+  "id": "53aa59c7e4b07e1f4ebebf5c",
+  "status": "ACTIVE"
+}

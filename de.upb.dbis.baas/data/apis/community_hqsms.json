@@ -1,0 +1,258 @@
+{
+  "models": {
+    "took": 37,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "send-sms-response",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Send-SMS Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/models/53aa589be4b0596140340f5b/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/models/53aa589be4b0596140340f5b"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc"
+          }
+        },
+        "id": "53aa589be4b0596140340f5b",
+        "creationDate": 1403672731924,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:40:02 UTC 2014",
+  "website": "http://www.hqsms.com/help-api/https-api-interface",
+  "endpoints": {
+    "took": 72,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 28,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "from",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "from",
+              "description": "Sender name have to be activated",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/endpoints/53aa589be4b0b60946a2fea5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/endpoints/53aa589be4b0b60946a2fea5/routeparameters/53aa589ce4b0a798dbd1af0e"
+                }
+              },
+              "id": "53aa589ce4b0a798dbd1af0e",
+              "type": "STRING",
+              "creationDate": 1403672732070,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "message",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "message",
+              "description": "Content of message",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/endpoints/53aa589be4b0b60946a2fea5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/endpoints/53aa589be4b0b60946a2fea5/routeparameters/53aa589ce4b0a798dbd1af0f"
+                }
+              },
+              "id": "53aa589ce4b0a798dbd1af0f",
+              "type": "STRING",
+              "creationDate": 1403672732116,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "to",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "to",
+              "description": "Destination number",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/endpoints/53aa589be4b0b60946a2fea5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/endpoints/53aa589be4b0b60946a2fea5/routeparameters/53aa589ce4b0a9b1348daf8f"
+                }
+              },
+              "id": "53aa589ce4b0a9b1348daf8f",
+              "type": "STRING",
+              "creationDate": 1403672732028,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403672732288,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403672731955,
+        "slugifiedPrimary": "send-sms",
+        "routeregex": "/sms.do",
+        "route": "/sms.do",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "send-sms-response",
+          "headers": {
+            "took": 21,
+            "total": 0,
+            "data": []
+          },
+          "took": 53,
+          "name": "Send-SMS Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/models/53aa589be4b0596140340f5b/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/models/53aa589be4b0596140340f5b"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc"
+            }
+          },
+          "id": "53aa589be4b0596140340f5b",
+          "creationDate": 1403672731924,
+          "status": "ACTIVE"
+        },
+        "name": "Send SMS",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/endpoints/53aa589be4b0b60946a2fea5/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/endpoints/53aa589be4b0b60946a2fea5/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/models/53aa589be4b0596140340f5b"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/endpoints/53aa589be4b0b60946a2fea5"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/endpoints/53aa589be4b0b60946a2fea5/parameters/"
+          }
+        },
+        "id": "53aa589be4b0b60946a2fea5",
+        "parameters": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "HQSMS is a global SMS provider offering SMS gateway and specializing in SMS text messaging solutions : SMS notices, bulk SMS and HLR lookup service. HTTPS API interface allows you to inegrate most of on-line applications.",
+  "groups": {
+    "took": 18,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:05:31 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa589be4b0a798dbd1af0a/versions/53aa589be4b00287471a20fc/authentication"
+    }
+  },
+  "id": "53aa589be4b00287471a20fc",
+  "status": "ACTIVE"
+}

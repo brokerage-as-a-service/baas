@@ -1,0 +1,575 @@
+{
+  "models": {
+    "took": 56,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "1-query-and-categorize-text-model",
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "name": "1. Query and categorize text Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/models/53aa4a02e4b0a705fcc313d5/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/models/53aa4a02e4b0a705fcc313d5"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027"
+          }
+        },
+        "id": "53aa4a02e4b0a705fcc313d5",
+        "body": "{\n  \"uuid\": \"1c89c98e-290a-4481-9e68-5a5a55203764\"\n}",
+        "creationDate": 1403668994559,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "2-get-indexing-result-model",
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "name": "2. Get indexing result Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/models/53aa4a02e4b008bb2ef86029/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/models/53aa4a02e4b008bb2ef86029"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027"
+          }
+        },
+        "id": "53aa4a02e4b008bb2ef86029",
+        "body": "{\n  \"verbatim\": \"Daisy, Daisy, give me your answer, do, I'm half crazy all for the love of you. It won't be a stylish marriage, I can't afford a carriage, But you'd look sweet upon the seat Of a bicycle built for two.\",\n  \"quality\": \"0.00196642\",\n  \"synapsify\": \"4.88887400\",\n  \"para-list\": [\n    {\n      \"text\": \"Daisy, Daisy, give me your answer, do, I'm half crazy all for the love of you. It won't be a stylish marriage, I can't afford a carriage, But you'd look sweet upon the seat Of a bicycle built for two.\",\n      \"num\": 0,\n      \"quotability\": 3.019037,\n      \"credibility\": 0,\n      \"meaningfulness\": 2.5373593,\n      \"tension\": 0,\n      \"thematics\": 0.09838307\n    }\n  ],\n  \"top-themes\": [\n    {\n      \"paraNum\": \"0\",\n      \"text\": \"Daisy, Daisy, give me your answer, do, I'm half crazy all for the love of you. It won't be a stylish marriage, I can't afford a carriage, But you'd look sweet upon the seat Of a bicycle built for two.\",\n      \"gravitas5\": \"4.72124\",\n      \"storyArcAlist\": {\n        \"0\": 0\n      },\n      \"subThemesString\": \"supply, marriage, give, afford, answer, all, bicycle, do\"\n    },\n    {\n      \"paraNum\": \"NIL\",\n      \"text\": \"\",\n      \"gravitas5\": \"0.00000\",\n      \"storyArcAlist\": null,\n      \"subThemesString\": \"yield, all, afford, render, supply, daisy, provide, marriage\"\n    }\n  ]\n}",
+        "creationDate": 1403668994603,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:45:47 UTC 2014",
+  "website": "https://developer.gosynapsify.com/documentation/overview",
+  "endpoints": {
+    "took": 289,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403668995407,
+        "code": 200,
+        "method": "POST",
+        "description": "Query and categorize text under a named index.  This is the most important type of request within the Synapsify API, allowing for super-accurate querying and categorization of text under a named index. On success returns a UUID (universally unique identifier) which should be passed in any subsequent GET request to retrieve the analysis result.",
+        "creationDate": 1403668994718,
+        "slugifiedPrimary": "1-query-and-categorize-text",
+        "routeregex": "/indexing",
+        "route": "/indexing",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "1-query-and-categorize-text-model",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 51,
+          "name": "1. Query and categorize text Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/models/53aa4a02e4b0a705fcc313d5/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/models/53aa4a02e4b0a705fcc313d5"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027"
+            }
+          },
+          "id": "53aa4a02e4b0a705fcc313d5",
+          "body": "{\n  \"uuid\": \"1c89c98e-290a-4481-9e68-5a5a55203764\"\n}",
+          "creationDate": 1403668994559,
+          "status": "ACTIVE"
+        },
+        "name": "1. Query and categorize text",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a02e4b00287471a137a/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a02e4b00287471a137a/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/models/53aa4a02e4b0a705fcc313d5"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a02e4b00287471a137a"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a02e4b00287471a137a/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/groups/53aa4a02e4b00287471a1379"
+          }
+        },
+        "id": "53aa4a02e4b00287471a137a",
+        "parameters": {
+          "took": 38,
+          "total": 5,
+          "data": [
+            {
+              "slugifiedPrimary": "index_id",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "index_id",
+              "description": "The search index in which to store the verbatim text’s metaphors. An index of 0 will bypass storage of metaphors.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a02e4b00287471a137a"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a02e4b00287471a137a/parameters/53aa4a02e4b008bb2ef8602b"
+                }
+              },
+              "id": "53aa4a02e4b008bb2ef8602b",
+              "type": "STRING",
+              "creationDate": 1403668994821,
+              "value": "0",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "timestamp",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "timestamp",
+              "description": "Date and time of the request. If supplied must be in correct Timestamp format (see documentation for details).",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a02e4b00287471a137a"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a02e4b00287471a137a/parameters/53aa4a03e4b0f2c97546fd65"
+                }
+              },
+              "id": "53aa4a03e4b0f2c97546fd65",
+              "type": "STRING",
+              "creationDate": 1403668995081,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "verbatim_author",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "verbatim_author",
+              "description": "The author of the verbatim text.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a02e4b00287471a137a"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a02e4b00287471a137a/parameters/53aa4a02e4b008bb2ef8602c"
+                }
+              },
+              "id": "53aa4a02e4b008bb2ef8602c",
+              "type": "STRING",
+              "creationDate": 1403668994905,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "verbatim_text",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "verbatim_text",
+              "description": "The verbatim text itself.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a02e4b00287471a137a"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a02e4b00287471a137a/parameters/53aa4a03e4b00287471a137b"
+                }
+              },
+              "id": "53aa4a03e4b00287471a137b",
+              "type": "STRING",
+              "creationDate": 1403668995171,
+              "value": "Daisy, Daisy, give me your answer, do, I'm half crazy all for the love of you. It won't be a stylish marriage, I can't afford a carriage, But you'd look sweet upon the seat Of a bicycle built for two.",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "verbatim_title",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "verbatim_title",
+              "description": "The title of the verbatim text.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a02e4b00287471a137a"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a02e4b00287471a137a/parameters/53aa4a02e4b0a705fcc313d6"
+                }
+              },
+              "id": "53aa4a02e4b0a705fcc313d6",
+              "type": "STRING",
+              "creationDate": 1403668994996,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "indexing",
+          "took": 12,
+          "name": "Indexing",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/groups/53aa4a02e4b00287471a1379"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027"
+            }
+          },
+          "id": "53aa4a02e4b00287471a1379",
+          "creationDate": 1403668994662,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 135,
+          "total": 5,
+          "data": [
+            {
+              "slugifiedPrimary": "index_id",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "index_id",
+              "description": "The search index storing the verbatim text’s metaphors.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a03e4b008bb2ef8602e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a03e4b008bb2ef8602e/routeparameters/53aa4a03e4b00287471a137c"
+                }
+              },
+              "id": "53aa4a03e4b00287471a137c",
+              "type": "STRING",
+              "creationDate": 1403668995427,
+              "value": "0",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "timestamp",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "timestamp",
+              "description": "Date and time of the request. If supplied must be in correct Timestamp format (see documentation for details).",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a03e4b008bb2ef8602e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a03e4b008bb2ef8602e/routeparameters/53aa4a03e4b008bb2ef86030"
+                }
+              },
+              "id": "53aa4a03e4b008bb2ef86030",
+              "type": "STRING",
+              "creationDate": 1403668995672,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "uuid",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "uuid",
+              "description": "UUID returned by a prior POST request to /v1/indexing.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a03e4b008bb2ef8602e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a03e4b008bb2ef8602e/routeparameters/53aa4a03e4b0a705fcc313d7"
+                }
+              },
+              "id": "53aa4a03e4b0a705fcc313d7",
+              "type": "STRING",
+              "creationDate": 1403668995341,
+              "value": "1c89c98e-290a-4481-9e68-5a5a55203764",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "verbatim_author",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "verbatim_author",
+              "description": "The author of the verbatim text.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a03e4b008bb2ef8602e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a03e4b008bb2ef8602e/routeparameters/53aa4a03e4b0f2c97546fd69"
+                }
+              },
+              "id": "53aa4a03e4b0f2c97546fd69",
+              "type": "STRING",
+              "creationDate": 1403668995507,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "verbatim_title",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "verbatim_title",
+              "description": "The title of the verbatim text.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a03e4b008bb2ef8602e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a03e4b008bb2ef8602e/routeparameters/53aa4a03e4b008bb2ef8602f"
+                }
+              },
+              "id": "53aa4a03e4b008bb2ef8602f",
+              "type": "STRING",
+              "creationDate": 1403668995589,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403668995523,
+        "code": 200,
+        "method": "GET",
+        "description": "On success returns (as a JSON object) the result of an indexing analysis, otherwise a status message showing percentage done.",
+        "creationDate": 1403668995224,
+        "slugifiedPrimary": "2-get-indexing-result",
+        "routeregex": "/indexing",
+        "route": "/indexing",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "2-get-indexing-result-model",
+          "headers": {
+            "took": 4,
+            "total": 0,
+            "data": []
+          },
+          "took": 36,
+          "name": "2. Get indexing result Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/models/53aa4a02e4b008bb2ef86029/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/models/53aa4a02e4b008bb2ef86029"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027"
+            }
+          },
+          "id": "53aa4a02e4b008bb2ef86029",
+          "body": "{\n  \"verbatim\": \"Daisy, Daisy, give me your answer, do, I'm half crazy all for the love of you. It won't be a stylish marriage, I can't afford a carriage, But you'd look sweet upon the seat Of a bicycle built for two.\",\n  \"quality\": \"0.00196642\",\n  \"synapsify\": \"4.88887400\",\n  \"para-list\": [\n    {\n      \"text\": \"Daisy, Daisy, give me your answer, do, I'm half crazy all for the love of you. It won't be a stylish marriage, I can't afford a carriage, But you'd look sweet upon the seat Of a bicycle built for two.\",\n      \"num\": 0,\n      \"quotability\": 3.019037,\n      \"credibility\": 0,\n      \"meaningfulness\": 2.5373593,\n      \"tension\": 0,\n      \"thematics\": 0.09838307\n    }\n  ],\n  \"top-themes\": [\n    {\n      \"paraNum\": \"0\",\n      \"text\": \"Daisy, Daisy, give me your answer, do, I'm half crazy all for the love of you. It won't be a stylish marriage, I can't afford a carriage, But you'd look sweet upon the seat Of a bicycle built for two.\",\n      \"gravitas5\": \"4.72124\",\n      \"storyArcAlist\": {\n        \"0\": 0\n      },\n      \"subThemesString\": \"supply, marriage, give, afford, answer, all, bicycle, do\"\n    },\n    {\n      \"paraNum\": \"NIL\",\n      \"text\": \"\",\n      \"gravitas5\": \"0.00000\",\n      \"storyArcAlist\": null,\n      \"subThemesString\": \"yield, all, afford, render, supply, daisy, provide, marriage\"\n    }\n  ]\n}",
+          "creationDate": 1403668994603,
+          "status": "ACTIVE"
+        },
+        "name": "2. Get indexing result",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a03e4b008bb2ef8602e/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a03e4b008bb2ef8602e/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/models/53aa4a02e4b008bb2ef86029"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a03e4b008bb2ef8602e"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/53aa4a03e4b008bb2ef8602e/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/groups/53aa4a02e4b00287471a1379"
+          }
+        },
+        "id": "53aa4a03e4b008bb2ef8602e",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "indexing",
+          "took": 11,
+          "name": "Indexing",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/groups/53aa4a02e4b00287471a1379"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027"
+            }
+          },
+          "id": "53aa4a02e4b00287471a1379",
+          "creationDate": 1403668994662,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Synapsify’s REST API is based on a core set of linguistic algorithms, utilizing phonemics, natural language processing (NLP), machine learning, etc. The API has been designed to be as flexible as possible, and can be adapted to a very wide range of domains and fields of interest, including:\r\n\r\nReading any type of written content based on several dimensions;\r\nRevealing the quality, balance, credibility and quotablity of such content and its most important topics and phrases;\r\nIndexing and matching against other written content or customized indexes;\r\nEnhancing the ability to discover, understand and segment actionable insights.",
+  "groups": {
+    "took": 61,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "indexing",
+        "name": "Indexing",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/groups/53aa4a02e4b00287471a1379"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027"
+          }
+        },
+        "id": "53aa4a02e4b00287471a1379",
+        "creationDate": 1403668994662,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 04:03:14 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/objects/"
+    },
+    "groups": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21aee4b0b60946a1cbf5/apis/53aa4a02e4b0f2c97546fd63/versions/53aa4a02e4b008bb2ef86027/authentication"
+    }
+  },
+  "id": "53aa4a02e4b008bb2ef86027",
+  "status": "ACTIVE"
+}

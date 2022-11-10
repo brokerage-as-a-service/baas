@@ -1,0 +1,516 @@
+{
+  "models": {
+    "took": 74,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "uid-generation-model",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "Uid generation Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/models/53aa3d00e4b0a798dbd19cc9/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/models/53aa3d00e4b0a798dbd19cc9"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f"
+          }
+        },
+        "id": "53aa3d00e4b0a798dbd19cc9",
+        "body": "{\n  \"id\": \"FBuE2G\",\n  \"max_combinations\": 42180533641,\n  \"alphabet\": \"123456789abcdefghijklmnpqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ\"\n}",
+        "creationDate": 1403665664875,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "variable-length-model",
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "name": "Variable length Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/models/53aa3d00e4b0a9b1348d9d95/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/models/53aa3d00e4b0a9b1348d9d95"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f"
+          }
+        },
+        "id": "53aa3d00e4b0a9b1348d9d95",
+        "body": "{\n  \"id\": \"xt\",\n  \"max_combinations\": 99246114928149460,\n  \"alphabet\": \"abcdefghijklmnopqrstuvwxyz\"\n}",
+        "creationDate": 1403665664901,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:46:47 UTC 2014",
+  "endpoints": {
+    "took": 200,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 33,
+          "total": 4,
+          "data": [
+            {
+              "slugifiedPrimary": "copt",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "copt",
+              "description": "Options to build the alphabet used, n adds numbers, c lowercase letters, C uppercase letters, n0 removes oO0 chars",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/53aa3d00e4b0a798dbd19ccb"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/53aa3d00e4b0a798dbd19ccb/routeparameters/53aa3d01e4b059614033fd66"
+                }
+              },
+              "id": "53aa3d01e4b059614033fd66",
+              "type": "STRING",
+              "creationDate": 1403665665157,
+              "value": "n,c,C,n0",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "int",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "int",
+              "description": "The integer to generate the uid from. Note that it must be included between 1 and the maximum combinations number. See \"max_combinations\" field in the response JSON.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/53aa3d00e4b0a798dbd19ccb"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/53aa3d00e4b0a798dbd19ccb/routeparameters/53aa3d01e4b0a798dbd19ccc"
+                }
+              },
+              "id": "53aa3d01e4b0a798dbd19ccc",
+              "type": "NUMBER",
+              "creationDate": 1403665665023,
+              "value": "123",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "key",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "key",
+              "description": "The scramble key, used to apply  an additional shuffling",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/53aa3d00e4b0a798dbd19ccb"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/53aa3d00e4b0a798dbd19ccb/routeparameters/53aa3d01e4b07e1f4ebeab7b"
+                }
+              },
+              "id": "53aa3d01e4b07e1f4ebeab7b",
+              "type": "STRING",
+              "creationDate": 1403665665115,
+              "value": "myScrambleKey",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "len",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "len",
+              "description": "The length of the resulting uid string. Supported values are from 1 to 12 included.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/53aa3d00e4b0a798dbd19ccb"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/53aa3d00e4b0a798dbd19ccb/routeparameters/53aa3d01e4b0a798dbd19ccd"
+                }
+              },
+              "id": "53aa3d01e4b0a798dbd19ccd",
+              "type": "NUMBER",
+              "creationDate": 1403665665070,
+              "value": "6",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403665665501,
+        "code": 200,
+        "method": "GET",
+        "description": "Generates an uid based on the supplied int with fixed length",
+        "creationDate": 1403665664960,
+        "slugifiedPrimary": "fixed-length",
+        "routeregex": "/v1/fixed",
+        "route": "/v1/fixed",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "uid-generation-model",
+          "headers": {
+            "took": 4,
+            "total": 0,
+            "data": []
+          },
+          "took": 36,
+          "name": "Uid generation Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/models/53aa3d00e4b0a798dbd19cc9/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/models/53aa3d00e4b0a798dbd19cc9"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f"
+            }
+          },
+          "id": "53aa3d00e4b0a798dbd19cc9",
+          "body": "{\n  \"id\": \"FBuE2G\",\n  \"max_combinations\": 42180533641,\n  \"alphabet\": \"123456789abcdefghijklmnpqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ\"\n}",
+          "creationDate": 1403665664875,
+          "status": "ACTIVE"
+        },
+        "name": "Fixed length",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/53aa3d00e4b0a798dbd19ccb/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/53aa3d00e4b0a798dbd19ccb/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/models/53aa3d00e4b0a798dbd19cc9"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/53aa3d00e4b0a798dbd19ccb"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/53aa3d00e4b0a798dbd19ccb/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/groups/53aa3d00e4b0a798dbd19cca"
+          }
+        },
+        "id": "53aa3d00e4b0a798dbd19ccb",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "v1",
+          "took": 35,
+          "name": "V1",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/groups/53aa3d00e4b0a798dbd19cca"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f"
+            }
+          },
+          "id": "53aa3d00e4b0a798dbd19cca",
+          "creationDate": 1403665664933,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 25,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "copt",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "copt",
+              "description": "Options to build the alphabet used, n adds numbers, c lowercase letters, C uppercase letters, n0 removes oO0 chars",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/53aa3d01e4b0b60946a2ed17"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/53aa3d01e4b0b60946a2ed17/routeparameters/53aa3d01e4b0a9b1348d9d98"
+                }
+              },
+              "id": "53aa3d01e4b0a9b1348d9d98",
+              "type": "STRING",
+              "creationDate": 1403665665350,
+              "value": "n,c,C,n0",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "int",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "int",
+              "description": "The integer to generate the uid from.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/53aa3d01e4b0b60946a2ed17"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/53aa3d01e4b0b60946a2ed17/routeparameters/53aa3d01e4b0a798dbd19cce"
+                }
+              },
+              "id": "53aa3d01e4b0a798dbd19cce",
+              "type": "STRING",
+              "creationDate": 1403665665260,
+              "value": "123",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "key",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "key",
+              "description": "The scramble key, used to apply  an additional shuffling",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/53aa3d01e4b0b60946a2ed17"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/53aa3d01e4b0b60946a2ed17/routeparameters/53aa3d01e4b0b60946a2ed18"
+                }
+              },
+              "id": "53aa3d01e4b0b60946a2ed18",
+              "type": "STRING",
+              "creationDate": 1403665665306,
+              "value": "myScrambleKey",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403665665566,
+        "code": 200,
+        "method": "GET",
+        "description": "Generates an uid with the length depending on the supplied integer",
+        "creationDate": 1403665665189,
+        "slugifiedPrimary": "variable-length",
+        "routeregex": "/v1/variable",
+        "route": "/v1/variable",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "variable-length-model",
+          "headers": {
+            "took": 19,
+            "total": 0,
+            "data": []
+          },
+          "took": 50,
+          "name": "Variable length Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/models/53aa3d00e4b0a9b1348d9d95/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/models/53aa3d00e4b0a9b1348d9d95"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f"
+            }
+          },
+          "id": "53aa3d00e4b0a9b1348d9d95",
+          "body": "{\n  \"id\": \"xt\",\n  \"max_combinations\": 99246114928149460,\n  \"alphabet\": \"abcdefghijklmnopqrstuvwxyz\"\n}",
+          "creationDate": 1403665664901,
+          "status": "ACTIVE"
+        },
+        "name": "Variable length",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/53aa3d01e4b0b60946a2ed17/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/53aa3d01e4b0b60946a2ed17/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/models/53aa3d00e4b0a9b1348d9d95"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/53aa3d01e4b0b60946a2ed17"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/53aa3d01e4b0b60946a2ed17/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/groups/53aa3d00e4b0a798dbd19cca"
+          }
+        },
+        "id": "53aa3d01e4b0b60946a2ed17",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "v1",
+          "took": 34,
+          "name": "V1",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/groups/53aa3d00e4b0a798dbd19cca"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f"
+            }
+          },
+          "id": "53aa3d00e4b0a798dbd19cca",
+          "creationDate": 1403665664933,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Scrambles a progressive integer (DB index?) into a unique string like Bitly, TinyURL and Youtube do.\r\nExample: if you input 20 you get \"YvfCww\" while inputing 21 you get \"Ln4kQ9\" and so on... You can also specify your own seed. Use it for very custom short URL generation or anything you like, it is free.",
+  "groups": {
+    "took": 61,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "v1",
+        "name": "V1",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/groups/53aa3d00e4b0a798dbd19cca"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f"
+          }
+        },
+        "id": "53aa3d00e4b0a798dbd19cca",
+        "creationDate": 1403665664933,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 03:07:44 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/objects/"
+    },
+    "groups": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/features/"
+    },
+    "plans": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1de5e4b0a9b1348c3283/apis/53aa3d00e4b0a798dbd19cc8/versions/53aa3d00e4b059614033fd5f/errors/"
+    }
+  },
+  "id": "53aa3d00e4b059614033fd5f",
+  "status": "ACTIVE"
+}

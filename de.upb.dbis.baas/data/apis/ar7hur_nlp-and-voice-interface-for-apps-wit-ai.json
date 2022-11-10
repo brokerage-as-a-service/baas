@@ -1,0 +1,245 @@
+{
+  "models": {
+    "took": 32,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "message-model",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Message Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/models/53aa4eede4b0a9b1348da3ff/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/models/53aa4eede4b0a9b1348da3ff"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164"
+          }
+        },
+        "id": "53aa4eede4b0a9b1348da3ff",
+        "body": "{\n  \"msg_id\": \"8e349113-8acf-407f-aa5c-de437d8b4c08\",\n  \"msg_body\": \"conf call with Eric tomorrow morning at 6am\",\n  \"outcome\": {\n    \"intent\": \"set_agenda\",\n    \"entities\": {\n      \"task\": {\n        \"end\": 19,\n        \"start\": 0,\n        \"type\": \"free\",\n        \"value\": \"conf call with Eric\",\n        \"body\": \"conf call with Eric\"\n      },\n      \"time\": {\n        \"end\": 43,\n        \"start\": 20,\n        \"type\": \"datetime\",\n        \"value\": {\n          \"from\": \"2013-07-13T06:00:00.000-07:00\",\n          \"to\": \"2013-07-13T06:01:00.000-07:00\"\n        },\n        \"body\": \"tomorrow morning at 6am\"\n      }\n    },\n    \"confidence\": 0.9999622610469207\n  }\n}",
+        "creationDate": 1403670253696,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "outcome",
+        "headers": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "name": "Outcome",
+        "format": "JSON",
+        "description": "Extracted meaning",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/models/53aa4eede4b0a9b1348da401/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/models/53aa4eede4b0a9b1348da401"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164"
+          }
+        },
+        "id": "53aa4eede4b0a9b1348da401",
+        "body": "{\n  \"intent\": \"set_agenda\",\n  \"entities\": {\n    \"task\": {\n      \"end\": 19,\n      \"start\": 0,\n      \"type\": \"free\",\n      \"value\": \"conf call with Eric\",\n      \"body\": \"conf call with Eric\"\n    },\n    \"time\": {\n      \"end\": 43,\n      \"start\": 20,\n      \"type\": \"datetime\",\n      \"value\": {\n        \"from\": \"2013-07-13T06:00:00.000-07:00\",\n        \"to\": \"2013-07-13T06:01:00.000-07:00\"\n      },\n      \"body\": \"tomorrow morning at 6am\"\n    }\n  },\n  \"confidence\": 0.9999622610469207\n}",
+        "creationDate": 1403670253730,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Sun Sep 28 22:59:09 UTC 2014",
+  "website": "https://wit.ai",
+  "endpoints": {
+    "took": 57,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 43,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "q",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "q",
+              "description": "Sentence you want Wit to analyze. First, you should connect to your Wit console and provide samples to Wit!",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/endpoints/53aa4eede4b0a9b1348da402"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/endpoints/53aa4eede4b0a9b1348da402/routeparameters/53aa4eede4b07e1f4ebeb168"
+                }
+              },
+              "id": "53aa4eede4b07e1f4ebeb168",
+              "type": "STRING",
+              "creationDate": 1403670253820,
+              "value": "conf call with Eric tomorrow morning at 6am",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403670253885,
+        "code": 200,
+        "method": "GET",
+        "description": "Turn text into structured meaning",
+        "creationDate": 1403670253762,
+        "slugifiedPrimary": "message",
+        "routeregex": "/message",
+        "route": "/message",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "message-model",
+          "headers": {
+            "took": 8,
+            "total": 0,
+            "data": []
+          },
+          "took": 20,
+          "name": "Message Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/models/53aa4eede4b0a9b1348da3ff/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/models/53aa4eede4b0a9b1348da3ff"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164"
+            }
+          },
+          "id": "53aa4eede4b0a9b1348da3ff",
+          "body": "{\n  \"msg_id\": \"8e349113-8acf-407f-aa5c-de437d8b4c08\",\n  \"msg_body\": \"conf call with Eric tomorrow morning at 6am\",\n  \"outcome\": {\n    \"intent\": \"set_agenda\",\n    \"entities\": {\n      \"task\": {\n        \"end\": 19,\n        \"start\": 0,\n        \"type\": \"free\",\n        \"value\": \"conf call with Eric\",\n        \"body\": \"conf call with Eric\"\n      },\n      \"time\": {\n        \"end\": 43,\n        \"start\": 20,\n        \"type\": \"datetime\",\n        \"value\": {\n          \"from\": \"2013-07-13T06:00:00.000-07:00\",\n          \"to\": \"2013-07-13T06:01:00.000-07:00\"\n        },\n        \"body\": \"tomorrow morning at 6am\"\n      }\n    },\n    \"confidence\": 0.9999622610469207\n  }\n}",
+          "creationDate": 1403670253696,
+          "status": "ACTIVE"
+        },
+        "name": "Message",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/endpoints/53aa4eede4b0a9b1348da402/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/endpoints/53aa4eede4b0a9b1348da402/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/models/53aa4eede4b0a9b1348da3ff"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/endpoints/53aa4eede4b0a9b1348da402"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/endpoints/53aa4eede4b0a9b1348da402/parameters/"
+          }
+        },
+        "id": "53aa4eede4b0a9b1348da402",
+        "parameters": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Wit.ai enables developers to build apps and devices that users can talk to.",
+  "groups": {
+    "took": 4,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 04:24:13 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f55e4b0a9b1348c4f86/apis/53aa4eede4b07e1f4ebeb163/versions/53aa4eede4b07e1f4ebeb164/errors/"
+    }
+  },
+  "id": "53aa4eede4b07e1f4ebeb164",
+  "status": "ACTIVE"
+}

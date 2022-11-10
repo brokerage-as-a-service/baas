@@ -1,0 +1,286 @@
+{
+  "models": {
+    "took": 113,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "get-amenity-locations-model",
+        "headers": {
+          "took": 22,
+          "total": 0,
+          "data": []
+        },
+        "name": "Get amenity locations Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/models/53aa610fe4b07e1f4ebecaff/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/models/53aa610fe4b07e1f4ebecaff"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7"
+          }
+        },
+        "id": "53aa610fe4b07e1f4ebecaff",
+        "body": "{\n  \"markers\": [\n    {\n      \"latitude\": 51.508205,\n      \"longitude\": -0.1285538,\n      \"fee\": \"\",\n      \"wheelchair\": \"yes\"\n    },\n    {\n      \"latitude\": 51.5089214,\n      \"longitude\": -0.1259481,\n      \"fee\": \"\",\n      \"wheelchair\": \"\"\n    },\n    {\n      \"latitude\": 51.5082165,\n      \"longitude\": -0.1247138,\n      \"fee\": \"\",\n      \"wheelchair\": \"\"\n    },\n    {\n      \"latitude\": 51.5081029,\n      \"longitude\": -0.1245797,\n      \"fee\": \"\",\n      \"wheelchair\": \"\"\n    },\n    {\n      \"latitude\": 51.5098044,\n      \"longitude\": -0.1311357,\n      \"fee\": \"\",\n      \"wheelchair\": \"\"\n    },\n    {\n      \"latitude\": 51.5107724,\n      \"longitude\": -0.1297637,\n      \"fee\": \"\",\n      \"wheelchair\": \"\"\n    },\n    {\n      \"latitude\": 51.5075104,\n      \"longitude\": -0.1218098,\n      \"fee\": \"\",\n      \"wheelchair\": \"\"\n    },\n    {\n      \"latitude\": 51.5046837,\n      \"longitude\": -0.1300195,\n      \"fee\": \"\",\n      \"wheelchair\": \"\"\n    },\n    {\n      \"latitude\": 51.5114911,\n      \"longitude\": -0.1233139,\n      \"fee\": \"\",\n      \"wheelchair\": \"\"\n    },\n    {\n      \"latitude\": 51.511713,\n      \"longitude\": -0.1217072,\n      \"fee\": \"\",\n      \"wheelchair\": \"\"\n    }\n  ]\n}",
+        "creationDate": 1403674895915,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:45:03 UTC 2014",
+  "website": "http://amenimaps.com/api",
+  "endpoints": {
+    "took": 137,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 36,
+          "total": 4,
+          "data": [
+            {
+              "slugifiedPrimary": "amenity",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "amenity",
+              "description": "toilet, atm, bank, postoffice, bakery, bar, bench, bicyclerental, cafe, convenience, drinkingwater, fastfood, fuel, parking, pharmacy, playground, pub, subwayentrance, supermarket",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/endpoints/53aa610fe4b07e1f4ebecb01"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/endpoints/53aa610fe4b07e1f4ebecb01/routeparameters/53aa6110e4b07e1f4ebecb02"
+                }
+              },
+              "id": "53aa6110e4b07e1f4ebecb02",
+              "type": "STRING",
+              "creationDate": 1403674896021,
+              "value": "toilet",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "mode",
+              "condition": "CONSTANT",
+              "array": false,
+              "name": "mode",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/endpoints/53aa610fe4b07e1f4ebecb01"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/endpoints/53aa610fe4b07e1f4ebecb01/routeparameters/53aa6110e4b0a9b1348dbdc9"
+                }
+              },
+              "id": "53aa6110e4b0a9b1348dbdc9",
+              "type": "STRING",
+              "creationDate": 1403674896156,
+              "value": "json",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "mylat",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "mylat",
+              "description": "",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/endpoints/53aa610fe4b07e1f4ebecb01"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/endpoints/53aa610fe4b07e1f4ebecb01/routeparameters/53aa6110e4b0596140341d85"
+                }
+              },
+              "id": "53aa6110e4b0596140341d85",
+              "type": "STRING",
+              "creationDate": 1403674896066,
+              "value": "51.50784",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "mylon",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "mylon",
+              "description": "",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/endpoints/53aa610fe4b07e1f4ebecb01"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/endpoints/53aa610fe4b07e1f4ebecb01/routeparameters/53aa6110e4b0a9b1348dbdc8"
+                }
+              },
+              "id": "53aa6110e4b0a9b1348dbdc8",
+              "type": "STRING",
+              "creationDate": 1403674896110,
+              "value": "-0.127324",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403674896210,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403674895945,
+        "slugifiedPrimary": "get-amenity-locations",
+        "routeregex": "/amenimapi.php",
+        "route": "/amenimapi.php",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "get-amenity-locations-model",
+          "headers": {
+            "took": 21,
+            "total": 0,
+            "data": []
+          },
+          "took": 52,
+          "name": "Get amenity locations Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/models/53aa610fe4b07e1f4ebecaff/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/models/53aa610fe4b07e1f4ebecaff"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7"
+            }
+          },
+          "id": "53aa610fe4b07e1f4ebecaff",
+          "body": "{\n  \"markers\": [\n    {\n      \"latitude\": 51.508205,\n      \"longitude\": -0.1285538,\n      \"fee\": \"\",\n      \"wheelchair\": \"yes\"\n    },\n    {\n      \"latitude\": 51.5089214,\n      \"longitude\": -0.1259481,\n      \"fee\": \"\",\n      \"wheelchair\": \"\"\n    },\n    {\n      \"latitude\": 51.5082165,\n      \"longitude\": -0.1247138,\n      \"fee\": \"\",\n      \"wheelchair\": \"\"\n    },\n    {\n      \"latitude\": 51.5081029,\n      \"longitude\": -0.1245797,\n      \"fee\": \"\",\n      \"wheelchair\": \"\"\n    },\n    {\n      \"latitude\": 51.5098044,\n      \"longitude\": -0.1311357,\n      \"fee\": \"\",\n      \"wheelchair\": \"\"\n    },\n    {\n      \"latitude\": 51.5107724,\n      \"longitude\": -0.1297637,\n      \"fee\": \"\",\n      \"wheelchair\": \"\"\n    },\n    {\n      \"latitude\": 51.5075104,\n      \"longitude\": -0.1218098,\n      \"fee\": \"\",\n      \"wheelchair\": \"\"\n    },\n    {\n      \"latitude\": 51.5046837,\n      \"longitude\": -0.1300195,\n      \"fee\": \"\",\n      \"wheelchair\": \"\"\n    },\n    {\n      \"latitude\": 51.5114911,\n      \"longitude\": -0.1233139,\n      \"fee\": \"\",\n      \"wheelchair\": \"\"\n    },\n    {\n      \"latitude\": 51.511713,\n      \"longitude\": -0.1217072,\n      \"fee\": \"\",\n      \"wheelchair\": \"\"\n    }\n  ]\n}",
+          "creationDate": 1403674895915,
+          "status": "ACTIVE"
+        },
+        "name": "Get amenity locations",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/endpoints/53aa610fe4b07e1f4ebecb01/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/endpoints/53aa610fe4b07e1f4ebecb01/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/models/53aa610fe4b07e1f4ebecaff"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/endpoints/53aa610fe4b07e1f4ebecb01"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/endpoints/53aa610fe4b07e1f4ebecb01/parameters/"
+          }
+        },
+        "id": "53aa610fe4b07e1f4ebecb01",
+        "parameters": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "AmeniMaps brings you a collection of Android Maps for various cities and other interesting places in the world. With the App you will be able to use the free offline map of the place and quickly locate essential amenities like public toilets, bank machines, subway entrances, benches, water fountains and many others with ease (data from OpenStreetMap.org).",
+  "groups": {
+    "took": 59,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:41:35 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa610fe4b0b60946a30cd6/versions/53aa610fe4b0b60946a30cd7/authentication"
+    }
+  },
+  "id": "53aa610fe4b0b60946a30cd7",
+  "status": "ACTIVE"
+}

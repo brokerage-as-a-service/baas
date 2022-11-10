@@ -1,0 +1,640 @@
+{
+  "models": {
+    "took": 26,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "get-list-of-templates-response-model",
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "name": "Get list of templates Response Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/models/53aa5732e4b0596140340b92/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/models/53aa5732e4b0596140340b92"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f"
+          }
+        },
+        "id": "53aa5732e4b0596140340b92",
+        "body": "{\n  \"response\": [\n    {\n      \"id\": 14817,\n      \"name\": \"Packing slip\",\n      \"modified\": \"2013-09-23 09:10:27\",\n      \"owner\": false,\n      \"tags\": [\n        \"packing\"\n      ]\n    },\n    {\n      \"id\": 14815,\n      \"name\": \"Invoice\",\n      \"modified\": \"2013-09-23 09:10:16\",\n      \"owner\": false,\n      \"tags\": [\n        \"invoice\"\n      ]\n    },\n    {\n      \"id\": 14830,\n      \"name\": \"Product Shelf Label (for label printer)\",\n      \"modified\": \"2013-09-23 09:10:08\",\n      \"owner\": false,\n      \"tags\": [\n        \"labels\"\n      ]\n    },\n    {\n      \"id\": 14831,\n      \"name\": \"Address and Mailing label\",\n      \"modified\": \"2013-09-23 09:09:27\",\n      \"owner\": false,\n      \"tags\": [\n        \"mailing labels\"\n      ]\n    }\n  ],\n  \"meta\": [\n    \n  ]\n}",
+        "creationDate": 1403672370206,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "merge-data-with-template-response-model",
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "name": "Merge data with template Response Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/models/53aa5732e4b0596140340b93/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/models/53aa5732e4b0596140340b93"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f"
+          }
+        },
+        "id": "53aa5732e4b0596140340b93",
+        "body": "{\n  \"response\": \"JVBERi0xLjcKJeLjz9MKNiAwIG9iago8....\",\n  \"meta\": {\n    \"encoding\": \"base64\",\n    \"content-type\": \"application\\/pdf\"\n  }\n}",
+        "creationDate": 1403672370230,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:46:34 UTC 2014",
+  "website": "http://actualreports.com/api",
+  "endpoints": {
+    "took": 280,
+    "total": 3,
+    "data": [
+      {
+        "headers": {
+          "took": 9,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 10,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "access",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "access",
+              "description": "'public' Return public templates; 'organization' Return organization templates; 'private' Return private templates. Filter templates by access rights",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b07e1f4ebeb979"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b07e1f4ebeb979/routeparameters/53aa5732e4b0b60946a2fa99"
+                }
+              },
+              "id": "53aa5732e4b0b60946a2fa99",
+              "type": "STRING",
+              "creationDate": 1403672370330,
+              "value": "public, organization, private",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "breakcache",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "breakcache",
+              "description": "0 Returns response from cahce; 1 Force to refresh the response. Use this parameter to clear cache.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b07e1f4ebeb979"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b07e1f4ebeb979/routeparameters/53aa5732e4b07e1f4ebeb97b"
+                }
+              },
+              "id": "53aa5732e4b07e1f4ebeb97b",
+              "type": "STRING",
+              "creationDate": 1403672370376,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403672370955,
+        "code": 200,
+        "method": "GET",
+        "description": "Returns list of templates availbale for the user. NB! This response is cached for 2 minutes.",
+        "creationDate": 1403672370260,
+        "slugifiedPrimary": "get-list-of-templates",
+        "routeregex": "/template",
+        "route": "/template",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "get-list-of-templates-response-model",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 53,
+          "name": "Get list of templates Response Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/models/53aa5732e4b0596140340b92/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/models/53aa5732e4b0596140340b92"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f"
+            }
+          },
+          "id": "53aa5732e4b0596140340b92",
+          "body": "{\n  \"response\": [\n    {\n      \"id\": 14817,\n      \"name\": \"Packing slip\",\n      \"modified\": \"2013-09-23 09:10:27\",\n      \"owner\": false,\n      \"tags\": [\n        \"packing\"\n      ]\n    },\n    {\n      \"id\": 14815,\n      \"name\": \"Invoice\",\n      \"modified\": \"2013-09-23 09:10:16\",\n      \"owner\": false,\n      \"tags\": [\n        \"invoice\"\n      ]\n    },\n    {\n      \"id\": 14830,\n      \"name\": \"Product Shelf Label (for label printer)\",\n      \"modified\": \"2013-09-23 09:10:08\",\n      \"owner\": false,\n      \"tags\": [\n        \"labels\"\n      ]\n    },\n    {\n      \"id\": 14831,\n      \"name\": \"Address and Mailing label\",\n      \"modified\": \"2013-09-23 09:09:27\",\n      \"owner\": false,\n      \"tags\": [\n        \"mailing labels\"\n      ]\n    }\n  ],\n  \"meta\": [\n    \n  ]\n}",
+          "creationDate": 1403672370206,
+          "status": "ACTIVE"
+        },
+        "name": "Get list of templates",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b07e1f4ebeb979/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b07e1f4ebeb979/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/models/53aa5732e4b0596140340b92"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b07e1f4ebeb979"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b07e1f4ebeb979/parameters/"
+          }
+        },
+        "id": "53aa5732e4b07e1f4ebeb979",
+        "parameters": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 41,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "id",
+              "condition": "REQUIRED",
+              "updateDate": 1403672370521,
+              "array": false,
+              "name": "id",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b0b60946a2fa9a"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b0b60946a2fa9a/routeparameters/53aa5732e4b0596140340b95"
+                }
+              },
+              "id": "53aa5732e4b0596140340b95",
+              "type": "STRING",
+              "creationDate": 1403672370454,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403672370963,
+        "code": 200,
+        "method": "POST",
+        "description": "Merges data with the template and returns output in specified format. You can aquire #{id} using the /template request.",
+        "creationDate": 1403672370410,
+        "slugifiedPrimary": "merge-data-with-template",
+        "routeregex": "/template/([^/?]+)/output",
+        "route": "/template/{id}/output",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "merge-data-with-template-response-model",
+          "headers": {
+            "took": 4,
+            "total": 0,
+            "data": []
+          },
+          "took": 35,
+          "name": "Merge data with template Response Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/models/53aa5732e4b0596140340b93/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/models/53aa5732e4b0596140340b93"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f"
+            }
+          },
+          "id": "53aa5732e4b0596140340b93",
+          "body": "{\n  \"response\": \"JVBERi0xLjcKJeLjz9MKNiAwIG9iago8....\",\n  \"meta\": {\n    \"encoding\": \"base64\",\n    \"content-type\": \"application\\/pdf\"\n  }\n}",
+          "creationDate": 1403672370230,
+          "status": "ACTIVE"
+        },
+        "name": "Merge data with template",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b0b60946a2fa9a/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b0b60946a2fa9a/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/models/53aa5732e4b0596140340b93"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b0b60946a2fa9a"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b0b60946a2fa9a/parameters/"
+          }
+        },
+        "id": "53aa5732e4b0b60946a2fa9a",
+        "parameters": {
+          "took": 37,
+          "total": 5,
+          "data": [
+            {
+              "slugifiedPrimary": "data",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "data",
+              "description": "A list of items given as string or url in supported dataformat",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b0b60946a2fa9a"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b0b60946a2fa9a/parameters/53aa5732e4b0a9b1348daba1"
+                }
+              },
+              "id": "53aa5732e4b0a9b1348daba1",
+              "type": "STRING",
+              "creationDate": 1403672370771,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "dataformat",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "dataformat",
+              "description": "'json';  'csv' Semicolon separated; 'csv;' Semicolon separated; 'csv,' Comma separated; 'xls' Microsoft Excel 2007 and older; 'xlsx' Microsoft Excel",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b0b60946a2fa9a"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b0b60946a2fa9a/parameters/53aa5732e4b0b60946a2fa9f"
+                }
+              },
+              "id": "53aa5732e4b0b60946a2fa9f",
+              "type": "STRING",
+              "creationDate": 1403672370730,
+              "value": "json",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "format",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "format",
+              "description": "pdf  html",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b0b60946a2fa9a"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b0b60946a2fa9a/parameters/53aa5732e4b07e1f4ebeb97f"
+                }
+              },
+              "id": "53aa5732e4b07e1f4ebeb97f",
+              "type": "STRING",
+              "creationDate": 1403672370584,
+              "value": "pdf",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "output",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "output",
+              "description": "S Returns output as string; I Shows output inline (e.g in browser); D Starts automatic download; base64 Returns file in base64 encoding.  S returns output in response body. Values I and D expect you to redirect user to URL. base64 returns usual json response.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b0b60946a2fa9a"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b0b60946a2fa9a/parameters/53aa5732e4b0a798dbd1ab39"
+                }
+              },
+              "id": "53aa5732e4b0a798dbd1ab39",
+              "type": "STRING",
+              "creationDate": 1403672370626,
+              "value": "D",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "print",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "print",
+              "description": "0 or 1. Set value 1 to automatically open print dialog when file is opened or loaded in browser",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b0b60946a2fa9a"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b0b60946a2fa9a/parameters/53aa5732e4b0b60946a2fa9e"
+                }
+              },
+              "id": "53aa5732e4b0b60946a2fa9e",
+              "type": "STRING",
+              "creationDate": 1403672370677,
+              "value": "0",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 107,
+          "total": 4,
+          "data": [
+            {
+              "slugifiedPrimary": "data",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "data",
+              "description": "A list of items given as string or url in supported dataformat",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b07e1f4ebeb980"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b07e1f4ebeb980/routeparameters/53aa5732e4b0b60946a2faa1"
+                }
+              },
+              "id": "53aa5732e4b0b60946a2faa1",
+              "type": "STRING",
+              "creationDate": 1403672370957,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "dataformat",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "dataformat",
+              "description": "json  csv Semicolon separated csv; Semicolon separated csv, Comma separated xls Microsoft Excel 2007 and older xlsx Microsoft Excel",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b07e1f4ebeb980"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b07e1f4ebeb980/routeparameters/53aa5732e4b07e1f4ebeb981"
+                }
+              },
+              "id": "53aa5732e4b07e1f4ebeb981",
+              "type": "STRING",
+              "creationDate": 1403672370910,
+              "value": "json",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "iframe",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "iframe",
+              "description": "0 Use regular editor design 1 Use minified editor design.  Switch between minified and regular editor design",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b07e1f4ebeb980"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b07e1f4ebeb980/routeparameters/53aa5733e4b0b60946a2faa2"
+                }
+              },
+              "id": "53aa5733e4b0b60946a2faa2",
+              "type": "STRING",
+              "creationDate": 1403672371004,
+              "value": "0",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "template",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "template",
+              "description": "",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b07e1f4ebeb980"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b07e1f4ebeb980/routeparameters/53aa5732e4b0b60946a2faa0"
+                }
+              },
+              "id": "53aa5732e4b0b60946a2faa0",
+              "type": "STRING",
+              "creationDate": 1403672370866,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403672371074,
+        "code": 200,
+        "method": "GET",
+        "description": "Redirecting your users to this url allows them to create and edit their templates. You can also display it inside the iframe. We reccomend you to always send the data parameter to give your user context, and preview ability when creating the template",
+        "creationDate": 1403672370806,
+        "slugifiedPrimary": "show-editor",
+        "routeregex": "/editor",
+        "route": "/editor",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "get-list-of-templates-response-model",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 39,
+          "name": "Get list of templates Response Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/models/53aa5732e4b0596140340b92/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/models/53aa5732e4b0596140340b92"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f"
+            }
+          },
+          "id": "53aa5732e4b0596140340b92",
+          "body": "{\n  \"response\": [\n    {\n      \"id\": 14817,\n      \"name\": \"Packing slip\",\n      \"modified\": \"2013-09-23 09:10:27\",\n      \"owner\": false,\n      \"tags\": [\n        \"packing\"\n      ]\n    },\n    {\n      \"id\": 14815,\n      \"name\": \"Invoice\",\n      \"modified\": \"2013-09-23 09:10:16\",\n      \"owner\": false,\n      \"tags\": [\n        \"invoice\"\n      ]\n    },\n    {\n      \"id\": 14830,\n      \"name\": \"Product Shelf Label (for label printer)\",\n      \"modified\": \"2013-09-23 09:10:08\",\n      \"owner\": false,\n      \"tags\": [\n        \"labels\"\n      ]\n    },\n    {\n      \"id\": 14831,\n      \"name\": \"Address and Mailing label\",\n      \"modified\": \"2013-09-23 09:09:27\",\n      \"owner\": false,\n      \"tags\": [\n        \"mailing labels\"\n      ]\n    }\n  ],\n  \"meta\": [\n    \n  ]\n}",
+          "creationDate": 1403672370206,
+          "status": "ACTIVE"
+        },
+        "name": "Show editor",
+        "routeindex": 2,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b07e1f4ebeb980/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b07e1f4ebeb980/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/models/53aa5732e4b0596140340b92"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b07e1f4ebeb980"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/53aa5732e4b07e1f4ebeb980/parameters/"
+          }
+        },
+        "id": "53aa5732e4b07e1f4ebeb980",
+        "parameters": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Need to create PDF and HTML documents in your software?\r\nTired of endless output customization request from your users?\r\nLooking for an easy and fast solution to your problems?\r\n\r\nWith Actual Reports platform your users can easily create and manage different document templates with an easy-to-use browser based document editor. And, you can use simple RESTful API calls to merge the templates with data from your own software to generate PDF and HTML documents. Or just use Actual Reports platform as an internal tool to manage and generate different outputs needed within your software. This way you don’t have to waste your time or your developers’ time on hard-coding the output layouts.",
+  "groups": {
+    "took": 17,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 04:59:29 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/astronode"
+    },
+    "endpoints": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa24fae4b0b60946a2115c/apis/53aa5731e4b0a9b1348dab9b/versions/53aa5731e4b0596140340b8f/authentication"
+    }
+  },
+  "id": "53aa5731e4b0596140340b8f",
+  "status": "ACTIVE"
+}

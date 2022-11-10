@@ -1,0 +1,221 @@
+{
+  "models": {
+    "took": 58,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "yahoo_finance",
+        "headers": {
+          "took": 24,
+          "total": 0,
+          "data": []
+        },
+        "name": "yahoo_finance",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/models/53aa60dee4b0a705fcc32e13/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/models/53aa60dee4b0a705fcc32e13"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05"
+          }
+        },
+        "id": "53aa60dee4b0a705fcc32e13",
+        "body": "[\n\n    {\n        \"symbol\": \"AAPL\",\n        \"ask\": \"593.00\",\n        \"bid\": \"592.88\",\n        \"last_trade_date\": \"5/14/2014\",\n        \"low\": \"591.74\",\n        \"high\": \"597.40\",\n        \"low_52_weeks\": \"388.87\",\n        \"high_52_weeks\": \"604.41\",\n        \"volume\": \"5270360\",\n        \"open\": \"592.43\",\n        \"close\": \"592.95\"\n    },\n    {\n        \"symbol\": \"MSFT\",\n        \"ask\": \"40.15\",\n        \"bid\": \"40.14\",\n        \"last_trade_date\": \"5/14/2014\",\n        \"low\": \"40.05\",\n        \"high\": \"40.45\",\n        \"low_52_weeks\": \"30.84\",\n        \"high_52_weeks\": \"41.66\",\n        \"volume\": \"14780003\",\n        \"open\": \"40.30\",\n        \"close\": \"40.155\"\n    },\n    {\n        \"symbol\": \"GOOG\",\n        \"ask\": \"526.08\",\n        \"bid\": \"525.82\",\n        \"last_trade_date\": \"5/14/2014\",\n        \"low\": \"525.29\",\n        \"high\": \"533.00\",\n        \"low_52_weeks\": \"502.80\",\n        \"high_52_weeks\": \"604.83\",\n        \"volume\": \"961141\",\n        \"open\": \"531.95\",\n        \"close\": \"525.90\"\n    }\n\n]",
+        "creationDate": 1403674846090,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:45:09 UTC 2014",
+  "website": "http://www.enclout.com/api/yahoo_finance",
+  "endpoints": {
+    "took": 59,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 46,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "text",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "text",
+              "description": "comma delimited list of stock symbols",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/endpoints/53aa60dee4b0f2c975471783"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/endpoints/53aa60dee4b0f2c975471783/routeparameters/53aa60dee4b00287471a2d23"
+                }
+              },
+              "id": "53aa60dee4b00287471a2d23",
+              "type": "STRING",
+              "creationDate": 1403674846263,
+              "value": "AAPL, MSFT, GOOG",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403674846377,
+        "code": 200,
+        "method": "GET",
+        "description": "Yahoo Finance API",
+        "creationDate": 1403674846145,
+        "slugifiedPrimary": "yahoo_finance",
+        "routeregex": "/show.json",
+        "route": "/show.json",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "yahoo_finance",
+          "headers": {
+            "took": 21,
+            "total": 0,
+            "data": []
+          },
+          "took": 36,
+          "name": "yahoo_finance",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/models/53aa60dee4b0a705fcc32e13/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/models/53aa60dee4b0a705fcc32e13"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05"
+            }
+          },
+          "id": "53aa60dee4b0a705fcc32e13",
+          "body": "[\n\n    {\n        \"symbol\": \"AAPL\",\n        \"ask\": \"593.00\",\n        \"bid\": \"592.88\",\n        \"last_trade_date\": \"5/14/2014\",\n        \"low\": \"591.74\",\n        \"high\": \"597.40\",\n        \"low_52_weeks\": \"388.87\",\n        \"high_52_weeks\": \"604.41\",\n        \"volume\": \"5270360\",\n        \"open\": \"592.43\",\n        \"close\": \"592.95\"\n    },\n    {\n        \"symbol\": \"MSFT\",\n        \"ask\": \"40.15\",\n        \"bid\": \"40.14\",\n        \"last_trade_date\": \"5/14/2014\",\n        \"low\": \"40.05\",\n        \"high\": \"40.45\",\n        \"low_52_weeks\": \"30.84\",\n        \"high_52_weeks\": \"41.66\",\n        \"volume\": \"14780003\",\n        \"open\": \"40.30\",\n        \"close\": \"40.155\"\n    },\n    {\n        \"symbol\": \"GOOG\",\n        \"ask\": \"526.08\",\n        \"bid\": \"525.82\",\n        \"last_trade_date\": \"5/14/2014\",\n        \"low\": \"525.29\",\n        \"high\": \"533.00\",\n        \"low_52_weeks\": \"502.80\",\n        \"high_52_weeks\": \"604.83\",\n        \"volume\": \"961141\",\n        \"open\": \"531.95\",\n        \"close\": \"525.90\"\n    }\n\n]",
+          "creationDate": 1403674846090,
+          "status": "ACTIVE"
+        },
+        "name": "yahoo_finance",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/endpoints/53aa60dee4b0f2c975471783/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/endpoints/53aa60dee4b0f2c975471783/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/models/53aa60dee4b0a705fcc32e13"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/endpoints/53aa60dee4b0f2c975471783"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/endpoints/53aa60dee4b0f2c975471783/parameters/"
+          }
+        },
+        "id": "53aa60dee4b0f2c975471783",
+        "parameters": {
+          "took": 12,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Give a list of stock symbols, this API returns stock data using Yahoo Finance",
+  "groups": {
+    "took": 19,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:40:45 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/changelogs/"
+    },
+    "objects": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/groups/"
+    },
+    "issues": {
+      "total": 8,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/features/"
+    },
+    "plans": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa60dde4b008bb2ef87a53/versions/53aa60dde4b07e1f4ebeca05/authentication"
+    }
+  },
+  "id": "53aa60dde4b07e1f4ebeca05",
+  "status": "ACTIVE"
+}

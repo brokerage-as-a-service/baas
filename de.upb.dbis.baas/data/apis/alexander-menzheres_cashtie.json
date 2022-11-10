@@ -1,0 +1,938 @@
+{
+  "models": {
+    "took": 193,
+    "total": 7,
+    "data": [
+      {
+        "slugifiedPrimary": "check-an-account-status-and-balance-response-model",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Check an Account status and balance response model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b008bb2ef871b5/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b008bb2ef871b5"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8"
+          }
+        },
+        "id": "53aa5afbe4b008bb2ef871b5",
+        "body": "{\n    \"account\": {\n        \"id\": \"904ce2b1e432e07032ab6c47db9a2a6e\",\n        \"settings\": {\n            \"payments\": {\n                \"amount\": {\n                    \"min\": \"XX.YY\",\n                    \"max\": \"NN.ZZ\"\n                }\n            },\n            \"currency_code\": \"USD\",\n            \"multiuse\": false,\n            \"account_number_format\": \"UAB\",\n            \"upc\": \"UPC\"\n        },\n        \"balance\": XX.YY,\n        \"status\": \"STATUS\",\n        \"account_number\": \"UNIQUE_ACCOUNT_NUMBER\",\n        \"payments\": [\n            \"payment\": {\n                \"id\": \"PAYMENT_ID\",\n                \"amount\": XX.YY,\n                \"merchant_id\": \"MERCHANT_ID\",\n                \"store_id\": \"STORE_ID\" ,\n                \"confirmation_number\": \"CONFIRMATION_NUMBER\",\n                \"timestamp\": \"YYYY-MM-DD HH:MM:SS\"\n            },\n            ...\n        ]\n    }\n}",
+        "creationDate": 1403673339249,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "close-an-account-response-model",
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "name": "Close an Account response model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b0a705fcc325a4/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b0a705fcc325a4"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8"
+          }
+        },
+        "id": "53aa5afbe4b0a705fcc325a4",
+        "body": "{\n    \"account\": {\n        \"id\": \"904ce2b1e432e07032ab6c47db9a2a6e\",\n        \"settings\": {\n            \"payments\": {\n                \"amount\": {\n                    \"min\": XX.YY,\n                    \"max\": NN.ZZ\n                }\n            },\n            \"currency_code\": \"USD\",\n            \"multiuse\": false,\n            \"account_number_format\": \"UAB\",\n            \"upc\": \"UPC\"\n        },\n        \"balance\": XX.YY,\n        \"status\": \"closed\",\n        \"account_number\": \"UNIQUE_ACCOUNT_NUMBER\",\n        \"payments\": [\n            ...\n        ]\n    }\n}",
+        "creationDate": 1403673339304,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "obtain-information-about-merchants-stores-where-payments-can-be-made-response-model",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "Obtain information about merchants' stores where payments can be made response model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b0a705fcc325a5/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b0a705fcc325a5"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8"
+          }
+        },
+        "id": "53aa5afbe4b0a705fcc325a5",
+        "body": "{\n    \"merchants\": [\n        {\n            \"id\": \"MERCHANT_ID\",\n            \"name\": \"MERCHANT NAME\",\n            \"logo_url\": \"LOGO_URL\",\n            \"stores\": [\n                {\n                    \"id\": \"STORE_ID\",\n                    \"address\": {\n                        \"address1\": \"ADDRESS1\",\n                        \"address2\": \"ADDRESS2\",\n                        \"city\": \"CITY\",\n                        \"county\": \"COUNTY\",\n                        \"state\": \"STATE\",\n                        \"zip_code\": \"ZIP-CODE\",\n                        \"country\": \"COUNTRY\",\n                        \"formatted_address\": \"FORMATTED ADDRESS\"\n                    },\n                    \"hours\": \"WORKING HOURS\",\n                    \"phones\": \"PHONES\",\n                    \"coordinates\": {\n                        \"latitude\": \"XX.XXXXXXXX\",\n                        \"longitude\": \"YY.YYYYYYYY\"\n                    }\n                },\n                ...\n            ]\n        }\n    ]\n}",
+        "creationDate": 1403673339356,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "open-an-account-input-model",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "Open an Account input model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b0f2c975470f5c/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b0f2c975470f5c"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8"
+          }
+        },
+        "id": "53aa5afbe4b0f2c975470f5c",
+        "body": "{\n  \"account\": {\n    \"settings\": {\n      \"payments\": {\n        \"amount\": {\n          \"fixed\": 19.99\n        }\n      },\n      \"upc\": \"156784567125\"\n    },\n    \"biller_id\": \"a51f93e1d0bf6727c398c921a67ea861\",\n    \"external_account_id\": \"AM77489432-7685-12\"\n  }\n}",
+        "creationDate": 1403673339403,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "open-an-account-response-model",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Open an Account response model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b008bb2ef871b6/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b008bb2ef871b6"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8"
+          }
+        },
+        "id": "53aa5afbe4b008bb2ef871b6",
+        "body": "{\n  \"account\": {\n    \"id\": \"904ce2b1e432e07032ab6c47db9a2a6e\",\n    \"settings\": {\n      \"payments\": {\n        \"amount\": {\n          \"fixed\": \"19.99\"\n        }\n      },\n      \"currency_code\": \"USD\",\n      \"multiuse\": false,\n      \"expiration_date\": null,\n      \"account_number_format\": \"UAB\",\n      \"upc\": \"156784567125\"\n    },\n    \"external_account_id\": \"AM77489432-7685-12\",\n    \"balance\": 0,\n    \"status\": \"open\",\n    \"account_number\": \"156784567120006371680000000038\",\n    \"payments\": []\n  }\n}",
+        "creationDate": 1403673339453,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "reopen-an-account-response-model",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Reopen an Account response model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b051a76d241552/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b051a76d241552"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8"
+          }
+        },
+        "id": "53aa5afbe4b051a76d241552",
+        "body": "{\n    \"account\": {\n        ...\n        \"status\": \"open\",\n        ...\n    }\n}",
+        "creationDate": 1403673339489,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "suspend-an-account-response-model",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Suspend an account response model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b008bb2ef871b7/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b008bb2ef871b7"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8"
+          }
+        },
+        "id": "53aa5afbe4b008bb2ef871b7",
+        "body": "{\n    \"account\": {\n        ...\n        \"status\": \"suspended\",\n        ...\n    }\n}",
+        "creationDate": 1403673339554,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Jul 10 12:04:37 UTC 2014",
+  "website": "https://cashtie.com/",
+  "endpoints": {
+    "took": 412,
+    "total": 7,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403673341122,
+        "code": 200,
+        "method": "GET",
+        "description": "In order to let your consumers make a payment for a particular Account, your system should be able to provide information about stores where payments are accepted. Cashtie™ API provides this information via Merchant resource:",
+        "creationDate": 1403673339615,
+        "slugifiedPrimary": "-get-merchants",
+        "routeregex": "/merchants",
+        "route": "/merchants",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "obtain-information-about-merchants-stores-where-payments-can-be-made-response-model",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 18,
+          "name": "Obtain information about merchants' stores where payments can be made response model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b0a705fcc325a5/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b0a705fcc325a5"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8"
+            }
+          },
+          "id": "53aa5afbe4b0a705fcc325a5",
+          "body": "{\n    \"merchants\": [\n        {\n            \"id\": \"MERCHANT_ID\",\n            \"name\": \"MERCHANT NAME\",\n            \"logo_url\": \"LOGO_URL\",\n            \"stores\": [\n                {\n                    \"id\": \"STORE_ID\",\n                    \"address\": {\n                        \"address1\": \"ADDRESS1\",\n                        \"address2\": \"ADDRESS2\",\n                        \"city\": \"CITY\",\n                        \"county\": \"COUNTY\",\n                        \"state\": \"STATE\",\n                        \"zip_code\": \"ZIP-CODE\",\n                        \"country\": \"COUNTRY\",\n                        \"formatted_address\": \"FORMATTED ADDRESS\"\n                    },\n                    \"hours\": \"WORKING HOURS\",\n                    \"phones\": \"PHONES\",\n                    \"coordinates\": {\n                        \"latitude\": \"XX.XXXXXXXX\",\n                        \"longitude\": \"YY.YYYYYYYY\"\n                    }\n                },\n                ...\n            ]\n        }\n    ]\n}",
+          "creationDate": 1403673339356,
+          "status": "ACTIVE"
+        },
+        "name": "*Get merchants",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afbe4b00287471a25a4/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afbe4b00287471a25a4/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b0a705fcc325a5"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afbe4b00287471a25a4"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afbe4b00287471a25a4/parameters/"
+          }
+        },
+        "id": "53aa5afbe4b00287471a25a4",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 20,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "account_id",
+              "condition": "REQUIRED",
+              "updateDate": 1403673339904,
+              "array": false,
+              "name": "account_id",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afbe4b0f2c975470f5d"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afbe4b0f2c975470f5d/routeparameters/53aa5afbe4b0596140341472"
+                }
+              },
+              "id": "53aa5afbe4b0596140341472",
+              "type": "STRING",
+              "creationDate": 1403673339769,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "payment_id",
+              "condition": "REQUIRED",
+              "updateDate": 1403673340034,
+              "array": false,
+              "name": "payment_id",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afbe4b0f2c975470f5d"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afbe4b0f2c975470f5d/routeparameters/53aa5afbe4b0a798dbd1b42a"
+                }
+              },
+              "id": "53aa5afbe4b0a798dbd1b42a",
+              "type": "STRING",
+              "creationDate": 1403673339802,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403673341164,
+        "code": 200,
+        "method": "GET",
+        "description": "Once you receive a webhook notification that a payment is made, your application should send a request to the Cashtie™ API to check the amount of payment:",
+        "creationDate": 1403673339700,
+        "slugifiedPrimary": "check-amount-of-payment",
+        "routeregex": "/accounts/([^/?]+)/payments/([^/?]+)",
+        "route": "/accounts/{account_id}/payments/{payment_id}",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "check-an-account-status-and-balance-response-model",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 50,
+          "name": "Check an Account status and balance response model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b008bb2ef871b5/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b008bb2ef871b5"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8"
+            }
+          },
+          "id": "53aa5afbe4b008bb2ef871b5",
+          "body": "{\n    \"account\": {\n        \"id\": \"904ce2b1e432e07032ab6c47db9a2a6e\",\n        \"settings\": {\n            \"payments\": {\n                \"amount\": {\n                    \"min\": \"XX.YY\",\n                    \"max\": \"NN.ZZ\"\n                }\n            },\n            \"currency_code\": \"USD\",\n            \"multiuse\": false,\n            \"account_number_format\": \"UAB\",\n            \"upc\": \"UPC\"\n        },\n        \"balance\": XX.YY,\n        \"status\": \"STATUS\",\n        \"account_number\": \"UNIQUE_ACCOUNT_NUMBER\",\n        \"payments\": [\n            \"payment\": {\n                \"id\": \"PAYMENT_ID\",\n                \"amount\": XX.YY,\n                \"merchant_id\": \"MERCHANT_ID\",\n                \"store_id\": \"STORE_ID\" ,\n                \"confirmation_number\": \"CONFIRMATION_NUMBER\",\n                \"timestamp\": \"YYYY-MM-DD HH:MM:SS\"\n            },\n            ...\n        ]\n    }\n}",
+          "creationDate": 1403673339249,
+          "status": "ACTIVE"
+        },
+        "name": "Check amount of payment",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afbe4b0f2c975470f5d/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afbe4b0f2c975470f5d/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b008bb2ef871b5"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afbe4b0f2c975470f5d"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afbe4b0f2c975470f5d/parameters/"
+          }
+        },
+        "id": "53aa5afbe4b0f2c975470f5d",
+        "parameters": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 40,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "account_id",
+              "condition": "REQUIRED",
+              "updateDate": 1403673340287,
+              "array": false,
+              "name": "account_id",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b0f2c975470f5e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b0f2c975470f5e/routeparameters/53aa5afce4b0b60946a303ab"
+                }
+              },
+              "id": "53aa5afce4b0b60946a303ab",
+              "type": "STRING",
+              "creationDate": 1403673340187,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403673341132,
+        "code": 200,
+        "method": "GET",
+        "description": "Any time your application needs to check the Account status, balance or related payments, the following request should be made:",
+        "creationDate": 1403673340117,
+        "slugifiedPrimary": "check-an-account-status-and-balance",
+        "routeregex": "/accounts/([^/?]+)",
+        "route": "/accounts/{account_id}",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "check-an-account-status-and-balance-response-model",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 15,
+          "name": "Check an Account status and balance response model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b008bb2ef871b5/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b008bb2ef871b5"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8"
+            }
+          },
+          "id": "53aa5afbe4b008bb2ef871b5",
+          "body": "{\n    \"account\": {\n        \"id\": \"904ce2b1e432e07032ab6c47db9a2a6e\",\n        \"settings\": {\n            \"payments\": {\n                \"amount\": {\n                    \"min\": \"XX.YY\",\n                    \"max\": \"NN.ZZ\"\n                }\n            },\n            \"currency_code\": \"USD\",\n            \"multiuse\": false,\n            \"account_number_format\": \"UAB\",\n            \"upc\": \"UPC\"\n        },\n        \"balance\": XX.YY,\n        \"status\": \"STATUS\",\n        \"account_number\": \"UNIQUE_ACCOUNT_NUMBER\",\n        \"payments\": [\n            \"payment\": {\n                \"id\": \"PAYMENT_ID\",\n                \"amount\": XX.YY,\n                \"merchant_id\": \"MERCHANT_ID\",\n                \"store_id\": \"STORE_ID\" ,\n                \"confirmation_number\": \"CONFIRMATION_NUMBER\",\n                \"timestamp\": \"YYYY-MM-DD HH:MM:SS\"\n            },\n            ...\n        ]\n    }\n}",
+          "creationDate": 1403673339249,
+          "status": "ACTIVE"
+        },
+        "name": "Check an Account status and balance",
+        "routeindex": 2,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b0f2c975470f5e/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b0f2c975470f5e/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b008bb2ef871b5"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b0f2c975470f5e"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b0f2c975470f5e/parameters/"
+          }
+        },
+        "id": "53aa5afce4b0f2c975470f5e",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 8,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "account_id",
+              "condition": "REQUIRED",
+              "updateDate": 1403673340554,
+              "array": false,
+              "name": "account_id",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b008bb2ef871bf"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b008bb2ef871bf/routeparameters/53aa5afce4b0a798dbd1b42b"
+                }
+              },
+              "id": "53aa5afce4b0a798dbd1b42b",
+              "type": "STRING",
+              "creationDate": 1403673340451,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403673341122,
+        "code": 200,
+        "method": "PUT",
+        "description": "An Account can be closed at any time. To close an Account, use the following request:",
+        "creationDate": 1403673340388,
+        "slugifiedPrimary": "close-an-account",
+        "routeregex": "/accounts/([^/?]+)/close",
+        "route": "/accounts/{account_id}/close",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "close-an-account-response-model",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 14,
+          "name": "Close an Account response model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b0a705fcc325a4/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b0a705fcc325a4"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8"
+            }
+          },
+          "id": "53aa5afbe4b0a705fcc325a4",
+          "body": "{\n    \"account\": {\n        \"id\": \"904ce2b1e432e07032ab6c47db9a2a6e\",\n        \"settings\": {\n            \"payments\": {\n                \"amount\": {\n                    \"min\": XX.YY,\n                    \"max\": NN.ZZ\n                }\n            },\n            \"currency_code\": \"USD\",\n            \"multiuse\": false,\n            \"account_number_format\": \"UAB\",\n            \"upc\": \"UPC\"\n        },\n        \"balance\": XX.YY,\n        \"status\": \"closed\",\n        \"account_number\": \"UNIQUE_ACCOUNT_NUMBER\",\n        \"payments\": [\n            ...\n        ]\n    }\n}",
+          "creationDate": 1403673339304,
+          "status": "ACTIVE"
+        },
+        "name": "Close an Account",
+        "routeindex": 3,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b008bb2ef871bf/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b008bb2ef871bf/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b0a705fcc325a4"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b008bb2ef871bf"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b008bb2ef871bf/parameters/"
+          }
+        },
+        "id": "53aa5afce4b008bb2ef871bf",
+        "parameters": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403673341124,
+        "code": 200,
+        "method": "POST",
+        "description": "An Account is represented by unique digital Account number issued by Cashtie™ upon request by your application. To open an Account with a fixed amount the following request should be sent:",
+        "creationDate": 1403673340639,
+        "slugifiedPrimary": "open-an-account",
+        "routeregex": "/accounts",
+        "route": "/accounts",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "open-an-account-response-model",
+          "headers": {
+            "took": 19,
+            "total": 0,
+            "data": []
+          },
+          "took": 31,
+          "name": "Open an Account response model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b008bb2ef871b6/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b008bb2ef871b6"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8"
+            }
+          },
+          "id": "53aa5afbe4b008bb2ef871b6",
+          "body": "{\n  \"account\": {\n    \"id\": \"904ce2b1e432e07032ab6c47db9a2a6e\",\n    \"settings\": {\n      \"payments\": {\n        \"amount\": {\n          \"fixed\": \"19.99\"\n        }\n      },\n      \"currency_code\": \"USD\",\n      \"multiuse\": false,\n      \"expiration_date\": null,\n      \"account_number_format\": \"UAB\",\n      \"upc\": \"156784567125\"\n    },\n    \"external_account_id\": \"AM77489432-7685-12\",\n    \"balance\": 0,\n    \"status\": \"open\",\n    \"account_number\": \"156784567120006371680000000038\",\n    \"payments\": []\n  }\n}",
+          "creationDate": 1403673339453,
+          "status": "ACTIVE"
+        },
+        "name": "Open an Account",
+        "routeindex": 4,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b00287471a25a6/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b00287471a25a6/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b008bb2ef871b6"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b00287471a25a6"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b00287471a25a6/parameters/"
+          }
+        },
+        "id": "53aa5afce4b00287471a25a6",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403673341162,
+        "code": 200,
+        "method": "PUT",
+        "description": "Any suspended Account can be reopened. To reopen suspended Account, use the following request:",
+        "creationDate": 1403673340731,
+        "slugifiedPrimary": "reopen-an-account",
+        "routeregex": "/accounts/<account_id>/reopen",
+        "route": "/accounts/<account_id>/reopen",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "reopen-an-account-response-model",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 13,
+          "name": "Reopen an Account response model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b051a76d241552/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b051a76d241552"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8"
+            }
+          },
+          "id": "53aa5afbe4b051a76d241552",
+          "body": "{\n    \"account\": {\n        ...\n        \"status\": \"open\",\n        ...\n    }\n}",
+          "creationDate": 1403673339489,
+          "status": "ACTIVE"
+        },
+        "name": "Reopen an Account",
+        "routeindex": 5,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b00287471a25a7/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b00287471a25a7/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b051a76d241552"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b00287471a25a7"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b00287471a25a7/parameters/"
+          }
+        },
+        "id": "53aa5afce4b00287471a25a7",
+        "parameters": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 41,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "account_id",
+              "condition": "REQUIRED",
+              "updateDate": 1403673340991,
+              "array": false,
+              "name": "account_id",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b051a76d241558"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b051a76d241558/routeparameters/53aa5afce4b0a9b1348db44d"
+                }
+              },
+              "id": "53aa5afce4b0a9b1348db44d",
+              "type": "STRING",
+              "creationDate": 1403673340885,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403673341131,
+        "code": 200,
+        "method": "PUT",
+        "description": "It's possible to suspend an opened Account. Suspended Account can't accept payment transaction(s). To suspend an Account, use the following request:",
+        "creationDate": 1403673340801,
+        "slugifiedPrimary": "suspend-an-account",
+        "routeregex": "/accounts/([^/?]+)/suspend",
+        "route": "/accounts/{account_id}/suspend",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "suspend-an-account-response-model",
+          "headers": {
+            "took": 19,
+            "total": 0,
+            "data": []
+          },
+          "took": 49,
+          "name": "Suspend an account response model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b008bb2ef871b7/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b008bb2ef871b7"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8"
+            }
+          },
+          "id": "53aa5afbe4b008bb2ef871b7",
+          "body": "{\n    \"account\": {\n        ...\n        \"status\": \"suspended\",\n        ...\n    }\n}",
+          "creationDate": 1403673339554,
+          "status": "ACTIVE"
+        },
+        "name": "Suspend an Account",
+        "routeindex": 6,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b051a76d241558/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b051a76d241558/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/53aa5afbe4b008bb2ef871b7"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b051a76d241558"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/53aa5afce4b051a76d241558/parameters/"
+          }
+        },
+        "id": "53aa5afce4b051a76d241558",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Cashtie™ is a powerful web service that links retail cash payments to software applications. You will be able to provide new in-lane bill payment solutions to your client base and integrate cash payments into your existing applications with just a few lines of code.",
+  "groups": {
+    "took": 5,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:15:38 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 7,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/astronode"
+    },
+    "endpoints": {
+      "total": 7,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa28b5e4b0b60946a25c50/apis/53aa5afae4b008bb2ef871b3/versions/53aa5afae4b0b60946a303a8/authentication"
+    }
+  },
+  "id": "53aa5afae4b0b60946a303a8",
+  "status": "ACTIVE"
+}

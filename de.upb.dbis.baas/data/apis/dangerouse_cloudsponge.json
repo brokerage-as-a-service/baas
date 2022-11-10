@@ -1,0 +1,672 @@
+{
+  "models": {
+    "took": 143,
+    "total": 7,
+    "data": [
+      {
+        "slugifiedPrimary": "addressbook",
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "name": "AddressBook",
+        "format": "JSON",
+        "description": "CloudSponge returns the Contacts result object.",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b00287471a2dfc/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b00287471a2dfc"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24"
+          }
+        },
+        "id": "53aa6133e4b00287471a2dfc",
+        "body": "{\n  \"echo\":null,\n  \"user_id\":\"myUserId_0003\",\n  \"import_id\":1126,\n  \"contacts_owner\":\n  {\n    \"first_name\":\"Joe\", \n    \"last_name\":\"Smith\", \n    \"email\":[{\"address\":\"joe@example.com\"}]\n  },\n  \"contacts\":\n  [\n    {\n      \"first_name\":\"John\",\n      \"last_name\":\"Doe\",\n      \"phone\":\n      [\n        {\"number\":\"555-1234\",\"type\":\"Home\"},\n        {\"number\":\"555-2468\",\"type\":\"Work\"},\n      ],\n      \"email\":\n      [\n        {\"address\":\"johndoe@nowhere.com\",\"type\":\"Email 1\"},\n        {\"address\":\"second@email.com\",\"type\":\"Email 2\"}\n      ]\n    },\n    {\n      \"first_name\":\"Jane\",\n      \"last_name\":\"Smith\",\n      \"phone\":[{\"number\":\"555.5678\",\"type\":\"Home\"}],\n      \"email\":[{\"address\":\"janesmith@nowhere.com\",\"type\":\"Email 1\"}],\n      \"addresses\":\n      [\n        {\n          \"street\":\"3450 Sacramento St., #510\",\n          \"city\":\"San Francisco\",\n          \"region\":\"CA\",\n          \"country\":\"US\",\n          \"postal_code\":\"94118\",\n          \"formatted\":\"3450 Sacramento St., #510 San Francisco, CA 94118\"\n        }\n      ]\n    }\n  ]\n}",
+        "creationDate": 1403674931036,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "consent",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Consent",
+        "format": "JSON",
+        "description": "Returns a result object, including the import_id to use to fetch the contacts later and a URL for the user consent page, which needs to be displayed to the user in the popup window.",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b0f2c975471853/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b0f2c975471853"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24"
+          }
+        },
+        "id": "53aa6133e4b0f2c975471853",
+        "body": "{\n  \"status\": \"success\",\n  \"url\": \"https://api.login.yahoo.com/oauth/v2/request_auth?oauth_token=d\",\n  \"import_id\": 1126,\n  \"user_id\": \"myUserId_0003\",\n  \"echo\": \"echo123\"\n}",
+        "creationDate": 1403674931089,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "contact",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Contact",
+        "format": "JSON",
+        "description": "One contact returned in the AddressBook",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b008bb2ef87b28/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b008bb2ef87b28"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24"
+          }
+        },
+        "id": "53aa6133e4b008bb2ef87b28",
+        "body": "{\n      \"first_name\":\"John\",\n      \"last_name\":\"Doe\",\n      \"phone\":\n      [\n        {\"number\":\"555-1234\",\"type\":\"Home\"},\n        {\"number\":\"555-2468\",\"type\":\"Work\"},\n      ],\n      \"email\":\n      [\n        {\"address\":\"johndoe@nowhere.com\",\"type\":\"Email 1\"},\n        {\"address\":\"second@email.com\",\"type\":\"Email 2\"}\n      ]\n    }",
+        "creationDate": 1403674931139,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "contactemail",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "ContactEmail",
+        "format": "JSON",
+        "description": "One email returned in the Contact model",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b0f2c975471854/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b0f2c975471854"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24"
+          }
+        },
+        "id": "53aa6133e4b0f2c975471854",
+        "body": "{\"address\":\"johndoe@nowhere.com\",\"type\":\"Email 1\"},",
+        "creationDate": 1403674931190,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "contactphone",
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "name": "ContactPhone",
+        "format": "JSON",
+        "description": "One phone returned in the Contact model",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b0f2c975471855/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b0f2c975471855"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24"
+          }
+        },
+        "id": "53aa6133e4b0f2c975471855",
+        "body": "{\n  \"number\": \"555-1234\",\n  \"type\": \"Home\"\n}",
+        "creationDate": 1403674931239,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "event",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "Event",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b0a705fcc32ecc/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b0a705fcc32ecc"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24"
+          }
+        },
+        "id": "53aa6133e4b0a705fcc32ecc",
+        "body": "{\n  \"value\": 0,\n  \"status\": \"COMPLETED\",\n  \"event_type\": \"INITIALIZING\"\n}",
+        "creationDate": 1403674931292,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "eventresults",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "EventResults",
+        "format": "JSON",
+        "description": "The current Event result object from CloudSponge",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b0f2c975471856/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b0f2c975471856"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24"
+          }
+        },
+        "id": "53aa6133e4b0f2c975471856",
+        "body": "{\n  \"events\": [\n    {\n      \"value\": 0,\n      \"status\": \"COMPLETED\",\n      \"event_type\": \"INITIALIZING\"\n    },\n    {\n      \"value\": 2,\n      \"status\": \"COMPLETED\",\n      \"event_type\": \"GATHERING\"\n    },\n    {\n      \"value\": 0,\n      \"status\": \"COMPLETED\",\n      \"event_type\": \"COMPLETE\"\n    }\n  ],\n  \"echo\": null,\n  \"user_id\": \"myUserId_0003\",\n  \"import_id\": 1126\n}",
+        "creationDate": 1403674931338,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Fri Oct 24 23:10:23 UTC 2014",
+  "website": "http://www.cloudsponge.com?utm_source=mashape&utm_medium=partner&utm_campaign=integrator",
+  "endpoints": {
+    "took": 236,
+    "total": 3,
+    "data": [
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403674932399,
+        "code": 200,
+        "method": "POST",
+        "description": "Your application initiates an address book import by calling the “Begin Import” URL, specifying the user authentication method, the address book source, plus any other additional information required. The API returns a result object containing a unique identifier for subsequent calls to the API, and the browser URL you'll need to display to your user in a new browser window.",
+        "creationDate": 1403674931393,
+        "slugifiedPrimary": "step-1-get-the-users-permission",
+        "routeregex": "/begin_import/user_consent.json",
+        "route": "/begin_import/user_consent.json",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "consent",
+          "headers": {
+            "took": 19,
+            "total": 0,
+            "data": []
+          },
+          "took": 51,
+          "name": "Consent",
+          "format": "JSON",
+          "description": "Returns a result object, including the import_id to use to fetch the contacts later and a URL for the user consent page, which needs to be displayed to the user in the popup window.",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b0f2c975471853/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b0f2c975471853"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24"
+            }
+          },
+          "id": "53aa6133e4b0f2c975471853",
+          "body": "{\n  \"status\": \"success\",\n  \"url\": \"https://api.login.yahoo.com/oauth/v2/request_auth?oauth_token=d\",\n  \"import_id\": 1126,\n  \"user_id\": \"myUserId_0003\",\n  \"echo\": \"echo123\"\n}",
+          "creationDate": 1403674931089,
+          "status": "ACTIVE"
+        },
+        "name": "Step 1: Get The User's Permission",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6133e4b0f2c975471857/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6133e4b0f2c975471857/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b0f2c975471853"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6133e4b0f2c975471857"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6133e4b0f2c975471857/parameters/"
+          }
+        },
+        "id": "53aa6133e4b0f2c975471857",
+        "parameters": {
+          "took": 25,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "echo",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "echo",
+              "description": "Any customer defined string data to be returned in the response.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6133e4b0f2c975471857"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6133e4b0f2c975471857/parameters/53aa6133e4b008bb2ef87b29"
+                }
+              },
+              "id": "53aa6133e4b008bb2ef87b29",
+              "type": "STRING",
+              "creationDate": 1403674931678,
+              "value": "echo123",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "service",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "service",
+              "description": "Contact source name (FACEBOOK, LINKEDIN, GMAIL, YAHOO, WINDOWSLIVE or GMAIL)",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6133e4b0f2c975471857"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6133e4b0f2c975471857/parameters/53aa6133e4b0f2c975471858"
+                }
+              },
+              "id": "53aa6133e4b0f2c975471858",
+              "type": "STRING",
+              "creationDate": 1403674931505,
+              "value": "GMAIL",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "user_id",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "user_id",
+              "description": "Any unique identifier you use to identify a user.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6133e4b0f2c975471857"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6133e4b0f2c975471857/parameters/53aa6133e4b00287471a2dff"
+                }
+              },
+              "id": "53aa6133e4b00287471a2dff",
+              "type": "STRING",
+              "creationDate": 1403674931596,
+              "value": "myUserId_0003",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 20,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "echo",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "echo",
+              "description": "Any customer defined string data to be returned in the response.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6133e4b0f2c975471859"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6133e4b0f2c975471859/routeparameters/53aa6134e4b008bb2ef87b2b"
+                }
+              },
+              "id": "53aa6134e4b008bb2ef87b2b",
+              "type": "STRING",
+              "creationDate": 1403674932089,
+              "value": "echo123",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "import_id",
+              "updateDate": 1403674931956,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "import_id",
+              "description": "import_id value returned from the call to begin_import in Step 1.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6133e4b0f2c975471859"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6133e4b0f2c975471859/routeparameters/53aa6133e4b0a705fcc32ecf"
+                }
+              },
+              "id": "53aa6133e4b0a705fcc32ecf",
+              "type": "STRING",
+              "creationDate": 1403674931844,
+              "value": "1126",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403674932452,
+        "code": 200,
+        "method": "GET",
+        "description": "After the consent URL is displayed to the user (and accepted), a contact import is initiated, and your application must monitor the CloudSponge events URL. Use the import_id value that was returned from the call to begin_import to identify the import request to CloudSponge when fetching events.",
+        "creationDate": 1403674931739,
+        "slugifiedPrimary": "step-2-wait-for-the-import-to-finish",
+        "routeregex": "/events.json/([^/?]+)",
+        "route": "/events.json/{import_id}",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "eventresults",
+          "headers": {
+            "took": 19,
+            "total": 0,
+            "data": []
+          },
+          "took": 34,
+          "name": "EventResults",
+          "format": "JSON",
+          "description": "The current Event result object from CloudSponge",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b0f2c975471856/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b0f2c975471856"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24"
+            }
+          },
+          "id": "53aa6133e4b0f2c975471856",
+          "body": "{\n  \"events\": [\n    {\n      \"value\": 0,\n      \"status\": \"COMPLETED\",\n      \"event_type\": \"INITIALIZING\"\n    },\n    {\n      \"value\": 2,\n      \"status\": \"COMPLETED\",\n      \"event_type\": \"GATHERING\"\n    },\n    {\n      \"value\": 0,\n      \"status\": \"COMPLETED\",\n      \"event_type\": \"COMPLETE\"\n    }\n  ],\n  \"echo\": null,\n  \"user_id\": \"myUserId_0003\",\n  \"import_id\": 1126\n}",
+          "creationDate": 1403674931338,
+          "status": "ACTIVE"
+        },
+        "name": "Step 2: Wait For The Import To Finish",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6133e4b0f2c975471859/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6133e4b0f2c975471859/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b0f2c975471856"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6133e4b0f2c975471859"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6133e4b0f2c975471859/parameters/"
+          }
+        },
+        "id": "53aa6133e4b0f2c975471859",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 21,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "echo",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "echo",
+              "description": "Any customer defined string data to be returned in the response.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6134e4b008bb2ef87b2c"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6134e4b008bb2ef87b2c/routeparameters/53aa6134e4b0f2c97547185c"
+                }
+              },
+              "id": "53aa6134e4b0f2c97547185c",
+              "type": "STRING",
+              "creationDate": 1403674932463,
+              "value": "echo123",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "import_id",
+              "updateDate": 1403674932330,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "import_id",
+              "description": "import_id value returned from the call to begin_import in Step 1.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6134e4b008bb2ef87b2c"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6134e4b008bb2ef87b2c/routeparameters/53aa6134e4b0a9b1348dbe53"
+                }
+              },
+              "id": "53aa6134e4b0a9b1348dbe53",
+              "type": "STRING",
+              "creationDate": 1403674932215,
+              "value": "1126",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403674932360,
+        "code": 200,
+        "method": "GET",
+        "description": "When the COMPLETE event is received with the COMPLETED status in Step 2, your application should retrieve the contacts immediately. After a few minutes, they will be deleted from CloudSponge.",
+        "creationDate": 1403674932149,
+        "slugifiedPrimary": "step-3-download-the-address-book",
+        "routeregex": "/contacts.json/([^/?]+)",
+        "route": "/contacts.json/{import_id}",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "addressbook",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 39,
+          "name": "AddressBook",
+          "format": "JSON",
+          "description": "CloudSponge returns the Contacts result object.",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b00287471a2dfc/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b00287471a2dfc"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24"
+            }
+          },
+          "id": "53aa6133e4b00287471a2dfc",
+          "body": "{\n  \"echo\":null,\n  \"user_id\":\"myUserId_0003\",\n  \"import_id\":1126,\n  \"contacts_owner\":\n  {\n    \"first_name\":\"Joe\", \n    \"last_name\":\"Smith\", \n    \"email\":[{\"address\":\"joe@example.com\"}]\n  },\n  \"contacts\":\n  [\n    {\n      \"first_name\":\"John\",\n      \"last_name\":\"Doe\",\n      \"phone\":\n      [\n        {\"number\":\"555-1234\",\"type\":\"Home\"},\n        {\"number\":\"555-2468\",\"type\":\"Work\"},\n      ],\n      \"email\":\n      [\n        {\"address\":\"johndoe@nowhere.com\",\"type\":\"Email 1\"},\n        {\"address\":\"second@email.com\",\"type\":\"Email 2\"}\n      ]\n    },\n    {\n      \"first_name\":\"Jane\",\n      \"last_name\":\"Smith\",\n      \"phone\":[{\"number\":\"555.5678\",\"type\":\"Home\"}],\n      \"email\":[{\"address\":\"janesmith@nowhere.com\",\"type\":\"Email 1\"}],\n      \"addresses\":\n      [\n        {\n          \"street\":\"3450 Sacramento St., #510\",\n          \"city\":\"San Francisco\",\n          \"region\":\"CA\",\n          \"country\":\"US\",\n          \"postal_code\":\"94118\",\n          \"formatted\":\"3450 Sacramento St., #510 San Francisco, CA 94118\"\n        }\n      ]\n    }\n  ]\n}",
+          "creationDate": 1403674931036,
+          "status": "ACTIVE"
+        },
+        "name": "Step 3: Download The Address Book",
+        "routeindex": 2,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6134e4b008bb2ef87b2c/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6134e4b008bb2ef87b2c/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/53aa6133e4b00287471a2dfc"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6134e4b008bb2ef87b2c"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/53aa6134e4b008bb2ef87b2c/parameters/"
+          }
+        },
+        "id": "53aa6134e4b008bb2ef87b2c",
+        "parameters": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Your business grows faster when it's easy for your users to tell their friends about you. CloudSponge is a tool that makes it easy to access your users' address books from multiple sources like Gmail (Google Contacts API), Yahoo's AddressBook, AOL Poco, Outlook.com and others.",
+  "groups": {
+    "took": 3,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:42:10 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 7,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/astronode"
+    },
+    "endpoints": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e54e4b051a76d23da64/apis/53aa6132e4b0a705fcc32ec9/versions/53aa6132e4b008bb2ef87b24/authentication"
+    }
+  },
+  "id": "53aa6132e4b008bb2ef87b24",
+  "status": "ACTIVE"
+}

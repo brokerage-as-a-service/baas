@@ -1,0 +1,536 @@
+{
+  "models": {
+    "took": 32,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "list-dictionaries-model",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "list dictionaries Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/models/53aa597ce4b00287471a2294/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/models/53aa597ce4b00287471a2294"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca"
+          }
+        },
+        "id": "53aa597ce4b00287471a2294",
+        "body": "{\n  \"success\": {\n    \"total\": 6\n  },\n  \"contents\": {\n    \"dictionaries\": {\n      \"umadraslexicon\": \"University of Madras Lexicon\",\n      \"fabricius\": \"J.P.Fabricius Tamil and English Dictionary\",\n      \"winslow\": \"Miron Winslow - A Comprehensive Tamil and English Dictionary\",\n      \"mcalpin\": \"David McAlpin - A Core vocabulary for Tamil\",\n      \"agaramuthali\": \"தமிழ் தமிழ் அகரமுதலி\",\n      \"agarathi\": \"agarathi.com dictionary\"\n    }\n  }\n}",
+        "creationDate": 1403672956985,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "search-model",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "search Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/models/53aa597de4b0a705fcc32295/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/models/53aa597de4b0a705fcc32295"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca"
+          }
+        },
+        "id": "53aa597de4b0a705fcc32295",
+        "body": "{\n  \"contents\": [\n    {\n      \"dictionary\": \"University of Madras Lexicon\",\n      \"word\": \"தமிழ்\",\n      \"description\": \" n. perh. தமி&sup1;. cf. dramiḍa. 1.Sweetness, melodiousness; இனிமை. (பிங்.) 2.Refined quality; நீர்மை. (பிங்.) 3. Tamil language, being divided into iyaṟ-ṟamiḻ, icai-t-tamiḻ,nāṭaka-t-tamiḻ; இயற்றமிழ், இசைத்தமிழ், நாடகத்தமிழ் என மூவகையாக வழங்கும் மொழி. 4. Tamilliterature, Tamil work; தமிழ் நூல். 5. TheTamils; தமிழர். அருந்தமி ழாற்ற லறிந்திலர் (சிலப்.26, 161). 6. The Tamil country; தமிழ்நாடு. தண்டமிழ் வினைஞர் (மணி. 19, 109).\"\n    }\n  ],\n  \"success\": {\n    \"total\": 1\n  }\n}",
+        "creationDate": 1403672957035,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:39:40 UTC 2014",
+  "website": "http://agarathi.com/",
+  "endpoints": {
+    "took": 224,
+    "total": 3,
+    "data": [
+      {
+        "headers": {
+          "took": 14,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "x-agarathi-api-secret",
+              "condition": "REQUIRED",
+              "name": "X-Agarathi-Api-Secret",
+              "description": "Agrathi API key ( Get yours here http://agarathi.com/api/dictionary )",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/53aa597de4b0a705fcc32297"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/53aa597de4b0a705fcc32297/headers/582243d3e4b0a5437b7cbb65"
+                }
+              },
+              "id": "582243d3e4b0a5437b7cbb65",
+              "type": "STRING",
+              "creationDate": 1478640595388,
+              "value": "",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "routeparameters": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403672957528,
+        "code": 200,
+        "method": "GET",
+        "description": "List the available Dictionaries",
+        "creationDate": 1403672957153,
+        "slugifiedPrimary": "list-dictionaries",
+        "routeregex": "/dictionary/list",
+        "route": "/dictionary/list",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "list-dictionaries-model",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 19,
+          "name": "list dictionaries Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/models/53aa597ce4b00287471a2294/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/models/53aa597ce4b00287471a2294"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca"
+            }
+          },
+          "id": "53aa597ce4b00287471a2294",
+          "body": "{\n  \"success\": {\n    \"total\": 6\n  },\n  \"contents\": {\n    \"dictionaries\": {\n      \"umadraslexicon\": \"University of Madras Lexicon\",\n      \"fabricius\": \"J.P.Fabricius Tamil and English Dictionary\",\n      \"winslow\": \"Miron Winslow - A Comprehensive Tamil and English Dictionary\",\n      \"mcalpin\": \"David McAlpin - A Core vocabulary for Tamil\",\n      \"agaramuthali\": \"தமிழ் தமிழ் அகரமுதலி\",\n      \"agarathi\": \"agarathi.com dictionary\"\n    }\n  }\n}",
+          "creationDate": 1403672956985,
+          "status": "ACTIVE"
+        },
+        "name": "list dictionaries",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/53aa597de4b0a705fcc32297/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/53aa597de4b0a705fcc32297/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/models/53aa597ce4b00287471a2294"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/53aa597de4b0a705fcc32297"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/53aa597de4b0a705fcc32297/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/groups/53aa597de4b0a705fcc32296"
+          }
+        },
+        "id": "53aa597de4b0a705fcc32297",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "dictionary",
+          "took": 15,
+          "name": "dictionary",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/groups/53aa597de4b0a705fcc32296"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca"
+            }
+          },
+          "id": "53aa597de4b0a705fcc32296",
+          "creationDate": 1403672957098,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 14,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "x-agarathi-api-secret",
+              "condition": "REQUIRED",
+              "name": "X-Agarathi-Api-Secret",
+              "description": "Agrathi API key ( Get yours here http://agarathi.com/api/dictionary )",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/53aa597de4b00287471a2296"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/53aa597de4b00287471a2296/headers/582243f1e4b02b08e6ae0eeb"
+                }
+              },
+              "id": "582243f1e4b02b08e6ae0eeb",
+              "type": "STRING",
+              "creationDate": 1478640625930,
+              "value": "",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "routeparameters": {
+          "took": 21,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "dictionary",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "dictionary",
+              "description": "Dictionary to search the word in. Default is all.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/53aa597de4b00287471a2296"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/53aa597de4b00287471a2296/routeparameters/53aa597de4b00287471a2298"
+                }
+              },
+              "id": "53aa597de4b00287471a2298",
+              "type": "STRING",
+              "creationDate": 1403672957457,
+              "value": "umadraslexicon",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "word",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "word",
+              "description": "Tamil word to search",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/53aa597de4b00287471a2296"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/53aa597de4b00287471a2296/routeparameters/53aa597de4b051a76d24126a"
+                }
+              },
+              "id": "53aa597de4b051a76d24126a",
+              "type": "STRING",
+              "creationDate": 1403672957352,
+              "value": "தமிழ்",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403672957616,
+        "code": 200,
+        "method": "GET",
+        "description": "Search a word in agarathi.com dictionaries",
+        "creationDate": 1403672957251,
+        "slugifiedPrimary": "search",
+        "routeregex": "/search",
+        "route": "/search",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "search-model",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 32,
+          "name": "search Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/models/53aa597de4b0a705fcc32295/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/models/53aa597de4b0a705fcc32295"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca"
+            }
+          },
+          "id": "53aa597de4b0a705fcc32295",
+          "body": "{\n  \"contents\": [\n    {\n      \"dictionary\": \"University of Madras Lexicon\",\n      \"word\": \"தமிழ்\",\n      \"description\": \" n. perh. தமி&sup1;. cf. dramiḍa. 1.Sweetness, melodiousness; இனிமை. (பிங்.) 2.Refined quality; நீர்மை. (பிங்.) 3. Tamil language, being divided into iyaṟ-ṟamiḻ, icai-t-tamiḻ,nāṭaka-t-tamiḻ; இயற்றமிழ், இசைத்தமிழ், நாடகத்தமிழ் என மூவகையாக வழங்கும் மொழி. 4. Tamilliterature, Tamil work; தமிழ் நூல். 5. TheTamils; தமிழர். அருந்தமி ழாற்ற லறிந்திலர் (சிலப்.26, 161). 6. The Tamil country; தமிழ்நாடு. தண்டமிழ் வினைஞர் (மணி. 19, 109).\"\n    }\n  ],\n  \"success\": {\n    \"total\": 1\n  }\n}",
+          "creationDate": 1403672957035,
+          "status": "ACTIVE"
+        },
+        "name": "search",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/53aa597de4b00287471a2296/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/53aa597de4b00287471a2296/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/models/53aa597de4b0a705fcc32295"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/53aa597de4b00287471a2296"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/53aa597de4b00287471a2296/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/groups/53aa597de4b0a705fcc32296"
+          }
+        },
+        "id": "53aa597de4b00287471a2296",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "dictionary",
+          "took": 45,
+          "name": "dictionary",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/groups/53aa597de4b0a705fcc32296"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca"
+            }
+          },
+          "id": "53aa597de4b0a705fcc32296",
+          "creationDate": 1403672957098,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 15,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "x-agarathi-api-secret",
+              "condition": "REQUIRED",
+              "updateDate": 1478641032047,
+              "name": "X-Agarathi-Api-Secret",
+              "description": "Agrathi API key ( Get yours here http://agarathi.com/api/dictionary )",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/58224569e4b0c6769899fb52"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/58224569e4b0c6769899fb52/headers/58224578e4b02b08e6ae0ef8"
+                }
+              },
+              "id": "58224578e4b02b08e6ae0ef8",
+              "type": "STRING",
+              "creationDate": 1478641016781,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "routeparameters": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1478641055322,
+        "code": 200,
+        "method": "GET",
+        "description": "Get Tamil word of the day",
+        "creationDate": 1478641001453,
+        "slugifiedPrimary": "word-of-the-day",
+        "routeregex": "/dictionary/wod",
+        "route": "/dictionary/wod",
+        "name": "Word of the day",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/58224569e4b0c6769899fb52/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/58224569e4b0c6769899fb52/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/58224569e4b0c6769899fb52"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/58224569e4b0c6769899fb52/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/groups/53aa597de4b0a705fcc32296"
+          }
+        },
+        "id": "58224569e4b0c6769899fb52",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "dictionary",
+          "took": 37,
+          "name": "dictionary",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/groups/53aa597de4b0a705fcc32296"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca"
+            }
+          },
+          "id": "53aa597de4b0a705fcc32296",
+          "creationDate": 1403672957098,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Tamil Dictionary API.  Access agarathi.com tamil dictionary functionality in an easy to use REST API form.  The following dictionaries are available.\r\n\r\n\"University of Madras Lexicon\",\r\n\"J.P.Fabricius Tamil and English Dictionary\",\r\n\"Miron Winslow - A Comprehensive Tamil and English Dictionary\",\r\n\"David McAlpin - A Core vocabulary for Tamil\",\r\n\"தமிழ் தமிழ் அகரமுதலி\",\r\n\"agarathi.com dictionary\"",
+  "groups": {
+    "took": 12,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "dictionary",
+        "name": "dictionary",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/groups/53aa597de4b0a705fcc32296"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca"
+          }
+        },
+        "id": "53aa597de4b0a705fcc32296",
+        "creationDate": 1403672957098,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 05:09:16 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/astronode"
+    },
+    "endpoints": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/objects/"
+    },
+    "groups": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/features/"
+    },
+    "plans": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/53aa597ce4b008bb2ef86ec1/versions/53aa597ce4b05961403410ca/errors/"
+    }
+  },
+  "id": "53aa597ce4b05961403410ca",
+  "status": "ACTIVE"
+}

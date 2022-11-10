@@ -1,0 +1,201 @@
+{
+  "models": {
+    "took": 6,
+    "total": 0,
+    "data": []
+  },
+  "updateDate": "Wed Oct 15 16:05:54 UTC 2014",
+  "website": "http://geocoder.opencagedata.com/",
+  "endpoints": {
+    "took": 95,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 84,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "key",
+              "updateDate": 1413389810502,
+              "condition": "REQUIRED",
+              "name": "key",
+              "description": "The API key you got when registering on http://geocoder.opencagedata.com/",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/endpoints/543e98d7e4b0163a30190c00"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/endpoints/543e98d7e4b0163a30190c00/routeparameters/543e9d67e4b055bed41fdf0f"
+                }
+              },
+              "id": "543e9d67e4b055bed41fdf0f",
+              "type": "STRING",
+              "creationDate": 1413389671888,
+              "value": "YOUR-KEY",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "language",
+              "updateDate": 1413389750931,
+              "condition": "OPTIONAL",
+              "name": "language",
+              "description": "an IETF format language code (such as es for Spanish or pt-BR for Brazilian Portuguese); if this is omitted a code of en (English) will be assumed",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/endpoints/543e98d7e4b0163a30190c00"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/endpoints/543e98d7e4b0163a30190c00/routeparameters/543e9da5e4b0fd571973e791"
+                }
+              },
+              "id": "543e9da5e4b0fd571973e791",
+              "type": "STRING",
+              "creationDate": 1413389733817,
+              "value": "en",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "q",
+              "updateDate": 1413389803043,
+              "condition": "REQUIRED",
+              "name": "q",
+              "description": "Address",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/endpoints/543e98d7e4b0163a30190c00"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/endpoints/543e98d7e4b0163a30190c00/routeparameters/543e98d7e4b0666d09a2d05d"
+                }
+              },
+              "id": "543e98d7e4b0666d09a2d05d",
+              "type": "STRING",
+              "creationDate": 1413388503484,
+              "value": "Rua%20Cafel%C3%A2ndia%2C%20Carapicu%C3%ADba%2C%20Brazil",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1413389803139,
+        "code": 200,
+        "method": "GET",
+        "description": "geocode an address",
+        "creationDate": 1413388503395,
+        "slugifiedPrimary": "geocode",
+        "routeregex": "/geocode/v1/json?q=([^/?]+)",
+        "route": "/geocode/v1/json?q={q}",
+        "name": "geocode",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/endpoints/543e98d7e4b0163a30190c00/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/endpoints/543e98d7e4b0163a30190c00/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/endpoints/543e98d7e4b0163a30190c00"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/endpoints/543e98d7e4b0163a30190c00/parameters/"
+          }
+        },
+        "id": "543e98d7e4b0163a30190c00",
+        "parameters": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Worldwide forward and reverse address geocoding. Uses multiple geocoders, based on open data.",
+  "groups": {
+    "took": 16,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Oct 15 15:52:58 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/543e983be4b0edfaf167a995/apis/543e985ae4b04d1987eba56f/versions/543e985ae4b019bd39af5524/errors/"
+    }
+  },
+  "id": "543e985ae4b019bd39af5524",
+  "status": "ACTIVE"
+}

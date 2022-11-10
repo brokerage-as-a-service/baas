@@ -1,0 +1,404 @@
+{
+  "models": {
+    "took": 82,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "get-markdown-response",
+        "headers": {
+          "took": 22,
+          "total": 0,
+          "data": []
+        },
+        "name": "Get-Markdown Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/models/53aa31dde4b0b60946a2db1e/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/models/53aa31dde4b0b60946a2db1e"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6"
+          }
+        },
+        "id": "53aa31dde4b0b60946a2db1e",
+        "creationDate": 1403662813530,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "markdown",
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "name": "Markdown",
+        "format": "JSON",
+        "description": "This is a Resource model",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/models/53aa31dde4b0a798dbd18ab7/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/models/53aa31dde4b0a798dbd18ab7"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6"
+          }
+        },
+        "id": "53aa31dde4b0a798dbd18ab7",
+        "body": "{\n  \"title\": \"Every Keyboard Needs A Share Button\",\n  \"content\": \"# Every Keyboard Needs A Share Button\\n\\nFebruary 7th, 2011\\n\\nI thought of this idea a few days ago and [...truncated...] \"\n}",
+        "creationDate": 1403662813457,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:39:46 UTC 2014",
+  "endpoints": {
+    "took": 59,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 31,
+          "total": 7,
+          "data": [
+            {
+              "slugifiedPrimary": "domarkdown",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "domarkdown",
+              "description": "(any value will run this) used without the other parameters (including u), and takes a text parameter containing url-encoded Markdown text. It returns raw HTML",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/endpoints/53aa31dde4b0b60946a2db1f"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/endpoints/53aa31dde4b0b60946a2db1f/routeparameters/53aa31dde4b07e1f4ebe9995"
+                }
+              },
+              "id": "53aa31dde4b07e1f4ebe9995",
+              "type": "STRING",
+              "creationDate": 1403662813612,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "html",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "html",
+              "description": "HTML text to be Markdownified. May be a full page or snippet, and can be submitted as urlencoded text in a GET call or straight using POST (suggested for larger requests).",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/endpoints/53aa31dde4b0b60946a2db1f"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/endpoints/53aa31dde4b0b60946a2db1f/routeparameters/53aa31dde4b059614033eb2f"
+                }
+              },
+              "id": "53aa31dde4b059614033eb2f",
+              "type": "STRING",
+              "creationDate": 1403662813656,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "output",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "output",
+              "description": "(optional, default markdown) type of text to return (json*, url (encoded), or markdown). There's also an 'nv' output mode that will generate a Notational Velocity/nvALT url for creating a note from resulting text. If you need the 'nvalt://' handler for older versions, use 'nvalt' for the output mode instead. Might be useful for some people.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/endpoints/53aa31dde4b0b60946a2db1f"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/endpoints/53aa31dde4b0b60946a2db1f/routeparameters/53aa31dde4b059614033eb30"
+                }
+              },
+              "id": "53aa31dde4b059614033eb30",
+              "type": "STRING",
+              "creationDate": 1403662813695,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "preview",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "preview",
+              "description": "(optional, default 0) whether to run the result back through Markdown and provide HTML instead of Markdown",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/endpoints/53aa31dde4b0b60946a2db1f"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/endpoints/53aa31dde4b0b60946a2db1f/routeparameters/53aa31dde4b0b60946a2db20"
+                }
+              },
+              "id": "53aa31dde4b0b60946a2db20",
+              "type": "BOOLEAN",
+              "creationDate": 1403662813743,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "showframe",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "showframe",
+              "description": "determines whether or not the output is encased in the HTML frame for viewing/copying",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/endpoints/53aa31dde4b0b60946a2db1f"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/endpoints/53aa31dde4b0b60946a2db1f/routeparameters/53aa31dde4b0a9b1348d8bf4"
+                }
+              },
+              "id": "53aa31dde4b0a9b1348d8bf4",
+              "type": "BOOLEAN",
+              "creationDate": 1403662813776,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "tags",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "tags",
+              "description": "(optional) if the output type is \"nv\" or \"nvalt\", adding this key with a url-encoded string of space or comma separated tags will include them when importing into NV/nvALT",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/endpoints/53aa31dde4b0b60946a2db1f"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/endpoints/53aa31dde4b0b60946a2db1f/routeparameters/53aa31dde4b07e1f4ebe9996"
+                }
+              },
+              "id": "53aa31dde4b07e1f4ebe9996",
+              "type": "STRING",
+              "creationDate": 1403662813859,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "u",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "u",
+              "description": "url encoded URI to parse",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/endpoints/53aa31dde4b0b60946a2db1f"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/endpoints/53aa31dde4b0b60946a2db1f/routeparameters/53aa31dde4b0a798dbd18ab9"
+                }
+              },
+              "id": "53aa31dde4b0a798dbd18ab9",
+              "type": "STRING",
+              "creationDate": 1403662813895,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403662813687,
+        "code": 200,
+        "method": "GET",
+        "description": "Enter a url or some HTML code to convert the page to Markdown. One parameter between \"u\" and \"html\" must be submitted with the request.",
+        "creationDate": 1403662813557,
+        "slugifiedPrimary": "get-markdown",
+        "routeregex": "/go/",
+        "route": "/go/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "get-markdown-response",
+          "headers": {
+            "took": 8,
+            "total": 0,
+            "data": []
+          },
+          "took": 41,
+          "name": "Get-Markdown Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/models/53aa31dde4b0b60946a2db1e/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/models/53aa31dde4b0b60946a2db1e"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6"
+            }
+          },
+          "id": "53aa31dde4b0b60946a2db1e",
+          "creationDate": 1403662813530,
+          "status": "ACTIVE"
+        },
+        "name": "Get Markdown",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/endpoints/53aa31dde4b0b60946a2db1f/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/endpoints/53aa31dde4b0b60946a2db1f/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/models/53aa31dde4b0b60946a2db1e"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/endpoints/53aa31dde4b0b60946a2db1f"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/endpoints/53aa31dde4b0b60946a2db1f/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/groups/53aa31dde4b059614033eb2e"
+          }
+        },
+        "id": "53aa31dde4b0b60946a2db1f",
+        "parameters": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "group",
+          "took": 12,
+          "name": "Group",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/groups/53aa31dde4b059614033eb2e"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6"
+            }
+          },
+          "id": "53aa31dde4b059614033eb2e",
+          "creationDate": 1403662813486,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Markdownifier",
+  "groups": {
+    "took": 33,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "group",
+        "name": "Group",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/groups/53aa31dde4b059614033eb2e"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6"
+          }
+        },
+        "id": "53aa31dde4b059614033eb2e",
+        "creationDate": 1403662813486,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 02:20:13 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": false,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/objects/"
+    },
+    "groups": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d23e4b07e1f4ebd2722/apis/53aa31dde4b07e1f4ebe9993/versions/53aa31dde4b0a798dbd18ab6/errors/"
+    }
+  },
+  "id": "53aa31dde4b0a798dbd18ab6",
+  "status": "ACTIVE"
+}

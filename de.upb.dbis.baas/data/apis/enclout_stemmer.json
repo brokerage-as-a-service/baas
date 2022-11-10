@@ -1,0 +1,221 @@
+{
+  "models": {
+    "took": 47,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "stemmer",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "stemmer",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/models/53aa36a5e4b0a798dbd19455/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/models/53aa36a5e4b0a798dbd19455"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531"
+          }
+        },
+        "id": "53aa36a5e4b0a798dbd19455",
+        "body": "{\n  \"porter_stem\": \"I am break world record\",\n  \"text\": \"I am breaking world records\",\n  \"snowball_stem\": \"I am break world record\",\n  \"uea_stem\": \"I am break world record\"\n}",
+        "creationDate": 1403664037353,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:39:40 UTC 2014",
+  "website": "http://www.enclout.com",
+  "endpoints": {
+    "took": 79,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 43,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "text",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "text",
+              "description": "text that needs to be stemmed",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/endpoints/53aa36a5e4b0b60946a2e51f"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/endpoints/53aa36a5e4b0b60946a2e51f/routeparameters/53aa36a5e4b0a9b1348d95ba"
+                }
+              },
+              "id": "53aa36a5e4b0a9b1348d95ba",
+              "type": "STRING",
+              "creationDate": 1403664037585,
+              "value": "I am breaking world records",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403664037710,
+        "code": 200,
+        "method": "GET",
+        "description": "Given a text paragraph, this function returns the stemmed text",
+        "creationDate": 1403664037414,
+        "slugifiedPrimary": "stemmer",
+        "routeregex": "/show.json",
+        "route": "/show.json",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "stemmer",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 19,
+          "name": "stemmer",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/models/53aa36a5e4b0a798dbd19455/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/models/53aa36a5e4b0a798dbd19455"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531"
+            }
+          },
+          "id": "53aa36a5e4b0a798dbd19455",
+          "body": "{\n  \"porter_stem\": \"I am break world record\",\n  \"text\": \"I am breaking world records\",\n  \"snowball_stem\": \"I am break world record\",\n  \"uea_stem\": \"I am break world record\"\n}",
+          "creationDate": 1403664037353,
+          "status": "ACTIVE"
+        },
+        "name": "stemmer",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/endpoints/53aa36a5e4b0b60946a2e51f/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/endpoints/53aa36a5e4b0b60946a2e51f/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/models/53aa36a5e4b0a798dbd19455"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/endpoints/53aa36a5e4b0b60946a2e51f"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/endpoints/53aa36a5e4b0b60946a2e51f/parameters/"
+          }
+        },
+        "id": "53aa36a5e4b0b60946a2e51f",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "This API takes a paragraph and returns the text with each word stemmed using porter stemmer, snowball stemmer or UEA stemmer",
+  "groups": {
+    "took": 5,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 02:40:36 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/changelogs/"
+    },
+    "objects": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/features/"
+    },
+    "plans": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa36a3e4b0b60946a2e51d/versions/53aa36a4e4b059614033f531/authentication"
+    }
+  },
+  "id": "53aa36a4e4b059614033f531",
+  "status": "ACTIVE"
+}

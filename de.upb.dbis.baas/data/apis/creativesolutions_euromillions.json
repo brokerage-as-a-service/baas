@@ -1,0 +1,463 @@
+{
+  "models": {
+    "took": 64,
+    "total": 3,
+    "data": [
+      {
+        "slugifiedPrimary": "findbyyearwithoutprices-response",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "FindByYearWithoutPrices Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/models/53aa3d08e4b0a705fcc31013/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/models/53aa3d08e4b0a705fcc31013"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87"
+          }
+        },
+        "id": "53aa3d08e4b0a705fcc31013",
+        "creationDate": 1403665672311,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "finddraw-response",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "FindDraw Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/models/53aa3d08e4b051a76d24000f/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/models/53aa3d08e4b051a76d24000f"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87"
+          }
+        },
+        "id": "53aa3d08e4b051a76d24000f",
+        "creationDate": 1403665672677,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "findlast-response",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "FindLast Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/models/53aa3d09e4b0a705fcc31018/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/models/53aa3d09e4b0a705fcc31018"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87"
+          }
+        },
+        "id": "53aa3d09e4b0a705fcc31018",
+        "creationDate": 1403665673359,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:40:13 UTC 2014",
+  "website": "http://www.creativesolutions.pt",
+  "endpoints": {
+    "took": 165,
+    "total": 3,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 44,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "year",
+              "updateDate": 1403665672564,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "year",
+              "description": "The corresponding year",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/endpoints/53aa3d08e4b00287471a0f8b"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/endpoints/53aa3d08e4b00287471a0f8b/routeparameters/53aa3d08e4b0a798dbd19cdc"
+                }
+              },
+              "id": "53aa3d08e4b0a798dbd19cdc",
+              "type": "STRING",
+              "creationDate": 1403665672436,
+              "value": "2013",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403665673679,
+        "code": 200,
+        "method": "GET",
+        "description": "Returns all draw results in a given year, but without the prize table",
+        "creationDate": 1403665672366,
+        "slugifiedPrimary": "findbyyearwithoutprices",
+        "routeregex": "/ResultsService/FindByYearWithoutPrices/([^/?]+)",
+        "route": "/ResultsService/FindByYearWithoutPrices/{year}",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "findbyyearwithoutprices-response",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 38,
+          "name": "FindByYearWithoutPrices Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/models/53aa3d08e4b0a705fcc31013/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/models/53aa3d08e4b0a705fcc31013"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87"
+            }
+          },
+          "id": "53aa3d08e4b0a705fcc31013",
+          "creationDate": 1403665672311,
+          "status": "ACTIVE"
+        },
+        "name": "FindByYearWithoutPrices",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/endpoints/53aa3d08e4b00287471a0f8b/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/endpoints/53aa3d08e4b00287471a0f8b/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/models/53aa3d08e4b0a705fcc31013"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/endpoints/53aa3d08e4b00287471a0f8b"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/endpoints/53aa3d08e4b00287471a0f8b/parameters/"
+          }
+        },
+        "id": "53aa3d08e4b00287471a0f8b",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 65,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "rafflenumber",
+              "updateDate": 1403665673167,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "rafflenumber",
+              "description": "The raffle number in the year",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/endpoints/53aa3d08e4b008bb2ef85c8f"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/endpoints/53aa3d08e4b008bb2ef85c8f/routeparameters/53aa3d08e4b0b60946a2ed2e"
+                }
+              },
+              "id": "53aa3d08e4b0b60946a2ed2e",
+              "type": "STRING",
+              "creationDate": 1403665672864,
+              "value": "1",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "year",
+              "updateDate": 1403665673010,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "year",
+              "description": "The corresponding year",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/endpoints/53aa3d08e4b008bb2ef85c8f"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/endpoints/53aa3d08e4b008bb2ef85c8f/routeparameters/53aa3d08e4b0a798dbd19cdd"
+                }
+              },
+              "id": "53aa3d08e4b0a798dbd19cdd",
+              "type": "STRING",
+              "creationDate": 1403665672818,
+              "value": "2013",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403665673671,
+        "code": 200,
+        "method": "GET",
+        "description": "Returns the draw result, with the prize table",
+        "creationDate": 1403665672743,
+        "slugifiedPrimary": "finddraw",
+        "routeregex": "/ResultsService/FindDraw/([^/?]+)/([^/?]+)",
+        "route": "/ResultsService/FindDraw/{year}/{raffleNumber}",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "finddraw-response",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 18,
+          "name": "FindDraw Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/models/53aa3d08e4b051a76d24000f/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/models/53aa3d08e4b051a76d24000f"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87"
+            }
+          },
+          "id": "53aa3d08e4b051a76d24000f",
+          "creationDate": 1403665672677,
+          "status": "ACTIVE"
+        },
+        "name": "FindDraw",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/endpoints/53aa3d08e4b008bb2ef85c8f/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/endpoints/53aa3d08e4b008bb2ef85c8f/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/models/53aa3d08e4b051a76d24000f"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/endpoints/53aa3d08e4b008bb2ef85c8f"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/endpoints/53aa3d08e4b008bb2ef85c8f/parameters/"
+          }
+        },
+        "id": "53aa3d08e4b008bb2ef85c8f",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403665673663,
+        "code": 200,
+        "method": "GET",
+        "description": "Returns the last draw result, with or without the prize table",
+        "creationDate": 1403665673443,
+        "slugifiedPrimary": "findlast",
+        "routeregex": "/ResultsService/FindLast",
+        "route": "/ResultsService/FindLast",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "findlast-response",
+          "headers": {
+            "took": 19,
+            "total": 0,
+            "data": []
+          },
+          "took": 32,
+          "name": "FindLast Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/models/53aa3d09e4b0a705fcc31018/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/models/53aa3d09e4b0a705fcc31018"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87"
+            }
+          },
+          "id": "53aa3d09e4b0a705fcc31018",
+          "creationDate": 1403665673359,
+          "status": "ACTIVE"
+        },
+        "name": "FindLast",
+        "routeindex": 2,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/endpoints/53aa3d09e4b0a705fcc31019/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/endpoints/53aa3d09e4b0a705fcc31019/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/models/53aa3d09e4b0a705fcc31018"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/endpoints/53aa3d09e4b0a705fcc31019"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/endpoints/53aa3d09e4b0a705fcc31019/parameters/"
+          }
+        },
+        "id": "53aa3d09e4b0a705fcc31019",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Euromillions results - Tuesday and Friday Euromillions Results. Check the Latest Euromillions Results here as soon as the numbers are drawn.",
+  "groups": {
+    "took": 6,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 03:07:51 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/astronode"
+    },
+    "endpoints": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/groups/"
+    },
+    "issues": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/tags/"
+    },
+    "features": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/features/"
+    },
+    "plans": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa213fe4b0a798dbd06e64/apis/53aa3d07e4b008bb2ef85c8e/versions/53aa3d07e4b059614033fd87/errors/"
+    }
+  },
+  "id": "53aa3d07e4b059614033fd87",
+  "status": "ACTIVE"
+}

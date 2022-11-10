@@ -1,0 +1,512 @@
+{
+  "models": {
+    "took": 79,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "json-model",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "JSON Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/models/53aa32e1e4b0b60946a2de0d/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/models/53aa32e1e4b0b60946a2de0d"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54"
+          }
+        },
+        "id": "53aa32e1e4b0b60946a2de0d",
+        "body": "{\n  \"info\": {\n    \"clientFeatures\": \"all\",\n    \"clientTime\": \"2012-09-26T17:30:11.816Z\",\n    \"detectedLanguage\": \"en\",\n    \"emotions\": [],\n    \"locale\": \"en\",\n    \"login\": \"mashape\",\n    \"responseTime\": 101,\n    \"text\": \"How old is obama\"\n  },\n  \"output\": [\n    {\n      \"actions\": {\n        \"say\": \"Barack Obama is 51 years old . (Answers.com)\"\n      },\n      \"entities\": {\n        \"locale\": \"en\",\n        \"text\": \"how old is obama\"\n      },\n      \"responseTime\": 0,\n      \"results\": {\n        \"source\": \"Answers.com\"\n      }\n    }\n  ]\n}",
+        "creationDate": 1403663073952,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "text-response",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "Text Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/models/53aa32e2e4b0a9b1348d8ef5/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/models/53aa32e2e4b0a9b1348d8ef5"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54"
+          }
+        },
+        "id": "53aa32e2e4b0a9b1348d8ef5",
+        "creationDate": 1403663074321,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:39:59 UTC 2014",
+  "website": "http://www.voice-actions.com/",
+  "endpoints": {
+    "took": 234,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 129,
+          "total": 5,
+          "data": [
+            {
+              "slugifiedPrimary": "clientfeatures",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "clientFeatures",
+              "description": "see Doku",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a798dbd18da7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a798dbd18da7/routeparameters/53aa32e2e4b059614033ee58"
+                }
+              },
+              "id": "53aa32e2e4b059614033ee58",
+              "type": "STRING",
+              "creationDate": 1403663074287,
+              "value": "all",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "input",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "input",
+              "description": "Any question or command",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a798dbd18da7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a798dbd18da7/routeparameters/53aa32e2e4b0b60946a2de0f"
+                }
+              },
+              "id": "53aa32e2e4b0b60946a2de0f",
+              "type": "STRING",
+              "creationDate": 1403663074104,
+              "value": "How old is obama",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "locale",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "locale",
+              "description": "Specify locale. E.g. de, en, fr, en_US. Default is en_US",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a798dbd18da7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a798dbd18da7/routeparameters/53aa32e2e4b0b60946a2de10"
+                }
+              },
+              "id": "53aa32e2e4b0b60946a2de10",
+              "type": "STRING",
+              "creationDate": 1403663074197,
+              "value": "en",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "location",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "location",
+              "description": "get more location aware responses. if omitted the IP will used to guess the location.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a798dbd18da7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a798dbd18da7/routeparameters/53aa32e2e4b0a9b1348d8ef3"
+                }
+              },
+              "id": "53aa32e2e4b0a9b1348d8ef3",
+              "type": "STRING",
+              "creationDate": 1403663074145,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "timezone",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "timeZone",
+              "description": "Specify the timezone offset of your client compared to UTC in minutes. E.g. +120 for Germany (summer). Attention: include daylight savings! Default is 0 which is UTC.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a798dbd18da7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a798dbd18da7/routeparameters/53aa32e2e4b0b60946a2de11"
+                }
+              },
+              "id": "53aa32e2e4b0b60946a2de11",
+              "type": "STRING",
+              "creationDate": 1403663074246,
+              "value": "+120",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403663074785,
+        "code": 200,
+        "method": "GET",
+        "description": "complex result with text, images, actions and meta-data",
+        "creationDate": 1403663074013,
+        "slugifiedPrimary": "json",
+        "routeregex": "/json",
+        "route": "/json",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "json-model",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 52,
+          "name": "JSON Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/models/53aa32e1e4b0b60946a2de0d/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/models/53aa32e1e4b0b60946a2de0d"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54"
+            }
+          },
+          "id": "53aa32e1e4b0b60946a2de0d",
+          "body": "{\n  \"info\": {\n    \"clientFeatures\": \"all\",\n    \"clientTime\": \"2012-09-26T17:30:11.816Z\",\n    \"detectedLanguage\": \"en\",\n    \"emotions\": [],\n    \"locale\": \"en\",\n    \"login\": \"mashape\",\n    \"responseTime\": 101,\n    \"text\": \"How old is obama\"\n  },\n  \"output\": [\n    {\n      \"actions\": {\n        \"say\": \"Barack Obama is 51 years old . (Answers.com)\"\n      },\n      \"entities\": {\n        \"locale\": \"en\",\n        \"text\": \"how old is obama\"\n      },\n      \"responseTime\": 0,\n      \"results\": {\n        \"source\": \"Answers.com\"\n      }\n    }\n  ]\n}",
+          "creationDate": 1403663073952,
+          "status": "ACTIVE"
+        },
+        "name": "JSON",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a798dbd18da7/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a798dbd18da7/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/models/53aa32e1e4b0b60946a2de0d"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a798dbd18da7"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a798dbd18da7/parameters/"
+          }
+        },
+        "id": "53aa32e2e4b0a798dbd18da7",
+        "parameters": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 22,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 85,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "clientfeatures",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "clientFeatures",
+              "description": "see Doku",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a9b1348d8ef7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a9b1348d8ef7/routeparameters/53aa32e2e4b059614033ee5a"
+                }
+              },
+              "id": "53aa32e2e4b059614033ee5a",
+              "type": "STRING",
+              "creationDate": 1403663074475,
+              "value": "all",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "input",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "input",
+              "description": "Any question or command",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a9b1348d8ef7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a9b1348d8ef7/routeparameters/53aa32e2e4b0a9b1348d8ef8"
+                }
+              },
+              "id": "53aa32e2e4b0a9b1348d8ef8",
+              "type": "STRING",
+              "creationDate": 1403663074419,
+              "value": "How old is obama",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "out",
+              "condition": "CONSTANT",
+              "array": false,
+              "name": "out",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a9b1348d8ef7"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a9b1348d8ef7/routeparameters/53aa32e2e4b0a9b1348d8ef9"
+                }
+              },
+              "id": "53aa32e2e4b0a9b1348d8ef9",
+              "type": "STRING",
+              "creationDate": 1403663074538,
+              "value": "simple",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403663074708,
+        "code": 200,
+        "method": "GET",
+        "description": "Text response",
+        "creationDate": 1403663074352,
+        "slugifiedPrimary": "text",
+        "routeregex": "/api",
+        "route": "/api",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "text-response",
+          "headers": {
+            "took": 5,
+            "total": 0,
+            "data": []
+          },
+          "took": 40,
+          "name": "Text Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/models/53aa32e2e4b0a9b1348d8ef5/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/models/53aa32e2e4b0a9b1348d8ef5"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54"
+            }
+          },
+          "id": "53aa32e2e4b0a9b1348d8ef5",
+          "creationDate": 1403663074321,
+          "status": "ACTIVE"
+        },
+        "name": "Text",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a9b1348d8ef7/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a9b1348d8ef7/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/models/53aa32e2e4b0a9b1348d8ef5"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a9b1348d8ef7"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/53aa32e2e4b0a9b1348d8ef7/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/groups/53aa32e1e4b0a9b1348d8ef1"
+          }
+        },
+        "id": "53aa32e2e4b0a9b1348d8ef7",
+        "parameters": {
+          "took": 9,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "group",
+          "took": 37,
+          "name": "Group",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/groups/53aa32e1e4b0a9b1348d8ef1"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54"
+            }
+          },
+          "id": "53aa32e1e4b0a9b1348d8ef1",
+          "creationDate": 1403663073978,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "\"Siri as a service\"\r\n\r\nThe objective of this service is to provide you and your robot with the smartest answer to any natural language question, just like Siri. This service provides an interface to the standard functions that users demand of modern voice assistants. For example chatting, looking up information, creating messages and much much more. It also provides useful metadata such as sentence analysis and entity extraction that goes beyond simple chatting and voice commands. Over 3 million users have already been in contact with this API: \r\nhttp://www.voice-actions.com/ \r\nExamples: https://weannie.pannous.com/api?input=hi&login=test-user \r\nFor examples and documentation see https://ask.pannous.com/?input=hi",
+  "groups": {
+    "took": 31,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "group",
+        "name": "Group",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/groups/53aa32e1e4b0a9b1348d8ef1"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54"
+          }
+        },
+        "id": "53aa32e1e4b0a9b1348d8ef1",
+        "creationDate": 1403663073978,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 02:24:33 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/objects/"
+    },
+    "groups": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/features/"
+    },
+    "plans": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f17e4b07e1f4ebd51dd/apis/53aa32e1e4b07e1f4ebe9cdf/versions/53aa32e1e4b059614033ee54/errors/"
+    }
+  },
+  "id": "53aa32e1e4b059614033ee54",
+  "status": "ACTIVE"
+}

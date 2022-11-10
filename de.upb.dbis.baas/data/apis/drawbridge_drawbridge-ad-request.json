@@ -1,0 +1,342 @@
+{
+  "models": {
+    "took": 31,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "ad-request-response",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "Ad-Request Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/models/53aa5761e4b0a798dbd1abd0/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/models/53aa5761e4b0a798dbd1abd0"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc"
+          }
+        },
+        "id": "53aa5761e4b0a798dbd1abd0",
+        "creationDate": 1403672417803,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:46:04 UTC 2014",
+  "website": "http://doc.drawbrid.ge/#65,67,82-",
+  "endpoints": {
+    "took": 198,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 170,
+          "total": 7,
+          "data": [
+            {
+              "slugifiedPrimary": "_aid",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "_aid",
+              "description": "Appstore ID - Application id if request is from a native iPhone/Android application.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/endpoints/53aa5761e4b0b60946a2fb32"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/endpoints/53aa5761e4b0b60946a2fb32/routeparameters/53aa5762e4b0b60946a2fb33"
+                }
+              },
+              "id": "53aa5762e4b0b60946a2fb33",
+              "type": "STRING",
+              "creationDate": 1403672418087,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "_clip",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "_clip",
+              "description": "Client IP address - In case of a mobile device, this is the IP address closest to the device. It could be a carrier IP address or Wi-Fi IP address.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/endpoints/53aa5761e4b0b60946a2fb32"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/endpoints/53aa5761e4b0b60946a2fb32/routeparameters/53aa5761e4b0a798dbd1abd1"
+                }
+              },
+              "id": "53aa5761e4b0a798dbd1abd1",
+              "type": "STRING",
+              "creationDate": 1403672417928,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "_did",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "_did",
+              "description": "SHA1 of Android_id. If this field is not available, use _imeisha1 in optional parameters section.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/endpoints/53aa5761e4b0b60946a2fb32"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/endpoints/53aa5761e4b0b60946a2fb32/routeparameters/53aa5762e4b0596140340c25"
+                }
+              },
+              "id": "53aa5762e4b0596140340c25",
+              "type": "STRING",
+              "creationDate": 1403672418034,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "_ifa",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "_ifa",
+              "description": "Identifier for Advertising (iOS only) - this should be RAW.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/endpoints/53aa5761e4b0b60946a2fb32"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/endpoints/53aa5761e4b0b60946a2fb32/routeparameters/53aa5761e4b0596140340c24"
+                }
+              },
+              "id": "53aa5761e4b0596140340c24",
+              "type": "STRING",
+              "creationDate": 1403672417988,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "_pu",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "_pu",
+              "description": "Page URL- The main page (parent) URL hosting the iframe for the ad request. This is only applicable if the ad request is from a mobile web browser.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/endpoints/53aa5761e4b0b60946a2fb32"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/endpoints/53aa5761e4b0b60946a2fb32/routeparameters/53aa5762e4b0b60946a2fb34"
+                }
+              },
+              "id": "53aa5762e4b0b60946a2fb34",
+              "type": "STRING",
+              "creationDate": 1403672418150,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "_puuid",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "_puuid",
+              "description": "Partner detected Unique User id (if available) - this is a unique identifier for users visiting the web page detected by the partner via cookies or other mechanisms",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/endpoints/53aa5761e4b0b60946a2fb32"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/endpoints/53aa5761e4b0b60946a2fb32/routeparameters/53aa5762e4b0b60946a2fb35"
+                }
+              },
+              "id": "53aa5762e4b0b60946a2fb35",
+              "type": "STRING",
+              "creationDate": 1403672418206,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "_ua",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "_ua",
+              "description": "Browser user agent if available for mobile devices or desktops/laptops. When user agent is not available, for ex. within mobile apps, supply the _dev* parameters listed below.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/endpoints/53aa5761e4b0b60946a2fb32"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/endpoints/53aa5761e4b0b60946a2fb32/routeparameters/53aa5762e4b0596140340c26"
+                }
+              },
+              "id": "53aa5762e4b0596140340c26",
+              "type": "STRING",
+              "creationDate": 1403672418259,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403672418347,
+        "code": 200,
+        "method": "GET",
+        "description": "Please check http://doc.drawbrid.ge/#65,67,82- for additional optional parameters.  Server-to-server integration for mediation and ad exchanges.  With server-to-server integration, mediation and ad exchanges can let Drawbridge programmaticaly buy and serve ad impressions on their network. The APIs are based on standard HTTP protocol, making the integration simple and easy to maintain. In most cases, the integration takes as little as one or two days.",
+        "creationDate": 1403672417848,
+        "slugifiedPrimary": "ad-request",
+        "routeregex": "/",
+        "route": "/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "ad-request-response",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 52,
+          "name": "Ad-Request Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/models/53aa5761e4b0a798dbd1abd0/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/models/53aa5761e4b0a798dbd1abd0"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc"
+            }
+          },
+          "id": "53aa5761e4b0a798dbd1abd0",
+          "creationDate": 1403672417803,
+          "status": "ACTIVE"
+        },
+        "name": "Ad Request",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/endpoints/53aa5761e4b0b60946a2fb32/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/endpoints/53aa5761e4b0b60946a2fb32/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/models/53aa5761e4b0a798dbd1abd0"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/endpoints/53aa5761e4b0b60946a2fb32"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/endpoints/53aa5761e4b0b60946a2fb32/parameters/"
+          }
+        },
+        "id": "53aa5761e4b0b60946a2fb32",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Precisely target mobile audiences and increase ROI Drawbridge technology enables targeting across devices to drive CPI, CPL, CPA, and customer lifetime value. Drawbridge's technology bridges audiences across devices and enables two mobile targeting and optimization products.",
+  "groups": {
+    "took": 3,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:00:17 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2573e4b0a798dbd0cb6a/apis/53aa5761e4b0b60946a2fb30/versions/53aa5761e4b0f2c9754707dc/authentication"
+    }
+  },
+  "id": "53aa5761e4b0f2c9754707dc",
+  "status": "ACTIVE"
+}

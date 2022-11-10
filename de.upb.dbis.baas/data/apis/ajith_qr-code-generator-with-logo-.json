@@ -1,0 +1,264 @@
+{
+  "models": {
+    "took": 865,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "-model",
+        "headers": {
+          "took": 208,
+          "total": 0,
+          "data": []
+        },
+        "name": "Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/models/53aa5d85e4b0a9b1348db892/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/models/53aa5d85e4b0a9b1348db892"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d"
+          }
+        },
+        "id": "53aa5d85e4b0a9b1348db892",
+        "body": "{\n  \"url\": \"Joe\",\n  \"Message\": \"Thank you.\"\n}",
+        "creationDate": 1403673989498,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Fri Mar 10 06:44:33 UTC 2017",
+  "website": "https://www.facebook.com/codzztech/",
+  "endpoints": {
+    "took": 1308,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 194,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 654,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "logo",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "logo",
+              "description": "Enter the url of your logo. The size of the image should be less than 50x50 px.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/endpoints/53aa5d85e4b0b60946a307da"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/endpoints/53aa5d85e4b0b60946a307da/routeparameters/53aa5d85e4b0b60946a307db"
+                }
+              },
+              "id": "53aa5d85e4b0b60946a307db",
+              "type": "STRING",
+              "creationDate": 1403673989945,
+              "value": "http://icons.iconarchive.com/icons/hopstarter/social-networking/32/Facebook-icon.png",
+              "status": "ACTIVE"
+            },
+            {
+              "updateDate": 1446006178564,
+              "description": "Select one of the QR code formats to generate. url,text,telno,mailto,smsto",
+              "querystring": true,
+              "type": "STRING",
+              "creationDate": 1403673989807,
+              "slugifiedPrimary": "type",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "type",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/endpoints/53aa5d85e4b0b60946a307da"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/endpoints/53aa5d85e4b0b60946a307da/routeparameters/53aa5d85e4b0a9b1348db893"
+                }
+              },
+              "id": "53aa5d85e4b0a9b1348db893",
+              "value": "url",
+              "status": "ACTIVE"
+            },
+            {
+              "updateDate": 1446006226731,
+              "description": "Enter value as per your QR code type. Eg: url=https://www.google.com,text=Some text,telno=9142545474,smsto=8542487542",
+              "querystring": true,
+              "type": "STRING",
+              "creationDate": 1403673989880,
+              "slugifiedPrimary": "value",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "value",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/endpoints/53aa5d85e4b0b60946a307da"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/endpoints/53aa5d85e4b0b60946a307da/routeparameters/53aa5d85e4b07e1f4ebec64e"
+                }
+              },
+              "id": "53aa5d85e4b07e1f4ebec64e",
+              "value": "https://www.google.com",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403673989785,
+        "code": 200,
+        "method": "GET",
+        "description": "QR code url",
+        "creationDate": 1403673989535,
+        "slugifiedPrimary": "getqrcode",
+        "routeregex": "/getQrcode",
+        "route": "/getQrcode",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "-model",
+          "headers": {
+            "took": 147,
+            "total": 0,
+            "data": []
+          },
+          "took": 387,
+          "name": "Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/models/53aa5d85e4b0a9b1348db892/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/models/53aa5d85e4b0a9b1348db892"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d"
+            }
+          },
+          "id": "53aa5d85e4b0a9b1348db892",
+          "body": "{\n  \"url\": \"Joe\",\n  \"Message\": \"Thank you.\"\n}",
+          "creationDate": 1403673989498,
+          "status": "ACTIVE"
+        },
+        "name": "getQrcode",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/endpoints/53aa5d85e4b0b60946a307da/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/endpoints/53aa5d85e4b0b60946a307da/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/models/53aa5d85e4b0a9b1348db892"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/endpoints/53aa5d85e4b0b60946a307da"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/endpoints/53aa5d85e4b0b60946a307da/parameters/"
+          }
+        },
+        "id": "53aa5d85e4b0b60946a307da",
+        "parameters": {
+          "took": 140,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Generate QR code images with logo for multiple data types.",
+  "groups": {
+    "took": 647,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:26:28 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2656e4b0a798dbd0dc9f/apis/53aa5d84e4b0a798dbd1b87c/versions/53aa5d84e4b008bb2ef8761d/errors/"
+    }
+  },
+  "id": "53aa5d84e4b008bb2ef8761d",
+  "status": "ACTIVE"
+}

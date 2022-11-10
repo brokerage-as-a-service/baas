@@ -1,0 +1,262 @@
+{
+  "models": {
+    "took": 66,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "autenticacion-de-bancos-response",
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "name": "Autenticacion-de-Bancos Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/models/53aa5c2fe4b0a798dbd1b74a/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/models/53aa5c2fe4b0a798dbd1b74a"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa"
+          }
+        },
+        "id": "53aa5c2fe4b0a798dbd1b74a",
+        "creationDate": 1403673647527,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "-model",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/models/53aa5c2fe4b0a798dbd1b749/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/models/53aa5c2fe4b0a798dbd1b749"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa"
+          }
+        },
+        "id": "53aa5c2fe4b0a798dbd1b749",
+        "body": "{\n  \"error\": \"The API is down. You can try the request again or check it's status at: https://www.mashape.com/edwini/SIMAFI#status\"\n}",
+        "creationDate": 1403673647488,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:40:59 UTC 2014",
+  "endpoints": {
+    "took": 75,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 20,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "banco",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "banco",
+              "description": "Codigo asignado a cada banco",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/endpoints/53aa5c2fe4b07e1f4ebec522"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/endpoints/53aa5c2fe4b07e1f4ebec522/routeparameters/53aa5c2fe4b0596140341771"
+                }
+              },
+              "id": "53aa5c2fe4b0596140341771",
+              "type": "NUMBER",
+              "creationDate": 1403673647675,
+              "value": "004",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "key",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "key",
+              "description": "Llave de acceso para cada banco",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/endpoints/53aa5c2fe4b07e1f4ebec522"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/endpoints/53aa5c2fe4b07e1f4ebec522/routeparameters/53aa5c2fe4b07e1f4ebec523"
+                }
+              },
+              "id": "53aa5c2fe4b07e1f4ebec523",
+              "type": "STRING",
+              "creationDate": 1403673647633,
+              "value": "265c36d287fb9b3dd97777a711c0f9f3",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403673647795,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403673647562,
+        "slugifiedPrimary": "autenticacion-de-bancos",
+        "routeregex": "/SIMAFIWS/api/auth/",
+        "route": "/SIMAFIWS/api/auth/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "autenticacion-de-bancos-response",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 51,
+          "name": "Autenticacion-de-Bancos Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/models/53aa5c2fe4b0a798dbd1b74a/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/models/53aa5c2fe4b0a798dbd1b74a"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa"
+            }
+          },
+          "id": "53aa5c2fe4b0a798dbd1b74a",
+          "creationDate": 1403673647527,
+          "status": "ACTIVE"
+        },
+        "name": "Autenticación de Bancos",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/endpoints/53aa5c2fe4b07e1f4ebec522/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/endpoints/53aa5c2fe4b07e1f4ebec522/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/models/53aa5c2fe4b0a798dbd1b74a"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/endpoints/53aa5c2fe4b07e1f4ebec522"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/endpoints/53aa5c2fe4b07e1f4ebec522/parameters/"
+          }
+        },
+        "id": "53aa5c2fe4b07e1f4ebec522",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Sistema de municipalidades que se utiliza para consultar, pagar y reversar transacciones con los bancos",
+  "groups": {
+    "took": 16,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:20:47 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/groups/"
+    },
+    "issues": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/issues/"
+    },
+    "tags": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa289fe4b051a76d237a90/apis/53aa5c2fe4b0a798dbd1b748/versions/53aa5c2fe4b0b60946a306aa/errors/"
+    }
+  },
+  "id": "53aa5c2fe4b0b60946a306aa",
+  "status": "ACTIVE"
+}

@@ -1,0 +1,284 @@
+{
+  "models": {
+    "took": 17,
+    "total": 0,
+    "data": []
+  },
+  "website": "http://textart.io/figlet",
+  "updateDate": "Tue Nov 08 15:41:47 UTC 2016",
+  "endpoints": {
+    "took": 103,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 41,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "x-textart-api-secret",
+              "condition": "REQUIRED",
+              "name": "X-Textart-Api-Secret",
+              "description": "API key (Get yours from http://textart.io/api/figlet)",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/endpoints/578d2022e4b0d07f63b4bf76"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/endpoints/578d2022e4b0d07f63b4bf76/headers/5821f005e4b0debc0b98d278"
+                }
+              },
+              "id": "5821f005e4b0debc0b98d278",
+              "type": "STRING",
+              "creationDate": 1478619141644,
+              "value": "",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "routeparameters": {
+          "took": 28,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "encode",
+              "condition": "OPTIONAL",
+              "name": "encode",
+              "description": "Should the response be base64 encoded? Default true.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/endpoints/578d2022e4b0d07f63b4bf76"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/endpoints/578d2022e4b0d07f63b4bf76/routeparameters/5821f044e4b0debc0b98d279"
+                }
+              },
+              "id": "5821f044e4b0debc0b98d279",
+              "type": "BOOLEAN",
+              "creationDate": 1478619204166,
+              "value": "true",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "style",
+              "condition": "OPTIONAL",
+              "name": "style",
+              "description": "Figlet style (value from list_styles).",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/endpoints/578d2022e4b0d07f63b4bf76"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/endpoints/578d2022e4b0d07f63b4bf76/routeparameters/5821efdee4b0277af342319a"
+                }
+              },
+              "id": "5821efdee4b0277af342319a",
+              "type": "STRING",
+              "creationDate": 1478619102756,
+              "value": "acrobatic",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "text",
+              "condition": "REQUIRED",
+              "name": "text",
+              "description": "Text to render as figlet.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/endpoints/578d2022e4b0d07f63b4bf76"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/endpoints/578d2022e4b0d07f63b4bf76/routeparameters/5821ef8ce4b0277af3423198"
+                }
+              },
+              "id": "5821ef8ce4b0277af3423198",
+              "type": "STRING",
+              "creationDate": 1478619020256,
+              "value": "ASCII is so retro",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "code": 200,
+        "method": "POST",
+        "description": "Generate ASCII figlets(text fonts) for a given text. Lot of styles are supported.",
+        "creationDate": 1468866594005,
+        "slugifiedPrimary": "figlet-generator",
+        "routeregex": "/figlet",
+        "route": "/figlet",
+        "name": "Figlet generator",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/endpoints/578d2022e4b0d07f63b4bf76/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/endpoints/578d2022e4b0d07f63b4bf76/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/endpoints/578d2022e4b0d07f63b4bf76"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/endpoints/578d2022e4b0d07f63b4bf76/parameters/"
+          }
+        },
+        "id": "578d2022e4b0d07f63b4bf76",
+        "parameters": {
+          "took": 18,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 41,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "x-textart-api-secret",
+              "condition": "REQUIRED",
+              "name": "X-Textart-Api-Secret",
+              "description": "API key (Get yours from http://textart.io/api/figlet)",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/endpoints/5821f099e4b071c9cf1b5b5d"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/endpoints/5821f099e4b071c9cf1b5b5d/headers/5821f0d1e4b071c9cf1b5b5e"
+                }
+              },
+              "id": "5821f0d1e4b071c9cf1b5b5e",
+              "type": "STRING",
+              "creationDate": 1478619345082,
+              "value": "",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "routeparameters": {
+          "took": 17,
+          "total": 0,
+          "data": []
+        },
+        "code": 200,
+        "method": "GET",
+        "description": "Get the list of figlet styles supported.",
+        "creationDate": 1478619289478,
+        "slugifiedPrimary": "figlet-styles",
+        "routeregex": "/figlet/list_styles",
+        "route": "/figlet/list_styles",
+        "name": "Figlet Styles",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/endpoints/5821f099e4b071c9cf1b5b5d/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/endpoints/5821f099e4b071c9cf1b5b5d/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/endpoints/5821f099e4b071c9cf1b5b5d"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/endpoints/5821f099e4b071c9cf1b5b5d/parameters/"
+          }
+        },
+        "id": "5821f099e4b071c9cf1b5b5d",
+        "parameters": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Generate ASCII / Text Figlets for a given text string. Figlets are text fonts using only ASCII text characters and are great for displaying banners and other notes in text terminals. Now a days it is great for posting in facebook, twitter or other social media posts.",
+  "groups": {
+    "took": 6,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Mon Jul 18 18:28:55 UTC 2016",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2207e4b0028747191a43/apis/578d1fe7e4b0c6e11bd79e9d/versions/578d1fe7e4b028dd93829fe4/errors/"
+    }
+  },
+  "id": "578d1fe7e4b028dd93829fe4",
+  "status": "ACTIVE"
+}

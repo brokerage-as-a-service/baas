@@ -1,0 +1,133 @@
+{
+  "models": {
+    "took": 6,
+    "total": 0,
+    "data": []
+  },
+  "updateDate": "Thu Aug 27 14:52:17 UTC 2015",
+  "website": "https://i.mycroft2b.com/api",
+  "endpoints": {
+    "took": 31,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "code": 200,
+        "method": "PUT",
+        "description": "Import data",
+        "creationDate": 1440255126107,
+        "slugifiedPrimary": "api-instances-key-import",
+        "routeregex": "/api/Instances/[KEY]/Import",
+        "route": "/api/Instances/[KEY]/Import",
+        "name": "/api/Instances/[KEY]/Import",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55d88b4ee4b0b74f0670220b/apis/55d88b4fe4b0fd0fcdccf8a8/versions/55d88b4fe4b0b74f0670220c/endpoints/55d88c96e4b0998611097bac/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55d88b4ee4b0b74f0670220b/apis/55d88b4fe4b0fd0fcdccf8a8/versions/55d88b4fe4b0b74f0670220c/endpoints/55d88c96e4b0998611097bac/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55d88b4ee4b0b74f0670220b/apis/55d88b4fe4b0fd0fcdccf8a8/versions/55d88b4fe4b0b74f0670220c/endpoints/55d88c96e4b0998611097bac"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/55d88b4ee4b0b74f0670220b/apis/55d88b4fe4b0fd0fcdccf8a8/versions/55d88b4fe4b0b74f0670220c"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55d88b4ee4b0b74f0670220b/apis/55d88b4fe4b0fd0fcdccf8a8/versions/55d88b4fe4b0b74f0670220c/endpoints/55d88c96e4b0998611097bac/parameters/"
+          }
+        },
+        "id": "55d88c96e4b0998611097bac",
+        "parameters": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "The customer is provided with the following procedure in order to work with the API:\r\n\r\n1. The customer creates two XML files. The first is titled “data.xml” and it contains information on balances, income, and expenditure. The second is “catalog.xml”. Files contains background information including: products transferred (for instance, between warehouses), purchases, sales, etc. This information can be customized.\r\n\r\nAfter these files are created, they need to be packed in “data.zip” archive. The system accepts the data from the files only if they are correctly named. Double-checking the file names will provide optimum results. Samples of the upload files, along with a description, are presented in Section B.\r\n\r\n2. Once the files have been properly compiled and named, the customer accesses the server at https://i.mycroft2b.com and establishes a connection. This must pass HTTP Basic Authentication, and will, as long as the correct using login and password are entered as requested.\r\n\r\n3. Next, the customer sends a PUT request to the server, using the archive created at step 1. The address for this is: https://i.mycroft2b.com/api/Instances/[KEY]/Import. In the above address, [KEY] is the actual key provided at registration. The customer’s login and password are required at this point.\r\n\r\n4. You will know that your data has been successfully loaded by a response of “true.” An unsuccessful load will return a “false”.\r\n\r\n5. After the response is received, the connection is broken.\r\n\r\nManual Load:\r\n\r\nYou can manually load the data.zip file created at step 1 into Mycroft Assistant. To do so, you need to:\r\n\r\na) Log in to the system at https://i.mycroft2b.com using your login and password.\r\n\r\nb) Open the menu at the right top and select “Preferences.”\r\n\r\nc) In the “Data” section, click on the cloud and select the file you created at step 1 (or drag the file using the drug-and-drop approach)..",
+  "groups": {
+    "took": 16,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Sat Aug 22 14:46:39 UTC 2015",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/55d88b4ee4b0b74f0670220b/apis/55d88b4fe4b0fd0fcdccf8a8/versions/55d88b4fe4b0b74f0670220c/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/55d88b4ee4b0b74f0670220b/apis/55d88b4fe4b0fd0fcdccf8a8/versions/55d88b4fe4b0b74f0670220c/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/55d88b4ee4b0b74f0670220b/apis/55d88b4fe4b0fd0fcdccf8a8/versions/55d88b4fe4b0b74f0670220c/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/55d88b4ee4b0b74f0670220b/apis/55d88b4fe4b0fd0fcdccf8a8/versions/55d88b4fe4b0b74f0670220c/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/55d88b4ee4b0b74f0670220b/apis/55d88b4fe4b0fd0fcdccf8a8/versions/55d88b4fe4b0b74f0670220c/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/55d88b4ee4b0b74f0670220b/apis/55d88b4fe4b0fd0fcdccf8a8/versions/55d88b4fe4b0b74f0670220c/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/55d88b4ee4b0b74f0670220b/apis/55d88b4fe4b0fd0fcdccf8a8/versions/55d88b4fe4b0b74f0670220c/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/55d88b4ee4b0b74f0670220b/apis/55d88b4fe4b0fd0fcdccf8a8/versions/55d88b4fe4b0b74f0670220c/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/55d88b4ee4b0b74f0670220b/apis/55d88b4fe4b0fd0fcdccf8a8/versions/55d88b4fe4b0b74f0670220c/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/55d88b4ee4b0b74f0670220b/apis/55d88b4fe4b0fd0fcdccf8a8/versions/55d88b4fe4b0b74f0670220c/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/55d88b4ee4b0b74f0670220b/apis/55d88b4fe4b0fd0fcdccf8a8/versions/55d88b4fe4b0b74f0670220c"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/55d88b4ee4b0b74f0670220b/apis/55d88b4fe4b0fd0fcdccf8a8/versions/55d88b4fe4b0b74f0670220c/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/55d88b4ee4b0b74f0670220b/apis/55d88b4fe4b0fd0fcdccf8a8"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/55d88b4ee4b0b74f0670220b/apis/55d88b4fe4b0fd0fcdccf8a8/versions/55d88b4fe4b0b74f0670220c/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/55d88b4ee4b0b74f0670220b/apis/55d88b4fe4b0fd0fcdccf8a8/versions/55d88b4fe4b0b74f0670220c/errors/"
+    }
+  },
+  "id": "55d88b4fe4b0b74f0670220c",
+  "status": "ACTIVE"
+}

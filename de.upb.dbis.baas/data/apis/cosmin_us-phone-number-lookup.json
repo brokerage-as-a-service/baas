@@ -1,0 +1,259 @@
+{
+  "models": {
+    "took": 22,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "-model",
+        "headers": {
+          "took": 9,
+          "total": 0,
+          "data": []
+        },
+        "name": "Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/models/53aa532ce4b07e1f4ebeb64a/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/models/53aa532ce4b07e1f4ebeb64a"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9"
+          }
+        },
+        "id": "53aa532ce4b07e1f4ebeb64a",
+        "body": "{\n  \"phone_number\": {\n    \"npa\": \"305\",\n    \"nxx\": \"505\",\n    \"xxx\": \"0000\"\n  },\n  \"opencnam\": {\n    \"created\": \"2014-03-02T16:36:18.985569\",\n    \"name\": \"Somebody Important\",\n    \"number\": \"+13055050000\",\n    \"price\": -0.004,\n    \"uri\": \"/v2/phone/%2B13055050000\",\n    \"updated\": \"2014-03-02T16:36:19.157601\"\n  },\n  \"type\": \"Wireless\",\n  \"city\": \"Miami\",\n  \"state\": \"Florida\",\n  \"latitude\": 25.7746,\n  \"county\": \"Miami Dade\",\n  \"longitude\": -80.1903,\n  \"time_zone\": \"Eastern (GMT -05:00)\",\n  \"cbsa_code\": \"33100\",\n  \"carrier\": \"New Cingular Wireless Pcs, Llc - Ga\"\n}",
+        "creationDate": 1403671340007,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:41:44 UTC 2014",
+  "endpoints": {
+    "took": 89,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 9,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 37,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "opencnam-auth-token",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "opencnam-auth-token",
+              "description": "Auth token, if you're using OpenCNAM Caller ID ( www.opencnam.com ).",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/endpoints/53aa532ce4b0a798dbd1a840"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/endpoints/53aa532ce4b0a798dbd1a840/routeparameters/53aa532ee4b05961403408b9"
+                }
+              },
+              "id": "53aa532ee4b05961403408b9",
+              "type": "STRING",
+              "creationDate": 1403671342469,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "opencnam-sid",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "opencnam-sid",
+              "description": "Account SID, if you're using OpenCNAM Caller ID ( www.opencnam.com ).",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/endpoints/53aa532ce4b0a798dbd1a840"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/endpoints/53aa532ce4b0a798dbd1a840/routeparameters/53aa532ee4b0a798dbd1a841"
+                }
+              },
+              "id": "53aa532ee4b0a798dbd1a841",
+              "type": "STRING",
+              "creationDate": 1403671342016,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "phone",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "phone",
+              "description": "The complete phone number to lookup. Must contain only digits ( 0 - 9 ).",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/endpoints/53aa532ce4b0a798dbd1a840"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/endpoints/53aa532ce4b0a798dbd1a840/routeparameters/53aa532de4b05961403408b8"
+                }
+              },
+              "id": "53aa532de4b05961403408b8",
+              "type": "STRING",
+              "creationDate": 1403671341497,
+              "value": "3055050000",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403671344819,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403671340739,
+        "slugifiedPrimary": "get-phone-number-details",
+        "routeregex": "/get.php",
+        "route": "/get.php",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "-model",
+          "headers": {
+            "took": 21,
+            "total": 0,
+            "data": []
+          },
+          "took": 60,
+          "name": "Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/models/53aa532ce4b07e1f4ebeb64a/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/models/53aa532ce4b07e1f4ebeb64a"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9"
+            }
+          },
+          "id": "53aa532ce4b07e1f4ebeb64a",
+          "body": "{\n  \"phone_number\": {\n    \"npa\": \"305\",\n    \"nxx\": \"505\",\n    \"xxx\": \"0000\"\n  },\n  \"opencnam\": {\n    \"created\": \"2014-03-02T16:36:18.985569\",\n    \"name\": \"Somebody Important\",\n    \"number\": \"+13055050000\",\n    \"price\": -0.004,\n    \"uri\": \"/v2/phone/%2B13055050000\",\n    \"updated\": \"2014-03-02T16:36:19.157601\"\n  },\n  \"type\": \"Wireless\",\n  \"city\": \"Miami\",\n  \"state\": \"Florida\",\n  \"latitude\": 25.7746,\n  \"county\": \"Miami Dade\",\n  \"longitude\": -80.1903,\n  \"time_zone\": \"Eastern (GMT -05:00)\",\n  \"cbsa_code\": \"33100\",\n  \"carrier\": \"New Cingular Wireless Pcs, Llc - Ga\"\n}",
+          "creationDate": 1403671340007,
+          "status": "ACTIVE"
+        },
+        "name": "Get phone number details",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/endpoints/53aa532ce4b0a798dbd1a840/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/endpoints/53aa532ce4b0a798dbd1a840/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/models/53aa532ce4b07e1f4ebeb64a"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/endpoints/53aa532ce4b0a798dbd1a840"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/endpoints/53aa532ce4b0a798dbd1a840/parameters/"
+          }
+        },
+        "id": "53aa532ce4b0a798dbd1a840",
+        "parameters": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Insert an US phone number ( Digits only, 0 - 9 ) and retrieve details like approximate latitude and longitude, city, county and some other details about it.\r\n\r\nUpdate: Added OpenCNAM API. ( www.opencnam.com )",
+  "groups": {
+    "took": 18,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 04:42:15 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/groups/"
+    },
+    "issues": {
+      "total": 7,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa23e9e4b0a798dbd0a5bf/apis/53aa5324e4b05961403408b1/versions/53aa5327e4b0a705fcc31ae9/errors/"
+    }
+  },
+  "id": "53aa5327e4b0a705fcc31ae9",
+  "status": "ACTIVE"
+}

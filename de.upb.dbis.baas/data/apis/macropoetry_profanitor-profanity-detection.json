@@ -1,0 +1,369 @@
+{
+  "models": {
+    "took": 82,
+    "total": 3,
+    "data": [
+      {
+        "slugifiedPrimary": "censor-response",
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "name": "Censor Response",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/models/53aa4f95e4b00287471a17df/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/models/53aa4f95e4b00287471a17df"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9"
+          }
+        },
+        "id": "53aa4f95e4b00287471a17df",
+        "body": "{\n  \"text\": \"Sample text\"\n}",
+        "creationDate": 1403670421827,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "profanity-check-result",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "Profanity Check Result",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/models/53aa4f95e4b00287471a17e0/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/models/53aa4f95e4b00287471a17e0"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9"
+          }
+        },
+        "id": "53aa4f95e4b00287471a17e0",
+        "body": "{\n  \"profane\": false,\n  \"scorecard\": {}\n}",
+        "creationDate": 1403670421902,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "profanity-score-card",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Profanity Score-card",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/models/53aa4f95e4b051a76d2407cc/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/models/53aa4f95e4b051a76d2407cc"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9"
+          }
+        },
+        "id": "53aa4f95e4b051a76d2407cc",
+        "body": "{\n  \"sexual\": 1\n}",
+        "creationDate": 1403670421951,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:46:51 UTC 2014",
+  "endpoints": {
+    "took": 76,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 22,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403670422765,
+        "code": 200,
+        "method": "POST",
+        "description": "Checks the input text for profanity.",
+        "creationDate": 1403670422043,
+        "slugifiedPrimary": "profanity-check",
+        "routeregex": "/check",
+        "route": "/check",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "profanity-check-result",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 18,
+          "name": "Profanity Check Result",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/models/53aa4f95e4b00287471a17e0/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/models/53aa4f95e4b00287471a17e0"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9"
+            }
+          },
+          "id": "53aa4f95e4b00287471a17e0",
+          "body": "{\n  \"profane\": false,\n  \"scorecard\": {}\n}",
+          "creationDate": 1403670421902,
+          "status": "ACTIVE"
+        },
+        "name": "Profanity Check",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/endpoints/53aa4f96e4b00287471a17e1/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/endpoints/53aa4f96e4b00287471a17e1/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/models/53aa4f95e4b00287471a17e0"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/endpoints/53aa4f96e4b00287471a17e1"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/endpoints/53aa4f96e4b00287471a17e1/parameters/"
+          }
+        },
+        "id": "53aa4f96e4b00287471a17e1",
+        "parameters": {
+          "took": 41,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "text",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "text",
+              "description": "",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/endpoints/53aa4f96e4b00287471a17e1"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/endpoints/53aa4f96e4b00287471a17e1/parameters/53aa4f96e4b008bb2ef86432"
+                }
+              },
+              "id": "53aa4f96e4b008bb2ef86432",
+              "type": "STRING",
+              "creationDate": 1403670422252,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403670422766,
+        "code": 200,
+        "method": "POST",
+        "description": "Strip profanity out of text.",
+        "creationDate": 1403670422330,
+        "slugifiedPrimary": "profanity-removal",
+        "routeregex": "/censor",
+        "route": "/censor",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "censor-response",
+          "headers": {
+            "took": 8,
+            "total": 0,
+            "data": []
+          },
+          "took": 17,
+          "name": "Censor Response",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/models/53aa4f95e4b00287471a17df/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/models/53aa4f95e4b00287471a17df"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9"
+            }
+          },
+          "id": "53aa4f95e4b00287471a17df",
+          "body": "{\n  \"text\": \"Sample text\"\n}",
+          "creationDate": 1403670421827,
+          "status": "ACTIVE"
+        },
+        "name": "Profanity Removal",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/endpoints/53aa4f96e4b0a705fcc31813/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/endpoints/53aa4f96e4b0a705fcc31813/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/models/53aa4f95e4b00287471a17df"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/endpoints/53aa4f96e4b0a705fcc31813"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/endpoints/53aa4f96e4b0a705fcc31813/parameters/"
+          }
+        },
+        "id": "53aa4f96e4b0a705fcc31813",
+        "parameters": {
+          "took": 13,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "text",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "text",
+              "description": "Text to be processed",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/endpoints/53aa4f96e4b0a705fcc31813"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/endpoints/53aa4f96e4b0a705fcc31813/parameters/53aa4f96e4b0f2c975470197"
+                }
+              },
+              "id": "53aa4f96e4b0f2c975470197",
+              "type": "STRING",
+              "creationDate": 1403670422534,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Profanity detection and analysis API. Scan, analyze, and remove profanity from text.",
+  "groups": {
+    "took": 16,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 04:27:00 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/features/"
+    },
+    "plans": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa214fe4b059614032cf8c/apis/53aa4f94e4b00287471a17de/versions/53aa4f94e4b051a76d2407c9/errors/"
+    }
+  },
+  "id": "53aa4f94e4b051a76d2407c9",
+  "status": "ACTIVE"
+}

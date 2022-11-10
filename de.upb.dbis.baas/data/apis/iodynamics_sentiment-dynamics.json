@@ -1,0 +1,263 @@
+{
+  "models": {
+    "took": 48,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "query-model",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Query Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/models/53aa5acee4b0a798dbd1b3b9/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/models/53aa5acee4b0a798dbd1b3b9"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0"
+          }
+        },
+        "id": "53aa5acee4b0a798dbd1b3b9",
+        "body": "{\n  \"code\": \"200\",\n  \"status\": \"OK\",\n  \"polarity\": \"1\",\n  \"aspects\": \"face recognition feature phone \",\n  \"norm_text\": \"i love the new face recognition feature of my new phone ! ! !\\n\"\n}",
+        "creationDate": 1403673294623,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:39:49 UTC 2014",
+  "website": "http://sentimentdynamics.com",
+  "endpoints": {
+    "took": 51,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 15,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "aspects",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "aspects",
+              "description": "Indicates if opinion target extraction is performed",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/endpoints/53aa5acee4b0a798dbd1b3ba"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/endpoints/53aa5acee4b0a798dbd1b3ba/routeparameters/53aa5acee4b059614034141b"
+                }
+              },
+              "id": "53aa5acee4b059614034141b",
+              "type": "STRING",
+              "creationDate": 1403673294857,
+              "value": "true",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "normalize",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "normalize",
+              "description": "Indicates if text normalization is performed",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/endpoints/53aa5acee4b0a798dbd1b3ba"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/endpoints/53aa5acee4b0a798dbd1b3ba/routeparameters/53aa5acee4b0b60946a30356"
+                }
+              },
+              "id": "53aa5acee4b0b60946a30356",
+              "type": "STRING",
+              "creationDate": 1403673294920,
+              "value": "true",
+              "status": "ACTIVE"
+            },
+            {
+              "updateDate": 1419400609399,
+              "description": "The text to classify",
+              "querystring": true,
+              "type": "STRING",
+              "creationDate": 1403673294770,
+              "slugifiedPrimary": "text",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "text",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/endpoints/53aa5acee4b0a798dbd1b3ba"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/endpoints/53aa5acee4b0a798dbd1b3ba/routeparameters/53aa5acee4b0a9b1348db3f4"
+                }
+              },
+              "id": "53aa5acee4b0a9b1348db3f4",
+              "value": "\"I love the new face recognition featur of my new phone\"",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403673295173,
+        "code": 200,
+        "method": "GET",
+        "description": "Polarity Classification and Opinion Target Extraction",
+        "creationDate": 1403673294664,
+        "slugifiedPrimary": "query",
+        "routeregex": "/query.json",
+        "route": "/query.json",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "query-model",
+          "headers": {
+            "took": 4,
+            "total": 0,
+            "data": []
+          },
+          "took": 34,
+          "name": "Query Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/models/53aa5acee4b0a798dbd1b3b9/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/models/53aa5acee4b0a798dbd1b3b9"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0"
+            }
+          },
+          "id": "53aa5acee4b0a798dbd1b3b9",
+          "body": "{\n  \"code\": \"200\",\n  \"status\": \"OK\",\n  \"polarity\": \"1\",\n  \"aspects\": \"face recognition feature phone \",\n  \"norm_text\": \"i love the new face recognition feature of my new phone ! ! !\\n\"\n}",
+          "creationDate": 1403673294623,
+          "status": "ACTIVE"
+        },
+        "name": "Query",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/endpoints/53aa5acee4b0a798dbd1b3ba/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/endpoints/53aa5acee4b0a798dbd1b3ba/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/models/53aa5acee4b0a798dbd1b3b9"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/endpoints/53aa5acee4b0a798dbd1b3ba"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/endpoints/53aa5acee4b0a798dbd1b3ba/parameters/"
+          }
+        },
+        "id": "53aa5acee4b0a798dbd1b3ba",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Sentiment Dynamics is a powerful domain-independent API for Sentiment Analysis and Opinion Mining.\r\n\r\nSimple and effective tool for opinion polarity classification. You can determine if a text has a positive, negative or neutral opinion polarity.\r\n\r\nOur API enables you the posibility of extract the keywords that represent the opinion targets.",
+  "groups": {
+    "took": 6,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:14:53 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/tags/"
+    },
+    "features": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/features/"
+    },
+    "plans": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2576e4b051a76d2341f9/apis/53aa5acde4b07e1f4ebec182/versions/53aa5acde4b0f2c975470ee0/errors/"
+    }
+  },
+  "id": "53aa5acde4b0f2c975470ee0",
+  "status": "ACTIVE"
+}

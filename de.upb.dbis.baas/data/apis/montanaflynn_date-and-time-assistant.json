@@ -1,0 +1,406 @@
+{
+  "models": {
+    "took": 58,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "date-model",
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "name": "Date Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/models/53aa379be4b0a798dbd19616/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/models/53aa379be4b0a798dbd19616"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf"
+          }
+        },
+        "id": "53aa379be4b0a798dbd19616",
+        "body": "{\n  \"international\": \"1987-08-16\",\n  \"english\": \"August 16th, 1987\",\n  \"shorthand\": \"08/16/87\",\n  \"relative\": \"25 years 11 months 3 days 5 hours 37 minutes 38 seconds ago\",\n  \"mysql\": \"1987-08-16 00:00:00\",\n  \"ISO_8601\": \"1987-08-16T00:00:00-05:00\"\n}",
+        "creationDate": 1403664283778,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "time-model",
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "name": "Time Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/models/53aa379be4b0a9b1348d976a/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/models/53aa379be4b0a9b1348d976a"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf"
+          }
+        },
+        "id": "53aa379be4b0a9b1348d976a",
+        "body": "{\n  \"international\": \"08:30:00\",\n  \"standard\": \"8:30 am\",\n  \"military\": \"0830\"\n}",
+        "creationDate": 1403664283803,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:43:33 UTC 2014",
+  "endpoints": {
+    "took": 104,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 12,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "date",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "date",
+              "description": "Anything that resembles a date",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/endpoints/53aa379be4b0a798dbd19617"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/endpoints/53aa379be4b0a798dbd19617/routeparameters/53aa379be4b07e1f4ebea54b"
+                }
+              },
+              "id": "53aa379be4b07e1f4ebea54b",
+              "type": "STRING",
+              "creationDate": 1403664283947,
+              "value": "08/16/87",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403664284253,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403664283864,
+        "slugifiedPrimary": "date",
+        "routeregex": "/format/date",
+        "route": "/format/date",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "date-model",
+          "headers": {
+            "took": 21,
+            "total": 0,
+            "data": []
+          },
+          "took": 36,
+          "name": "Date Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/models/53aa379be4b0a798dbd19616/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/models/53aa379be4b0a798dbd19616"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf"
+            }
+          },
+          "id": "53aa379be4b0a798dbd19616",
+          "body": "{\n  \"international\": \"1987-08-16\",\n  \"english\": \"August 16th, 1987\",\n  \"shorthand\": \"08/16/87\",\n  \"relative\": \"25 years 11 months 3 days 5 hours 37 minutes 38 seconds ago\",\n  \"mysql\": \"1987-08-16 00:00:00\",\n  \"ISO_8601\": \"1987-08-16T00:00:00-05:00\"\n}",
+          "creationDate": 1403664283778,
+          "status": "ACTIVE"
+        },
+        "name": "Date",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/endpoints/53aa379be4b0a798dbd19617/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/endpoints/53aa379be4b0a798dbd19617/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/models/53aa379be4b0a798dbd19616"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/endpoints/53aa379be4b0a798dbd19617"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/endpoints/53aa379be4b0a798dbd19617/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/groups/53aa379be4b0b60946a2e706"
+          }
+        },
+        "id": "53aa379be4b0a798dbd19617",
+        "parameters": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "format",
+          "took": 12,
+          "name": "Format",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/groups/53aa379be4b0b60946a2e706"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf"
+            }
+          },
+          "id": "53aa379be4b0b60946a2e706",
+          "creationDate": 1403664283837,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 14,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 42,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "time",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "time",
+              "description": "Anything that resembles a time",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/endpoints/53aa379be4b0b60946a2e708"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/endpoints/53aa379be4b0b60946a2e708/routeparameters/53aa379ce4b059614033f70d"
+                }
+              },
+              "id": "53aa379ce4b059614033f70d",
+              "type": "STRING",
+              "creationDate": 1403664284049,
+              "value": "8:30am",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403664284265,
+        "code": 200,
+        "method": "GET",
+        "description": "Format Time",
+        "creationDate": 1403664283977,
+        "slugifiedPrimary": "time",
+        "routeregex": "/format/time",
+        "route": "/format/time",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "time-model",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 19,
+          "name": "Time Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/models/53aa379be4b0a9b1348d976a/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/models/53aa379be4b0a9b1348d976a"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf"
+            }
+          },
+          "id": "53aa379be4b0a9b1348d976a",
+          "body": "{\n  \"international\": \"08:30:00\",\n  \"standard\": \"8:30 am\",\n  \"military\": \"0830\"\n}",
+          "creationDate": 1403664283803,
+          "status": "ACTIVE"
+        },
+        "name": "Time",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/endpoints/53aa379be4b0b60946a2e708/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/endpoints/53aa379be4b0b60946a2e708/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/models/53aa379be4b0a9b1348d976a"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/endpoints/53aa379be4b0b60946a2e708"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/endpoints/53aa379be4b0b60946a2e708/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/groups/53aa379be4b0b60946a2e706"
+          }
+        },
+        "id": "53aa379be4b0b60946a2e708",
+        "parameters": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "format",
+          "took": 13,
+          "name": "Format",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/groups/53aa379be4b0b60946a2e706"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf"
+            }
+          },
+          "id": "53aa379be4b0b60946a2e706",
+          "creationDate": 1403664283837,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Convert dates and times into common formats such as ISO 8601, mysql, relative, etc...",
+  "groups": {
+    "took": 33,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "format",
+        "name": "Format",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/groups/53aa379be4b0b60946a2e706"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf"
+          }
+        },
+        "id": "53aa379be4b0b60946a2e706",
+        "creationDate": 1403664283837,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 02:44:43 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/objects/"
+    },
+    "groups": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/issues/"
+    },
+    "tags": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa379be4b059614033f709/versions/53aa379be4b008bb2ef857bf/errors/"
+    }
+  },
+  "id": "53aa379be4b008bb2ef857bf",
+  "status": "ACTIVE"
+}

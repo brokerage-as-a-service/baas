@@ -1,0 +1,277 @@
+{
+  "models": {
+    "took": 80,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "suburb-list",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Suburb List",
+        "format": "JSON",
+        "description": "Location Data with geo codes",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/models/53aa3242e4b0b60946a2dcea/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/models/53aa3242e4b0b60946a2dcea"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8"
+          }
+        },
+        "id": "53aa3242e4b0b60946a2dcea",
+        "body": "{\n  \"message\": \"Before consuming the API you must subscribe to one of its plans, you can do that from http://www.mashape.com/lasoo/location-service/pricing\"\n}",
+        "creationDate": 1403662914024,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:40:55 UTC 2014",
+  "endpoints": {
+    "took": 121,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 65,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "clientkey",
+              "updateDate": 1403662914323,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "clientkey",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/endpoints/53aa3242e4b0b60946a2dceb"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/endpoints/53aa3242e4b0b60946a2dceb/routeparameters/53aa3242e4b00287471a0154"
+                }
+              },
+              "id": "53aa3242e4b00287471a0154",
+              "type": "STRING",
+              "creationDate": 1403662914252,
+              "value": "iphone",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "location",
+              "updateDate": 1403662914443,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "location",
+              "description": "Pass suburb name or post code in this parameter. It is recommended to pass string length greater then 3",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/endpoints/53aa3242e4b0b60946a2dceb"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/endpoints/53aa3242e4b0b60946a2dceb/routeparameters/53aa3242e4b0a705fcc301c9"
+                }
+              },
+              "id": "53aa3242e4b0a705fcc301c9",
+              "type": "STRING",
+              "creationDate": 1403662914169,
+              "value": "2065",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403662914560,
+        "code": 200,
+        "method": "GET",
+        "description": "Location service",
+        "creationDate": 1403662914078,
+        "slugifiedPrimary": "location-service",
+        "routeregex": "/location/([^/?]+)/clientkey/([^/?]+)",
+        "route": "/location/{location}/clientkey/{clientkey}",
+        "array": true,
+        "response": {
+          "slugifiedPrimary": "suburb-list",
+          "headers": {
+            "took": 21,
+            "total": 0,
+            "data": []
+          },
+          "took": 53,
+          "name": "Suburb List",
+          "format": "JSON",
+          "description": "Location Data with geo codes",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/models/53aa3242e4b0b60946a2dcea/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/models/53aa3242e4b0b60946a2dcea"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8"
+            }
+          },
+          "id": "53aa3242e4b0b60946a2dcea",
+          "body": "{\n  \"message\": \"Before consuming the API you must subscribe to one of its plans, you can do that from http://www.mashape.com/lasoo/location-service/pricing\"\n}",
+          "creationDate": 1403662914024,
+          "status": "ACTIVE"
+        },
+        "name": "Location Service",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/endpoints/53aa3242e4b0b60946a2dceb/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/endpoints/53aa3242e4b0b60946a2dceb/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/models/53aa3242e4b0b60946a2dcea"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/endpoints/53aa3242e4b0b60946a2dceb"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/endpoints/53aa3242e4b0b60946a2dceb/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/groups/53aa3242e4b0a798dbd18c8b"
+          }
+        },
+        "id": "53aa3242e4b0b60946a2dceb",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "group",
+          "took": 36,
+          "name": "Group",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/groups/53aa3242e4b0a798dbd18c8b"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8"
+            }
+          },
+          "id": "53aa3242e4b0a798dbd18c8b",
+          "creationDate": 1403662914046,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Location suburb/postcode information which can is used to populate type ahead drop down similar to we have it on Lasoo.com.au. Check right hand side corner on our site.\r\n\r\nThis service is available for Australian locations only.",
+  "groups": {
+    "took": 46,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "group",
+        "name": "Group",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/groups/53aa3242e4b0a798dbd18c8b"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8"
+          }
+        },
+        "id": "53aa3242e4b0a798dbd18c8b",
+        "creationDate": 1403662914046,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 02:21:53 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": false,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/objects/"
+    },
+    "groups": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/groups/"
+    },
+    "issues": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f02e4b0f2c97545c8ef/apis/53aa3241e4b07e1f4ebe9ba6/versions/53aa3241e4b0b60946a2dce8/errors/"
+    }
+  },
+  "id": "53aa3241e4b0b60946a2dce8",
+  "status": "ACTIVE"
+}

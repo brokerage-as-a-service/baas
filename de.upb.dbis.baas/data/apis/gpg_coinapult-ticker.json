@@ -1,0 +1,230 @@
+{
+  "models": {
+    "took": 71,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "ticker-model",
+        "headers": {
+          "took": 44,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "content-type",
+              "condition": "OPTIONAL",
+              "name": "Content-Type",
+              "description": "",
+              "links": {
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/models/544bfad1e4b0648e901cf24a/headers/544bfad1e4b0648e901cf24b"
+                },
+                "model": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/models/544bfad1e4b0648e901cf24a"
+                }
+              },
+              "id": "544bfad1e4b0648e901cf24b",
+              "type": "STRING",
+              "creationDate": 1414265553748,
+              "value": "application/json",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "name": "ticker model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/models/544bfad1e4b0648e901cf24a/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/models/544bfad1e4b0648e901cf24a"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd"
+          }
+        },
+        "id": "544bfad1e4b0648e901cf24a",
+        "body": "{\n  \"100\": {\n    \"ask\": 351.0, \n    \"bid\": 365.75\n  }, \n  \"10000\": {\n    \"ask\": 475.0, \n    \"bid\": 297.0\n  }, \n  \"2000\": {\n    \"ask\": 364.0, \n    \"bid\": 336.9\n  }, \n  \"500\": {\n    \"ask\": 355.0, \n    \"bid\": 345.41\n  }, \n  \"5000\": {\n    \"ask\": 390.0, \n    \"bid\": 327.0\n  }, \n  \"index\": 350.98, \n  \"large\": {\n    \"ask\": 363.26, \n    \"bid\": 338.7\n  }, \n  \"market\": \"USD_BTC\", \n  \"medium\": {\n    \"ask\": 355.0, \n    \"bid\": 345.41\n  }, \n  \"small\": {\n    \"ask\": 354.49, \n    \"bid\": 347.47\n  }, \n  \"type\": \"ticker\", \n  \"updatetime\": 1414265551, \n  \"vip\": {\n    \"ask\": 368.53, \n    \"bid\": 333.43\n  }, \n  \"vip+\": {\n    \"ask\": 377.3, \n    \"bid\": 324.66\n  }\n}",
+        "creationDate": 1414265553435,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "website": "https://coinapult.com",
+  "updateDate": "Wed Oct 29 03:11:12 UTC 2014",
+  "endpoints": {
+    "took": 49,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 20,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "filter",
+              "updateDate": 1414265654546,
+              "condition": "OPTIONAL",
+              "name": "filter",
+              "description": "Restrict the levels returned by the ticker. Example: 100,small",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/endpoints/544bfa76e4b059d4bb430495"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/endpoints/544bfa76e4b059d4bb430495/routeparameters/544bfa8de4b0fa6f4095e1c0"
+                }
+              },
+              "id": "544bfa8de4b0fa6f4095e1c0",
+              "type": "STRING",
+              "creationDate": 1414265485524,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "market",
+              "condition": "OPTIONAL",
+              "name": "market",
+              "description": "Specify one of USD_BTC, EUR_BTC, GBP_BTC, XAG_BTC, XAU_BTC",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/endpoints/544bfa76e4b059d4bb430495"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/endpoints/544bfa76e4b059d4bb430495/routeparameters/544bfac9e4b075b40cd2c9e9"
+                }
+              },
+              "id": "544bfac9e4b075b40cd2c9e9",
+              "type": "STRING",
+              "creationDate": 1414265545355,
+              "value": "",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1414265462683,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1414265462510,
+        "slugifiedPrimary": "ticker",
+        "routeregex": "/api/ticker",
+        "route": "/api/ticker",
+        "name": "ticker",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/endpoints/544bfa76e4b059d4bb430495/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/endpoints/544bfa76e4b059d4bb430495/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/endpoints/544bfa76e4b059d4bb430495"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/endpoints/544bfa76e4b059d4bb430495/parameters/"
+          }
+        },
+        "id": "544bfa76e4b059d4bb430495",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "A bitcoin ticker that provides the Coinapult Index Price and more.",
+  "groups": {
+    "took": 5,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Sat Oct 25 16:39:22 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/544bd239e4b0f31fe9a67572/apis/544bd23ae4b0f31fe9a67573/versions/544bd23ae4b075b40cd2c9bd/authentication"
+    }
+  },
+  "id": "544bd23ae4b075b40cd2c9bd",
+  "status": "ACTIVE"
+}

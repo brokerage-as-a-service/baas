@@ -1,0 +1,284 @@
+{
+  "models": {
+    "took": 55,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "location",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "location",
+        "format": "JSON",
+        "description": "Describes a location name, latitude and longitude",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/models/53aa491de4b008bb2ef85ea4/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/models/53aa491de4b008bb2ef85ea4"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c"
+          }
+        },
+        "id": "53aa491de4b008bb2ef85ea4",
+        "body": "{\n    latitude: 52.5217,\n    longitude: 13.3861,\n    label: \"Theater am Schiffbauerdamm\"\n}",
+        "creationDate": 1403668765990,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:41:05 UTC 2014",
+  "website": "http://damngoodapis.com",
+  "endpoints": {
+    "took": 96,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 18,
+          "total": 4,
+          "data": [
+            {
+              "slugifiedPrimary": "language",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "language",
+              "description": "Language to show the results in. Possible values are: ar, bg, bn, ca, cs, de, el, en, es, et, eu, fr, ga, hi, hr, hu, id, it, ja, ko, nl, pl, pt, ru, sl, tr and ur. Defaults to en.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/endpoints/53aa491ee4b051a76d24023e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/endpoints/53aa491ee4b051a76d24023e/routeparameters/53aa4923e4b008bb2ef85ea7"
+                }
+              },
+              "id": "53aa4923e4b008bb2ef85ea7",
+              "type": "STRING",
+              "creationDate": 1403668771934,
+              "value": "en",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "lat",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "lat",
+              "description": "Latitude portion of the coordinate in decimal format.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/endpoints/53aa491ee4b051a76d24023e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/endpoints/53aa491ee4b051a76d24023e/routeparameters/53aa491fe4b051a76d24023f"
+                }
+              },
+              "id": "53aa491fe4b051a76d24023f",
+              "type": "STRING",
+              "creationDate": 1403668767704,
+              "value": "50.0819945",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "long",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "long",
+              "description": "Longitude portion of the coordinate in decimal format.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/endpoints/53aa491ee4b051a76d24023e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/endpoints/53aa491ee4b051a76d24023e/routeparameters/53aa4921e4b0a705fcc31246"
+                }
+              },
+              "id": "53aa4921e4b0a705fcc31246",
+              "type": "STRING",
+              "creationDate": 1403668769324,
+              "value": "19.953965699999998",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "radius",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "radius",
+              "description": "Radius in meters to use when finding locations nearby. Defaults to 50 meters.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/endpoints/53aa491ee4b051a76d24023e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/endpoints/53aa491ee4b051a76d24023e/routeparameters/53aa4922e4b00287471a11d4"
+                }
+              },
+              "id": "53aa4922e4b00287471a11d4",
+              "type": "STRING",
+              "creationDate": 1403668770705,
+              "value": "50",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403668770733,
+        "code": 200,
+        "method": "GET",
+        "description": "locations near a coordinate (latitude, longitude)",
+        "creationDate": 1403668766468,
+        "slugifiedPrimary": "locations",
+        "routeregex": "/",
+        "route": "/",
+        "array": true,
+        "response": {
+          "slugifiedPrimary": "location",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 33,
+          "name": "location",
+          "format": "JSON",
+          "description": "Describes a location name, latitude and longitude",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/models/53aa491de4b008bb2ef85ea4/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/models/53aa491de4b008bb2ef85ea4"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c"
+            }
+          },
+          "id": "53aa491de4b008bb2ef85ea4",
+          "body": "{\n    latitude: 52.5217,\n    longitude: 13.3861,\n    label: \"Theater am Schiffbauerdamm\"\n}",
+          "creationDate": 1403668765990,
+          "status": "ACTIVE"
+        },
+        "name": "locations",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/endpoints/53aa491ee4b051a76d24023e/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/endpoints/53aa491ee4b051a76d24023e/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/models/53aa491de4b008bb2ef85ea4"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/endpoints/53aa491ee4b051a76d24023e"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/endpoints/53aa491ee4b051a76d24023e/parameters/"
+          }
+        },
+        "id": "53aa491ee4b051a76d24023e",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "This api allows users to retrieve locations nearby a specific coordinate (latitude, longitude) in the language that most suites them.",
+  "groups": {
+    "took": 53,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 03:59:20 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/changelogs/"
+    },
+    "objects": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/tags/"
+    },
+    "features": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/features/"
+    },
+    "plans": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2176e4b0f2c97545f53e/apis/53aa4917e4b0f2c97546fbd7/versions/53aa4918e4b051a76d24023c/errors/"
+    }
+  },
+  "id": "53aa4918e4b051a76d24023c",
+  "status": "ACTIVE"
+}

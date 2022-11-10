@@ -1,0 +1,305 @@
+{
+  "models": {
+    "took": 90,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "https-api-idilia-com-1-response",
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "name": "https-api-idilia-com-1 Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/models/53aa333be4b059614033ef8a/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/models/53aa333be4b059614033ef8a"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d"
+          }
+        },
+        "id": "53aa333be4b059614033ef8a",
+        "creationDate": 1403663163982,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "paris",
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "name": "Paris",
+        "format": "JSON",
+        "description": "Disambiguation of Paris, tx",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/models/53aa333be4b07e1f4ebe9e14/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/models/53aa333be4b07e1f4ebe9e14"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d"
+          }
+        },
+        "id": "53aa333be4b07e1f4ebe9e14",
+        "body": "<DisambiguateResponse>\n <status>200</status>\n <requestId>ac123</requestId>\n <result mime=\"application/x-semdoc+xml\">\n  <docs len=\"3\" num=\"1\">\n   <doc len=\"3\">\n    <sensesInfo>\n     <sense csk=\"Paris/C91\" fsk=\"Paris/N3\" isne=\"1\">\n      <desc>\n       Paris is a city located 98 miles (158 km) northeast of the Dallas-Fort Worth Metroplex in Lamar County, Texas, in the United States.\n      </desc>\n      <extRef>\n       <dm>wikipedia</dm>\n       <ref>24001</ref>\n      </extRef>\n      <neInfo><neT>location/N1</neT><neST>municipality/N1</neST></neInfo>\n     </sense>\n     <sense csk=\"Tx/C3\" fsk=\"Tx/N3\" isne=\"1\">\n      <desc>\n       the second largest state; located in southwestern United States on the Gulf of Mexico.\n      </desc>\n      <extRef>\n       <dm>wikipedia</dm>\n       <ref>29810</ref>\n      </extRef>\n      <neInfo><neT>location/N1</neT><neST>state/N2</neST></neInfo>\n     </sense>\n    </sensesInfo>\n    <queryConf>\n     <confCorrectCoarsePresent>0.961</confCorrectCoarsePresent>\n     <confCorrectCoarseMostProbable>0.631</confCorrectCoarseMostProbable>\n     <confCorrectFinePresent>0.769</confCorrectFinePresent>\n     <confCorrectFineMostProbable>0.677</confCorrectFineMostProbable>\n    </queryConf>\n    <para len=\"3\" so=\"0\">\n     <sent len=\"3\" so=\"0\">\n      <frag cccfmp=\"0.882\" cccmp=\"0.887\" ccfmp=\"0.874\" len=\"1\" so=\"0\" sol=\"1\">\n       <txt>paris</txt>\n       <cs pb=\"1.000\" pc=\"0.875\" sk=\"Paris/C91\" so=\"0\">\n        <fs pb=\"1.000\" pc=\"0.875\" sk=\"Paris/N3\" so=\"0\"/>\n       </cs>\n       <dep c=\"0.791\" dest=\"tx\" destLc=\"noun\" role=\"modifier\" src=\"paris\" srcLc=\"noun\"/>\n      </frag>\n      <frag len=\"1\" so=\"1\">\n       <txt>,</txt>\n       <lc lc=\"punct\"/>\n      </frag>\n      <frag cccfmp=\"0.930\" cccmp=\"0.929\" ccfmp=\"0.981\" len=\"1\" so=\"2\">\n       <txt>tx</txt>\n       <cs pb=\"1.000\" pc=\"0.883\" sk=\"Tx/C3\" so=\"2\">\n        <fs pb=\"1.000\" pc=\"0.883\" sk=\"Tx/N3\" so=\"2\"/>\n       </cs>\n       <dep c=\"0.791\" dest=\"paris\" destLc=\"noun\" role=\"head\" src=\"tx\" srcLc=\"noun\"/>\n      </frag>\n     </sent>\n    </para>\n   </doc>\n  </docs>\n </result>\n</DisambiguateResponse>",
+        "creationDate": 1403663163918,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:41:45 UTC 2014",
+  "website": "http://www.idilia.com/",
+  "endpoints": {
+    "took": 105,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 20,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "text",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "text",
+              "description": "Text you would like to have disambiguated",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/endpoints/53aa333ce4b059614033ef8b"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/endpoints/53aa333ce4b059614033ef8b/routeparameters/53aa333ce4b0a9b1348d901b"
+                }
+              },
+              "id": "53aa333ce4b0a9b1348d901b",
+              "type": "STRING",
+              "creationDate": 1403663164067,
+              "value": "text",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "textmime",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "textMime",
+              "description": "text/plain or text/query or text/tweet or text/html explained here: https://dev.idilia.com/docs/rest_api/text/refs/textMime.html",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/endpoints/53aa333ce4b059614033ef8b"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/endpoints/53aa333ce4b059614033ef8b/routeparameters/53aa333ce4b0b60946a2df4f"
+                }
+              },
+              "id": "53aa333ce4b0b60946a2df4f",
+              "type": "STRING",
+              "creationDate": 1403663164123,
+              "value": "text/plain",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403663164238,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403663164009,
+        "slugifiedPrimary": "https-api-idilia-com-1",
+        "routeregex": "/text/disambiguate.xml",
+        "route": "/text/disambiguate.xml",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "https-api-idilia-com-1-response",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 18,
+          "name": "https-api-idilia-com-1 Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/models/53aa333be4b059614033ef8a/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/models/53aa333be4b059614033ef8a"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d"
+            }
+          },
+          "id": "53aa333be4b059614033ef8a",
+          "creationDate": 1403663163982,
+          "status": "ACTIVE"
+        },
+        "name": "https://api.idilia.com/1",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/endpoints/53aa333ce4b059614033ef8b/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/endpoints/53aa333ce4b059614033ef8b/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/models/53aa333be4b059614033ef8a"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/endpoints/53aa333ce4b059614033ef8b"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/endpoints/53aa333ce4b059614033ef8b/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/groups/53aa333be4b0a9b1348d901a"
+          }
+        },
+        "id": "53aa333ce4b059614033ef8b",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "idilia",
+          "took": 10,
+          "name": "Idilia",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/groups/53aa333be4b0a9b1348d901a"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d"
+            }
+          },
+          "id": "53aa333be4b0a9b1348d901a",
+          "creationDate": 1403663163939,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Precisely annotate text with fine senses using the world's only API that disambiguates both common words (all parts of speech) and proper nouns (NEs) with near human accuracy.  Use specialized recipes for well-formed text, queries, and social media (e.g. tweets). Get lexical annotation, statistical confidence scores, external links (wikipedia, twitter verified accounts, etc), and precise classification of NEs.\r\n\r\nTags: disambiguation, wsd, text analytics, language, sense annotation, semantic, extraction\r\n                                                                                                             ** For more documentation see at http://idilia.com/docs/rest_api/text-disambiguate                                                                                              ** Developer forum at http://groups.google.com/forum/?fromgroups#!forum/idilia-developers",
+  "groups": {
+    "took": 45,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "idilia",
+        "name": "Idilia",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/groups/53aa333be4b0a9b1348d901a"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d"
+          }
+        },
+        "id": "53aa333be4b0a9b1348d901a",
+        "creationDate": 1403663163939,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 02:26:03 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/objects/"
+    },
+    "groups": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f89e4b0a9b1348c5362/apis/53aa333be4b0a798dbd18eaf/versions/53aa333be4b0a705fcc3046d/authentication"
+    }
+  },
+  "id": "53aa333be4b0a705fcc3046d",
+  "status": "ACTIVE"
+}

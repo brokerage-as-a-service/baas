@@ -1,0 +1,428 @@
+{
+  "models": {
+    "took": 92,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "gender-model",
+        "headers": {
+          "took": 42,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "content-type",
+              "condition": "OPTIONAL",
+              "name": "Content-Type",
+              "description": "",
+              "links": {
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/models/55021ed8e4b0490e33d10117/headers/55021ed8e4b0a35b2ca09ecf"
+                },
+                "model": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/models/55021ed8e4b0490e33d10117"
+                }
+              },
+              "id": "55021ed8e4b0a35b2ca09ecf",
+              "type": "STRING",
+              "creationDate": 1426202328765,
+              "value": "application/json",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "name": "/gender model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/models/55021ed8e4b0490e33d10117/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/models/55021ed8e4b0490e33d10117"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9"
+          }
+        },
+        "id": "55021ed8e4b0490e33d10117",
+        "body": "{\n    \"name\": \"Maria\",\n    \"gender\": \"female\"\n}",
+        "creationDate": 1426202328162,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "similar-model",
+        "headers": {
+          "took": 11,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "content-type",
+              "condition": "OPTIONAL",
+              "name": "Content-Type",
+              "description": "",
+              "links": {
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/models/55021ec1e4b0a35b2ca09ecd/headers/55021ec2e4b0d8507cbb3675"
+                },
+                "model": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/models/55021ec1e4b0a35b2ca09ecd"
+                }
+              },
+              "id": "55021ec2e4b0d8507cbb3675",
+              "type": "STRING",
+              "creationDate": 1426202306485,
+              "value": "application/json",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "name": "/similar model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/models/55021ec1e4b0a35b2ca09ecd/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/models/55021ec1e4b0a35b2ca09ecd"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9"
+          }
+        },
+        "id": "55021ec1e4b0a35b2ca09ecd",
+        "body": "{\n    \"name\": \"Josef\",\n    \"similar\": [\n        \"Joseph\",\n        \"Josef\",\n        \"Jósef\"\n    ]\n}",
+        "creationDate": 1426202305673,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Mar 12 23:03:19 UTC 2015",
+  "endpoints": {
+    "took": 151,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 41,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "name",
+              "updateDate": 1426202277253,
+              "condition": "REQUIRED",
+              "name": "name",
+              "description": "Name",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/endpoints/55021266e4b0d007dd92564a"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/endpoints/55021266e4b0d007dd92564a/routeparameters/55021281e4b0a35b2ca09ec3"
+                }
+              },
+              "id": "55021281e4b0a35b2ca09ec3",
+              "type": "STRING",
+              "creationDate": 1426199169471,
+              "value": "Maria",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1426202328450,
+        "code": 200,
+        "method": "GET",
+        "description": "Get gender of name",
+        "creationDate": 1426199142074,
+        "slugifiedPrimary": "gender",
+        "routeregex": "/gender",
+        "route": "/gender",
+        "response": {
+          "slugifiedPrimary": "gender-model",
+          "headers": {
+            "took": 13,
+            "total": 1,
+            "data": [
+              {
+                "slugifiedPrimary": "content-type",
+                "condition": "OPTIONAL",
+                "name": "Content-Type",
+                "description": "",
+                "links": {
+                  "self": {
+                    "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/models/55021ed8e4b0490e33d10117/headers/55021ed8e4b0a35b2ca09ecf"
+                  },
+                  "model": {
+                    "parent": true,
+                    "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/models/55021ed8e4b0490e33d10117"
+                  }
+                },
+                "id": "55021ed8e4b0a35b2ca09ecf",
+                "type": "STRING",
+                "creationDate": 1426202328765,
+                "value": "application/json",
+                "status": "ACTIVE"
+              }
+            ]
+          },
+          "took": 24,
+          "name": "/gender model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/models/55021ed8e4b0490e33d10117/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/models/55021ed8e4b0490e33d10117"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9"
+            }
+          },
+          "id": "55021ed8e4b0490e33d10117",
+          "body": "{\n    \"name\": \"Maria\",\n    \"gender\": \"female\"\n}",
+          "creationDate": 1426202328162,
+          "status": "ACTIVE"
+        },
+        "name": "/gender",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/endpoints/55021266e4b0d007dd92564a/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/endpoints/55021266e4b0d007dd92564a/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/models/55021ed8e4b0490e33d10117"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/endpoints/55021266e4b0d007dd92564a"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/endpoints/55021266e4b0d007dd92564a/parameters/"
+          }
+        },
+        "id": "55021266e4b0d007dd92564a",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 13,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "name",
+              "updateDate": 1426202289399,
+              "condition": "REQUIRED",
+              "name": "name",
+              "description": "Name",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/endpoints/55021293e4b0d007dd92564b"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/endpoints/55021293e4b0d007dd92564b/routeparameters/5502129ee4b0e90cc7c542fa"
+                }
+              },
+              "id": "5502129ee4b0e90cc7c542fa",
+              "type": "STRING",
+              "creationDate": 1426199198070,
+              "value": "Josef",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1426202305942,
+        "code": 200,
+        "method": "GET",
+        "description": "Get similar name",
+        "creationDate": 1426199187297,
+        "slugifiedPrimary": "similar",
+        "routeregex": "/similar",
+        "route": "/similar",
+        "response": {
+          "slugifiedPrimary": "similar-model",
+          "headers": {
+            "took": 42,
+            "total": 1,
+            "data": [
+              {
+                "slugifiedPrimary": "content-type",
+                "condition": "OPTIONAL",
+                "name": "Content-Type",
+                "description": "",
+                "links": {
+                  "self": {
+                    "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/models/55021ec1e4b0a35b2ca09ecd/headers/55021ec2e4b0d8507cbb3675"
+                  },
+                  "model": {
+                    "parent": true,
+                    "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/models/55021ec1e4b0a35b2ca09ecd"
+                  }
+                },
+                "id": "55021ec2e4b0d8507cbb3675",
+                "type": "STRING",
+                "creationDate": 1426202306485,
+                "value": "application/json",
+                "status": "ACTIVE"
+              }
+            ]
+          },
+          "took": 55,
+          "name": "/similar model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/models/55021ec1e4b0a35b2ca09ecd/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/models/55021ec1e4b0a35b2ca09ecd"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9"
+            }
+          },
+          "id": "55021ec1e4b0a35b2ca09ecd",
+          "body": "{\n    \"name\": \"Josef\",\n    \"similar\": [\n        \"Joseph\",\n        \"Josef\",\n        \"Jósef\"\n    ]\n}",
+          "creationDate": 1426202305673,
+          "status": "ACTIVE"
+        },
+        "name": "/similar",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/endpoints/55021293e4b0d007dd92564b/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/endpoints/55021293e4b0d007dd92564b/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/models/55021ec1e4b0a35b2ca09ecd"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/endpoints/55021293e4b0d007dd92564b"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/endpoints/55021293e4b0d007dd92564b/parameters/"
+          }
+        },
+        "id": "55021293e4b0d007dd92564b",
+        "parameters": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Detect the gender of a person by name and find similar names.",
+  "groups": {
+    "took": 6,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Thu Mar 12 22:25:16 UTC 2015",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/features/"
+    },
+    "plans": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5500ccc7e4b0d007dd9253ff/apis/5502124ce4b0a35b2ca09ebf/versions/5502124ce4b0e90cc7c542f9/errors/"
+    }
+  },
+  "id": "5502124ce4b0e90cc7c542f9",
+  "status": "ACTIVE"
+}

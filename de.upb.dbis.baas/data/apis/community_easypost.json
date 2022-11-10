@@ -1,0 +1,1671 @@
+{
+  "models": {
+    "took": 388,
+    "total": 12,
+    "data": [
+      {
+        "slugifiedPrimary": "adresses-model",
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "name": "Adresses Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b05961403404cb/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b05961403404cb"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          }
+        },
+        "id": "53aa4f60e4b05961403404cb",
+        "body": "address{\n\t\"name\": \"Dirk Diggler\",\n\t\"street1\": \"300 Granelli Ave\",\n\t\"city\": \"Half Moon Bay\",\n\t\"state\": \"CA\",\n\t\"zip\": \"94019\",\n\t\"country\": \"US\",\n\t\"email\": \"dirk_d@gmail.com\"\n}",
+        "creationDate": 1403670368772,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "adresses-response-model",
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "name": "Adresses Response Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f450/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f450"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          }
+        },
+        "id": "53aa4f60e4b0b60946a2f450",
+        "body": "{\n  \"id\": \"adr_HrBKVA85\",\n  \"object\": \"Address\",\n  \"name\": \"Dirk Diggler\",\n  \"company\": null,\n  \"street1\": \"300 Granelli Ave\",\n  \"street2\": null,\n  \"city\": \"Half Moon Bay\",\n  \"state\": \"CA\",\n  \"zip\": \"94019\",\n  \"country\": \"US\",\n  \"phone\": null,\n  \"email\": \"dirk_d@gmail.com\",\n  \"created_at\": \"2013-04-22T05:40:57Z\",\n  \"updated_at\": \"2013-04-22T05:40:57Z\"\n}",
+        "creationDate": 1403670368806,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "batch-create-and-buy-model",
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "name": "Batch Create and Buy Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b05961403404cc/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b05961403404cc"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          }
+        },
+        "id": "53aa4f60e4b05961403404cc",
+        "body": "batch{\n\t\"shipments\": {\n\t\t\"0\": {\n\t\t\t\"from_address\": {\n\t\t\t\t\"name\": \"Jon Calhoun\",\n\t\t\t\t\"company\": \"xyz.com\",\n\t\t\t\t\"street1\": \"157 Bridgetop Drive\",\n\t\t\t\t\"city\": \"Bedford\",\n\t\t\t\t\"state\": \"PA\",\n\t\t\t\t\"zip\": \"15522\"\n\t\t\t},\n\t\t\t\"to_address\": {\n\t\t\t\t\"name\": \"Jarrett Streebin\",\n\t\t\t\t\"street1\": \"388 Townsend st\",\n\t\t\t\t\"street2\": \"Apt 20\",\n\t\t\t\t\"city\": \"San Francisco\",\n\t\t\t\t\"state\": \"CA\",\n\t\t\t\t\"zip\": \"94107\"\n\t\t\t},\n\t\t\t\"parcel\": {\n\t\t\t\t\"length\": \"8\",\n\t\t\t\t\"width\": \"6\",\n\t\t\t\t\"height\": \"5\",\n\t\t\t\t\"weight\": \"10\"\n\t\t\t},\n\t\t\t\"reference\": \"order12345\",\n\t\t\t\"carrier\": \"USPS\",\n\t\t\t\"service\": \"Priority\"\n\t\t}\n\t}\n}",
+        "creationDate": 1403670368833,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "batch-labels-response",
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "name": "Batch-Labels Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f61e4b05961403404cf/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f61e4b05961403404cf"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          }
+        },
+        "id": "53aa4f61e4b05961403404cf",
+        "creationDate": 1403670369236,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "batches-model",
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "name": "Batches Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a9b1348da517/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a9b1348da517"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          }
+        },
+        "id": "53aa4f60e4b0a9b1348da517",
+        "body": "batch{\n\t\"shipments\": {\n\t\t\"0\": {\n\t\t\t\"from_address\": {\n\t\t\t\t\"name\": \"Jon Calhoun\",\n\t\t\t\t\"company\": \"xyz.com\",\n\t\t\t\t\"street1\": \"157 Bridgetop Drive\",\n\t\t\t\t\"city\": \"Bedford\",\n\t\t\t\t\"state\": \"PA\",\n\t\t\t\t\"zip\": \"15522\"\n\t\t\t},\n\t\t\t\"to_address\": {\n\t\t\t\t\"name\": \"Jarrett Streebin\",\n\t\t\t\t\"street1\": \"388 Townsend st\",\n\t\t\t\t\"street2\": \"Apt 20\",\n\t\t\t\t\"city\": \"San Francisco\",\n\t\t\t\t\"state\": \"CA\",\n\t\t\t\t\"zip\": \"94107\"\n\t\t\t},\n\t\t\t\"parcel\": {\n\t\t\t\t\"length\": \"8\",\n\t\t\t\t\"width\": \"6\",\n\t\t\t\t\"height\": \"5\",\n\t\t\t\t\"weight\": \"10\"\n\t\t\t},\n\t\t\t\"reference\": \"order12345\"\n\t\t}\n\t}\n}",
+        "creationDate": 1403670368858,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "buy-postage-label-model",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Buy Postage Label Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f451/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f451"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          }
+        },
+        "id": "53aa4f60e4b0b60946a2f451",
+        "body": "rate{\n\t\"id\": \"rate_nyCb6ubX\"\n}",
+        "creationDate": 1403670368892,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "customs-info-forms-model",
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "name": "Customs Info Forms Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a798dbd1a475/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a798dbd1a475"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          }
+        },
+        "id": "53aa4f60e4b0a798dbd1a475",
+        "body": "customs_info{\n\t\"customs_certify\": \"true\",\n\t\"customs_signer\": \"Jonathan Calhoun\",\n\t\"contents_type\": \"merchandise\",\n\t\"contents_explanation\": ,\n\t\"restriction_type\": \"none\",\n\t\"eel_pfc\": \"NOEEI 30.37(a)\",\n\t\"customs_items\": {\n\t\t\"0\": {\n\t\t\t\"id\": \"cstitem_LeWfJAV4\"\n\t\t},\n\t\t\"1\": {\n\t\t\t\"description\": \"Sweet shirts\",\n\t\t\t\"quantity\": \"2\",\n\t\t\t\"value\": \"23\",\n\t\t\t\"weight\": \"11\",\n\t\t\t\"hs_tariff_number\": \"654321\",\n\t\t\t\"origin_country\": \"US\"\n\t\t}\n\t}\n}",
+        "creationDate": 1403670368913,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "customs-items-model",
+        "headers": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "name": "Customs Items Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f452/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f452"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          }
+        },
+        "id": "53aa4f60e4b0b60946a2f452",
+        "body": "customs_item{\n\t\"description\": \"T-Shirt\",\n\t\"quantity\": \"1\",\n\t\"weight\": \"5\",\n\t\"value\": \"10\",\n\t\"hs_tariff_number\": \"123456\"\n\t\"origin_country\": \"US\"\n}",
+        "creationDate": 1403670368951,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "parcels-model",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Parcels Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a9b1348da519/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a9b1348da519"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          }
+        },
+        "id": "53aa4f60e4b0a9b1348da519",
+        "body": "parcel{\n\t\"length\": \"20.2\",\n\t\"width\": \"10.9\",\n\t\"height\": \"5\",\n\t\"weight\": \"65.0\"\n}",
+        "creationDate": 1403670368972,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "refunds-model",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Refunds Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a9b1348da51a/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a9b1348da51a"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          }
+        },
+        "id": "53aa4f60e4b0a9b1348da51a",
+        "body": "refund{\n\t\"carrier\": \"USPS\",\n\t\"tracking_codes\": \"CJ123456789US,LN123456789US\"\n}",
+        "creationDate": 1403670368997,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "scan-form-model",
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "name": "Scan Form Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f61e4b0a9b1348da51b/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f61e4b0a9b1348da51b"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          }
+        },
+        "id": "53aa4f61e4b0a9b1348da51b",
+        "body": "scan_form{\n\t\"from_address\": {\n\t\t\"name\": \"Jon Calhoun\",\n\t\t\"street1\": \"5000 Townshed St\",\n\t\t\"street2\": \"Apt 20\"\n\t\t\"city\": \"San Francisco\",\n\t\t\"state\": \"CA\",\n\t\t\"zip\": \"94107\",\n\t\t\"tracking_codes\": \"123456\",\"123455\",\"123454\"\n\t}\n}",
+        "creationDate": 1403670369023,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "shipments-model",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Shipments Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f61e4b05961403404cd/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f61e4b05961403404cd"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          }
+        },
+        "id": "53aa4f61e4b05961403404cd",
+        "body": "shipments{\n\t\"to_address\": {\n\t\"id\": \"adr_HrBKVA85\"\n\t}\n\t\"from_address\": {\n\t\"id\": \"adr_VtuTOj7o\"\n\t}\n\t\"parcel\": {\n\t\"id\": \"prcl_WDv2VzHp\"\n\t}\n\t\"customs_info\": {\n\t\"id\": \"cstinfo_bl5sE20Y\"\n\t}\n}",
+        "creationDate": 1403670369061,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:39:56 UTC 2014",
+  "website": "https://www.easypost.com/",
+  "endpoints": {
+    "took": 657,
+    "total": 14,
+    "data": [
+      {
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403670371653,
+        "code": 200,
+        "method": "POST",
+        "description": "Address objects represent the origin and destination of any shipment, and are required in order to get rates and purchase postage.",
+        "creationDate": 1403670369093,
+        "slugifiedPrimary": "adresses",
+        "routeregex": "/addresses",
+        "route": "/addresses",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "adresses-response-model",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 33,
+          "name": "Adresses Response Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f450/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f450"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+            }
+          },
+          "id": "53aa4f60e4b0b60946a2f450",
+          "body": "{\n  \"id\": \"adr_HrBKVA85\",\n  \"object\": \"Address\",\n  \"name\": \"Dirk Diggler\",\n  \"company\": null,\n  \"street1\": \"300 Granelli Ave\",\n  \"street2\": null,\n  \"city\": \"Half Moon Bay\",\n  \"state\": \"CA\",\n  \"zip\": \"94019\",\n  \"country\": \"US\",\n  \"phone\": null,\n  \"email\": \"dirk_d@gmail.com\",\n  \"created_at\": \"2013-04-22T05:40:57Z\",\n  \"updated_at\": \"2013-04-22T05:40:57Z\"\n}",
+          "creationDate": 1403670368806,
+          "status": "ACTIVE"
+        },
+        "name": "Adresses",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0b60946a2f453/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0b60946a2f453/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f450"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0b60946a2f453"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0b60946a2f453/parameters/"
+          }
+        },
+        "id": "53aa4f61e4b0b60946a2f453",
+        "parameters": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403670371781,
+        "code": 200,
+        "method": "POST",
+        "description": "The create_and_buy method allows you to specify the carrier and service that you'd like to purchase for each shipment in the batch. After the method is called we will automatically purchase the requested shipping labels and update the batch status accordingly.",
+        "creationDate": 1403670369142,
+        "slugifiedPrimary": "batch-create-and-buy",
+        "routeregex": "/create_and_buy",
+        "route": "/create_and_buy",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "batch-create-and-buy-model",
+          "headers": {
+            "took": 8,
+            "total": 0,
+            "data": []
+          },
+          "took": 41,
+          "name": "Batch Create and Buy Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b05961403404cc/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b05961403404cc"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+            }
+          },
+          "id": "53aa4f60e4b05961403404cc",
+          "body": "batch{\n\t\"shipments\": {\n\t\t\"0\": {\n\t\t\t\"from_address\": {\n\t\t\t\t\"name\": \"Jon Calhoun\",\n\t\t\t\t\"company\": \"xyz.com\",\n\t\t\t\t\"street1\": \"157 Bridgetop Drive\",\n\t\t\t\t\"city\": \"Bedford\",\n\t\t\t\t\"state\": \"PA\",\n\t\t\t\t\"zip\": \"15522\"\n\t\t\t},\n\t\t\t\"to_address\": {\n\t\t\t\t\"name\": \"Jarrett Streebin\",\n\t\t\t\t\"street1\": \"388 Townsend st\",\n\t\t\t\t\"street2\": \"Apt 20\",\n\t\t\t\t\"city\": \"San Francisco\",\n\t\t\t\t\"state\": \"CA\",\n\t\t\t\t\"zip\": \"94107\"\n\t\t\t},\n\t\t\t\"parcel\": {\n\t\t\t\t\"length\": \"8\",\n\t\t\t\t\"width\": \"6\",\n\t\t\t\t\"height\": \"5\",\n\t\t\t\t\"weight\": \"10\"\n\t\t\t},\n\t\t\t\"reference\": \"order12345\",\n\t\t\t\"carrier\": \"USPS\",\n\t\t\t\"service\": \"Priority\"\n\t\t}\n\t}\n}",
+          "creationDate": 1403670368833,
+          "status": "ACTIVE"
+        },
+        "name": "Batch Create and Buy",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0a9b1348da51c/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0a9b1348da51c/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b05961403404cc"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0a9b1348da51c"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0a9b1348da51c/parameters/"
+          }
+        },
+        "id": "53aa4f61e4b0a9b1348da51c",
+        "parameters": {
+          "took": 22,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 43,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "batch",
+              "updateDate": 1403670369470,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "batch",
+              "description": "Batch Number",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0a9b1348da51d"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0a9b1348da51d/routeparameters/53aa4f61e4b0a705fcc317cd"
+                }
+              },
+              "id": "53aa4f61e4b0a705fcc317cd",
+              "type": "STRING",
+              "creationDate": 1403670369392,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403670371688,
+        "code": 200,
+        "method": "POST",
+        "description": "One of the advantages of processing shipments in batches is the ability to retrieve the postage labels for the entire batch in one file. This can only be done once all shipments in the batch are in 'postage_purchased' status. Batch labels can be retrieved in 'pdf' or 'epl2' format.",
+        "creationDate": 1403670369266,
+        "slugifiedPrimary": "batch-labels",
+        "routeregex": "/batches/([^/?]+)/label",
+        "route": "/batches/{batch}/label",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "batch-labels-response",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 15,
+          "name": "Batch-Labels Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f61e4b05961403404cf/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f61e4b05961403404cf"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+            }
+          },
+          "id": "53aa4f61e4b05961403404cf",
+          "creationDate": 1403670369236,
+          "status": "ACTIVE"
+        },
+        "name": "Batch Labels",
+        "routeindex": 2,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0a9b1348da51d/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0a9b1348da51d/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f61e4b05961403404cf"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0a9b1348da51d"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0a9b1348da51d/parameters/"
+          }
+        },
+        "id": "53aa4f61e4b0a9b1348da51d",
+        "parameters": {
+          "took": 14,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "file_format",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "file_format",
+              "description": "The file you are using",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0a9b1348da51d"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0a9b1348da51d/parameters/53aa4f61e4b05961403404d1"
+                }
+              },
+              "id": "53aa4f61e4b05961403404d1",
+              "type": "STRING",
+              "creationDate": 1403670369599,
+              "value": "ep12",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403670371593,
+        "code": 200,
+        "method": "POST",
+        "description": "Batches allow you to create a large number of shipments at one time, and retrieve details and shipping labels for them all at once.",
+        "creationDate": 1403670369643,
+        "slugifiedPrimary": "batches",
+        "routeregex": "/batches",
+        "route": "/batches",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "batches-model",
+          "headers": {
+            "took": 8,
+            "total": 0,
+            "data": []
+          },
+          "took": 41,
+          "name": "Batches Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a9b1348da517/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a9b1348da517"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+            }
+          },
+          "id": "53aa4f60e4b0a9b1348da517",
+          "body": "batch{\n\t\"shipments\": {\n\t\t\"0\": {\n\t\t\t\"from_address\": {\n\t\t\t\t\"name\": \"Jon Calhoun\",\n\t\t\t\t\"company\": \"xyz.com\",\n\t\t\t\t\"street1\": \"157 Bridgetop Drive\",\n\t\t\t\t\"city\": \"Bedford\",\n\t\t\t\t\"state\": \"PA\",\n\t\t\t\t\"zip\": \"15522\"\n\t\t\t},\n\t\t\t\"to_address\": {\n\t\t\t\t\"name\": \"Jarrett Streebin\",\n\t\t\t\t\"street1\": \"388 Townsend st\",\n\t\t\t\t\"street2\": \"Apt 20\",\n\t\t\t\t\"city\": \"San Francisco\",\n\t\t\t\t\"state\": \"CA\",\n\t\t\t\t\"zip\": \"94107\"\n\t\t\t},\n\t\t\t\"parcel\": {\n\t\t\t\t\"length\": \"8\",\n\t\t\t\t\"width\": \"6\",\n\t\t\t\t\"height\": \"5\",\n\t\t\t\t\"weight\": \"10\"\n\t\t\t},\n\t\t\t\"reference\": \"order12345\"\n\t\t}\n\t}\n}",
+          "creationDate": 1403670368858,
+          "status": "ACTIVE"
+        },
+        "name": "Batches",
+        "routeindex": 3,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b07e1f4ebeb290/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b07e1f4ebeb290/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a9b1348da517"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b07e1f4ebeb290"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b07e1f4ebeb290/parameters/"
+          }
+        },
+        "id": "53aa4f61e4b07e1f4ebeb290",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 47,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "shp",
+              "updateDate": 1403670369843,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "shp",
+              "description": "Shipment ID",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0b60946a2f455"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0b60946a2f455/routeparameters/53aa4f61e4b0b60946a2f456"
+                }
+              },
+              "id": "53aa4f61e4b0b60946a2f456",
+              "type": "STRING",
+              "creationDate": 1403670369771,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403670371696,
+        "code": 200,
+        "method": "POST",
+        "description": "Buying a postage label once you've created a shipment is as simple as specifying which rate you'd like from the available options.",
+        "creationDate": 1403670369704,
+        "slugifiedPrimary": "buy-postage-label",
+        "routeregex": "/shipments/([^/?]+)/buy",
+        "route": "/shipments/{shp}/buy",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "buy-postage-label-model",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 39,
+          "name": "Buy Postage Label Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f451/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f451"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+            }
+          },
+          "id": "53aa4f60e4b0b60946a2f451",
+          "body": "rate{\n\t\"id\": \"rate_nyCb6ubX\"\n}",
+          "creationDate": 1403670368892,
+          "status": "ACTIVE"
+        },
+        "name": "Buy Postage Label",
+        "routeindex": 4,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0b60946a2f455/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0b60946a2f455/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f451"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0b60946a2f455"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0b60946a2f455/parameters/"
+          }
+        },
+        "id": "53aa4f61e4b0b60946a2f455",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403670371683,
+        "code": 200,
+        "method": "POST",
+        "description": "CustomsInfo objects contain CustomsItem objects and all necessary information for the generation of customs forms required for international shipping.",
+        "creationDate": 1403670369926,
+        "slugifiedPrimary": "customs-info-forms",
+        "routeregex": "/customs_infos",
+        "route": "/customs_infos",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "customs-info-forms-model",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 34,
+          "name": "Customs Info Forms Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a798dbd1a475/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a798dbd1a475"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+            }
+          },
+          "id": "53aa4f60e4b0a798dbd1a475",
+          "body": "customs_info{\n\t\"customs_certify\": \"true\",\n\t\"customs_signer\": \"Jonathan Calhoun\",\n\t\"contents_type\": \"merchandise\",\n\t\"contents_explanation\": ,\n\t\"restriction_type\": \"none\",\n\t\"eel_pfc\": \"NOEEI 30.37(a)\",\n\t\"customs_items\": {\n\t\t\"0\": {\n\t\t\t\"id\": \"cstitem_LeWfJAV4\"\n\t\t},\n\t\t\"1\": {\n\t\t\t\"description\": \"Sweet shirts\",\n\t\t\t\"quantity\": \"2\",\n\t\t\t\"value\": \"23\",\n\t\t\t\"weight\": \"11\",\n\t\t\t\"hs_tariff_number\": \"654321\",\n\t\t\t\"origin_country\": \"US\"\n\t\t}\n\t}\n}",
+          "creationDate": 1403670368913,
+          "status": "ACTIVE"
+        },
+        "name": "Customs Info Forms",
+        "routeindex": 5,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b05961403404d2/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b05961403404d2/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a798dbd1a475"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b05961403404d2"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b05961403404d2/parameters/"
+          }
+        },
+        "id": "53aa4f61e4b05961403404d2",
+        "parameters": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403670371695,
+        "code": 200,
+        "method": "POST",
+        "description": "Customs items describe goods for international shipment and are included in CustomsInfo objects.",
+        "creationDate": 1403670369999,
+        "slugifiedPrimary": "customs-items",
+        "routeregex": "/customs_items",
+        "route": "/customs_items",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "customs-items-model",
+          "headers": {
+            "took": 8,
+            "total": 0,
+            "data": []
+          },
+          "took": 42,
+          "name": "Customs Items Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f452/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f452"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+            }
+          },
+          "id": "53aa4f60e4b0b60946a2f452",
+          "body": "customs_item{\n\t\"description\": \"T-Shirt\",\n\t\"quantity\": \"1\",\n\t\"weight\": \"5\",\n\t\"value\": \"10\",\n\t\"hs_tariff_number\": \"123456\"\n\t\"origin_country\": \"US\"\n}",
+          "creationDate": 1403670368951,
+          "status": "ACTIVE"
+        },
+        "name": "Customs Items",
+        "routeindex": 6,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0b60946a2f458/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0b60946a2f458/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f452"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0b60946a2f458"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f61e4b0b60946a2f458/parameters/"
+          }
+        },
+        "id": "53aa4f61e4b0b60946a2f458",
+        "parameters": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 14,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "shp",
+              "updateDate": 1403670370232,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "shp",
+              "description": "Shipment ID",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b05961403404d3"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b05961403404d3/routeparameters/53aa4f62e4b008bb2ef86405"
+                }
+              },
+              "id": "53aa4f62e4b008bb2ef86405",
+              "type": "STRING",
+              "creationDate": 1403670370143,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403670371612,
+        "code": 200,
+        "method": "GET",
+        "description": "You can request an update to the shipping rate options for a shipment at any time. If there is an existing rate for a carrier/service already attached to this shipment it will be updated, not replaced (it will retain its id).",
+        "creationDate": 1403670370050,
+        "slugifiedPrimary": "get-shipping-rates",
+        "routeregex": "/shipments/([^/?]+)/rates",
+        "route": "/shipments/{shp}/rates",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "customs-items-model",
+          "headers": {
+            "took": 8,
+            "total": 0,
+            "data": []
+          },
+          "took": 20,
+          "name": "Customs Items Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f452/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f452"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+            }
+          },
+          "id": "53aa4f60e4b0b60946a2f452",
+          "body": "customs_item{\n\t\"description\": \"T-Shirt\",\n\t\"quantity\": \"1\",\n\t\"weight\": \"5\",\n\t\"value\": \"10\",\n\t\"hs_tariff_number\": \"123456\"\n\t\"origin_country\": \"US\"\n}",
+          "creationDate": 1403670368951,
+          "status": "ACTIVE"
+        },
+        "name": "Get Shipping Rates",
+        "routeindex": 7,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b05961403404d3/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b05961403404d3/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f452"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b05961403404d3"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b05961403404d3/parameters/"
+          }
+        },
+        "id": "53aa4f62e4b05961403404d3",
+        "parameters": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 9,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403670371676,
+        "code": 200,
+        "method": "POST",
+        "description": "Parcel objects represent the physical container being shipped. Please provide either the length, width, and height dimensions, or a predefined_package string.",
+        "creationDate": 1403670370305,
+        "slugifiedPrimary": "parcels",
+        "routeregex": "/parcels",
+        "route": "/parcels",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "parcels-model",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 49,
+          "name": "Parcels Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a9b1348da519/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a9b1348da519"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+            }
+          },
+          "id": "53aa4f60e4b0a9b1348da519",
+          "body": "parcel{\n\t\"length\": \"20.2\",\n\t\"width\": \"10.9\",\n\t\"height\": \"5\",\n\t\"weight\": \"65.0\"\n}",
+          "creationDate": 1403670368972,
+          "status": "ACTIVE"
+        },
+        "name": "Parcels",
+        "routeindex": 8,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b07e1f4ebeb293/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b07e1f4ebeb293/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a9b1348da519"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b07e1f4ebeb293"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b07e1f4ebeb293/parameters/"
+          }
+        },
+        "id": "53aa4f62e4b07e1f4ebeb293",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403670371628,
+        "code": 200,
+        "method": "POST",
+        "description": "Generally a refund can be issued for unused shipping labels if the request is made promptly.",
+        "creationDate": 1403670370351,
+        "slugifiedPrimary": "refunds",
+        "routeregex": "/refunds",
+        "route": "/refunds",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "refunds-model",
+          "headers": {
+            "took": 21,
+            "total": 0,
+            "data": []
+          },
+          "took": 35,
+          "name": "Refunds Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a9b1348da51a/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a9b1348da51a"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+            }
+          },
+          "id": "53aa4f60e4b0a9b1348da51a",
+          "body": "refund{\n\t\"carrier\": \"USPS\",\n\t\"tracking_codes\": \"CJ123456789US,LN123456789US\"\n}",
+          "creationDate": 1403670368997,
+          "status": "ACTIVE"
+        },
+        "name": "Refunds",
+        "routeindex": 9,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b0a798dbd1a478/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b0a798dbd1a478/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a9b1348da51a"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b0a798dbd1a478"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b0a798dbd1a478/parameters/"
+          }
+        },
+        "id": "53aa4f62e4b0a798dbd1a478",
+        "parameters": {
+          "took": 27,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403670371643,
+        "code": 200,
+        "method": "POST",
+        "description": "SCAN forms are USPS specific documents that can be created to speed up and simplify your carrier parcel pickup process. The SCAN form is one document that can be scanned to mark all included tracking codes as \"Accepted for Shipment\" by the USPS.",
+        "creationDate": 1403670370417,
+        "slugifiedPrimary": "scan-form",
+        "routeregex": "/scan_forms",
+        "route": "/scan_forms",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "scan-form-model",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 54,
+          "name": "Scan Form Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f61e4b0a9b1348da51b/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f61e4b0a9b1348da51b"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+            }
+          },
+          "id": "53aa4f61e4b0a9b1348da51b",
+          "body": "scan_form{\n\t\"from_address\": {\n\t\t\"name\": \"Jon Calhoun\",\n\t\t\"street1\": \"5000 Townshed St\",\n\t\t\"street2\": \"Apt 20\"\n\t\t\"city\": \"San Francisco\",\n\t\t\"state\": \"CA\",\n\t\t\"zip\": \"94107\",\n\t\t\"tracking_codes\": \"123456\",\"123455\",\"123454\"\n\t}\n}",
+          "creationDate": 1403670369023,
+          "status": "ACTIVE"
+        },
+        "name": "Scan Form",
+        "routeindex": 10,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b0b60946a2f45a/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b0b60946a2f45a/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f61e4b0a9b1348da51b"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b0b60946a2f45a"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b0b60946a2f45a/parameters/"
+          }
+        },
+        "id": "53aa4f62e4b0b60946a2f45a",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 15,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "shp",
+              "updateDate": 1403670370600,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "shp",
+              "description": "Shipment ID",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b0b60946a2f45b"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b0b60946a2f45b/routeparameters/53aa4f62e4b05961403404d5"
+                }
+              },
+              "id": "53aa4f62e4b05961403404d5",
+              "type": "STRING",
+              "creationDate": 1403670370527,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403670371657,
+        "code": 200,
+        "method": "POST",
+        "description": "Insuring your shipment is simple: just tell us its value!",
+        "creationDate": 1403670370470,
+        "slugifiedPrimary": "shipment-insurance",
+        "routeregex": "/shipments/([^/?]+)/insure",
+        "route": "/shipments/{shp}/insure",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "customs-items-model",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 19,
+          "name": "Customs Items Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f452/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f452"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+            }
+          },
+          "id": "53aa4f60e4b0b60946a2f452",
+          "body": "customs_item{\n\t\"description\": \"T-Shirt\",\n\t\"quantity\": \"1\",\n\t\"weight\": \"5\",\n\t\"value\": \"10\",\n\t\"hs_tariff_number\": \"123456\"\n\t\"origin_country\": \"US\"\n}",
+          "creationDate": 1403670368951,
+          "status": "ACTIVE"
+        },
+        "name": "Shipment Insurance",
+        "routeindex": 11,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b0b60946a2f45b/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b0b60946a2f45b/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f452"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b0b60946a2f45b"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b0b60946a2f45b/parameters/"
+          }
+        },
+        "id": "53aa4f62e4b0b60946a2f45b",
+        "parameters": {
+          "took": 9,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "amount",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "amount",
+              "description": "888.50",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b0b60946a2f45b"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b0b60946a2f45b/parameters/53aa4f62e4b0a9b1348da51f"
+                }
+              },
+              "id": "53aa4f62e4b0a9b1348da51f",
+              "type": "STRING",
+              "creationDate": 1403670370684,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403670371681,
+        "code": 200,
+        "method": "POST",
+        "description": "The workhorse of the EasyPost API, shipments are made up of \"to\" and \"from\" addresses, the parcel being shipped, and any customs forms required for international deliveries. Once created a Shipment object can be used to retrieve shipping rates and purchase a postage label.",
+        "creationDate": 1403670370740,
+        "slugifiedPrimary": "shipments",
+        "routeregex": "/shipments",
+        "route": "/shipments",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "buy-postage-label-model",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 20,
+          "name": "Buy Postage Label Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f451/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f451"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+            }
+          },
+          "id": "53aa4f60e4b0b60946a2f451",
+          "body": "rate{\n\t\"id\": \"rate_nyCb6ubX\"\n}",
+          "creationDate": 1403670368892,
+          "status": "ACTIVE"
+        },
+        "name": "Shipments",
+        "routeindex": 12,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b07e1f4ebeb294/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b07e1f4ebeb294/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0b60946a2f451"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b07e1f4ebeb294"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b07e1f4ebeb294/parameters/"
+          }
+        },
+        "id": "53aa4f62e4b07e1f4ebeb294",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 15,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "adr",
+              "updateDate": 1403670371031,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "adr",
+              "description": "Address ID",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b07e1f4ebeb295"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b07e1f4ebeb295/routeparameters/53aa4f62e4b0b60946a2f45d"
+                }
+              },
+              "id": "53aa4f62e4b0b60946a2f45d",
+              "type": "STRING",
+              "creationDate": 1403670370915,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403670371668,
+        "code": 200,
+        "method": "GET",
+        "description": "Verifying an address with EasyPost is simple, simply request verification of an Address object and we'll return a new object with the closest verified address.",
+        "creationDate": 1403670370825,
+        "slugifiedPrimary": "verify-addresses",
+        "routeregex": "/addresses/([^/?]+)/verify",
+        "route": "/addresses/{adr}/verify",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "parcels-model",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 50,
+          "name": "Parcels Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a9b1348da519/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a9b1348da519"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+            }
+          },
+          "id": "53aa4f60e4b0a9b1348da519",
+          "body": "parcel{\n\t\"length\": \"20.2\",\n\t\"width\": \"10.9\",\n\t\"height\": \"5\",\n\t\"weight\": \"65.0\"\n}",
+          "creationDate": 1403670368972,
+          "status": "ACTIVE"
+        },
+        "name": "Verify Addresses",
+        "routeindex": 13,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b07e1f4ebeb295/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b07e1f4ebeb295/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/53aa4f60e4b0a9b1348da519"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b07e1f4ebeb295"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/53aa4f62e4b07e1f4ebeb295/parameters/"
+          }
+        },
+        "id": "53aa4f62e4b07e1f4ebeb295",
+        "parameters": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "EasyPost allows you to integrate shipping APIs into any application in minutes.",
+  "groups": {
+    "took": 49,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 04:26:08 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 12,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/astronode"
+    },
+    "endpoints": {
+      "total": 14,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/issues/"
+    },
+    "tags": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2210e4b059614032dda8/apis/53aa4f60e4b0b60946a2f44e/versions/53aa4f60e4b0a9b1348da513/authentication"
+    }
+  },
+  "id": "53aa4f60e4b0a9b1348da513",
+  "status": "ACTIVE"
+}

@@ -1,0 +1,366 @@
+{
+  "models": {
+    "took": 16,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "census-data-response",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Census-Data Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/models/53aa4a4fe4b0596140340144/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/models/53aa4a4fe4b0596140340144"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093"
+          }
+        },
+        "id": "53aa4a4fe4b0596140340144",
+        "creationDate": 1403669071168,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:45:24 UTC 2014",
+  "website": "https://geoservices.tamu.edu",
+  "endpoints": {
+    "took": 63,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 33,
+          "total": 8,
+          "data": [
+            {
+              "slugifiedPrimary": "apikey",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "apiKey",
+              "description": "API Key",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/endpoints/53aa4a4fe4b07e1f4ebeaef9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/endpoints/53aa4a4fe4b07e1f4ebeaef9/routeparameters/53aa4a4fe4b0a798dbd1a095"
+                }
+              },
+              "id": "53aa4a4fe4b0a798dbd1a095",
+              "type": "STRING",
+              "creationDate": 1403669071249,
+              "value": "demo. Get your API key from https://geoservices.tamu.edu",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "censusyear",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "censusYear",
+              "description": "year of census data to return",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/endpoints/53aa4a4fe4b07e1f4ebeaef9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/endpoints/53aa4a4fe4b07e1f4ebeaef9/routeparameters/53aa4a4fe4b0a9b1348da19c"
+                }
+              },
+              "id": "53aa4a4fe4b0a9b1348da19c",
+              "type": "STRING",
+              "creationDate": 1403669071291,
+              "value": "1990, 2000, 2010",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "format",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "format",
+              "description": "output format",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/endpoints/53aa4a4fe4b07e1f4ebeaef9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/endpoints/53aa4a4fe4b07e1f4ebeaef9/routeparameters/53aa4a4fe4b0596140340147"
+                }
+              },
+              "id": "53aa4a4fe4b0596140340147",
+              "type": "STRING",
+              "creationDate": 1403669071469,
+              "value": "csv, tsv, xml",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "lat",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "lat",
+              "description": "latitude value",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/endpoints/53aa4a4fe4b07e1f4ebeaef9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/endpoints/53aa4a4fe4b07e1f4ebeaef9/routeparameters/53aa4a4fe4b07e1f4ebeaefa"
+                }
+              },
+              "id": "53aa4a4fe4b07e1f4ebeaefa",
+              "type": "NUMBER",
+              "creationDate": 1403669071338,
+              "value": "34.0726207996348",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "lon",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "lon",
+              "description": "longitude value",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/endpoints/53aa4a4fe4b07e1f4ebeaef9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/endpoints/53aa4a4fe4b07e1f4ebeaef9/routeparameters/53aa4a4fe4b07e1f4ebeaefb"
+                }
+              },
+              "id": "53aa4a4fe4b07e1f4ebeaefb",
+              "type": "STRING",
+              "creationDate": 1403669071382,
+              "value": "-118.397965182076",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "notstore",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "notStore",
+              "description": "flag to indicate that the server should not keep track of your query",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/endpoints/53aa4a4fe4b07e1f4ebeaef9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/endpoints/53aa4a4fe4b07e1f4ebeaef9/routeparameters/53aa4a4fe4b0596140340148"
+                }
+              },
+              "id": "53aa4a4fe4b0596140340148",
+              "type": "BOOLEAN",
+              "creationDate": 1403669071512,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "s",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "s",
+              "description": "state lat/lon are within (speeds up processing)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/endpoints/53aa4a4fe4b07e1f4ebeaef9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/endpoints/53aa4a4fe4b07e1f4ebeaef9/routeparameters/53aa4a4fe4b0596140340146"
+                }
+              },
+              "id": "53aa4a4fe4b0596140340146",
+              "type": "STRING",
+              "creationDate": 1403669071426,
+              "value": "ca",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "version",
+              "condition": "CONSTANT",
+              "array": false,
+              "name": "version",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/endpoints/53aa4a4fe4b07e1f4ebeaef9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/endpoints/53aa4a4fe4b07e1f4ebeaef9/routeparameters/53aa4a4fe4b0596140340149"
+                }
+              },
+              "id": "53aa4a4fe4b0596140340149",
+              "type": "STRING",
+              "creationDate": 1403669071555,
+              "value": "4.01",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403669071435,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403669071197,
+        "slugifiedPrimary": "census-data",
+        "routeregex": "/",
+        "route": "/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "census-data-response",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 18,
+          "name": "Census-Data Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/models/53aa4a4fe4b0596140340144/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/models/53aa4a4fe4b0596140340144"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093"
+            }
+          },
+          "id": "53aa4a4fe4b0596140340144",
+          "creationDate": 1403669071168,
+          "status": "ACTIVE"
+        },
+        "name": "Census Data",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/endpoints/53aa4a4fe4b07e1f4ebeaef9/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/endpoints/53aa4a4fe4b07e1f4ebeaef9/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/models/53aa4a4fe4b0596140340144"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/endpoints/53aa4a4fe4b07e1f4ebeaef9"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/endpoints/53aa4a4fe4b07e1f4ebeaef9/parameters/"
+          }
+        },
+        "id": "53aa4a4fe4b07e1f4ebeaef9",
+        "parameters": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Service to associated census data with latitude longitude points. Send a lat/lon value and get back 1990, 2000, or 2010 census data",
+  "groups": {
+    "took": 16,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 04:04:30 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21d7e4b0a798dbd079c3/apis/53aa4a4ee4b0596140340142/versions/53aa4a4ee4b0a798dbd1a093/errors/"
+    }
+  },
+  "id": "53aa4a4ee4b0a798dbd1a093",
+  "status": "ACTIVE"
+}

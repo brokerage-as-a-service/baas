@@ -1,0 +1,242 @@
+{
+  "models": {
+    "took": 54,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "qalc-response",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Qalc Response",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/models/54a75768e4b0e73764747a63/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/models/54a75768e4b0e73764747a63"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d"
+          }
+        },
+        "id": "54a75768e4b0e73764747a63",
+        "body": "{\n    \"error\": 0,\n    \"result\": \"5 * 2 = 10\"\n}",
+        "creationDate": 1420253032460,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "raw-response",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Raw response",
+        "format": "TEXT",
+        "description": "20 / 5",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/models/54a75a4fe4b0e73764747a67/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/models/54a75a4fe4b0e73764747a67"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d"
+          }
+        },
+        "id": "54a75a4fe4b0e73764747a67",
+        "body": "4",
+        "creationDate": 1420253775317,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Sat Jan 03 02:57:09 UTC 2015",
+  "endpoints": {
+    "took": 68,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 7,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "q",
+              "updateDate": 1420251902908,
+              "condition": "REQUIRED",
+              "name": "q",
+              "description": "Expression query string",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/endpoints/54a752dee4b06d09002465ee"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/endpoints/54a752dee4b06d09002465ee/routeparameters/54a752ede4b07432b05868fd"
+                }
+              },
+              "id": "54a752ede4b07432b05868fd",
+              "type": "STRING",
+              "creationDate": 1420251885332,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1420253775639,
+        "code": 200,
+        "method": "GET",
+        "description": "Every expression can be passed to this endpoint",
+        "creationDate": 1420251870408,
+        "slugifiedPrimary": "calculate",
+        "routeregex": "/",
+        "route": "/",
+        "response": {
+          "slugifiedPrimary": "raw-response",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 23,
+          "name": "Raw response",
+          "format": "TEXT",
+          "description": "20 / 5",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/models/54a75a4fe4b0e73764747a67/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/models/54a75a4fe4b0e73764747a67"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d"
+            }
+          },
+          "id": "54a75a4fe4b0e73764747a67",
+          "body": "4",
+          "creationDate": 1420253775317,
+          "status": "ACTIVE"
+        },
+        "name": "Calculate",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/endpoints/54a752dee4b06d09002465ee/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/endpoints/54a752dee4b06d09002465ee/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/models/54a75a4fe4b0e73764747a67"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/endpoints/54a752dee4b06d09002465ee"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/endpoints/54a752dee4b06d09002465ee/parameters/"
+          }
+        },
+        "id": "54a752dee4b06d09002465ee",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Qalc takes in a mathematical expression and gives you a clean result. An example could be \"3 * 2\" with the response of \"6\", or \"20 / 5\" giving \"4\".",
+  "groups": {
+    "took": 17,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Sat Jan 03 02:20:45 UTC 2015",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/features/"
+    },
+    "plans": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa21cde4b0a705fcc21322/apis/54a751fde4b0415c068d6f7c/versions/54a751fde4b0ab6dd8f9276d/errors/"
+    }
+  },
+  "id": "54a751fde4b0ab6dd8f9276d",
+  "status": "ACTIVE"
+}

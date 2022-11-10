@@ -1,0 +1,673 @@
+{
+  "models": {
+    "took": 68,
+    "total": 3,
+    "data": [
+      {
+        "slugifiedPrimary": "task",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Task",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438afaae4b08dc6c794906d/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438afaae4b08dc6c794906d"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a"
+          }
+        },
+        "id": "5438afaae4b08dc6c794906d",
+        "body": "{\n    \"id\": \"unique identifier\",\n    \"title\": \"title of task\",\n    \"body\": \"description of task\",\n    \"order\": 1,\n    \"done\": true\n}",
+        "creationDate": 1413001130012,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "task-list",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Task List",
+        "format": "JSON",
+        "description": "List of tasks",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438b092e4b08dc6c794906f/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438b092e4b08dc6c794906f"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a"
+          }
+        },
+        "id": "5438b092e4b08dc6c794906f",
+        "body": "[\n   {\n    \"id\": \"unique identifier\",\n    \"title\": \"title of task\",\n    \"body\": \"description of task\",\n    \"order\": 1,\n    \"done\": true\n  },\n  ...\n]",
+        "creationDate": 1413001362773,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "task-without-id",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Task without id",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438b0c9e4b03a202ed05f0f/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438b0c9e4b03a202ed05f0f"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a"
+          }
+        },
+        "id": "5438b0c9e4b03a202ed05f0f",
+        "body": "{\n  \"title\": \"title of task\",\n  \"body\": \"description of task\",\n  \"order\": 1,\n  \"done\": true\n}",
+        "creationDate": 1413001417495,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "website": "http://kenneth-todo.herokuapp.com",
+  "updateDate": "Sat Oct 11 04:29:59 UTC 2014",
+  "endpoints": {
+    "took": 230,
+    "total": 5,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1413002103580,
+        "code": 200,
+        "method": "POST",
+        "description": "Create a task with the todo list.",
+        "creationDate": 1413001304864,
+        "slugifiedPrimary": "create-a-task",
+        "routeregex": "/v1/tasks",
+        "route": "/v1/tasks",
+        "payload": {
+          "slugifiedPrimary": "task-without-id",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 32,
+          "name": "Task without id",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438b0c9e4b03a202ed05f0f/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438b0c9e4b03a202ed05f0f"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a"
+            }
+          },
+          "id": "5438b0c9e4b03a202ed05f0f",
+          "body": "{\n  \"title\": \"title of task\",\n  \"body\": \"description of task\",\n  \"order\": 1,\n  \"done\": true\n}",
+          "creationDate": 1413001417495,
+          "status": "ACTIVE"
+        },
+        "response": {
+          "slugifiedPrimary": "task",
+          "headers": {
+            "took": 4,
+            "total": 0,
+            "data": []
+          },
+          "took": 16,
+          "name": "Task",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438afaae4b08dc6c794906d/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438afaae4b08dc6c794906d"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a"
+            }
+          },
+          "id": "5438afaae4b08dc6c794906d",
+          "body": "{\n    \"id\": \"unique identifier\",\n    \"title\": \"title of task\",\n    \"body\": \"description of task\",\n    \"order\": 1,\n    \"done\": true\n}",
+          "creationDate": 1413001130012,
+          "status": "ACTIVE"
+        },
+        "name": "Create a Task",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438b058e4b0d13d0f20e7db/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438b058e4b0d13d0f20e7db/routeparameters/"
+          },
+          "payload": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438b0c9e4b03a202ed05f0f"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438afaae4b08dc6c794906d"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438b058e4b0d13d0f20e7db"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438b058e4b0d13d0f20e7db/parameters/"
+          }
+        },
+        "id": "5438b058e4b0d13d0f20e7db",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 13,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "id",
+              "condition": "REQUIRED",
+              "name": "id",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438b160e4b055bed41fd4fd"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438b160e4b055bed41fd4fd/routeparameters/5438b160e4b08dc6c7949070"
+                }
+              },
+              "id": "5438b160e4b08dc6c7949070",
+              "type": "STRING",
+              "creationDate": 1413001568791,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1413002103563,
+        "code": 200,
+        "method": "DELETE",
+        "description": "Delete unwanted tasks.",
+        "creationDate": 1413001568699,
+        "slugifiedPrimary": "delete-task",
+        "routeregex": "/v1/tasks/([^/?]+)",
+        "route": "/v1/tasks/{id}",
+        "name": "Delete Task",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438b160e4b055bed41fd4fd/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438b160e4b055bed41fd4fd/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438b160e4b055bed41fd4fd"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438b160e4b055bed41fd4fd/parameters/"
+          }
+        },
+        "id": "5438b160e4b055bed41fd4fd",
+        "parameters": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 13,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "q",
+              "updateDate": 1413001258121,
+              "condition": "OPTIONAL",
+              "name": "q",
+              "description": "Search title and body for your todo tasks.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438af3fe4b0fd571973de5f"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438af3fe4b0fd571973de5f/routeparameters/5438b01be4b0edfaf167a05d"
+                }
+              },
+              "id": "5438b01be4b0edfaf167a05d",
+              "type": "STRING",
+              "creationDate": 1413001243239,
+              "value": "search query",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1413002103619,
+        "code": 200,
+        "method": "GET",
+        "description": "Retrieve list of tasks. Search by providing a search query with the `q` parameter.",
+        "creationDate": 1413001023401,
+        "slugifiedPrimary": "list-tasks",
+        "routeregex": "/v1/tasks",
+        "route": "/v1/tasks",
+        "response": {
+          "slugifiedPrimary": "task-list",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 38,
+          "name": "Task List",
+          "format": "JSON",
+          "description": "List of tasks",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438b092e4b08dc6c794906f/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438b092e4b08dc6c794906f"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a"
+            }
+          },
+          "id": "5438b092e4b08dc6c794906f",
+          "body": "[\n   {\n    \"id\": \"unique identifier\",\n    \"title\": \"title of task\",\n    \"body\": \"description of task\",\n    \"order\": 1,\n    \"done\": true\n  },\n  ...\n]",
+          "creationDate": 1413001362773,
+          "status": "ACTIVE"
+        },
+        "name": "List Tasks",
+        "routeindex": 2,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438af3fe4b0fd571973de5f/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438af3fe4b0fd571973de5f/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438b092e4b08dc6c794906f"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438af3fe4b0fd571973de5f"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438af3fe4b0fd571973de5f/parameters/"
+          }
+        },
+        "id": "5438af3fe4b0fd571973de5f",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 13,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "id",
+              "condition": "REQUIRED",
+              "updateDate": 1413001643279,
+              "name": "id",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438b0f5e4b055bed41fd4fb"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438b0f5e4b055bed41fd4fb/routeparameters/5438b0f5e4b03a202ed05f10"
+                }
+              },
+              "id": "5438b0f5e4b03a202ed05f10",
+              "type": "STRING",
+              "creationDate": 1413001461813,
+              "value": "{id}",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1413002103564,
+        "code": 200,
+        "method": "GET",
+        "description": "Get a single task by id.",
+        "creationDate": 1413001461724,
+        "slugifiedPrimary": "retrieve-task",
+        "routeregex": "/v1/tasks/([^/?]+)",
+        "route": "/v1/tasks/{id}",
+        "response": {
+          "slugifiedPrimary": "task",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 50,
+          "name": "Task",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438afaae4b08dc6c794906d/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438afaae4b08dc6c794906d"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a"
+            }
+          },
+          "id": "5438afaae4b08dc6c794906d",
+          "body": "{\n    \"id\": \"unique identifier\",\n    \"title\": \"title of task\",\n    \"body\": \"description of task\",\n    \"order\": 1,\n    \"done\": true\n}",
+          "creationDate": 1413001130012,
+          "status": "ACTIVE"
+        },
+        "name": "Retrieve Task",
+        "routeindex": 4,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438b0f5e4b055bed41fd4fb/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438b0f5e4b055bed41fd4fb/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438afaae4b08dc6c794906d"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438b0f5e4b055bed41fd4fb"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438b0f5e4b055bed41fd4fb/parameters/"
+          }
+        },
+        "id": "5438b0f5e4b055bed41fd4fb",
+        "parameters": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 13,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "id",
+              "condition": "REQUIRED",
+              "name": "id",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438b12fe4b03a202ed05f11"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438b12fe4b03a202ed05f11/routeparameters/5438b12fe4b055bed41fd4fc"
+                }
+              },
+              "id": "5438b12fe4b055bed41fd4fc",
+              "type": "STRING",
+              "creationDate": 1413001519074,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1413002103571,
+        "code": 200,
+        "method": "PUT",
+        "description": "Use this to mark tasks as complete or not.",
+        "creationDate": 1413001519011,
+        "slugifiedPrimary": "update-task",
+        "routeregex": "/v1/tasks/([^/?]+)",
+        "route": "/v1/tasks/{id}",
+        "payload": {
+          "slugifiedPrimary": "task-without-id",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 39,
+          "name": "Task without id",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438b0c9e4b03a202ed05f0f/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438b0c9e4b03a202ed05f0f"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a"
+            }
+          },
+          "id": "5438b0c9e4b03a202ed05f0f",
+          "body": "{\n  \"title\": \"title of task\",\n  \"body\": \"description of task\",\n  \"order\": 1,\n  \"done\": true\n}",
+          "creationDate": 1413001417495,
+          "status": "ACTIVE"
+        },
+        "response": {
+          "slugifiedPrimary": "task",
+          "headers": {
+            "took": 4,
+            "total": 0,
+            "data": []
+          },
+          "took": 36,
+          "name": "Task",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438afaae4b08dc6c794906d/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438afaae4b08dc6c794906d"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a"
+            }
+          },
+          "id": "5438afaae4b08dc6c794906d",
+          "body": "{\n    \"id\": \"unique identifier\",\n    \"title\": \"title of task\",\n    \"body\": \"description of task\",\n    \"order\": 1,\n    \"done\": true\n}",
+          "creationDate": 1413001130012,
+          "status": "ACTIVE"
+        },
+        "name": "Update Task",
+        "routeindex": 3,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438b12fe4b03a202ed05f11/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438b12fe4b03a202ed05f11/routeparameters/"
+          },
+          "payload": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438b0c9e4b03a202ed05f0f"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/5438afaae4b08dc6c794906d"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438b12fe4b03a202ed05f11"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/5438b12fe4b03a202ed05f11/parameters/"
+          }
+        },
+        "id": "5438b12fe4b03a202ed05f11",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Kenneth's todo list.",
+  "groups": {
+    "took": 16,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Sat Oct 11 04:15:19 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/astronode"
+    },
+    "endpoints": {
+      "total": 5,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2e1fe4b002874719e785/apis/5438aed7e4b03a202ed05f0d/versions/5438aed7e4b0edfaf167a05a/errors/"
+    }
+  },
+  "id": "5438aed7e4b0edfaf167a05a",
+  "status": "ACTIVE"
+}

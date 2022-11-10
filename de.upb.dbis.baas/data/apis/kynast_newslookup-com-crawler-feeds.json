@@ -1,0 +1,679 @@
+{
+  "models": {
+    "took": 66,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "crawler-feeds-response",
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "name": "Crawler-Feeds Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/models/53aa5a63e4b0a798dbd1b254/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/models/53aa5a63e4b0a798dbd1b254"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476"
+          }
+        },
+        "id": "53aa5a63e4b0a798dbd1b254",
+        "creationDate": 1403673187862,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "search-feeds-response",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "Search-Feeds Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/models/53aa5a64e4b0a798dbd1b258/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/models/53aa5a64e4b0a798dbd1b258"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476"
+          }
+        },
+        "id": "53aa5a64e4b0a798dbd1b258",
+        "creationDate": 1403673188345,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:39:51 UTC 2014",
+  "website": "http://www.newslookup.com",
+  "endpoints": {
+    "took": 355,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 60,
+          "total": 8,
+          "data": [
+            {
+              "slugifiedPrimary": "fmt",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "fmt",
+              "description": "Field Format. 0 = Default. Provides article title, link, description,  category, publication date, site url/name and article ID. 1 = Above items with meta keywords, meta description, referrer link and geo region id(s). 2 = Above items with article words extract. 3 = All of the above and link to cached copy. Note: fields returned are dependent on availability in article source.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a63e4b0b60946a301ea"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a63e4b0b60946a301ea/routeparameters/53aa5a64e4b0a9b1348db2bb"
+                }
+              },
+              "id": "53aa5a64e4b0a9b1348db2bb",
+              "type": "STRING",
+              "creationDate": 1403673188048,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "id",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "id",
+              "description": "To optimize performance and reduce bandwidth, retrieve records greater than this record id.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a63e4b0b60946a301ea"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a63e4b0b60946a301ea/routeparameters/53aa5a64e4b0a9b1348db2bc"
+                }
+              },
+              "id": "53aa5a64e4b0a9b1348db2bc",
+              "type": "NUMBER",
+              "creationDate": 1403673188095,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "limit",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "limit",
+              "description": "Limit the amount of records returned.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a63e4b0b60946a301ea"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a63e4b0b60946a301ea/routeparameters/53aa5a64e4b05961403412a9"
+                }
+              },
+              "id": "53aa5a64e4b05961403412a9",
+              "type": "NUMBER",
+              "creationDate": 1403673188139,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "mt",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "mt",
+              "description": "Media Type: 1 = Internet, 2 = Magazine, 3 = News Agencies, 4 = Newspapers, 5 = Radio, 6 = Television",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a63e4b0b60946a301ea"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a63e4b0b60946a301ea/routeparameters/53aa5a64e4b0b60946a301ed"
+                }
+              },
+              "id": "53aa5a64e4b0b60946a301ed",
+              "type": "NUMBER",
+              "creationDate": 1403673188183,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "output",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "output",
+              "description": "No option defaults to XML.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a63e4b0b60946a301ea"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a63e4b0b60946a301ea/routeparameters/53aa5a64e4b05961403412aa"
+                }
+              },
+              "id": "53aa5a64e4b05961403412aa",
+              "type": "STRING",
+              "creationDate": 1403673188312,
+              "value": "json",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "package",
+              "updateDate": 1403673187992,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "package",
+              "description": "Crawler feed packages. See readme for a complete list of packages.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a63e4b0b60946a301ea"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a63e4b0b60946a301ea/routeparameters/53aa5a63e4b0a798dbd1b255"
+                }
+              },
+              "id": "53aa5a63e4b0a798dbd1b255",
+              "type": "STRING",
+              "creationDate": 1403673187932,
+              "value": "live",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "politics",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "politics",
+              "description": "Currently assigned only for select US political sites.   9  = Communist, 1  = Conservative, 2  = Democrat, 13 = Leans Left, 12 = Leans Right, 4  = Liberal, 3  = Libertarianism, 5  = Neo-Conservative, 11 = Non-Partisan, 10 = Paleo-Conservative, 6  = Progressive, 7  = Republican, 8  = Socialist",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a63e4b0b60946a301ea"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a63e4b0b60946a301ea/routeparameters/53aa5a64e4b0a798dbd1b257"
+                }
+              },
+              "id": "53aa5a64e4b0a798dbd1b257",
+              "type": "NUMBER",
+              "creationDate": 1403673188265,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "subject",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "subject",
+              "description": "13 = Business 4  = Commentary 23 = Crypto Currencies 7  = Entertainment 18 = Environment 16 = Health 17 = Internet: Domain Names 14 = IT 11 = Lead Headline 21 = Libraries/Archives 2  = Local News 10 = National News 3  = Politics 15 = Press Releases 20 = Radio 9  = Science 6  = Sports 22 = Tech:Network Security 5  = Technology 8  = Travel 1  = World News",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a63e4b0b60946a301ea"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a63e4b0b60946a301ea/routeparameters/53aa5a64e4b07e1f4ebec046"
+                }
+              },
+              "id": "53aa5a64e4b07e1f4ebec046",
+              "type": "NUMBER",
+              "creationDate": 1403673188227,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403673188593,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403673187899,
+        "slugifiedPrimary": "crawler-feeds",
+        "routeregex": "/feed/([^/?]+)",
+        "route": "/feed/{package}",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "crawler-feeds-response",
+          "headers": {
+            "took": 19,
+            "total": 0,
+            "data": []
+          },
+          "took": 50,
+          "name": "Crawler-Feeds Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/models/53aa5a63e4b0a798dbd1b254/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/models/53aa5a63e4b0a798dbd1b254"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476"
+            }
+          },
+          "id": "53aa5a63e4b0a798dbd1b254",
+          "creationDate": 1403673187862,
+          "status": "ACTIVE"
+        },
+        "name": "Crawler Feeds",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a63e4b0b60946a301ea/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a63e4b0b60946a301ea/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/models/53aa5a63e4b0a798dbd1b254"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a63e4b0b60946a301ea"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a63e4b0b60946a301ea/parameters/"
+          }
+        },
+        "id": "53aa5a63e4b0b60946a301ea",
+        "parameters": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 245,
+          "total": 10,
+          "data": [
+            {
+              "slugifiedPrimary": "dt",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "dt",
+              "description": "Date range. Default is last 60 days.  Last number of days specified in minutes.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259/routeparameters/53aa5a64e4b07e1f4ebec04a"
+                }
+              },
+              "id": "53aa5a64e4b07e1f4ebec04a",
+              "type": "STRING",
+              "creationDate": 1403673188883,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "fmt",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "fmt",
+              "description": "Field Format. 0 = Default. Provides article title, link, description,  category, publication date, site url/name and article ID. 1 = Above items with meta keywords, meta description, referrer link and geo region id(s). 2 = Above items with article words extract. 3 = All of the above and link to cached copy. Note: fields returned are dependent on availability in article source.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259/routeparameters/53aa5a64e4b0a798dbd1b25a"
+                }
+              },
+              "id": "53aa5a64e4b0a798dbd1b25a",
+              "type": "STRING",
+              "creationDate": 1403673188590,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "limit",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "limit",
+              "description": "Limit the amount of records returned.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259/routeparameters/53aa5a64e4b0b60946a301ee"
+                }
+              },
+              "id": "53aa5a64e4b0b60946a301ee",
+              "type": "STRING",
+              "creationDate": 1403673188649,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "mt",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "mt",
+              "description": "Media Type: 1 = Internet, 2 = Magazine, 3 = News Agencies, 4 = Newspapers, 5 = Radio, 6 = Television",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259/routeparameters/53aa5a64e4b0b60946a301ef"
+                }
+              },
+              "id": "53aa5a64e4b0b60946a301ef",
+              "type": "STRING",
+              "creationDate": 1403673188695,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "package",
+              "updateDate": 1403673188491,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "package",
+              "description": "Search feed packages. See readme for a complete list of packages.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259/routeparameters/53aa5a64e4b05961403412ac"
+                }
+              },
+              "id": "53aa5a64e4b05961403412ac",
+              "type": "STRING",
+              "creationDate": 1403673188424,
+              "value": "live",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "politics",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "politics",
+              "description": "Currently assigned only for select US political sites.   9  = Communist, 1  = Conservative, 2  = Democrat, 13 = Leans Left, 12 = Leans Right, 4  = Liberal, 3  = Libertarianism, 5  = Neo-Conservative, 11 = Non-Partisan, 10 = Paleo-Conservative, 6  = Progressive, 7  = Republican, 8  = Socialist",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259/routeparameters/53aa5a64e4b05961403412af"
+                }
+              },
+              "id": "53aa5a64e4b05961403412af",
+              "type": "STRING",
+              "creationDate": 1403673188781,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "q",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "q",
+              "description": "Your query string",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259/routeparameters/53aa5a64e4b07e1f4ebec048"
+                }
+              },
+              "id": "53aa5a64e4b07e1f4ebec048",
+              "type": "STRING",
+              "creationDate": 1403673188551,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "region",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "region",
+              "description": "See documentation for a list of region group ID's.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259/routeparameters/53aa5a64e4b0b60946a301f1"
+                }
+              },
+              "id": "53aa5a64e4b0b60946a301f1",
+              "type": "STRING",
+              "creationDate": 1403673188832,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "s",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "s",
+              "description": "Sort. Defaults to relevance, 1 = by date.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259/routeparameters/53aa5a64e4b0a798dbd1b25d"
+                }
+              },
+              "id": "53aa5a64e4b0a798dbd1b25d",
+              "type": "STRING",
+              "creationDate": 1403673188921,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "subject",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "subject",
+              "description": "13 = Business 4  = Commentary 23 = Crypto Currencies 7  = Entertainment 18 = Environment 16 = Health 17 = Internet: Domain Names 14 = IT 11 = Lead Headline 21 = Libraries/Archives 2  = Local News 10 = National News 3  = Politics 15 = Press Releases 20 = Radio 9  = Science 6  = Sports 22 = Tech:Network Security 5  = Technology 8  = Travel 1  = World News",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259/routeparameters/53aa5a64e4b05961403412ae"
+                }
+              },
+              "id": "53aa5a64e4b05961403412ae",
+              "type": "STRING",
+              "creationDate": 1403673188739,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403673188628,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403673188374,
+        "slugifiedPrimary": "search-feeds",
+        "routeregex": "/search/([^/?]+)",
+        "route": "/search/{package}",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "search-feeds-response",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 62,
+          "name": "Search-Feeds Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/models/53aa5a64e4b0a798dbd1b258/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/models/53aa5a64e4b0a798dbd1b258"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476"
+            }
+          },
+          "id": "53aa5a64e4b0a798dbd1b258",
+          "creationDate": 1403673188345,
+          "status": "ACTIVE"
+        },
+        "name": "Search Feeds",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/models/53aa5a64e4b0a798dbd1b258"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/53aa5a64e4b0a798dbd1b259/parameters/"
+          }
+        },
+        "id": "53aa5a64e4b0a798dbd1b259",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Newslookup.com is a news search engine, news aggregator, and news services provider.  We provide subscription based API access to our crawler and search index.",
+  "groups": {
+    "took": 16,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:13:07 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/features/"
+    },
+    "plans": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27e9e4b0a705fcc27dd7/apis/53aa5a63e4b00287471a2454/versions/53aa5a63e4b0a705fcc32476/authentication"
+    }
+  },
+  "id": "53aa5a63e4b0a705fcc32476",
+  "status": "ACTIVE"
+}

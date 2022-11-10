@@ -1,0 +1,262 @@
+{
+  "models": {
+    "took": 33,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "hellosalut-model",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "HelloSalut Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/models/53aa593ce4b0596140341006/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/models/53aa593ce4b0596140341006"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188"
+          }
+        },
+        "id": "53aa593ce4b0596140341006",
+        "body": "{\n  \"code\": \"none\",\n  \"country\": \"none\",\n  \"hello\": \"Hello\"\n}",
+        "creationDate": 1403672892749,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:40:38 UTC 2014",
+  "website": "http://www.fourtonfish.com/hellosalut/hello/",
+  "endpoints": {
+    "took": 98,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 85,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "ip",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "ip",
+              "description": "An IPv4 IP address",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/endpoints/53aa593ce4b0596140341007"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/endpoints/53aa593ce4b0596140341007/routeparameters/53aa593ce4b0a9b1348db039"
+                }
+              },
+              "id": "53aa593ce4b0a9b1348db039",
+              "type": "STRING",
+              "creationDate": 1403672892903,
+              "value": "2.222.222.222",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "lang",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "lang",
+              "description": "Language code (note, currently supported only cs, de, en-gb, en-us, es, fr, is, ja and sk)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/endpoints/53aa593ce4b0596140341007"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/endpoints/53aa593ce4b0596140341007/routeparameters/53aa593ce4b07e1f4ebebdb9"
+                }
+              },
+              "id": "53aa593ce4b07e1f4ebebdb9",
+              "type": "STRING",
+              "creationDate": 1403672892855,
+              "value": "en-us, ja, es",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "mode",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "mode",
+              "description": "Use built in IP and language detection",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/endpoints/53aa593ce4b0596140341007"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/endpoints/53aa593ce4b0596140341007/routeparameters/53aa593ce4b07e1f4ebebdba"
+                }
+              },
+              "id": "53aa593ce4b07e1f4ebebdba",
+              "type": "STRING",
+              "creationDate": 1403672892956,
+              "value": "auto",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403672893116,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403672892779,
+        "slugifiedPrimary": "hellosalut",
+        "routeregex": "/",
+        "route": "/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "hellosalut-model",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 16,
+          "name": "HelloSalut Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/models/53aa593ce4b0596140341006/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/models/53aa593ce4b0596140341006"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188"
+            }
+          },
+          "id": "53aa593ce4b0596140341006",
+          "body": "{\n  \"code\": \"none\",\n  \"country\": \"none\",\n  \"hello\": \"Hello\"\n}",
+          "creationDate": 1403672892749,
+          "status": "ACTIVE"
+        },
+        "name": "HelloSalut",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/endpoints/53aa593ce4b0596140341007/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/endpoints/53aa593ce4b0596140341007/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/models/53aa593ce4b0596140341006"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/endpoints/53aa593ce4b0596140341007"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/endpoints/53aa593ce4b0596140341007/parameters/"
+          }
+        },
+        "id": "53aa593ce4b0596140341007",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Say hello to your visitors in their native language!",
+  "groups": {
+    "took": 16,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:08:12 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26b1e4b0a705fcc2673e/apis/53aa593ce4b0596140341005/versions/53aa593ce4b051a76d241188/errors/"
+    }
+  },
+  "id": "53aa593ce4b051a76d241188",
+  "status": "ACTIVE"
+}

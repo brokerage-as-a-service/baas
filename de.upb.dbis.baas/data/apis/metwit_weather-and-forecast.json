@@ -1,0 +1,402 @@
+{
+  "models": {
+    "took": 110,
+    "total": 7,
+    "data": [
+      {
+        "slugifiedPrimary": "geo",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "Geo",
+        "format": "JSON",
+        "description": "Represent a geographical space using the GeoJSON standard",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/models/53aa3639e4b0a9b1348d9519/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/models/53aa3639e4b0a9b1348d9519"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507"
+          }
+        },
+        "id": "53aa3639e4b0a9b1348d9519",
+        "body": "{\n  \"type\": \"Point\",\n  \"coordinates\": [\n    25.3,\n    45.2\n  ]\n}",
+        "creationDate": 1403663929818,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "geocodedlocation",
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "name": "GeocodedLocation",
+        "format": "JSON",
+        "description": "Geocoded informations about a location",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/models/53aa3639e4b0a798dbd193be/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/models/53aa3639e4b0a798dbd193be"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507"
+          }
+        },
+        "id": "53aa3639e4b0a798dbd193be",
+        "body": "{\n  \"country\": \"Romania\",\n  \"locality\": \"Valea Cetățuia\"\n}",
+        "creationDate": 1403663929846,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "measureddata",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "MeasuredData",
+        "format": "JSON",
+        "description": "Weather quantitative data",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/models/53aa3639e4b059614033f4a5/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/models/53aa3639e4b059614033f4a5"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507"
+          }
+        },
+        "id": "53aa3639e4b059614033f4a5",
+        "body": "{\"humidity\":10,\"temperature\":10,\"wind_direction\":10,\"wind_speed\":10}",
+        "creationDate": 1403663929873,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "pagedweatherpoints",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "PagedWeatherPoints",
+        "format": "JSON",
+        "description": "Paged weather points",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/models/53aa3639e4b0a798dbd193bf/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/models/53aa3639e4b0a798dbd193bf"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507"
+          }
+        },
+        "id": "53aa3639e4b0a798dbd193bf",
+        "body": "{\n  \"objects\": [\n    {\n      \"weather\": {\n        \"status\": \"cloudy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"sun_altitude\": 0.44271817803382874,\n      \"icon\": \"https://api.metwit.com/v2/icons/cloudy\"\n    },\n    {\n      \"sources\": [\n        \"weatherbug\",\n        \"wwo\",\n        \"weather2\"\n      ],\n      \"weather\": {\n        \"status\": \"snowy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"timestamp\": \"2013-01-25T10:00:00\"\n    },\n    {\n      \"sources\": [\n        \"weatherbug\",\n        \"wwo\",\n        \"weather2\"\n      ],\n      \"weather\": {\n        \"status\": \"snowy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"timestamp\": \"2013-01-25T12:00:00\"\n    },\n    {\n      \"sources\": [\n        \"weatherbug\",\n        \"wwo\",\n        \"weather2\"\n      ],\n      \"weather\": {\n        \"status\": \"snowy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"timestamp\": \"2013-01-25T15:00:00\"\n    },\n    {\n      \"sources\": [\n        \"weatherbug\",\n        \"wwo\",\n        \"weather2\"\n      ],\n      \"weather\": {\n        \"status\": \"snowy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"timestamp\": \"2013-01-25T18:00:00\"\n    },\n    {\n      \"sources\": [\n        \"weatherbug\",\n        \"wwo\",\n        \"weather2\"\n      ],\n      \"weather\": {\n        \"status\": \"snowy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"timestamp\": \"2013-01-25T21:00:00\"\n    },\n    {\n      \"sources\": [\n        \"weatherbug\",\n        \"wwo\",\n        \"weather2\"\n      ],\n      \"weather\": {\n        \"status\": \"snowy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"timestamp\": \"2013-01-26T03:00:00\"\n    },\n    {\n      \"sources\": [\n        \"weatherbug\",\n        \"wwo\",\n        \"weather2\"\n      ],\n      \"weather\": {\n        \"status\": \"snowy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"timestamp\": \"2013-01-26T09:00:00\"\n    },\n    {\n      \"sources\": [\n        \"weatherbug\",\n        \"wwo\",\n        \"weather2\"\n      ],\n      \"weather\": {\n        \"status\": \"snowy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"timestamp\": \"2013-01-26T21:00:00\"\n    },\n    {\n      \"sources\": [\n        \"weatherbug\",\n        \"wwo\"\n      ],\n      \"weather\": {\n        \"status\": \"snowy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"timestamp\": \"2013-01-27T09:00:00\"\n    },\n    {\n      \"sources\": [\n        \"weatherbug\",\n        \"wwo\"\n      ],\n      \"weather\": {\n        \"status\": \"snowy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"timestamp\": \"2013-01-27T21:00:00\"\n    },\n    {\n      \"sources\": [\n        \"weatherbug\"\n      ],\n      \"weather\": {\n        \"status\": \"partly cloudy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"timestamp\": \"2013-01-28T09:00:00\"\n    }\n  ],\n  \"meta\": {}\n}",
+        "creationDate": 1403663929897,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "paginginfo",
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "name": "PagingInfo",
+        "format": "JSON",
+        "description": "Information about paging",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/models/53aa3639e4b07e1f4ebea2d2/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/models/53aa3639e4b07e1f4ebea2d2"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507"
+          }
+        },
+        "id": "53aa3639e4b07e1f4ebea2d2",
+        "body": "{}",
+        "creationDate": 1403663929928,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "weather",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Weather",
+        "format": "JSON",
+        "description": "Represent a Weather Status",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/models/53aa3639e4b0b60946a2e490/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/models/53aa3639e4b0b60946a2e490"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507"
+          }
+        },
+        "id": "53aa3639e4b0b60946a2e490",
+        "body": "{\n  \"status\": \"snowy\"\n}",
+        "creationDate": 1403663929954,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "weatherpoint",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "WeatherPoint",
+        "format": "JSON",
+        "description": "Represent the weather in a certain location and time",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/models/53aa3639e4b07e1f4ebea2d3/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/models/53aa3639e4b07e1f4ebea2d3"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507"
+          }
+        },
+        "id": "53aa3639e4b07e1f4ebea2d3",
+        "body": "{\n  \"sources\": [\n    \"weatherbug\",\n    \"wwo\",\n    \"weather2\"\n  ],\n  \"weather\": {\n    \"status\": \"snowy\"\n  },\n  \"geo\": {\n    \"type\": \"Point\",\n    \"coordinates\": [\n      25.3,\n      45.2\n    ]\n  },\n  \"location\": {\n    \"country\": \"Romania\",\n    \"locality\": \"Valea Cetățuia\"\n  },\n  \"timestamp\": \"2013-01-25T10:00:00\"\n}",
+        "creationDate": 1403663929979,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:47:24 UTC 2014",
+  "website": "http://metwit.com/weather-api/",
+  "endpoints": {
+    "took": 79,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 13,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "location_lat",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "location_lat",
+              "description": "The latitude of the location",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/endpoints/53aa363ae4b07e1f4ebea2d4"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/endpoints/53aa363ae4b07e1f4ebea2d4/routeparameters/53aa363ae4b0a798dbd193c0"
+                }
+              },
+              "id": "53aa363ae4b0a798dbd193c0",
+              "type": "NUMBER",
+              "creationDate": 1403663930077,
+              "value": "45.2",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "location_lng",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "location_lng",
+              "description": "The longitude of the location",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/endpoints/53aa363ae4b07e1f4ebea2d4"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/endpoints/53aa363ae4b07e1f4ebea2d4/routeparameters/53aa363ae4b059614033f4a7"
+                }
+              },
+              "id": "53aa363ae4b059614033f4a7",
+              "type": "STRING",
+              "creationDate": 1403663930126,
+              "value": "25.3",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403663930311,
+        "code": 200,
+        "method": "GET",
+        "description": "Return current real-time weather and forecast in a location",
+        "creationDate": 1403663930007,
+        "slugifiedPrimary": "get_weather",
+        "routeregex": "/weather/",
+        "route": "/weather/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "pagedweatherpoints",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 33,
+          "name": "PagedWeatherPoints",
+          "format": "JSON",
+          "description": "Paged weather points",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/models/53aa3639e4b0a798dbd193bf/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/models/53aa3639e4b0a798dbd193bf"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507"
+            }
+          },
+          "id": "53aa3639e4b0a798dbd193bf",
+          "body": "{\n  \"objects\": [\n    {\n      \"weather\": {\n        \"status\": \"cloudy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"sun_altitude\": 0.44271817803382874,\n      \"icon\": \"https://api.metwit.com/v2/icons/cloudy\"\n    },\n    {\n      \"sources\": [\n        \"weatherbug\",\n        \"wwo\",\n        \"weather2\"\n      ],\n      \"weather\": {\n        \"status\": \"snowy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"timestamp\": \"2013-01-25T10:00:00\"\n    },\n    {\n      \"sources\": [\n        \"weatherbug\",\n        \"wwo\",\n        \"weather2\"\n      ],\n      \"weather\": {\n        \"status\": \"snowy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"timestamp\": \"2013-01-25T12:00:00\"\n    },\n    {\n      \"sources\": [\n        \"weatherbug\",\n        \"wwo\",\n        \"weather2\"\n      ],\n      \"weather\": {\n        \"status\": \"snowy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"timestamp\": \"2013-01-25T15:00:00\"\n    },\n    {\n      \"sources\": [\n        \"weatherbug\",\n        \"wwo\",\n        \"weather2\"\n      ],\n      \"weather\": {\n        \"status\": \"snowy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"timestamp\": \"2013-01-25T18:00:00\"\n    },\n    {\n      \"sources\": [\n        \"weatherbug\",\n        \"wwo\",\n        \"weather2\"\n      ],\n      \"weather\": {\n        \"status\": \"snowy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"timestamp\": \"2013-01-25T21:00:00\"\n    },\n    {\n      \"sources\": [\n        \"weatherbug\",\n        \"wwo\",\n        \"weather2\"\n      ],\n      \"weather\": {\n        \"status\": \"snowy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"timestamp\": \"2013-01-26T03:00:00\"\n    },\n    {\n      \"sources\": [\n        \"weatherbug\",\n        \"wwo\",\n        \"weather2\"\n      ],\n      \"weather\": {\n        \"status\": \"snowy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"timestamp\": \"2013-01-26T09:00:00\"\n    },\n    {\n      \"sources\": [\n        \"weatherbug\",\n        \"wwo\",\n        \"weather2\"\n      ],\n      \"weather\": {\n        \"status\": \"snowy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"timestamp\": \"2013-01-26T21:00:00\"\n    },\n    {\n      \"sources\": [\n        \"weatherbug\",\n        \"wwo\"\n      ],\n      \"weather\": {\n        \"status\": \"snowy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"timestamp\": \"2013-01-27T09:00:00\"\n    },\n    {\n      \"sources\": [\n        \"weatherbug\",\n        \"wwo\"\n      ],\n      \"weather\": {\n        \"status\": \"snowy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"timestamp\": \"2013-01-27T21:00:00\"\n    },\n    {\n      \"sources\": [\n        \"weatherbug\"\n      ],\n      \"weather\": {\n        \"status\": \"partly cloudy\"\n      },\n      \"geo\": {\n        \"type\": \"Point\",\n        \"coordinates\": [\n          25.3,\n          45.2\n        ]\n      },\n      \"location\": {\n        \"country\": \"Romania\",\n        \"locality\": \"Valea Cetățuia\"\n      },\n      \"timestamp\": \"2013-01-28T09:00:00\"\n    }\n  ],\n  \"meta\": {}\n}",
+          "creationDate": 1403663929897,
+          "status": "ACTIVE"
+        },
+        "name": "get_weather",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/endpoints/53aa363ae4b07e1f4ebea2d4/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/endpoints/53aa363ae4b07e1f4ebea2d4/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/models/53aa3639e4b0a798dbd193bf"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/endpoints/53aa363ae4b07e1f4ebea2d4"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/endpoints/53aa363ae4b07e1f4ebea2d4/parameters/"
+          }
+        },
+        "id": "53aa363ae4b07e1f4ebea2d4",
+        "parameters": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Howdy Developer,  \r\nif you are looking for a *weather* API then you search is over! \r\nMetwit born as a crowdsourced platform for gathering *real-time* weather reports from real people. \r\nAfter more then ten thousand users started to using our apps and send a massive amount of reports,  \r\nwe decided to release those precious reports through our APIs.   \r\n\r\nAnd that's not all: we're also offering a single gateway for multiple, hard to parse, sources of forecasts \r\nlike NOAA, and we're enhancing  them with social data like photos, tweets, etc., that we leverage from existing \r\nsocial networks.  \r\nIf you want to try it without a credit card, please go to: http://metwit.com/weather-api/",
+  "groups": {
+    "took": 6,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 02:38:49 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 7,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/features/"
+    },
+    "plans": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa201ae4b0a798dbd056b7/apis/53aa3639e4b0b60946a2e48d/versions/53aa3639e4b008bb2ef85507/errors/"
+    }
+  },
+  "id": "53aa3639e4b008bb2ef85507",
+  "status": "ACTIVE"
+}

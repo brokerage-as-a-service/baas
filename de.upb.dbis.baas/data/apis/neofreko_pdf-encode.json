@@ -1,0 +1,269 @@
+{
+  "models": {
+    "took": 189,
+    "total": 3,
+    "data": [
+      {
+        "slugifiedPrimary": "file",
+        "headers": {
+          "took": 28,
+          "total": 0,
+          "data": []
+        },
+        "name": "file",
+        "format": "TEXT",
+        "description": "HTML payload to convert",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/models/58e987e7e4b0fe35f2f53561/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/models/58e987e7e4b0fe35f2f53561"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9"
+          }
+        },
+        "id": "58e987e7e4b0fe35f2f53561",
+        "body": "<p>Hello, world!</p>",
+        "creationDate": 1491699687817,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "pdf",
+        "headers": {
+          "took": 30,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1463485023557,
+        "name": "PDF",
+        "format": "BINARY",
+        "description": "a PDF File",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/models/573b0238e4b0bd4a7a7380b0/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/models/573b0238e4b0bd4a7a7380b0"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9"
+          }
+        },
+        "id": "573b0238e4b0bd4a7a7380b0",
+        "creationDate": 1463484984579,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "post",
+        "headers": {
+          "took": 26,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1463868744785,
+        "name": "POST",
+        "format": "TEXT",
+        "description": "HTML content",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/models/57404739e4b0504b4a80bf83/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/models/57404739e4b0504b4a80bf83"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9"
+          }
+        },
+        "id": "57404739e4b0504b4a80bf83",
+        "body": "<p>Hello world</p>",
+        "creationDate": 1463830329098,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Wed May 18 10:38:21 UTC 2016",
+  "endpoints": {
+    "took": 180,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 28,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 28,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "url",
+              "condition": "REQUIRED",
+              "name": "url",
+              "description": "URL to convert into PDF",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/endpoints/573af2cfe4b002251bb1bbd0"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/endpoints/573af2cfe4b002251bb1bbd0/routeparameters/58e981d2e4b059b6e1ab1a74"
+                }
+              },
+              "id": "58e981d2e4b059b6e1ab1a74",
+              "type": "STRING",
+              "creationDate": 1491698130822,
+              "value": "http://google.com",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1491699084072,
+        "code": 200,
+        "method": "GET",
+        "description": "Pass along the URL you want to download as PDF, e.g.: https://neofreko-pdf-encode-v1.p.mashape.com/http://google.com",
+        "creationDate": 1463481039405,
+        "slugifiedPrimary": "get-pdf",
+        "routeregex": "/convert",
+        "route": "/convert",
+        "response": {
+          "slugifiedPrimary": "pdf",
+          "headers": {
+            "took": 28,
+            "total": 0,
+            "data": []
+          },
+          "took": 62,
+          "updateDate": 1463485023557,
+          "name": "PDF",
+          "format": "BINARY",
+          "description": "a PDF File",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/models/573b0238e4b0bd4a7a7380b0/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/models/573b0238e4b0bd4a7a7380b0"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9"
+            }
+          },
+          "id": "573b0238e4b0bd4a7a7380b0",
+          "creationDate": 1463484984579,
+          "status": "ACTIVE"
+        },
+        "name": "Get PDF",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/endpoints/573af2cfe4b002251bb1bbd0/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/endpoints/573af2cfe4b002251bb1bbd0/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/models/573b0238e4b0bd4a7a7380b0"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/endpoints/573af2cfe4b002251bb1bbd0"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/endpoints/573af2cfe4b002251bb1bbd0/parameters/"
+          }
+        },
+        "id": "573af2cfe4b002251bb1bbd0",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Pass URL of POST content to be converted to PDF",
+  "groups": {
+    "took": 71,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Tue May 17 10:26:22 UTC 2016",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/changelogs/"
+    },
+    "objects": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/features/"
+    },
+    "plans": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1df3e4b0b60946a17b09/apis/573af1cee4b0debcf7fe3857/versions/573af1cee4b0bd97e22749c9/errors/"
+    }
+  },
+  "id": "573af1cee4b0bd97e22749c9",
+  "status": "ACTIVE"
+}

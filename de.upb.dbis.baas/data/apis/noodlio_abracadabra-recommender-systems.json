@@ -1,0 +1,539 @@
+{
+  "models": {
+    "took": 72,
+    "total": 0,
+    "data": []
+  },
+  "updateDate": "Fri Apr 28 16:05:06 UTC 2017",
+  "website": "https://www.abracadabra-recommender.com",
+  "endpoints": {
+    "took": 272,
+    "total": 3,
+    "data": [
+      {
+        "headers": {
+          "took": 66,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "accept",
+              "condition": "OPTIONAL",
+              "name": "Accept",
+              "description": "",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe130ae4b02592d0807050"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe130ae4b02592d0807050/headers/58fe1dfce4b0e58b519226eb"
+                }
+              },
+              "id": "58fe1dfce4b0e58b519226eb",
+              "type": "STRING",
+              "creationDate": 1493048828746,
+              "value": "application/json",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "content-type",
+              "condition": "REQUIRED",
+              "name": "Content-Type",
+              "description": "",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe130ae4b02592d0807050"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe130ae4b02592d0807050/headers/58fe1deee4b059cbf3ddc910"
+                }
+              },
+              "id": "58fe1deee4b059cbf3ddc910",
+              "type": "STRING",
+              "creationDate": 1493048814080,
+              "value": "application/json",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "routeparameters": {
+          "took": 36,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "recommenderid",
+              "condition": "OPTIONAL",
+              "name": "recommenderId",
+              "description": "By default, when you send a requests to our API, the data is stored under the default recommenderId. You can however use different id's that you may wish to use across different projects or sections of your work. This saves you from creating multiple Mashape accounts.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe130ae4b02592d0807050"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe130ae4b02592d0807050/routeparameters/58fe13f8e4b059cbf3ddc8f1"
+                }
+              },
+              "id": "58fe13f8e4b059cbf3ddc8f1",
+              "type": "STRING",
+              "creationDate": 1493046264966,
+              "value": "rec1",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "subjectid",
+              "condition": "REQUIRED",
+              "name": "subjectId",
+              "description": "View the docs for the exact format. You can add multiple subjects (distinguished by their subjectId) with multiple attributes (distinguished by their attributeId) and corresponding attribute weights (distinguished by their attributeWeightValue).",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe130ae4b02592d0807050"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe130ae4b02592d0807050/routeparameters/58fe144fe4b0e58b519226d2"
+                }
+              },
+              "id": "58fe144fe4b0e58b519226d2",
+              "type": "STRING",
+              "creationDate": 1493046351649,
+              "value": "See docs",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "code": 200,
+        "method": "POST",
+        "description": "We start with adding subjects to the recommender engine. As a recap, a subject is the entity that you wish to recommend to an user. For instance movies, products, etc.",
+        "creationDate": 1493046026466,
+        "slugifiedPrimary": "add-subjects",
+        "routeregex": "/add/subjects",
+        "route": "/add/subjects",
+        "name": "/add/subjects",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe130ae4b02592d0807050/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe130ae4b02592d0807050/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe130ae4b02592d0807050"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe130ae4b02592d0807050/parameters/"
+          }
+        },
+        "id": "58fe130ae4b02592d0807050",
+        "parameters": {
+          "took": 27,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 29,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "accept",
+              "condition": "OPTIONAL",
+              "name": "Accept",
+              "description": "",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe14d9e4b05ccc90496328"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe14d9e4b05ccc90496328/headers/58fe1e1ae4b02592d0807070"
+                }
+              },
+              "id": "58fe1e1ae4b02592d0807070",
+              "type": "STRING",
+              "creationDate": 1493048858114,
+              "value": "application/json",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "content-type",
+              "condition": "REQUIRED",
+              "name": "Content-Type",
+              "description": "",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe14d9e4b05ccc90496328"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe14d9e4b05ccc90496328/headers/58fe1e13e4b046d09e74dbae"
+                }
+              },
+              "id": "58fe1e13e4b046d09e74dbae",
+              "type": "STRING",
+              "creationDate": 1493048851530,
+              "value": "application/json",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "routeparameters": {
+          "took": 48,
+          "total": 4,
+          "data": [
+            {
+              "slugifiedPrimary": "recommenderid",
+              "condition": "OPTIONAL",
+              "name": "recommenderId",
+              "description": "By default, when you send a requests to our API, the data is stored under the default recommenderId. You can however use different id's that you may wish to use across different projects or sections of your work. This saves you from creating multiple Mashape accounts.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe14d9e4b05ccc90496328"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe14d9e4b05ccc90496328/routeparameters/58fe164fe4b02592d080705a"
+                }
+              },
+              "id": "58fe164fe4b02592d080705a",
+              "type": "STRING",
+              "creationDate": 1493046863526,
+              "value": "rec1",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "subjectid",
+              "condition": "REQUIRED",
+              "name": "subjectId",
+              "description": "The subjectId should be already stored in the database (see route /add/subjects).",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe14d9e4b05ccc90496328"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe14d9e4b05ccc90496328/routeparameters/58fe1515e4b07a169f1b58f2"
+                }
+              },
+              "id": "58fe1515e4b07a169f1b58f2",
+              "type": "STRING",
+              "creationDate": 1493046549772,
+              "value": "gameofthrones",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "subjectweight",
+              "condition": "REQUIRED",
+              "name": "subjectWeight",
+              "description": "The subjectWeight is by default set to 1 and it should be of the format number (double or integer). In the example of liking or disliking a subject, you could set this value to 1 when liking the subject or -1 when disliking it.  If you wish to delete the preference of this user for this subject, then set the subjectWeight equal to null.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe14d9e4b05ccc90496328"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe14d9e4b05ccc90496328/routeparameters/58fe153de4b02592d0807055"
+                }
+              },
+              "id": "58fe153de4b02592d0807055",
+              "type": "NUMBER",
+              "creationDate": 1493046589108,
+              "value": "10",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "userid",
+              "condition": "REQUIRED",
+              "name": "userId",
+              "description": "It is up to you how you classify the users, perhaps you have already an authentication system in place with unique user ids (for example User.uid in Firebase).",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe14d9e4b05ccc90496328"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe14d9e4b05ccc90496328/routeparameters/58fe14f5e4b02592d0807052"
+                }
+              },
+              "id": "58fe14f5e4b02592d0807052",
+              "type": "STRING",
+              "creationDate": 1493046517115,
+              "value": "user1",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "code": 200,
+        "method": "POST",
+        "description": "Given that your engine has data (see /add/subjects),  the next step is to train the model by building up the preferences of the user. Typically, you might present a list of all the available subjects after which you ask to either rate (1...10) or like/dislike (-1,0,1) a subject. It is really up to your preferences and needs on how you want to structure this part.",
+        "creationDate": 1493046489239,
+        "slugifiedPrimary": "rate-subject",
+        "routeregex": "/rate/subject",
+        "route": "/rate/subject",
+        "name": "/rate/subject",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe14d9e4b05ccc90496328/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe14d9e4b05ccc90496328/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe14d9e4b05ccc90496328"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe14d9e4b05ccc90496328/parameters/"
+          }
+        },
+        "id": "58fe14d9e4b05ccc90496328",
+        "parameters": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 35,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "accept",
+              "condition": "OPTIONAL",
+              "name": "Accept",
+              "description": "",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe1569e4b059cbf3ddc8f3"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe1569e4b059cbf3ddc8f3/headers/58fe1e2ae4b05ccc90496344"
+                }
+              },
+              "id": "58fe1e2ae4b05ccc90496344",
+              "type": "STRING",
+              "creationDate": 1493048874457,
+              "value": "application/json",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "content-type",
+              "condition": "REQUIRED",
+              "updateDate": 1493048879092,
+              "name": "Content-Type",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe1569e4b059cbf3ddc8f3"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe1569e4b059cbf3ddc8f3/headers/58fe1e23e4b05ccc90496343"
+                }
+              },
+              "id": "58fe1e23e4b05ccc90496343",
+              "type": "STRING",
+              "creationDate": 1493048867299,
+              "value": "application/json",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "routeparameters": {
+          "took": 39,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "method",
+              "updateDate": 1493046844760,
+              "condition": "OPTIONAL",
+              "name": "method",
+              "description": "You can alter between the various recommender systems through this parameter, which can take the values \"content\" (for content-based), \"social\" (for collaborative) or \"hybrid\" (for hybrid). Note that in the case of Collaborative and Hybrid filtering, the model requires that you have build up the user taste of at least two users.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe1569e4b059cbf3ddc8f3"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe1569e4b059cbf3ddc8f3/routeparameters/58fe1624e4b059cbf3ddc8f7"
+                }
+              },
+              "id": "58fe1624e4b059cbf3ddc8f7",
+              "type": "STRING",
+              "creationDate": 1493046820690,
+              "value": "content",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "recommenderid",
+              "condition": "OPTIONAL",
+              "name": "recommenderId",
+              "description": "By default, when you send a requests to our API, the data is stored under the default recommenderId. You can however use different id's that you may wish to use across different projects or sections of your work. This saves you from creating multiple Mashape accounts.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe1569e4b059cbf3ddc8f3"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe1569e4b059cbf3ddc8f3/routeparameters/58fe165ae4b046d09e74db96"
+                }
+              },
+              "id": "58fe165ae4b046d09e74db96",
+              "type": "STRING",
+              "creationDate": 1493046874288,
+              "value": "rec1",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "userid",
+              "condition": "REQUIRED",
+              "name": "userId",
+              "description": "The userId should be already present in the database and the user should have built up a profile before (see /add/subjects and /rate/subject).",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe1569e4b059cbf3ddc8f3"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe1569e4b059cbf3ddc8f3/routeparameters/58fe15a3e4b0e58b519226d4"
+                }
+              },
+              "id": "58fe15a3e4b0e58b519226d4",
+              "type": "STRING",
+              "creationDate": 1493046691214,
+              "value": "user1",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "code": 200,
+        "method": "POST",
+        "description": "At this point your should have already stored some subjects (e.g. movies) and trained our model (by attaching weights to subjects or attributes for certain users).",
+        "creationDate": 1493046633216,
+        "slugifiedPrimary": "recommend",
+        "routeregex": "/recommend",
+        "route": "/recommend",
+        "name": "/recommend",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe1569e4b059cbf3ddc8f3/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe1569e4b059cbf3ddc8f3/routeparameters/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe1569e4b059cbf3ddc8f3"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/58fe1569e4b059cbf3ddc8f3/parameters/"
+          }
+        },
+        "id": "58fe1569e4b059cbf3ddc8f3",
+        "parameters": {
+          "took": 26,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Relevant content at your fingertips - a powerful recommender system only 3 HTTP calls away. Support for Collaborative, Content-Based and Hybrid Filtering.",
+  "groups": {
+    "took": 73,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Mon Apr 24 14:57:57 UTC 2017",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/astronode"
+    },
+    "endpoints": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/features/"
+    },
+    "plans": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5711f98be4b0f0cd8cea3bb4/apis/58fe1275e4b0e58b519226c9/versions/58fe1275e4b050048df083e6/errors/"
+    }
+  },
+  "id": "58fe1275e4b050048df083e6",
+  "status": "ACTIVE"
+}

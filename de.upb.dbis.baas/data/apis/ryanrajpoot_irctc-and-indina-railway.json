@@ -1,0 +1,217 @@
+{
+  "models": {
+    "took": 33,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "get-pnr-status",
+        "headers": {
+          "took": 13,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1469033697414,
+        "name": "Get PNR Status",
+        "format": "XML",
+        "description": "Enter PNR number to get result",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/models/578fac77e4b0bd4af84abca7/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/models/578fac77e4b0bd4af84abca7"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e"
+          }
+        },
+        "id": "578fac77e4b0bd4af84abca7",
+        "body": "<xml>\n\t<response_code>200</response_code>\n\t<pnr>6224484662</pnr>\n\t<train_num>12311</train_num>\n\t<train_name>HWH DLI KLK MAI</train_name>\n\t<doj>23-12-2013</doj>\n\t<from_station>\n\t\t<code>DLI</code>\n\t\t<name>Kalka</name>\n\t</from_station>\n\t<to_station>\n\t\t<code>KLK</code>\n\t\t<name>Kalka</name>\n\t</to_station>\n\t<reservation_upto>\n\t\t<code>KLK</code>\n\t\t<name>Kalka</name>\n\t</reservation_upto>\n\t<boarding_point>\n\t\t<code>DLI</code>\n\t\t<name>Delhi</name>\n\t</boarding_point>\n\t<class>1A</class>\n\t<no_of_passengers>3</no_of_passengers>\n\t<chart_prepared>N</chart_prepared>\n\t<passengers>\n\t\t<passenger>\n\t\t\t<sr>1</sr>\n\t\t\t<booking_status>CNF ,GN</booking_status>\n\t\t\t<current_status>CNF</current_status>\n\t\t</passenger>\n\t\t<passenger>\n\t\t\t<sr>2</sr>\n\t\t\t<booking_status>W/L 1,RLGN</booking_status>\n\t\t\t<current_status>W/L 1</current_status>\n\t\t</passenger>\n\t\t<passenger>\n\t\t\t<sr>3</sr>\n\t\t\t<booking_status>W/L 2,RLGN</booking_status>\n\t\t\t<current_status>W/L 2</current_status>\n\t\t</passenger>\n\t</passengers>\n\t<error/>\n</xml>",
+        "creationDate": 1469033591327,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "website": "http://www.pnrstatusbuzz.in/",
+  "updateDate": "Wed Jul 20 17:19:22 UTC 2016",
+  "endpoints": {
+    "took": 60,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 29,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "pnr",
+              "condition": "REQUIRED",
+              "name": "PNR",
+              "description": "Enter given PNR Number to get result",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/endpoints/578fa9d0e4b0faa3d7132619"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/endpoints/578fa9d0e4b0faa3d7132619/routeparameters/578fac02e4b0e451de06262c"
+                }
+              },
+              "id": "578fac02e4b0e451de06262c",
+              "type": "STRING",
+              "creationDate": 1469033474243,
+              "value": "PNR Number",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1469033698873,
+        "code": 200,
+        "method": "GET",
+        "description": "Enter your 10 digit pnr number and get your pnr status",
+        "creationDate": 1469032912930,
+        "slugifiedPrimary": "pnr-status",
+        "routeregex": "/PNR Status",
+        "route": "/PNR Status",
+        "response": {
+          "slugifiedPrimary": "get-pnr-status",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 29,
+          "updateDate": 1469033697414,
+          "name": "Get PNR Status",
+          "format": "XML",
+          "description": "Enter PNR number to get result",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/models/578fac77e4b0bd4af84abca7/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/models/578fac77e4b0bd4af84abca7"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e"
+            }
+          },
+          "id": "578fac77e4b0bd4af84abca7",
+          "body": "<xml>\n\t<response_code>200</response_code>\n\t<pnr>6224484662</pnr>\n\t<train_num>12311</train_num>\n\t<train_name>HWH DLI KLK MAI</train_name>\n\t<doj>23-12-2013</doj>\n\t<from_station>\n\t\t<code>DLI</code>\n\t\t<name>Kalka</name>\n\t</from_station>\n\t<to_station>\n\t\t<code>KLK</code>\n\t\t<name>Kalka</name>\n\t</to_station>\n\t<reservation_upto>\n\t\t<code>KLK</code>\n\t\t<name>Kalka</name>\n\t</reservation_upto>\n\t<boarding_point>\n\t\t<code>DLI</code>\n\t\t<name>Delhi</name>\n\t</boarding_point>\n\t<class>1A</class>\n\t<no_of_passengers>3</no_of_passengers>\n\t<chart_prepared>N</chart_prepared>\n\t<passengers>\n\t\t<passenger>\n\t\t\t<sr>1</sr>\n\t\t\t<booking_status>CNF ,GN</booking_status>\n\t\t\t<current_status>CNF</current_status>\n\t\t</passenger>\n\t\t<passenger>\n\t\t\t<sr>2</sr>\n\t\t\t<booking_status>W/L 1,RLGN</booking_status>\n\t\t\t<current_status>W/L 1</current_status>\n\t\t</passenger>\n\t\t<passenger>\n\t\t\t<sr>3</sr>\n\t\t\t<booking_status>W/L 2,RLGN</booking_status>\n\t\t\t<current_status>W/L 2</current_status>\n\t\t</passenger>\n\t</passengers>\n\t<error/>\n</xml>",
+          "creationDate": 1469033591327,
+          "status": "ACTIVE"
+        },
+        "name": "PNR status",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/endpoints/578fa9d0e4b0faa3d7132619/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/endpoints/578fa9d0e4b0faa3d7132619/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/models/578fac77e4b0bd4af84abca7"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/endpoints/578fa9d0e4b0faa3d7132619"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/endpoints/578fa9d0e4b0faa3d7132619/parameters/"
+          }
+        },
+        "id": "578fa9d0e4b0faa3d7132619",
+        "parameters": {
+          "took": 13,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "We have created this API to help out the developer looking for railway API and we are not affiliated to indian railways in any form and this is not an official API also.",
+  "groups": {
+    "took": 3,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jul 20 16:38:14 UTC 2016",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/578fa77be4b0e451de062628/apis/578fa8f6e4b0d4681d345504/versions/578fa8f6e4b0c56f6cb4362e/errors/"
+    }
+  },
+  "id": "578fa8f6e4b0c56f6cb4362e",
+  "status": "ACTIVE"
+}

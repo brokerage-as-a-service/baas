@@ -1,0 +1,256 @@
+{
+  "models": {
+    "took": 69,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "spellchecker-model",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1478710293503,
+        "format": "JSON",
+        "name": "spellchecker model",
+        "description": "Result of spell check. distance is the Levenshtein distance between original and suggested word",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/models/58234604e4b0c681e4af96b5/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/models/58234604e4b0c681e4af96b5"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a"
+          }
+        },
+        "id": "58234604e4b0c681e4af96b5",
+        "body": "{\"language\":\"fr\",\"tokens\":[{\"token\":\"commond\",\"suggestions\":[{\"suggestion\":\"command\",\"distance\":1.0}],\"offset\":0}]}",
+        "creationDate": 1478706692479,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Wed Nov 09 20:04:27 UTC 2016",
+  "endpoints": {
+    "took": 130,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 41,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "accept",
+              "condition": "OPTIONAL",
+              "name": "Accept",
+              "description": "result formatting - application/json or application/xml",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/endpoints/58234070e4b0debc0b98d623"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/endpoints/58234070e4b0debc0b98d623/headers/582344ade4b071c9cf1b5f9b"
+                }
+              },
+              "id": "582344ade4b071c9cf1b5f9b",
+              "type": "STRING",
+              "creationDate": 1478706349842,
+              "value": "application/json",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "routeparameters": {
+          "took": 64,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "language",
+              "condition": "OPTIONAL",
+              "updateDate": 1478709660451,
+              "name": "language",
+              "description": "default is \"en\"  - possible values are \"en\" / \"fr\"",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/endpoints/58234070e4b0debc0b98d623"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/endpoints/58234070e4b0debc0b98d623/routeparameters/58234070e4b071c9cf1b5f90"
+                }
+              },
+              "id": "58234070e4b071c9cf1b5f90",
+              "type": "STRING",
+              "creationDate": 1478705264328,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "text",
+              "condition": "REQUIRED",
+              "updateDate": 1478709688503,
+              "name": "text",
+              "description": "The text you want to correct. It can be word or sentences",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/endpoints/58234070e4b0debc0b98d623"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/endpoints/58234070e4b0debc0b98d623/routeparameters/58234070e4b02b08e6ae1132"
+                }
+              },
+              "id": "58234070e4b02b08e6ae1132",
+              "type": "STRING",
+              "creationDate": 1478705264266,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1478710293442,
+        "code": 200,
+        "method": "GET",
+        "description": "spelling correction suggestions",
+        "creationDate": 1478705264214,
+        "slugifiedPrimary": "spellchecker",
+        "routeregex": "/api/spellchecker/?text=([^/?]+)&language=([^/?]+)",
+        "route": "/api/spellchecker/?text={text}&language={language}",
+        "response": {
+          "slugifiedPrimary": "spellchecker-model",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 34,
+          "updateDate": 1478710293503,
+          "format": "JSON",
+          "name": "spellchecker model",
+          "description": "Result of spell check. distance is the Levenshtein distance between original and suggested word",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/models/58234604e4b0c681e4af96b5/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/models/58234604e4b0c681e4af96b5"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a"
+            }
+          },
+          "id": "58234604e4b0c681e4af96b5",
+          "body": "{\"language\":\"fr\",\"tokens\":[{\"token\":\"commond\",\"suggestions\":[{\"suggestion\":\"command\",\"distance\":1.0}],\"offset\":0}]}",
+          "creationDate": 1478706692479,
+          "status": "ACTIVE"
+        },
+        "name": "spellchecker",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/endpoints/58234070e4b0debc0b98d623/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/endpoints/58234070e4b0debc0b98d623/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/models/58234604e4b0c681e4af96b5"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/endpoints/58234070e4b0debc0b98d623"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/endpoints/58234070e4b0debc0b98d623/parameters/"
+          }
+        },
+        "id": "58234070e4b0debc0b98d623",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "This spell check api help users correct spelling errors, recognize the difference among common words, as well as understand homophones.\r\nEnglish and French are currently supported.",
+  "groups": {
+    "took": 39,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Nov 09 15:26:39 UTC 2016",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/changelogs/"
+    },
+    "objects": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/features/"
+    },
+    "plans": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5800f09ee4b005ac6f42de19/apis/5823402fe4b02b08e6ae1130/versions/5823402fe4b0a5437b7cbe2a/errors/"
+    }
+  },
+  "id": "5823402fe4b0a5437b7cbe2a",
+  "status": "ACTIVE"
+}

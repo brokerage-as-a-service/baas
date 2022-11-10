@@ -1,0 +1,220 @@
+{
+  "models": {
+    "took": 14,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "fetching-people-by-email-response-model",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Fetching people by email response model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/models/53aa5b04e4b0a705fcc325c3/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/models/53aa5b04e4b0a705fcc325c3"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455"
+          }
+        },
+        "id": "53aa5b04e4b0a705fcc325c3",
+        "body": "{\n  \"id\": \"ac598534-010f-4f4e-947d-ef3dd3dee92b\",\n  \"slug\": \"elliott-kember\",\n  \"name\": \"Elliott Kember\",\n  \"first_name\": \"Elliott\",\n  \"last_name\": \"Kember\",\n  \"email\": \"elliott.kember@gmail.com\",\n  \"url\": \"http://www.elliottkember.com\",\n  \"score\": 12.8,\n  \"headline\": \"JavaScript developer at Riot\",\n  \"bio\": \"Glue-sniffing freelance kite designer\",\n  \"twitter\": \"elliottkember\",\n  \"twitter_id\": 903351,\n  \"twitter_followers_count\": 6310,\n  \"github\": \"elliottkember\",\n  \"github_followers_count\": 102,\n  \"linkedin\": null,\n  \"facebook\": \"elliottkember\",\n  \"languages\": [\n    \"JavaScript\",\n    \"Objective-C\"\n  ],\n  \"location\": \"Bath, Bath and North East Somerset, UK\",\n  \"company_name\": \"Riot\",\n  \"gravatar_id\": \"165ef5b4e31389ddf104f93e790bea13\",\n  \"avatar_url\": \"https://secure.gravatar.com/avatar/165ef5b4e31389ddf104f93e790bea13\",\n  \"hireable\": null,\n  \"gems_count\": 0,\n  \"packages_count\": 0,\n  \"geocode_city\": \"Bath\",\n  \"geocode_state\": \"England\",\n  \"geocode_country\": \"GB\",\n  \"connected\": true,\n  \"twitter_connected\": true,\n  \"favourited_users\": [],\n  \"twitter_follower_users\": [],\n  \"twitter_following_users\": [],\n  \"twitter_mutual_users\": [\n    {\n      \"id\": \"b686d8e1-7f19-4d0c-85d4-14b8f9ad304d\",\n      \"abbrev\": \"Alex M.\",\n      \"name\": \"Alex MacCaw\",\n      \"first_name\": \"Alex\",\n      \"last_name\": \"MacCaw\",\n      \"email\": \"alex@sourcing.io\",\n      \"gravatar_id\": \"31e3bc3db733babac648c8521737fb51\",\n      \"twitter_connected\": true,\n      \"facebook_connected\": true,\n      \"linkedin_connected\": false,\n      \"github_connected\": true\n    }\n  ],\n  \"linkedin_users\": [],\n  \"facebook_users\": [],\n  \"favorite\": true,\n  \"repos\": [\n    {\n      \"name\": \"the-sexy-curls-jquery-plugin\",\n      \"full_name\": \"elliottkember/the-sexy-curls-jquery-plugin\",\n      \"description\": \"A page-turning plugin for jQuery\",\n      \"language\": \"JavaScript\",\n      \"watchers_count\": 149,\n      \"forks_count\": 26\n    }\n  ],\n  \"packages\": [],\n  \"gems\": []\n}",
+        "creationDate": 1403673348735,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:41:08 UTC 2014",
+  "website": "https://sourcing.io/api",
+  "endpoints": {
+    "took": 54,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 41,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "email",
+              "updateDate": 1403673348955,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "email",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/endpoints/53aa5b04e4b051a76d241584"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/endpoints/53aa5b04e4b051a76d241584/routeparameters/53aa5b04e4b0596140341480"
+                }
+              },
+              "id": "53aa5b04e4b0596140341480",
+              "type": "STRING",
+              "creationDate": 1403673348855,
+              "value": "elliott.kember@gmail.com",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403673348964,
+        "code": 200,
+        "method": "GET",
+        "description": "The main endpoint is looking people up by their email address.",
+        "creationDate": 1403673348770,
+        "slugifiedPrimary": "fetching-people-by-email",
+        "routeregex": "/v1/people/email/([^/?]+)",
+        "route": "/v1/people/email/{email}",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "fetching-people-by-email-response-model",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 38,
+          "name": "Fetching people by email response model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/models/53aa5b04e4b0a705fcc325c3/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/models/53aa5b04e4b0a705fcc325c3"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455"
+            }
+          },
+          "id": "53aa5b04e4b0a705fcc325c3",
+          "body": "{\n  \"id\": \"ac598534-010f-4f4e-947d-ef3dd3dee92b\",\n  \"slug\": \"elliott-kember\",\n  \"name\": \"Elliott Kember\",\n  \"first_name\": \"Elliott\",\n  \"last_name\": \"Kember\",\n  \"email\": \"elliott.kember@gmail.com\",\n  \"url\": \"http://www.elliottkember.com\",\n  \"score\": 12.8,\n  \"headline\": \"JavaScript developer at Riot\",\n  \"bio\": \"Glue-sniffing freelance kite designer\",\n  \"twitter\": \"elliottkember\",\n  \"twitter_id\": 903351,\n  \"twitter_followers_count\": 6310,\n  \"github\": \"elliottkember\",\n  \"github_followers_count\": 102,\n  \"linkedin\": null,\n  \"facebook\": \"elliottkember\",\n  \"languages\": [\n    \"JavaScript\",\n    \"Objective-C\"\n  ],\n  \"location\": \"Bath, Bath and North East Somerset, UK\",\n  \"company_name\": \"Riot\",\n  \"gravatar_id\": \"165ef5b4e31389ddf104f93e790bea13\",\n  \"avatar_url\": \"https://secure.gravatar.com/avatar/165ef5b4e31389ddf104f93e790bea13\",\n  \"hireable\": null,\n  \"gems_count\": 0,\n  \"packages_count\": 0,\n  \"geocode_city\": \"Bath\",\n  \"geocode_state\": \"England\",\n  \"geocode_country\": \"GB\",\n  \"connected\": true,\n  \"twitter_connected\": true,\n  \"favourited_users\": [],\n  \"twitter_follower_users\": [],\n  \"twitter_following_users\": [],\n  \"twitter_mutual_users\": [\n    {\n      \"id\": \"b686d8e1-7f19-4d0c-85d4-14b8f9ad304d\",\n      \"abbrev\": \"Alex M.\",\n      \"name\": \"Alex MacCaw\",\n      \"first_name\": \"Alex\",\n      \"last_name\": \"MacCaw\",\n      \"email\": \"alex@sourcing.io\",\n      \"gravatar_id\": \"31e3bc3db733babac648c8521737fb51\",\n      \"twitter_connected\": true,\n      \"facebook_connected\": true,\n      \"linkedin_connected\": false,\n      \"github_connected\": true\n    }\n  ],\n  \"linkedin_users\": [],\n  \"facebook_users\": [],\n  \"favorite\": true,\n  \"repos\": [\n    {\n      \"name\": \"the-sexy-curls-jquery-plugin\",\n      \"full_name\": \"elliottkember/the-sexy-curls-jquery-plugin\",\n      \"description\": \"A page-turning plugin for jQuery\",\n      \"language\": \"JavaScript\",\n      \"watchers_count\": 149,\n      \"forks_count\": 26\n    }\n  ],\n  \"packages\": [],\n  \"gems\": []\n}",
+          "creationDate": 1403673348735,
+          "status": "ACTIVE"
+        },
+        "name": "Fetching people by email",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/endpoints/53aa5b04e4b051a76d241584/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/endpoints/53aa5b04e4b051a76d241584/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/models/53aa5b04e4b0a705fcc325c3"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/endpoints/53aa5b04e4b051a76d241584"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/endpoints/53aa5b04e4b051a76d241584/parameters/"
+          }
+        },
+        "id": "53aa5b04e4b051a76d241584",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Source talented software engineers\r\n\r\nSearch through our database of over 4 million\r\ndevelopers to find the right match for your team.",
+  "groups": {
+    "took": 4,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:15:48 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2852e4b0028747198746/apis/53aa5b04e4b0f2c975470f7f/versions/53aa5b04e4b0a9b1348db455/authentication"
+    }
+  },
+  "id": "53aa5b04e4b0a9b1348db455",
+  "status": "ACTIVE"
+}

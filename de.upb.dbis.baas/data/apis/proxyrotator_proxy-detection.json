@@ -1,0 +1,218 @@
+{
+  "models": {
+    "took": 59,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "proxy-detection-api-model",
+        "headers": {
+          "took": 16,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1489120854682,
+        "name": "Proxy Detection API model",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/models/58c22e2ce4b02c01e6eca659/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/models/58c22e2ce4b02c01e6eca659"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7"
+          }
+        },
+        "id": "58c22e2ce4b02c01e6eca659",
+        "body": "{\n    \"status\": \"proxyDetected\",\n    \"proxy\": \"110.153.111.148:9999\",\n    \"ip\": \"110.153.111.148\",\n    \"port\": \"9999\",\n    \"type\": \"elite\",\n    \"lastChecked\": 1487338672,\n    \"get\": true,\n    \"post\": true,\n    \"cookies\": true,\n    \"referer\": true,\n    \"userAgent\": true,\n    \"country\": \"CN\",\n    \"currentThreads\": 1,\n    \"threadsAllowed\": 1\n}",
+        "creationDate": 1489120812004,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "website": "https://www.proxyrotator.com",
+  "updateDate": "Fri Mar 10 04:33:34 UTC 2017",
+  "endpoints": {
+    "took": 74,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 17,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 13,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "ip",
+              "condition": "REQUIRED",
+              "name": "ip",
+              "description": "The IP address to be tested.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/endpoints/58c226fbe4b0ff7c9acb79db"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/endpoints/58c226fbe4b0ff7c9acb79db/routeparameters/58c22744e4b023e6f22ae665"
+                }
+              },
+              "id": "58c22744e4b023e6f22ae665",
+              "type": "STRING",
+              "creationDate": 1489119044231,
+              "value": "",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1489120854794,
+        "code": 200,
+        "method": "GET",
+        "description": "API will detect if an ip address is related to a proxy of any kind. Checks through a database of over 26 million proxies.",
+        "creationDate": 1489118971033,
+        "slugifiedPrimary": "proxy-detection-api",
+        "routeregex": "/",
+        "route": "/",
+        "response": {
+          "slugifiedPrimary": "proxy-detection-api-model",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 28,
+          "updateDate": 1489120854682,
+          "name": "Proxy Detection API model",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/models/58c22e2ce4b02c01e6eca659/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/models/58c22e2ce4b02c01e6eca659"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7"
+            }
+          },
+          "id": "58c22e2ce4b02c01e6eca659",
+          "body": "{\n    \"status\": \"proxyDetected\",\n    \"proxy\": \"110.153.111.148:9999\",\n    \"ip\": \"110.153.111.148\",\n    \"port\": \"9999\",\n    \"type\": \"elite\",\n    \"lastChecked\": 1487338672,\n    \"get\": true,\n    \"post\": true,\n    \"cookies\": true,\n    \"referer\": true,\n    \"userAgent\": true,\n    \"country\": \"CN\",\n    \"currentThreads\": 1,\n    \"threadsAllowed\": 1\n}",
+          "creationDate": 1489120812004,
+          "status": "ACTIVE"
+        },
+        "name": "Proxy Detection API",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/endpoints/58c226fbe4b0ff7c9acb79db/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/endpoints/58c226fbe4b0ff7c9acb79db/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/models/58c22e2ce4b02c01e6eca659"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/endpoints/58c226fbe4b0ff7c9acb79db"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/endpoints/58c226fbe4b0ff7c9acb79db/parameters/"
+          }
+        },
+        "id": "58c226fbe4b0ff7c9acb79db",
+        "parameters": {
+          "took": 15,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Proxy Rotator is the world's first enterprise grade proxy ip rotation service. HTTPS proxies on a combination of over 26 million Residential, Private and Public Exclusive IP's. It's Easy to Use, Reliable and used by 1000's of Businesses daily.\r\n\r\nThe Proxy Detection API can detect if an IP address is, or has ever been, related to a proxy. With a database of over 26,000,000 worldwide proxies our probability of detecting a proxy based upon the ip address is unmatched. This API is useful for many scenario's such as reducing fraud on e-commerece sites, protecting your site from automated hacking attempts (XSS,SQLi,brute force), Prevent promotional offer abuse (multiple signups), limiting access on proxy IPs (prevent password / email changes) and many more uses!",
+  "groups": {
+    "took": 32,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Fri Mar 10 04:07:04 UTC 2017",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/58c21aece4b058ea0ca275a7/apis/58c22668e4b0a29ec14cdc6e/versions/58c22668e4b058ea0ca275d7/authentication"
+    }
+  },
+  "id": "58c22668e4b058ea0ca275d7",
+  "status": "ACTIVE"
+}

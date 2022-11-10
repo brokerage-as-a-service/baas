@@ -1,0 +1,531 @@
+{
+  "models": {
+    "took": 54,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "detect-language-of-text-string-s-or-url-s-response",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Detect-language-of-text-string-s-or-url-s- Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/models/53aa497ee4b0a705fcc312ad/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/models/53aa497ee4b0a705fcc312ad"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4"
+          }
+        },
+        "id": "53aa497ee4b0a705fcc312ad",
+        "creationDate": 1403668862054,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "detect-language-of-text-string-s-or-url-s-of-file-s-response",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Detect-language-of-text-string-s-or-url-s-of-file-s- Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/models/53aa497ee4b00287471a124a/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/models/53aa497ee4b00287471a124a"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4"
+          }
+        },
+        "id": "53aa497ee4b00287471a124a",
+        "creationDate": 1403668862645,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:47:24 UTC 2014",
+  "website": "http://www.whatlanguage.net",
+  "endpoints": {
+    "took": 230,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 125,
+          "total": 5,
+          "data": [
+            {
+              "slugifiedPrimary": "encoding",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "encoding",
+              "description": "Encoding used to URL encode the text from the q parameter.  If you do not specify an encoding parameter, we will look at the charset of your request. If that is not supplied we will assume you URL encoded your text from the q parameter in UTF-8.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b051a76d2402aa"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b051a76d2402aa/routeparameters/53aa497ee4b0a705fcc312af"
+                }
+              },
+              "id": "53aa497ee4b0a705fcc312af",
+              "type": "STRING",
+              "creationDate": 1403668862309,
+              "value": "UTF-8",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "format",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "format",
+              "description": "Format of response. Available formats are: json or xml",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b051a76d2402aa"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b051a76d2402aa/routeparameters/53aa497ee4b00287471a1247"
+                }
+              },
+              "id": "53aa497ee4b00287471a1247",
+              "type": "STRING",
+              "creationDate": 1403668862397,
+              "value": "json or xml",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "prettyprint",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "prettyprint",
+              "description": "Returns a human readable response (pretty printed) with indentations and line breaks when set to true. Available values are: true or false",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b051a76d2402aa"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b051a76d2402aa/routeparameters/53aa497ee4b00287471a1248"
+                }
+              },
+              "id": "53aa497ee4b00287471a1248",
+              "type": "STRING",
+              "creationDate": 1403668862481,
+              "value": "true or false",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "q",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "q",
+              "description": "Text from which you want to identify the language. (Please see README - either the q or the url parameter need to be specified)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b051a76d2402aa"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b051a76d2402aa/routeparameters/53aa497ee4b0a705fcc312ae"
+                }
+              },
+              "id": "53aa497ee4b0a705fcc312ae",
+              "type": "STRING",
+              "creationDate": 1403668862223,
+              "value": "Is this English or Dutch?",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "url",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "url",
+              "description": "URL from which you want to identify the language. URL can start with http://, https:// or ftp:// . (Please see README - either the q or the url parameter need to be specified)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b051a76d2402aa"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b051a76d2402aa/routeparameters/53aa497ee4b00287471a1249"
+                }
+              },
+              "id": "53aa497ee4b00287471a1249",
+              "type": "STRING",
+              "creationDate": 1403668862566,
+              "value": "http://www.facebook.com",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403668862897,
+        "code": 200,
+        "method": "GET",
+        "description": "Detect the language of one or more text strings",
+        "creationDate": 1403668862093,
+        "slugifiedPrimary": "detect-language-of-text-string-s-or-url-s-",
+        "routeregex": "/detect",
+        "route": "/detect",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "detect-language-of-text-string-s-or-url-s-response",
+          "headers": {
+            "took": 19,
+            "total": 0,
+            "data": []
+          },
+          "took": 50,
+          "name": "Detect-language-of-text-string-s-or-url-s- Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/models/53aa497ee4b0a705fcc312ad/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/models/53aa497ee4b0a705fcc312ad"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4"
+            }
+          },
+          "id": "53aa497ee4b0a705fcc312ad",
+          "creationDate": 1403668862054,
+          "status": "ACTIVE"
+        },
+        "name": "Detect language of text string(s) or url(s)",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b051a76d2402aa/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b051a76d2402aa/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/models/53aa497ee4b0a705fcc312ad"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b051a76d2402aa"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b051a76d2402aa/parameters/"
+          }
+        },
+        "id": "53aa497ee4b051a76d2402aa",
+        "parameters": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1403668862854,
+        "code": 200,
+        "method": "POST",
+        "description": "Detect the language of one or more URLs",
+        "creationDate": 1403668862691,
+        "slugifiedPrimary": "detect-language-of-text-string-s-or-url-s-of-file-s-",
+        "routeregex": "/detect/",
+        "route": "/detect/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "detect-language-of-text-string-s-or-url-s-of-file-s-response",
+          "headers": {
+            "took": 19,
+            "total": 0,
+            "data": []
+          },
+          "took": 49,
+          "name": "Detect-language-of-text-string-s-or-url-s-of-file-s- Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/models/53aa497ee4b00287471a124a/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/models/53aa497ee4b00287471a124a"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4"
+            }
+          },
+          "id": "53aa497ee4b00287471a124a",
+          "creationDate": 1403668862645,
+          "status": "ACTIVE"
+        },
+        "name": "Detect language of text string(s) or url(s) of file(s)",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b008bb2ef85f15/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b008bb2ef85f15/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/models/53aa497ee4b00287471a124a"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b008bb2ef85f15"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b008bb2ef85f15/parameters/"
+          }
+        },
+        "id": "53aa497ee4b008bb2ef85f15",
+        "parameters": {
+          "took": 37,
+          "total": 6,
+          "data": [
+            {
+              "slugifiedPrimary": "encoding",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "encoding",
+              "description": "Encoding used to URL encode the url parameter.  If you do not specify an encoding parameter, we will look at the charset of your request. If that is not supplied we will assume you URL encoded your url parameter in UTF-8.",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b008bb2ef85f15"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b008bb2ef85f15/parameters/53aa497ee4b0f2c97546fc3f"
+                }
+              },
+              "id": "53aa497ee4b0f2c97546fc3f",
+              "type": "STRING",
+              "creationDate": 1403668862798,
+              "value": "UTF-8",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "file",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "file",
+              "description": "File from which you want to identify the language. (Please see README - either the q or the url or the file parameter need to be specified)",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b008bb2ef85f15"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b008bb2ef85f15/parameters/53aa497fe4b0a705fcc312b6"
+                }
+              },
+              "id": "53aa497fe4b0a705fcc312b6",
+              "type": "BINARY",
+              "creationDate": 1403668863234,
+              "value": "file",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "format",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "format",
+              "description": "Format of response. Available formats are: json or  xml",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b008bb2ef85f15"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b008bb2ef85f15/parameters/53aa497ee4b0f2c97546fc40"
+                }
+              },
+              "id": "53aa497ee4b0f2c97546fc40",
+              "type": "STRING",
+              "creationDate": 1403668862884,
+              "value": "json or xml",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "prettyprint",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "prettyprint",
+              "description": "Returns a human readable response (pretty printed) with indentations and line breaks when set to true. Available values are: true or false",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b008bb2ef85f15"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b008bb2ef85f15/parameters/53aa497ee4b0f2c97546fc41"
+                }
+              },
+              "id": "53aa497ee4b0f2c97546fc41",
+              "type": "STRING",
+              "creationDate": 1403668862971,
+              "value": "true or false",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "q",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "q",
+              "description": "Text from which you want to identify the language. (Please see README - either the q or the url  or the file parameter need to be specified)",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b008bb2ef85f15"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b008bb2ef85f15/parameters/53aa497fe4b051a76d2402ad"
+                }
+              },
+              "id": "53aa497fe4b051a76d2402ad",
+              "type": "STRING",
+              "creationDate": 1403668863043,
+              "value": "You want to identify the language from this text",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "url",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "url",
+              "description": "URL from which you want to identify the language. URL can start with http://, https:// or ftp:// . (Please see README - either the q or the url or the file parameter need to be specified)",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b008bb2ef85f15"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/53aa497ee4b008bb2ef85f15/parameters/53aa497fe4b00287471a124d"
+                }
+              },
+              "id": "53aa497fe4b00287471a124d",
+              "type": "STRING",
+              "creationDate": 1403668863148,
+              "value": "http://www.facebook.com",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Accurately detect the language of text, websites or files. You can identify 110 languages with an accuracy of more than 99%.",
+  "groups": {
+    "took": 3,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 04:01:01 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/features/"
+    },
+    "plans": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2196e4b0a798dbd07731/apis/53aa497de4b008bb2ef85f12/versions/53aa497de4b0b60946a2efb4/errors/"
+    }
+  },
+  "id": "53aa497de4b0b60946a2efb4",
+  "status": "ACTIVE"
+}

@@ -1,0 +1,340 @@
+{
+  "models": {
+    "took": 30,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "codeshare-response",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "CodeShare Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/models/53aa32eee4b0b60946a2de72/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/models/53aa32eee4b0b60946a2de72"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1"
+          }
+        },
+        "id": "53aa32eee4b0b60946a2de72",
+        "creationDate": 1403663086423,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:39:52 UTC 2014",
+  "website": "http://www.flightlookup.com",
+  "endpoints": {
+    "took": 155,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 127,
+          "total": 5,
+          "data": [
+            {
+              "slugifiedPrimary": "airline",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "Airline",
+              "description": "Required - 2 letter IATA airline code.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/endpoints/53aa32eee4b0b60946a2de73"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/endpoints/53aa32eee4b0b60946a2de73/routeparameters/53aa32eee4b0b60946a2de74"
+                }
+              },
+              "id": "53aa32eee4b0b60946a2de74",
+              "type": "STRING",
+              "creationDate": 1403663086506,
+              "value": "AA",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "date",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "Date",
+              "description": "Required - Departure or Arrival date. (mm/dd/yyyy)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/endpoints/53aa32eee4b0b60946a2de73"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/endpoints/53aa32eee4b0b60946a2de73/routeparameters/53aa32eee4b0a798dbd18de3"
+                }
+              },
+              "id": "53aa32eee4b0a798dbd18de3",
+              "type": "STRING",
+              "creationDate": 1403663086586,
+              "value": "12/17/2012",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "flightnumber",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "FlightNumber",
+              "description": "Required - Flight Number identifier",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/endpoints/53aa32eee4b0b60946a2de73"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/endpoints/53aa32eee4b0b60946a2de73/routeparameters/53aa32eee4b059614033eea6"
+                }
+              },
+              "id": "53aa32eee4b059614033eea6",
+              "type": "STRING",
+              "creationDate": 1403663086546,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "from",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "From",
+              "description": "Required - 3 letter IATA code for the departure airport",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/endpoints/53aa32eee4b0b60946a2de73"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/endpoints/53aa32eee4b0b60946a2de73/routeparameters/53aa32eee4b0a798dbd18de4"
+                }
+              },
+              "id": "53aa32eee4b0a798dbd18de4",
+              "type": "STRING",
+              "creationDate": 1403663086627,
+              "value": "BOS",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "to",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "To",
+              "description": "Required - 3 letter IATA code for the destination airport",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/endpoints/53aa32eee4b0b60946a2de73"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/endpoints/53aa32eee4b0b60946a2de73/routeparameters/53aa32eee4b0a798dbd18de5"
+                }
+              },
+              "id": "53aa32eee4b0a798dbd18de5",
+              "type": "STRING",
+              "creationDate": 1403663086667,
+              "value": "LAX",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403663086696,
+        "code": 200,
+        "method": "GET",
+        "description": "This method returns Codeshare information for a single flight on a single airline on a specified date.",
+        "creationDate": 1403663086449,
+        "slugifiedPrimary": "codeshare",
+        "routeregex": "/CodeShare/",
+        "route": "/CodeShare/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "codeshare-response",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 18,
+          "name": "CodeShare Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/models/53aa32eee4b0b60946a2de72/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/models/53aa32eee4b0b60946a2de72"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1"
+            }
+          },
+          "id": "53aa32eee4b0b60946a2de72",
+          "creationDate": 1403663086423,
+          "status": "ACTIVE"
+        },
+        "name": "CodeShare",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/endpoints/53aa32eee4b0b60946a2de73/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/endpoints/53aa32eee4b0b60946a2de73/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/models/53aa32eee4b0b60946a2de72"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/endpoints/53aa32eee4b0b60946a2de73"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/endpoints/53aa32eee4b0b60946a2de73/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/groups/53aa32eee4b059614033eea3"
+          }
+        },
+        "id": "53aa32eee4b0b60946a2de73",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "xml",
+          "took": 35,
+          "name": "XML",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/groups/53aa32eee4b059614033eea3"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1"
+            }
+          },
+          "id": "53aa32eee4b059614033eea3",
+          "creationDate": 1403663086382,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "FlightLookup Codeshare - Need to know who is operating a flight to let your customers where to check in or if they can upgrade, this is a quick lookup service. *Operating carrier information based on Marketing Flight Number, *Operating Carrier IATA code, Operating Carrier Flight Number",
+  "groups": {
+    "took": 7,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "xml",
+        "name": "XML",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/groups/53aa32eee4b059614033eea3"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1"
+          }
+        },
+        "id": "53aa32eee4b059614033eea3",
+        "creationDate": 1403663086382,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 02:24:46 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/objects/"
+    },
+    "groups": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/features/"
+    },
+    "plans": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f3fe4b0f2c97545cbda/apis/53aa32eee4b059614033eea0/versions/53aa32eee4b059614033eea1/errors/"
+    }
+  },
+  "id": "53aa32eee4b059614033eea1",
+  "status": "ACTIVE"
+}

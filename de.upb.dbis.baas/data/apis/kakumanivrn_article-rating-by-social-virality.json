@@ -1,0 +1,218 @@
+{
+  "models": {
+    "took": 47,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "social-metrics",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Social Metrics",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/models/53aa60c5e4b008bb2ef879e6/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/models/53aa60c5e4b008bb2ef879e6"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93"
+          }
+        },
+        "id": "53aa60c5e4b008bb2ef879e6",
+        "body": "{\n  \"fb_likes\": 6,\n  \"fb_shares\": 85,\n  \"fb_comments\": 5,\n  \"google_plus\": 10,\n  \"linkedin_shares\": 57,\n  \"pin_count\": 0,\n  \"tweet_count\": 930,\n  \"stumbleupon_views\": 1,\n  \"total_count\": 1094\n}",
+        "creationDate": 1403674821333,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:46:17 UTC 2014",
+  "website": "http://x3n0n.com",
+  "endpoints": {
+    "took": 80,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 9,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "url",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "url",
+              "description": "Requires URL of an article to calculate social virality metrics.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/endpoints/53aa60c5e4b00287471a2cc8"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/endpoints/53aa60c5e4b00287471a2cc8/routeparameters/53aa60c5e4b051a76d241d03"
+                }
+              },
+              "id": "53aa60c5e4b051a76d241d03",
+              "type": "STRING",
+              "creationDate": 1403674821491,
+              "value": "http://mashable.com/2014/05/11/kids-dreaming/",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403674821629,
+        "code": 200,
+        "method": "GET",
+        "description": "You give URL of an article/post and it gives you the stats for it in social",
+        "creationDate": 1403674821394,
+        "slugifiedPrimary": "social-virality-for-article",
+        "routeregex": "/process.php",
+        "route": "/process.php",
+        "array": true,
+        "response": {
+          "slugifiedPrimary": "social-metrics",
+          "headers": {
+            "took": 4,
+            "total": 0,
+            "data": []
+          },
+          "took": 36,
+          "name": "Social Metrics",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/models/53aa60c5e4b008bb2ef879e6/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/models/53aa60c5e4b008bb2ef879e6"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93"
+            }
+          },
+          "id": "53aa60c5e4b008bb2ef879e6",
+          "body": "{\n  \"fb_likes\": 6,\n  \"fb_shares\": 85,\n  \"fb_comments\": 5,\n  \"google_plus\": 10,\n  \"linkedin_shares\": 57,\n  \"pin_count\": 0,\n  \"tweet_count\": 930,\n  \"stumbleupon_views\": 1,\n  \"total_count\": 1094\n}",
+          "creationDate": 1403674821333,
+          "status": "ACTIVE"
+        },
+        "name": "Social Virality for article",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/endpoints/53aa60c5e4b00287471a2cc8/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/endpoints/53aa60c5e4b00287471a2cc8/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/models/53aa60c5e4b008bb2ef879e6"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/endpoints/53aa60c5e4b00287471a2cc8"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/endpoints/53aa60c5e4b00287471a2cc8/parameters/"
+          }
+        },
+        "id": "53aa60c5e4b00287471a2cc8",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "If you want to analyze your article's social virality around the world, then this is for you. To find an article's rating, the API takes input of the article URL and gives output in the form of JSON response. It gives the following metrics as response:\r\n\r\nFacebook likes, \r\nFacebook shares,\r\nFacebook comments,\r\nGoogle plus +1s,\r\nLinkedIn shares,\r\nPinterest count,\r\nTwitter tweet count,\r\nStumbleUpon views and \r\nTotal count of above all\r\n\r\nFor any doubts you can contact me at kakumanivrn@gmail.com",
+  "groups": {
+    "took": 16,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:40:20 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/groups/"
+    },
+    "issues": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/features/"
+    },
+    "plans": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa250fe4b0f2c9754636d5/apis/53aa60c4e4b0a705fcc32d9d/versions/53aa60c4e4b0a9b1348dbc93/errors/"
+    }
+  },
+  "id": "53aa60c4e4b0a9b1348dbc93",
+  "status": "ACTIVE"
+}

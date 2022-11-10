@@ -1,0 +1,448 @@
+{
+  "models": {
+    "took": 32,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "library-model",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Library Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/models/53aa5d8ee4b0a9b1348db8a4/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/models/53aa5d8ee4b0a9b1348db8a4"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a"
+          }
+        },
+        "id": "53aa5d8ee4b0a9b1348db8a4",
+        "body": "[\n  {\n    \"mainfile\": \"jquery.min.js\"\n  }\n]",
+        "creationDate": 1403673998421,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:46:42 UTC 2014",
+  "website": "https://github.com/jsdelivr/api",
+  "endpoints": {
+    "took": 103,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 72,
+          "total": 12,
+          "data": [
+            {
+              "slugifiedPrimary": "assets",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "assets",
+              "description": "files hosted per versions. (read only)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5/routeparameters/53aa5d8fe4b0a798dbd1b888"
+                }
+              },
+              "id": "53aa5d8fe4b0a798dbd1b888",
+              "type": "STRING",
+              "creationDate": 1403673999121,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "author",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "author",
+              "description": "the author of project. Example: jQuery Foundation",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5/routeparameters/53aa5d8fe4b0a9b1348db8ae"
+                }
+              },
+              "id": "53aa5d8fe4b0a9b1348db8ae",
+              "type": "STRING",
+              "creationDate": 1403673999082,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "description",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "description",
+              "description": "description of the project",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5/routeparameters/53aa5d8ee4b0a9b1348db8ab"
+                }
+              },
+              "id": "53aa5d8ee4b0a9b1348db8ab",
+              "type": "STRING",
+              "creationDate": 1403673998939,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "fields",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "fields",
+              "description": "You can combine the above parameters with the parameter fields. This way you can control the output.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5/routeparameters/53aa5d8fe4b0b60946a307ee"
+                }
+              },
+              "id": "53aa5d8fe4b0b60946a307ee",
+              "type": "STRING",
+              "creationDate": 1403673999170,
+              "value": "mainfile, name",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "github",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "github",
+              "description": "github page of project. Example: https://github.com/jquery/jquery",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5/routeparameters/53aa5d8fe4b0a9b1348db8ad"
+                }
+              },
+              "id": "53aa5d8fe4b0a9b1348db8ad",
+              "type": "STRING",
+              "creationDate": 1403673999039,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "homepage",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "homepage",
+              "description": "webpage of project. Example: http://jquery.com/",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5/routeparameters/53aa5d8ee4b05961403418ab"
+                }
+              },
+              "id": "53aa5d8ee4b05961403418ab",
+              "type": "STRING",
+              "creationDate": 1403673998986,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "lastversion",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "lastversion",
+              "description": "lastversion of the project. Example: 2.0.3 (will match multiple projects)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5/routeparameters/53aa5d8ee4b0a9b1348db8a9"
+                }
+              },
+              "id": "53aa5d8ee4b0a9b1348db8a9",
+              "type": "STRING",
+              "creationDate": 1403673998852,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "mainfile",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "mainfile",
+              "description": "mainfile parameter in info.ini. Example: jquery.min.js",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5/routeparameters/53aa5d8ee4b0a9b1348db8a8"
+                }
+              },
+              "id": "53aa5d8ee4b0a9b1348db8a8",
+              "type": "STRING",
+              "creationDate": 1403673998807,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "name",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "name",
+              "description": "name of library. Example: jquery",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5/routeparameters/53aa5d8ee4b0a9b1348db8a6"
+                }
+              },
+              "id": "53aa5d8ee4b0a9b1348db8a6",
+              "type": "STRING",
+              "creationDate": 1403673998707,
+              "value": "jquery",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "provider",
+              "condition": "REQUIRED",
+              "updateDate": 1416849837415,
+              "name": "provider",
+              "description": "jsdelivr, cdnjs, google or bootstrapcdn",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5/routeparameters/54735842e4b0751e4415ee20"
+                }
+              },
+              "id": "54735842e4b0751e4415ee20",
+              "type": "STRING",
+              "creationDate": 1416845378368,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "versions",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "versions",
+              "description": "all hosted versions for selected project. (read only)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5/routeparameters/53aa5d8ee4b0a9b1348db8aa"
+                }
+              },
+              "id": "53aa5d8ee4b0a9b1348db8aa",
+              "type": "STRING",
+              "creationDate": 1403673998896,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "zip",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "zip",
+              "description": "zip name of project. Example: jquery.zip",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5/routeparameters/53aa5d8ee4b0a9b1348db8a7"
+                }
+              },
+              "id": "53aa5d8ee4b0a9b1348db8a7",
+              "type": "STRING",
+              "creationDate": 1403673998751,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1416849894148,
+        "code": 200,
+        "method": "GET",
+        "creationDate": 1403673998449,
+        "slugifiedPrimary": "libraries",
+        "routeregex": "/([^/?]+)/libraries",
+        "route": "/{provider}/libraries",
+        "array": true,
+        "response": {
+          "slugifiedPrimary": "library-model",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 15,
+          "name": "Library Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/models/53aa5d8ee4b0a9b1348db8a4/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/models/53aa5d8ee4b0a9b1348db8a4"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a"
+            }
+          },
+          "id": "53aa5d8ee4b0a9b1348db8a4",
+          "body": "[\n  {\n    \"mainfile\": \"jquery.min.js\"\n  }\n]",
+          "creationDate": 1403673998421,
+          "status": "ACTIVE"
+        },
+        "name": "Libraries",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/models/53aa5d8ee4b0a9b1348db8a4"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/53aa5d8ee4b0a9b1348db8a5/parameters/"
+          }
+        },
+        "id": "53aa5d8ee4b0a9b1348db8a5",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "A free super-fast CDN for developers and webmasters.",
+  "groups": {
+    "took": 17,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:26:38 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2734e4b0a705fcc270fe/apis/53aa5d8ee4b0b60946a307ea/versions/53aa5d8ee4b00287471a294a/errors/"
+    }
+  },
+  "id": "53aa5d8ee4b00287471a294a",
+  "status": "ACTIVE"
+}

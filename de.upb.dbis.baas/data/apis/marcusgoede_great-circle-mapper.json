@@ -1,0 +1,701 @@
+{
+  "models": {
+    "took": 86,
+    "total": 3,
+    "data": [
+      {
+        "slugifiedPrimary": "aircraft-type",
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "name": "Aircraft Type",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/models/53aa36c6e4b051a76d23f9a2/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/models/53aa36c6e4b051a76d23f9a2"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e"
+          }
+        },
+        "id": "53aa36c6e4b051a76d23f9a2",
+        "body": "{\n  \"name\": \"737-800\",\n  \"manufacturer\": \"Boeing\",\n  \"type\": \"Airliner\",\n  \"iata_code\": \"738\",\n  \"icao_code\": \"B738\",\n  \"passengers\": \"160\",\n  \"speed_kmh\": \"946.00\",\n  \"speed_kts\": \"511.00\",\n  \"ceiling_m\": \"12497.00\",\n  \"ceiling_ft\": \"41000.00\",\n  \"range_km\": \"7408.00\",\n  \"range_nm\": \"4000.00\",\n  \"mtow_kg\": \"78245.00\",\n  \"mtow_lbs\": \"172500.00\",\n  \"alias\": \"737-800\"\n}",
+        "creationDate": 1403664070803,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "airport",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Airport",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/models/53aa36c6e4b00287471a08fd/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/models/53aa36c6e4b00287471a08fd"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e"
+          }
+        },
+        "id": "53aa36c6e4b00287471a08fd",
+        "body": "[\n  {\n    \"ident\": \"EDDK\",\n    \"name\": \"Cologne Bonn Airport\",\n    \"municipality\": \"Cologne\",\n    \"icao_code\": \"EDDK\",\n    \"iata_code\": \"CGN\",\n    \"country\": \"Germany\",\n    \"region\": \"North Rhine-Westphalia\"\n  }\n]",
+        "creationDate": 1403664070872,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "route",
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "name": "Route",
+        "format": "JSON",
+        "description": "distance and flight time between airports; includes airport information as well",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/models/53aa36c6e4b051a76d23f9a3/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/models/53aa36c6e4b051a76d23f9a3"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e"
+          }
+        },
+        "id": "53aa36c6e4b051a76d23f9a3",
+        "body": "{\n  \"totals\": {\n    \"distance_km\": 5554.53,\n    \"distance_nm\": 2999.21,\n    \"flight_time_min\": 372.85,\n    \"speed_kmh\": 944.52,\n    \"speed_kts\": \"510\"\n  },\n  \"legs\": [\n    {\n      \"origin\": {\n        \"id\": \"2434\",\n        \"ident\": \"EGLL\",\n        \"name\": \"London Heathrow Airport\",\n        \"elevation_ft\": \"83.00\",\n        \"icao_code\": \"EGLL\",\n        \"iata_code\": \"LHR\",\n        \"alias\": \"LHR-EGLL-london-heathrow-airport\",\n        \"latitude_deg\": \"51.4706001282\",\n        \"longitude_deg\": \"-0.4619410038\",\n        \"latitude_minsec\": \"51&deg;28'14\\\"N\",\n        \"longitude_minsec\": \"0&deg;27'42\\\"W\",\n        \"link\": \"http://www.greatcirclemapper.net/en/airport/LHR-EGLL-london-heathrow-airport.html\"\n      },\n      \"destination\": {\n        \"id\": \"3622\",\n        \"ident\": \"KJFK\",\n        \"name\": \"John F Kennedy International Airport\",\n        \"elevation_ft\": \"13.00\",\n        \"icao_code\": \"KJFK\",\n        \"iata_code\": \"JFK\",\n        \"alias\": \"JFK-KJFK-john-f-kennedy-international-airport\",\n        \"latitude_deg\": \"40.6398010300\",\n        \"longitude_deg\": \"-73.7789001500\",\n        \"latitude_minsec\": \"40&deg;38'23\\\"N\",\n        \"longitude_minsec\": \"73&deg;46'44\\\"W\",\n        \"link\": \"http://www.greatcirclemapper.net/en/airport/JFK-KJFK-john-f-kennedy-international-airport.html\"\n      },\n      \"distance_km\": 5554.53,\n      \"distance_nm\": 2999.21,\n      \"flight_time_min\": 373,\n      \"heading_deg\": 287.93693010005,\n      \"heading_compass\": \"WNW\"\n    }\n  ]\n}",
+        "creationDate": 1403664070910,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:40:34 UTC 2014",
+  "website": "http://www.greatcirclemapper.net",
+  "endpoints": {
+    "took": 197,
+    "total": 4,
+    "data": [
+      {
+        "headers": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 15,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "route",
+              "updateDate": 1418645603020,
+              "condition": "REQUIRED",
+              "name": "route",
+              "description": "ICAO airport cides, separated by hyphens",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c7e4b008bb2ef85605"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c7e4b008bb2ef85605/routeparameters/548eceebe4b0415c068d4522"
+                }
+              },
+              "id": "548eceebe4b0415c068d4522",
+              "type": "STRING",
+              "creationDate": 1418645227154,
+              "value": "EGLL-KJFK",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "speed",
+              "updateDate": 1403664071425,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "speed",
+              "description": "Speed in kts",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c7e4b008bb2ef85605"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c7e4b008bb2ef85605/routeparameters/53aa36c7e4b0b60946a2e56f"
+                }
+              },
+              "id": "53aa36c7e4b0b60946a2e56f",
+              "type": "STRING",
+              "creationDate": 1403664071151,
+              "value": "510",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1418645944888,
+        "code": 200,
+        "method": "GET",
+        "description": "calculate distance and flight time for any airports and any speed",
+        "creationDate": 1403664071030,
+        "slugifiedPrimary": "air-route-calculation",
+        "routeregex": "/airports/route/([^/?]+)/([^/?]+)",
+        "route": "/airports/route/{route}/{speed}",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "route",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 19,
+          "name": "Route",
+          "format": "JSON",
+          "description": "distance and flight time between airports; includes airport information as well",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/models/53aa36c6e4b051a76d23f9a3/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/models/53aa36c6e4b051a76d23f9a3"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e"
+            }
+          },
+          "id": "53aa36c6e4b051a76d23f9a3",
+          "body": "{\n  \"totals\": {\n    \"distance_km\": 5554.53,\n    \"distance_nm\": 2999.21,\n    \"flight_time_min\": 372.85,\n    \"speed_kmh\": 944.52,\n    \"speed_kts\": \"510\"\n  },\n  \"legs\": [\n    {\n      \"origin\": {\n        \"id\": \"2434\",\n        \"ident\": \"EGLL\",\n        \"name\": \"London Heathrow Airport\",\n        \"elevation_ft\": \"83.00\",\n        \"icao_code\": \"EGLL\",\n        \"iata_code\": \"LHR\",\n        \"alias\": \"LHR-EGLL-london-heathrow-airport\",\n        \"latitude_deg\": \"51.4706001282\",\n        \"longitude_deg\": \"-0.4619410038\",\n        \"latitude_minsec\": \"51&deg;28'14\\\"N\",\n        \"longitude_minsec\": \"0&deg;27'42\\\"W\",\n        \"link\": \"http://www.greatcirclemapper.net/en/airport/LHR-EGLL-london-heathrow-airport.html\"\n      },\n      \"destination\": {\n        \"id\": \"3622\",\n        \"ident\": \"KJFK\",\n        \"name\": \"John F Kennedy International Airport\",\n        \"elevation_ft\": \"13.00\",\n        \"icao_code\": \"KJFK\",\n        \"iata_code\": \"JFK\",\n        \"alias\": \"JFK-KJFK-john-f-kennedy-international-airport\",\n        \"latitude_deg\": \"40.6398010300\",\n        \"longitude_deg\": \"-73.7789001500\",\n        \"latitude_minsec\": \"40&deg;38'23\\\"N\",\n        \"longitude_minsec\": \"73&deg;46'44\\\"W\",\n        \"link\": \"http://www.greatcirclemapper.net/en/airport/JFK-KJFK-john-f-kennedy-international-airport.html\"\n      },\n      \"distance_km\": 5554.53,\n      \"distance_nm\": 2999.21,\n      \"flight_time_min\": 373,\n      \"heading_deg\": 287.93693010005,\n      \"heading_compass\": \"WNW\"\n    }\n  ]\n}",
+          "creationDate": 1403664070910,
+          "status": "ACTIVE"
+        },
+        "name": "Air Route Calculation",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c7e4b008bb2ef85605/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c7e4b008bb2ef85605/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/models/53aa36c6e4b051a76d23f9a3"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c7e4b008bb2ef85605"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c7e4b008bb2ef85605/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/groups/53aa36c6e4b00287471a08fe"
+          }
+        },
+        "id": "53aa36c7e4b008bb2ef85605",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "aviation",
+          "took": 35,
+          "name": "Aviation",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/groups/53aa36c6e4b00287471a08fe"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e"
+            }
+          },
+          "id": "53aa36c6e4b00287471a08fe",
+          "creationDate": 1403664070977,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 11,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "icao_iata",
+              "updateDate": 1418645952034,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "icao_iata",
+              "description": "ICAO 3 letter or IATA 2 letter code",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c7e4b0f2c97546f2d5"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c7e4b0f2c97546f2d5/routeparameters/53aa36c7e4b0a9b1348d95f5"
+                }
+              },
+              "id": "53aa36c7e4b0a9b1348d95f5",
+              "type": "STRING",
+              "creationDate": 1403664071585,
+              "value": "A388",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1418645952203,
+        "code": 200,
+        "method": "GET",
+        "description": "get aircraft type data by IATA or ICAO code",
+        "creationDate": 1403664071504,
+        "slugifiedPrimary": "aircraft-type-read",
+        "routeregex": "/aircraft/read/([^/?]+)",
+        "route": "/aircraft/read/{icao_iata}",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "aircraft-type",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 50,
+          "name": "Aircraft Type",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/models/53aa36c6e4b051a76d23f9a2/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/models/53aa36c6e4b051a76d23f9a2"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e"
+            }
+          },
+          "id": "53aa36c6e4b051a76d23f9a2",
+          "body": "{\n  \"name\": \"737-800\",\n  \"manufacturer\": \"Boeing\",\n  \"type\": \"Airliner\",\n  \"iata_code\": \"738\",\n  \"icao_code\": \"B738\",\n  \"passengers\": \"160\",\n  \"speed_kmh\": \"946.00\",\n  \"speed_kts\": \"511.00\",\n  \"ceiling_m\": \"12497.00\",\n  \"ceiling_ft\": \"41000.00\",\n  \"range_km\": \"7408.00\",\n  \"range_nm\": \"4000.00\",\n  \"mtow_kg\": \"78245.00\",\n  \"mtow_lbs\": \"172500.00\",\n  \"alias\": \"737-800\"\n}",
+          "creationDate": 1403664070803,
+          "status": "ACTIVE"
+        },
+        "name": "Aircraft Type Read",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c7e4b0f2c97546f2d5/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c7e4b0f2c97546f2d5/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/models/53aa36c6e4b051a76d23f9a2"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c7e4b0f2c97546f2d5"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c7e4b0f2c97546f2d5/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/groups/53aa36c6e4b00287471a08fe"
+          }
+        },
+        "id": "53aa36c7e4b0f2c97546f2d5",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "aviation",
+          "took": 37,
+          "name": "Aviation",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/groups/53aa36c6e4b00287471a08fe"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e"
+            }
+          },
+          "id": "53aa36c6e4b00287471a08fe",
+          "creationDate": 1403664070977,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 8,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "icao_iata",
+              "updateDate": 1403664071969,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "icao_iata",
+              "description": "ICAO code or IATA code",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c7e4b0f2c97546f2d6"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c7e4b0f2c97546f2d6/routeparameters/53aa36c7e4b0a798dbd1949d"
+                }
+              },
+              "id": "53aa36c7e4b0a798dbd1949d",
+              "type": "STRING",
+              "creationDate": 1403664071882,
+              "value": "KSFO",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1418645944855,
+        "code": 200,
+        "method": "GET",
+        "description": "get airport by IATA code or ICAO code",
+        "creationDate": 1403664071799,
+        "slugifiedPrimary": "airport-read",
+        "routeregex": "/airports/read/([^/?]+)",
+        "route": "/airports/read/{icao_iata}",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "airport",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 18,
+          "name": "Airport",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/models/53aa36c6e4b00287471a08fd/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/models/53aa36c6e4b00287471a08fd"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e"
+            }
+          },
+          "id": "53aa36c6e4b00287471a08fd",
+          "body": "[\n  {\n    \"ident\": \"EDDK\",\n    \"name\": \"Cologne Bonn Airport\",\n    \"municipality\": \"Cologne\",\n    \"icao_code\": \"EDDK\",\n    \"iata_code\": \"CGN\",\n    \"country\": \"Germany\",\n    \"region\": \"North Rhine-Westphalia\"\n  }\n]",
+          "creationDate": 1403664070872,
+          "status": "ACTIVE"
+        },
+        "name": "Airport Read",
+        "routeindex": 2,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c7e4b0f2c97546f2d6/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c7e4b0f2c97546f2d6/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/models/53aa36c6e4b00287471a08fd"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c7e4b0f2c97546f2d6"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c7e4b0f2c97546f2d6/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/groups/53aa36c6e4b00287471a08fe"
+          }
+        },
+        "id": "53aa36c7e4b0f2c97546f2d6",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "aviation",
+          "took": 36,
+          "name": "Aviation",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/groups/53aa36c6e4b00287471a08fe"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e"
+            }
+          },
+          "id": "53aa36c6e4b00287471a08fe",
+          "creationDate": 1403664070977,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 14,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "query",
+              "updateDate": 1403664072327,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "query",
+              "description": "ICAO code, IATA code, town, airport name",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c8e4b051a76d23f9a8"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c8e4b051a76d23f9a8/routeparameters/53aa36c8e4b008bb2ef85606"
+                }
+              },
+              "id": "53aa36c8e4b008bb2ef85606",
+              "type": "STRING",
+              "creationDate": 1403664072215,
+              "value": "Cologne",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1418645944843,
+        "code": 200,
+        "method": "GET",
+        "description": "get a list of airport records",
+        "creationDate": 1403664072090,
+        "slugifiedPrimary": "airport-search",
+        "routeregex": "/airports/search/([^/?]+)",
+        "route": "/airports/search/{query}",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "airport",
+          "headers": {
+            "took": 4,
+            "total": 0,
+            "data": []
+          },
+          "took": 17,
+          "name": "Airport",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/models/53aa36c6e4b00287471a08fd/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/models/53aa36c6e4b00287471a08fd"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e"
+            }
+          },
+          "id": "53aa36c6e4b00287471a08fd",
+          "body": "[\n  {\n    \"ident\": \"EDDK\",\n    \"name\": \"Cologne Bonn Airport\",\n    \"municipality\": \"Cologne\",\n    \"icao_code\": \"EDDK\",\n    \"iata_code\": \"CGN\",\n    \"country\": \"Germany\",\n    \"region\": \"North Rhine-Westphalia\"\n  }\n]",
+          "creationDate": 1403664070872,
+          "status": "ACTIVE"
+        },
+        "name": "Airport Search",
+        "routeindex": 3,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c8e4b051a76d23f9a8/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c8e4b051a76d23f9a8/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/models/53aa36c6e4b00287471a08fd"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c8e4b051a76d23f9a8"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/53aa36c8e4b051a76d23f9a8/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/groups/53aa36c6e4b00287471a08fe"
+          }
+        },
+        "id": "53aa36c8e4b051a76d23f9a8",
+        "parameters": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "aviation",
+          "took": 11,
+          "name": "Aviation",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/groups/53aa36c6e4b00287471a08fe"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e"
+            }
+          },
+          "id": "53aa36c6e4b00287471a08fe",
+          "creationDate": 1403664070977,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Use Great Circle Mapper to calculate the air distance and flight time between all airports worldwide.",
+  "groups": {
+    "took": 33,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "aviation",
+        "name": "Aviation",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/groups/53aa36c6e4b00287471a08fe"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e"
+          }
+        },
+        "id": "53aa36c6e4b00287471a08fe",
+        "creationDate": 1403664070977,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 02:41:10 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/astronode"
+    },
+    "endpoints": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/objects/"
+    },
+    "groups": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/groups/"
+    },
+    "issues": {
+      "total": 5,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/features/"
+    },
+    "plans": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa203ee4b008bb2ef73ded/apis/53aa36c6e4b008bb2ef85602/versions/53aa36c6e4b0b60946a2e56e/errors/"
+    }
+  },
+  "id": "53aa36c6e4b0b60946a2e56e",
+  "status": "ACTIVE"
+}

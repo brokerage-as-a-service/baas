@@ -1,0 +1,235 @@
+{
+  "models": {
+    "took": 94,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "sample-response",
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "name": "Sample Response",
+        "format": "JSON",
+        "description": "Sample response of 8.8.8.8 check",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/models/56c17fc5e4b01bc3f9fd379d/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/models/56c17fc5e4b01bc3f9fd379d"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661"
+          }
+        },
+        "id": "56c17fc5e4b01bc3f9fd379d",
+        "body": "{\"response\":\"OK\",\"countryCode\":\"TR\",\"countryName\":\"Turkey\",\"isProxy\":\"NO\"}",
+        "creationDate": 1455521733753,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "website": "http://www.ip2location.com/ip2proxy-web-service",
+  "updateDate": "Mon Feb 15 07:13:33 UTC 2016",
+  "endpoints": {
+    "took": 92,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 20,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "ip",
+              "condition": "REQUIRED",
+              "updateDate": 1455521797622,
+              "name": "ip",
+              "description": "IP address. Supported IPv4 only",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/endpoints/56b2fbbee4b0fd0f42cc16bb"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/endpoints/56b2fbbee4b0fd0f42cc16bb/routeparameters/56b2fbbee4b0678b47beee47"
+                }
+              },
+              "id": "56b2fbbee4b0678b47beee47",
+              "type": "STRING",
+              "creationDate": 1454570430146,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "key",
+              "updateDate": 1455521848261,
+              "condition": "REQUIRED",
+              "name": "key",
+              "description": "API key. You may use \"demo\" to try out (limited queries per day)",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/endpoints/56b2fbbee4b0fd0f42cc16bb"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/endpoints/56b2fbbee4b0fd0f42cc16bb/routeparameters/56b2fbbee4b0678b47beee48"
+                }
+              },
+              "id": "56b2fbbee4b0678b47beee48",
+              "type": "STRING",
+              "creationDate": 1454570430196,
+              "value": "demo",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1455521734265,
+        "code": 200,
+        "method": "GET",
+        "description": "IP2Proxy Proxy Detection",
+        "creationDate": 1454570430021,
+        "slugifiedPrimary": "ip2proxy",
+        "routeregex": "/?ip=([^/?]+)&key=([^/?]+)",
+        "route": "/?ip={ip}&key={key}",
+        "response": {
+          "slugifiedPrimary": "sample-response",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 38,
+          "name": "Sample Response",
+          "format": "JSON",
+          "description": "Sample response of 8.8.8.8 check",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/models/56c17fc5e4b01bc3f9fd379d/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/models/56c17fc5e4b01bc3f9fd379d"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661"
+            }
+          },
+          "id": "56c17fc5e4b01bc3f9fd379d",
+          "body": "{\"response\":\"OK\",\"countryCode\":\"TR\",\"countryName\":\"Turkey\",\"isProxy\":\"NO\"}",
+          "creationDate": 1455521733753,
+          "status": "ACTIVE"
+        },
+        "name": "IP2Proxy",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/endpoints/56b2fbbee4b0fd0f42cc16bb/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/endpoints/56b2fbbee4b0fd0f42cc16bb/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/models/56c17fc5e4b01bc3f9fd379d"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/endpoints/56b2fbbee4b0fd0f42cc16bb"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/endpoints/56b2fbbee4b0fd0f42cc16bb/parameters/"
+          }
+        },
+        "id": "56b2fbbee4b0fd0f42cc16bb",
+        "parameters": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "The IP2Proxy™ Proxy Detection is a hosted REST web service that allows instant detection of anonymous proxy, VPN and TOR exit nodes by IP address. Credits are needed to perform queries which can be purchased online at http://www.ip2location.com/ip2proxy-web-service.",
+  "groups": {
+    "took": 36,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Thu Feb 04 07:19:27 UTC 2016",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5472bfc6e4b0751e4415ecd9/apis/56b2fb7fe4b0678b47beee45/versions/56b2fb7fe4b077f26fd87661/errors/"
+    }
+  },
+  "id": "56b2fb7fe4b077f26fd87661",
+  "status": "ACTIVE"
+}

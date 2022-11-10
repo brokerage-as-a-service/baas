@@ -1,0 +1,258 @@
+{
+  "models": {
+    "took": 80,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "dinos-list-response",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "dinos-list Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/models/53aa595ee4b008bb2ef86e3c/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/models/53aa595ee4b008bb2ef86e3c"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58"
+          }
+        },
+        "id": "53aa595ee4b008bb2ef86e3c",
+        "creationDate": 1403672926094,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:47:14 UTC 2014",
+  "website": "http://dinoipsum.herokuapp.com/",
+  "endpoints": {
+    "took": 115,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 85,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "format",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "format",
+              "description": "{json, html, text} output format (defaults to html)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/endpoints/53aa595ee4b008bb2ef86e3d"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/endpoints/53aa595ee4b008bb2ef86e3d/routeparameters/53aa595ee4b00287471a2220"
+                }
+              },
+              "id": "53aa595ee4b00287471a2220",
+              "type": "STRING",
+              "creationDate": 1403672926248,
+              "value": "html",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "paragraphs",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "paragraphs",
+              "description": "the number of paragraphs (defaults to 10)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/endpoints/53aa595ee4b008bb2ef86e3d"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/endpoints/53aa595ee4b008bb2ef86e3d/routeparameters/53aa595ee4b008bb2ef86e3f"
+                }
+              },
+              "id": "53aa595ee4b008bb2ef86e3f",
+              "type": "NUMBER",
+              "creationDate": 1403672926418,
+              "value": "30",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "words",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "words",
+              "description": "the number of words per paragraph (defaults to 30)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/endpoints/53aa595ee4b008bb2ef86e3d"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/endpoints/53aa595ee4b008bb2ef86e3d/routeparameters/53aa595ee4b00287471a2221"
+                }
+              },
+              "id": "53aa595ee4b00287471a2221",
+              "type": "NUMBER",
+              "creationDate": 1403672926336,
+              "value": "30",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403672926311,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403672926146,
+        "slugifiedPrimary": "dinos-list",
+        "routeregex": "/",
+        "route": "/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "dinos-list-response",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 38,
+          "name": "dinos-list Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/models/53aa595ee4b008bb2ef86e3c/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/models/53aa595ee4b008bb2ef86e3c"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58"
+            }
+          },
+          "id": "53aa595ee4b008bb2ef86e3c",
+          "creationDate": 1403672926094,
+          "status": "ACTIVE"
+        },
+        "name": "dinos list",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/endpoints/53aa595ee4b008bb2ef86e3d/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/endpoints/53aa595ee4b008bb2ef86e3d/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/models/53aa595ee4b008bb2ef86e3c"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/endpoints/53aa595ee4b008bb2ef86e3d"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/endpoints/53aa595ee4b008bb2ef86e3d/parameters/"
+          }
+        },
+        "id": "53aa595ee4b008bb2ef86e3d",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Dino Ipsum is a lorem ipsum for dinosaur lovers and anyone who needs meaningless filler text for prototyping web pages.",
+  "groups": {
+    "took": 25,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:08:45 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa26dee4b0f2c97546559c/apis/53aa595de4b008bb2ef86e3b/versions/53aa595de4b07e1f4ebebe58/errors/"
+    }
+  },
+  "id": "53aa595de4b07e1f4ebebe58",
+  "status": "ACTIVE"
+}

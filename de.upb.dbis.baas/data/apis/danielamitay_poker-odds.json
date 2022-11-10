@@ -1,0 +1,259 @@
+{
+  "models": {
+    "took": 69,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "odds-response",
+        "headers": {
+          "took": 27,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1456986875818,
+        "name": "Odds response",
+        "format": "JSON",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/models/56d7da8fe4b0e1ef6fba9a57/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/models/56d7da8fe4b0e1ef6fba9a57"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416"
+          }
+        },
+        "id": "56d7da8fe4b0e1ef6fba9a57",
+        "body": "{\n  \"win\": 0.7312,\n  \"tie\": 0.011,\n  \"lose\": 0.2578\n}",
+        "creationDate": 1456986767595,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Mon Mar 07 06:29:05 UTC 2016",
+  "endpoints": {
+    "took": 80,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 26,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 42,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "community",
+              "updateDate": 1493493540540,
+              "condition": "OPTIONAL",
+              "name": "community",
+              "description": "(Optional) A comma-separated list of community cards. If specified, must consist of three, four, or five cards.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/endpoints/56d3c109e4b039804b390f13"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/endpoints/56d3c109e4b039804b390f13/routeparameters/56d3c266e4b0f90e0ce00b14"
+                }
+              },
+              "id": "56d3c266e4b0f90e0ce00b14",
+              "type": "STRING",
+              "creationDate": 1456718438592,
+              "value": "5d,7c,Ah",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "hand",
+              "updateDate": 1493493530620,
+              "condition": "REQUIRED",
+              "name": "hand",
+              "description": "(Required) A comma-separated list of hand cards. Must consist of two cards.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/endpoints/56d3c109e4b039804b390f13"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/endpoints/56d3c109e4b039804b390f13/routeparameters/56d3c15fe4b039804b390f14"
+                }
+              },
+              "id": "56d3c15fe4b039804b390f14",
+              "type": "STRING",
+              "creationDate": 1456718175364,
+              "value": "As,Kd",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "players",
+              "updateDate": 1493493548510,
+              "condition": "REQUIRED",
+              "name": "players",
+              "description": "(Required) The number of players at the table (including the player). Min: 2, Max: 10.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/endpoints/56d3c109e4b039804b390f13"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/endpoints/56d3c109e4b039804b390f13/routeparameters/56d3c1ede4b0b7099e081418"
+                }
+              },
+              "id": "56d3c1ede4b0b7099e081418",
+              "type": "NUMBER",
+              "creationDate": 1456718317613,
+              "value": "3",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1456987112748,
+        "code": 200,
+        "method": "GET",
+        "description": "Request the win/tie/loss odds for a given set of hand cards, community cards, and player count. (As = Ace of Spades, Tc = Ten of Clubs, 4d = Four of Diamonds)",
+        "creationDate": 1456718089175,
+        "slugifiedPrimary": "odds",
+        "routeregex": "/hold-em/odds",
+        "route": "/hold-em/odds",
+        "response": {
+          "slugifiedPrimary": "odds-response",
+          "headers": {
+            "took": 26,
+            "total": 0,
+            "data": []
+          },
+          "took": 49,
+          "updateDate": 1456986875818,
+          "name": "Odds response",
+          "format": "JSON",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/models/56d7da8fe4b0e1ef6fba9a57/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/models/56d7da8fe4b0e1ef6fba9a57"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416"
+            }
+          },
+          "id": "56d7da8fe4b0e1ef6fba9a57",
+          "body": "{\n  \"win\": 0.7312,\n  \"tie\": 0.011,\n  \"lose\": 0.2578\n}",
+          "creationDate": 1456986767595,
+          "status": "ACTIVE"
+        },
+        "name": "Odds",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/endpoints/56d3c109e4b039804b390f13/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/endpoints/56d3c109e4b039804b390f13/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/models/56d7da8fe4b0e1ef6fba9a57"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/endpoints/56d3c109e4b039804b390f13"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/endpoints/56d3c109e4b039804b390f13/parameters/"
+          }
+        },
+        "id": "56d3c109e4b039804b390f13",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "An API that calculates win/tie/lose odds for Texas Hold 'Em. Useful for creating poker playing bots.",
+  "groups": {
+    "took": 17,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Mon Feb 29 03:52:48 UTC 2016",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/54bb201fe4b0694fdbad8dcd/apis/56d3c090e4b0f90e0ce00b11/versions/56d3c090e4b0b7099e081416/errors/"
+    }
+  },
+  "id": "56d3c090e4b0b7099e081416",
+  "status": "ACTIVE"
+}

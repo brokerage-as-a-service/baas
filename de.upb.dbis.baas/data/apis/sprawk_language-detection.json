@@ -1,0 +1,267 @@
+{
+  "models": {
+    "took": 72,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "response-example",
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "name": "Response Example",
+        "format": "JSON",
+        "description": "An example JSON response",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/models/53aa3336e4b0a705fcc30464/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/models/53aa3336e4b0a705fcc30464"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0"
+          }
+        },
+        "id": "53aa3336e4b0a705fcc30464",
+        "body": "{\n  \"lang\": \"en\",\n  \"probs\": [\n    {\n      \"code\": \"en\",\n      \"code3\": \"eng\",\n      \"probability\": 1\n    }\n  ]\n}",
+        "creationDate": 1403663158751,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "string-response",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "String response",
+        "format": "JSON",
+        "description": "Default response mode returns the 2-letter ISO 639-1 language code",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/models/53aa3336e4b051a76d23f4a8/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/models/53aa3336e4b051a76d23f4a8"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0"
+          }
+        },
+        "id": "53aa3336e4b051a76d23f4a8",
+        "body": "en",
+        "creationDate": 1403663158787,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:41:40 UTC 2014",
+  "website": "http://www.sprawk.com/",
+  "endpoints": {
+    "took": 96,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 19,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "mode",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "mode",
+              "description": "The response mode desired. Default: \"iso2\", other values: \"json\", \"xml\", \"iso3\"",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/endpoints/53aa3336e4b051a76d23f4a9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/endpoints/53aa3336e4b051a76d23f4a9/routeparameters/53aa3337e4b0a705fcc30465"
+                }
+              },
+              "id": "53aa3337e4b0a705fcc30465",
+              "type": "STRING",
+              "creationDate": 1403663159038,
+              "value": "json",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "text",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "text",
+              "description": "The text encoded with UTF-8. A sample of text. Longer text will give a more accurate result, but only the first 1000 characters are considered.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/endpoints/53aa3336e4b051a76d23f4a9"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/endpoints/53aa3336e4b051a76d23f4a9/routeparameters/53aa3336e4b008bb2ef850fb"
+                }
+              },
+              "id": "53aa3336e4b008bb2ef850fb",
+              "type": "STRING",
+              "creationDate": 1403663158952,
+              "value": "The quick brown fox jumped over the lazy dog.",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403663159001,
+        "code": 200,
+        "method": "GET",
+        "description": "Detects the language of a piece of text",
+        "creationDate": 1403663158840,
+        "slugifiedPrimary": "language-detection",
+        "routeregex": "/language",
+        "route": "/language",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "response-example",
+          "headers": {
+            "took": 5,
+            "total": 0,
+            "data": []
+          },
+          "took": 16,
+          "name": "Response Example",
+          "format": "JSON",
+          "description": "An example JSON response",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/models/53aa3336e4b0a705fcc30464/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/models/53aa3336e4b0a705fcc30464"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0"
+            }
+          },
+          "id": "53aa3336e4b0a705fcc30464",
+          "body": "{\n  \"lang\": \"en\",\n  \"probs\": [\n    {\n      \"code\": \"en\",\n      \"code3\": \"eng\",\n      \"probability\": 1\n    }\n  ]\n}",
+          "creationDate": 1403663158751,
+          "status": "ACTIVE"
+        },
+        "name": "Language detection",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/endpoints/53aa3336e4b051a76d23f4a9/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/endpoints/53aa3336e4b051a76d23f4a9/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/models/53aa3336e4b0a705fcc30464"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/endpoints/53aa3336e4b051a76d23f4a9"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/endpoints/53aa3336e4b051a76d23f4a9/parameters/"
+          }
+        },
+        "id": "53aa3336e4b051a76d23f4a9",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Takes a piece of text and detects the language it is written in.",
+  "groups": {
+    "took": 33,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 02:25:58 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/groups/"
+    },
+    "issues": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/features/"
+    },
+    "plans": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1f72e4b0f2c97545cf64/apis/53aa3336e4b0a705fcc30461/versions/53aa3336e4b07e1f4ebe9df0/errors/"
+    }
+  },
+  "id": "53aa3336e4b07e1f4ebe9df0",
+  "status": "ACTIVE"
+}

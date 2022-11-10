@@ -1,0 +1,257 @@
+{
+  "models": {
+    "took": 48,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "encode-domain-model",
+        "headers": {
+          "took": 16,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "content-type",
+              "condition": "OPTIONAL",
+              "name": "Content-Type",
+              "description": "",
+              "links": {
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/models/57756777e4b05f7432a35936/headers/57756779e4b0bb11197e5496"
+                },
+                "model": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/models/57756777e4b05f7432a35936"
+                }
+              },
+              "id": "57756779e4b0bb11197e5496",
+              "type": "STRING",
+              "creationDate": 1467311993986,
+              "value": "application/vnd.api+json",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "name": "Encode Domain model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/models/57756777e4b05f7432a35936/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/models/57756777e4b05f7432a35936"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96"
+          }
+        },
+        "id": "57756777e4b05f7432a35936",
+        "body": "{\"data\":{\"type\":\"domain_encoding_result\",\"id\":\"c7c0a8449e3cb89dfd1a38a8cc8172c39e622589\",\"attributes\":{\"idn\":\"xn--tst-qla.de\",\"ascii\":\"t\\u00e4st.de\"}}}",
+        "creationDate": 1467311991953,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Jun 30 14:57:26 UTC 2016",
+  "website": "https://market.mashape.com/gvriva/domain-name-encoder/",
+  "endpoints": {
+    "took": 142,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 42,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "domain",
+              "condition": "REQUIRED",
+              "name": "domain",
+              "description": "The domain to convert. Use täst.de do get xn--tst-qla.de",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/endpoints/577531a5e4b0faa3d712fa97"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/endpoints/577531a5e4b0faa3d712fa97/routeparameters/577531e9e4b0d07f63b496cf"
+                }
+              },
+              "id": "577531e9e4b0d07f63b496cf",
+              "type": "STRING",
+              "creationDate": 1467298281921,
+              "value": "xn--tst-qla.de",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1467311992414,
+        "code": 200,
+        "method": "GET",
+        "description": "Encode a domain name.",
+        "creationDate": 1467298213158,
+        "slugifiedPrimary": "encode-domain",
+        "routeregex": "/",
+        "route": "/",
+        "response": {
+          "slugifiedPrimary": "encode-domain-model",
+          "headers": {
+            "took": 47,
+            "total": 1,
+            "data": [
+              {
+                "slugifiedPrimary": "content-type",
+                "condition": "OPTIONAL",
+                "name": "Content-Type",
+                "description": "",
+                "links": {
+                  "self": {
+                    "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/models/57756777e4b05f7432a35936/headers/57756779e4b0bb11197e5496"
+                  },
+                  "model": {
+                    "parent": true,
+                    "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/models/57756777e4b05f7432a35936"
+                  }
+                },
+                "id": "57756779e4b0bb11197e5496",
+                "type": "STRING",
+                "creationDate": 1467311993986,
+                "value": "application/vnd.api+json",
+                "status": "ACTIVE"
+              }
+            ]
+          },
+          "took": 78,
+          "name": "Encode Domain model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/models/57756777e4b05f7432a35936/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/models/57756777e4b05f7432a35936"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96"
+            }
+          },
+          "id": "57756777e4b05f7432a35936",
+          "body": "{\"data\":{\"type\":\"domain_encoding_result\",\"id\":\"c7c0a8449e3cb89dfd1a38a8cc8172c39e622589\",\"attributes\":{\"idn\":\"xn--tst-qla.de\",\"ascii\":\"t\\u00e4st.de\"}}}",
+          "creationDate": 1467311991953,
+          "status": "ACTIVE"
+        },
+        "name": "Encode Domain",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/endpoints/577531a5e4b0faa3d712fa97/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/endpoints/577531a5e4b0faa3d712fa97/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/models/57756777e4b05f7432a35936"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/endpoints/577531a5e4b0faa3d712fa97"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/endpoints/577531a5e4b0faa3d712fa97/parameters/"
+          }
+        },
+        "id": "577531a5e4b0faa3d712fa97",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Smart domain name encoding. IDN to ASCII & ASCII to IDN",
+  "groups": {
+    "took": 36,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Thu Jun 30 14:49:29 UTC 2016",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/features/"
+    },
+    "plans": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/5578222ae4b09519279af790/apis/57753179e4b05f7432a3590b/versions/57753179e4b0faa3d712fa96/errors/"
+    }
+  },
+  "id": "57753179e4b0faa3d712fa96",
+  "status": "ACTIVE"
+}

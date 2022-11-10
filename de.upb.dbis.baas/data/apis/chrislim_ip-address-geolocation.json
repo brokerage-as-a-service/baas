@@ -1,0 +1,238 @@
+{
+  "models": {
+    "took": 105,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "getiplocation-response",
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "name": "GetIPLocation Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/models/53aa359be4b051a76d23f74f/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/models/53aa359be4b051a76d23f74f"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba"
+          }
+        },
+        "id": "53aa359be4b051a76d23f74f",
+        "creationDate": 1403663771252,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:46:18 UTC 2014",
+  "website": "http://www.ipinfodb.com",
+  "endpoints": {
+    "took": 138,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 32,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 79,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "format",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "format",
+              "description": "It supports json and xml response format.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/endpoints/53aa359be4b0a705fcc30718"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/endpoints/53aa359be4b0a705fcc30718/routeparameters/53aa359be4b00287471a06b3"
+                }
+              },
+              "id": "53aa359be4b00287471a06b3",
+              "type": "STRING",
+              "creationDate": 1403663771748,
+              "value": "json, xml",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "ip",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "ip",
+              "description": "IP Address. It supports both IPv4 and IPv6 address format.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/endpoints/53aa359be4b0a705fcc30718"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/endpoints/53aa359be4b0a705fcc30718/routeparameters/53aa359be4b0f2c97546f0a5"
+                }
+              },
+              "id": "53aa359be4b0f2c97546f0a5",
+              "type": "STRING",
+              "creationDate": 1403663771612,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403663771988,
+        "code": 200,
+        "method": "GET",
+        "description": "Returns the location of an IP address (country, region, city, zipcode, latitude and longitude) and the associated timezone in JSON or XML format.",
+        "creationDate": 1403663771377,
+        "slugifiedPrimary": "getiplocation",
+        "routeregex": "/",
+        "route": "/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "getiplocation-response",
+          "headers": {
+            "took": 8,
+            "total": 0,
+            "data": []
+          },
+          "took": 50,
+          "name": "GetIPLocation Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/models/53aa359be4b051a76d23f74f/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/models/53aa359be4b051a76d23f74f"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba"
+            }
+          },
+          "id": "53aa359be4b051a76d23f74f",
+          "creationDate": 1403663771252,
+          "status": "ACTIVE"
+        },
+        "name": "GetIPLocation",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/endpoints/53aa359be4b0a705fcc30718/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/endpoints/53aa359be4b0a705fcc30718/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/models/53aa359be4b051a76d23f74f"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/endpoints/53aa359be4b0a705fcc30718"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/endpoints/53aa359be4b0a705fcc30718/parameters/"
+          }
+        },
+        "id": "53aa359be4b0a705fcc30718",
+        "parameters": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "This API returns the location of an IP address (country, region, city, zipcode, latitude and longitude) and the associated timezone in JSON or XML format.",
+  "groups": {
+    "took": 73,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 02:36:10 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/groups/"
+    },
+    "issues": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1fcde4b002874718ec78/apis/53aa359ae4b0a705fcc30715/versions/53aa359ae4b059614033f3ba/authentication"
+    }
+  },
+  "id": "53aa359ae4b059614033f3ba",
+  "status": "ACTIVE"
+}

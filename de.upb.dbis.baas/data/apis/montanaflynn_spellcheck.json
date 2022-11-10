@@ -1,0 +1,245 @@
+{
+  "models": {
+    "took": 73,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "corrections",
+        "headers": {
+          "took": 11,
+          "total": 0,
+          "data": []
+        },
+        "name": "Corrections",
+        "format": "JSON",
+        "description": "Detailed information for each misspelled words including multiple suggestions.",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/models/53aa37f8e4b059614033f893/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/models/53aa37f8e4b059614033f893"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1"
+          }
+        },
+        "id": "53aa37f8e4b059614033f893",
+        "body": "{\n    \"sentnce\": [\n      \"sentence\",\n      \"sentience\",\n      \"sentenced\",\n      \"sentences\",\n      \"sentinel\",\n      \"sentence's\",\n      \"stance\",\n      \"sentience's\"\n    ],\n    \"probblems\": [\n      \"problems\",\n      \"problem's\",\n      \"problem\",\n      \"parables\",\n      \"parable's\",\n      \"proclaims\",\n      \"prelims\",\n      \"Pablum's\",\n      \"Pribilof's\",\n      \"pabulum's\"\n    ]\n  }",
+        "creationDate": 1403664376213,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "response",
+        "headers": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "name": "Response",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/models/53aa37f8e4b059614033f894/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/models/53aa37f8e4b059614033f894"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1"
+          }
+        },
+        "id": "53aa37f8e4b059614033f894",
+        "body": "{\n  \"original\": \"This sentnce has some probblems.\",\n  \"suggestion\": \"This sentence has some problems.\",\n  \"corrections\": {\n    \"sentnce\": [\n      \"sentence\",\n      \"sentience\",\n      \"sentenced\",\n      \"sentences\",\n      \"sentinel\",\n      \"sentence's\",\n      \"stance\",\n      \"sentience's\"\n    ],\n    \"probblems\": [\n      \"problems\",\n      \"problem's\",\n      \"problem\",\n      \"parables\",\n      \"parable's\",\n      \"proclaims\",\n      \"prelims\",\n      \"Pablum's\",\n      \"Pribilof's\",\n      \"pabulum's\"\n    ]\n  }\n}",
+        "creationDate": 1403664376238,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:44:44 UTC 2014",
+  "website": "https://github.com/montanaflynn/Spellcheck-API/",
+  "endpoints": {
+    "took": 147,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 22,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 54,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "text",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "text",
+              "description": "Any english text to be spellchecked",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/endpoints/53aa37f8e4b059614033f895"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/endpoints/53aa37f8e4b059614033f895/routeparameters/53aa37f8e4b07e1f4ebea6a2"
+                }
+              },
+              "id": "53aa37f8e4b07e1f4ebea6a2",
+              "type": "STRING",
+              "creationDate": 1403664376341,
+              "value": "This sentnce has some probblems.",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1416482839800,
+        "code": 200,
+        "method": "GET",
+        "description": "Checks for spelling errors.",
+        "creationDate": 1403664376267,
+        "slugifiedPrimary": "check",
+        "routeregex": "/check/",
+        "route": "/check/",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "response",
+          "headers": {
+            "took": 10,
+            "total": 0,
+            "data": []
+          },
+          "took": 48,
+          "name": "Response",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/models/53aa37f8e4b059614033f894/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/models/53aa37f8e4b059614033f894"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1"
+            }
+          },
+          "id": "53aa37f8e4b059614033f894",
+          "body": "{\n  \"original\": \"This sentnce has some probblems.\",\n  \"suggestion\": \"This sentence has some problems.\",\n  \"corrections\": {\n    \"sentnce\": [\n      \"sentence\",\n      \"sentience\",\n      \"sentenced\",\n      \"sentences\",\n      \"sentinel\",\n      \"sentence's\",\n      \"stance\",\n      \"sentience's\"\n    ],\n    \"probblems\": [\n      \"problems\",\n      \"problem's\",\n      \"problem\",\n      \"parables\",\n      \"parable's\",\n      \"proclaims\",\n      \"prelims\",\n      \"Pablum's\",\n      \"Pribilof's\",\n      \"pabulum's\"\n    ]\n  }\n}",
+          "creationDate": 1403664376238,
+          "status": "ACTIVE"
+        },
+        "name": "Check",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/endpoints/53aa37f8e4b059614033f895/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/endpoints/53aa37f8e4b059614033f895/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/models/53aa37f8e4b059614033f894"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/endpoints/53aa37f8e4b059614033f895"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/endpoints/53aa37f8e4b059614033f895/parameters/"
+          }
+        },
+        "id": "53aa37f8e4b059614033f895",
+        "parameters": {
+          "took": 10,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Fix  spelling mistakes with the opensource Spellcheck API.  The dictionary is continually growing and becoming smarter.",
+  "groups": {
+    "took": 45,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 02:46:15 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/groups/"
+    },
+    "issues": {
+      "total": 8,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/issues/"
+    },
+    "tags": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1d43e4b0a798dbd01950/apis/53aa37f7e4b0a798dbd19798/versions/53aa37f7e4b0a705fcc30bc1/errors/"
+    }
+  },
+  "id": "53aa37f7e4b0a705fcc30bc1",
+  "status": "ACTIVE"
+}

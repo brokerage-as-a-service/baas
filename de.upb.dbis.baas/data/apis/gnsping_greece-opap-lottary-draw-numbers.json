@@ -1,0 +1,262 @@
+{
+  "models": {
+    "took": 29,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "-model",
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "name": "Model",
+        "format": "JSON",
+        "description": "Draw summary results",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/models/53aa566fe4b0b60946a2f8df/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/models/53aa566fe4b0b60946a2f8df"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7"
+          }
+        },
+        "id": "53aa566fe4b0b60946a2f8df",
+        "body": "{\n  \"Id\": 462809,\n  \"DrawNumber\": 1370,\n  \"ColumnPrice\": 0,\n  \"Status\": 6,\n  \"TotalColumns\": 2833741,\n  \"TotalColumns1\": 472928,\n  \"Results\": \"4,11,37,6,15,19\",\n  \"DrawDate\": \"2013-02-28T00:00:00\",\n  \"ResultType\": \"Summary\",\n  \"Type\": 5\n}",
+        "creationDate": 1403672175878,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:47:31 UTC 2014",
+  "website": "http://opapi.apphb.com/",
+  "endpoints": {
+    "took": 81,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 60,
+          "total": 3,
+          "data": [
+            {
+              "slugifiedPrimary": "drawnum",
+              "updateDate": 1403672184454,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "drawnum",
+              "description": "OPAP draw number (as appears on the slip)",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/endpoints/53aa5670e4b07e1f4ebeb77f"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/endpoints/53aa5670e4b07e1f4ebeb77f/routeparameters/53aa5674e4b0f2c9754705c9"
+                }
+              },
+              "id": "53aa5674e4b0f2c9754705c9",
+              "type": "STRING",
+              "creationDate": 1403672180001,
+              "value": "1370",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "game",
+              "updateDate": 1403672180953,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "game",
+              "description": "Possible values: Super3|Extra5|Lotto|Proto|Tzoker",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/endpoints/53aa5670e4b07e1f4ebeb77f"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/endpoints/53aa5670e4b07e1f4ebeb77f/routeparameters/53aa5671e4b0a705fcc31bdf"
+                }
+              },
+              "id": "53aa5671e4b0a705fcc31bdf",
+              "type": "STRING",
+              "creationDate": 1403672177241,
+              "value": "Tzoker",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "levelofdetail",
+              "updateDate": 1403672182697,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "levelofdetail",
+              "description": "Level of details. Possible values: GetSummary | GetDetais",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/endpoints/53aa5670e4b07e1f4ebeb77f"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/endpoints/53aa5670e4b07e1f4ebeb77f/routeparameters/53aa5672e4b008bb2ef8684c"
+                }
+              },
+              "id": "53aa5672e4b008bb2ef8684c",
+              "type": "STRING",
+              "creationDate": 1403672178755,
+              "value": "GetSummary",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403672183734,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403672176108,
+        "slugifiedPrimary": "opapi",
+        "routeregex": "/([^/?]+)/([^/?]+)/([^/?]+)",
+        "route": "/{Game}/{LevelOfDetail}/{DrawNum}",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "-model",
+          "headers": {
+            "took": 6,
+            "total": 0,
+            "data": []
+          },
+          "took": 30,
+          "name": "Model",
+          "format": "JSON",
+          "description": "Draw summary results",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/models/53aa566fe4b0b60946a2f8df/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/models/53aa566fe4b0b60946a2f8df"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7"
+            }
+          },
+          "id": "53aa566fe4b0b60946a2f8df",
+          "body": "{\n  \"Id\": 462809,\n  \"DrawNumber\": 1370,\n  \"ColumnPrice\": 0,\n  \"Status\": 6,\n  \"TotalColumns\": 2833741,\n  \"TotalColumns1\": 472928,\n  \"Results\": \"4,11,37,6,15,19\",\n  \"DrawDate\": \"2013-02-28T00:00:00\",\n  \"ResultType\": \"Summary\",\n  \"Type\": 5\n}",
+          "creationDate": 1403672175878,
+          "status": "ACTIVE"
+        },
+        "name": "OPAPI",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/endpoints/53aa5670e4b07e1f4ebeb77f/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/endpoints/53aa5670e4b07e1f4ebeb77f/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/models/53aa566fe4b0b60946a2f8df"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/endpoints/53aa5670e4b07e1f4ebeb77f"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/endpoints/53aa5670e4b07e1f4ebeb77f/parameters/"
+          }
+        },
+        "id": "53aa5670e4b07e1f4ebeb77f",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "A public unofficial API for Greek lottery numbers games (Super3, Extra5, Lotto\r\nProto, Tzoker). Always up to date and extremely fast (mongodb used for caching).",
+  "groups": {
+    "took": 12,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 04:56:12 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa243ae4b0a798dbd0ad78/apis/53aa566ce4b0b60946a2f8db/versions/53aa566ce4b0f2c9754705c7/errors/"
+    }
+  },
+  "id": "53aa566ce4b0f2c9754705c7",
+  "status": "ACTIVE"
+}

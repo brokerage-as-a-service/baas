@@ -1,0 +1,333 @@
+{
+  "models": {
+    "took": 122,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "result",
+        "headers": {
+          "took": 22,
+          "total": 0,
+          "data": []
+        },
+        "name": "Result",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/models/53aa5ab7e4b008bb2ef87100/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/models/53aa5ab7e4b008bb2ef87100"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0"
+          }
+        },
+        "id": "53aa5ab7e4b008bb2ef87100",
+        "body": "{\n  \"success\": true,\n  \"validation\": [\n    {\n      \"type\": \"success\",\n      \"field\": \"headline\",\n      \"msgId\": \"success\",\n      \"msg\": \"The page title contains the keyword once\",\n      \"validatorName\": \"keywordCount\"\n    },\n    {\n      \"type\": \"success\",\n      \"field\": \"headline\",\n      \"msgId\": \"success\",\n      \"msg\": \"The page title should be more than 40 and less than 80 chars.\",\n      \"validatorName\": \"length\"\n    },\n    {\n      \"type\": \"warning\",\n      \"field\": \"html\",\n      \"msgId\": \"noImagesFound\",\n      \"msg\": \"No Images found. Please consider to add some images to your html.\",\n      \"validatorName\": \"imageCount\"\n    },\n    {\n      \"type\": \"error\",\n      \"field\": \"html\",\n      \"msgId\": \"densityTooHigh\",\n      \"msg\": \"The keyword density is 17.39% which is too high. The keyword was found 2 times.\",\n      \"validatorName\": \"keywordDensity\"\n    },\n    {\n      \"type\": \"error\",\n      \"field\": \"html\",\n      \"msgId\": \"noLinksFound\",\n      \"msg\": \"No Links found. Please consider to add some outgoing links.\",\n      \"validatorName\": \"outboundLinks\"\n    },\n    {\n      \"type\": \"error\",\n      \"field\": \"html\",\n      \"msgId\": \"tooShort\",\n      \"msg\": \"The text should contain more then 300 words to be qualified to be relevant.\",\n      \"validatorName\": \"wordCount\"\n    },\n    {\n      \"type\": \"success\",\n      \"field\": \"keyword\",\n      \"msgId\": \"success\",\n      \"msg\": \"The keyword / keyphrase should be more than 1 and less than 4 words.\",\n      \"validatorName\": \"length\"\n    },\n    {\n      \"type\": \"ignored\",\n      \"field\": \"metaDescription\",\n      \"msgId\": \"ignore\",\n      \"msg\": null,\n      \"validatorName\": \"keywordCount\"\n    },\n    {\n      \"type\": \"ignored\",\n      \"field\": \"metaDescription\",\n      \"msgId\": \"ignore\",\n      \"msg\": null,\n      \"validatorName\": \"length\"\n    },\n    {\n      \"type\": \"ignored\",\n      \"field\": \"url\",\n      \"msgId\": \"ignore\",\n      \"msg\": null,\n      \"validatorName\": \"keywordCount\"\n    }\n  ]\n}",
+        "creationDate": 1403673271216,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "validation-result",
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "name": "Validation Result",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/models/53aa5ab7e4b00287471a24ec/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/models/53aa5ab7e4b00287471a24ec"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0"
+          }
+        },
+        "id": "53aa5ab7e4b00287471a24ec",
+        "body": "{\n  \"field\": \"String Value\",\n  \"msg\": \"String Value\",\n  \"msgId\": \"String Value\",\n  \"validatorName\": \"String Value\"\n}",
+        "creationDate": 1403673271270,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Mon Jun 19 12:15:54 UTC 2017",
+  "website": "http://seo-checker.www-factory.de/",
+  "endpoints": {
+    "took": 129,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 15,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 46,
+          "total": 5,
+          "data": [
+            {
+              "slugifiedPrimary": "html",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "html",
+              "description": "The html of your article without the layout html",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/endpoints/53aa5ab7e4b008bb2ef87101"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/endpoints/53aa5ab7e4b008bb2ef87101/routeparameters/53aa5ab7e4b051a76d2414b1"
+                }
+              },
+              "id": "53aa5ab7e4b051a76d2414b1",
+              "type": "STRING",
+              "creationDate": 1403673271579,
+              "value": "<article><p>...</p><p>....</p></article>",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "keyword",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "keyword",
+              "description": "The keyword you want to rank for",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/endpoints/53aa5ab7e4b008bb2ef87101"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/endpoints/53aa5ab7e4b008bb2ef87101/routeparameters/53aa5ab7e4b008bb2ef87102"
+                }
+              },
+              "id": "53aa5ab7e4b008bb2ef87102",
+              "type": "STRING",
+              "creationDate": 1403673271418,
+              "value": "best smartphone",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "meta_desciption",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "meta_desciption",
+              "description": "The meta description of your article",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/endpoints/53aa5ab7e4b008bb2ef87101"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/endpoints/53aa5ab7e4b008bb2ef87101/routeparameters/53aa5ab7e4b00287471a24ee"
+                }
+              },
+              "id": "53aa5ab7e4b00287471a24ee",
+              "type": "STRING",
+              "creationDate": 1403673271764,
+              "value": "The article will show you the best smartphones and compares the different features to give you an advice which smartphone to buy",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "title",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "title",
+              "description": "Your article title",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/endpoints/53aa5ab7e4b008bb2ef87101"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/endpoints/53aa5ab7e4b008bb2ef87101/routeparameters/53aa5ab7e4b0a705fcc32504"
+                }
+              },
+              "id": "53aa5ab7e4b0a705fcc32504",
+              "type": "STRING",
+              "creationDate": 1403673271513,
+              "value": "Best smarthphone 2014 comparison",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "url",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "url",
+              "description": "The URL to the article (Can also be an unpublished url)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/endpoints/53aa5ab7e4b008bb2ef87101"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/endpoints/53aa5ab7e4b008bb2ef87101/routeparameters/53aa5ab7e4b0f2c975470ebb"
+                }
+              },
+              "id": "53aa5ab7e4b0f2c975470ebb",
+              "type": "STRING",
+              "creationDate": 1403673271678,
+              "value": "http://my-page.com/my-article-url",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403673271533,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403673271320,
+        "slugifiedPrimary": "seo-article-check",
+        "routeregex": "/api",
+        "route": "/api",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "result",
+          "headers": {
+            "took": 21,
+            "total": 0,
+            "data": []
+          },
+          "took": 42,
+          "name": "Result",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/models/53aa5ab7e4b008bb2ef87100/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/models/53aa5ab7e4b008bb2ef87100"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0"
+            }
+          },
+          "id": "53aa5ab7e4b008bb2ef87100",
+          "body": "{\n  \"success\": true,\n  \"validation\": [\n    {\n      \"type\": \"success\",\n      \"field\": \"headline\",\n      \"msgId\": \"success\",\n      \"msg\": \"The page title contains the keyword once\",\n      \"validatorName\": \"keywordCount\"\n    },\n    {\n      \"type\": \"success\",\n      \"field\": \"headline\",\n      \"msgId\": \"success\",\n      \"msg\": \"The page title should be more than 40 and less than 80 chars.\",\n      \"validatorName\": \"length\"\n    },\n    {\n      \"type\": \"warning\",\n      \"field\": \"html\",\n      \"msgId\": \"noImagesFound\",\n      \"msg\": \"No Images found. Please consider to add some images to your html.\",\n      \"validatorName\": \"imageCount\"\n    },\n    {\n      \"type\": \"error\",\n      \"field\": \"html\",\n      \"msgId\": \"densityTooHigh\",\n      \"msg\": \"The keyword density is 17.39% which is too high. The keyword was found 2 times.\",\n      \"validatorName\": \"keywordDensity\"\n    },\n    {\n      \"type\": \"error\",\n      \"field\": \"html\",\n      \"msgId\": \"noLinksFound\",\n      \"msg\": \"No Links found. Please consider to add some outgoing links.\",\n      \"validatorName\": \"outboundLinks\"\n    },\n    {\n      \"type\": \"error\",\n      \"field\": \"html\",\n      \"msgId\": \"tooShort\",\n      \"msg\": \"The text should contain more then 300 words to be qualified to be relevant.\",\n      \"validatorName\": \"wordCount\"\n    },\n    {\n      \"type\": \"success\",\n      \"field\": \"keyword\",\n      \"msgId\": \"success\",\n      \"msg\": \"The keyword / keyphrase should be more than 1 and less than 4 words.\",\n      \"validatorName\": \"length\"\n    },\n    {\n      \"type\": \"ignored\",\n      \"field\": \"metaDescription\",\n      \"msgId\": \"ignore\",\n      \"msg\": null,\n      \"validatorName\": \"keywordCount\"\n    },\n    {\n      \"type\": \"ignored\",\n      \"field\": \"metaDescription\",\n      \"msgId\": \"ignore\",\n      \"msg\": null,\n      \"validatorName\": \"length\"\n    },\n    {\n      \"type\": \"ignored\",\n      \"field\": \"url\",\n      \"msgId\": \"ignore\",\n      \"msg\": null,\n      \"validatorName\": \"keywordCount\"\n    }\n  ]\n}",
+          "creationDate": 1403673271216,
+          "status": "ACTIVE"
+        },
+        "name": "SEO Article Check",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/endpoints/53aa5ab7e4b008bb2ef87101/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/endpoints/53aa5ab7e4b008bb2ef87101/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/models/53aa5ab7e4b008bb2ef87100"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/endpoints/53aa5ab7e4b008bb2ef87101"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/endpoints/53aa5ab7e4b008bb2ef87101/parameters/"
+          }
+        },
+        "id": "53aa5ab7e4b008bb2ef87101",
+        "parameters": {
+          "took": 17,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "The API can analyze a given text for it's seo validity and can give you tips how to optimize the article to get a better search engine ranking.",
+  "groups": {
+    "took": 61,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:14:30 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/groups/"
+    },
+    "issues": {
+      "total": 4,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa27cce4b07e1f4ebe0908/apis/53aa5ab6e4b0a705fcc32501/versions/53aa5ab6e4b05961403413d0/errors/"
+    }
+  },
+  "id": "53aa5ab6e4b05961403413d0",
+  "status": "ACTIVE"
+}

@@ -1,0 +1,300 @@
+{
+  "models": {
+    "took": 66,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "relatedness-request-model",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Relatedness Request Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/models/53aa37bfe4b0a9b1348d9837/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/models/53aa37bfe4b0a9b1348d9837"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9"
+          }
+        },
+        "id": "53aa37bfe4b0a9b1348d9837",
+        "body": "{\n  \"t1\": \"car\",\n  \"t2\": \"engine\"\n}",
+        "creationDate": 1403664319821,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "relatedness-response-model",
+        "headers": {
+          "took": 5,
+          "total": 0,
+          "data": []
+        },
+        "name": "Relatedness Response Model",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/models/53aa37bfe4b059614033f7e5/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/models/53aa37bfe4b059614033f7e5"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9"
+          }
+        },
+        "id": "53aa37bfe4b059614033f7e5",
+        "body": "{\n  \"t1\": \"car\",\n  \"t2\": \"engine\",\n  \"value\": 0.0078\n}",
+        "creationDate": 1403664319852,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Mon Nov 23 17:46:21 UTC 2015",
+  "website": "http://amtera.solutions",
+  "endpoints": {
+    "took": 72,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 44,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "content-type",
+              "condition": "REQUIRED",
+              "name": "Content-Type",
+              "description": "",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/endpoints/53aa37bfe4b0a9b1348d9838"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/endpoints/53aa37bfe4b0a9b1348d9838/headers/53b1d3e0e4b052d6799a7e29"
+                }
+              },
+              "id": "53b1d3e0e4b052d6799a7e29",
+              "type": "STRING",
+              "creationDate": 1404163040519,
+              "value": "application/json",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "routeparameters": {
+          "took": 42,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "lang",
+              "updateDate": 1403664319980,
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "lang",
+              "description": "The language of the texts you are submitting. Supported languages are en (for English) and pt (for Portuguese).",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/endpoints/53aa37bfe4b0a9b1348d9838"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/endpoints/53aa37bfe4b0a9b1348d9838/routeparameters/53aa37bfe4b0a9b1348d9839"
+                }
+              },
+              "id": "53aa37bfe4b0a9b1348d9839",
+              "type": "STRING",
+              "creationDate": 1403664319920,
+              "value": "en",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1404163464358,
+        "code": 200,
+        "method": "POST",
+        "description": "Calculates the semantic relatedness between pairs of text excerpts based on the likeness of their meaning  or semantic content.",
+        "creationDate": 1403664319876,
+        "slugifiedPrimary": "relatedness",
+        "routeregex": "/relatedness/([^/?]+)",
+        "route": "/relatedness/{lang}",
+        "array": false,
+        "payload": {
+          "slugifiedPrimary": "relatedness-request-model",
+          "headers": {
+            "took": 19,
+            "total": 0,
+            "data": []
+          },
+          "took": 28,
+          "name": "Relatedness Request Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/models/53aa37bfe4b0a9b1348d9837/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/models/53aa37bfe4b0a9b1348d9837"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9"
+            }
+          },
+          "id": "53aa37bfe4b0a9b1348d9837",
+          "body": "{\n  \"t1\": \"car\",\n  \"t2\": \"engine\"\n}",
+          "creationDate": 1403664319821,
+          "status": "ACTIVE"
+        },
+        "response": {
+          "slugifiedPrimary": "relatedness-response-model",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 52,
+          "name": "Relatedness Response Model",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/models/53aa37bfe4b059614033f7e5/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/models/53aa37bfe4b059614033f7e5"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9"
+            }
+          },
+          "id": "53aa37bfe4b059614033f7e5",
+          "body": "{\n  \"t1\": \"car\",\n  \"t2\": \"engine\",\n  \"value\": 0.0078\n}",
+          "creationDate": 1403664319852,
+          "status": "ACTIVE"
+        },
+        "name": "Relatedness",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/endpoints/53aa37bfe4b0a9b1348d9838/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/endpoints/53aa37bfe4b0a9b1348d9838/routeparameters/"
+          },
+          "payload": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/models/53aa37bfe4b0a9b1348d9837"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/models/53aa37bfe4b059614033f7e5"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/endpoints/53aa37bfe4b0a9b1348d9838"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/endpoints/53aa37bfe4b0a9b1348d9838/parameters/"
+          }
+        },
+        "id": "53aa37bfe4b0a9b1348d9838",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Calculates the semantic relatedness/similarity between pairs of text excerpts based on the likeness of their meaning  or semantic content.",
+  "groups": {
+    "took": 6,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 02:45:19 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/groups/"
+    },
+    "issues": {
+      "total": 5,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/features/"
+    },
+    "plans": {
+      "total": 6,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2079e4b0a705fcc1f768/apis/53aa37bfe4b059614033f7e1/versions/53aa37bfe4b0b60946a2e7c9/authentication"
+    }
+  },
+  "id": "53aa37bfe4b0b60946a2e7c9",
+  "status": "ACTIVE"
+}

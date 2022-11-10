@@ -1,0 +1,221 @@
+{
+  "models": {
+    "took": 14,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "urlparser",
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "name": "urlparser",
+        "format": "JSON",
+        "description": "URL parser",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/models/53aa351ee4b0f2c97546efe1/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/models/53aa351ee4b0f2c97546efe1"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf"
+          }
+        },
+        "id": "53aa351ee4b0f2c97546efe1",
+        "body": "{\n  \"domain_ascii\": \"facebook\",\n  \"root_domain_unicode\": \"facebook.com\",\n  \"port\": 80,\n  \"userinfo\": null,\n  \"domain_unicode\": \"facebook\",\n  \"url\": \"http://www.facebook.com/index.php?help\",\n  \"fragment\": null,\n  \"subdomain\": \"www\",\n  \"host_unicode\": \"www.facebook.com\",\n  \"path\": \"/index.php\",\n  \"scheme\": \"http\",\n  \"host_ascii\": \"www.facebook.com\",\n  \"public_suffix\": \"com\",\n  \"status\": \"OK\",\n  \"query\": \"help\",\n  \"root_domain_ascii\": \"facebook.com\"\n}",
+        "creationDate": 1403663646391,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:39:39 UTC 2014",
+  "website": "http://www.enclout.com/",
+  "endpoints": {
+    "took": 49,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 40,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "url",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "url",
+              "description": "domain or URL",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/endpoints/53aa351ee4b051a76d23f69f"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/endpoints/53aa351ee4b051a76d23f69f/routeparameters/53aa351ee4b00287471a05e3"
+                }
+              },
+              "id": "53aa351ee4b00287471a05e3",
+              "type": "STRING",
+              "creationDate": 1403663646568,
+              "value": "http://www.facebook.com/index.php?help",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403663646697,
+        "code": 200,
+        "method": "GET",
+        "description": "",
+        "creationDate": 1403663646445,
+        "slugifiedPrimary": "urlparser",
+        "routeregex": "/show.json",
+        "route": "/show.json",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "urlparser",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 18,
+          "name": "urlparser",
+          "format": "JSON",
+          "description": "URL parser",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/models/53aa351ee4b0f2c97546efe1/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/models/53aa351ee4b0f2c97546efe1"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf"
+            }
+          },
+          "id": "53aa351ee4b0f2c97546efe1",
+          "body": "{\n  \"domain_ascii\": \"facebook\",\n  \"root_domain_unicode\": \"facebook.com\",\n  \"port\": 80,\n  \"userinfo\": null,\n  \"domain_unicode\": \"facebook\",\n  \"url\": \"http://www.facebook.com/index.php?help\",\n  \"fragment\": null,\n  \"subdomain\": \"www\",\n  \"host_unicode\": \"www.facebook.com\",\n  \"path\": \"/index.php\",\n  \"scheme\": \"http\",\n  \"host_ascii\": \"www.facebook.com\",\n  \"public_suffix\": \"com\",\n  \"status\": \"OK\",\n  \"query\": \"help\",\n  \"root_domain_ascii\": \"facebook.com\"\n}",
+          "creationDate": 1403663646391,
+          "status": "ACTIVE"
+        },
+        "name": "urlparser",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/endpoints/53aa351ee4b051a76d23f69f/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/endpoints/53aa351ee4b051a76d23f69f/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/models/53aa351ee4b0f2c97546efe1"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/endpoints/53aa351ee4b051a76d23f69f"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/endpoints/53aa351ee4b051a76d23f69f/parameters/"
+          }
+        },
+        "id": "53aa351ee4b051a76d23f69f",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "This URL parser API can be used to parse domains and URLs into individual parts. The API supports  internationalized domain names (IDNs)",
+  "groups": {
+    "took": 18,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 02:34:06 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/changelogs/"
+    },
+    "objects": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/features/"
+    },
+    "plans": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa1e81e4b008bb2ef71e17/apis/53aa351de4b0f2c97546efdc/versions/53aa351ee4b0a9b1348d92bf/authentication"
+    }
+  },
+  "id": "53aa351ee4b0a9b1348d92bf",
+  "status": "ACTIVE"
+}

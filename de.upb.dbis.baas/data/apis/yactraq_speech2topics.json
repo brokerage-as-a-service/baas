@@ -1,0 +1,360 @@
+{
+  "models": {
+    "took": 97,
+    "total": 3,
+    "data": [
+      {
+        "slugifiedPrimary": "speech2topics",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Speech2Topics",
+        "format": "JSON",
+        "description": "The response to a Speech2Topics status request. Describes the topic stream and optionally the transcript for the speech content of the associated media.",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/models/53aa37eee4b0a9b1348d989f/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/models/53aa37eee4b0a9b1348d989f"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666"
+          }
+        },
+        "id": "53aa37eee4b0a9b1348d989f",
+        "body": "{\n  \"length\": 120,\n  \"status\": \"processed\",\n  \"topics\": [\n    {\n      \"topics\": [\n        \"iphone 5\"\n      ],\n      \"ts\": 60,\n      \"complete\": false,\n      \"sentiment\": 1\n    },\n    {\n      \"topics\": [\n        \"iphone 5\",\n        \"android phone\"\n      ],\n      \"ts\": 120,\n      \"complete\": false,\n      \"sentiment\": -1\n    }\n  ],\n  \"transcript\": [\n    {\n      \"p\": 0.7,\n      \"ts\": 0.4,\n      \"w\": \"hello\"\n    }\n  ]\n}",
+        "creationDate": 1403664366546,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "topic",
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "name": "Topic",
+        "format": "JSON",
+        "description": "A topic entry in a stream of topic values for a Speech2Topics model.",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/models/53aa37eee4b0a798dbd1975e/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/models/53aa37eee4b0a798dbd1975e"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666"
+          }
+        },
+        "id": "53aa37eee4b0a798dbd1975e",
+        "body": "{\n  \"topics\": [\n    \"String Value\"\n  ],\n  \"ts\": 10,\n  \"complete\": true,\n  \"sentiment\": 10\n}",
+        "creationDate": 1403664366575,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "word",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Word",
+        "format": "JSON",
+        "description": "A transcribed word as extracted by the speech recognizer.",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/models/53aa37eee4b0a798dbd1975f/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/models/53aa37eee4b0a798dbd1975f"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666"
+          }
+        },
+        "id": "53aa37eee4b0a798dbd1975f",
+        "body": "{\n  \"p\": 10,\n  \"ts\": 10,\n  \"w\": \"String Value\"\n}",
+        "creationDate": 1403664366601,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:47:11 UTC 2014",
+  "website": "http://yactraq.com",
+  "endpoints": {
+    "took": 166,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 136,
+          "total": 5,
+          "data": [
+            {
+              "slugifiedPrimary": "adset",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "adset",
+              "description": "The id of an adset configured for your account.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/endpoints/53aa37eee4b059614033f854"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/endpoints/53aa37eee4b059614033f854/routeparameters/53aa37eee4b0b60946a2e838"
+                }
+              },
+              "id": "53aa37eee4b0b60946a2e838",
+              "type": "STRING",
+              "creationDate": 1403664366744,
+              "value": "adset_value",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "guid",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "guid",
+              "description": "A guid that you wish to assign to this URL.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/endpoints/53aa37eee4b059614033f854"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/endpoints/53aa37eee4b059614033f854/routeparameters/53aa37eee4b0a9b1348d98a3"
+                }
+              },
+              "id": "53aa37eee4b0a9b1348d98a3",
+              "type": "STRING",
+              "creationDate": 1403664366779,
+              "value": "youtube:NBuLeA7nNFk",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "start",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "start",
+              "description": "If provided and non-zero will initiate processing of this media stream if not already done.  A value of 'redo' will rerun the interpretation process.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/endpoints/53aa37eee4b059614033f854"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/endpoints/53aa37eee4b059614033f854/routeparameters/53aa37eee4b0a9b1348d98a4"
+                }
+              },
+              "id": "53aa37eee4b0a9b1348d98a4",
+              "type": "STRING",
+              "creationDate": 1403664366824,
+              "value": "1",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "tx",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "tx",
+              "description": "Non-zero if the raw ASR transcript of the vide is requested.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/endpoints/53aa37eee4b059614033f854"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/endpoints/53aa37eee4b059614033f854/routeparameters/53aa37eee4b0a9b1348d98a5"
+                }
+              },
+              "id": "53aa37eee4b0a9b1348d98a5",
+              "type": "NUMBER",
+              "creationDate": 1403664366868,
+              "value": "1",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "url",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "url",
+              "description": "The URL of a audio/video stream to be processed.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/endpoints/53aa37eee4b059614033f854"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/endpoints/53aa37eee4b059614033f854/routeparameters/53aa37eee4b0b60946a2e837"
+                }
+              },
+              "id": "53aa37eee4b0b60946a2e837",
+              "type": "STRING",
+              "creationDate": 1403664366701,
+              "value": "http://www.youtube.com/watch?v=NBuLeA7nNFk",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403664366877,
+        "code": 200,
+        "method": "GET",
+        "description": "Access the status of a Speech2Topics stream.",
+        "creationDate": 1403664366628,
+        "slugifiedPrimary": "stream",
+        "routeregex": "/stream-status",
+        "route": "/stream-status",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "speech2topics",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 51,
+          "name": "Speech2Topics",
+          "format": "JSON",
+          "description": "The response to a Speech2Topics status request. Describes the topic stream and optionally the transcript for the speech content of the associated media.",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/models/53aa37eee4b0a9b1348d989f/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/models/53aa37eee4b0a9b1348d989f"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666"
+            }
+          },
+          "id": "53aa37eee4b0a9b1348d989f",
+          "body": "{\n  \"length\": 120,\n  \"status\": \"processed\",\n  \"topics\": [\n    {\n      \"topics\": [\n        \"iphone 5\"\n      ],\n      \"ts\": 60,\n      \"complete\": false,\n      \"sentiment\": 1\n    },\n    {\n      \"topics\": [\n        \"iphone 5\",\n        \"android phone\"\n      ],\n      \"ts\": 120,\n      \"complete\": false,\n      \"sentiment\": -1\n    }\n  ],\n  \"transcript\": [\n    {\n      \"p\": 0.7,\n      \"ts\": 0.4,\n      \"w\": \"hello\"\n    }\n  ]\n}",
+          "creationDate": 1403664366546,
+          "status": "ACTIVE"
+        },
+        "name": "Stream",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/endpoints/53aa37eee4b059614033f854/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/endpoints/53aa37eee4b059614033f854/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/models/53aa37eee4b0a9b1348d989f"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/endpoints/53aa37eee4b059614033f854"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/endpoints/53aa37eee4b059614033f854/parameters/"
+          }
+        },
+        "id": "53aa37eee4b059614033f854",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Yactraq Speech2Topics is a cloud service that converts audiovisual content into topic metadata via speech recognition & natural language processing.  Customers use Yactraq metadata to target ads, build UX features like content search/discovery and mine Youtube videos for brand sentiment.  In the past such services have been expensive and only used by large video publishers. The unique thing about Yactraq is we deliver our service at a price any product developer can afford.",
+  "groups": {
+    "took": 6,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 02:46:06 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 3,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/groups/"
+    },
+    "issues": {
+      "total": 5,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa208fe4b0a798dbd06060/apis/53aa37eee4b0b60946a2e834/versions/53aa37eee4b07e1f4ebea666/errors/"
+    }
+  },
+  "id": "53aa37eee4b07e1f4ebea666",
+  "status": "ACTIVE"
+}

@@ -1,0 +1,240 @@
+{
+  "models": {
+    "took": 47,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "similarsites",
+        "headers": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "name": "similarsites",
+        "format": "JSON",
+        "description": "Similar Sites",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/models/53aa5ae2e4b0f2c975470f03/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/models/53aa5ae2e4b0f2c975470f03"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143"
+          }
+        },
+        "id": "53aa5ae2e4b0f2c975470f03",
+        "body": "{\n  \"domain\": \"nbc.com\",\n  \"title\": \"NBC.com | TV Network for Primetime, Daytime and Late Night Television Shows\",\n  \"description\": \"Official NBC site for primetime, daytime and late night television shows. Television (TV) network includes soap opera, reality shows and more. Find additional information on the official NBC TV site.\",\n  \"url\": \"http://www.nbc.com\",\n  \"wpadomainpower\": 23646,\n  \"language\": \"en\",\n  \"similarDomains\": [\n    {\n      \"domain\": \"cbs.com\",\n      \"similarity\": 0.4602054842060256,\n      \"title\": \"CBS TV Network Primetime, Daytime, Late Night and Classic Television Shows\",\n      \"description\": \"Watch CBS television online.  Find CBS primetime, daytime, late night, and classic tv episodes, videos, and information.\",\n      \"url\": \"http://www.cbs.com\",\n      \"wpadomainpower\": 18574,\n      \"language\": \"en\"\n    },\n    {\n      \"domain\": \"wsls.com\",\n      \"similarity\": 0.34470417887686333,\n      \"title\": \"Home - WSLS 10 NBC in Roanoke/Lynchburg Va\",\n      \"description\": \"WSLS 10 is the NBC Weather, News and Sports source for Roanoke, the New River Valley, Lynchburg and Southside Virginia.\",\n      \"url\": \"http://www.wsls.com\",\n      \"wpadomainpower\": 1667,\n      \"language\": \"en\"\n    }\n  ]\n}",
+        "creationDate": 1403673314957,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:47:39 UTC 2014",
+  "website": "http://www.similarsitecheck.com/dev/api",
+  "endpoints": {
+    "took": 76,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 21,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 63,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "domain",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "domain",
+              "description": "The domain you want to have similar sites for",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/endpoints/53aa5ae3e4b00287471a2547"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/endpoints/53aa5ae3e4b00287471a2547/routeparameters/53aa5ae3e4b008bb2ef87146"
+                }
+              },
+              "id": "53aa5ae3e4b008bb2ef87146",
+              "type": "STRING",
+              "creationDate": 1403673315316,
+              "value": "nbc.com",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "key",
+              "condition": "REQUIRED",
+              "array": false,
+              "name": "key",
+              "description": "Your API key",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/endpoints/53aa5ae3e4b00287471a2547"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/endpoints/53aa5ae3e4b00287471a2547/routeparameters/53aa5ae3e4b0f2c975470f04"
+                }
+              },
+              "id": "53aa5ae3e4b0f2c975470f04",
+              "type": "STRING",
+              "creationDate": 1403673315169,
+              "value": "5RhqLf5wnnKzUvhcXUdN",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403673315320,
+        "code": 200,
+        "method": "GET",
+        "description": "Find similar sites for a given domain",
+        "creationDate": 1403673315042,
+        "slugifiedPrimary": "simsites",
+        "routeregex": "/simsites",
+        "route": "/simsites",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "similarsites",
+          "headers": {
+            "took": 19,
+            "total": 0,
+            "data": []
+          },
+          "took": 52,
+          "name": "similarsites",
+          "format": "JSON",
+          "description": "Similar Sites",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/models/53aa5ae2e4b0f2c975470f03/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/models/53aa5ae2e4b0f2c975470f03"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143"
+            }
+          },
+          "id": "53aa5ae2e4b0f2c975470f03",
+          "body": "{\n  \"domain\": \"nbc.com\",\n  \"title\": \"NBC.com | TV Network for Primetime, Daytime and Late Night Television Shows\",\n  \"description\": \"Official NBC site for primetime, daytime and late night television shows. Television (TV) network includes soap opera, reality shows and more. Find additional information on the official NBC TV site.\",\n  \"url\": \"http://www.nbc.com\",\n  \"wpadomainpower\": 23646,\n  \"language\": \"en\",\n  \"similarDomains\": [\n    {\n      \"domain\": \"cbs.com\",\n      \"similarity\": 0.4602054842060256,\n      \"title\": \"CBS TV Network Primetime, Daytime, Late Night and Classic Television Shows\",\n      \"description\": \"Watch CBS television online.  Find CBS primetime, daytime, late night, and classic tv episodes, videos, and information.\",\n      \"url\": \"http://www.cbs.com\",\n      \"wpadomainpower\": 18574,\n      \"language\": \"en\"\n    },\n    {\n      \"domain\": \"wsls.com\",\n      \"similarity\": 0.34470417887686333,\n      \"title\": \"Home - WSLS 10 NBC in Roanoke/Lynchburg Va\",\n      \"description\": \"WSLS 10 is the NBC Weather, News and Sports source for Roanoke, the New River Valley, Lynchburg and Southside Virginia.\",\n      \"url\": \"http://www.wsls.com\",\n      \"wpadomainpower\": 1667,\n      \"language\": \"en\"\n    }\n  ]\n}",
+          "creationDate": 1403673314957,
+          "status": "ACTIVE"
+        },
+        "name": "simsites",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/endpoints/53aa5ae3e4b00287471a2547/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/endpoints/53aa5ae3e4b00287471a2547/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/models/53aa5ae2e4b0f2c975470f03"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/endpoints/53aa5ae3e4b00287471a2547"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/endpoints/53aa5ae3e4b00287471a2547/parameters/"
+          }
+        },
+        "id": "53aa5ae3e4b00287471a2547",
+        "parameters": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Similarsitecheck is a free and open search engine to find similar and related websites. Our specially developed similarity algorithm Similarsitecheck helps to find alternative webpages. We provide an API for developers or whoever would like to use our data. It's free to get started using the API. There is a rate limit of 5,000 queries per day. If you expect to exceed that, please get in touch with us.\r\nInput a domain and receive an output of 20 similar websites with title, description, domainpower, website language and their similarity score.",
+  "groups": {
+    "took": 6,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:15:13 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa287de4b0596140336751/apis/53aa5ae1e4b0f2c975470f00/versions/53aa5ae1e4b008bb2ef87143/errors/"
+    }
+  },
+  "id": "53aa5ae1e4b008bb2ef87143",
+  "status": "ACTIVE"
+}

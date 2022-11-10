@@ -1,0 +1,283 @@
+{
+  "models": {
+    "took": 25,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "single-city-state-lookup-response",
+        "headers": {
+          "took": 4,
+          "total": 0,
+          "data": []
+        },
+        "name": "Single city-state lookup response",
+        "format": "JSON",
+        "description": "Response from a single city-state lookup",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/models/53aa5098e4b07e1f4ebeb494/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/models/53aa5098e4b07e1f4ebeb494"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce"
+          }
+        },
+        "id": "53aa5098e4b07e1f4ebeb494",
+        "body": "[\n  {\n    \"input_index\": 0,\n    \"city_states\": [\n      {\n        \"city\": \"Orem\",\n        \"state_abbreviation\": \"UT\",\n        \"state\": \"Utah\"\n      }\n    ],\n    \"zipcodes\": [\n      {\n        \"zipcode\": \"84057\",\n        \"latitude\": 40.317161,\n        \"longitude\": -111.708758\n      },\n      {\n        \"zipcode\": \"84058\",\n        \"latitude\": 40.277973,\n        \"longitude\": -111.709702\n      },\n      {\n        \"zipcode\": \"84059\",\n        \"latitude\": 40.319582,\n        \"longitude\": -111.722564\n      },\n      {\n        \"zipcode\": \"84097\",\n        \"latitude\": 40.2983,\n        \"longitude\": -111.67695\n      }\n    ]\n  }\n]",
+        "creationDate": 1403670680266,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:42:31 UTC 2014",
+  "website": "http://smartystreets.com/kb/liveaddress-api/zipcode-api",
+  "endpoints": {
+    "took": 64,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 31,
+          "total": 4,
+          "data": [
+            {
+              "slugifiedPrimary": "callback",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "callback",
+              "description": "The name of the function in which to wrap the JSON response. Typically only used for cross-domain JSONP requests with Javascript.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/endpoints/53aa5098e4b0a798dbd1a67a"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/endpoints/53aa5098e4b0a798dbd1a67a/routeparameters/53aa5098e4b0a798dbd1a67c"
+                }
+              },
+              "id": "53aa5098e4b0a798dbd1a67c",
+              "type": "STRING",
+              "creationDate": 1403670680470,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "city",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "city",
+              "description": "The city name",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/endpoints/53aa5098e4b0a798dbd1a67a"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/endpoints/53aa5098e4b0a798dbd1a67a/routeparameters/53aa5098e4b0b60946a2f641"
+                }
+              },
+              "id": "53aa5098e4b0b60946a2f641",
+              "type": "STRING",
+              "creationDate": 1403670680351,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "state",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "state",
+              "description": "The state name or abbreviation",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/endpoints/53aa5098e4b0a798dbd1a67a"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/endpoints/53aa5098e4b0a798dbd1a67a/routeparameters/53aa5098e4b05961403406e0"
+                }
+              },
+              "id": "53aa5098e4b05961403406e0",
+              "type": "STRING",
+              "creationDate": 1403670680392,
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "zipcode",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "zipcode",
+              "description": "The 5-digit ZIP code",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/endpoints/53aa5098e4b0a798dbd1a67a"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/endpoints/53aa5098e4b0a798dbd1a67a/routeparameters/53aa5098e4b0a798dbd1a67b"
+                }
+              },
+              "id": "53aa5098e4b0a798dbd1a67b",
+              "type": "STRING",
+              "creationDate": 1403670680429,
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403670680522,
+        "code": 200,
+        "method": "GET",
+        "description": "Look up and verify city/state/zip data",
+        "creationDate": 1403670680287,
+        "slugifiedPrimary": "city-state-zip-lookups",
+        "routeregex": "/zipcode",
+        "route": "/zipcode",
+        "array": true,
+        "response": {
+          "slugifiedPrimary": "single-city-state-lookup-response",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 32,
+          "name": "Single city-state lookup response",
+          "format": "JSON",
+          "description": "Response from a single city-state lookup",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/models/53aa5098e4b07e1f4ebeb494/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/models/53aa5098e4b07e1f4ebeb494"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce"
+            }
+          },
+          "id": "53aa5098e4b07e1f4ebeb494",
+          "body": "[\n  {\n    \"input_index\": 0,\n    \"city_states\": [\n      {\n        \"city\": \"Orem\",\n        \"state_abbreviation\": \"UT\",\n        \"state\": \"Utah\"\n      }\n    ],\n    \"zipcodes\": [\n      {\n        \"zipcode\": \"84057\",\n        \"latitude\": 40.317161,\n        \"longitude\": -111.708758\n      },\n      {\n        \"zipcode\": \"84058\",\n        \"latitude\": 40.277973,\n        \"longitude\": -111.709702\n      },\n      {\n        \"zipcode\": \"84059\",\n        \"latitude\": 40.319582,\n        \"longitude\": -111.722564\n      },\n      {\n        \"zipcode\": \"84097\",\n        \"latitude\": 40.2983,\n        \"longitude\": -111.67695\n      }\n    ]\n  }\n]",
+          "creationDate": 1403670680266,
+          "status": "ACTIVE"
+        },
+        "name": "City/state/zip lookups",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/endpoints/53aa5098e4b0a798dbd1a67a/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/endpoints/53aa5098e4b0a798dbd1a67a/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/models/53aa5098e4b07e1f4ebeb494"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/endpoints/53aa5098e4b0a798dbd1a67a"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/endpoints/53aa5098e4b0a798dbd1a67a/parameters/"
+          }
+        },
+        "id": "53aa5098e4b0a798dbd1a67a",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Look up US cities, states, and ZIP codes using this LiveAddress endpoint. Get ZIP codes for a city/state, and get cities/states for a ZIP code. Batch lookups supported.",
+  "groups": {
+    "took": 5,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 04:31:19 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704"
+    },
+    "wikis": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2332e4b07e1f4ebda77f/apis/53aa5097e4b0a9b1348da704/versions/53aa5097e4b00287471a18ce/authentication"
+    }
+  },
+  "id": "53aa5097e4b00287471a18ce",
+  "status": "ACTIVE"
+}

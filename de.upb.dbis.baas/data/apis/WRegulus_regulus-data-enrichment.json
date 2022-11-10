@@ -1,0 +1,389 @@
+{
+  "models": {
+    "took": 78,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "domain-enrichment-model",
+        "headers": {
+          "took": 15,
+          "total": 0,
+          "data": []
+        },
+        "updateDate": 1504307265652,
+        "name": "Domain Enrichment model",
+        "format": "JSON",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/models/59a1d49ae4b0b28ab0e668b4/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/models/59a1d49ae4b0b28ab0e668b4"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3"
+          }
+        },
+        "id": "59a1d49ae4b0b28ab0e668b4",
+        "body": "{\"domain\":\"mashape.com\",\"name\":\"Mashape, Inc.\",\"approxEmployees\":35,\"industry\":\"Information Technology and Services\",\"AnnualRevenue\":5300000,\"founded\":2009,\"country\":\"United States\",\"street\":\"500 Montgomery Street, 2nd Floor\",\"language\":\"en\",\"state\":\"CA\",\"city\":\"San Francisco\",\"postalcode\":\"94111\",\"code\":200}",
+        "creationDate": 1503777946074,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Fri Sep 01 23:17:58 UTC 2017",
+  "endpoints": {
+    "took": 150,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 13,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 37,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "domain",
+              "condition": "REQUIRED",
+              "updateDate": 1503777672753,
+              "name": "domain",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/endpoints/59a1d378e4b075a0d1d719fd"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/endpoints/59a1d378e4b075a0d1d719fd/routeparameters/59a1d379e4b028109d411869"
+                }
+              },
+              "id": "59a1d379e4b028109d411869",
+              "type": "STRING",
+              "creationDate": 1503777657097,
+              "value": "mashape.com",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1503778073911,
+        "code": 200,
+        "method": "GET",
+        "creationDate": 1503777656982,
+        "slugifiedPrimary": "domain-data-enrichment",
+        "routeregex": "/domain/enrichment?domain=([^/?]+)",
+        "route": "/domain/enrichment?domain={domain}",
+        "response": {
+          "slugifiedPrimary": "domain-enrichment-model",
+          "headers": {
+            "took": 17,
+            "total": 0,
+            "data": []
+          },
+          "took": 37,
+          "updateDate": 1504307265652,
+          "name": "Domain Enrichment model",
+          "format": "JSON",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/models/59a1d49ae4b0b28ab0e668b4/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/models/59a1d49ae4b0b28ab0e668b4"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3"
+            }
+          },
+          "id": "59a1d49ae4b0b28ab0e668b4",
+          "body": "{\"domain\":\"mashape.com\",\"name\":\"Mashape, Inc.\",\"approxEmployees\":35,\"industry\":\"Information Technology and Services\",\"AnnualRevenue\":5300000,\"founded\":2009,\"country\":\"United States\",\"street\":\"500 Montgomery Street, 2nd Floor\",\"language\":\"en\",\"state\":\"CA\",\"city\":\"San Francisco\",\"postalcode\":\"94111\",\"code\":200}",
+          "creationDate": 1503777946074,
+          "status": "ACTIVE"
+        },
+        "name": "Domain Data Enrichment",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/endpoints/59a1d378e4b075a0d1d719fd/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/endpoints/59a1d378e4b075a0d1d719fd/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/models/59a1d49ae4b0b28ab0e668b4"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/endpoints/59a1d378e4b075a0d1d719fd"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/endpoints/59a1d378e4b075a0d1d719fd/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/groups/59a1d50ee4b028109d411874"
+          }
+        },
+        "id": "59a1d378e4b075a0d1d719fd",
+        "parameters": {
+          "took": 12,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "domain",
+          "took": 22,
+          "name": "Domain",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/groups/59a1d50ee4b028109d411874"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3"
+            }
+          },
+          "id": "59a1d50ee4b028109d411874",
+          "creationDate": 1503778062055,
+          "status": "ACTIVE"
+        }
+      },
+      {
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 24,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "domain",
+              "condition": "REQUIRED",
+              "updateDate": 1504307284263,
+              "name": "domain",
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/endpoints/59a9e830e4b0b28ab0e6839b"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/endpoints/59a9e830e4b0b28ab0e6839b/routeparameters/59a9e830e4b075a0d1d73484"
+                }
+              },
+              "id": "59a9e830e4b075a0d1d73484",
+              "type": "STRING",
+              "creationDate": 1504307248839,
+              "value": "mashape.com",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1504307304123,
+        "code": 200,
+        "method": "GET",
+        "description": "This Endpoint Calculates Succesful Requests. Please DO NOT USE this end point directly",
+        "creationDate": 1504307248782,
+        "slugifiedPrimary": "succesful-request",
+        "routeregex": "/domain/enrichment?domain=([^/?]+)",
+        "route": "/domain/enrichment?domain={domain}",
+        "response": {
+          "slugifiedPrimary": "domain-enrichment-model",
+          "headers": {
+            "took": 15,
+            "total": 0,
+            "data": []
+          },
+          "took": 51,
+          "updateDate": 1504307265652,
+          "name": "Domain Enrichment model",
+          "format": "JSON",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/models/59a1d49ae4b0b28ab0e668b4/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/models/59a1d49ae4b0b28ab0e668b4"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3"
+            }
+          },
+          "id": "59a1d49ae4b0b28ab0e668b4",
+          "body": "{\"domain\":\"mashape.com\",\"name\":\"Mashape, Inc.\",\"approxEmployees\":35,\"industry\":\"Information Technology and Services\",\"AnnualRevenue\":5300000,\"founded\":2009,\"country\":\"United States\",\"street\":\"500 Montgomery Street, 2nd Floor\",\"language\":\"en\",\"state\":\"CA\",\"city\":\"San Francisco\",\"postalcode\":\"94111\",\"code\":200}",
+          "creationDate": 1503777946074,
+          "status": "ACTIVE"
+        },
+        "name": "Succesful Request",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/endpoints/59a9e830e4b0b28ab0e6839b/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/endpoints/59a9e830e4b0b28ab0e6839b/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/models/59a1d49ae4b0b28ab0e668b4"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/endpoints/59a9e830e4b0b28ab0e6839b"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/endpoints/59a9e830e4b0b28ab0e6839b/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/groups/59a9e7d1e4b0b28ab0e68399"
+          }
+        },
+        "id": "59a9e830e4b0b28ab0e6839b",
+        "parameters": {
+          "took": 15,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "successful-request",
+          "took": 18,
+          "updateDate": 1504307194803,
+          "name": "Successful Request",
+          "index": 1,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/groups/59a9e7d1e4b0b28ab0e68399"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3"
+            }
+          },
+          "id": "59a9e7d1e4b0b28ab0e68399",
+          "creationDate": 1504307153056,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Regulus Data Enrichment provides information about company by domain.\r\n\r\nNOTICE: Not full information could be provided for each domain\r\n\r\nIMPORTANT: You will be charged only if there is any information about requested domain\r\n\r\nBE CAREFUL: you will be charged for free (gmail.com & etc), invalid or disposable (mailinator.com) domains.\r\n\r\nProvided information: Company Name, Industry, Approximate Employee Count, Annual Revenue, Year Founded, Country, State, City, Street, Postal Code, Language, Website\r\n\r\nAll data is taken from open sources.",
+  "groups": {
+    "took": 69,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "domain",
+        "name": "Domain",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/groups/59a1d50ee4b028109d411874"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3"
+          }
+        },
+        "id": "59a1d50ee4b028109d411874",
+        "creationDate": 1503778062055,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "successful-request",
+        "updateDate": 1504307194803,
+        "name": "Successful Request",
+        "index": 1,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/groups/59a9e7d1e4b0b28ab0e68399"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3"
+          }
+        },
+        "id": "59a9e7d1e4b0b28ab0e68399",
+        "creationDate": 1504307153056,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Aug 16 14:10:42 UTC 2017",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/changelogs/"
+    },
+    "objects": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/objects/"
+    },
+    "groups": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/issues/"
+    },
+    "tags": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/features/"
+    },
+    "plans": {
+      "total": 5,
+      "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/55423cdae4b0bded76bb9a29/apis/59945262e4b028109d40ebef/versions/59945262e4b0b28ab0e638b3/errors/"
+    }
+  },
+  "id": "59945262e4b0b28ab0e638b3",
+  "status": "ACTIVE"
+}

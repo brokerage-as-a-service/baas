@@ -1,0 +1,282 @@
+{
+  "models": {
+    "took": 33,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "top-games",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "Top games",
+        "format": "JSON",
+        "description": "",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/models/53aa371ae4b0b60946a2e5da/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/models/53aa371ae4b0b60946a2e5da"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2"
+          }
+        },
+        "id": "53aa371ae4b0b60946a2e5da",
+        "body": "{\n  \"_links\": {\n    \"self\": \"https://api.twitch.tv/kraken/games/top?limit=10&offset=0\",\n    \"next\": \"https://api.twitch.tv/kraken/games/top?limit=10&offset=10\"\n  },\n  \"_total\": 322,\n  \"top\": [\n    {\n      \"game\": {\n        \"name\": \"League of Legends\",\n        \"box\": {\n          \"large\": \"http://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends.jpg?w=272&h=380&fit=scale\",\n          \"medium\": \"http://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends.jpg?w=136&h=190&fit=scale\",\n          \"small\": \"http://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends.jpg?w=52&h=72&fit=scale\",\n          \"template\": \"http://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends.jpg?w={width}&h={height}&fit=scale\"\n        },\n        \"logo\": {\n          \"large\": \"http://static-cdn.jtvnw.net/ttv-logoart/League%20of%20Legends.jpg?w=240&h=144&fit=scale\",\n          \"medium\": \"http://static-cdn.jtvnw.net/ttv-logoart/League%20of%20Legends.jpg?w=120&h=72&fit=scale\",\n          \"small\": \"http://static-cdn.jtvnw.net/ttv-logoart/League%20of%20Legends.jpg?w=60&h=36&fit=scale\",\n          \"template\": \"http://static-cdn.jtvnw.net/ttv-logoart/League%20of%20Legends.jpg?w={width}&h={height}&fit=scale\"\n        },\n        \"_links\": {},\n        \"_id\": 21779,\n        \"giantbomb_id\": 24024\n      },\n      \"viewers\": 23873,\n      \"channels\": 305\n    },\n    ...\n  ]\n}",
+        "creationDate": 1403664154333,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:40:01 UTC 2014",
+  "website": "http://twitch.tv",
+  "endpoints": {
+    "took": 89,
+    "total": 1,
+    "data": [
+      {
+        "headers": {
+          "took": 8,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 64,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "limit",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "limit",
+              "description": "Maximum number of games to return, up to 100.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/endpoints/53aa371ae4b0a798dbd194f1"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/endpoints/53aa371ae4b0a798dbd194f1/routeparameters/53aa371ae4b059614033f5ca"
+                }
+              },
+              "id": "53aa371ae4b059614033f5ca",
+              "type": "NUMBER",
+              "creationDate": 1403664154447,
+              "value": "25",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "offset",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "offset",
+              "description": "Offset to begin listing games, defaults to 0.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/endpoints/53aa371ae4b0a798dbd194f1"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/endpoints/53aa371ae4b0a798dbd194f1/routeparameters/53aa371ae4b0a9b1348d9657"
+                }
+              },
+              "id": "53aa371ae4b0a9b1348d9657",
+              "type": "NUMBER",
+              "creationDate": 1403664154486,
+              "value": "0",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403664154540,
+        "code": 200,
+        "method": "GET",
+        "description": "Returns an array of top games on Twitch by current viewers.",
+        "creationDate": 1403664154383,
+        "slugifiedPrimary": "get-top-games",
+        "routeregex": "/games/top",
+        "route": "/games/top",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "top-games",
+          "headers": {
+            "took": 20,
+            "total": 0,
+            "data": []
+          },
+          "took": 32,
+          "name": "Top games",
+          "format": "JSON",
+          "description": "",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/models/53aa371ae4b0b60946a2e5da/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/models/53aa371ae4b0b60946a2e5da"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2"
+            }
+          },
+          "id": "53aa371ae4b0b60946a2e5da",
+          "body": "{\n  \"_links\": {\n    \"self\": \"https://api.twitch.tv/kraken/games/top?limit=10&offset=0\",\n    \"next\": \"https://api.twitch.tv/kraken/games/top?limit=10&offset=10\"\n  },\n  \"_total\": 322,\n  \"top\": [\n    {\n      \"game\": {\n        \"name\": \"League of Legends\",\n        \"box\": {\n          \"large\": \"http://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends.jpg?w=272&h=380&fit=scale\",\n          \"medium\": \"http://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends.jpg?w=136&h=190&fit=scale\",\n          \"small\": \"http://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends.jpg?w=52&h=72&fit=scale\",\n          \"template\": \"http://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends.jpg?w={width}&h={height}&fit=scale\"\n        },\n        \"logo\": {\n          \"large\": \"http://static-cdn.jtvnw.net/ttv-logoart/League%20of%20Legends.jpg?w=240&h=144&fit=scale\",\n          \"medium\": \"http://static-cdn.jtvnw.net/ttv-logoart/League%20of%20Legends.jpg?w=120&h=72&fit=scale\",\n          \"small\": \"http://static-cdn.jtvnw.net/ttv-logoart/League%20of%20Legends.jpg?w=60&h=36&fit=scale\",\n          \"template\": \"http://static-cdn.jtvnw.net/ttv-logoart/League%20of%20Legends.jpg?w={width}&h={height}&fit=scale\"\n        },\n        \"_links\": {},\n        \"_id\": 21779,\n        \"giantbomb_id\": 24024\n      },\n      \"viewers\": 23873,\n      \"channels\": 305\n    },\n    ...\n  ]\n}",
+          "creationDate": 1403664154333,
+          "status": "ACTIVE"
+        },
+        "name": "Get top games",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/endpoints/53aa371ae4b0a798dbd194f1/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/endpoints/53aa371ae4b0a798dbd194f1/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/models/53aa371ae4b0b60946a2e5da"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/endpoints/53aa371ae4b0a798dbd194f1"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/endpoints/53aa371ae4b0a798dbd194f1/parameters/"
+          },
+          "group": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/groups/53aa371ae4b059614033f5c9"
+          }
+        },
+        "id": "53aa371ae4b0a798dbd194f1",
+        "parameters": {
+          "took": 19,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE",
+        "group": {
+          "slugifiedPrimary": "games",
+          "took": 35,
+          "name": "Games",
+          "index": 0,
+          "links": {
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/groups/53aa371ae4b059614033f5c9"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2"
+            }
+          },
+          "id": "53aa371ae4b059614033f5c9",
+          "creationDate": 1403664154357,
+          "status": "ACTIVE"
+        }
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "Retrieve or update Twitch content via REST API. 50char",
+  "groups": {
+    "took": 7,
+    "total": 1,
+    "data": [
+      {
+        "slugifiedPrimary": "games",
+        "name": "Games",
+        "index": 0,
+        "links": {
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/groups/53aa371ae4b059614033f5c9"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2"
+          }
+        },
+        "id": "53aa371ae4b059614033f5c9",
+        "creationDate": 1403664154357,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "creationDate": "Wed Jun 25 02:42:34 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/astronode"
+    },
+    "endpoints": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/objects/"
+    },
+    "groups": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/groups/"
+    },
+    "issues": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/errors/"
+    },
+    "authentication": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2049e4b0f2c97545de46/apis/53aa3719e4b059614033f5c6/versions/53aa371ae4b00287471a09d2/authentication"
+    }
+  },
+  "id": "53aa371ae4b00287471a09d2",
+  "status": "ACTIVE"
+}

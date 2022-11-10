@@ -1,0 +1,365 @@
+{
+  "models": {
+    "took": 45,
+    "total": 2,
+    "data": [
+      {
+        "slugifiedPrimary": "-estaciones-response",
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "name": "-Estaciones Response",
+        "format": "TEXT",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/models/53aa5babe4b00287471a27dc/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/models/53aa5babe4b00287471a27dc"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e"
+          }
+        },
+        "id": "53aa5babe4b00287471a27dc",
+        "creationDate": 1403673515632,
+        "status": "ACTIVE"
+      },
+      {
+        "slugifiedPrimary": "piu",
+        "headers": {
+          "took": 20,
+          "total": 0,
+          "data": []
+        },
+        "name": "PIU",
+        "format": "JSON",
+        "description": "Objeto que hace referencia a la estación PIU de anclaje de bicicletas",
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/models/53aa5babe4b00287471a27da/headers/"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/models/53aa5babe4b00287471a27da"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e"
+          }
+        },
+        "id": "53aa5babe4b00287471a27da",
+        "body": "[\n  {\n    \"numIdPIU\": 123,\n    \"descripcionPIU\": \"[63] PL. DESPANYA\",\n    \"estado\": \"COMUNICA\",\n    \"longitud\": 2.65455,\n    \"latitud\": 39.575436,\n    \"ancLibres\": 24,\n    \"ancOcupados\": 0,\n    \"ancAveriados\": 6,\n    \"bicLibres\": 6,\n    \"bicAveriadas\": 0\n  }\n]",
+        "creationDate": 1403673515558,
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "updateDate": "Thu Sep 18 19:45:34 UTC 2014",
+  "website": "https://clubbicipalma.palmademallorca.es",
+  "endpoints": {
+    "took": 158,
+    "total": 2,
+    "data": [
+      {
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 63,
+          "total": 2,
+          "data": [
+            {
+              "slugifiedPrimary": "lang",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "lang",
+              "description": "Permite obtener los resultados en CATALAN (ca) y ESPAÑOL (es)",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/endpoints/53aa5babe4b051a76d2417b4"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/endpoints/53aa5babe4b051a76d2417b4/routeparameters/53aa5babe4b0a705fcc3283b"
+                }
+              },
+              "id": "53aa5babe4b0a705fcc3283b",
+              "type": "STRING",
+              "creationDate": 1403673515870,
+              "value": "ca",
+              "status": "ACTIVE"
+            },
+            {
+              "slugifiedPrimary": "piu",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "piu",
+              "description": "Identificador único de PIU.",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/endpoints/53aa5babe4b051a76d2417b4"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/endpoints/53aa5babe4b051a76d2417b4/routeparameters/53aa5babe4b051a76d2417b5"
+                }
+              },
+              "id": "53aa5babe4b051a76d2417b5",
+              "type": "NUMBER",
+              "creationDate": 1403673515769,
+              "value": "106",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403673516268,
+        "code": 200,
+        "method": "GET",
+        "description": "Facilita en formato KLM la distribución y estado de todas las estaciones de la red BICIPALMA",
+        "creationDate": 1403673515666,
+        "slugifiedPrimary": "-estaciones",
+        "routeregex": "/Estaciones.htm",
+        "route": "/Estaciones.htm",
+        "array": false,
+        "response": {
+          "slugifiedPrimary": "-estaciones-response",
+          "headers": {
+            "took": 19,
+            "total": 0,
+            "data": []
+          },
+          "took": 49,
+          "name": "-Estaciones Response",
+          "format": "TEXT",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/models/53aa5babe4b00287471a27dc/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/models/53aa5babe4b00287471a27dc"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e"
+            }
+          },
+          "id": "53aa5babe4b00287471a27dc",
+          "creationDate": 1403673515632,
+          "status": "ACTIVE"
+        },
+        "name": "/Estaciones",
+        "routeindex": 0,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/endpoints/53aa5babe4b051a76d2417b4/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/endpoints/53aa5babe4b051a76d2417b4/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/models/53aa5babe4b00287471a27dc"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/endpoints/53aa5babe4b051a76d2417b4"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/endpoints/53aa5babe4b051a76d2417b4/parameters/"
+          }
+        },
+        "id": "53aa5babe4b051a76d2417b4",
+        "parameters": {
+          "took": 7,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      },
+      {
+        "headers": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "routeparameters": {
+          "took": 40,
+          "total": 1,
+          "data": [
+            {
+              "slugifiedPrimary": "id",
+              "condition": "OPTIONAL",
+              "array": false,
+              "name": "id",
+              "description": "Identificador único del PIU",
+              "querystring": true,
+              "links": {
+                "endpoint": {
+                  "parent": true,
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/endpoints/53aa5babe4b008bb2ef8745e"
+                },
+                "self": {
+                  "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/endpoints/53aa5babe4b008bb2ef8745e/routeparameters/53aa5bace4b0a705fcc3283c"
+                }
+              },
+              "id": "53aa5bace4b0a705fcc3283c",
+              "type": "NUMBER",
+              "creationDate": 1403673516047,
+              "value": "123",
+              "status": "ACTIVE"
+            }
+          ]
+        },
+        "updateDate": 1403673516244,
+        "code": 200,
+        "method": "GET",
+        "description": "Facilita información de las estaciones en formato JSON.",
+        "creationDate": 1403673515925,
+        "slugifiedPrimary": "-pius",
+        "routeregex": "/Pius.htm",
+        "route": "/Pius.htm",
+        "array": true,
+        "response": {
+          "slugifiedPrimary": "piu",
+          "headers": {
+            "took": 7,
+            "total": 0,
+            "data": []
+          },
+          "took": 38,
+          "name": "PIU",
+          "format": "JSON",
+          "description": "Objeto que hace referencia a la estación PIU de anclaje de bicicletas",
+          "links": {
+            "headers": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/models/53aa5babe4b00287471a27da/headers/"
+            },
+            "self": {
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/models/53aa5babe4b00287471a27da"
+            },
+            "version": {
+              "parent": true,
+              "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e"
+            }
+          },
+          "id": "53aa5babe4b00287471a27da",
+          "body": "[\n  {\n    \"numIdPIU\": 123,\n    \"descripcionPIU\": \"[63] PL. DESPANYA\",\n    \"estado\": \"COMUNICA\",\n    \"longitud\": 2.65455,\n    \"latitud\": 39.575436,\n    \"ancLibres\": 24,\n    \"ancOcupados\": 0,\n    \"ancAveriados\": 6,\n    \"bicLibres\": 6,\n    \"bicAveriadas\": 0\n  }\n]",
+          "creationDate": 1403673515558,
+          "status": "ACTIVE"
+        },
+        "name": "/Pius",
+        "routeindex": 1,
+        "links": {
+          "headers": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/endpoints/53aa5babe4b008bb2ef8745e/headers/"
+          },
+          "routeparameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/endpoints/53aa5babe4b008bb2ef8745e/routeparameters/"
+          },
+          "response": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/models/53aa5babe4b00287471a27da"
+          },
+          "self": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/endpoints/53aa5babe4b008bb2ef8745e"
+          },
+          "version": {
+            "parent": true,
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e"
+          },
+          "parameters": {
+            "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/endpoints/53aa5babe4b008bb2ef8745e/parameters/"
+          }
+        },
+        "id": "53aa5babe4b008bb2ef8745e",
+        "parameters": {
+          "took": 6,
+          "total": 0,
+          "data": []
+        },
+        "status": "ACTIVE"
+      }
+    ]
+  },
+  "visibility": "PUBLIC",
+  "description": "API sencillo para conocer en tiempo real el estado de las estaciones de  anclaje de bicicletas de la red de BICIPALMA.",
+  "groups": {
+    "took": 4,
+    "total": 0,
+    "data": []
+  },
+  "creationDate": "Wed Jun 25 05:18:35 UTC 2014",
+  "slugifiedPrimary": "v1",
+  "haslogo": true,
+  "current": true,
+  "name": "v1",
+  "links": {
+    "models": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/models/"
+    },
+    "astronode": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/astronode"
+    },
+    "endpoints": {
+      "total": 2,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/endpoints/"
+    },
+    "changelogs": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/changelogs/"
+    },
+    "objects": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/objects/"
+    },
+    "groups": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/groups/"
+    },
+    "issues": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/issues/"
+    },
+    "tags": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/tags/"
+    },
+    "features": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/features/"
+    },
+    "plans": {
+      "total": 1,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/plans/"
+    },
+    "self": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e"
+    },
+    "tos": {
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/tos"
+    },
+    "api": {
+      "parent": true,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2"
+    },
+    "wikis": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/wikis/"
+    },
+    "errors": {
+      "total": 0,
+      "href": "https://market.mashape.com/api/middleware/accounts/53aa2a10e4b002874719a547/apis/53aa5babe4b051a76d2417b2/versions/53aa5babe4b0b60946a3058e/errors/"
+    }
+  },
+  "id": "53aa5babe4b0b60946a3058e",
+  "status": "ACTIVE"
+}
