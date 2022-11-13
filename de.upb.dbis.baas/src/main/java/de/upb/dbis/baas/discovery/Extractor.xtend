@@ -3,12 +3,12 @@ package de.upb.dbis.baas.discovery
 import com.google.gson.JsonParser
 import de.upb.dbis.baas.BaasFactory
 import de.upb.dbis.baas.IO
-import de.upb.dbis.baas.composition.ExampleVisitor2
 import de.upb.dbis.baas.composition.SchemaVisitor
 import io.swagger.v3.oas.models.Operation
 import io.swagger.v3.oas.models.parameters.Parameter
 import java.util.ArrayList
 import java.util.List
+import de.upb.dbis.baas.composition.JacksonExampleVisitor
 
 class Extractor {
 	
@@ -65,7 +65,7 @@ class Extractor {
 				//TODO examples plural
 				
 				val root = new JsonParser().parse(json);
-				var outputs = new ExampleVisitor2().traverseRoot(root);
+				var outputs = new JacksonExampleVisitor().traverseRoot(root);
 				result.addAll(outputs);
 				
 				val schema = operation?.responses?.get("200")?.content?.get("application/json")?.schema;

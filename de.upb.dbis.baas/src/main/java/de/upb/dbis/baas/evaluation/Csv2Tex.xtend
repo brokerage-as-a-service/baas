@@ -13,8 +13,9 @@ class Csv2Tex {
 
 	static def void main(String[] args) {
 
-		Csv2Tex.print(new File("results/featureSelection.csv"), true, 10)
-		Csv2Tex.print(new File("results/pipelineSelection.csv"), false, -1)
+		//Csv2Tex.print(new File("results/featureSelection.csv"), true, 10)
+		//Csv2Tex.print(new File("results/pipelineSelection.csv"), false, -1)
+		Csv2Tex.print(new File("results/singleFeature.csv"), false, -1)
 	}
 
 	static def void print(File file, boolean sort, int cutoff) {

@@ -4,8 +4,6 @@ import com.fasterxml.jackson.databind.node.ObjectNode
 import com.google.gson.JsonElement
 import de.upb.dbis.baas.IO
 import de.upb.dbis.baas.Specification
-import de.upb.dbis.baas.composition.ExampleVisitor
-import de.upb.dbis.baas.composition.ExampleVisitor2
 import de.upb.dbis.baas.composition.SchemaVisitor
 import io.swagger.parser.OpenAPIParser
 import io.swagger.v3.oas.models.OpenAPI
@@ -19,6 +17,8 @@ import java.util.List
 import java.util.Map
 import java.util.UUID
 import de.upb.dbis.baas.BaasFactory
+import de.upb.dbis.baas.composition.GsonExampleVisitor
+import de.upb.dbis.baas.composition.JacksonExampleVisitor
 
 class SpecificationLoader {
 
@@ -299,13 +299,13 @@ class SpecificationLoader {
 
 			val example = operation_in.requestBody?.content?.get("application/json")?.example ?: null;
 			if (example !== null && example instanceof JsonElement) {
-				var outputs = new ExampleVisitor().traverseRoot(example as JsonElement);
+				var outputs = new GsonExampleVisitor().traverseRoot(example as JsonElement);
 				ios.addAll(outputs);
 
 			}	
 			//TODO use one of the implementations
 			else if (example !== null && example instanceof ObjectNode) {
-				var outputs = new ExampleVisitor2().traverseRoot(example as ObjectNode);
+				var outputs = new JacksonExampleVisitor().traverseRoot(example as ObjectNode);
 				
 				outputs.forEach[i|i.type="input"];
 				
@@ -344,12 +344,12 @@ class SpecificationLoader {
 				
 				//TODO just use one implementation
 				if (example !== null && example instanceof JsonElement) {
-					var outputs = new ExampleVisitor().traverseRoot(example as JsonElement);
+					var outputs = new GsonExampleVisitor().traverseRoot(example as JsonElement);
 					operation_out.ios.addAll(outputs);
 
 				}
 				else if (example !== null && example instanceof ObjectNode) {
-					var outputs = new ExampleVisitor2().traverseRoot(example as ObjectNode);
+					var outputs = new JacksonExampleVisitor().traverseRoot(example as ObjectNode);
 					operation_out.ios.addAll(outputs);
 
 				}

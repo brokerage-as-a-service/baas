@@ -22,7 +22,7 @@ class OntologyOverlap {
 	
 	static def main(String[] args){
 		
-		var openapis = new MashapeAdapter().doLoad("C:/Users/Simon/Data/workspaces/newAstro/de.upb.dbis.astro/data/apis");
+		var openapis = new RapidApiAdapter().doLoad("C:/Users/Simon/Data/workspaces/newAstro/de.upb.dbis.astro/data/apis");
 		var specs = new SpecificationLoader().load(openapis);
 		
 		tokens_normalized = new HashSet<String>();

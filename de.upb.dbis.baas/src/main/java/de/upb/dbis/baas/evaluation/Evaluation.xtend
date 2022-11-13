@@ -7,11 +7,8 @@ import de.upb.dbis.baas.Mapping
 import de.upb.dbis.baas.Operation
 import de.upb.dbis.baas.OperationMapping
 import de.upb.dbis.baas.SemanticTypeMapping
-import de.upb.dbis.baas.annotator.MyAnnotator
-import de.upb.dbis.baas.annotator.MyAnnotator.IndexField
-import de.upb.dbis.baas.annotator.MyAnnotator.QueryPart
 import de.upb.dbis.baas.composition.AnalyzerHelper
-import de.upb.dbis.baas.model.mongodb.AlignmentIndex
+import de.upb.dbis.baas.model.data.AlignmentIndex
 import java.io.BufferedWriter
 import java.io.FileWriter
 import java.util.ArrayList
@@ -31,13 +28,16 @@ import org.apache.lucene.analysis.snowball.SnowballPorterFilterFactory
 import org.apache.lucene.analysis.standard.StandardTokenizerFactory
 import org.apache.lucene.analysis.synonym.SynonymGraphFilterFactory
 import org.paukov.combinatorics3.Generator
-import de.upb.dbis.baas.model.mongodb.Database
+import de.upb.dbis.baas.model.data.Database
 import java.util.Map
 import java.util.Collections
 import java.util.HashMap
 import java.io.File
 import java.util.LinkedHashMap
 import org.apache.lucene.analysis.util.TokenFilterFactory
+import de.upb.dbis.baas.annotator.SemanticAnnotator
+import de.upb.dbis.baas.annotator.SemanticAnnotator.IndexField
+import de.upb.dbis.baas.annotator.SemanticAnnotator.QueryPart
 
 class Evaluation {
 	
@@ -58,8 +58,9 @@ class Evaluation {
 				
 		Database.singleton.load()	
 		val evaluation = new Evaluation()
-		//evaluation.featureSelection()
-		evaluation.pipeline()
+//		evaluation.featureSelection()
+		evaluation.singleFeatures()
+//		evaluation.pipeline()
 	}
 	
 	
@@ -208,14 +209,14 @@ class Evaluation {
 	def evaluateWithConfiguration2(Analyzer analyzer, File file){
 		
 		val index_fields = new ArrayList<Object>();
-		index_fields.add(MyAnnotator.IndexField.LABEL); 
+		index_fields.add(SemanticAnnotator.IndexField.LABEL); 
 		
 		val query_parts = new ArrayList<Object>();
-		query_parts.add(MyAnnotator.QueryPart.IO_NAME);
-		query_parts.add(MyAnnotator.QueryPart.IO_DESCRIPTION);
-		query_parts.add(MyAnnotator.QueryPart.IO_JSONPATH);
-		query_parts.add(MyAnnotator.QueryPart.OPERATION_ID);
-		val annotator = new MyAnnotator(index_fields, query_parts, analyzer);
+		query_parts.add(SemanticAnnotator.QueryPart.IO_NAME);
+		query_parts.add(SemanticAnnotator.QueryPart.IO_DESCRIPTION);
+		query_parts.add(SemanticAnnotator.QueryPart.IO_JSONPATH);
+		query_parts.add(SemanticAnnotator.QueryPart.OPERATION_ID);
+		val annotator = new SemanticAnnotator(index_fields, query_parts, analyzer);
 		annotator.doIndex(ontology);
 		
 		val semanticTypeMappings = AlignmentIndex.singleton.values()
@@ -293,7 +294,7 @@ class Evaluation {
 		configuration.filter[p | p instanceof QueryPart].forEach[i|query_parts.add(i)];
 		
 		
-		val annotator = new MyAnnotator(index_fields, query_parts, analyzer);
+		val annotator = new SemanticAnnotator(index_fields, query_parts, analyzer);
 		annotator.doIndex(ontology);
 		
 		val semanticTypeMappings = AlignmentIndex.singleton.values()
@@ -417,16 +418,16 @@ class Evaluation {
 		val file = new File("./results/featureSelection.csv")
 		
 		val index_fields = new ArrayList<Object>();
-		index_fields.add(MyAnnotator.IndexField.LABEL); 
-		index_fields.add(MyAnnotator.IndexField.COMMENT); 
+		index_fields.add(SemanticAnnotator.IndexField.LABEL); 
+		index_fields.add(SemanticAnnotator.IndexField.COMMENT); 
 		
 		val query_parts = new ArrayList<Object>();
-		query_parts.add(MyAnnotator.QueryPart.IO_NAME);
-		query_parts.add(MyAnnotator.QueryPart.IO_DESCRIPTION);
-		query_parts.add(MyAnnotator.QueryPart.IO_JSONPATH);
-		query_parts.add(MyAnnotator.QueryPart.OPERATION_ID);
-		query_parts.add(MyAnnotator.QueryPart.OPERATION_DESCRIPTION); 
-		query_parts.add(MyAnnotator.QueryPart.SERVICE_DESCRIPTION); 
+		query_parts.add(SemanticAnnotator.QueryPart.IO_NAME);
+		query_parts.add(SemanticAnnotator.QueryPart.IO_DESCRIPTION);
+		query_parts.add(SemanticAnnotator.QueryPart.IO_JSONPATH);
+		query_parts.add(SemanticAnnotator.QueryPart.OPERATION_ID);
+		query_parts.add(SemanticAnnotator.QueryPart.OPERATION_DESCRIPTION); 
+		query_parts.add(SemanticAnnotator.QueryPart.SERVICE_DESCRIPTION); 
 		
 		val analyzer = CustomAnalyzer.builder()
    			.withTokenizer(StandardTokenizerFactory)
@@ -521,6 +522,61 @@ class Evaluation {
 		*/
        
 	}
+	
+	def singleFeatures(){
+		
+		
+		val file = new File("./results/singleFeature.csv")
+		
+		val index_fields = new ArrayList<Object>();
+		index_fields.add(SemanticAnnotator.IndexField.LABEL); 
+		index_fields.add(SemanticAnnotator.IndexField.COMMENT); 
+		
+		val query_parts = new ArrayList<Object>();
+		query_parts.add(SemanticAnnotator.QueryPart.IO_NAME);
+		query_parts.add(SemanticAnnotator.QueryPart.IO_DESCRIPTION);
+		query_parts.add(SemanticAnnotator.QueryPart.IO_JSONPATH);
+		query_parts.add(SemanticAnnotator.QueryPart.OPERATION_ID);
+		query_parts.add(SemanticAnnotator.QueryPart.OPERATION_DESCRIPTION); 
+		query_parts.add(SemanticAnnotator.QueryPart.SERVICE_DESCRIPTION); 
+		
+		val analyzer = CustomAnalyzer.builder()
+   			.withTokenizer(StandardTokenizerFactory)
+   			.addTokenFilter(WordDelimiterGraphFilterFactory, 
+   				"preserveOriginal", "0",
+   				"splitOnNumerics", "1",
+   				"splitOnCaseChange", "1", 
+   				"catenateWords", "0",
+   				"catenateNumbers", "0",
+   				"catenateAll", "0",
+   				"generateWordParts", "1",
+   				"generateNumberParts", "0",
+   				"stemEnglishPossessive", "0"
+   				)
+   			.addTokenFilter(LowerCaseFilterFactory)
+   			.addTokenFilter(EnglishMinimalStemFilterFactory)
+   			//.addTokenFilter(PatternCaptureGroupFilterFactory, "preserve_original", "true", "pattern", "(([a-z]+)(id$)|(brand)|(info))")
+			//.addTokenFilter(StopFilterFactory, "ignoreCase", "true", "words", "stopwords.txt", "format", "wordset")
+			//.addTokenFilter(SynonymGraphFilterFactory, "synonyms", "synonyms.txt", "format", "solr", "ignoreCase", "false", "expand", "true")
+			//.addTokenFilter(SynonymGraphFilterFactory, "synonyms", "conceptnet.synonym.txt", "format", "solr", "ignoreCase", "false", "expand", "true")
+			.build();
+			
+		
+		var contents = '''"«IndexField.LABEL.name»";"«IndexField.COMMENT.name»";"«QueryPart.IO_NAME»";"«QueryPart.IO_JSONPATH»";"«QueryPart.IO_DESCRIPTION»";"«QueryPart.OPERATION_ID»";"«QueryPart.OPERATION_DESCRIPTION»";"«QueryPart.SERVICE_DESCRIPTION»";"MeanAveragePrecision"''';
+		
+		//contents = '''"«LowerCaseFilterFactory.name»";"«EnglishMinimalStemFilterFactory.name»";"«EnglishPossessiveFilterFactory.name»";"«SnowballPorterFilterFactory.name»";"«KStemFilterFactory.name»";"ConceptNet Synonyms";"ConceptNet Related To";"MAP"''';
+		
+		write(contents, file, false);
+		
+
+		Generator.cartesianProduct(
+			Generator.combination(index_fields).simple(1).toList, 
+			Generator.combination(query_parts).simple(1).toList
+		).stream()
+		.forEach( x | evaluateWithConfiguration(x.flatten.toList, analyzer, file))
+		 
+       
+	}	
 	
 
 }
