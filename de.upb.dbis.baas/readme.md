@@ -17,3 +17,8 @@ docker run --name mongodb -v ${PWD}/mongodb:/data/db -d -p 27017:27017 mongo
 ```bash
 java -cp ./build/libs/de.upb.dbis.baas.jar de.upb.dbis.baas.evaluation.Evaluation
 ```
+
+
+Open Project Properties
+Go to the page "Java Compiler" 
+Check the option "Use compliance level from execution environment"

@@ -107,7 +107,7 @@ class NginxLogProcessor {
 
 		
 		try {
-			val reader = new BufferedReader(new FileReader("./data/call.log"));
+			val reader = new BufferedReader(new FileReader("./data/call2.log"));
 			var line = reader.readLine();
 
 			while (line !== null) {
@@ -118,19 +118,19 @@ class NginxLogProcessor {
 					
 					val parts = line.split(" ")
 					
-					if(parts.length===8){
+					if(parts.length===7){
 						
 						val timestamp = parts.get(0).substring(1, parts.get(0).length-2);
-						val method = parts.get(2).substring(1)
-						var path = parts.get(3)
+						val method = parts.get(1).substring(1)
+						var path = parts.get(2)
 						if(path.contains("?")){
 							path = path.substring(0,path.indexOf("?"))
 						}
 						
 						val path_generalized = generalize(method + " "+ path)
-						val statuscode = parts.get(5);
+						val statuscode = parts.get(4);
 						
-						val token = parts.get(7).substring(0, parts.get(7).length-2)
+						val token = parts.get(6).substring(0, parts.get(6).length-2)
 						
 						if(path.startsWith("/api") && #["201", "202"].contains(statuscode)){
 							
@@ -140,7 +140,7 @@ class NginxLogProcessor {
 							val sb = traces.get(token) ?: new StringBuffer()
 							sb.append('''
 								<event>
-									<date key="time:timestamp" value="2022-12-05T07:18:«count++».886+0000" />
+									<date key="time:timestamp" value="«timestamp»" />
 									<string key="concept:name" value="«path_generalized»" />
 								</event>
 							''')
@@ -188,11 +188,13 @@ class NginxLogProcessor {
 				<string key="concept:name" value="excercise7.mxml"/>
 				<string key="lifecycle:model" value="standard"/>
 				<string key="description" value="Log file created in CPN Tools"/>
-				<trace>
+				
 				«FOR String group : traces.keySet»
+					<trace>
 					«traces.get(group)»
+					</trace>
 				«ENDFOR»
-				</trace>
+				
 			</log>
 		'''
 		print(content)
