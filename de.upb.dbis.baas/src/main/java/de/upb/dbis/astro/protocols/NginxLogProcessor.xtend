@@ -103,11 +103,9 @@ class NginxLogProcessor {
 		val spec = new OpenAPIParser().readLocation(filepath, null, null);
 		path2pattern(spec.openAPI)
 		
-		var count=10
-
 		
 		try {
-			val reader = new BufferedReader(new FileReader("./data/call2.log"));
+			val reader = new BufferedReader(new FileReader("./data/call.noise.long.log"));
 			var line = reader.readLine();
 
 			while (line !== null) {
@@ -120,7 +118,7 @@ class NginxLogProcessor {
 					
 					if(parts.length===7){
 						
-						val timestamp = parts.get(0).substring(1, parts.get(0).length-2);
+						val timestamp = parts.get(0).substring(1, parts.get(0).length-1);
 						val method = parts.get(1).substring(1)
 						var path = parts.get(2)
 						if(path.contains("?")){
