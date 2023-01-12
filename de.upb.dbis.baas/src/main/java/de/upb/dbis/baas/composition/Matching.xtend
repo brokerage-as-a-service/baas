@@ -31,8 +31,10 @@ class Matching {
 	
 	new(){
 		model = ModelFactory.createOntologyModel(OntModelSpec.OWL_MEM, null);
-		model.read("C:/Users/Simon/Data/workspaces/dissertationOxygen/de.upb.dbis.composition/src/main/resources/schema.owl.nt");
+		model.read("data/schema.owl.nt");
 	}
+	
+
 	
 	static val FORMAT_COMPATIBILITY = #{
 		(OpenAPIFormat.BOOLEAN -> OpenAPIFormat.BOOLEAN) -> 1f, 
@@ -314,21 +316,10 @@ class Matching {
 		vector.similarities.add(sim2);	
 
 		var sim3 = BaasFactory.eINSTANCE.createSimilarity();
-		sim3.name = "Subject"
+		sim3.name = "UpwardCotopic"
 		sim3.sigma = upwardCotopicSimilarity(selection, other, BaasPackage.Literals.IO__SUBJECT);
 		vector.similarities.add(sim3);	
-		
-		var sim4 = BaasFactory.eINSTANCE.createSimilarity();
-		sim4.name = "Predicate"
-		sim4.sigma = sim(selection, other);
-		vector.similarities.add(sim4);	
-		
-		var sim5 = BaasFactory.eINSTANCE.createSimilarity();
-		sim5.name = "Object"
-		sim5.sigma = upwardCotopicSimilarity(selection, other, BaasPackage.Literals.IO__OBJECT);
-		vector.similarities.add(sim5);	
-		
-		
+			
 	
 		
 		mapping.score = vector.average;

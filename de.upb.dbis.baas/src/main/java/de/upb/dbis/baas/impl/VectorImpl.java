@@ -91,14 +91,19 @@ public class VectorImpl extends MinimalEObjectImpl.Container implements Vector {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated NOT
 	 */
+	@Override
 	public double average() {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		double sum = 0d;
+		
+		for(Similarity similarity : getSimilarities()) {
+			sum = sum + similarity.getSigma();
+		}
+		
+		
+		return sum / (double)this.getSimilarities().size();
 	}
-
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
